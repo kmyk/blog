@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <h1>SinglePong</h1>
+        <script>
+            var q = location.search.split('?');
+            q = (1 in q) ? ('?' + q[1]) : '';
+            document.write("<iframe src=\"raw/index.html" + q +  "\" width=" + 640 + " height=" + 480 + " scrolling=\"no\"></iframe>");
+        </script>
+        <h2>概要</h2>
+        <p>
+            ひたすら壁と卓球するゲーム
+            <ul> <li><a href="./">1面モード</a></li> <li><a href="./?3walls">3面モード</a></li> </ul>
+        </p>
+        <h2>操作方法</h2>
+        <dl>
+            <dt>マウス移動</dt><dd>ラケットの移動</dd>
+            <dt>マウスクリック</dt><dd>ゲームの開始 / ラケットの角度固定</dd>
+        </dl>
+        <h2>参考</h2>
+        <ul>
+            <li><a href="http://ja.wikipedia.org/wiki/PONG">ポン (ゲーム) - Wikipedia</a></li>
+            <li><a href="http://toro.2ch.net/test/read.cgi/gamedev/1342185088/">◎　おまえら土日までに一本ゲーム作るスレ14　◎</a></li>
+        </ul>
+        <h2>ソース</h2>
+        <a href="https://github.com/canagh/singlepong">github.com/canagh/singlepong</a>
+        <h3>使用ライブラリ</h3>
+        <ul>
+            <li><a href="http://createjs.com/#!/EaselJS">EaselJS</a></li>
+            <li><a href="http://createjs.com/#!/TweenJS">TweenJS</a></li>
+            <li><a href="http://code.google.com/p/box2dweb/">box2dweb</a></li>
+        </ul>
+        <h2>License</h2>
+        <h3>MIT License</h3>
+        <div style="font-size: small;">
+            <p>Copyright (c) 2013 cana</p>
+            <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+            <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+            <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+        </div>
+    </body>
+</html>

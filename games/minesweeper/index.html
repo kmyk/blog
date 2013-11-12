@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="index.css" type="text/css" />
+        <script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" src="jquery.deserialize.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+    </head>
+    <body>
+        <h1>minesweeper</h1>
+        <noscript><p>
+            As you know, js doesn't work under text-browsers or NoScript. If you would like to play this, please enable js.
+        </p></noscript>
+        <table class='board'></table>
+
+        <h2>how to play</h2>
+        <dl>
+            <dt>how to restart</dt><dd><i>&lt;F5&gt;</i> or <i>&lt;C-r&gt;</i> (browser-dependent)</dd>
+            <dt>how to quit</dt><dd><i>&lt;C-w&gt;</i> (browser-dependent)</dd>
+            <dt>where is the timer?</dt><dd>use your own watch. or you can <code>$ date</code> in your shell</dd>
+            <dt>all cells have been opened, but...</dt><dd>nothing happens. you can restart :)</dd>
+        </dl>
+
+        <h2>difficulty</h2>
+        <ul>
+            <li><a href="?width=9&height=9&bombs=10">beginner</a></li>
+            <li><a href="?width=16&height=16&bombs=40">intermediate</a></li>
+            <li><a href="?width=30&height=16&bombs=99">expert</a></li>
+        </ul>
+
+        <h2>license</h2>
+        <i>MIT License</i>
+    </body>
+</html>

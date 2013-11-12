@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://solorab.github.io/sitemap.xml 

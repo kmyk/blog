@@ -2,22 +2,26 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://solorab.github.io/blog/2013/11/14/renewed-everything/</loc>
-        <lastmod>2013-11-14T06:36:02+09:00</lastmod>
+        <lastmod>2013-11-27T21:45:16+09:00</lastmod>
+    </url>
+    <url>
+        <loc>http://solorab.github.io/blog/2013/11/27/scraped-pixiv/</loc>
+        <lastmod>2013-11-28T01:26:37+09:00</lastmod>
     </url>
     <url>
         <loc>http://solorab.github.io/games/</loc>
-        <lastmod>2013-11-13T01:43:17+09:00</lastmod>
+        <lastmod>2013-11-27T21:45:16+09:00</lastmod>
     </url>
     <url>
         <loc>http://solorab.github.io/</loc>
-        <lastmod>2013-11-14T06:36:02+09:00</lastmod>
+        <lastmod>2013-11-28T01:26:37+09:00</lastmod>
     </url>
     <url>
         <loc>http://solorab.github.io/blog/archives/</loc>
-        <lastmod>2013-11-14T06:36:02+09:00</lastmod>
+        <lastmod>2013-11-28T01:26:37+09:00</lastmod>
     </url>
     <url>
         <loc>http://solorab.github.io/robots.txt</loc>
-        <lastmod>2013-11-13T01:19:43+09:00</lastmod>
+        <lastmod>2013-11-27T21:45:16+09:00</lastmod>
     </url>
 </urlset>

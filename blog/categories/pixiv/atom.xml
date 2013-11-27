@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[高機能うさぎ小屋]]></title>
-  <link href="http://solorab.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: pixiv | 高機能うさぎ小屋]]></title>
+  <link href="http://solorab.github.io/blog/categories/pixiv/atom.xml" rel="self"/>
   <link href="http://solorab.github.io/"/>
   <updated>2013-11-28T01:26:37+09:00</updated>
   <id>http://solorab.github.io/</id>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Pixivをscarpingした]]></title>
+    <title type="html"><![CDATA[pixivをscarpingした]]></title>
     <link href="http://solorab.github.io/blog/2013/11/27/scraped-pixiv/"/>
     <updated>2013-11-27T21:47:44+09:00</updated>
     <id>http://solorab.github.io/blog/2013/11/27/scraped-pixiv</id>
@@ -76,41 +76,6 @@ CasperJS + PhantomJS でかなり強引に処理</p>
   <li>python + mechanize 製</li>
   <li>script tag内をそれらしいurlでgrepしてる</li>
   <li>機能豊富で良くできている むしろ多すぎ感ある</li>
-</ul>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[いろいろと作り直した]]></title>
-    <link href="http://solorab.github.io/blog/2013/11/14/renewed-everything/"/>
-    <updated>2013-11-14T05:40:00+09:00</updated>
-    <id>http://solorab.github.io/blog/2013/11/14/renewed-everything</id>
-    <content type="html"><![CDATA[<p>それはもうごっそりと</p>
-
-<!-- more -->
-
-<ul>
-  <li>HN変更
-    <ul>
-      <li>ググラビリティの向上</li>
-      <li>twitterはid変更が容易</li>
-      <li>githubもid変更できる
-        <ul>
-          <li>もちろんURLも変更</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>独自ドメイン取得/運用開始
-    <ul>
-      <li>value-domain + github-pages
-        <ul>
-          <li><a href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages">https://help.github.com/articles/setting-up-a-custom-domain-with-pages</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>もう破壊的変更はしないはず</li>
 </ul>
 ]]></content>
   </entry>

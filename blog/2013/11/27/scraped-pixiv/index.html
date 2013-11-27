@@ -5,11 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Games - 高機能うさぎ小屋</title>
+  <title>Pixivをscarpingした - 高機能うさぎ小屋</title>
   <meta name="author" content="そろうさぎ">
 
   
-  <meta name="description" content="Games Mar 30th, 2013 minesweeper: jQueryの練習用に作ったマインスイーパクローン boxkjs: 物理エンジンを用いたブロック崩し風ゲーム singlepong: 壁と卓球するゲーム Mar 30th, 2013 Tweet Recent Posts &hellip;">
+  <meta name="description" content="pixiv-tools
+勢いで作った
+CasperJS + PhantomJS でかなり強引に処理 memo javascript (や flash)を扱えるlibraryたち mechanizeさんはむりぽ 他にもたくさん PhantomJS WebKit nodeでない CasperJS &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://solorab.github.io/games">
+  <link rel="canonical" href="http://solorab.github.io/blog/2013/11/27/scraped-pixiv">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="高機能うさぎ小屋" type="application/atom+xml">
@@ -65,36 +67,15 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Games</h1>
-    <p class="meta">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-03-30T05:46:00+09:00" pubdate data-updated="true">Mar 30<span>th</span>, 2013</time></p>
-  </header>
-  
-  <ul>
-  <li><a href="./minesweeper/">minesweeper</a>: jQueryの練習用に作ったマインスイーパクローン</li>
-  <li><a href="./boxkjs/">boxkjs</a>: 物理エンジンを用いたブロック崩し風ゲーム</li>
-  <li><a href="./singlepong/">singlepong</a>: 壁と卓球するゲーム</li>
-</ul>
-
-  
-    <footer>
+    
+      <h1 class="entry-title">Pixivをscarpingした</h1>
+    
+    
       <p class="meta">
         
-        
 
 
 
@@ -106,21 +87,122 @@
   
 
 
-<time datetime="2013-03-30T05:46:00+09:00" pubdate data-updated="true">Mar 30<span>th</span>, 2013</time>
+<time datetime="2013-11-27T21:47:44+09:00" pubdate data-updated="true">Nov 27<span>th</span>, 2013</time>
         
       </p>
+    
+  </header>
+
+
+<div class="entry-content"><h2 id="pixiv-toolshttpsgithubcomsolorabpixiv-tools"><a href="https://github.com/solorab/pixiv-tools">pixiv-tools</a></h2>
+<p>勢いで作った<br />
+CasperJS + PhantomJS でかなり強引に処理</p>
+
+<!-- more -->
+
+<h2 id="memo">memo</h2>
+
+<h3 id="javascript--flashlibrary">javascript (や flash)を扱えるlibraryたち</h3>
+<ul>
+  <li>mechanizeさんはむりぽ</li>
+  <li>他にもたくさん</li>
+</ul>
+
+<h4 id="phantomjshttpphantomjsorg"><a href="http://phantomjs.org/">PhantomJS</a></h4>
+<ul>
+  <li>WebKit</li>
+  <li>nodeでない</li>
+  <li><a href="http://casperjs.org/">CasperJS</a>
+    <ul>
+      <li>nodejsでないwrapper</li>
+    </ul>
+  </li>
+  <li><a href="http://nodejs.org/">Node.js</a>
+    <ul>
+      <li>bridge はいくつかあったが、結局使わなかった
+        <ul>
+          <li><a href="https://github.com/sgentle/phantomjs-node">phantomjs-node</a></li>
+          <li><a href="https://github.com/WaterfallEngineering/SpookyJS">SpookyJS</a></li>
+          <li><a href="https://github.com/Obvious/phantomjs">phantomjs</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="chimerahttpsgithubcomdeanmaonode-chimera"><a href="https://github.com/deanmao/node-chimera">Chimera</a></h4>
+<ul>
+  <li>WebKit</li>
+  <li><code>npm install chimera</code></li>
+  <li>うまく使えなかった</li>
+  <li>documentどこですか</li>
+</ul>
+
+<h4 id="slimerjshttpslimerjsorg"><a href="http://slimerjs.org/">SlimerJS</a></h4>
+<ul>
+  <li>Gecko</li>
+  <li>試してないのでよく分からない</li>
+</ul>
+
+<h3 id="section">競合</h3>
+
+<h4 id="pixivutil2httpsgithubcomnandakapixivutil2"><a href="https://github.com/Nandaka/PixivUtil2">PixivUtil2</a></h4>
+<ul>
+  <li>作り終わってから見つけた 少し触った</li>
+  <li>python + mechanize 製</li>
+  <li>script tag内をそれらしいurlでgrepしてる</li>
+  <li>機能豊富で良くできている むしろ多すぎ感ある</li>
+</ul>
+</div>
+
+
+  <footer>
+    <p class="meta">
       
-        <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://solorab.github.io/games/index.html" data-via="solousagi" data-counturl="http://solorab.github.io/games/index.html" >Tweet</a>
+
+<span class="byline author vcard">Posted by <span class="fn">そろうさぎ</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-11-27T21:47:44+09:00" pubdate data-updated="true">Nov 27<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/javascript/'>javascript</a>, <a class='category' href='/blog/categories/pixiv/'>pixiv</a>, <a class='category' href='/blog/categories/scarping/'>scarping</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://solorab.github.io/blog/2013/11/27/scraped-pixiv/" data-via="solousagi" data-counturl="http://solorab.github.io/blog/2013/11/27/scraped-pixiv/" >Tweet</a>
   
   
   
 </div>
 
+    
+    <p class="meta">
       
-    </footer>
-  
+        <a class="basic-alignment left" href="/blog/2013/11/14/renewed-everything/" title="Previous Post: いろいろと作り直した">&laquo; いろいろと作り直した</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>

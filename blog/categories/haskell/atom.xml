@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: haskell | 高機能うさぎ小屋]]></title>
+  <link href="http://solorab.github.io/blog/categories/haskell/atom.xml" rel="self"/>
+  <link href="http://solorab.github.io/"/>
+  <updated>2013-12-31T18:47:13+09:00</updated>
+  <id>http://solorab.github.io/</id>
+  <author>
+    <name><![CDATA[そろうさぎ]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[free monadとはmonadそのものである]]></title>
+    <link href="http://solorab.github.io/blog/2013/12/29/free-monad-is-monad-itself/"/>
+    <updated>2013-12-29T17:22:11+09:00</updated>
+    <id>http://solorab.github.io/blog/2013/12/29/free-monad-is-monad-itself</id>
+    <content type="html"><![CDATA[<p>以前少し挑戦して敗れたが、ふと思い出してリベンジした</p>
+
+<p>結論としては<code>free monad</code>とはmonadをdataとして表現したものであると</p>
+
+<p><code>haskell
+    data Free f a = Pure a | Free (f (Free f a))
+    instance Functor f =&gt; Monad (Free f) where
+        return = Pure
+        Pure a &gt;&gt;= k = k a
+        Free fm &gt;&gt;= k = Free (fmap (&gt;&gt;=k) fm)
+</code></p>
+
+<!-- more -->
+
+<h2 id="section">型のイメージ</h2>
+<p>型レベルで、<code>ffffffffa</code>や<code>ffa</code>のような構造を畳み込む<br />
+つまり<code>Free f a</code>は<code>fffffffa</code>と読み替えられる</p>
+
+<p>たとえば</p>
+
+<ul>
+  <li><code>Free [] a</code> ~ <code>[[[[[a]]]]]</code></li>
+  <li><code>Free Maybe a</code> ~ <code>Maybe (Maybe (Maybe a))</code></li>
+</ul>
+
+<h2 id="section-1">値と型</h2>
+<p><code>haskell
+    Free [Free [Free [Pure ()]]] :: Free [] ()
+    Free [Pure 3, Pure 2, Free [Pure 1, Free []], Pure 0] :: Num a =&gt; Free [] a
+    Free [] :: Free [] a
+    Pure () :: Free f ()
+    Free [Pure $ Free [Pure ()]] :: Free [] (Free [] ())
+</code>
+よく分からない</p>
+
+<h2 id="join">手を動かす: join</h2>
+<p><code>&gt;&gt;=</code>や<code>bind</code>と呼ばれる<code>Monad m =&gt; m a -&gt; (a -&gt; m b) -&gt; m b</code>は<br />
+<code>Control.Monad.join</code>こと<code>Monad m =&gt; m (m a) -&gt; m a</code>で定義できる<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>ので<br />
+理解のため<code>join</code>を定義してみる</p>
+
+<p><code>haskell
+    join' :: Functor f =&gt; Free f (Free f a) -&gt; Free f a
+    join' (Pure a) = a
+    join' (Free fFreefa) = Free (fmap join' fFreefa)
+</code></p>
+
+<h3 id="maybe">実際に: Maybe</h3>
+<p><code>haskell
+    &gt;&gt;&gt; let x = Free$Just (Free$Just (Pure (Free$Just (Pure Nothing))))
+    &gt;&gt;&gt; :t x
+    x :: Free Maybe (Free Maybe (Maybe a))
+    &gt;&gt;&gt; join x
+    Free (Just (Free (Just (Free (Just (Pure Nothing))))))
+</code>
+手で追う</p>
+
+<p><code>haskell
+    join          (Free$Just (Free$Just (Pure (Free$Just (Pure Nothing)))))
+    Free (fmap   join $ Just (Free$Just (Pure (Free$Just (Pure Nothing)))))
+    Free (Just $ join        (Free$Just (Pure (Free$Just (Pure Nothing)))))
+    Free$Just          (join (Free$Just (Pure (Free$Just (Pure Nothing)))))
+    Free$Just          (Free$Just (join (Pure (Free$Just (Pure Nothing)))))
+    Free$Just          (Free$Just             (Free$Just (Pure Nothing)))
+                   Free$Just (Free$Just       (Free$Just (Pure Nothing)))
+</code></p>
+
+<ol>
+  <li>初期状態</li>
+  <li><code>join</code>の展開</li>
+  <li><code>fmap</code>の展開: <code>fmap f (Just a) = Just (f a)</code></li>
+  <li>見やすくしただけ: <code>join</code>と<code>Free$Just</code>が入れ替わったのが分かる</li>
+  <li>同様にする</li>
+  <li><code>Pure</code>は<code>join</code>と対消滅する</li>
+  <li>見やすくしただけ: 外側のPureを道連れにjoinが消え、外側と内側のFreeの境目を潰しているのが分かる</li>
+</ol>
+
+<h3 id="list">もう少し複雑な例: List</h3>
+<p><code>haskell
+    &gt;&gt;&gt; let x = Free[ Free[ Free[], Pure( Free[] ) ], Pure( Free[ Pure() ] ) ]
+    &gt;&gt;&gt; :t x
+    x :: Free [] (Free [] ())
+    &gt;&gt;&gt; join x
+    Free [Free [Free [],Free []],Free [Pure ()]]
+</code></p>
+
+<p><code>haskell
+    join$Free[      Free[      Free[],      Pure( Free[] ) ],      Pure( Free[ Pure() ] ) ]
+         Free[ join$Free[      Free[],      Pure( Free[] ) ], join$Pure( Free[ Pure() ] ) ]
+         Free[      Free[ join$Free[], join$Pure( Free[] ) ],            Free[ Pure() ]   ]
+         Free[      Free[      Free[],            Free[]   ],            Free[ Pure() ]   ]
+</code></p>
+
+<h3 id="section-2">解釈</h3>
+<p><code>join</code>の型が<code>Free f (Free f a) -&gt; Free f a</code>で、<code>Free f a</code>は<code>fffffffa</code>などと読み替えられることから、<br />
+<code>join</code>とは<code>ffff(ffffa) -&gt; ffffffffa</code>的ななにかである<br />
+それともつじつまの合う結果である<br />
+なんとなく雰囲気はつかめた</p>
+
+<h3 id="bind">bindへ</h3>
+<p>そして</p>
+
+<p><code>haskell
+    bind :: (Functor m, Monad m) =&gt; m a -&gt; (a -&gt; m b) -&gt; m b
+    bind x f = join $ fmap f x
+</code>
+である<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup></p>
+
+<p><code>haskell
+    &gt;&gt;&gt; Free[ Pure 7, Pure 2 ] &gt;&gt;= (\ x -&gt; Free[ Pure (show x), Pure (show (x ^ x)) ])
+    Free [Free [Pure "7",Pure "823543"],Free [Pure "2",Pure "4"]]
+</code>
+右辺のPureの位置に左辺が埋め込まれている</p>
+
+<h2 id="section-3">自由</h2>
+<p>弄っていたらいつの間にか気がついた<br />
+<code>Free</code>の<code>free</code>とはおそらくfree monoidやfree magmaの<code>free</code>であろう<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup><br />
+つまり、公理の等式以外に元の間の関係式をもたない、という意味<br />
+この場合公理とはモナド則</p>
+
+<p>つまりGADTsで定義して見やすくすると</p>
+
+<p><code>haskell
+    class Functor m =&gt; Monad m where
+        unit :: a -&gt; m a
+        join :: m (m a) -&gt; m a
+    data FreeMonad f a where
+        Unit :: a -&gt; FreeMonad f a
+        Join :: f (FreeMonad f a) -&gt; FreeMonad f a
+</code>
+とある程度綺麗に対応している</p>
+
+<h2 id="section-4">結論</h2>
+<p><code>Free</code>とはmonadそのものであり、monadをdataとして表現したものである<br />
+lispに似ているなと感じる</p>
+
+<h2 id="section-5">予防線と残った疑問</h2>
+<p><code>free monad</code>には別の定義も存在して</p>
+
+<p><code>haskell
+    -- join / f無し
+    data FreeMonad a where
+        Unit :: a -&gt; FreeMonad a
+        Join :: FreeMonad (FreeMonad a) -&gt; FreeMonad a
+</code></p>
+
+<p><code>haskell
+    -- bind / f無し
+    data FreeMonad a where
+        Return :: a -&gt; FreeMonad a
+        Bind :: FreeMonad x -&gt; (x -&gt; FreeMonad a) -&gt; FreeMonad a
+</code></p>
+
+<p><code>haskell
+    -- bind / f有り(BindのFreeMonad消去)
+    data FreeMonad f a where
+        Return :: a -&gt; FreeMonad f a
+        Bind :: f x -&gt; (x -&gt; FreeMonad f a) -&gt; FreeMonad f a
+</code>
+と思いつく範囲だけで3つ<br />
+しかもこの3つは<code>f Functor</code>制約なしでmonadになる</p>
+
+<p><code>haskell
+    -- bind / f無し
+    instance Monad FreeMonad where
+        return = Return
+        (&gt;&gt;=) = Bind
+</code></p>
+
+<p><code>haskell
+    -- bind / f有り(BindのFreeMonad消去)
+    instance Monad (FreeMonad f) where
+        return = Return
+        (&gt;&gt;=) (Return a) a2fb = a2fb a
+        (&gt;&gt;=) (Bind fx x2fa) a2fb = Bind fx ((&gt;&gt;= a2fb) . x2fa)
+</code></p>
+
+<p>一方<code>Free</code>で使われている定義は</p>
+
+<p><code>haskell
+    -- join / f有り(JoinのFreeMonad消去)
+    instance Functor f =&gt; Functor (FreeMonad f) where
+        fmap a2b (Unit a) = Unit $ a2b a
+        fmap a2b (Join ffa) = Join $ fmap (fmap a2b) ffa
+    join' :: Functor f =&gt; FreeMonad f (FreeMonad f a) -&gt; FreeMonad f a
+    join' (Unit a) = a
+    join' (Join ffa) = Join $ fmap join' ffa
+    instance Functor f =&gt; Monad (FreeMonad f) where
+        return = Unit
+        (&gt;&gt;=) fa a2fb = join' $ fmap a2fb fa
+</code>
+と要Functor制約<br />
+<code>Join</code>の<code>f (FreeMonad f a)</code>を展開するのにどうしても必要なようだ<sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup></p>
+
+<p>そしてそもそも<code>f</code>が入るとはどういうことなのかいまいち分からない<br />
+もしかしたら<code>Free</code>はfree monadでなく類似の別な概念のfreeかもしれない<br />
+圏論に精通していないので分からない<sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup></p>
+
+<h3 id="operational">operational</h3>
+<p>さらに強いと聞くoperational monadはこのbind型のfree monadなのではと考えた</p>
+
+<p><code>haskell
+    type Program t = Free (Coyoneda t)
+</code>
+らしく、</p>
+
+<p><code>haskell
+    data Coyoneda t x where
+        Coyoneda :: t r -&gt; (r -&gt; a) -&gt; Coyoneda t a
+    instance Functor (Coyoneda t) where
+        fmap f (Coyoneda t g) = Coyoneda t (f . g)
+</code>
+とcoyonedaは制約なしでfunctorを作るので、ただのdataからmonadになるのだそうだ</p>
+
+<p>coyonedaのmoduleも<code>Data.Functor.Coyoneda</code>にあるので、free functor的ななにかだと思い、<br />
+free functorとfree monadを合成してもfree monadだろうという発想から少し頑張った<br />
+しかし型パズルが解けずinterpretが定義できないので、全く違うのかもしれないし、haskell力足りていないだけかもしれない</p>
+
+<h2 id="section-6">参考</h2>
+<ul>
+  <li><a href="http://d.hatena.ne.jp/fumiexcel/20121111/1352614885">そろそろFreeモナドに関して一言いっとくか - fumievalの日記</a></li>
+  <li><a href="http://d.hatena.ne.jp/its_out_of_tune/20121111/1352632815">Freeモナドって何なのさっ！？ - capriccioso String Creating(Object something){ return My.Expression(something); }</a></li>
+</ul>
+
+<h3 id="operational-1">operational</h3>
+<ul>
+  <li><a href="http://d.hatena.ne.jp/its_out_of_tune/20130601/1370109743">YonedaとCoYoneda、そしてFunctor - capriccioso String Creating(Object something){ return My.Expression(something); }</a></li>
+  <li><a href="http://fumieval.hatenablog.com/entry/2013/11/11/154146">Operationalモナドをゲームに応用した話 - モナドとわたしとコモナド</a></li>
+  <li><a href="http://myuon-myon.hatenablog.com/entry/2013/06/09/135407">Yoneda lemmaとOperational Monad - Just $ A sandbox</a></li>
+  <li><a href="http://togetter.com/li/526588">Operational Monad - Togetterまとめ</a></li>
+</ul>
+
+<h2 id="packages">packages</h2>
+<ul>
+  <li><a href="http://hackage.haskell.org/package/free">http://hackage.haskell.org/package/free</a> # 推奨</li>
+  <li><a href="http://hackage.haskell.org/package/control-monad-free">http://hackage.haskell.org/package/control-monad-free</a> # ?</li>
+  <li><a href="http://hackage.haskell.org/package/transformers-free">http://hackage.haskell.org/package/transformers-free</a> # deprecated</li>
+</ul>
+
+<h3 id="operational-2">operational</h3>
+<ul>
+  <li><a href="http://hackage.haskell.org/package/operational">http://hackage.haskell.org/package/operational</a> # 一番人気</li>
+  <li><a href="http://hackage.haskell.org/package/free-operational">http://hackage.haskell.org/package/free-operational</a> # freeを使った実装</li>
+  <li><a href="http://hackage.haskell.org/package/minioperational">http://hackage.haskell.org/package/minioperational</a> # 上に挙げたoperationalの解説記事など書いてる人の再実装</li>
+</ul>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p><a href="https://ja.wikibooks.org/wiki/Haskell/%E5%9C%8F%E8%AB%96#.E3.83.A2.E3.83.8A.E3.83.89">https://ja.wikibooks.org/wiki/Haskell/%E5%9C%8F%E8%AB%96#.E3.83.A2.E3.83.8A.E3.83.89</a><a href="#fnref:1" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>むしろmonadの定義としてはjoinの方が自然に見える<a href="#fnref:2" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>functorの制約はhaskellのmonadの定義が悪い<a href="#fnref:3" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p>あまり圏論に明るくないので少し怪しい<a href="#fnref:4" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:5">
+      <p>haskellのmonadがbindである理由かもしれない<a href="#fnref:5" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:6">
+      <p>圏論に精通していれば分かるのかどうかも分からない<a href="#fnref:6" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: arch | 高機能うさぎ小屋]]></title>
+  <link href="http://solorab.github.io/blog/categories/arch/atom.xml" rel="self"/>
+  <link href="http://solorab.github.io/"/>
+  <updated>2013-12-31T18:47:13+09:00</updated>
+  <id>http://solorab.github.io/</id>
+  <author>
+    <name><![CDATA[そろうさぎ]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[os入れ直した]]></title>
+    <link href="http://solorab.github.io/blog/2013/12/12/reinstalled-os/"/>
+    <updated>2013-12-12T02:18:26+09:00</updated>
+    <id>http://solorab.github.io/blog/2013/12/12/reinstalled-os</id>
+    <content type="html"><![CDATA[<p>XUbuntu, xmonad, fcitx + mozc<br />
+導入のメモ</p>
+
+<!-- more -->
+
+<ol>
+  <li>ubuntuでGDMからloginできなくなった
+    <ul>
+      <li>おそらくupdateが原因、ちゃんと調べてないのでよく分からない</li>
+    </ul>
+  </li>
+  <li>良い機会だということでarchを入れた</li>
+  <li>音が出ないなどしたのでxubuntuに逃げた</li>
+</ol>
+
+<h2 id="arch-linux">Arch Linux</h2>
+<p>次に挑戦する時のために</p>
+
+<h3 id="install">install</h3>
+<p><a href="https://wiki.archlinux.org/index.php/Installation_Guide">install.txt</a>をよく読んでinstall<br />
+locale-genを忘れてcan’t set the localeとか言われまくって悩んだ</p>
+
+<h3 id="sudo">sudo</h3>
+<p>よく分からなかったので/etc/sudoersに無理やり追記した<br />
+<code>echo $USER ALL=\(ALL\) ALL &gt;&gt; /etc/sudoers</code> 的な</p>
+
+<h3 id="gui">GUI環境</h3>
+<p><code>pacman -S xfce4</code><br />
+gnomeは入れたが起動失敗するのでやめた</p>
+
+<p><code>pacman -S xmonad</code> し<br />
+Session and Startup (xfce4-session-settings) -&gt; Application Autostart に <code>xmonad --replace</code> を追加</p>
+
+<h3 id="section">日本語入力</h3>
+<p>fcitxを導入することに<br />
+<code>pacman -S fcitx fcitx-mozc fcitx-configtool</code><br />
+変換/無変換をon/offに割り当て</p>
+
+<p>fcitxは~/.Xmodmapがあれば読み込むらしく、xmodmap使ってる人には嬉しい</p>
+
+<h3 id="mount">mount権限の追加</h3>
+<p>polkitなるものを導入<br />
+適当なgroup作って権限付与</p>
+
+<p><code>
+# /etc/polkit-1/rules.d/10-enable-mount.rules
+polkit.addRule(function(action, subject) {
+    if (action.id == "org.freedesktop.udisks2.filesystem-mount-system" &amp;&amp; subject.isInGroup("adm")) {
+        return polkit.Result.YES;
+    }
+});
+</code></p>
+
+<h3 id="section-1">無線</h3>
+<p>調子悪い</p>
+
+<p>頻繁に切れ</p>
+
+<p><code>sh
+    $ ping 192.168.2.1
+    connect: Network is unreachable
+</code>
+となるなど</p>
+
+<h3 id="section-2">音声</h3>
+<p>出ない<br />
+出ない</p>
+
+<h2 id="xubuntu">XUbuntu</h2>
+
+<h3 id="section-3">無線</h3>
+<p>何故か調子が良い</p>
+
+<h3 id="section-4">音声</h3>
+<p>理由はわからないが出る<br />
+xfceのpanel上のiconからは一切操作できないが、thinkpadのkeyboardの音量関連のkeyを通して操作可</p>
+
+<h3 id="xfce-sudo-polkit">xfce, sudo, polkit</h3>
+<p>導入済み</p>
+
+<h3 id="section-5">日本語入力</h3>
+<p>同じくfcitxをinstall -&gt; 問題発生 -&gt; 解決</p>
+
+<p><a href="http://itiut.hatenablog.com/entry/2013/10/25/145408">Ubuntu 13.10 で fcitx-mozc を使う - 部屋の中にも一年</a></p>
+
+<blockquote>
+  <p>japanese-testersのリポジトリを追加。
+  デフォルトのリポジトリのFicitxだと、IMオンのホットキーがIMのトグルとして動き、IMオフのホットキーが何も動作しないバグ？が起こりました。
+  <code>
+      $ sudo add-apt-repository ppa:japanese-testers/ppa
+      $ sudo apt-get update
+ </code></p>
+</blockquote>
+
+<h3 id="xmonad">xmonad</h3>
+<p>自動起動してくれない問題が発生した<br />
+環境変数の不足(PATH)により~/.xmonad/xmonad.hs内でこけていた<br />
+application autostartのxmonadのcommandを<code>zsh -c 'xmonad --replace'</code>として、無理やり~/.zshenvを読ませることにより解決</p>
+
+<p>試行錯誤中にSettings Editor (xfce4-settings-editor) -&gt; xfce4-session -&gt; session/Failsafe/Client0_commandなる項目を見つけた<br />
+初期値が[“xfwm4”, “–replace”]とものすごくwindow manager関連ぽい<br />
+しかし<code>xfconf-query -c xfce4-session -p /sessions/Failsafe/Client0_Command -t string -s xmonad -t string -s --replace -a</code>などとして設定しても、起動している様子が見られなかった<br />
+他の方法で解決したので放置</p>
+
+<ul>
+  <li><a href="http://www.haskell.org/haskellwiki/Xmonad/Using_xmonad_in_XFCE">Xmonad/Using xmonad in XFCE - HaskellWiki</a></li>
+  <li><a href="https://wiki.archlinux.org/index.php/xfce#Window_Manager">Xfce - ArchWiki # Window Manager</a></li>
+  <li><a href="http://zsh.sourceforge.net/Intro/intro_3.html">An Introduction to the Z Shell - Startup Files</a></li>
+</ul>
+
+<h3 id="section-6">トラボ</h3>
+<p>thinkpadとの相性でhotplugできない問題継続中<br />
+抱き合わせのwindows上ですらできないのだから諦めている</p>
+
+<h3 id="section-7">画面</h3>
+<p>thinkpadの問題その２<br />
+以前からsuspend後に画面の電源がつかなかった<br />
+さらに蓋を閉じてもアウトに<br />
+これは治せるだろうが面倒なので放置</p>
+]]></content>
+  </entry>
+  
+</feed>

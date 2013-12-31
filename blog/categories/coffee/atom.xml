@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: coffee | 高機能うさぎ小屋]]></title>
+  <link href="http://solorab.github.io/blog/categories/coffee/atom.xml" rel="self"/>
+  <link href="http://solorab.github.io/"/>
+  <updated>2013-12-31T18:47:13+09:00</updated>
+  <id>http://solorab.github.io/</id>
+  <author>
+    <name><![CDATA[そろうさぎ]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[coffeescriptのis notとisntは違う]]></title>
+    <link href="http://solorab.github.io/blog/2013/12/05/is-not-is-not-isnt/"/>
+    <updated>2013-12-05T14:24:25+09:00</updated>
+    <id>http://solorab.github.io/blog/2013/12/05/is-not-is-not-isnt</id>
+    <content type="html"><![CDATA[<p><code>coffeescript
+    a is not b
+    a isnt b
+</code>
+は</p>
+
+<p><code>javascript
+    a === !b
+    a !=== b
+</code>
+だそうだ<br />
+つまり <code>a is not b</code> = <code>a is (not b)</code></p>
+
+<p><a href="http://coffeescript.org/#try:a%20is%20not%20b%0Aa%20isnt%20b">try</a></p>
+]]></content>
+  </entry>
+  
+</feed>

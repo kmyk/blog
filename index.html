@@ -9,9 +9,13 @@
   <meta name="author" content="そろうさぎ">
 
   
-  <meta name="description" content="pixiv-tools
-勢いで作った
-CasperJS + PhantomJS でかなり強引に処理 ">
+  <meta name="description" content="以前少し挑戦して敗れたが、ふと思い出してリベンジした 結論としてはfree monadとはmonadをdataとして表現したものであると 1
+2
+3
+4
+5
+data Free f a = Pure a | Free (f (Free f a))
+instance Functor f =&gt; &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -31,6 +35,7 @@ CasperJS + PhantomJS でかなり強引に処理 ">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="/stylesheets/data-table.css" media="screen, projection" rel="stylesheet" type="text/css">
 
   
 
@@ -68,6 +73,197 @@ CasperJS + PhantomJS でかなり強引に処理 ">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/12/29/free-monad-is-monad-itself/">Free Monadとはmonadそのものである</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-12-29T17:22:11+09:00" pubdate data-updated="true">Dec 29<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>以前少し挑戦して敗れたが、ふと思い出してリベンジした</p>
+
+<p>結論としては<code>free monad</code>とはmonadをdataとして表現したものであると</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="kr">data</span> <span class="kt">Free</span> <span class="n">f</span> <span class="n">a</span> <span class="ow">=</span> <span class="kt">Pure</span> <span class="n">a</span> <span class="o">|</span> <span class="kt">Free</span> <span class="p">(</span><span class="n">f</span> <span class="p">(</span><span class="kt">Free</span> <span class="n">f</span> <span class="n">a</span><span class="p">))</span>
+</span><span class="line"><span class="kr">instance</span> <span class="kt">Functor</span> <span class="n">f</span> <span class="ow">=&gt;</span> <span class="kt">Monad</span> <span class="p">(</span><span class="kt">Free</span> <span class="n">f</span><span class="p">)</span> <span class="kr">where</span>
+</span><span class="line">    <span class="n">return</span> <span class="ow">=</span> <span class="kt">Pure</span>
+</span><span class="line">    <span class="kt">Pure</span> <span class="n">a</span> <span class="o">&gt;&gt;=</span> <span class="n">k</span> <span class="ow">=</span> <span class="n">k</span> <span class="n">a</span>
+</span><span class="line">    <span class="kt">Free</span> <span class="n">fm</span> <span class="o">&gt;&gt;=</span> <span class="n">k</span> <span class="ow">=</span> <span class="kt">Free</span> <span class="p">(</span><span class="n">fmap</span> <span class="p">(</span><span class="o">&gt;&gt;=</span><span class="n">k</span><span class="p">)</span> <span class="n">fm</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/12/29/free-monad-is-monad-itself/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/12/12/reinstalled-os/">Os入れ直した</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-12-12T02:18:26+09:00" pubdate data-updated="true">Dec 12<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>XUbuntu, xmonad, fcitx + mozc<br />
+導入のメモ</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/12/12/reinstalled-os/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/12/06/install-japanese-ocr/">日本語ocrをinstallした</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-12-06T14:57:47+09:00" pubdate data-updated="true">Dec 6<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://code.google.com/p/nhocr/">nhocr</a> and <a href="http://code.google.com/p/tesseract-ocr/">tesseract</a></p>
+
+<p>日本語ではnhocrが、英数字ではtesseractが良いようだ</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/12/06/install-japanese-ocr/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/12/05/is-not-is-not-isnt/">Coffeescriptのis Notとisntは違う</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-12-05T14:24:25+09:00" pubdate data-updated="true">Dec 5<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="coffeescript"><span class="line"><span class="nx">a</span> <span class="o">is</span> <span class="o">not</span> <span class="nx">b</span>
+</span><span class="line"><span class="nx">a</span> <span class="o">isnt</span> <span class="nx">b</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p>は</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="javascript"><span class="line"><span class="nx">a</span> <span class="o">===</span> <span class="o">!</span><span class="nx">b</span>
+</span><span class="line"><span class="nx">a</span> <span class="o">!===</span> <span class="nx">b</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p>だそうだ<br />
+つまり <code>a is not b</code> = <code>a is (not b)</code></p>
+
+<p><a href="http://coffeescript.org/#try:a%20is%20not%20b%0Aa%20isnt%20b">try</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -166,11 +362,23 @@ CasperJS + PhantomJS でかなり強引に処理</p>
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2013/11/27/scraped-pixiv/">Pixivをscarpingした</a>
+        <a href="/blog/2013/12/29/free-monad-is-monad-itself/">Free Monadとはmonadそのものである</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/11/14/renewed-everything/">いろいろと作り直した</a>
+        <a href="/blog/2013/12/12/reinstalled-os/">Os入れ直した</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/12/06/install-japanese-ocr/">日本語ocrをinstallした</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/12/05/is-not-is-not-isnt/">Coffeescriptのis Notとisntは違う</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/11/27/scraped-pixiv/">Pixivをscarpingした</a>
       </li>
     
   </ul>

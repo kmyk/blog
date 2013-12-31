@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ocr | 高機能うさぎ小屋]]></title>
+  <link href="http://solorab.github.io/blog/categories/ocr/atom.xml" rel="self"/>
+  <link href="http://solorab.github.io/"/>
+  <updated>2013-12-31T18:47:13+09:00</updated>
+  <id>http://solorab.github.io/</id>
+  <author>
+    <name><![CDATA[そろうさぎ]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[日本語ocrをinstallした]]></title>
+    <link href="http://solorab.github.io/blog/2013/12/06/install-japanese-ocr/"/>
+    <updated>2013-12-06T14:57:47+09:00</updated>
+    <id>http://solorab.github.io/blog/2013/12/06/install-japanese-ocr</id>
+    <content type="html"><![CDATA[<p><a href="http://code.google.com/p/nhocr/">nhocr</a> and <a href="http://code.google.com/p/tesseract-ocr/">tesseract</a></p>
+
+<p>日本語ではnhocrが、英数字ではtesseractが良いようだ</p>
+
+<!-- more -->
+
+<h2 id="tesseract">tesseract</h2>
+<p>日本語専用ではない</p>
+
+<h3 id="install">install</h3>
+<p><code>sh
+    sudo apt-get install tesseract-ocr tesseract-ocr-jpn
+</code>
+簡単</p>
+
+<h3 id="test">test</h3>
+<p><code>sh
+    # tesseract 3.02.01
+    $ convert -font /usr/share/fonts/truetype/fonts-japanese-gothic.ttf -pointsize 32 label:'こんにちは 世界' a.pbm
+    $ tesseract a.pbm a -l jpn -psm 7 2&gt;/dev/null ; cat a.txt
+    こん~二ち【ま 世界
+</code>
+倍角文字やギャル文字の自動生成に使えそうだと思ったが</p>
+
+<p><code>sh
+    $ convert -font /usr/share/fonts/truetype/fonts-japanese-gothic.ttf -pointsize 32 label:'超絶核爆' -geometry 200%x100% a.pbm
+    $ tesseract a.pbm a -l jpn -psm 7 2&gt;/dev/null ; cat a.txt
+    超絶核曝
+</code>
+と、漢字には強いようだ<br />
+表音文字より表意文字の方が得意とは驚きである</p>
+
+<h2 id="nhocr">nhocr</h2>
+
+<h3 id="install-1">install</h3>
+<p>少し嵌まった<br />
+prefixの指定が必須のようだ</p>
+
+<p><code>sh
+    # cd O2-tools
+    ./configure --prefix=/usr/local
+    make
+    sudo make install
+    # cd nhocr
+    ./configure --prefix=/usr/local --with-O2tools=/usr/local
+    make
+    sudo make install
+</code></p>
+
+<h3 id="test-1">test</h3>
+<p><code>sh
+    # NHocr - Japanese OCR  v0.21
+    $ convert -font /usr/share/fonts/truetype/fonts-japanese-gothic.ttf -pointsize 32 label:'こんにちは 世界' a.pbm
+    $ nhocr -o - -line a.pbm
+    こんにちは世界
+</code>
+問題ない<br />
+しかし非常にきれいな画像での結果なので、実際に使うと違ってくるかもしれない</p>
+
+<h2 id="section">日本語以外の比較</h2>
+<p>``` sh
+    $ convert -pointsize 32 label:’Hello World’ a.pbm
+    $ nhocr -o - -line a.pbm
+    H引foWohd
+    $ tesseract a.pbm a -l jpn -psm 7 2&gt;/dev/null ; cat a.txt
+    Heーー。 W。「ーd
+    $ tesseract a.pbm a -psm 7 2&gt;/dev/null ; cat a.txt
+    Hello World</p>
+
+<pre><code>$ convert -pointsize 32 label:'2.71828183' a.pbm
+$ nhocr -o - -line a.pbm
+2.7i828i88
+$ tesseract a.pbm a -l jpn -psm 7 2&gt;/dev/null ; cat a.txt
+2'7ー 828ー 83
+$ tesseract a.pbm a -psm 7 2&gt;/dev/null ; cat a.txt
+2.71828183 ``` 日本語以外ではtesseract(-l jpn 無し)が強い   予想通りの結果
+</code></pre>
+
+<h2 id="library">他のlibrary</h2>
+<p><a href="http://tomoe.sourceforge.jp/cgi-bin/ja/blog/index.rb">tomoe</a></p>
+]]></content>
+  </entry>
+  
+</feed>

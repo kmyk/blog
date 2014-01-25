@@ -4,7 +4,7 @@
   <title><![CDATA[高機能うさぎ小屋]]></title>
   <link href="http://solorab.github.io/atom.xml" rel="self"/>
   <link href="http://solorab.github.io/"/>
-  <updated>2014-01-14T18:12:24+09:00</updated>
+  <updated>2014-01-25T22:28:39+09:00</updated>
   <id>http://solorab.github.io/</id>
   <author>
     <name><![CDATA[そろうさぎ]]></name>
@@ -12,6 +12,181 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Parsecで非決定的パース]]></title>
+    <link href="http://solorab.github.io/blog/2014/01/25/non-deterministic-parsing-with-parsec/"/>
+    <updated>2014-01-25T18:28:27+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/01/25/non-deterministic-parsing-with-parsec</id>
+    <content type="html"><![CDATA[<p>ざっくりparseして、出力を<code>filter</code>や<code>head</code>で加工したかった</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="nf">fork</span> <span class="ow">::</span> <span class="p">[</span><span class="kt">ParsecT</span> <span class="n">s</span> <span class="n">u</span> <span class="kt">[]</span> <span class="n">a</span><span class="p">]</span> <span class="ow">-&gt;</span> <span class="kt">ParsecT</span> <span class="n">s</span> <span class="n">u</span> <span class="kt">[]</span> <span class="n">a</span>
+</span><span class="line"><span class="nf">fork</span> <span class="ow">=</span> <span class="n">join</span> <span class="o">.</span> <span class="n">lift</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>※ list-monadで非決定的計算できるのは、parsecに限った話ではない</p>
+
+<!-- more -->
+
+<p><code>ParsecT</code>をlist-monadと合成するだけなので、上のように定義する<br />
+型注釈なしなら<code>join . lift :: (Monad (t m), Monad m, MonadTrans t) =&gt; m (t m a) -&gt; t m a</code></p>
+
+<p>非決定的の厳密な定義を知らないが、chooseとfail<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>が使えるので非決定的と呼んでいいはず<br />
+ただし<code>fail = fork []</code>であって、<code>Prelude.fail</code>(<code>Text.Parsec.parserFail</code>)ではない</p>
+
+<h2 id="section">例</h2>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="nf">p</span> <span class="ow">=</span> <span class="n">try</span> <span class="n">p&#39;</span> <span class="o">&lt;|&gt;</span> <span class="n">many1</span> <span class="n">anyChar</span> <span class="kr">where</span>
+</span><span class="line">    <span class="n">p&#39;</span> <span class="ow">=</span> <span class="kr">do</span>
+</span><span class="line">        <span class="n">x</span> <span class="ow">&lt;-</span> <span class="n">manyTill</span> <span class="n">anyChar</span> <span class="o">$</span> <span class="n">char</span> <span class="sc">&#39;+&#39;</span>
+</span><span class="line">        <span class="n">fork</span>
+</span><span class="line">            <span class="p">[</span> <span class="n">return</span> <span class="n">x</span>
+</span><span class="line">            <span class="p">,</span> <span class="p">(</span><span class="n">x</span> <span class="o">++</span><span class="p">)</span> <span class="o">&lt;$&gt;</span> <span class="n">p</span>
+</span><span class="line">            <span class="p">]</span>
+</span><span class="line">
+</span><span class="line"><span class="o">&gt;&gt;&gt;</span> <span class="n">runParserT</span> <span class="n">p</span> <span class="nb">()</span> <span class="s">&quot;input&quot;</span> <span class="s">&quot;a+b+c&quot;</span> <span class="kr">where</span>
+</span><span class="line"><span class="p">[</span><span class="kt">Right</span> <span class="s">&quot;a&quot;</span><span class="p">,</span><span class="kt">Right</span> <span class="s">&quot;ab&quot;</span><span class="p">,</span><span class="kt">Right</span> <span class="s">&quot;abc&quot;</span><span class="p">]</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="nf">q</span> <span class="ow">=</span> <span class="n">try</span> <span class="n">q&#39;</span> <span class="o">&lt;|&gt;</span> <span class="n">fork</span> <span class="kt">[]</span> <span class="kr">where</span>
+</span><span class="line">    <span class="n">q&#39;</span> <span class="ow">=</span> <span class="kr">do</span>
+</span><span class="line">        <span class="n">x</span> <span class="ow">&lt;-</span> <span class="n">p</span>
+</span><span class="line">        <span class="n">fork</span>
+</span><span class="line">            <span class="p">[</span> <span class="n">return</span> <span class="p">[</span><span class="n">x</span><span class="p">]</span>
+</span><span class="line">            <span class="p">,</span> <span class="p">(</span><span class="n">x</span> <span class="kt">:</span><span class="p">)</span> <span class="o">&lt;$&gt;</span> <span class="n">q</span>
+</span><span class="line">            <span class="p">]</span>
+</span><span class="line">
+</span><span class="line"><span class="o">&gt;&gt;&gt;</span> <span class="n">runParserT</span> <span class="n">p</span> <span class="nb">()</span> <span class="s">&quot;input&quot;</span> <span class="s">&quot;a+b+c&quot;</span> <span class="kr">where</span>
+</span><span class="line"><span class="p">[</span><span class="kt">Right</span> <span class="p">[</span><span class="s">&quot;a&quot;</span><span class="p">],</span><span class="kt">Right</span> <span class="p">[</span><span class="s">&quot;a&quot;</span><span class="p">,</span><span class="s">&quot;b&quot;</span><span class="p">],</span><span class="kt">Right</span> <span class="p">[</span><span class="s">&quot;a&quot;</span><span class="p">,</span><span class="s">&quot;b&quot;</span><span class="p">,</span><span class="s">&quot;c&quot;</span><span class="p">],</span><span class="kt">Right</span> <span class="p">[</span><span class="s">&quot;a&quot;</span><span class="p">,</span><span class="s">&quot;bc&quot;</span><span class="p">],</span><span class="kt">Right</span> <span class="p">[</span><span class="s">&quot;ab&quot;</span><span class="p">],</span><span class="kt">Right</span> <span class="p">[</span><span class="s">&quot;ab&quot;</span><span class="p">,</span><span class="s">&quot;c&quot;</span><span class="p">],</span><span class="kt">Right</span> <span class="p">[</span><span class="s">&quot;abc&quot;</span><span class="p">]]</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><code>ここではきものをぬいでください</code>のような文をparseするとき便利なんじゃないでしょうか</p>
+
+<h2 id="section-1">参考</h2>
+
+<ul>
+  <li><a href="http://www.asahi-net.or.jp/~kc7k-nd/onlispjhtml/nondeterminism.html">On Lisp — 非決定性</a></li>
+  <li><a href="http://hooki.blog23.fc2.com/blog-entry-74.html">雑草ブログ Listモナドで非決定的計算をしよう</a></li>
+</ul>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>On Lispの説明による<a href="#fnref:1" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[[Int]をparsecでパースする]]></title>
+    <link href="http://solorab.github.io/blog/2014/01/25/parse-list-of-ints-with-parsec/"/>
+    <updated>2014-01-25T17:50:35+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/01/25/parse-list-of-ints-with-parsec</id>
+    <content type="html"><![CDATA[<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="o">&gt;&gt;&gt;</span> <span class="n">parse</span> <span class="p">(</span><span class="n">many</span> <span class="n">even&#39;</span><span class="p">)</span> <span class="s">&quot;numbers&quot;</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">9999</span><span class="p">]</span>
+</span><span class="line"><span class="kt">Right</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+</span><span class="line">
+</span><span class="line"><span class="o">&gt;&gt;&gt;</span> <span class="n">parse</span> <span class="p">(</span><span class="n">many</span> <span class="p">(</span><span class="n">zero</span> <span class="o">&lt;|&gt;</span> <span class="n">odd&#39;</span><span class="p">)</span> <span class="o">&gt;&gt;</span> <span class="n">eof</span><span class="p">)</span> <span class="s">&quot;numbers&quot;</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">]</span>
+</span><span class="line"><span class="kt">Left</span> <span class="s">&quot;numbers&quot;</span> <span class="p">(</span><span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="n">column</span> <span class="mi">6</span><span class="p">)</span><span class="kt">:</span>
+</span><span class="line"><span class="nf">unexpected</span> <span class="mi">8</span>
+</span><span class="line"><span class="nf">expecting</span> <span class="n">zero</span><span class="p">,</span> <span class="n">odd</span> <span class="n">or</span> <span class="n">end</span> <span class="kr">of</span> <span class="n">input</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><code>[Int]</code>だとおふざけだが、複雑な何かだと便利かもしれない<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p>
+
+<!-- more -->
+
+<p><code>Monad m =&gt; Stream [tok] m tok</code>とあるので、<code>list</code>に包めば何でもparse可能に見える<br />
+しかし<code>Stream s m Char =&gt;</code>制約の代わりに<code>(Stream s m tok, Eq tok) =&gt;</code>なものが見当たらない<br />
+標準の<code>satisfy</code>さえ<code>:: Stream s m Char =&gt; (Char -&gt; Bool) -&gt; ParsecT s u m Char</code>と、<code>Char</code>しか受け入れてくれない<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup><br />
+仕方がないので<code>satisfy</code>を再定義する</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="nf">updatePos</span> <span class="ow">::</span> <span class="kt">SourcePos</span> <span class="ow">-&gt;</span> <span class="kt">Column</span> <span class="ow">-&gt;</span> <span class="kt">SourcePos</span>
+</span><span class="line"><span class="nf">updatePos</span> <span class="n">p</span> <span class="n">n</span> <span class="ow">=</span> <span class="n">setSourceColumn</span> <span class="n">p</span> <span class="p">(</span><span class="n">sourceColumn</span> <span class="n">p</span> <span class="o">+</span> <span class="n">n</span><span class="p">)</span>
+</span><span class="line">
+</span><span class="line"><span class="nf">satisfy&#39;</span> <span class="ow">::</span> <span class="p">(</span><span class="kt">Stream</span> <span class="n">s</span> <span class="n">m</span> <span class="n">t</span><span class="p">,</span> <span class="kt">Show</span> <span class="n">t</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="p">(</span><span class="n">t</span> <span class="ow">-&gt;</span> <span class="kt">Bool</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="kt">ParsecT</span> <span class="n">s</span> <span class="n">u</span> <span class="n">m</span> <span class="n">t</span>
+</span><span class="line"><span class="nf">satisfy&#39;</span> <span class="n">f</span> <span class="ow">=</span> <span class="n">tokenPrim</span> <span class="n">show</span>
+</span><span class="line">    <span class="p">(</span><span class="nf">\</span> <span class="n">pos</span> <span class="kr">_</span> <span class="kr">_</span> <span class="ow">-&gt;</span> <span class="n">updatePos</span> <span class="n">pos</span> <span class="mi">1</span><span class="p">)</span>
+</span><span class="line">    <span class="p">(</span><span class="nf">\</span> <span class="n">c</span> <span class="ow">-&gt;</span> <span class="kr">if</span> <span class="n">f</span> <span class="n">c</span> <span class="kr">then</span> <span class="kt">Just</span> <span class="n">c</span> <span class="kr">else</span> <span class="kt">Nothing</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><code>Text.Parsec.Char</code>のほぼ全ての関数<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>は<code>satisfy</code>経由で定義されているので、<br />
+<code>Text.Parsec.Int</code>を作ることが可能になる</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="nf">zero</span> <span class="ow">::</span> <span class="p">(</span><span class="kt">Num</span> <span class="n">a</span><span class="p">,</span> <span class="kt">Eq</span> <span class="n">a</span><span class="p">,</span> <span class="kt">Stream</span> <span class="n">s</span> <span class="n">m</span> <span class="n">a</span><span class="p">,</span> <span class="kt">Show</span> <span class="n">a</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="kt">ParsecT</span> <span class="n">s</span> <span class="n">u</span> <span class="n">m</span> <span class="n">a</span>
+</span><span class="line"><span class="nf">zero</span> <span class="ow">=</span> <span class="n">satisfy&#39;</span> <span class="p">(</span><span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="o">&lt;?&gt;</span> <span class="s">&quot;zero&quot;</span>
+</span><span class="line"><span class="nf">even&#39;</span><span class="p">,</span> <span class="n">odd&#39;</span> <span class="ow">::</span> <span class="p">(</span><span class="kt">Integral</span> <span class="n">a</span><span class="p">,</span> <span class="kt">Stream</span> <span class="n">s</span> <span class="n">m</span> <span class="n">a</span><span class="p">,</span> <span class="kt">Show</span> <span class="n">a</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="kt">ParsecT</span> <span class="n">s</span> <span class="n">u</span> <span class="n">m</span> <span class="n">a</span>
+</span><span class="line"><span class="nf">even&#39;</span> <span class="ow">=</span> <span class="n">satisfy&#39;</span> <span class="n">even</span> <span class="o">&lt;?&gt;</span> <span class="s">&quot;even&quot;</span>
+</span><span class="line"><span class="nf">odd&#39;</span> <span class="ow">=</span> <span class="n">satisfy&#39;</span> <span class="n">odd</span> <span class="o">&lt;?&gt;</span> <span class="s">&quot;odd&quot;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h2 id="section">参考</h2>
+<ul>
+  <li><a href="http://hackage.haskell.org/package/parsec">Hackage: parsec: Monadic parser combinators</a></li>
+  <li><a href="http://qiita.com/hiratara/items/a451b04fb19bfcc7ff08">Haskell - Parsecのソースちら見(3) - Qiita</a></li>
+</ul>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>便利でないかもしれない<a href="#fnref:1" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>parser-libraryなので当然<a href="#fnref:2" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p><code>Text.Parsec.Char.string</code>以外の全て<a href="#fnref:3" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Free Monadとはmonadそのものである]]></title>

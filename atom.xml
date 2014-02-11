@@ -4,7 +4,7 @@
   <title><![CDATA[高機能うさぎ小屋]]></title>
   <link href="http://solorab.github.io/atom.xml" rel="self"/>
   <link href="http://solorab.github.io/"/>
-  <updated>2014-01-25T22:28:39+09:00</updated>
+  <updated>2014-02-11T16:05:22+09:00</updated>
   <id>http://solorab.github.io/</id>
   <author>
     <name><![CDATA[そろうさぎ]]></name>
@@ -129,9 +129,9 @@
 <!-- more -->
 
 <p><code>Monad m =&gt; Stream [tok] m tok</code>とあるので、<code>list</code>に包めば何でもparse可能に見える<br />
-しかし<code>Stream s m Char =&gt;</code>制約の代わりに<code>(Stream s m tok, Eq tok) =&gt;</code>なものが見当たらない<br />
+しかし<code>Stream s m Char =&gt;</code>制約の代わりに<code>(Stream s m tok, Eq tok) =&gt;</code>なものが<del>見当たらない</del><br />
 標準の<code>satisfy</code>さえ<code>:: Stream s m Char =&gt; (Char -&gt; Bool) -&gt; ParsecT s u m Char</code>と、<code>Char</code>しか受け入れてくれない<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup><br />
-仕方がないので<code>satisfy</code>を再定義する</p>
+<del>仕方がないので</del><ins>仕方なくなかった(<a href="#ins">追記</a>)</ins><code>satisfy</code>を再定義する</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
@@ -169,6 +169,19 @@
   <li><a href="http://hackage.haskell.org/package/parsec">Hackage: parsec: Monadic parser combinators</a></li>
   <li><a href="http://qiita.com/hiratara/items/a451b04fb19bfcc7ff08">Haskell - Parsecのソースちら見(3) - Qiita</a></li>
 </ul>
+
+<h2 id="ins">追記</h2>
+<p>定義されてた</p>
+
+<p><a href="http://hackage.haskell.org/package/parsec-3.1.5/docs/Text-Parsec-Combinator.html#v:anyToken">Text.Parsec.Combinator.anyToken</a><br />
+<code>anyToken :: (Stream s m t, Show t) =&gt; ParsecT s u m t</code></p>
+
+<p>なので</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="nf">satisfy&#39;</span> <span class="n">f</span> <span class="ow">=</span> <span class="n">try</span> <span class="o">$</span> <span class="n">lookAhead</span> <span class="p">(</span><span class="n">anyToken</span> <span class="o">&gt;&gt;=</span> <span class="p">(</span><span class="nf">\</span> <span class="n">x</span> <span class="ow">-&gt;</span> <span class="kr">if</span> <span class="n">f</span> <span class="n">x</span> <span class="kr">then</span> <span class="n">return</span> <span class="n">x</span> <span class="kr">else</span> <span class="n">unexpected</span> <span class="o">$</span> <span class="n">show</span> <span class="n">x</span><span class="p">))</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p>としても良い</p>
 
 <hr />
 

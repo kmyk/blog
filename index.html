@@ -9,10 +9,8 @@
   <meta name="author" content="そろうさぎ">
 
   
-  <meta name="description" content="ざっくりparseして、出力をfilterやheadで加工したかった 1
-2
-fork :: [ParsecT s u [] a] -&gt; ParsecT s u [] a
-fork = join . lift ※ list-monadで非決定的計算できるのは、parsecに限った話ではない ">
+  <meta name="description" content="extensible-effects上にoperational作った
+正確には、型パズル解いて遊んでいたらoperationalができていた 利点: extensible-effectsとoperationalが合わさって最強に見える 欠点: Typeable1の宣言が必要 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -70,6 +68,64 @@ fork = join . lift ※ list-monadで非決定的計算できるのは、parsec�
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/03/13/operational-monad-on-extensible-effects/">Extensible-effects上にoperational Monad作ってみた</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-13T22:29:54+09:00" pubdate data-updated="true">Mar 13<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>extensible-effects上にoperational作った<br />
+正確には、型パズル解いて遊んでいたらoperationalができていた</p>
+
+<p>利点:</p>
+
+<ul>
+  <li>extensible-effectsとoperationalが合わさって最強に見える</li>
+</ul>
+
+<p>欠点:</p>
+
+<ul>
+  <li>Typeable1の宣言が必要
+    <ul>
+      <li>GADTs使うとderivingできないので面倒 (THで解決?)</li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/03/13/operational-monad-on-extensible-effects/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -465,6 +521,10 @@ CasperJS + PhantomJS でかなり強引に処理</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/03/13/operational-monad-on-extensible-effects/">Extensible-effects上にoperational Monad作ってみた</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/01/25/non-deterministic-parsing-with-parsec/">Parsecで非決定的パース</a>
       </li>
     
@@ -478,10 +538,6 @@ CasperJS + PhantomJS でかなり強引に処理</p>
     
       <li class="post">
         <a href="/blog/2013/12/12/reinstalled-os/">Os入れ直した</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/12/06/install-japanese-ocr/">日本語ocrをinstallした</a>
       </li>
     
   </ul>

@@ -33,16 +33,22 @@
         <lastmod>2014-01-25T22:26:52+09:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://solorab.github.io/blog/2014/03/13/operational-monad-on-extensible-effects/
+        </loc>
+        <lastmod>2014-03-14T01:50:19+09:00</lastmod>
+    </url>
+    <url>
         <loc>http://solorab.github.io/games/</loc>
         <lastmod>2013-11-27T21:45:16+09:00</lastmod>
     </url>
     <url>
         <loc>http://solorab.github.io/</loc>
-        <lastmod>2014-02-11T16:02:46+09:00</lastmod>
+        <lastmod>2014-03-14T01:50:19+09:00</lastmod>
     </url>
     <url>
         <loc>http://solorab.github.io/blog/archives/</loc>
-        <lastmod>2014-02-11T16:02:46+09:00</lastmod>
+        <lastmod>2014-03-14T01:50:19+09:00</lastmod>
     </url>
     <url>
         <loc>http://solorab.github.io/robots.txt</loc>

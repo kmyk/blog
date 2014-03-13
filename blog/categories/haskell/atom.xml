@@ -4,7 +4,7 @@
   <title><![CDATA[Category: haskell | 高機能うさぎ小屋]]></title>
   <link href="http://solorab.github.io/blog/categories/haskell/atom.xml" rel="self"/>
   <link href="http://solorab.github.io/"/>
-  <updated>2014-02-11T16:05:22+09:00</updated>
+  <updated>2014-03-14T01:51:19+09:00</updated>
   <id>http://solorab.github.io/</id>
   <author>
     <name><![CDATA[そろうさぎ]]></name>
@@ -12,6 +12,162 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[extensible-effects上にoperational monad作ってみた]]></title>
+    <link href="http://solorab.github.io/blog/2014/03/13/operational-monad-on-extensible-effects/"/>
+    <updated>2014-03-13T22:29:54+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/03/13/operational-monad-on-extensible-effects</id>
+    <content type="html"><![CDATA[<p>extensible-effects上にoperational作った<br />
+正確には、型パズル解いて遊んでいたらoperationalができていた</p>
+
+<p>利点:</p>
+
+<ul>
+  <li>extensible-effectsとoperationalが合わさって最強に見える</li>
+</ul>
+
+<p>欠点:</p>
+
+<ul>
+  <li>Typeable1の宣言が必要
+    <ul>
+      <li>GADTs使うとderivingできないので面倒 (THで解決?)</li>
+    </ul>
+  </li>
+</ul>
+
+<!-- more -->
+
+<h2 id="code">code</h2>
+
+<p>``` haskell
+    {-# LANGUAGE ExistentialQuantification #-}
+    {-# LANGUAGE FlexibleContexts #-}
+    {-# LANGUAGE MultiParamTypeClasses #-}
+    {-# LANGUAGE Rank2Types #-}
+    {-# LANGUAGE ScopedTypeVariables #-}
+    {-# LANGUAGE TypeOperators #-}
+    module Control.Eff.Operational (Program, singleton, runProgram) where</p>
+
+<pre><code>import Control.Eff (Eff, Member, (:&gt;), VE(Val, E), inj, send, admin, handleRelay)
+import Data.Typeable (Typeable1, typeOf1, mkTyCon3, mkTyConApp)
+
+data Program m v = forall a. Program (m a) (a -&gt; v)
+
+instance Functor (Program m) where
+    fmap f (Program m k) = Program m (f . k)
+
+instance Typeable1 m =&gt; Typeable1 (Program m) where
+    typeOf1 _ = mkTyConApp (mkTyCon3 "" "Control.Eff.Operational" "Program")
+                           [typeOf1 (undefined :: m ())]
+
+singleton :: (Typeable1 m, Member (Program m) r) =&gt; m a -&gt; Eff r a
+singleton m = send (inj . Program m)
+
+runProgram :: Typeable1 f =&gt; (forall x. f x -&gt; Eff r x) -&gt; Eff (Program f :&gt; r) a -&gt; Eff r a
+runProgram advent = loop . admin where
+    loop (Val x) = return x
+    loop (E u) = handleRelay u loop
+        (\ (Program m k) -&gt; loop . k =&lt;&lt; advent m) ```
+</code></pre>
+
+<h2 id="section">比較</h2>
+<p><code>haskell
+    runProgram :: Typeable1 f          =&gt; (forall x. f x -&gt; Eff r x) -&gt; Eff (Program f :&gt; r) a -&gt; Eff r a
+    interpret  :: (Functor m, Monad m) =&gt; (forall x. instr x -&gt; m x) -&gt;      Program instr   a -&gt;     m a
+</code></p>
+
+<p>当然似ている</p>
+
+<h2 id="example">example</h2>
+
+<p>``` haskell
+    data Jail a where
+        Print :: String -&gt; Jail ()
+        Scan :: Jail String</p>
+
+<pre><code>instance Typeable1 Jail where
+    typeOf1 _ = mkTyConApp (mkTyCon3 "test" "Main" "Jail") []
+
+prog :: Member (Program Jail) r =&gt; Eff r ()
+prog = do
+    singleton $ Print "getting input..."
+    str &lt;- singleton Scan
+    singleton $ Print "ok"
+    singleton $ Print ("the input is " ++ str)
+
+adventIO :: (Member (Lift IO) r, SetMember Lift (Lift IO) r) =&gt; Jail a -&gt; Eff r a
+adventIO (Print a) = lift $ putStrLn a
+adventIO Scan = lift getLine
+
+main :: IO ()
+main = runLift $ runProgram adventIO prog ```
+</code></pre>
+
+<p>もちろんrunProgramの第一引数は自由に差し替えられる</p>
+
+<p><code>haskell
+    adventPure :: (Member (Writer String) r, Member (State [String]) r) =&gt; Jail a -&gt; Eff r a
+    adventPure (Print a) = tell a
+    adventPure Scan = do
+        x &lt;- (fromMaybe [] . headMay) &lt;$&gt; get
+        modify (tailSafe :: [String] -&gt; [String])
+        return x
+</code></p>
+
+<p>型注釈はextensible-effectsの問題 newtypeすれば消えます</p>
+
+<h2 id="section-1">おまけ</h2>
+<p>以下、自分でもあまりよく分かっていない</p>
+
+<h3 id="section-2">構造</h3>
+<p>なにか面白げな構造ができていた 圏っぽいなにか<br />
+何の役に立つかは検討もつかない</p>
+
+<p><code>~&gt;</code>の左辺domain部分は必ず<code>Program *</code>だが、右辺codomain部分は必ずしも<code>Program *</code>でなくてもよい (ただし不可逆)</p>
+
+<h4 id="map-id--program-t--program-t">map (id) : <code>Program t ~&gt; Program t</code></h4>
+<p>内側へ埋め込む効果がある</p>
+
+<p><code>haskell
+    advent :: (Member (Program t) r) =&gt; t a -&gt; Eff r a
+    runProgram advent :: (Member (Program t) r) =&gt; Eff (Program t :&gt; r) a -&gt; Eff r a
+</code></p>
+
+<p>先程の例を使うと</p>
+
+<p><code>haskell
+    adventEndo :: (Member (Program Jail) r) =&gt; Jail a -&gt; Eff r a
+    adventEndo (Print a) = singleton . Print $ "    " ++ a
+    adventEndo Scan = return "banned"
+</code></p>
+
+<h4 id="split--program-s--program-t-program-u">split : <code>Program s ~&gt; (Program t, Program u)</code></h4>
+<p>実装を部分的に注入するのに使えるか</p>
+
+<p><code>haskell
+    advent :: (Member (Program t) r, Member (Program u) r) =&gt; s a -&gt; Eff r a
+    runProgram advent :: (Member (Program t) r, Member (Program u) r) =&gt; Eff (Program s :&gt; r) a -&gt; Eff r a
+</code></p>
+
+<h4 id="join--program-s-program-t--program-u">join : <code>(Program s, Program t) ~&gt; Program u</code></h4>
+<p>contexts制約部が大きくてよく分からなくなった時に、まとめるのに便利か</p>
+
+<p><code>haskell
+    advent  :: (Member (Program u) r) =&gt; s a -&gt; Eff r a
+    advent' :: (Member (Program u) r) =&gt; t a -&gt; Eff r a
+    runProgram advent' . runProgram advent :: (Member (Program u) r) =&gt; Eff (Program s :&gt; Program t :&gt; r) a -&gt; Eff r a
+    runProgram advent . runProgram advent' :: (Member (Program u) r) =&gt; Eff (Program t :&gt; Program s :&gt; r) a -&gt; Eff r a
+</code></p>
+
+<h2 id="section-3">関連</h2>
+<ul>
+  <li><a href="http://notogawa.hatenablog.com/entry/2014/02/22/004828">IOアクションひとつひとつを利用許諾し・テスト可能にする - ぼくのぬまち 出張版</a></li>
+  <li><a href="http://fumieval.hatenablog.com/entry/2013/05/09/223604">Freeモナドを超えた！？operationalモナドを使ってみよう - モナドとわたしとコモナド</a></li>
+</ul>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[parsecで非決定的パース]]></title>

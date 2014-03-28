@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: contract | Higher Order うさぎ小屋]]></title>
+  <link href="http://solorab.github.io/blog/categories/contract/atom.xml" rel="self"/>
+  <link href="http://solorab.github.io/"/>
+  <updated>2014-03-29T01:19:59+09:00</updated>
+  <id>http://solorab.github.io/</id>
+  <author>
+    <name><![CDATA[そろうさぎ]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[目標と契約]]></title>
+    <link href="http://solorab.github.io/blog/2014/03/28/goal-or-contract/"/>
+    <updated>2014-03-28T23:20:46+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/03/28/goal-or-contract</id>
+    <content type="html"><![CDATA[<p>もう(すぐ)春ですが、私はコミュ症です</p>
+
+<!-- more -->
+
+<p>そこまで重症ではないので気にしていませんが、ネット上で引き篭もりのようになっている状態は脱却したい<br />
+面白い人は沢山いるので、眺めるだけなのは少しもったいない<br />
+つまるところ、ROM専やめるぞ、と<br />
+ついでにblogの頻度も上げたい</p>
+
+<p>ゆえに、目標</p>
+
+<ol>
+  <li>twitter: 全ての日に関して、1回以上呟く</li>
+  <li>blog: 最後の記事から7日以内に、何か書き公開する</li>
+</ol>
+
+<p>また、行為を行うこと事態を重視し、その内容は無視するものとする</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[高機能うさぎ小屋]]></title>
+  <title><![CDATA[Higher Order うさぎ小屋]]></title>
   <link href="http://solorab.github.io/atom.xml" rel="self"/>
   <link href="http://solorab.github.io/"/>
-  <updated>2014-03-14T01:51:19+09:00</updated>
+  <updated>2014-03-29T01:19:59+09:00</updated>
   <id>http://solorab.github.io/</id>
   <author>
     <name><![CDATA[そろうさぎ]]></name>
@@ -12,6 +12,142 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[目標と契約]]></title>
+    <link href="http://solorab.github.io/blog/2014/03/28/goal-or-contract/"/>
+    <updated>2014-03-28T23:20:46+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/03/28/goal-or-contract</id>
+    <content type="html"><![CDATA[<p>もう(すぐ)春ですが、私はコミュ症です</p>
+
+<!-- more -->
+
+<p>そこまで重症ではないので気にしていませんが、ネット上で引き篭もりのようになっている状態は脱却したい<br />
+面白い人は沢山いるので、眺めるだけなのは少しもったいない<br />
+つまるところ、ROM専やめるぞ、と<br />
+ついでにblogの頻度も上げたい</p>
+
+<p>ゆえに、目標</p>
+
+<ol>
+  <li>twitter: 全ての日に関して、1回以上呟く</li>
+  <li>blog: 最後の記事から7日以内に、何か書き公開する</li>
+</ol>
+
+<p>また、行為を行うこと事態を重視し、その内容は無視するものとする</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Openglの固定機能の座標変換を調べた]]></title>
+    <link href="http://solorab.github.io/blog/2014/03/27/opengl-obsoleted-coord-and-trans/"/>
+    <updated>2014-03-27T00:24:12+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/03/27/opengl-obsoleted-coord-and-trans</id>
+    <content type="html"><![CDATA[<ul>
+  <li>座標変換がよく分かってないので調べた</li>
+  <li>固定機能と言って時代遅れで削除予定な部分</li>
+  <li>学習の過程には必要なのではないでしょうか</li>
+  <li>間違っているところもあると思う</li>
+</ul>
+
+<!-- more -->
+
+<h2 id="section">主な参考</h2>
+<ul>
+  <li><a href="http://d.hatena.ne.jp/white_wheels/20100405/p1">OpenGL覚え書き3 座標系 - white wheelsのメモ</a></li>
+  <li><a href="http://oshiro.bpe.es.osaka-u.ac.jp/people/staff/imura/computer/OpenGL/coordinates/disp_content">OpenGLの座標系</a></li>
+  <li><a href="http://www.wakayama-u.ac.jp/~tokoi/opengl/libglut.html">GLUTによる「手抜き」OpenGL入門</a></li>
+  <li><a href="http://homepage3.nifty.com/li-chu/OpenGL/OpenGL04.html">Lichu’s_Base</a></li>
+</ul>
+
+<h2 id="section-1">モデリング座標系 オブジェクト座標系</h2>
+<ul>
+  <li>モデル固有の座標系</li>
+  <li>ポリゴンの左上や重心付近などが原点</li>
+</ul>
+
+<h2 id="section-2">モデリング変換</h2>
+<ul>
+  <li>モデリング座標系 -&gt; ワールド座標系</li>
+  <li>modelview行列</li>
+  <li>操作する行列らしい行列はこれだけ</li>
+  <li>glTranslate* glScale* glRotate*</li>
+</ul>
+
+<h2 id="section-3">ワールド座標系 世界座標系</h2>
+<ul>
+  <li>ゲーム内の物体の共通の座標系</li>
+  <li>原点は任意</li>
+</ul>
+
+<h2 id="section-4">視野変換</h2>
+<ul>
+  <li>ワールド座標系 -&gt; 視点座標系</li>
+  <li>modelview行列</li>
+  <li><a href="https://www.opengl.org/sdk/docs/man2/xhtml/gluLookAt.xml">gluLookAt</a>
+    <ul>
+      <li>単に行列掛けているだけ 冪等性なし</li>
+      <li>modelview行列の頭に呼ぶ</li>
+      <li>projection行列の最後でも変わらない? 陰影計算に影響する?</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="section-5">視点座標系 眼点座標系</h2>
+<ul>
+  <li>カメラが原点</li>
+  <li>スケールはワールド座標系に同じ</li>
+</ul>
+
+<h2 id="section-6">投影変換</h2>
+<ul>
+  <li>視点座標系 -&gt; 正規化デバイス座標系</li>
+  <li>視界に入る部分を切り出す</li>
+  <li>projection行列</li>
+  <li>透視投影
+    <ul>
+      <li>glFrustum gluPerspective</li>
+      <li>遠近感ある 遠くにあるほど小さい</li>
+    </ul>
+  </li>
+  <li>平行投影 正射影
+    <ul>
+      <li>glOrtho gluOrtho2D</li>
+      <li>遠近感ない つまり2D</li>
+      <li>メニューとか書きたいときなど</li>
+    </ul>
+  </li>
+  <li>これらも単に行列掛けているだけ 冪等性なし</li>
+</ul>
+
+<h2 id="section-7">正規化デバイス座標系 クリッピング座標系</h2>
+<ul>
+  <li>(-1,-1,-1) ~ (1,1,1) – 1辺の長さ2の立方体で中心が原点</li>
+</ul>
+
+<h2 id="section-8">ビューポート変換</h2>
+<ul>
+  <li>正規化デバイス座標系 -&gt; ウィンドウ座標系</li>
+  <li>3D -&gt; 2D</li>
+  <li>z軸を潰して、xy軸引き伸ばして、できた画像を画面に配置</li>
+  <li><a href="https://www.opengl.org/sdk/docs/man/html/glViewport.xhtml">glViewport</a>
+    <ul>
+      <li>obsoletedでない</li>
+      <li>冪等性あり</li>
+      <li>少なくとも表面的には行列でない</li>
+      <li>たいていwindowの大きさが変わった時に<code>glViewport(0, 0, screen_width, screen_height)</code>して画面いっぱいに表示</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="section-9">ウィンドウ座標系</h2>
+<ul>
+  <li>画面そのまま</li>
+  <li>単位はpixel</li>
+  <li>左上が原点</li>
+</ul>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Extensible-effects上にoperational Monad作ってみた]]></title>

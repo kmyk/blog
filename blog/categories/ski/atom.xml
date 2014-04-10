@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ski | Higher Order うさぎ小屋]]></title>
   <link href="http://solorab.github.io/blog/categories/ski/atom.xml" rel="self"/>
   <link href="http://solorab.github.io/"/>
-  <updated>2014-04-11T08:13:41+09:00</updated>
+  <updated>2014-04-11T08:17:03+09:00</updated>
   <id>http://solorab.github.io/</id>
   <author>
     <name><![CDATA[そろうさぎ]]></name>
@@ -23,7 +23,7 @@
   <li>9000byteぐらい</li>
   <li>できるだけ自力で書いた</li>
   <li>CPPを使用 (<code>gcc -E</code>)</li>
-  <li><a href="../lambda-calculus-for-great-good/">ラムダ計算について調べた</a>のを有効活用した</li>
+  <li><a href="/blog/2014/04/05/lambda-calculus-for-great-good/">ラムダ計算について調べた</a>のを有効活用した</li>
   <li>楽しい</li>
 </ul>
 

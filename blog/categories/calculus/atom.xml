@@ -4,7 +4,7 @@
   <title><![CDATA[Category: calculus | Higher Order うさぎ小屋]]></title>
   <link href="http://solorab.github.io/blog/categories/calculus/atom.xml" rel="self"/>
   <link href="http://solorab.github.io/"/>
-  <updated>2014-04-11T08:13:41+09:00</updated>
+  <updated>2014-04-11T08:17:03+09:00</updated>
   <id>http://solorab.github.io/</id>
   <author>
     <name><![CDATA[そろうさぎ]]></name>
@@ -284,7 +284,7 @@ eta変換</dd>
   <li><code>- 1</code></li>
   <li>&lt;-&gt; <code>succ</code></li>
   <li>最大の山場だった</li>
-  <li>山場過ぎて<a href="../church-number-and-pred-function/">別記事</a>に切り出した</li>
+  <li>山場過ぎて<a href="/blog/2014/04/05/church-number-and-pred-function/">別記事</a>に切り出した</li>
 </ul>
 
 <h3 id="section-2">減算</h3>

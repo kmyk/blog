@@ -4,7 +4,7 @@
   <title><![CDATA[Higher Order うさぎ小屋]]></title>
   <link href="http://solorab.github.io/atom.xml" rel="self"/>
   <link href="http://solorab.github.io/"/>
-  <updated>2014-03-29T01:19:59+09:00</updated>
+  <updated>2014-04-11T08:13:41+09:00</updated>
   <id>http://solorab.github.io/</id>
   <author>
     <name><![CDATA[そろうさぎ]]></name>
@@ -12,6 +12,856 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Lazy Kでhello World書いた]]></title>
+    <link href="http://solorab.github.io/blog/2014/04/09/hello-world-in-lazy-k/"/>
+    <updated>2014-04-09T00:19:29+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/04/09/hello-world-in-lazy-k</id>
+    <content type="html"><![CDATA[<ul>
+  <li>“hello world”</li>
+  <li>9000byteぐらい</li>
+  <li>できるだけ自力で書いた</li>
+  <li>CPPを使用 (<code>gcc -E</code>)</li>
+  <li><a href="../lambda-calculus-for-great-good/">ラムダ計算について調べた</a>のを有効活用した</li>
+  <li>楽しい</li>
+</ul>
+
+<!-- more -->
+
+<h2 id="lazy-k-is-">Lazy K is 何</h2>
+<ul>
+  <li><a href="http://legacy.e.tir.jp/wiliki?%cb%dd%cc%f5%3a%a5%d7%a5%ed%a5%b0%a5%e9%a5%df%a5%f3%a5%b0%b8%c0%b8%ecLazy_K">翻訳:プログラミング言語Lazy_K</a></li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>[404 Blog Not Found:Math - 言語はどこまで小さくなれるか - (unlambda</td>
+          <td>iota</td>
+          <td>jot) のすすめ](http://blog.livedoor.jp/dankogai/archives/51524324.html)</td>
+        </tr>
+      </tbody>
+    </table>
+    <ul>
+      <li>ここのpatchあてて-fpermissiveしたらcompile通った</li>
+    </ul>
+  </li>
+  <li>すごそう</li>
+  <li>かっこいい</li>
+</ul>
+
+<h2 id="section">入出力</h2>
+<ul>
+  <li>プログラムに引数として標準入力が与えられ、返り値が標準出力に出る</li>
+  <li>つまり <code>getContents &gt;&gt;= (pure . main) &gt;&gt;= putStr</code></li>
+  <li>ただし文字列はチャーチ数のスコットエンコーディングのリスト
+    <ul>
+      <li><a href="http://d.hatena.ne.jp/syamino/20120524/p1">ラムダ計算で代数的データ型を表現する方法 - @syamino はてなダイアリー</a></li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="ignoreinput">ignore_input</h2>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="cp">#define ignore_input k</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>code頭に置いて、入力を無視する</li>
+  <li><code>k PROGRAM INPUT -&gt; PROGRAM</code></li>
+</ul>
+
+<h2 id="section-1">簡単な関数</h2>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="cp">#define id (skk)</span>
+</span><span class="line"><span class="cp">#define true k</span>
+</span><span class="line"><span class="cp">#define false (ki)</span>
+</span><span class="line"><span class="cp">#define zero false</span>
+</span><span class="line"><span class="cp">#define one id</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>何とか書ける</p>
+
+<h2 id="car-cdr--head-tail">car cdr / head tail</h2>
+<ul>
+  <li><code>car list = list true</code></li>
+  <li><code>cdr list = list false</code></li>
+</ul>
+
+<p>しかし</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="err">\</span> <span class="n">x</span> <span class="n">y</span> <span class="p">.</span> <span class="n">y</span> <span class="n">x</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>が書けない</p>
+
+<p>とりあえず文字列を持ってきて<code>true</code>/<code>false</code>を試してみる</p>
+
+<p><a href="https://ja.wikipedia.org/wiki/Hello_world%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E3%81%AE%E4%B8%80%E8%A6%A7#Lazy_K">Hello worldプログラムの一覧 # Lazy_K - Wikipedia</a></p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="cp">#define helloworld ``s``si`k```s``sss```s``s`ks`ssi``ss`ki``s`ksk`k``s``si`k` \</span>
+</span><span class="line"><span class="cp">    ``ss``s``ss`ki``ss```ss`ss``ss`ki``s`ksk`k``s``si`k```s``si``ss``ss`ki``` \</span>
+</span><span class="line"><span class="cp">    ss`s``sss``ss`ki``s`ksk`k``s``si`k```s``si``ss``ss`ki```ss`s``sss``ss`ki` \</span>
+</span><span class="line"><span class="cp">    `s`ksk`k``s``si`k```ss``s``sss``ss```ss`ss``ss`ki``s`ksk`k``s``si`k```ss` \</span>
+</span><span class="line"><span class="cp">    `ss``s``sss``s``sss``ss`ki``s`ksk`k``s``si`k```s``ss```ssi``ss`ki``ss`ki` \</span>
+</span><span class="line"><span class="cp">    `s`ksk`k``s``si`k```s``si``ss``s``sss``ss`ki``ss```ss``ssi``ss`ki``s`ksk` \</span>
+</span><span class="line"><span class="cp">    k``s``si`k```ss``s``sss``ss```ss`ss``ss`ki``s`ksk`k``s``si`k```ss``ss``ss \</span>
+</span><span class="line"><span class="cp">    ``ss``s``sss``ss```ss`ss``ss`ki``s`ksk`k``s``si`k```s``si``ss``ss`ki```ss \</span>
+</span><span class="line"><span class="cp">    `s``sss``ss`ki``s`ksk`k``s``si`k```s``ss`ki``ss```ss`ss``ss`ki``s`ksk`k`` \</span>
+</span><span class="line"><span class="cp">    s``si`k```ss```ss`ss``ss`ki``s`ksk`k`k```sii```sii``s``s`kski</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">ignore_input</span> <span class="p">(</span><span class="n">helloworld</span> <span class="nb">false</span><span class="p">)</span>
+</span><span class="line"><span class="cp">##=&gt; ello, world</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>動く</p>
+
+<h2 id="t">T[]変換</h2>
+<ul>
+  <li>救世主現る</li>
+  <li><a href="http://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%B3%E3%83%93%E3%83%8D%E3%83%BC%E3%82%BF%E8%AB%96%E7%90%86#S-K\_basis.E3.81.AE.E5.AE.8C.E5.85.A8.E6.80.A7">コンビネータ論理 # T[] 変換について - Wikipedia</a></li>
+  <li>わりと簡単な<code>lambda式 -&gt; skiコンビネータ</code>の変換</li>
+  <li>eta簡約もすると短くなる <code>(s (k X) i) -&gt; X</code></li>
+</ul>
+
+<h2 id="x-y-y-x">\ x y. y x</h2>
+<p>wikipediaの例と同じだけど、自分でも変換する</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="cp">#define rev (s (k (s i)) k)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h2 id="car--cdr">car / cdr</h2>
+<p><code>\ x y. y x</code> ができたので作れるように</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="cp">#define car (rev true)</span>
+</span><span class="line"><span class="cp">#define cdr (rev false)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">ignore_input</span> <span class="p">(</span><span class="n">cdr</span> <span class="n">helloworld</span><span class="p">)</span>
+</span><span class="line"><span class="cp">##=&gt; ello, world</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h2 id="succ">succ</h2>
+<ul>
+  <li><code>\ n f x. f (n f x)</code> も変換</li>
+  <li>結構頑張る</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="cp">#define succ (s (k (s (s (k s) k))) (s (s (k s) k) (k i)))</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h2 id="cons">cons</h2>
+<ul>
+  <li><code>succ</code>だけあっても使えないので<code>cons</code></li>
+  <li>lazy-kはスコットエンコーディング</li>
+  <li><code>\ x y z . z x y</code></li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="cp">#define cons (s (s (k s) (s (k k) (s (k s) (s (k (s i)) (s (k k) i))))) (k (s (k k) i)))</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="cp">#define cons (s (s (k s) (s (k k) (s (k s) (s (k (s i)) k)))) (k k))</span>
+</span><span class="line"><span class="cp">##=&gt; Iello, world</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h2 id="section-2">演算</h2>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">plus</span> <span class="o">=</span> <span class="err">\</span> <span class="n">m</span> <span class="n">n</span><span class="p">.</span> <span class="n">m</span> <span class="n">succ</span> <span class="n">n</span>
+</span><span class="line"><span class="n">mult</span> <span class="o">=</span> <span class="err">\</span> <span class="n">m</span> <span class="n">n</span> <span class="n">f</span><span class="p">.</span> <span class="n">m</span> <span class="p">(</span><span class="n">n</span> <span class="n">f</span><span class="p">)</span>
+</span><span class="line"><span class="n">pow</span> <span class="o">=</span> <span class="err">\</span> <span class="n">m</span> <span class="n">n</span> <span class="n">n</span> <span class="p">(</span><span class="n">mult</span> <span class="n">m</span><span class="p">)</span> <span class="n">one</span> <span class="err">#</span> <span class="err">不要</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="cp">#define plus (s (s (k s) (s (k k) (s i (k succ)))) (k i))</span>
+</span><span class="line"><span class="cp">#define mult (s (s (k s) (s (k k) (s (k s) k))) (k i))</span>
+</span><span class="line"><span class="cp">#define pow (s (s (k s) (s (k (s i)) (s (k k) mult))) (k (k one)))</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>手作業で丁寧に変換</li>
+</ul>
+
+<h2 id="hello-world">hello world</h2>
+
+<h3 id="section-3">出力すべき数を確認する</h3>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class="sh"><span class="line"><span class="nv">$ </span>ghc -e <span class="s1">&#39;print $ map ord &quot;hello world&quot;&#39;</span>
+</span><span class="line"><span class="o">[</span>104,101,108,108,111,32,119,111,114,108,100<span class="o">]</span>
+</span><span class="line">
+</span><span class="line"><span class="nv">$ </span>ghc -e <span class="s1">&#39;print $ map (($ &quot;&quot;) . showIntAtBase 2 intToDigit . ord) &quot;hello world&quot;&#39;</span>
+</span><span class="line"><span class="o">[</span><span class="s2">&quot;1101000&quot;</span>,<span class="s2">&quot;1100101&quot;</span>,<span class="s2">&quot;1101100&quot;</span>,<span class="s2">&quot;1101100&quot;</span>,<span class="s2">&quot;1101111&quot;</span>,<span class="s2">&quot;100000&quot;</span>,<span class="s2">&quot;1110111&quot;</span>,<span class="s2">&quot;1101111&quot;</span>,<span class="s2">&quot;1110010&quot;</span>,<span class="s2">&quot;1101100&quot;</span>,<span class="s2">&quot;1100100&quot;</span><span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h3 id="section-4">数字を定義</h3>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="cp">#define double (mult two)</span>
+</span><span class="line"><span class="cp">#define four (double two)</span>
+</span><span class="line"><span class="cp">#define eight (double four)</span>
+</span><span class="line"><span class="cp">#define sixteen (double eight)</span>
+</span><span class="line"><span class="cp">#define thirtytwo (double sixteen)</span>
+</span><span class="line"><span class="cp">#define sixtyfour (double thirtytwo)</span>
+</span><span class="line"><span class="cp">#define eof (pow four four)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>lazy-kは<code>256</code>をもって<code>eof</code>とする</li>
+  <li>2進数万歳</li>
+</ul>
+
+<h3 id="section-5">完成</h3>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+</pre></td><td class="code"><pre><code class="scheme"><span class="line"><span class="nv">ignore_input</span>
+</span><span class="line"><span class="p">(</span><span class="nb">cons </span><span class="p">(</span><span class="nf">plus</span> <span class="nv">sixtyfour</span> <span class="p">(</span><span class="nf">plus</span> <span class="nv">thirtytwo</span> <span class="nv">eight</span><span class="p">))</span> <span class="o">#</span> <span class="nv">h</span>
+</span><span class="line"><span class="p">(</span><span class="nb">cons </span><span class="p">(</span><span class="nf">plus</span> <span class="nv">sixtyfour</span> <span class="p">(</span><span class="nf">plus</span> <span class="nv">thirtytwo</span> <span class="p">(</span><span class="nf">plus</span> <span class="nv">four</span> <span class="nv">one</span><span class="p">)))</span> <span class="o">#</span> <span class="nv">e</span>
+</span><span class="line"><span class="p">(</span><span class="nb">cons </span><span class="p">(</span><span class="nf">plus</span> <span class="nv">sixtyfour</span> <span class="p">(</span><span class="nf">plus</span> <span class="nv">thirtytwo</span> <span class="p">(</span><span class="nf">plus</span> <span class="nv">eight</span> <span class="nv">four</span><span class="p">)))</span> <span class="o">#</span> <span class="nv">l</span>
+</span><span class="line"><span class="p">(</span><span class="nb">cons </span><span class="p">(</span><span class="nf">plus</span> <span class="nv">sixtyfour</span> <span class="p">(</span><span class="nf">plus</span> <span class="nv">thirtytwo</span> <span class="p">(</span><span class="nf">plus</span> <span class="nv">eight</span> <span class="nv">four</span><span class="p">)))</span> <span class="o">#</span> <span class="nv">l</span>
+</span><span class="line"><span class="p">(</span><span class="nb">cons </span><span class="p">(</span><span class="nf">plus</span> <span class="nv">sixtyfour</span> <span class="p">(</span><span class="nf">plus</span> <span class="nv">thirtytwo</span> <span class="p">(</span><span class="nf">plus</span> <span class="nv">eight</span> <span class="p">(</span><span class="nf">plus</span> <span class="nv">four</span> <span class="p">(</span><span class="nf">plus</span> <span class="nv">two</span> <span class="nv">one</span><span class="p">)))))</span> <span class="o">#</span> <span class="nv">o</span>
+</span><span class="line"><span class="p">(</span><span class="nb">cons </span><span class="nv">thirtytwo</span> <span class="o">#</span> <span class="o">&#39;</span> <span class="o">&#39;</span>
+</span><span class="line"><span class="p">(</span><span class="nb">cons </span><span class="p">(</span><span class="nf">plus</span> <span class="nv">sixtyfour</span> <span class="p">(</span><span class="nf">plus</span> <span class="nv">thirtytwo</span> <span class="p">(</span><span class="nf">plus</span> <span class="nv">sixteen</span> <span class="p">(</span><span class="nf">plus</span> <span class="nv">four</span> <span class="p">(</span><span class="nf">plus</span> <span class="nv">two</span> <span class="nv">one</span><span class="p">)))))</span> <span class="o">#</span> <span class="nv">w</span>
+</span><span class="line"><span class="p">(</span><span class="nb">cons </span><span class="p">(</span><span class="nf">plus</span> <span class="nv">sixtyfour</span> <span class="p">(</span><span class="nf">plus</span> <span class="nv">thirtytwo</span> <span class="p">(</span><span class="nf">plus</span> <span class="nv">eight</span> <span class="p">(</span><span class="nf">plus</span> <span class="nv">four</span> <span class="p">(</span><span class="nf">plus</span> <span class="nv">two</span> <span class="nv">one</span><span class="p">)))))</span> <span class="o">#</span> <span class="nv">o</span>
+</span><span class="line"><span class="p">(</span><span class="nb">cons </span><span class="p">(</span><span class="nf">plus</span> <span class="nv">sixtyfour</span> <span class="p">(</span><span class="nf">plus</span> <span class="nv">thirtytwo</span> <span class="p">(</span><span class="nf">plus</span> <span class="nv">sixteen</span> <span class="nv">two</span><span class="p">)))</span> <span class="o">#</span> <span class="nv">r</span>
+</span><span class="line"><span class="p">(</span><span class="nb">cons </span><span class="p">(</span><span class="nf">plus</span> <span class="nv">sixtyfour</span> <span class="p">(</span><span class="nf">plus</span> <span class="nv">thirtytwo</span> <span class="p">(</span><span class="nf">plus</span> <span class="nv">eight</span> <span class="nv">four</span><span class="p">)))</span> <span class="o">#</span> <span class="nv">l</span>
+</span><span class="line"><span class="p">(</span><span class="nb">cons </span><span class="p">(</span><span class="nf">plus</span> <span class="nv">sixtyfour</span> <span class="p">(</span><span class="nf">plus</span> <span class="nv">thirtytwo</span> <span class="nv">four</span><span class="p">))</span> <span class="o">#</span> <span class="nv">e</span>
+</span><span class="line"><span class="p">(</span><span class="nb">cons </span><span class="nv">eof</span> <span class="nv">k</span><span class="p">))))))))))))</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="sh"><span class="line"><span class="nv">$ </span>gcc -E a.lazy.cpp &gt; a.lazy <span class="o">&amp;&amp;</span> <span class="nb">echo </span>hoge | ./lazy a.lazy
+</span><span class="line">hello world
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[チャーチ数とpred関数]]></title>
+    <link href="http://solorab.github.io/blog/2014/04/05/church-number-and-pred-function/"/>
+    <updated>2014-04-05T21:04:13+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/04/05/church-number-and-pred-function</id>
+    <content type="html"><![CDATA[<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">pred</span> <span class="n">n</span> <span class="o">=</span> <span class="err">\</span> <span class="n">s</span> <span class="n">o</span><span class="p">.</span> <span class="n">n</span> <span class="p">(</span><span class="err">\</span> <span class="n">f</span> <span class="n">g</span><span class="p">.</span> <span class="n">g</span> <span class="p">(</span><span class="n">f</span> <span class="n">s</span><span class="p">))</span> <span class="p">(</span><span class="err">\</span> <span class="n">x</span><span class="p">.</span> <span class="n">o</span><span class="p">)</span> <span class="p">(</span><span class="err">\</span> <span class="n">x</span><span class="p">.</span> <span class="n">x</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>church数を<code>- 1</code>する関数</li>
+  <li>基本的なはずなのに、他のと比べてやけに複雑</li>
+</ul>
+
+<!-- more -->
+<!-- c は色付けのため -->
+
+<h2 id="section">とりあえず手動簡約</h2>
+
+<p>よく分からないので名前つけてみる</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">embed</span> <span class="n">x</span> <span class="o">=</span> <span class="err">\</span> <span class="n">f</span> <span class="n">g</span><span class="p">.</span> <span class="n">g</span> <span class="p">(</span><span class="n">f</span> <span class="n">x</span><span class="p">)</span>
+</span><span class="line"><span class="k">const</span> <span class="n">x</span> <span class="n">y</span> <span class="o">=</span> <span class="n">x</span>
+</span><span class="line"><span class="n">id</span> <span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
+</span><span class="line"><span class="n">pred</span> <span class="n">n</span> <span class="o">=</span> <span class="err">\</span> <span class="n">s</span> <span class="n">o</span><span class="p">.</span> <span class="n">n</span> <span class="p">(</span><span class="n">embed</span> <span class="n">s</span><span class="p">)</span> <span class="p">(</span><span class="k">const</span> <span class="n">o</span><span class="p">)</span> <span class="n">id</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>なにこれ:</p>
+
+<ul>
+  <li>embed
+    <ul>
+      <li><code>:: a -&gt; (a -&gt; b) -&gt; (b -&gt; c) -&gt; c</code></li>
+      <li>なにこれ (後の繋がり的にembedと命名)</li>
+    </ul>
+  </li>
+  <li>embed s
+    <ul>
+      <li>なにこれ</li>
+    </ul>
+  </li>
+  <li>const o
+    <ul>
+      <li>なにこれ</li>
+    </ul>
+  </li>
+</ul>
+
+<p>気にせず簡約</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">pred</span> <span class="mi">2</span>
+</span><span class="line"><span class="err">\</span> <span class="n">s</span> <span class="n">o</span><span class="p">.</span> <span class="n">pred</span> <span class="mi">2</span> <span class="n">s</span> <span class="n">o</span>
+</span><span class="line"><span class="err">\</span> <span class="n">s</span> <span class="n">o</span><span class="p">.</span> <span class="mi">2</span> <span class="p">(</span><span class="n">embed</span> <span class="n">s</span><span class="p">)</span> <span class="p">(</span><span class="k">const</span> <span class="n">o</span><span class="p">)</span> <span class="n">id</span>
+</span><span class="line"><span class="err">\</span> <span class="n">s</span> <span class="n">o</span><span class="p">.</span> <span class="p">(</span><span class="n">embed</span> <span class="n">s</span><span class="p">)</span> <span class="p">((</span><span class="n">embed</span> <span class="n">s</span><span class="p">)</span> <span class="p">(</span><span class="k">const</span> <span class="n">o</span><span class="p">))</span> <span class="n">id</span>
+</span><span class="line"><span class="err">\</span> <span class="n">s</span> <span class="n">o</span><span class="p">.</span> <span class="n">id</span> <span class="p">(((</span><span class="n">embed</span> <span class="n">s</span><span class="p">)</span> <span class="p">(</span><span class="k">const</span> <span class="n">o</span><span class="p">))</span> <span class="n">s</span><span class="p">)</span>
+</span><span class="line"><span class="err">\</span> <span class="n">s</span> <span class="n">o</span><span class="p">.</span> <span class="p">(</span><span class="n">embed</span> <span class="n">s</span><span class="p">)</span> <span class="p">(</span><span class="k">const</span> <span class="n">o</span><span class="p">)</span> <span class="n">s</span>
+</span><span class="line"><span class="err">\</span> <span class="n">s</span> <span class="n">o</span><span class="p">.</span> <span class="n">s</span> <span class="p">((</span><span class="k">const</span> <span class="n">o</span><span class="p">)</span> <span class="n">s</span><span class="p">)</span>
+</span><span class="line"><span class="err">\</span> <span class="n">s</span> <span class="n">o</span><span class="p">.</span> <span class="n">s</span> <span class="n">o</span>
+</span><span class="line"><span class="mi">1</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>何故か動く</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">pred</span> <span class="mi">0</span>
+</span><span class="line"><span class="err">\</span> <span class="n">s</span> <span class="n">o</span><span class="p">.</span> <span class="n">pred</span> <span class="mi">0</span> <span class="n">s</span> <span class="n">o</span>
+</span><span class="line"><span class="err">\</span> <span class="n">s</span> <span class="n">o</span><span class="p">.</span> <span class="mi">0</span> <span class="p">(</span><span class="n">embed</span> <span class="n">s</span><span class="p">)</span> <span class="p">(</span><span class="k">const</span> <span class="n">o</span><span class="p">)</span> <span class="n">id</span>
+</span><span class="line"><span class="err">\</span> <span class="n">s</span> <span class="n">o</span><span class="p">.</span> <span class="p">(</span><span class="k">const</span> <span class="n">o</span><span class="p">)</span> <span class="n">id</span>
+</span><span class="line"><span class="err">\</span> <span class="n">s</span> <span class="n">o</span><span class="p">.</span> <span class="n">o</span>
+</span><span class="line"><span class="mi">0</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><code>-1</code>にはならないっぽい</p>
+
+<h2 id="section-1">簡約を追うのは諦めて、原理を考える</h2>
+
+<ul>
+  <li>数は関数なので、分解やパターンマッチはできない</li>
+  <li>適用ならできる</li>
+  <li>1だけ減らしたい</li>
+</ul>
+
+<!-- -->
+
+<ol>
+  <li>よって、<code>\ s o. s (s (s (... (s (s o)))))</code>の<code>o</code>を活用するのは必然</li>
+  <li>しかし、<code>o</code>は<code>s</code>に適用される側</li>
+  <li>そこで、何かしらひっくり返す</li>
+</ol>
+
+<p>つまり、<code>sss...sso</code>ではだめなので:</p>
+
+<ol>
+  <li><code>oss...sss</code></li>
+  <li><code>sss...sos</code></li>
+</ol>
+
+<p>この<code>pred</code>の定義は後者のもよう (前者でもいけるのか否かは不明)</p>
+
+<p>定義を再確認</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">embed</span> <span class="n">x</span>  <span class="n">f</span> <span class="n">g</span>
+</span><span class="line">    <span class="o">=</span> <span class="n">g</span> <span class="p">(</span><span class="n">f</span> <span class="n">x</span><span class="p">)</span>
+</span><span class="line"><span class="n">pred</span> <span class="n">n</span> <span class="o">=</span> <span class="err">\</span> <span class="n">s</span> <span class="n">o</span><span class="p">.</span> <span class="n">n</span> <span class="p">(</span><span class="n">embed</span> <span class="n">s</span><span class="p">)</span> <span class="p">(</span><span class="k">const</span> <span class="n">o</span><span class="p">)</span> <span class="n">id</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>その辺を意識してもう1度簡約<br />
+<code>s</code>がどう並び替わるのか見るため番号振ります</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">pred</span> <span class="mi">4</span>
+</span><span class="line"><span class="err">\</span> <span class="n">s</span> <span class="n">o</span><span class="p">.</span> <span class="n">pred</span> <span class="mi">4</span> <span class="n">s</span> <span class="n">o</span>
+</span><span class="line"><span class="err">\</span> <span class="n">s</span> <span class="n">o</span><span class="p">.</span> <span class="mi">4</span> <span class="p">(</span><span class="n">embed</span> <span class="n">s</span><span class="p">)</span> <span class="p">(</span><span class="k">const</span> <span class="n">o</span><span class="p">)</span> <span class="n">id</span>
+</span><span class="line"><span class="err">\</span> <span class="n">s</span> <span class="n">o</span><span class="p">.</span> <span class="p">(</span><span class="n">embed</span>  <span class="n">s</span><span class="p">)</span> <span class="p">((</span><span class="n">embed</span>  <span class="n">s</span><span class="p">)</span> <span class="p">((</span><span class="n">embed</span>  <span class="n">s</span><span class="p">)</span> <span class="p">((</span><span class="n">embed</span>  <span class="n">s</span><span class="p">)</span> <span class="p">(</span><span class="k">const</span> <span class="n">o</span><span class="p">))))</span> <span class="n">id</span>
+</span><span class="line"><span class="err">\</span> <span class="n">s</span> <span class="n">o</span><span class="p">.</span> <span class="p">(</span><span class="n">embed</span> <span class="n">s1</span><span class="p">)</span> <span class="p">((</span><span class="n">embed</span> <span class="n">s2</span><span class="p">)</span> <span class="p">((</span><span class="n">embed</span> <span class="n">s3</span><span class="p">)</span> <span class="p">((</span><span class="n">embed</span> <span class="n">s4</span><span class="p">)</span> <span class="p">(</span><span class="k">const</span> <span class="n">o</span><span class="p">))))</span> <span class="n">id</span>
+</span><span class="line"><span class="err">\</span> <span class="n">s</span> <span class="n">o</span><span class="p">.</span>        <span class="n">id</span> <span class="p">(</span> <span class="p">(</span><span class="n">embed</span> <span class="n">s2</span><span class="p">)</span> <span class="p">((</span><span class="n">embed</span> <span class="n">s3</span><span class="p">)</span> <span class="p">((</span><span class="n">embed</span> <span class="n">s4</span><span class="p">)</span> <span class="p">(</span><span class="k">const</span> <span class="n">o</span><span class="p">)))</span>  <span class="n">s1</span><span class="p">)</span>
+</span><span class="line"><span class="err">\</span> <span class="n">s</span> <span class="n">o</span><span class="p">.</span>        <span class="n">id</span> <span class="p">(</span>        <span class="n">s1</span> <span class="p">(</span> <span class="p">(</span><span class="n">embed</span> <span class="n">s3</span><span class="p">)</span> <span class="p">((</span><span class="n">embed</span> <span class="n">s4</span><span class="p">)</span> <span class="p">(</span><span class="k">const</span> <span class="n">o</span><span class="p">))</span>   <span class="n">s2</span><span class="p">))</span>
+</span><span class="line"><span class="err">\</span> <span class="n">s</span> <span class="n">o</span><span class="p">.</span>        <span class="n">id</span> <span class="p">(</span>        <span class="n">s1</span> <span class="p">(</span>        <span class="n">s2</span> <span class="p">(</span> <span class="p">(</span><span class="n">embed</span> <span class="n">s4</span><span class="p">)</span> <span class="p">(</span><span class="k">const</span> <span class="n">o</span><span class="p">)</span>    <span class="n">s3</span><span class="p">)))</span>
+</span><span class="line"><span class="err">\</span> <span class="n">s</span> <span class="n">o</span><span class="p">.</span>        <span class="n">id</span> <span class="p">(</span>        <span class="n">s1</span> <span class="p">(</span>        <span class="n">s2</span> <span class="p">(</span>        <span class="n">s3</span> <span class="p">((</span><span class="k">const</span> <span class="n">o</span><span class="p">)</span>    <span class="n">s4</span><span class="p">))))</span>
+</span><span class="line"><span class="err">\</span> <span class="n">s</span> <span class="n">o</span><span class="p">.</span>        <span class="n">id</span> <span class="p">(</span>        <span class="n">s1</span> <span class="p">(</span>        <span class="n">s2</span> <span class="p">(</span>        <span class="n">s3</span> <span class="p">(</span>       <span class="n">o</span>       <span class="p">))))</span>
+</span><span class="line"><span class="err">\</span> <span class="n">s</span> <span class="n">o</span><span class="p">.</span> <span class="n">s</span> <span class="p">(</span><span class="n">s</span> <span class="p">(</span><span class="n">s</span> <span class="n">o</span><span class="p">))</span>
+</span><span class="line"><span class="mi">3</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>今回は<code>s4</code>(最も深い所の<code>s</code>)が<code>const</code>によって消えていますね</p>
+
+<h2 id="on-wikipedia">別な定義 on wikipedia</h2>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">pred</span> <span class="o">=</span> <span class="err">\</span> <span class="n">n</span><span class="p">.</span> <span class="n">n</span> <span class="p">(</span><span class="err">\</span> <span class="n">g</span> <span class="n">k</span><span class="p">.</span> <span class="p">(</span><span class="n">g</span> <span class="mi">1</span><span class="p">)</span> <span class="p">(</span><span class="err">\</span> <span class="n">u</span><span class="p">.</span> <span class="n">plus</span> <span class="p">(</span><span class="n">g</span> <span class="n">k</span><span class="p">)</span> <span class="mi">1</span><span class="p">)</span> <span class="n">k</span><span class="p">)</span> <span class="p">(</span><span class="err">\</span> <span class="n">v</span><span class="p">.</span> <span class="mi">0</span><span class="p">)</span> <span class="mi">0</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<blockquote>
+  <p>上の部分式 (g 1) (\ u. PLUS (g k) 1) k は、 g(1) がゼロとなるとき k に評価され、そうでないときは g(k) + 1 に評価されることに注意せよ。</p>
+</blockquote>
+
+<ul>
+  <li>もう1つあったので追ってみる</li>
+  <li>注意書きが要るぐらいには複雑らしい</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">f</span> <span class="n">g</span> <span class="n">k</span> <span class="o">=</span> <span class="n">g</span> <span class="mi">1</span> <span class="p">(</span><span class="k">const</span> <span class="p">(</span><span class="n">plus</span> <span class="p">(</span><span class="n">g</span> <span class="n">k</span><span class="p">)</span> <span class="mi">1</span><span class="p">))</span> <span class="n">k</span>
+</span><span class="line"><span class="n">pred</span> <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="n">f</span> <span class="p">(</span><span class="k">const</span> <span class="mi">0</span><span class="p">)</span> <span class="mi">0</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h3 id="section-2">誘導に従う</h3>
+
+<p>(g 1)が0になるとき</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">g</span> <span class="o">=</span> <span class="k">const</span> <span class="mi">0</span>
+</span><span class="line"><span class="n">f</span> <span class="p">(</span><span class="k">const</span> <span class="mi">0</span><span class="p">)</span> <span class="n">k</span>
+</span><span class="line">    <span class="o">=</span> <span class="k">const</span> <span class="mi">0</span> <span class="mi">1</span> <span class="p">(</span><span class="k">const</span> <span class="p">(</span><span class="n">plus</span> <span class="p">(</span><span class="k">const</span> <span class="mi">0</span> <span class="n">k</span><span class="p">)</span> <span class="mi">1</span><span class="p">))</span> <span class="n">k</span>
+</span><span class="line">    <span class="o">=</span> <span class="mi">0</span> <span class="p">(</span><span class="k">const</span> <span class="p">(</span><span class="n">plus</span> <span class="p">(</span><span class="k">const</span> <span class="mi">0</span> <span class="n">k</span><span class="p">)</span> <span class="mi">1</span><span class="p">))</span> <span class="n">k</span>
+</span><span class="line">    <span class="o">=</span> <span class="p">(</span><span class="err">\</span> <span class="n">s</span> <span class="n">o</span><span class="p">.</span> <span class="n">o</span><span class="p">)</span> <span class="p">(</span><span class="k">const</span> <span class="p">(</span><span class="n">plus</span> <span class="p">(</span><span class="k">const</span> <span class="mi">0</span> <span class="n">k</span><span class="p">)</span> <span class="mi">1</span><span class="p">))</span> <span class="n">k</span>
+</span><span class="line">    <span class="o">=</span> <span class="n">k</span>
+</span><span class="line"><span class="n">f</span> <span class="p">(</span><span class="k">const</span> <span class="mi">0</span><span class="p">)</span> <span class="o">=</span> <span class="n">id</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>そうでない(0でない数である)とき</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">g</span> <span class="o">::</span> <span class="n">number</span> <span class="o">-&gt;</span> <span class="n">number</span>
+</span><span class="line"><span class="p">(</span><span class="n">g</span> <span class="mi">1</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span>
+</span><span class="line"><span class="n">f</span> <span class="n">g</span> <span class="n">k</span>
+</span><span class="line">    <span class="o">=</span> <span class="p">(</span><span class="n">g</span> <span class="mi">1</span><span class="p">)</span> <span class="p">(</span><span class="k">const</span> <span class="p">(</span><span class="n">plus</span> <span class="p">(</span><span class="n">g</span> <span class="n">k</span><span class="p">)</span> <span class="mi">1</span><span class="p">))</span> <span class="n">k</span>
+</span><span class="line">    <span class="o">=</span> <span class="p">(</span><span class="k">const</span> <span class="p">(</span><span class="n">plus</span> <span class="p">(</span><span class="n">g</span> <span class="n">k</span><span class="p">)</span> <span class="mi">1</span><span class="p">))</span> <span class="p">((</span><span class="k">const</span> <span class="p">(</span><span class="n">plus</span> <span class="p">(</span><span class="n">g</span> <span class="n">k</span><span class="p">)</span> <span class="mi">1</span><span class="p">))</span> <span class="p">(...</span> <span class="p">((</span><span class="k">const</span> <span class="p">(</span><span class="n">plus</span> <span class="p">(</span><span class="n">g</span> <span class="n">k</span><span class="p">)</span> <span class="mi">1</span><span class="p">))</span> <span class="n">k</span><span class="p">)))</span>
+</span><span class="line">    <span class="o">=</span>        <span class="p">(</span><span class="n">plus</span> <span class="p">(</span><span class="n">g</span> <span class="n">k</span><span class="p">)</span> <span class="mi">1</span><span class="p">)</span>
+</span><span class="line">    <span class="o">=</span> <span class="n">succ</span> <span class="p">(</span><span class="n">g</span> <span class="n">k</span><span class="p">)</span>
+</span><span class="line"><span class="n">f</span>   <span class="n">id</span> <span class="n">k</span> <span class="o">=</span>       <span class="n">succ</span> <span class="n">k</span>
+</span><span class="line"><span class="n">f</span> <span class="n">succ</span> <span class="n">k</span> <span class="o">=</span> <span class="n">succ</span> <span class="p">(</span><span class="n">succ</span> <span class="n">k</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>まとめると</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">pred</span> <span class="n">n</span>
+</span><span class="line">    <span class="o">=</span> <span class="n">n</span> <span class="n">f</span> <span class="p">(</span><span class="k">const</span> <span class="mi">0</span><span class="p">)</span> <span class="mi">0</span>
+</span><span class="line">    <span class="o">=</span> <span class="n">f</span> <span class="p">(</span><span class="n">f</span> <span class="p">(</span><span class="n">f</span> <span class="p">(...</span> <span class="p">(</span><span class="n">f</span> <span class="p">(</span><span class="n">f</span> <span class="p">(</span><span class="n">f</span> <span class="p">(</span><span class="k">const</span> <span class="mi">0</span><span class="p">))</span> <span class="p">)))))</span> <span class="mi">0</span>
+</span><span class="line">    <span class="o">=</span> <span class="n">f</span> <span class="p">(</span><span class="n">f</span> <span class="p">(</span><span class="n">f</span> <span class="p">(...</span> <span class="p">(</span><span class="n">f</span> <span class="p">(</span><span class="n">f</span> <span class="n">id</span>            <span class="p">)))))</span> <span class="mi">0</span>
+</span><span class="line">    <span class="o">=</span> <span class="n">f</span> <span class="p">(</span><span class="n">f</span> <span class="p">(</span><span class="n">f</span> <span class="p">(...</span> <span class="p">(</span><span class="n">f</span> <span class="p">(</span><span class="err">\</span> <span class="n">n</span><span class="p">.</span> <span class="n">succ</span> <span class="p">(</span><span class="n">id</span> <span class="n">n</span><span class="p">))))))</span> <span class="mi">0</span>
+</span><span class="line">    <span class="o">=</span> <span class="n">f</span> <span class="p">(</span><span class="n">f</span> <span class="p">(</span><span class="n">f</span> <span class="p">(...</span> <span class="p">(</span><span class="n">f</span> <span class="p">(</span><span class="err">\</span> <span class="n">n</span><span class="p">.</span> <span class="n">succ</span> <span class="n">n</span>     <span class="p">)))))</span> <span class="mi">0</span>
+</span><span class="line">    <span class="o">=</span> <span class="n">f</span> <span class="p">(</span><span class="n">f</span> <span class="p">(</span><span class="n">f</span> <span class="p">(...</span> <span class="p">(</span><span class="err">\</span> <span class="n">n</span><span class="p">.</span> <span class="n">succ</span> <span class="p">(</span><span class="n">succ</span> <span class="n">n</span><span class="p">)</span>  <span class="p">))))</span> <span class="mi">0</span>
+</span><span class="line">    <span class="o">=</span> <span class="p">(</span><span class="err">\</span><span class="n">n</span><span class="p">.</span> <span class="n">succ</span> <span class="p">(</span><span class="n">succ</span> <span class="p">(</span><span class="n">succ</span> <span class="p">(...</span> <span class="p">(</span><span class="n">succ</span> <span class="p">(</span><span class="n">succ</span> <span class="n">n</span><span class="p">))))))</span> <span class="mi">0</span>
+</span><span class="line">    <span class="o">=</span>      <span class="n">succ</span> <span class="p">(</span><span class="n">succ</span> <span class="p">(</span><span class="n">succ</span> <span class="p">(...</span> <span class="p">(</span><span class="n">succ</span> <span class="p">(</span><span class="n">succ</span> <span class="mi">0</span><span class="p">)))))</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>だいたい先ほどのと同じですね</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[すごいラムダ計算楽しく学ぼう]]></title>
+    <link href="http://solorab.github.io/blog/2014/04/05/lambda-calculus-for-great-good/"/>
+    <updated>2014-04-05T20:24:26+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/04/05/lambda-calculus-for-great-good</id>
+    <content type="html"><![CDATA[<ul>
+  <li>以前挑んだ時は惨敗したが、今回は程よく分かるので楽しい</li>
+  <li>haskellにとってのlambda計算は、cにとってのbrainf*ckみたいなものっぽい</li>
+  <li>教養の域を出なさそうだが楽しいので許す</li>
+  <li>楽しい(自己暗示)</li>
+</ul>
+
+<!-- more -->
+<!-- c は色付けのため -->
+
+<h2 id="lambda">lambda計算とは</h2>
+<ul>
+  <li>無名関数のみで計算</li>
+  <li><code>λ x y. y x</code>
+    <ul>
+      <li>haskellだと<code>\ x y -&gt; y x</code></li>
+      <li>schemeだと<code>(lambda (x) (lambda (y) (y x)))</code></li>
+      <li>pythonだと<code>lambda x : lambda y : y(x)</code></li>
+    </ul>
+  </li>
+  <li># <code>λ</code>って打つの面倒なので<code>\</code>で代替</li>
+</ul>
+
+<h2 id="section">変換</h2>
+<dl>
+  <dt>alpha変換</dt>
+  <dd>変数の名前は変えれるよ <code>(\ a -&gt; a) -&gt; (\ b -&gt; b)</code>
+beta簡約</dd>
+  <dd>関数適用のこと <code>(\ x -&gt; f x) y -&gt; f y</code>
+eta変換</dd>
+  <dd>const除去 <code>(\ _. a) b = (const a) b -&gt; a</code></dd>
+</dl>
+
+<h2 id="section-1">関数</h2>
+<ul>
+  <li>可読性のためhaskellから輸入しておく</li>
+  <li>combinator理論</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="k">const</span> <span class="n">x</span> <span class="n">y</span> <span class="o">=</span> <span class="n">x</span>
+</span><span class="line"><span class="n">id</span> <span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h2 id="church">church数</h2>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="mi">0</span> <span class="o">=</span> <span class="err">\</span> <span class="n">s</span> <span class="n">o</span><span class="p">.</span>      <span class="n">o</span>
+</span><span class="line"><span class="mi">1</span> <span class="o">=</span> <span class="err">\</span> <span class="n">s</span> <span class="n">o</span><span class="p">.</span>    <span class="n">s</span> <span class="n">o</span>
+</span><span class="line"><span class="mi">2</span> <span class="o">=</span> <span class="err">\</span> <span class="n">s</span> <span class="n">o</span><span class="p">.</span> <span class="n">s</span> <span class="p">(</span><span class="n">s</span> <span class="n">o</span><span class="p">)</span>
+</span><span class="line"><span class="n">succ</span> <span class="n">n</span>   <span class="o">=</span> <span class="err">\</span> <span class="n">s</span> <span class="n">o</span><span class="p">.</span>   <span class="n">s</span> <span class="p">(</span><span class="n">n</span> <span class="n">s</span> <span class="n">o</span><span class="p">)</span>
+</span><span class="line"><span class="n">plus</span> <span class="n">m</span> <span class="n">n</span> <span class="o">=</span> <span class="err">\</span> <span class="n">s</span> <span class="n">o</span><span class="p">.</span> <span class="n">m</span> <span class="n">s</span> <span class="p">(</span><span class="n">n</span> <span class="n">s</span> <span class="n">o</span><span class="p">)</span>
+</span><span class="line"><span class="n">mult</span> <span class="n">m</span> <span class="n">n</span> <span class="o">=</span> <span class="err">\</span> <span class="n">s</span><span class="p">.</span> <span class="n">m</span> <span class="p">(</span><span class="n">n</span> <span class="n">s</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li><code>(x -&gt; x) -&gt; x -&gt; x</code>な関数を数とみなす</li>
+  <li><code>numberToInt a = a (+1) 0 :: (forall x. (x -&gt; x) -&gt; x -&gt; x) -&gt; Int</code></li>
+  <li><code>Int -&gt; (a -&gt; a) -&gt; a</code>な関数はhayooでググったら<code>nest</code>って名前ついてたけど、<code>3 ~ nest 3</code>と思えば自然</li>
+</ul>
+
+<p>演算の定義別version</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">plus</span> <span class="n">m</span> <span class="n">n</span> <span class="o">=</span> <span class="n">m</span> <span class="n">succ</span> <span class="n">n</span>
+</span><span class="line"><span class="n">mult</span> <span class="n">m</span> <span class="n">n</span> <span class="o">=</span> <span class="n">m</span> <span class="p">(</span><span class="n">plus</span> <span class="n">n</span><span class="p">)</span> <span class="mi">0</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h3 id="pred">pred</h3>
+<ul>
+  <li><code>- 1</code></li>
+  <li>&lt;-&gt; <code>succ</code></li>
+  <li>最大の山場だった</li>
+  <li>山場過ぎて<a href="../church-number-and-pred-function/">別記事</a>に切り出した</li>
+</ul>
+
+<h3 id="section-2">減算</h3>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">sub</span> <span class="n">m</span> <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="n">pred</span> <span class="n">m</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li><code>plus m n = m succ n</code>なことを考えると当然だった</li>
+  <li>引数と定義部の順序の違いには注意すべきか</li>
+</ul>
+
+<h2 id="section-3">真偽値</h2>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="nb">true</span>  <span class="n">t</span> <span class="n">f</span> <span class="o">=</span> <span class="n">t</span>
+</span><span class="line"><span class="nb">false</span> <span class="n">t</span> <span class="n">f</span> <span class="o">=</span> <span class="n">f</span>
+</span><span class="line"><span class="k">if</span> <span class="n">p</span> <span class="n">t</span> <span class="n">f</span> <span class="o">=</span> <span class="n">p</span> <span class="n">t</span> <span class="n">f</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="k">if</span> <span class="nb">true</span>  <span class="n">t</span> <span class="n">f</span> <span class="o">=</span> <span class="n">t</span>
+</span><span class="line"><span class="k">if</span> <span class="nb">false</span> <span class="n">t</span> <span class="n">f</span> <span class="o">=</span> <span class="n">f</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li><code>a -&gt; a -&gt; a</code>を真偽値とみなす</li>
+  <li>分岐構造,jump命令が値に組み込まれている</li>
+  <li><code>if</code>は構文糖</li>
+</ul>
+
+<h3 id="section-4">論理演算</h3>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">not</span> <span class="n">p</span>   <span class="o">=</span> <span class="err">\</span> <span class="n">t</span> <span class="n">f</span><span class="p">.</span> <span class="n">p</span> <span class="n">f</span> <span class="n">t</span>
+</span><span class="line"><span class="n">and</span> <span class="n">p</span> <span class="n">q</span> <span class="o">=</span> <span class="err">\</span> <span class="n">t</span> <span class="n">f</span><span class="p">.</span> <span class="n">p</span> <span class="p">(</span><span class="n">q</span> <span class="n">t</span> <span class="n">f</span><span class="p">)</span> <span class="n">f</span>
+</span><span class="line"><span class="n">or</span>  <span class="n">p</span> <span class="n">q</span> <span class="o">=</span> <span class="err">\</span> <span class="n">t</span> <span class="n">f</span><span class="p">.</span> <span class="n">p</span> <span class="n">t</span> <span class="p">(</span><span class="n">q</span> <span class="n">t</span> <span class="n">f</span><span class="p">)</span>
+</span><span class="line"><span class="n">xor</span> <span class="n">p</span> <span class="n">q</span> <span class="o">=</span> <span class="err">\</span> <span class="n">t</span> <span class="n">f</span><span class="p">.</span> <span class="n">p</span> <span class="p">(</span><span class="n">q</span> <span class="n">f</span> <span class="n">t</span><span class="p">)</span> <span class="p">(</span><span class="n">q</span> <span class="n">t</span> <span class="n">f</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>所詮if文なので楽勝</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">not</span> <span class="n">p</span>   <span class="o">=</span> <span class="n">p</span> <span class="nb">false</span> <span class="nb">true</span>
+</span><span class="line"><span class="n">and</span> <span class="n">p</span> <span class="n">q</span> <span class="o">=</span> <span class="n">p</span> <span class="n">q</span> <span class="nb">false</span>
+</span><span class="line"><span class="n">or</span>  <span class="n">p</span> <span class="n">q</span> <span class="o">=</span> <span class="n">p</span> <span class="nb">true</span> <span class="n">q</span>
+</span><span class="line"><span class="n">xor</span> <span class="n">p</span> <span class="n">q</span> <span class="o">=</span> <span class="n">p</span> <span class="p">(</span><span class="n">not</span> <span class="n">q</span><span class="p">)</span> <span class="n">q</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>point-freeの綺麗な定義</li>
+</ul>
+
+<h2 id="section-5">比較</h2>
+
+<h3 id="section-6">0判定</h3>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">iszero</span> <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="p">(</span><span class="k">const</span> <span class="nb">false</span><span class="p">)</span> <span class="nb">true</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">iszero</span> <span class="mi">2</span>
+</span><span class="line"><span class="err">\</span> <span class="n">t</span> <span class="n">f</span><span class="p">.</span> <span class="n">iszero</span> <span class="mi">2</span> <span class="n">t</span> <span class="n">f</span>
+</span><span class="line"><span class="err">\</span> <span class="n">t</span> <span class="n">f</span><span class="p">.</span> <span class="mi">2</span> <span class="p">(</span><span class="k">const</span> <span class="nb">false</span><span class="p">)</span> <span class="nb">true</span> <span class="n">t</span> <span class="n">f</span>
+</span><span class="line"><span class="err">\</span> <span class="n">t</span> <span class="n">f</span><span class="p">.</span> <span class="p">(</span><span class="k">const</span> <span class="nb">false</span><span class="p">)</span> <span class="p">((</span><span class="k">const</span> <span class="nb">false</span><span class="p">)</span> <span class="nb">true</span><span class="p">)</span> <span class="n">t</span> <span class="n">f</span>
+</span><span class="line"><span class="err">\</span> <span class="n">t</span> <span class="n">f</span><span class="p">.</span> <span class="nb">false</span> <span class="n">t</span> <span class="n">f</span>
+</span><span class="line"><span class="err">\</span> <span class="n">t</span> <span class="n">f</span><span class="p">.</span> <span class="n">f</span>
+</span><span class="line"><span class="nb">false</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">iszero</span> <span class="mi">0</span>
+</span><span class="line"><span class="err">\</span> <span class="n">t</span> <span class="n">f</span><span class="p">.</span> <span class="n">iszero</span> <span class="mi">0</span> <span class="n">t</span> <span class="n">f</span>
+</span><span class="line"><span class="err">\</span> <span class="n">t</span> <span class="n">f</span><span class="p">.</span> <span class="mi">0</span> <span class="p">(</span><span class="n">cons</span> <span class="nb">false</span><span class="p">)</span> <span class="nb">true</span> <span class="n">t</span> <span class="n">f</span>
+</span><span class="line"><span class="err">\</span> <span class="n">t</span> <span class="n">f</span><span class="p">.</span> <span class="nb">true</span> <span class="n">t</span> <span class="n">f</span>
+</span><span class="line"><span class="err">\</span> <span class="n">t</span> <span class="n">f</span><span class="p">.</span> <span class="n">t</span>
+</span><span class="line"><span class="nb">true</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>よく見たら定義からして<code>0 = flip const = false</code>だった</p>
+
+<h3 id="section-7">大小比較</h3>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">gte</span> <span class="n">m</span> <span class="n">n</span> <span class="o">=</span> <span class="n">iszero</span> <span class="p">(</span><span class="n">sub</span> <span class="n">m</span> <span class="n">n</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>sub,predは負数にはならず0となるので</li>
+</ul>
+
+<h3 id="section-8">等値判定</h3>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">equal</span> <span class="n">m</span> <span class="n">n</span> <span class="o">=</span> <span class="n">and</span> <span class="p">(</span><span class="n">gte</span> <span class="n">m</span> <span class="n">n</span><span class="p">)</span> <span class="p">(</span><span class="n">gte</span> <span class="n">n</span> <span class="n">m</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>十分高級なので問題ないね</li>
+</ul>
+
+<h2 id="loop">loop</h2>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">Y</span> <span class="o">=</span> <span class="err">\</span> <span class="n">f</span><span class="p">.</span> <span class="p">(</span><span class="err">\</span> <span class="n">x</span><span class="p">.</span> <span class="n">f</span> <span class="p">(</span><span class="n">x</span> <span class="n">x</span><span class="p">))</span> <span class="p">(</span><span class="err">\</span> <span class="n">x</span><span class="p">.</span> <span class="n">f</span> <span class="p">(</span><span class="n">x</span> <span class="n">x</span><span class="p">)))</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>Y-combinatorと言うらしい</li>
+  <li>意外に簡単だった</li>
+  <li>というか既に慣れ親しんでた</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">Y</span> <span class="n">f</span> <span class="n">x</span>
+</span><span class="line"><span class="p">(</span><span class="err">\</span><span class="n">y</span><span class="p">.</span><span class="n">f</span><span class="p">(</span><span class="n">y</span> <span class="n">y</span><span class="p">))</span> <span class="p">(</span><span class="err">\</span><span class="n">y</span><span class="p">.</span><span class="n">f</span><span class="p">(</span><span class="n">y</span> <span class="n">y</span><span class="p">))</span> <span class="n">x</span>
+</span><span class="line"><span class="n">f</span> <span class="p">((</span><span class="err">\</span><span class="n">y</span><span class="p">.</span><span class="n">f</span><span class="p">(</span><span class="n">y</span> <span class="n">y</span><span class="p">))</span> <span class="p">(</span><span class="err">\</span><span class="n">y</span><span class="p">.</span><span class="n">f</span><span class="p">(</span><span class="n">y</span> <span class="n">y</span><span class="p">)))</span> <span class="n">x</span>
+</span><span class="line"><span class="n">f</span> <span class="p">(</span><span class="n">f</span> <span class="p">((</span><span class="err">\</span><span class="n">y</span><span class="p">.</span><span class="n">f</span><span class="p">(</span><span class="n">y</span> <span class="n">y</span><span class="p">))</span> <span class="p">(</span><span class="err">\</span><span class="n">y</span><span class="p">.</span><span class="n">f</span><span class="p">(</span><span class="n">y</span> <span class="n">y</span><span class="p">))))</span> <span class="n">x</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>やたら同じものが出てくるので<code>y = (\ x. f (x x))</code>とおいてみる</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">Y</span> <span class="n">f</span> <span class="n">x</span>
+</span><span class="line"><span class="n">y</span> <span class="n">y</span> <span class="n">x</span>
+</span><span class="line"><span class="n">f</span> <span class="p">(</span><span class="n">y</span> <span class="n">y</span><span class="p">)</span> <span class="n">x</span>
+</span><span class="line"><span class="n">f</span> <span class="p">(</span><span class="n">f</span> <span class="p">(</span><span class="n">y</span> <span class="n">y</span><span class="p">))</span> <span class="n">x</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><code>Y</code>を<code>Y</code>で定義できそうなので元の式を弄くる</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">Y</span> <span class="n">f</span> <span class="o">=</span> <span class="n">y</span> <span class="n">y</span>
+</span><span class="line">    <span class="o">=</span> <span class="n">f</span> <span class="p">(</span><span class="n">y</span> <span class="n">y</span><span class="p">)</span>
+</span><span class="line">    <span class="o">=</span> <span class="n">f</span> <span class="p">(</span><span class="n">Y</span> <span class="n">f</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>haskellのfixと全く同じだったようだ</li>
+</ul>
+
+<h3 id="section-9">階乗</h3>
+<p>lambda計算のような何か</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">fact</span> <span class="o">=</span> <span class="n">Y</span> <span class="p">(</span><span class="err">\</span> <span class="n">recur</span> <span class="n">n</span><span class="p">.</span> <span class="p">(</span><span class="n">iszero</span> <span class="n">n</span><span class="p">)</span> <span class="mi">1</span> <span class="p">(</span><span class="n">mult</span> <span class="n">n</span> <span class="p">(</span><span class="n">recur</span> <span class="p">(</span><span class="n">pred</span> <span class="n">n</span><span class="p">))))</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>有効なhaskell-code</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>haskell</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">fact</span> <span class="o">=</span> <span class="n">fix</span> <span class="err">$</span> <span class="err">\</span> <span class="n">recur</span> <span class="n">n</span> <span class="o">-&gt;</span> <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span> <span class="n">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="n">n</span> <span class="o">*</span> <span class="n">recur</span> <span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>完全に一致</p>
+
+<h2 id="pair">pair</h2>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>haskell</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">pair</span> <span class="n">l</span> <span class="n">r</span> <span class="o">=</span> <span class="err">\</span> <span class="n">f</span><span class="p">.</span> <span class="n">f</span> <span class="n">l</span> <span class="n">r</span>
+</span><span class="line"><span class="n">fst</span> <span class="n">p</span> <span class="o">=</span> <span class="n">p</span> <span class="p">(</span><span class="err">\</span> <span class="n">l</span> <span class="n">r</span><span class="p">.</span> <span class="n">l</span><span class="p">)</span>
+</span><span class="line"><span class="n">snd</span> <span class="n">p</span> <span class="o">=</span> <span class="n">p</span> <span class="p">(</span><span class="err">\</span> <span class="n">l</span> <span class="n">r</span><span class="p">.</span> <span class="n">r</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">swap</span> <span class="n">p</span> <span class="o">=</span> <span class="n">p</span> <span class="p">(</span><span class="err">\</span> <span class="n">l</span> <span class="n">r</span><span class="p">.</span> <span class="n">r</span> <span class="n">l</span><span class="p">)</span>
+</span><span class="line"><span class="n">uncurry</span> <span class="n">f</span> <span class="o">=</span> <span class="err">\</span> <span class="n">p</span><span class="p">.</span> <span class="n">p</span> <span class="p">(</span><span class="err">\</span> <span class="n">l</span> <span class="n">r</span><span class="p">.</span> <span class="n">f</span> <span class="n">l</span> <span class="n">r</span><span class="p">)</span>
+</span><span class="line"><span class="n">uncurry</span> <span class="n">f</span> <span class="n">p</span> <span class="o">=</span> <span class="n">p</span> <span class="n">f</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>問題ない</p>
+
+<h2 id="list">list</h2>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">cons</span> <span class="n">x</span> <span class="n">y</span> <span class="o">=</span> <span class="err">\</span> <span class="n">c</span> <span class="n">n</span><span class="p">.</span> <span class="n">c</span> <span class="n">x</span> <span class="p">(</span><span class="n">y</span> <span class="n">c</span> <span class="n">n</span><span class="p">)</span>
+</span><span class="line"><span class="n">nil</span>      <span class="o">=</span> <span class="err">\</span> <span class="n">c</span> <span class="n">n</span><span class="p">.</span> <span class="n">n</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">foldr</span> <span class="n">f</span> <span class="n">a0</span> <span class="n">xs</span>
+</span><span class="line">    <span class="o">=</span> <span class="n">xs</span> <span class="n">f</span> <span class="n">a0</span>
+</span><span class="line">    <span class="o">=</span> <span class="n">cons</span> <span class="n">a</span> <span class="p">(</span><span class="n">cons</span> <span class="n">b</span> <span class="p">(</span><span class="n">cons</span> <span class="n">c</span> <span class="p">(...</span> <span class="p">(</span><span class="n">cons</span> <span class="n">y</span> <span class="p">(</span><span class="n">cons</span> <span class="n">z</span> <span class="n">nil</span><span class="p">)))))</span> <span class="n">f</span> <span class="n">a0</span>
+</span><span class="line">    <span class="o">=</span> <span class="n">f</span>    <span class="n">a</span> <span class="p">(</span><span class="n">f</span>    <span class="n">b</span> <span class="p">(</span><span class="n">f</span>    <span class="n">c</span> <span class="p">(...</span> <span class="p">(</span><span class="n">f</span>    <span class="n">y</span> <span class="p">(</span><span class="n">f</span>    <span class="n">z</span>  <span class="n">a0</span><span class="p">)))))</span> <span class="n">f</span> <span class="n">a0</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">map</span> <span class="n">f</span> <span class="o">=</span> <span class="n">foldr</span> <span class="p">(</span><span class="err">\</span> <span class="n">x</span><span class="p">.</span> <span class="n">cons</span> <span class="p">(</span><span class="n">f</span> <span class="n">x</span><span class="p">))</span> <span class="n">nil</span>
+</span><span class="line"><span class="n">length</span> <span class="o">=</span> <span class="n">foldr</span> <span class="p">(</span><span class="k">const</span> <span class="n">succ</span><span class="p">)</span> <span class="mi">0</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>church encoding と scott encoding の違いだとかはよく分からない</li>
+  <li>手計算なのでそろそろ不安</li>
+  <li>to be continued…</li>
+</ul>
+
+<h2 id="section-10">参考</h2>
+<p>主に <a href="http://uid0130.blogspot.jp/2013/05/x.html">uid0130-blog: ラムダ計算の使い方</a></p>
+
+<p>他にも:</p>
+
+<ul>
+  <li><a href="http://ja.wikipedia.org/wiki/%E3%83%A9%E3%83%A0%E3%83%80%E8%A8%88%E7%AE%97">ラムダ計算 - Wikipedia</a></li>
+  <li><a href="http://www.slideshare.net/bleistift/f-28987517">F#の基礎(嘘)</a></li>
+</ul>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[目標と契約]]></title>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: church | Higher Order うさぎ小屋]]></title>
+  <link href="http://solorab.github.io/blog/categories/church/atom.xml" rel="self"/>
+  <link href="http://solorab.github.io/"/>
+  <updated>2014-04-11T08:13:41+09:00</updated>
+  <id>http://solorab.github.io/</id>
+  <author>
+    <name><![CDATA[そろうさぎ]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[チャーチ数とpred関数]]></title>
+    <link href="http://solorab.github.io/blog/2014/04/05/church-number-and-pred-function/"/>
+    <updated>2014-04-05T21:04:13+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/04/05/church-number-and-pred-function</id>
+    <content type="html"><![CDATA[<p><code>c
+    pred n = \ s o. n (\ f g. g (f s)) (\ x. o) (\ x. x)
+</code></p>
+
+<ul>
+  <li>church数を<code>- 1</code>する関数</li>
+  <li>基本的なはずなのに、他のと比べてやけに複雑</li>
+</ul>
+
+<!-- more -->
+<!-- c は色付けのため -->
+
+<h2 id="section">とりあえず手動簡約</h2>
+
+<p>よく分からないので名前つけてみる</p>
+
+<p><code>c
+    embed x = \ f g. g (f x)
+    const x y = x
+    id x = x
+    pred n = \ s o. n (embed s) (const o) id
+</code></p>
+
+<p>なにこれ:</p>
+
+<ul>
+  <li>embed
+    <ul>
+      <li><code>:: a -&gt; (a -&gt; b) -&gt; (b -&gt; c) -&gt; c</code></li>
+      <li>なにこれ (後の繋がり的にembedと命名)</li>
+    </ul>
+  </li>
+  <li>embed s
+    <ul>
+      <li>なにこれ</li>
+    </ul>
+  </li>
+  <li>const o
+    <ul>
+      <li>なにこれ</li>
+    </ul>
+  </li>
+</ul>
+
+<p>気にせず簡約</p>
+
+<p><code>c
+    pred 2
+    \ s o. pred 2 s o
+    \ s o. 2 (embed s) (const o) id
+    \ s o. (embed s) ((embed s) (const o)) id
+    \ s o. id (((embed s) (const o)) s)
+    \ s o. (embed s) (const o) s
+    \ s o. s ((const o) s)
+    \ s o. s o
+    1
+</code></p>
+
+<p>何故か動く</p>
+
+<p><code>c
+    pred 0
+    \ s o. pred 0 s o
+    \ s o. 0 (embed s) (const o) id
+    \ s o. (const o) id
+    \ s o. o
+    0
+</code></p>
+
+<p><code>-1</code>にはならないっぽい</p>
+
+<h2 id="section-1">簡約を追うのは諦めて、原理を考える</h2>
+
+<ul>
+  <li>数は関数なので、分解やパターンマッチはできない</li>
+  <li>適用ならできる</li>
+  <li>1だけ減らしたい</li>
+</ul>
+
+<!-- -->
+
+<ol>
+  <li>よって、<code>\ s o. s (s (s (... (s (s o)))))</code>の<code>o</code>を活用するのは必然</li>
+  <li>しかし、<code>o</code>は<code>s</code>に適用される側</li>
+  <li>そこで、何かしらひっくり返す</li>
+</ol>
+
+<p>つまり、<code>sss...sso</code>ではだめなので:</p>
+
+<ol>
+  <li><code>oss...sss</code></li>
+  <li><code>sss...sos</code></li>
+</ol>
+
+<p>この<code>pred</code>の定義は後者のもよう (前者でもいけるのか否かは不明)</p>
+
+<p>定義を再確認</p>
+
+<p><code>c
+    embed x  f g
+        = g (f x)
+    pred n = \ s o. n (embed s) (const o) id
+</code></p>
+
+<p>その辺を意識してもう1度簡約<br />
+<code>s</code>がどう並び替わるのか見るため番号振ります</p>
+
+<p><code>c
+    pred 4
+    \ s o. pred 4 s o
+    \ s o. 4 (embed s) (const o) id
+    \ s o. (embed  s) ((embed  s) ((embed  s) ((embed  s) (const o)))) id
+    \ s o. (embed s1) ((embed s2) ((embed s3) ((embed s4) (const o)))) id
+    \ s o.        id ( (embed s2) ((embed s3) ((embed s4) (const o)))  s1)
+    \ s o.        id (        s1 ( (embed s3) ((embed s4) (const o))   s2))
+    \ s o.        id (        s1 (        s2 ( (embed s4) (const o)    s3)))
+    \ s o.        id (        s1 (        s2 (        s3 ((const o)    s4))))
+    \ s o.        id (        s1 (        s2 (        s3 (       o       ))))
+    \ s o. s (s (s o))
+    3
+</code></p>
+
+<p>今回は<code>s4</code>(最も深い所の<code>s</code>)が<code>const</code>によって消えていますね</p>
+
+<h2 id="on-wikipedia">別な定義 on wikipedia</h2>
+<p><code>
+    pred = \ n. n (\ g k. (g 1) (\ u. plus (g k) 1) k) (\ v. 0) 0
+</code></p>
+
+<blockquote>
+  <p>上の部分式 (g 1) (\ u. PLUS (g k) 1) k は、 g(1) がゼロとなるとき k に評価され、そうでないときは g(k) + 1 に評価されることに注意せよ。</p>
+</blockquote>
+
+<ul>
+  <li>もう1つあったので追ってみる</li>
+  <li>注意書きが要るぐらいには複雑らしい</li>
+</ul>
+
+<p><code>c
+    f g k = g 1 (const (plus (g k) 1)) k
+    pred n = n f (const 0) 0
+</code></p>
+
+<h3 id="section-2">誘導に従う</h3>
+
+<p>(g 1)が0になるとき</p>
+
+<p><code>c
+    g = const 0
+    f (const 0) k
+        = const 0 1 (const (plus (const 0 k) 1)) k
+        = 0 (const (plus (const 0 k) 1)) k
+        = (\ s o. o) (const (plus (const 0 k) 1)) k
+        = k
+    f (const 0) = id
+</code></p>
+
+<p>そうでない(0でない数である)とき</p>
+
+<p><code>c
+    g :: number -&gt; number
+    (g 1) != 0
+    f g k
+        = (g 1) (const (plus (g k) 1)) k
+        = (const (plus (g k) 1)) ((const (plus (g k) 1)) (... ((const (plus (g k) 1)) k)))
+        =        (plus (g k) 1)
+        = succ (g k)
+    f   id k =       succ k
+    f succ k = succ (succ k)
+</code></p>
+
+<p>まとめると</p>
+
+<p><code>c
+    pred n
+        = n f (const 0) 0
+        = f (f (f (... (f (f (f (const 0)) ))))) 0
+        = f (f (f (... (f (f id            ))))) 0
+        = f (f (f (... (f (\ n. succ (id n)))))) 0
+        = f (f (f (... (f (\ n. succ n     ))))) 0
+        = f (f (f (... (\ n. succ (succ n)  )))) 0
+        = (\n. succ (succ (succ (... (succ (succ n)))))) 0
+        =      succ (succ (succ (... (succ (succ 0)))))
+</code></p>
+
+<p>だいたい先ほどのと同じですね</p>
+]]></content>
+  </entry>
+  
+</feed>

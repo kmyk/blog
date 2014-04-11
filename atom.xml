@@ -4,7 +4,7 @@
   <title><![CDATA[Higher Order うさぎ小屋]]></title>
   <link href="http://solorab.github.io/atom.xml" rel="self"/>
   <link href="http://solorab.github.io/"/>
-  <updated>2014-04-11T08:17:03+09:00</updated>
+  <updated>2014-04-11T23:15:53+09:00</updated>
   <id>http://solorab.github.io/</id>
   <author>
     <name><![CDATA[そろうさぎ]]></name>
@@ -12,6 +12,37 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Brainfuckでhello World]]></title>
+    <link href="http://solorab.github.io/blog/2014/04/11/hello-world-in-brainfuck/"/>
+    <updated>2014-04-11T22:56:51+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/04/11/hello-world-in-brainfuck</id>
+    <content type="html"><![CDATA[<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+</pre></td><td class="code"><pre><code class="brainfuck"><span class="line"><span class="nb">++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</span><span class="nt">.</span><span class="c"></span>
+</span><span class="line"><span class="nb">---</span><span class="nt">.</span><span class="c"></span>
+</span><span class="line"><span class="nb">+++++++</span><span class="nt">.</span><span class="c"></span>
+</span><span class="line"><span class="nt">.</span><span class="c"></span>
+</span><span class="line"><span class="nb">+++</span><span class="nt">.</span><span class="c"></span>
+</span><span class="line"><span class="nb">-------------------------------------------------------------------------------</span><span class="nt">.</span><span class="c"></span>
+</span><span class="line"><span class="nb">+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</span><span class="nt">.</span><span class="c"></span>
+</span><span class="line"><span class="nb">--------</span><span class="nt">.</span><span class="c"></span>
+</span><span class="line"><span class="nb">+++</span><span class="nt">.</span><span class="c"></span>
+</span><span class="line"><span class="nb">------</span><span class="nt">.</span><span class="c"></span>
+</span><span class="line"><span class="nb">--------</span><span class="nt">.</span><span class="c"></span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Lazy Kでhello World書いた]]></title>
@@ -239,7 +270,9 @@
 <span class="line-number">5</span>
 <span class="line-number">6</span>
 <span class="line-number">7</span>
-</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="cp">#define double (mult two)</span>
+<span class="line-number">8</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="cp">#define two (s (s (k s) k) i)</span>
+</span><span class="line"><span class="cp">#define double (mult two)</span>
 </span><span class="line"><span class="cp">#define four (double two)</span>
 </span><span class="line"><span class="cp">#define eight (double four)</span>
 </span><span class="line"><span class="cp">#define sixteen (double eight)</span>
@@ -251,6 +284,7 @@
 <ul>
   <li>lazy-kは<code>256</code>をもって<code>eof</code>とする</li>
   <li>2進数万歳</li>
+  <li>2は変換しておいた</li>
 </ul>
 
 <h3 id="section-5">完成</h3>
@@ -288,6 +322,13 @@
 </pre></td><td class="code"><pre><code class="sh"><span class="line"><span class="nv">$ </span>gcc -E a.lazy.cpp &gt; a.lazy <span class="o">&amp;&amp;</span> <span class="nb">echo </span>hoge | ./lazy a.lazy
 </span><span class="line">hello world
 </span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<hr />
+
+<dl>
+  <dt>2014/04/11</dt>
+  <dd><code>two</code>の定義が抜けてたので修正</dd>
+</dl>
 ]]></content>
   </entry>
   

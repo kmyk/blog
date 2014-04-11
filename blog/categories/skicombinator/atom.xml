@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: lazy | Higher Order うさぎ小屋]]></title>
-  <link href="http://solorab.github.io/blog/categories/lazy/atom.xml" rel="self"/>
+  <title><![CDATA[Category: skicombinator | Higher Order うさぎ小屋]]></title>
+  <link href="http://solorab.github.io/blog/categories/skicombinator/atom.xml" rel="self"/>
   <link href="http://solorab.github.io/"/>
-  <updated>2014-04-11T08:17:03+09:00</updated>
+  <updated>2014-04-11T23:15:53+09:00</updated>
   <id>http://solorab.github.io/</id>
   <author>
     <name><![CDATA[そろうさぎ]]></name>
@@ -208,6 +208,7 @@
 
 <h3 id="section-4">数字を定義</h3>
 <p><code>c
+    #define two (s (s (k s) k) i)
     #define double (mult two)
     #define four (double two)
     #define eight (double four)
@@ -220,6 +221,7 @@
 <ul>
   <li>lazy-kは<code>256</code>をもって<code>eof</code>とする</li>
   <li>2進数万歳</li>
+  <li>2は変換しておいた</li>
 </ul>
 
 <h3 id="section-5">完成</h3>
@@ -244,6 +246,13 @@
     $ gcc -E a.lazy.cpp &gt; a.lazy &amp;&amp; echo hoge | ./lazy a.lazy
     hello world
 </code></p>
+
+<hr />
+
+<dl>
+  <dt>2014/04/11</dt>
+  <dd><code>two</code>の定義が抜けてたので修正</dd>
+</dl>
 ]]></content>
   </entry>
   

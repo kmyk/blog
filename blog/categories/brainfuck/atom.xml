@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: brainfuck | Higher Order うさぎ小屋]]></title>
+  <link href="http://solorab.github.io/blog/categories/brainfuck/atom.xml" rel="self"/>
+  <link href="http://solorab.github.io/"/>
+  <updated>2014-04-11T23:15:53+09:00</updated>
+  <id>http://solorab.github.io/</id>
+  <author>
+    <name><![CDATA[そろうさぎ]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[brainfuckでhello world]]></title>
+    <link href="http://solorab.github.io/blog/2014/04/11/hello-world-in-brainfuck/"/>
+    <updated>2014-04-11T22:56:51+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/04/11/hello-world-in-brainfuck</id>
+    <content type="html"><![CDATA[<p><code>brainfuck
+    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.
+    ---.
+    +++++++.
+    .
+    +++.
+    -------------------------------------------------------------------------------.
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.
+    --------.
+    +++.
+    ------.
+    --------.
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>

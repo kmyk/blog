@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: skicombinator | Higher Order うさぎ小屋]]></title>
-  <link href="http://solorab.github.io/blog/categories/skicombinator/atom.xml" rel="self"/>
+  <title><![CDATA[Category: ski | Higher Order うさぎ小屋]]></title>
+  <link href="http://solorab.github.io/blog/categories/ski/atom.xml" rel="self"/>
   <link href="http://solorab.github.io/"/>
-  <updated>2014-04-11T23:15:53+09:00</updated>
+  <updated>2014-04-11T23:29:18+09:00</updated>
   <id>http://solorab.github.io/</id>
   <author>
     <name><![CDATA[そろうさぎ]]></name>
@@ -253,6 +253,288 @@
   <dt>2014/04/11</dt>
   <dd><code>two</code>の定義が抜けてたので修正</dd>
 </dl>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[すごいラムダ計算楽しく学ぼう]]></title>
+    <link href="http://solorab.github.io/blog/2014/04/05/lambda-calculus-for-great-good/"/>
+    <updated>2014-04-05T20:24:26+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/04/05/lambda-calculus-for-great-good</id>
+    <content type="html"><![CDATA[<ul>
+  <li>以前挑んだ時は惨敗したが、今回は程よく分かるので楽しい</li>
+  <li>haskellにとってのlambda計算は、cにとってのbrainf*ckみたいなものっぽい</li>
+  <li>教養の域を出なさそうだが楽しいので許す</li>
+  <li>楽しい(自己暗示)</li>
+</ul>
+
+<!-- more -->
+<!-- c は色付けのため -->
+
+<h2 id="lambda">lambda計算とは</h2>
+<ul>
+  <li>無名関数のみで計算</li>
+  <li><code>λ x y. y x</code>
+    <ul>
+      <li>haskellだと<code>\ x y -&gt; y x</code></li>
+      <li>schemeだと<code>(lambda (x) (lambda (y) (y x)))</code></li>
+      <li>pythonだと<code>lambda x : lambda y : y(x)</code></li>
+    </ul>
+  </li>
+  <li># <code>λ</code>って打つの面倒なので<code>\</code>で代替</li>
+</ul>
+
+<h2 id="section">変換</h2>
+<dl>
+  <dt>alpha変換</dt>
+  <dd>変数の名前は変えれるよ <code>(\ a -&gt; a) -&gt; (\ b -&gt; b)</code>
+beta簡約</dd>
+  <dd>関数適用のこと <code>(\ x -&gt; f x) y -&gt; f y</code>
+eta変換</dd>
+  <dd>const除去 <code>(\ _. a) b = (const a) b -&gt; a</code></dd>
+</dl>
+
+<h2 id="section-1">関数</h2>
+<ul>
+  <li>可読性のためhaskellから輸入しておく</li>
+  <li>combinator理論</li>
+</ul>
+
+<p><code>c
+    const x y = x
+    id x = x
+</code></p>
+
+<h2 id="church">church数</h2>
+<p><code>
+    0 = \ s o.      o
+    1 = \ s o.    s o
+    2 = \ s o. s (s o)
+    succ n   = \ s o.   s (n s o)
+    plus m n = \ s o. m s (n s o)
+    mult m n = \ s. m (n s)
+</code></p>
+
+<ul>
+  <li><code>(x -&gt; x) -&gt; x -&gt; x</code>な関数を数とみなす</li>
+  <li><code>numberToInt a = a (+1) 0 :: (forall x. (x -&gt; x) -&gt; x -&gt; x) -&gt; Int</code></li>
+  <li><code>Int -&gt; (a -&gt; a) -&gt; a</code>な関数はhayooでググったら<code>nest</code>って名前ついてたけど、<code>3 ~ nest 3</code>と思えば自然</li>
+</ul>
+
+<p>演算の定義別version</p>
+
+<p><code>c
+    plus m n = m succ n
+    mult m n = m (plus n) 0
+</code></p>
+
+<h3 id="pred">pred</h3>
+<ul>
+  <li><code>- 1</code></li>
+  <li>&lt;-&gt; <code>succ</code></li>
+  <li>最大の山場だった</li>
+  <li>山場過ぎて<a href="/blog/2014/04/05/church-number-and-pred-function/">別記事</a>に切り出した</li>
+</ul>
+
+<h3 id="section-2">減算</h3>
+<p><code>
+    sub m n = n pred m
+</code></p>
+
+<ul>
+  <li><code>plus m n = m succ n</code>なことを考えると当然だった</li>
+  <li>引数と定義部の順序の違いには注意すべきか</li>
+</ul>
+
+<h2 id="section-3">真偽値</h2>
+<p><code>
+    true  t f = t
+    false t f = f
+    if p t f = p t f
+</code></p>
+
+<p><code>c
+    if true  t f = t
+    if false t f = f
+</code></p>
+
+<ul>
+  <li><code>a -&gt; a -&gt; a</code>を真偽値とみなす</li>
+  <li>分岐構造,jump命令が値に組み込まれている</li>
+  <li><code>if</code>は構文糖</li>
+</ul>
+
+<h3 id="section-4">論理演算</h3>
+<p><code>
+    not p   = \ t f. p f t
+    and p q = \ t f. p (q t f) f
+    or  p q = \ t f. p t (q t f)
+    xor p q = \ t f. p (q f t) (q t f)
+</code></p>
+
+<ul>
+  <li>所詮if文なので楽勝</li>
+</ul>
+
+<p><code>c
+    not p   = p false true
+    and p q = p q false
+    or  p q = p true q
+    xor p q = p (not q) q
+</code></p>
+
+<ul>
+  <li>point-freeの綺麗な定義</li>
+</ul>
+
+<h2 id="section-5">比較</h2>
+
+<h3 id="section-6">0判定</h3>
+<p><code>
+    iszero n = n (const false) true
+</code></p>
+
+<p><code>c
+    iszero 2
+    \ t f. iszero 2 t f
+    \ t f. 2 (const false) true t f
+    \ t f. (const false) ((const false) true) t f
+    \ t f. false t f
+    \ t f. f
+    false
+</code></p>
+
+<p><code>c
+    iszero 0
+    \ t f. iszero 0 t f
+    \ t f. 0 (cons false) true t f
+    \ t f. true t f
+    \ t f. t
+    true
+</code></p>
+
+<p>よく見たら定義からして<code>0 = flip const = false</code>だった</p>
+
+<h3 id="section-7">大小比較</h3>
+<p><code>
+    gte m n = iszero (sub m n)
+</code></p>
+
+<ul>
+  <li>sub,predは負数にはならず0となるので</li>
+</ul>
+
+<h3 id="section-8">等値判定</h3>
+<p><code>
+    equal m n = and (gte m n) (gte n m)
+</code></p>
+
+<ul>
+  <li>十分高級なので問題ないね</li>
+</ul>
+
+<h2 id="loop">loop</h2>
+<p><code>
+    Y = \ f. (\ x. f (x x)) (\ x. f (x x)))
+</code></p>
+
+<ul>
+  <li>Y-combinatorと言うらしい</li>
+  <li>意外に簡単だった</li>
+  <li>というか既に慣れ親しんでた</li>
+</ul>
+
+<p><code>c
+    Y f x
+    (\y.f(y y)) (\y.f(y y)) x
+    f ((\y.f(y y)) (\y.f(y y))) x
+    f (f ((\y.f(y y)) (\y.f(y y)))) x
+</code></p>
+
+<p>やたら同じものが出てくるので<code>y = (\ x. f (x x))</code>とおいてみる</p>
+
+<p><code>c
+    Y f x
+    y y x
+    f (y y) x
+    f (f (y y)) x
+</code></p>
+
+<p><code>Y</code>を<code>Y</code>で定義できそうなので元の式を弄くる</p>
+
+<p><code>c
+    Y f = y y
+        = f (y y)
+        = f (Y f)
+</code></p>
+
+<ul>
+  <li>haskellのfixと全く同じだったようだ</li>
+</ul>
+
+<h3 id="section-9">階乗</h3>
+<p>lambda計算のような何か</p>
+
+<p><code>c
+    fact = Y (\ recur n. (iszero n) 1 (mult n (recur (pred n))))
+</code></p>
+
+<p>有効なhaskell-code</p>
+
+<p><code>c haskell
+    fact = fix $ \ recur n -&gt; if n == 0 then 1 else n * recur (n - 1)
+</code></p>
+
+<p>完全に一致</p>
+
+<h2 id="pair">pair</h2>
+<p><code>
+    pair l r = \ f. f l r
+    fst p = p (\ l r. l)
+    snd p = p (\ l r. r)
+</code></p>
+
+<p><code>c
+    swap p = p (\ l r. r l)
+    uncurry f = \ p. p (\ l r. f l r)
+    uncurry f p = p f
+</code></p>
+
+<p>問題ない</p>
+
+<h2 id="list">list</h2>
+<p><code>
+    cons x y = \ c n. c x (y c n)
+    nil      = \ c n. n
+</code></p>
+
+<p><code>c
+    foldr f a0 xs
+        = xs f a0
+        = cons a (cons b (cons c (... (cons y (cons z nil))))) f a0
+        = f    a (f    b (f    c (... (f    y (f    z  a0))))) f a0
+</code></p>
+
+<p><code>c
+    map f = foldr (\ x. cons (f x)) nil
+    length = foldr (const succ) 0
+</code></p>
+
+<ul>
+  <li>church encoding と scott encoding の違いだとかはよく分からない</li>
+  <li>手計算なのでそろそろ不安</li>
+  <li>to be continued…</li>
+</ul>
+
+<h2 id="section-10">参考</h2>
+<p>主に <a href="http://uid0130.blogspot.jp/2013/05/x.html">uid0130-blog: ラムダ計算の使い方</a></p>
+
+<p>他にも:</p>
+
+<ul>
+  <li><a href="http://ja.wikipedia.org/wiki/%E3%83%A9%E3%83%A0%E3%83%80%E8%A8%88%E7%AE%97">ラムダ計算 - Wikipedia</a></li>
+  <li><a href="http://www.slideshare.net/bleistift/f-28987517">F#の基礎(嘘)</a></li>
+</ul>
 ]]></content>
   </entry>
   

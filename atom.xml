@@ -4,7 +4,7 @@
   <title><![CDATA[Higher Order うさぎ小屋]]></title>
   <link href="http://solorab.github.io/atom.xml" rel="self"/>
   <link href="http://solorab.github.io/"/>
-  <updated>2014-04-11T23:15:53+09:00</updated>
+  <updated>2014-04-11T23:29:18+09:00</updated>
   <id>http://solorab.github.io/</id>
   <author>
     <name><![CDATA[そろうさぎ]]></name>
@@ -1198,16 +1198,7 @@ eta変換</dd>
 <p>型注釈はextensible-effectsの問題 newtypeすれば消えます</p>
 
 <h2 id="section-1">おまけ</h2>
-<p>以下、自分でもあまりよく分かっていない</p>
-
-<h3 id="section-2">構造</h3>
-<p>なにか面白げな構造ができていた 圏っぽいなにか<br />
-何の役に立つかは検討もつかない</p>
-
-<p><code>~&gt;</code>の左辺domain部分は必ず<code>Program *</code>だが、右辺codomain部分は必ずしも<code>Program *</code>でなくてもよい (ただし不可逆)</p>
-
-<h4 id="map-id--program-t--program-t">map (id) : <code>Program t ~&gt; Program t</code></h4>
-<p>内側へ埋め込む効果がある</p>
+<p>advent部分の制約にoperationalを使うと、つまりoperationalの実装をoperationalで与えるといろいろ楽しい</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
@@ -1215,43 +1206,32 @@ eta変換</dd>
 </span><span class="line"><span class="nf">runProgram</span> <span class="n">advent</span> <span class="ow">::</span> <span class="p">(</span><span class="kt">Member</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">t</span><span class="p">)</span> <span class="n">r</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="kt">Eff</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">t</span> <span class="kt">:&gt;</span> <span class="n">r</span><span class="p">)</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="kt">Eff</span> <span class="n">r</span> <span class="n">a</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p>先程の例を使うと</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="nf">adventEndo</span> <span class="ow">::</span> <span class="p">(</span><span class="kt">Member</span> <span class="p">(</span><span class="kt">Program</span> <span class="kt">Jail</span><span class="p">)</span> <span class="n">r</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="kt">Jail</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="kt">Eff</span> <span class="n">r</span> <span class="n">a</span>
-</span><span class="line"><span class="nf">adventEndo</span> <span class="p">(</span><span class="kt">Print</span> <span class="n">a</span><span class="p">)</span> <span class="ow">=</span> <span class="n">singleton</span> <span class="o">.</span> <span class="kt">Print</span> <span class="o">$</span> <span class="s">&quot;    &quot;</span> <span class="o">++</span> <span class="n">a</span>
-</span><span class="line"><span class="nf">adventEndo</span> <span class="kt">Scan</span> <span class="ow">=</span> <span class="n">return</span> <span class="s">&quot;banned&quot;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<h4 id="split--program-s--program-t-program-u">split : <code>Program s ~&gt; (Program t, Program u)</code></h4>
-<p>実装を部分的に注入するのに使えるか</p>
-
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 </pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="nf">advent</span> <span class="ow">::</span> <span class="p">(</span><span class="kt">Member</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">t</span><span class="p">)</span> <span class="n">r</span><span class="p">,</span> <span class="kt">Member</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">u</span><span class="p">)</span> <span class="n">r</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="n">s</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="kt">Eff</span> <span class="n">r</span> <span class="n">a</span>
 </span><span class="line"><span class="nf">runProgram</span> <span class="n">advent</span> <span class="ow">::</span> <span class="p">(</span><span class="kt">Member</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">t</span><span class="p">)</span> <span class="n">r</span><span class="p">,</span> <span class="kt">Member</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">u</span><span class="p">)</span> <span class="n">r</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="kt">Eff</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">s</span> <span class="kt">:&gt;</span> <span class="n">r</span><span class="p">)</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="kt">Eff</span> <span class="n">r</span> <span class="n">a</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<h4 id="join--program-s-program-t--program-u">join : <code>(Program s, Program t) ~&gt; Program u</code></h4>
-<p>contexts制約部が大きくてよく分からなくなった時に、まとめるのに便利か</p>
-
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
-<span class="line-number">4</span>
 </pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="nf">advent</span>  <span class="ow">::</span> <span class="p">(</span><span class="kt">Member</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">u</span><span class="p">)</span> <span class="n">r</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="n">s</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="kt">Eff</span> <span class="n">r</span> <span class="n">a</span>
 </span><span class="line"><span class="nf">advent&#39;</span> <span class="ow">::</span> <span class="p">(</span><span class="kt">Member</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">u</span><span class="p">)</span> <span class="n">r</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="n">t</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="kt">Eff</span> <span class="n">r</span> <span class="n">a</span>
 </span><span class="line"><span class="nf">runProgram</span> <span class="n">advent&#39;</span> <span class="o">.</span> <span class="n">runProgram</span> <span class="n">advent</span> <span class="ow">::</span> <span class="p">(</span><span class="kt">Member</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">u</span><span class="p">)</span> <span class="n">r</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="kt">Eff</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">s</span> <span class="kt">:&gt;</span> <span class="kt">Program</span> <span class="n">t</span> <span class="kt">:&gt;</span> <span class="n">r</span><span class="p">)</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="kt">Eff</span> <span class="n">r</span> <span class="n">a</span>
-</span><span class="line"><span class="nf">runProgram</span> <span class="n">advent</span> <span class="o">.</span> <span class="n">runProgram</span> <span class="n">advent&#39;</span> <span class="ow">::</span> <span class="p">(</span><span class="kt">Member</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">u</span><span class="p">)</span> <span class="n">r</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="kt">Eff</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">t</span> <span class="kt">:&gt;</span> <span class="kt">Program</span> <span class="n">s</span> <span class="kt">:&gt;</span> <span class="n">r</span><span class="p">)</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="kt">Eff</span> <span class="n">r</span> <span class="n">a</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<h2 id="section-3">関連</h2>
+<h2 id="section-2">関連</h2>
 <ul>
   <li><a href="http://notogawa.hatenablog.com/entry/2014/02/22/004828">IOアクションひとつひとつを利用許諾し・テスト可能にする - ぼくのぬまち 出張版</a></li>
   <li><a href="http://fumieval.hatenablog.com/entry/2013/05/09/223604">Freeモナドを超えた！？operationalモナドを使ってみよう - モナドとわたしとコモナド</a></li>
 </ul>
+
+<hr />
+
+<dl>
+  <dt>2014/04/11</dt>
+  <dd>冗長だった部分を削減</dd>
+</dl>
 ]]></content>
   </entry>
   

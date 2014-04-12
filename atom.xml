@@ -4,7 +4,7 @@
   <title><![CDATA[Higher Order うさぎ小屋]]></title>
   <link href="http://solorab.github.io/atom.xml" rel="self"/>
   <link href="http://solorab.github.io/"/>
-  <updated>2014-04-11T23:29:18+09:00</updated>
+  <updated>2014-04-13T02:48:20+09:00</updated>
   <id>http://solorab.github.io/</id>
   <author>
     <name><![CDATA[そろうさぎ]]></name>
@@ -12,6 +12,99 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Lazk Kでfizzbuzz書いた]]></title>
+    <link href="http://solorab.github.io/blog/2014/04/13/fizzbuzz-in-lazy-k/"/>
+    <updated>2014-04-13T02:27:48+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/04/13/fizzbuzz-in-lazy-k</id>
+    <content type="html"><![CDATA[<ul>
+  <li>妥協してschemeで書いた</li>
+  <li>非常に簡単</li>
+  <li>lazier.scmが強力すぎた</li>
+  <li><code>$ grep -c '\&lt;[ski]\&gt;'</code>すると2 (2行 計3つ)</li>
+  <li>4300byte</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+<span class="line-number">21</span>
+<span class="line-number">22</span>
+<span class="line-number">23</span>
+<span class="line-number">24</span>
+<span class="line-number">25</span>
+<span class="line-number">26</span>
+<span class="line-number">27</span>
+<span class="line-number">28</span>
+<span class="line-number">29</span>
+<span class="line-number">30</span>
+<span class="line-number">31</span>
+<span class="line-number">32</span>
+<span class="line-number">33</span>
+<span class="line-number">34</span>
+<span class="line-number">35</span>
+<span class="line-number">36</span>
+<span class="line-number">37</span>
+<span class="line-number">38</span>
+</pre></td><td class="code"><pre><code class="scheme"><span class="line"><span class="p">(</span><span class="nb">load </span><span class="s">&quot;/path/to/lazier.scm&quot;</span><span class="p">)</span>
+</span><span class="line"><span class="p">(</span><span class="nb">load </span><span class="s">&quot;/path/to/prelude.scm&quot;</span><span class="p">)</span>
+</span><span class="line"><span class="p">(</span><span class="nb">load </span><span class="s">&quot;/path/to/prelude-numbers.scm&quot;</span><span class="p">)</span>
+</span><span class="line">
+</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="ss">&#39;ignore-input</span> <span class="ss">&#39;k</span><span class="p">)</span>
+</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="ss">&#39;Y2</span> <span class="o">&#39;</span><span class="p">(</span><span class="k">lambda </span><span class="p">(</span><span class="nf">f</span><span class="p">)</span> <span class="p">((</span><span class="k">lambda </span><span class="p">(</span><span class="nf">x</span><span class="p">)</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="k">lambda </span><span class="p">(</span><span class="nf">a</span> <span class="nv">b</span><span class="p">)</span> <span class="p">(</span><span class="nf">x</span> <span class="nv">x</span> <span class="nv">a</span> <span class="nv">b</span><span class="p">))))</span>
+</span><span class="line">                            <span class="p">(</span><span class="k">lambda </span><span class="p">(</span><span class="nf">x</span><span class="p">)</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="k">lambda </span><span class="p">(</span><span class="nf">a</span> <span class="nv">b</span><span class="p">)</span> <span class="p">(</span><span class="nf">x</span> <span class="nv">x</span> <span class="nv">a</span> <span class="nv">b</span><span class="p">)))))))</span>
+</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">ifzero</span> <span class="nv">n</span> <span class="nv">x</span> <span class="nv">y</span><span class="p">)</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">ifnonzero</span> <span class="nv">n</span> <span class="nv">y</span> <span class="nv">x</span><span class="p">))</span>
+</span><span class="line">
+</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">pred</span> <span class="nv">n</span><span class="p">)</span> <span class="o">&#39;</span><span class="p">(</span><span class="k">lambda </span><span class="p">(</span><span class="nf">f</span> <span class="nv">x</span><span class="p">)</span> <span class="p">(</span><span class="nf">n</span> <span class="p">(</span><span class="k">lambda </span><span class="p">(</span><span class="nf">p</span> <span class="nv">q</span><span class="p">)</span> <span class="p">(</span><span class="nf">q</span> <span class="p">(</span><span class="nf">p</span> <span class="nv">f</span><span class="p">)))</span> <span class="p">(</span><span class="nf">k</span> <span class="nv">x</span><span class="p">)</span> <span class="nv">i</span><span class="p">)))</span>
+</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">-</span> <span class="nv">n</span> <span class="nv">m</span><span class="p">)</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">m</span> <span class="nv">pred</span> <span class="nv">n</span><span class="p">))</span>
+</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="ss">&#39;mod</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">Y2</span> <span class="p">(</span><span class="k">lambda </span><span class="p">(</span><span class="nf">recur</span> <span class="nv">m</span> <span class="nv">n</span><span class="p">)</span> <span class="p">((</span><span class="nf">if&lt;</span> <span class="nv">m</span> <span class="nv">n</span><span class="p">)</span> <span class="nv">m</span> <span class="p">(</span><span class="nf">recur</span> <span class="p">(</span><span class="nb">- </span><span class="nv">m</span> <span class="nv">n</span><span class="p">)</span> <span class="nv">n</span><span class="p">)))))</span>
+</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="ss">&#39;div</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">Y2</span> <span class="p">(</span><span class="k">lambda </span><span class="p">(</span><span class="nf">recur</span> <span class="nv">m</span> <span class="nv">n</span><span class="p">)</span> <span class="p">((</span><span class="nf">if&lt;</span> <span class="nv">m</span> <span class="nv">n</span><span class="p">)</span> <span class="mi">0</span> <span class="p">(</span><span class="nf">succ</span> <span class="p">(</span><span class="nf">recur</span> <span class="p">(</span><span class="nb">- </span><span class="nv">m</span> <span class="nv">n</span><span class="p">)</span> <span class="nv">n</span><span class="p">))))))</span>
+</span><span class="line">
+</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="ss">&#39;map</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">Y2</span> <span class="p">(</span><span class="k">lambda </span><span class="p">(</span><span class="nf">recur</span> <span class="nv">f</span> <span class="nv">xs</span><span class="p">)</span> <span class="p">(</span><span class="nb">cons </span><span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nb">car </span><span class="nv">xs</span><span class="p">))</span> <span class="p">(</span><span class="nf">recur</span> <span class="nv">f</span> <span class="p">(</span><span class="nb">cdr </span><span class="nv">xs</span><span class="p">))))))</span>
+</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="ss">&#39;append</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">Y2</span> <span class="p">(</span><span class="k">lambda </span><span class="p">(</span><span class="nf">recur</span> <span class="nv">xs</span> <span class="nv">ys</span><span class="p">)</span> <span class="p">(</span><span class="nb">null? </span><span class="nv">xs</span> <span class="nv">ys</span> <span class="p">(</span><span class="nb">cons </span><span class="p">(</span><span class="nb">car </span><span class="nv">xs</span><span class="p">)</span> <span class="p">(</span><span class="nf">recur</span> <span class="p">(</span><span class="nb">cdr </span><span class="nv">xs</span><span class="p">)</span> <span class="nv">ys</span><span class="p">))))))</span>
+</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="ss">&#39;concat</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">Y</span> <span class="p">(</span><span class="k">lambda </span><span class="p">(</span><span class="nf">recur</span> <span class="nv">xs</span><span class="p">)</span> <span class="p">(</span><span class="nb">append </span><span class="p">(</span><span class="nb">car </span><span class="nv">xs</span><span class="p">)</span> <span class="p">(</span><span class="nf">recur</span> <span class="p">(</span><span class="nb">cdr </span><span class="nv">xs</span><span class="p">))))))</span>
+</span><span class="line">
+</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="ss">&#39;enum-from</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">Y</span> <span class="p">(</span><span class="k">lambda </span><span class="p">(</span><span class="nf">recur</span> <span class="nv">n</span><span class="p">)</span> <span class="p">(</span><span class="nb">cons </span><span class="nv">n</span> <span class="p">(</span><span class="nf">recur</span> <span class="p">(</span><span class="nf">succ</span> <span class="nv">n</span><span class="p">))))))</span>
+</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">append-newline</span> <span class="nv">x</span><span class="p">)</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">append</span> <span class="nv">x</span> <span class="p">(</span><span class="nb">cons </span><span class="mi">10</span> <span class="p">())))</span>
+</span><span class="line">
+</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="ss">&#39;fizz</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">cons</span> <span class="mi">102</span> <span class="p">(</span><span class="nb">cons </span><span class="mi">105</span> <span class="p">(</span><span class="nb">cons </span><span class="mi">122</span> <span class="p">(</span><span class="nb">cons </span><span class="mi">122</span> <span class="p">())))))</span>
+</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="ss">&#39;buzz</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">cons</span> <span class="mi">98</span> <span class="p">(</span><span class="nb">cons </span><span class="mi">117</span> <span class="p">(</span><span class="nb">cons </span><span class="mi">122</span> <span class="p">(</span><span class="nb">cons </span><span class="mi">122</span> <span class="p">())))))</span>
+</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="ss">&#39;fizzbuzz</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">append</span> <span class="nv">fizz</span> <span class="nv">buzz</span><span class="p">))</span>
+</span><span class="line">
+</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="ss">&#39;num-&gt;char</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">+</span> <span class="mi">48</span><span class="p">))</span>
+</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="ss">&#39;posnum-&gt;string</span>
+</span><span class="line">          <span class="o">&#39;</span><span class="p">(</span><span class="nv">Y</span> <span class="p">(</span><span class="k">lambda </span><span class="p">(</span><span class="nf">recur</span> <span class="nv">n</span><span class="p">)</span> <span class="p">((</span><span class="nf">ifzero</span> <span class="nv">n</span><span class="p">)</span> <span class="p">()</span>
+</span><span class="line">                                            <span class="p">(</span><span class="nb">append </span><span class="p">(</span><span class="nf">recur</span> <span class="p">(</span><span class="nf">div</span> <span class="nv">n</span> <span class="mi">10</span><span class="p">))</span> <span class="p">(</span><span class="nb">cons </span><span class="p">(</span><span class="nf">num-&gt;char</span> <span class="p">(</span><span class="nf">mod</span> <span class="nv">n</span> <span class="mi">10</span><span class="p">))</span> <span class="p">()))))))</span>
+</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">num-&gt;string</span> <span class="nv">n</span><span class="p">)</span> <span class="o">&#39;</span><span class="p">((</span><span class="nf">ifnonzero</span> <span class="nv">n</span><span class="p">)</span> <span class="p">(</span><span class="nf">posnum-&gt;string</span> <span class="nv">n</span><span class="p">)</span> <span class="p">(</span><span class="nf">num-&gt;char</span> <span class="mi">0</span><span class="p">)))</span>
+</span><span class="line">
+</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">num-&gt;fizzbuzz</span> <span class="nv">n</span><span class="p">)</span> <span class="o">&#39;</span><span class="p">((</span><span class="nf">ifzero</span> <span class="p">(</span><span class="nf">mod</span> <span class="nv">n</span> <span class="mi">15</span><span class="p">)</span> <span class="nv">fizzbuzz</span>
+</span><span class="line">                                       <span class="p">(</span><span class="nf">ifzero</span> <span class="p">(</span><span class="nf">mod</span> <span class="nv">n</span> <span class="mi">5</span><span class="p">)</span> <span class="nv">buzz</span>
+</span><span class="line">                                               <span class="p">(</span><span class="nf">ifzero</span> <span class="p">(</span><span class="nf">mod</span> <span class="nv">n</span> <span class="mi">3</span><span class="p">)</span> <span class="nv">fizz</span>
+</span><span class="line">                                                       <span class="p">(</span><span class="nf">num-&gt;string</span> <span class="nv">n</span><span class="p">))))))</span>
+</span><span class="line">
+</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="ss">&#39;main</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">ignore-input</span> <span class="p">(</span><span class="nf">concat</span> <span class="p">(</span><span class="nb">map </span><span class="p">(</span><span class="nf">o</span> <span class="nv">append-newline</span> <span class="nv">num-&gt;fizzbuzz</span><span class="p">)</span> <span class="p">(</span><span class="nf">enum-from</span> <span class="mi">1</span><span class="p">)))))</span>
+</span><span class="line"><span class="p">(</span><span class="nf">print-as-unlambda</span> <span class="p">(</span><span class="nf">laze</span> <span class="ss">&#39;main</span><span class="p">))</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Brainfuckでhello World]]></title>
@@ -63,16 +156,7 @@
 <h2 id="lazy-k-is-">Lazy K is 何</h2>
 <ul>
   <li><a href="http://legacy.e.tir.jp/wiliki?%cb%dd%cc%f5%3a%a5%d7%a5%ed%a5%b0%a5%e9%a5%df%a5%f3%a5%b0%b8%c0%b8%ecLazy_K">翻訳:プログラミング言語Lazy_K</a></li>
-  <li>
-    <table>
-      <tbody>
-        <tr>
-          <td>[404 Blog Not Found:Math - 言語はどこまで小さくなれるか - (unlambda</td>
-          <td>iota</td>
-          <td>jot) のすすめ](http://blog.livedoor.jp/dankogai/archives/51524324.html)</td>
-        </tr>
-      </tbody>
-    </table>
+  <li><a href="http://blog.livedoor.jp/dankogai/archives/51524324.html">404 Blog Not Found:Math - 言語はどこまで小さくなれるか - (unlambda|iota|jot) のすすめ</a>
     <ul>
       <li>ここのpatchあてて-fpermissiveしたらcompile通った</li>
     </ul>
@@ -271,7 +355,7 @@
 <span class="line-number">6</span>
 <span class="line-number">7</span>
 <span class="line-number">8</span>
-</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="cp">#define two (s (s (k s) k) i)</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="cp">#define two (s (s (k s) k) i) # 無駄な変換</span>
 </span><span class="line"><span class="cp">#define double (mult two)</span>
 </span><span class="line"><span class="cp">#define four (double two)</span>
 </span><span class="line"><span class="cp">#define eight (double four)</span>

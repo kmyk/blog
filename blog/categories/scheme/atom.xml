@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: scheme | Higher Order うさぎ小屋]]></title>
+  <link href="http://solorab.github.io/blog/categories/scheme/atom.xml" rel="self"/>
+  <link href="http://solorab.github.io/"/>
+  <updated>2014-04-13T02:48:20+09:00</updated>
+  <id>http://solorab.github.io/</id>
+  <author>
+    <name><![CDATA[そろうさぎ]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[lazk kでfizzbuzz書いた]]></title>
+    <link href="http://solorab.github.io/blog/2014/04/13/fizzbuzz-in-lazy-k/"/>
+    <updated>2014-04-13T02:27:48+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/04/13/fizzbuzz-in-lazy-k</id>
+    <content type="html"><![CDATA[<ul>
+  <li>妥協してschemeで書いた</li>
+  <li>非常に簡単</li>
+  <li>lazier.scmが強力すぎた</li>
+  <li><code>$ grep -c '\&lt;[ski]\&gt;'</code>すると2 (2行 計3つ)</li>
+  <li>4300byte</li>
+</ul>
+
+<p>``` scheme
+    (load “/path/to/lazier.scm”)
+    (load “/path/to/prelude.scm”)
+    (load “/path/to/prelude-numbers.scm”)</p>
+
+<pre><code>(lazy-def 'ignore-input 'k)
+(lazy-def 'Y2 '(lambda (f) ((lambda (x) (f (lambda (a b) (x x a b))))
+                            (lambda (x) (f (lambda (a b) (x x a b)))))))
+(lazy-def '(ifzero n x y) '(ifnonzero n y x))
+
+(lazy-def '(pred n) '(lambda (f x) (n (lambda (p q) (q (p f))) (k x) i)))
+(lazy-def '(- n m) '(m pred n))
+(lazy-def 'mod '(Y2 (lambda (recur m n) ((if&lt; m n) m (recur (- m n) n)))))
+(lazy-def 'div '(Y2 (lambda (recur m n) ((if&lt; m n) 0 (succ (recur (- m n) n))))))
+
+(lazy-def 'map '(Y2 (lambda (recur f xs) (cons (f (car xs)) (recur f (cdr xs))))))
+(lazy-def 'append '(Y2 (lambda (recur xs ys) (null? xs ys (cons (car xs) (recur (cdr xs) ys))))))
+(lazy-def 'concat '(Y (lambda (recur xs) (append (car xs) (recur (cdr xs))))))
+
+(lazy-def 'enum-from '(Y (lambda (recur n) (cons n (recur (succ n))))))
+(lazy-def '(append-newline x) '(append x (cons 10 ())))
+
+(lazy-def 'fizz '(cons 102 (cons 105 (cons 122 (cons 122 ())))))
+(lazy-def 'buzz '(cons 98 (cons 117 (cons 122 (cons 122 ())))))
+(lazy-def 'fizzbuzz '(append fizz buzz))
+
+(lazy-def 'num-&gt;char '(+ 48))
+(lazy-def 'posnum-&gt;string
+          '(Y (lambda (recur n) ((ifzero n) ()
+                                            (append (recur (div n 10)) (cons (num-&gt;char (mod n 10)) ()))))))
+(lazy-def '(num-&gt;string n) '((ifnonzero n) (posnum-&gt;string n) (num-&gt;char 0)))
+
+(lazy-def '(num-&gt;fizzbuzz n) '((ifzero (mod n 15) fizzbuzz
+                                       (ifzero (mod n 5) buzz
+                                               (ifzero (mod n 3) fizz
+                                                       (num-&gt;string n))))))
+
+(lazy-def 'main '(ignore-input (concat (map (o append-newline num-&gt;fizzbuzz) (enum-from 1)))))
+(print-as-unlambda (laze 'main)) ```
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>

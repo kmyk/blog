@@ -9,8 +9,13 @@
   <meta name="author" content="そろうさぎ">
 
   
-  <meta name="description" content="XUbuntu, xmonad, fcitx + mozc
-導入のメモ ">
+  <meta name="description" content="以前少し挑戦して敗れたが、ふと思い出してリベンジした 結論としてはfree monadとはmonadをdataとして表現したものであると 1
+2
+3
+4
+5
+data Free f a = Pure a | Free (f (Free f a))
+instance Functor f =&gt; &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -68,6 +73,61 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/12/29/free-monad-is-monad-itself/">Free Monadとはmonadそのものである</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-12-29T17:22:11+09:00" pubdate data-updated="true">Dec 29<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>以前少し挑戦して敗れたが、ふと思い出してリベンジした</p>
+
+<p>結論としては<code>free monad</code>とはmonadをdataとして表現したものであると</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="kr">data</span> <span class="kt">Free</span> <span class="n">f</span> <span class="n">a</span> <span class="ow">=</span> <span class="kt">Pure</span> <span class="n">a</span> <span class="o">|</span> <span class="kt">Free</span> <span class="p">(</span><span class="n">f</span> <span class="p">(</span><span class="kt">Free</span> <span class="n">f</span> <span class="n">a</span><span class="p">))</span>
+</span><span class="line"><span class="kr">instance</span> <span class="kt">Functor</span> <span class="n">f</span> <span class="ow">=&gt;</span> <span class="kt">Monad</span> <span class="p">(</span><span class="kt">Free</span> <span class="n">f</span><span class="p">)</span> <span class="kr">where</span>
+</span><span class="line">    <span class="n">return</span> <span class="ow">=</span> <span class="kt">Pure</span>
+</span><span class="line">    <span class="kt">Pure</span> <span class="n">a</span> <span class="o">&gt;&gt;=</span> <span class="n">k</span> <span class="ow">=</span> <span class="n">k</span> <span class="n">a</span>
+</span><span class="line">    <span class="kt">Free</span> <span class="n">fm</span> <span class="o">&gt;&gt;=</span> <span class="n">k</span> <span class="ow">=</span> <span class="kt">Free</span> <span class="p">(</span><span class="n">fmap</span> <span class="p">(</span><span class="o">&gt;&gt;=</span><span class="n">k</span><span class="p">)</span> <span class="n">fm</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/12/29/free-monad-is-monad-itself/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -304,6 +364,10 @@ CasperJS + PhantomJS でかなり強引に処理</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/04/13/fizzbuzz-in-lazy-k/">Lazk Kでfizzbuzz書いた</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/04/11/hello-world-in-brainfuck/">Brainfuckでhello World</a>
       </li>
     
@@ -317,10 +381,6 @@ CasperJS + PhantomJS でかなり強引に処理</p>
     
       <li class="post">
         <a href="/blog/2014/04/05/lambda-calculus-for-great-good/">すごいラムダ計算楽しく学ぼう</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/03/28/goal-or-contract/">目標と契約</a>
       </li>
     
   </ul>

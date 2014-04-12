@@ -56,11 +56,15 @@
     </url>
     <url>
         <loc>http://solorab.github.io/blog/2014/04/09/hello-world-in-lazy-k/</loc>
-        <lastmod>2014-04-11T23:20:09+09:00</lastmod>
+        <lastmod>2014-04-12T17:20:18+09:00</lastmod>
     </url>
     <url>
         <loc>http://solorab.github.io/blog/2014/04/11/hello-world-in-brainfuck/</loc>
         <lastmod>2014-04-11T22:59:15+09:00</lastmod>
+    </url>
+    <url>
+        <loc>http://solorab.github.io/blog/2014/04/13/fizzbuzz-in-lazy-k/</loc>
+        <lastmod>2014-04-13T02:47:43+09:00</lastmod>
     </url>
     <url>
         <loc>http://solorab.github.io/games/</loc>
@@ -68,11 +72,11 @@
     </url>
     <url>
         <loc>http://solorab.github.io/</loc>
-        <lastmod>2014-04-11T23:29:09+09:00</lastmod>
+        <lastmod>2014-04-13T02:47:43+09:00</lastmod>
     </url>
     <url>
         <loc>http://solorab.github.io/blog/archives/</loc>
-        <lastmod>2014-04-11T23:29:09+09:00</lastmod>
+        <lastmod>2014-04-13T02:47:43+09:00</lastmod>
     </url>
     <url>
         <loc>http://solorab.github.io/robots.txt</loc>

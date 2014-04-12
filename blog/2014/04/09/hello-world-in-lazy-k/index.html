@@ -9,7 +9,7 @@
   <meta name="author" content="そろうさぎ">
 
   
-  <meta name="description" content="“hello world” 9000byteぐらい できるだけ自力で書いた CPPを使用 (gcc -E) ラムダ計算について調べたのを有効活用した 楽しい Lazy K is 何 翻訳:プログラミング言語Lazy_K [404 Blog Not Found:Math - &hellip;">
+  <meta name="description" content="“hello world” 9000byteぐらい できるだけ自力で書いた CPPを使用 (gcc -E) ラムダ計算について調べたのを有効活用した 楽しい Lazy K is 何 翻訳:プログラミング言語Lazy_K 404 Blog Not Found:Math - &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -107,16 +107,7 @@
 <h2 id="lazy-k-is-">Lazy K is 何</h2>
 <ul>
   <li><a href="http://legacy.e.tir.jp/wiliki?%cb%dd%cc%f5%3a%a5%d7%a5%ed%a5%b0%a5%e9%a5%df%a5%f3%a5%b0%b8%c0%b8%ecLazy_K">翻訳:プログラミング言語Lazy_K</a></li>
-  <li>
-    <table>
-      <tbody>
-        <tr>
-          <td>[404 Blog Not Found:Math - 言語はどこまで小さくなれるか - (unlambda</td>
-          <td>iota</td>
-          <td>jot) のすすめ](http://blog.livedoor.jp/dankogai/archives/51524324.html)</td>
-        </tr>
-      </tbody>
-    </table>
+  <li><a href="http://blog.livedoor.jp/dankogai/archives/51524324.html">404 Blog Not Found:Math - 言語はどこまで小さくなれるか - (unlambda|iota|jot) のすすめ</a>
     <ul>
       <li>ここのpatchあてて-fpermissiveしたらcompile通った</li>
     </ul>
@@ -315,7 +306,7 @@
 <span class="line-number">6</span>
 <span class="line-number">7</span>
 <span class="line-number">8</span>
-</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="cp">#define two (s (s (k s) k) i)</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="cp">#define two (s (s (k s) k) i) # 無駄な変換</span>
 </span><span class="line"><span class="cp">#define double (mult two)</span>
 </span><span class="line"><span class="cp">#define four (double two)</span>
 </span><span class="line"><span class="cp">#define eight (double four)</span>
@@ -436,6 +427,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/04/13/fizzbuzz-in-lazy-k/">Lazk Kでfizzbuzz書いた</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/04/11/hello-world-in-brainfuck/">Brainfuckでhello World</a>
       </li>
     
@@ -449,10 +444,6 @@
     
       <li class="post">
         <a href="/blog/2014/04/05/lambda-calculus-for-great-good/">すごいラムダ計算楽しく学ぼう</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/03/28/goal-or-contract/">目標と契約</a>
       </li>
     
   </ul>

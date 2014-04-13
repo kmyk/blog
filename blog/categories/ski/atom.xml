@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ski | Higher Order うさぎ小屋]]></title>
   <link href="http://solorab.github.io/blog/categories/ski/atom.xml" rel="self"/>
   <link href="http://solorab.github.io/"/>
-  <updated>2014-04-13T02:48:20+09:00</updated>
+  <updated>2014-04-13T19:21:26+09:00</updated>
   <id>http://solorab.github.io/</id>
   <author>
     <name><![CDATA[そろうさぎ]]></name>
@@ -12,6 +12,120 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[一点基底について調べた]]></title>
+    <link href="http://solorab.github.io/blog/2014/04/13/one-point-basis/"/>
+    <updated>2014-04-13T13:53:18+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/04/13/one-point-basis</id>
+    <content type="html"><![CDATA[<table>
+  <thead>
+    <tr>
+      <th>発見者</th>
+      <th>一点基底</th>
+      <th><code>S</code></th>
+      <th><code>K</code></th>
+      <th>他</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td><code>\x.xSK</code></td>
+      <td><code>X(X(X(XX)))</code></td>
+      <td><code>X(X(XX))</code></td>
+      <td><code>I = XX</code>, iotaで使われている</td>
+    </tr>
+    <tr>
+      <td>John Barkley Rosser</td>
+      <td><code>\x.xKSK</code></td>
+      <td><code>X(XX)</code></td>
+      <td><code>XXX</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Corrado Bohm</td>
+      <td><code>\x.x(fS(KI))K</code></td>
+      <td><code>X(XX)</code></td>
+      <td><code>XX</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Henk Barendregt</td>
+      <td><code>\x.x(fS(KK))K</code></td>
+      <td><code>X(XXX)</code></td>
+      <td><code>XXX</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Jeroen Fokker</td>
+      <td><code>\f.fS(\xyz.x)</code></td>
+      <td><code>X(XX)</code></td>
+      <td><code>XX</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Carew Meredith</td>
+      <td><code>\abcd.cd(a(Kd))</code></td>
+      <td><code>V(XXX(XX)(XXXX(XXXX(VV))(K(XXXX))))</code></td>
+      <td><code>XXXX(XXXX(XXX(XX))(XX))(XX)</code></td>
+      <td><code>V = XXXX(K(XXXX))</code>とする</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- more -->
+
+<h2 id="lets-">let’s 簡約</h2>
+<p>iotaのものを簡約する</p>
+
+<p><code>scheme
+    # XX = I
+    XX a
+        = (\x.xSK) (\y.ySK) a
+        = ((\y.ySK) SK) a
+        = ((S SK) K) a
+        = ((SK) (KK)) a
+        = SK (KK) a
+        = (Ka) (KKa)
+        = a
+        = I a
+</code></p>
+
+<p><code>scheme
+    # X(X(XX)) = K
+    X(X(XX))
+        = X(XI)
+        = (\x.xSK) ((\y.ySK) I)
+        = (\x.xSK) (I SK)
+        = (\x.xSK) (SK)
+        = (SK SK)
+        = ((KK) (SK))
+        = K
+</code></p>
+
+<p><code>scheme
+    # X(X(X(XX))) = S
+    X(X(X(XX)))
+        = XK
+        = (\x.xSK) K
+        = KSK
+        = S
+</code></p>
+
+<h2 id="section">参考</h2>
+
+<ul>
+  <li><a href="http://d.hatena.ne.jp/KeisukeNakano/20061008/1160288593">&amp;lambda;x. x K S K - λx.x K S K ＠ はてな</a>
+    <ul>
+      <li>冒頭の表はほぼこの記事をまとめただけ</li>
+    </ul>
+  </li>
+  <li><a href="http://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%B3%E3%83%93%E3%83%8D%E3%83%BC%E3%82%BF%E8%AB%96%E7%90%86#One-point_basis">コンビネータ論理 # One-point basis- Wikipedia</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Iota_and_Jot">Iota and Jot - Wikipedia, the free encyclopedia</a></li>
+</ul>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[lazy kでhello world書いた]]></title>

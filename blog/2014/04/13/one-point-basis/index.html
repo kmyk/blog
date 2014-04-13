@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>一点基底について調べた - Higher Order うさぎ小屋</title>
+  <meta name="author" content="そろうさぎ">
+
+  
+  <meta name="description" content="発見者 一点基底 S K 他   \x.xSK X(X(X(XX))) X(X(XX)) I = XX, iotaで使われている John Barkley Rosser \x.xKSK X(XX) XXX   Corrado Bohm \x.x(fS(KI))K X(XX) XX   Henk &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://solorab.github.io/blog/2014/04/13/one-point-basis">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Higher Order うさぎ小屋" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Higher Order うさぎ小屋</a></h1>
+  
+    <h2>めっちゃ もふもふ</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:solorab.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/games">Games</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">一点基底について調べた</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-13T13:53:18+09:00" pubdate data-updated="true">Apr 13<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><table>
+  <thead>
+    <tr>
+      <th>発見者</th>
+      <th>一点基底</th>
+      <th><code>S</code></th>
+      <th><code>K</code></th>
+      <th>他</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td><code>\x.xSK</code></td>
+      <td><code>X(X(X(XX)))</code></td>
+      <td><code>X(X(XX))</code></td>
+      <td><code>I = XX</code>, iotaで使われている</td>
+    </tr>
+    <tr>
+      <td>John Barkley Rosser</td>
+      <td><code>\x.xKSK</code></td>
+      <td><code>X(XX)</code></td>
+      <td><code>XXX</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Corrado Bohm</td>
+      <td><code>\x.x(fS(KI))K</code></td>
+      <td><code>X(XX)</code></td>
+      <td><code>XX</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Henk Barendregt</td>
+      <td><code>\x.x(fS(KK))K</code></td>
+      <td><code>X(XXX)</code></td>
+      <td><code>XXX</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Jeroen Fokker</td>
+      <td><code>\f.fS(\xyz.x)</code></td>
+      <td><code>X(XX)</code></td>
+      <td><code>XX</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Carew Meredith</td>
+      <td><code>\abcd.cd(a(Kd))</code></td>
+      <td><code>V(XXX(XX)(XXXX(XXXX(VV))(K(XXXX))))</code></td>
+      <td><code>XXXX(XXXX(XXX(XX))(XX))(XX)</code></td>
+      <td><code>V = XXXX(K(XXXX))</code>とする</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- more -->
+
+<h2 id="lets-">let’s 簡約</h2>
+<p>iotaのものを簡約する</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+</pre></td><td class="code"><pre><code class="scheme"><span class="line"><span class="o">#</span> <span class="nv">XX</span> <span class="nv">=</span> <span class="nv">I</span>
+</span><span class="line"><span class="nv">XX</span> <span class="nv">a</span>
+</span><span class="line">    <span class="nv">=</span> <span class="p">(</span><span class="err">\</span><span class="nv">x</span><span class="o">.</span><span class="nv">xSK</span><span class="p">)</span> <span class="p">(</span><span class="err">\</span><span class="nv">y</span><span class="o">.</span><span class="nv">ySK</span><span class="p">)</span> <span class="nv">a</span>
+</span><span class="line">    <span class="nv">=</span> <span class="p">((</span><span class="err">\</span><span class="nv">y</span><span class="o">.</span><span class="nv">ySK</span><span class="p">)</span> <span class="nv">SK</span><span class="p">)</span> <span class="nv">a</span>
+</span><span class="line">    <span class="nv">=</span> <span class="p">((</span><span class="nf">S</span> <span class="nv">SK</span><span class="p">)</span> <span class="nv">K</span><span class="p">)</span> <span class="nv">a</span>
+</span><span class="line">    <span class="nv">=</span> <span class="p">((</span><span class="nf">SK</span><span class="p">)</span> <span class="p">(</span><span class="nf">KK</span><span class="p">))</span> <span class="nv">a</span>
+</span><span class="line">    <span class="nv">=</span> <span class="nv">SK</span> <span class="p">(</span><span class="nf">KK</span><span class="p">)</span> <span class="nv">a</span>
+</span><span class="line">    <span class="nv">=</span> <span class="p">(</span><span class="nf">Ka</span><span class="p">)</span> <span class="p">(</span><span class="nf">KKa</span><span class="p">)</span>
+</span><span class="line">    <span class="nv">=</span> <span class="nv">a</span>
+</span><span class="line">    <span class="nv">=</span> <span class="nv">I</span> <span class="nv">a</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+</pre></td><td class="code"><pre><code class="scheme"><span class="line"><span class="o">#</span> <span class="nv">X</span><span class="p">(</span><span class="nf">X</span><span class="p">(</span><span class="nf">XX</span><span class="p">))</span> <span class="nv">=</span> <span class="nv">K</span>
+</span><span class="line"><span class="nv">X</span><span class="p">(</span><span class="nf">X</span><span class="p">(</span><span class="nf">XX</span><span class="p">))</span>
+</span><span class="line">    <span class="nv">=</span> <span class="nv">X</span><span class="p">(</span><span class="nf">XI</span><span class="p">)</span>
+</span><span class="line">    <span class="nv">=</span> <span class="p">(</span><span class="err">\</span><span class="nv">x</span><span class="o">.</span><span class="nv">xSK</span><span class="p">)</span> <span class="p">((</span><span class="err">\</span><span class="nv">y</span><span class="o">.</span><span class="nv">ySK</span><span class="p">)</span> <span class="nv">I</span><span class="p">)</span>
+</span><span class="line">    <span class="nv">=</span> <span class="p">(</span><span class="err">\</span><span class="nv">x</span><span class="o">.</span><span class="nv">xSK</span><span class="p">)</span> <span class="p">(</span><span class="nf">I</span> <span class="nv">SK</span><span class="p">)</span>
+</span><span class="line">    <span class="nv">=</span> <span class="p">(</span><span class="err">\</span><span class="nv">x</span><span class="o">.</span><span class="nv">xSK</span><span class="p">)</span> <span class="p">(</span><span class="nf">SK</span><span class="p">)</span>
+</span><span class="line">    <span class="nv">=</span> <span class="p">(</span><span class="nf">SK</span> <span class="nv">SK</span><span class="p">)</span>
+</span><span class="line">    <span class="nv">=</span> <span class="p">((</span><span class="nf">KK</span><span class="p">)</span> <span class="p">(</span><span class="nf">SK</span><span class="p">))</span>
+</span><span class="line">    <span class="nv">=</span> <span class="nv">K</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+</pre></td><td class="code"><pre><code class="scheme"><span class="line"><span class="o">#</span> <span class="nv">X</span><span class="p">(</span><span class="nf">X</span><span class="p">(</span><span class="nf">X</span><span class="p">(</span><span class="nf">XX</span><span class="p">)))</span> <span class="nv">=</span> <span class="nv">S</span>
+</span><span class="line"><span class="nv">X</span><span class="p">(</span><span class="nf">X</span><span class="p">(</span><span class="nf">X</span><span class="p">(</span><span class="nf">XX</span><span class="p">)))</span>
+</span><span class="line">    <span class="nv">=</span> <span class="nv">XK</span>
+</span><span class="line">    <span class="nv">=</span> <span class="p">(</span><span class="err">\</span><span class="nv">x</span><span class="o">.</span><span class="nv">xSK</span><span class="p">)</span> <span class="nv">K</span>
+</span><span class="line">    <span class="nv">=</span> <span class="nv">KSK</span>
+</span><span class="line">    <span class="nv">=</span> <span class="nv">S</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h2 id="section">参考</h2>
+
+<ul>
+  <li><a href="http://d.hatena.ne.jp/KeisukeNakano/20061008/1160288593">&amp;lambda;x. x K S K - λx.x K S K ＠ はてな</a>
+    <ul>
+      <li>冒頭の表はほぼこの記事をまとめただけ</li>
+    </ul>
+  </li>
+  <li><a href="http://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%B3%E3%83%93%E3%83%8D%E3%83%BC%E3%82%BF%E8%AB%96%E7%90%86#One-point_basis">コンビネータ論理 # One-point basis- Wikipedia</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Iota_and_Jot">Iota and Jot - Wikipedia, the free encyclopedia</a></li>
+</ul>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">そろうさぎ</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-13T13:53:18+09:00" pubdate data-updated="true">Apr 13<span>th</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/combinator/'>combinator</a>, <a class='category' href='/blog/categories/one-point-basis/'>one-point-basis</a>, <a class='category' href='/blog/categories/ski/'>ski</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://solorab.github.io/blog/2014/04/13/one-point-basis/" data-via="solo_rab" data-counturl="http://solorab.github.io/blog/2014/04/13/one-point-basis/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/04/13/fizzbuzz-in-lazy-k/" title="Previous Post: lazk kでfizzbuzz書いた">&laquo; lazk kでfizzbuzz書いた</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/04/13/octopress-table-stylesheet/" title="Next Post: octopressのtableのstylesheet設定した">octopressのtableのstylesheet設定した &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/04/13/octopress-table-stylesheet/">Octopressのtableのstylesheet設定した</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/13/one-point-basis/">一点基底について調べた</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/13/fizzbuzz-in-lazy-k/">Lazk Kでfizzbuzz書いた</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/11/hello-world-in-brainfuck/">Brainfuckでhello World</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/09/hello-world-in-lazy-k/">Lazy Kでhello World書いた</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/solorab">@solorab</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'solorab',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - そろうさぎ -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

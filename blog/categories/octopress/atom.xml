@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: octopress | Higher Order うさぎ小屋]]></title>
+  <link href="http://solorab.github.io/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://solorab.github.io/"/>
+  <updated>2014-04-13T19:21:26+09:00</updated>
+  <id>http://solorab.github.io/</id>
+  <author>
+    <name><![CDATA[そろうさぎ]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[octopressのtableのstylesheet設定した]]></title>
+    <link href="http://solorab.github.io/blog/2014/04/13/octopress-table-stylesheet/"/>
+    <updated>2014-04-13T16:19:23+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/04/13/octopress-table-stylesheet</id>
+    <content type="html"><![CDATA[<p><a href="http://samwize.com/2012/09/24/octopress-table-stylesheet/">Octopress Table Stylesheet - Junda Ong</a>のを加工&amp;配置のmemo</p>
+
+<!-- more -->
+
+<ol>
+  <li>cssを貰ってくる</li>
+  <li>selectorに問題があるので修正</li>
+  <li>修正後のを配置する</li>
+</ol>
+
+<h2 id="section">入手</h2>
+<p><a href="http://samwize.com/2012/09/24/octopress-table-stylesheet/">上で挙げたページ</a>から<a href="https://gist.github.com/programus/1993032#file-data-table-css">gist</a>へ行ってcssを貰う</p>
+
+<h2 id="section-1">修正</h2>
+
+<h3 id="section-2">動機</h3>
+<p>selectorが全て以下のようになっている</p>
+
+<p><code>css
+    * + table { ... }
+</code></p>
+
+<p><code>なにか要素があって、その要素の次のtableに対して</code>ぐらいの意味 (<a href="https://developer.mozilla.org/ja/docs/Web/CSS/Adjacent\_sibling\_selectors">隣接セレクタ - CSS | MDN</a>)<br />
+code-blockに<code>&lt;table&gt;</code>が使われているのでそのため<br />
+しかし記事の冒頭の表に対して適用されないので修正する</p>
+
+<p>ついでにheaderをかっこ良くした</p>
+
+<h3 id="section-3">結果</h3>
+<p>``` scss
+    div.entry-content &gt; table, div.entry-content div:not(.highlight) &gt; table {</p>
+
+<pre><code>    border-style:solid;
+    border-width:1px;
+    border-color:#e7e3e7;
+
+    th, td {
+        border-style:dashed;
+        border-width:1px;
+        border-color:#e7e3e7;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    th {
+        border-style:solid;
+        font-weight:bold;
+        @include background($nav-bg-front, $nav-bg-back);
+    }
+
+    th[align="left"],   td[align="left"]   { text-align:left; }
+    th[align="right"],  td[align="right"]  { text-align:right; }
+    th[align="center"], td[align="center"] { text-align:center; }
+
+} ```
+</code></pre>
+
+<p>最外のselectorは<code>各記事のrootの(直下の | 中の、highlight-classの直下にない)table</code>の意<br />
+できるだけ範囲を限定したかったので<code>div.entry-content</code>制約加えた</p>
+
+<p>table-headerはnavやfooterの設定をコピーして、グラデーションかけた</p>
+
+<h2 id="section-4">配置</h2>
+<p><code>@include background(...);</code>したため、これらをスコープに入れる必要が有るので、<br />
+上のscssを<code>$OCTOPRESS/sass/custom/_styles.scss</code>に追記する</p>
+
+<p>この行に変更を加えず元のままにしておくなら、これを<code>$OCTOPRESS/sass/data-table.scss</code>に配置し、元記事のように<code>&lt;link&gt;</code>を加えれば良い</p>
+]]></content>
+  </entry>
+  
+</feed>

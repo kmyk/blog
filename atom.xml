@@ -4,7 +4,7 @@
   <title><![CDATA[Higher Order うさぎ小屋]]></title>
   <link href="http://solorab.github.io/atom.xml" rel="self"/>
   <link href="http://solorab.github.io/"/>
-  <updated>2014-04-13T02:48:20+09:00</updated>
+  <updated>2014-04-13T19:21:26+09:00</updated>
   <id>http://solorab.github.io/</id>
   <author>
     <name><![CDATA[そろうさぎ]]></name>
@@ -12,6 +12,241 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Octopressのtableのstylesheet設定した]]></title>
+    <link href="http://solorab.github.io/blog/2014/04/13/octopress-table-stylesheet/"/>
+    <updated>2014-04-13T16:19:23+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/04/13/octopress-table-stylesheet</id>
+    <content type="html"><![CDATA[<p><a href="http://samwize.com/2012/09/24/octopress-table-stylesheet/">Octopress Table Stylesheet - Junda Ong</a>のを加工&amp;配置のmemo</p>
+
+<!-- more -->
+
+<ol>
+  <li>cssを貰ってくる</li>
+  <li>selectorに問題があるので修正</li>
+  <li>修正後のを配置する</li>
+</ol>
+
+<h2 id="section">入手</h2>
+<p><a href="http://samwize.com/2012/09/24/octopress-table-stylesheet/">上で挙げたページ</a>から<a href="https://gist.github.com/programus/1993032#file-data-table-css">gist</a>へ行ってcssを貰う</p>
+
+<h2 id="section-1">修正</h2>
+
+<h3 id="section-2">動機</h3>
+<p>selectorが全て以下のようになっている</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="css"><span class="line"><span class="o">*</span> <span class="o">+</span> <span class="nt">table</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><code>なにか要素があって、その要素の次のtableに対して</code>ぐらいの意味 (<a href="https://developer.mozilla.org/ja/docs/Web/CSS/Adjacent\_sibling\_selectors">隣接セレクタ - CSS | MDN</a>)<br />
+code-blockに<code>&lt;table&gt;</code>が使われているのでそのため<br />
+しかし記事の冒頭の表に対して適用されないので修正する</p>
+
+<p>ついでにheaderをかっこ良くした</p>
+
+<h3 id="section-3">結果</h3>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+<span class="line-number">21</span>
+<span class="line-number">22</span>
+<span class="line-number">23</span>
+<span class="line-number">24</span>
+<span class="line-number">25</span>
+</pre></td><td class="code"><pre><code class="scss"><span class="line"><span class="nt">div</span><span class="nc">.entry-content</span> <span class="o">&gt;</span> <span class="nt">table</span><span class="o">,</span> <span class="nt">div</span><span class="nc">.entry-content</span> <span class="nt">div</span><span class="nd">:not</span><span class="o">(</span><span class="nc">.highlight</span><span class="o">)</span> <span class="o">&gt;</span> <span class="nt">table</span> <span class="p">{</span>
+</span><span class="line">
+</span><span class="line">    <span class="nt">border-style</span><span class="nd">:solid</span><span class="o">;</span>
+</span><span class="line">    <span class="nt">border-width</span><span class="nd">:1px</span><span class="o">;</span>
+</span><span class="line">    <span class="nt">border-color</span><span class="nd">:</span><span class="nn">#e7e3e7</span><span class="o">;</span>
+</span><span class="line">
+</span><span class="line">    <span class="nt">th</span><span class="o">,</span> <span class="nt">td</span> <span class="p">{</span>
+</span><span class="line">        <span class="nt">border-style</span><span class="nd">:dashed</span><span class="o">;</span>
+</span><span class="line">        <span class="nt">border-width</span><span class="nd">:1px</span><span class="o">;</span>
+</span><span class="line">        <span class="nt">border-color</span><span class="nd">:</span><span class="nn">#e7e3e7</span><span class="o">;</span>
+</span><span class="line">        <span class="nt">padding-left</span><span class="nd">:</span> <span class="nt">3px</span><span class="o">;</span>
+</span><span class="line">        <span class="nt">padding-right</span><span class="nd">:</span> <span class="nt">3px</span><span class="o">;</span>
+</span><span class="line">    <span class="p">}</span>
+</span><span class="line">
+</span><span class="line">    <span class="nt">th</span> <span class="p">{</span>
+</span><span class="line">        <span class="nt">border-style</span><span class="nd">:solid</span><span class="o">;</span>
+</span><span class="line">        <span class="nt">font-weight</span><span class="nd">:bold</span><span class="o">;</span>
+</span><span class="line">        <span class="o">@</span><span class="nt">include</span> <span class="nt">background</span><span class="o">(</span><span class="err">$</span><span class="nt">nav-bg-front</span><span class="o">,</span> <span class="err">$</span><span class="nt">nav-bg-back</span><span class="o">);</span>
+</span><span class="line">    <span class="p">}</span>
+</span><span class="line">
+</span><span class="line">    <span class="nt">th</span><span class="o">[</span><span class="nt">align</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="o">],</span>   <span class="nt">td</span><span class="o">[</span><span class="nt">align</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="o">]</span>   <span class="p">{</span> <span class="nt">text-align</span><span class="nd">:left</span><span class="o">;</span> <span class="p">}</span>
+</span><span class="line">    <span class="nt">th</span><span class="o">[</span><span class="nt">align</span><span class="o">=</span><span class="s2">&quot;right&quot;</span><span class="o">],</span>  <span class="nt">td</span><span class="o">[</span><span class="nt">align</span><span class="o">=</span><span class="s2">&quot;right&quot;</span><span class="o">]</span>  <span class="p">{</span> <span class="nt">text-align</span><span class="nd">:right</span><span class="o">;</span> <span class="p">}</span>
+</span><span class="line">    <span class="nt">th</span><span class="o">[</span><span class="nt">align</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="o">],</span> <span class="nt">td</span><span class="o">[</span><span class="nt">align</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="o">]</span> <span class="p">{</span> <span class="nt">text-align</span><span class="nd">:center</span><span class="o">;</span> <span class="p">}</span>
+</span><span class="line">
+</span><span class="line"><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>最外のselectorは<code>各記事のrootの(直下の | 中の、highlight-classの直下にない)table</code>の意<br />
+できるだけ範囲を限定したかったので<code>div.entry-content</code>制約加えた</p>
+
+<p>table-headerはnavやfooterの設定をコピーして、グラデーションかけた</p>
+
+<h2 id="section-4">配置</h2>
+<p><code>@include background(...);</code>したため、これらをスコープに入れる必要が有るので、<br />
+上のscssを<code>$OCTOPRESS/sass/custom/_styles.scss</code>に追記する</p>
+
+<p>この行に変更を加えず元のままにしておくなら、これを<code>$OCTOPRESS/sass/data-table.scss</code>に配置し、元記事のように<code>&lt;link&gt;</code>を加えれば良い</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[一点基底について調べた]]></title>
+    <link href="http://solorab.github.io/blog/2014/04/13/one-point-basis/"/>
+    <updated>2014-04-13T13:53:18+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/04/13/one-point-basis</id>
+    <content type="html"><![CDATA[<table>
+  <thead>
+    <tr>
+      <th>発見者</th>
+      <th>一点基底</th>
+      <th><code>S</code></th>
+      <th><code>K</code></th>
+      <th>他</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td><code>\x.xSK</code></td>
+      <td><code>X(X(X(XX)))</code></td>
+      <td><code>X(X(XX))</code></td>
+      <td><code>I = XX</code>, iotaで使われている</td>
+    </tr>
+    <tr>
+      <td>John Barkley Rosser</td>
+      <td><code>\x.xKSK</code></td>
+      <td><code>X(XX)</code></td>
+      <td><code>XXX</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Corrado Bohm</td>
+      <td><code>\x.x(fS(KI))K</code></td>
+      <td><code>X(XX)</code></td>
+      <td><code>XX</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Henk Barendregt</td>
+      <td><code>\x.x(fS(KK))K</code></td>
+      <td><code>X(XXX)</code></td>
+      <td><code>XXX</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Jeroen Fokker</td>
+      <td><code>\f.fS(\xyz.x)</code></td>
+      <td><code>X(XX)</code></td>
+      <td><code>XX</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Carew Meredith</td>
+      <td><code>\abcd.cd(a(Kd))</code></td>
+      <td><code>V(XXX(XX)(XXXX(XXXX(VV))(K(XXXX))))</code></td>
+      <td><code>XXXX(XXXX(XXX(XX))(XX))(XX)</code></td>
+      <td><code>V = XXXX(K(XXXX))</code>とする</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- more -->
+
+<h2 id="lets-">let’s 簡約</h2>
+<p>iotaのものを簡約する</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+</pre></td><td class="code"><pre><code class="scheme"><span class="line"><span class="o">#</span> <span class="nv">XX</span> <span class="nv">=</span> <span class="nv">I</span>
+</span><span class="line"><span class="nv">XX</span> <span class="nv">a</span>
+</span><span class="line">    <span class="nv">=</span> <span class="p">(</span><span class="err">\</span><span class="nv">x</span><span class="o">.</span><span class="nv">xSK</span><span class="p">)</span> <span class="p">(</span><span class="err">\</span><span class="nv">y</span><span class="o">.</span><span class="nv">ySK</span><span class="p">)</span> <span class="nv">a</span>
+</span><span class="line">    <span class="nv">=</span> <span class="p">((</span><span class="err">\</span><span class="nv">y</span><span class="o">.</span><span class="nv">ySK</span><span class="p">)</span> <span class="nv">SK</span><span class="p">)</span> <span class="nv">a</span>
+</span><span class="line">    <span class="nv">=</span> <span class="p">((</span><span class="nf">S</span> <span class="nv">SK</span><span class="p">)</span> <span class="nv">K</span><span class="p">)</span> <span class="nv">a</span>
+</span><span class="line">    <span class="nv">=</span> <span class="p">((</span><span class="nf">SK</span><span class="p">)</span> <span class="p">(</span><span class="nf">KK</span><span class="p">))</span> <span class="nv">a</span>
+</span><span class="line">    <span class="nv">=</span> <span class="nv">SK</span> <span class="p">(</span><span class="nf">KK</span><span class="p">)</span> <span class="nv">a</span>
+</span><span class="line">    <span class="nv">=</span> <span class="p">(</span><span class="nf">Ka</span><span class="p">)</span> <span class="p">(</span><span class="nf">KKa</span><span class="p">)</span>
+</span><span class="line">    <span class="nv">=</span> <span class="nv">a</span>
+</span><span class="line">    <span class="nv">=</span> <span class="nv">I</span> <span class="nv">a</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+</pre></td><td class="code"><pre><code class="scheme"><span class="line"><span class="o">#</span> <span class="nv">X</span><span class="p">(</span><span class="nf">X</span><span class="p">(</span><span class="nf">XX</span><span class="p">))</span> <span class="nv">=</span> <span class="nv">K</span>
+</span><span class="line"><span class="nv">X</span><span class="p">(</span><span class="nf">X</span><span class="p">(</span><span class="nf">XX</span><span class="p">))</span>
+</span><span class="line">    <span class="nv">=</span> <span class="nv">X</span><span class="p">(</span><span class="nf">XI</span><span class="p">)</span>
+</span><span class="line">    <span class="nv">=</span> <span class="p">(</span><span class="err">\</span><span class="nv">x</span><span class="o">.</span><span class="nv">xSK</span><span class="p">)</span> <span class="p">((</span><span class="err">\</span><span class="nv">y</span><span class="o">.</span><span class="nv">ySK</span><span class="p">)</span> <span class="nv">I</span><span class="p">)</span>
+</span><span class="line">    <span class="nv">=</span> <span class="p">(</span><span class="err">\</span><span class="nv">x</span><span class="o">.</span><span class="nv">xSK</span><span class="p">)</span> <span class="p">(</span><span class="nf">I</span> <span class="nv">SK</span><span class="p">)</span>
+</span><span class="line">    <span class="nv">=</span> <span class="p">(</span><span class="err">\</span><span class="nv">x</span><span class="o">.</span><span class="nv">xSK</span><span class="p">)</span> <span class="p">(</span><span class="nf">SK</span><span class="p">)</span>
+</span><span class="line">    <span class="nv">=</span> <span class="p">(</span><span class="nf">SK</span> <span class="nv">SK</span><span class="p">)</span>
+</span><span class="line">    <span class="nv">=</span> <span class="p">((</span><span class="nf">KK</span><span class="p">)</span> <span class="p">(</span><span class="nf">SK</span><span class="p">))</span>
+</span><span class="line">    <span class="nv">=</span> <span class="nv">K</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+</pre></td><td class="code"><pre><code class="scheme"><span class="line"><span class="o">#</span> <span class="nv">X</span><span class="p">(</span><span class="nf">X</span><span class="p">(</span><span class="nf">X</span><span class="p">(</span><span class="nf">XX</span><span class="p">)))</span> <span class="nv">=</span> <span class="nv">S</span>
+</span><span class="line"><span class="nv">X</span><span class="p">(</span><span class="nf">X</span><span class="p">(</span><span class="nf">X</span><span class="p">(</span><span class="nf">XX</span><span class="p">)))</span>
+</span><span class="line">    <span class="nv">=</span> <span class="nv">XK</span>
+</span><span class="line">    <span class="nv">=</span> <span class="p">(</span><span class="err">\</span><span class="nv">x</span><span class="o">.</span><span class="nv">xSK</span><span class="p">)</span> <span class="nv">K</span>
+</span><span class="line">    <span class="nv">=</span> <span class="nv">KSK</span>
+</span><span class="line">    <span class="nv">=</span> <span class="nv">S</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h2 id="section">参考</h2>
+
+<ul>
+  <li><a href="http://d.hatena.ne.jp/KeisukeNakano/20061008/1160288593">&amp;lambda;x. x K S K - λx.x K S K ＠ はてな</a>
+    <ul>
+      <li>冒頭の表はほぼこの記事をまとめただけ</li>
+    </ul>
+  </li>
+  <li><a href="http://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%B3%E3%83%93%E3%83%8D%E3%83%BC%E3%82%BF%E8%AB%96%E7%90%86#One-point_basis">コンビネータ論理 # One-point basis- Wikipedia</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Iota_and_Jot">Iota and Jot - Wikipedia, the free encyclopedia</a></li>
+</ul>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Lazk Kでfizzbuzz書いた]]></title>

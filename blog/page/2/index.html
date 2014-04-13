@@ -9,13 +9,10 @@
   <meta name="author" content="そろうさぎ">
 
   
-  <meta name="description" content="以前少し挑戦して敗れたが、ふと思い出してリベンジした 結論としてはfree monadとはmonadをdataとして表現したものであると 1
+  <meta name="description" content="ざっくりparseして、出力をfilterやheadで加工したかった 1
 2
-3
-4
-5
-data Free f a = Pure a | Free (f (Free f a))
-instance Functor f =&gt; &hellip;">
+fork :: [ParsecT s u [] a] -&gt; ParsecT s u [] a
+fork = join . lift ※ list-monadで非決定的計算できるのは、parsecに限った話ではない ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -35,7 +32,6 @@ instance Functor f =&gt; &hellip;">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="/stylesheets/data-table.css" media="screen, projection" rel="stylesheet" type="text/css">
 
   
 
@@ -73,6 +69,112 @@ instance Functor f =&gt; &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/01/25/non-deterministic-parsing-with-parsec/">Parsecで非決定的パース</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-25T18:28:27+09:00" pubdate data-updated="true">Jan 25<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>ざっくりparseして、出力を<code>filter</code>や<code>head</code>で加工したかった</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="nf">fork</span> <span class="ow">::</span> <span class="p">[</span><span class="kt">ParsecT</span> <span class="n">s</span> <span class="n">u</span> <span class="kt">[]</span> <span class="n">a</span><span class="p">]</span> <span class="ow">-&gt;</span> <span class="kt">ParsecT</span> <span class="n">s</span> <span class="n">u</span> <span class="kt">[]</span> <span class="n">a</span>
+</span><span class="line"><span class="nf">fork</span> <span class="ow">=</span> <span class="n">join</span> <span class="o">.</span> <span class="n">lift</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>※ list-monadで非決定的計算できるのは、parsecに限った話ではない</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/01/25/non-deterministic-parsing-with-parsec/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/01/25/parse-list-of-ints-with-parsec/">[Int]をparsecでパースする</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-25T17:50:35+09:00" pubdate data-updated="true">Jan 25<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="o">&gt;&gt;&gt;</span> <span class="n">parse</span> <span class="p">(</span><span class="n">many</span> <span class="n">even&#39;</span><span class="p">)</span> <span class="s">&quot;numbers&quot;</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">9999</span><span class="p">]</span>
+</span><span class="line"><span class="kt">Right</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+</span><span class="line">
+</span><span class="line"><span class="o">&gt;&gt;&gt;</span> <span class="n">parse</span> <span class="p">(</span><span class="n">many</span> <span class="p">(</span><span class="n">zero</span> <span class="o">&lt;|&gt;</span> <span class="n">odd&#39;</span><span class="p">)</span> <span class="o">&gt;&gt;</span> <span class="n">eof</span><span class="p">)</span> <span class="s">&quot;numbers&quot;</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">]</span>
+</span><span class="line"><span class="kt">Left</span> <span class="s">&quot;numbers&quot;</span> <span class="p">(</span><span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="n">column</span> <span class="mi">6</span><span class="p">)</span><span class="kt">:</span>
+</span><span class="line"><span class="nf">unexpected</span> <span class="mi">8</span>
+</span><span class="line"><span class="nf">expecting</span> <span class="n">zero</span><span class="p">,</span> <span class="n">odd</span> <span class="n">or</span> <span class="n">end</span> <span class="kr">of</span> <span class="n">input</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><code>[Int]</code>だとおふざけだが、複雑な何かだと便利かもしれない<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/01/25/parse-list-of-ints-with-parsec/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -364,6 +466,14 @@ CasperJS + PhantomJS でかなり強引に処理</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/04/13/octopress-table-stylesheet/">Octopressのtableのstylesheet設定した</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/13/one-point-basis/">一点基底について調べた</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/04/13/fizzbuzz-in-lazy-k/">Lazk Kでfizzbuzz書いた</a>
       </li>
     
@@ -373,14 +483,6 @@ CasperJS + PhantomJS でかなり強引に処理</p>
     
       <li class="post">
         <a href="/blog/2014/04/09/hello-world-in-lazy-k/">Lazy Kでhello World書いた</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/04/05/church-number-and-pred-function/">チャーチ数とpred関数</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/04/05/lambda-calculus-for-great-good/">すごいラムダ計算楽しく学ぼう</a>
       </li>
     
   </ul>

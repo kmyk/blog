@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: iota | Higher Order うさぎ小屋]]></title>
+  <link href="http://solorab.github.io/blog/categories/iota/atom.xml" rel="self"/>
+  <link href="http://solorab.github.io/"/>
+  <updated>2014-04-18T01:04:33+09:00</updated>
+  <id>http://solorab.github.io/</id>
+  <author>
+    <name><![CDATA[そろうさぎ]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[lazy kでquine書いた (iota記法)]]></title>
+    <link href="http://solorab.github.io/blog/2014/04/17/quine-in-lazy-k/"/>
+    <updated>2014-04-17T23:45:00+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/04/17/quine-in-lazy-k</id>
+    <content type="html"><![CDATA[<ul>
+  <li><a href="https://twitter.com/fumieval">@fumieval</a>氏のそれの再実装であって、独自性は特に無い
+    <ul>
+      <li><a href="http://d.hatena.ne.jp/fumiexcel/20120402/1333343067">文字列リテラルが無いLazy Kで黒魔術も力技も使わずにクワイン - fumievalの日記</a></li>
+    </ul>
+  </li>
+  <li>自己満足性は非常に高いのでおすすめ</li>
+  <li><a href="/blog/2014/04/17/how-to-write-a-quine/">前回記事</a>に沿って命名/実装した
+    <ul>
+      <li>もちろん先人の知恵も借りた</li>
+    </ul>
+  </li>
+</ul>
+
+<!-- more -->
+
+<h2 id="code">code</h2>
+
+<p>``` scheme
+    (load “/path/to/lazier.scm”)
+    (load “/path/to/prelude.scm”)
+    (load “/path/to/prelude-numbers.scm”)</p>
+
+<pre title="quine.scm"><code>(lazy-def 'map '(Y (lambda (recur f xs) (null? xs () (cons (f (car xs)) (recur f (cdr xs)))))))
+(lazy-def 'append '(Y (lambda (recur xs ys) (null? xs ys (cons (car xs) (recur (cdr xs) ys))))))
+(lazy-def 'concat '(Y (lambda (recur xs) (null? xs () (append (car xs) (recur (cdr xs)))))))
+
+(lazy-def 'star 42) ; apply operator `*'
+(lazy-def 'base 105) ; one point basis `i'
+(lazy-def 'newline 10)
+
+; if x then `*' else `i'
+(lazy-def '(bit-&gt;program x) '(x star base))
+(lazy-def '(str x) '(map bit-&gt;program x))
+
+; #t -&gt; *i*i*ii
+; #f -&gt; **i*i*ii*ii
+; cons #t -&gt; ***i*i*i*ii**i*i*ii**i*i*i*ii***i*i*i*ii*ii**i*i*ii*i*i*ii*i*i*ii
+; cons #f -&gt; ***i*i*i*ii**i*i*ii**i*i*i*ii***i*i*i*ii*ii**i*i*ii**i*i*ii*ii*i*i*ii
+; () -&gt; **i*i*ii*i*i*ii
+(lazy-def '(bit-&gt;data x)
+          '(x (str ((lambda (t f) (t (t (t (t (f (t (f (t (f (t (f (f (t (t (f (t (f (t (f (f (t (t (f (t (f (t (f (t (f (f (t (t (t (f (t (f (t (f (t (f (f (t (f (f (t (t (f (t (f (t (f (f (t (f (t (f (t (f (f (t (f (t (f (t (f (f ()))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))) (cons #t) (cons #f))) ; `` cons #t
+              (str ((lambda (t f) (t (t (t (t (f (t (f (t (f (t (f (f (t (t (f (t (f (t (f (f (t (t (f (t (f (t (f (t (f (f (t (t (t (f (t (f (t (f (t (f (f (t (f (f (t (t (f (t (f (t (f (f (t (t (f (t (f (t (f (f (t (f (f (t (f (t (f (t (f (f ()))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))) (cons #t) (cons #f))) ; `` cons #f
+              ))
+(lazy-def '(repr x) '(append (concat (map bit-&gt;data x)) (str ((lambda (t f) (t (t (f (t (f (t (f (f (t (f (t (f (t (f (f ())))))))))))))))) (cons #t) (cons #f)))))
+
+(lazy-def '(main input) '(s (lambda (x y) (append (str x) (append y (append (cons newline ()) end-of-output)))) repr code))
+(print-as-iota (laze 'main)) ```
+</code></pre>
+
+<p title="quine.scm"><code>sh
+    #!/bin/sh
+    code() {
+        gosh quine.scm | sed -e 's/\[code\]$//'
+    }
+    quote() {
+        # /*/` cons #t/ ; /i/` cons #f/
+        tr -t '*i' 'tf' |
+        sed -e 's/t/****i*i*i*ii**i*i*ii**i*i*i*ii***i*i*i*ii*ii**i*i*ii*i*i*ii*i*i*ii/g
+        ; s/f/****i*i*i*ii**i*i*ii**i*i*i*ii***i*i*i*ii*ii**i*i*ii**i*i*ii*ii*i*i*ii/g
+        ; s/$/**i*i*ii*i*i*ii/'
+    }
+    echo $(code)$(code | quote)
+</code></p>
+
+<p><code>sh
+    $ ./quine.sh &gt; quine.lazy
+    $ lazy quine.lazy &gt; out.lazy
+    $ diff quine.lazy out.lazy
+</code></p>
+
+<h2 id="points">ハマりpoints</h2>
+
+<h3 id="strrepr">strとreprの接合</h3>
+<p>formatのような関数を用意するのは辛いので、単に<code>append</code>を使用したい</p>
+
+<p>lazier.scmは解決できない識別子を<code>[code]</code>のようにbracketで囲って出力する<br />
+しかし単に<code>((lambda (x) (append (str x) (repr x))) code)</code>とすると、<code>lambda</code>が簡約され、<code>[code]</code>が式の内部に2つ出現する<br />
+これを回避するために<code>s</code>コンビネータを使い、<code>[code]</code>が変換後の式の末尾に登場するよう調整する</p>
+
+<h3 id="section">実行が遅い</h3>
+<p>2分かかった 諦めよう</p>
+
+<h3 id="section-1">デバッグ</h3>
+<p>何処が違うのか特定するのにひと手間要した<br />
+最終的には、</p>
+
+<ol>
+  <li><code>s/(i+)/\1 /g</code>等として、適当に空白で分ける</li>
+  <li><code>wdiff quine.lazy out.lazy | colordiff</code>として、単語単位diff+色</li>
+</ol>
+]]></content>
+  </entry>
+  
+</feed>

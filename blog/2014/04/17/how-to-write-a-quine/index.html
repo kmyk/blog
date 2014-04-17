@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Quineを書く一般的な方法 - Higher Order うさぎ小屋</title>
+  <meta name="author" content="そろうさぎ">
+
+  
+  <meta name="description" content="言語固有の機能を使い特殊な方法でquineする場合は考えない とりあえず書ければいい人向け 外観
+quineは 1
+eval(&quot;program(data)&quot;) #=&gt; &quot;program(data)&quot; となるprogram部とdata部に分けられる &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://solorab.github.io/blog/2014/04/17/how-to-write-a-quine">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Higher Order うさぎ小屋" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Higher Order うさぎ小屋</a></h1>
+  
+    <h2>めっちゃ もふもふ</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:solorab.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/games">Games</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Quineを書く一般的な方法</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-17T23:44:24+09:00" pubdate data-updated="true">Apr 17<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><ul>
+  <li>言語固有の機能を使い特殊な方法でquineする場合は考えない</li>
+  <li>とりあえず書ければいい人向け</li>
+</ul>
+
+<!-- more -->
+
+<h2 id="section">外観</h2>
+<p>quineは</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="python"><span class="line"><span class="nb">eval</span><span class="p">(</span><span class="s">&quot;program(data)&quot;</span><span class="p">)</span> <span class="c">#=&gt; &quot;program(data)&quot;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>となる<code>program</code>部と<code>data</code>部に分けられる</p>
+
+<h2 id="section-1">詳細</h2>
+<p><code>program</code>と<code>data</code>はたいてい以下のように動く<br />
+python風言語で示す</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+</pre></td><td class="code"><pre><code class="python"><span class="line"><span class="o">.</span>   <span class="nb">eval</span><span class="p">(</span><span class="s">&quot;program(data)&quot;</span><span class="p">)</span>
+</span><span class="line"><span class="o">-&gt;</span>  <span class="n">program</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</span><span class="line"><span class="o">=</span>   <span class="k">print</span><span class="p">(</span><span class="n">format</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">data</span><span class="p">),</span> <span class="nb">repr</span><span class="p">(</span><span class="n">data</span><span class="p">)))</span>
+</span><span class="line"><span class="o">-&gt;</span>  <span class="k">print</span><span class="p">(</span><span class="n">format</span><span class="p">(</span><span class="s">&quot;program&quot;</span><span class="p">,</span> <span class="s">&quot;data&quot;</span><span class="p">))</span>
+</span><span class="line"><span class="o">-&gt;</span>  <span class="k">print</span><span class="p">(</span><span class="s">&quot;program(data)&quot;</span><span class="p">)</span>
+</span><span class="line"><span class="c">#=&gt; &quot;program(data)&quot;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h2 id="section-2">実装</h2>
+<p>つまり、基本的に、実装/決定すべきは、</p>
+
+<ul>
+  <li>適当な入力<code>data</code></li>
+  <li>変換関数<code>str : data -&gt; "program"</code></li>
+  <li>変換関数<code>repr : data -&gt; "data"</code></li>
+  <li>結合関数<code>format : ("program", "data") -&gt; "program(data)"</code></li>
+  <li>適当な出力<code>print</code></li>
+</ul>
+
+<p>である<br />
+<code>str</code>,<code>repr</code>,<code>format</code>等の役割の境界は曖昧である
+言語によっては<code>print</code>と<code>format</code>に<code>printf</code>を採用し1つにまとめるなどできる</p>
+
+<p>これらはたいてい、</p>
+
+<ul>
+  <li><code>data = quote("program")</code></li>
+  <li><code>str = id</code></li>
+  <li><code>repr = quote</code></li>
+  <li><code>format = append, format</code></li>
+  <li><code>print = print</code></li>
+</ul>
+
+<p>が使われる<br />
+実装量が少なく楽だからである</p>
+
+<p>また、一般的な<code>print</code>が存在しない言語では、好みの方法で出力すれば良い</p>
+
+<h2 id="section-3">例</h2>
+
+<h3 id="haskell">分かりやすい例 haskell</h3>
+
+<p><code>show</code>が言語内に有るので非常に楽である</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="nf">main</span> <span class="ow">=</span> <span class="n">putStrLn</span> <span class="o">$</span> <span class="p">(</span><span class="nf">\</span> <span class="n">x</span> <span class="ow">-&gt;</span> <span class="n">x</span> <span class="o">++</span> <span class="n">show</span> <span class="n">x</span><span class="p">)</span> <span class="s">&quot;main = putStrLn $ (</span><span class="se">\\</span><span class="s"> x -&gt; x ++ show x) &quot;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li><code>data = "main = putStrLn $ (\\ x -&gt; x ++ show x) "</code></li>
+  <li><code>str = id</code> (省略)</li>
+  <li><code>repr = show</code></li>
+  <li><code>format = (++)</code></li>
+  <li><code>print = putStrLn</code></li>
+</ul>
+
+<h3 id="python">少し長い例 python</h3>
+
+<p>標準関数の<code>repr</code>は高機能すぎて、quineには利用できなかったので<code>repr</code>を実装<br />
+接続には<code>{}</code>で指定して<code>format</code>を使用</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+</pre></td><td class="code"><pre><code class="python"><span class="line"><span class="c">#!/usr/bin/python3</span>
+</span><span class="line"><span class="n">show</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">q</span><span class="p">:</span> <span class="s">&#39;&quot;&quot;&quot;&#39;</span> <span class="o">+</span> <span class="n">q</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\\</span><span class="s">&#39;</span><span class="p">,</span><span class="s">&#39;</span><span class="se">\\\\</span><span class="s">&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\&quot;</span><span class="s">&#39;</span><span class="p">,</span><span class="s">&#39;</span><span class="se">\\\&quot;</span><span class="s">&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s">&#39;&quot;&quot;&quot;&#39;</span>
+</span><span class="line"><span class="n">q</span> <span class="o">=</span> <span class="s">&quot;&quot;&quot;#!/usr/bin/python3</span>
+</span><span class="line"><span class="s">show = lambda q: &#39;</span><span class="se">\&quot;\&quot;\&quot;</span><span class="s">&#39; + q.replace(&#39;</span><span class="se">\\\\</span><span class="s">&#39;,&#39;</span><span class="se">\\\\\\\\</span><span class="s">&#39;).replace(&#39;</span><span class="se">\\\&quot;</span><span class="s">&#39;,&#39;</span><span class="se">\\\\\\\&quot;</span><span class="s">&#39;) + &#39;</span><span class="se">\&quot;\&quot;\&quot;</span><span class="s">&#39;</span>
+</span><span class="line"><span class="s">q = {}</span>
+</span><span class="line"><span class="s">print(q.format(show(q)))&quot;&quot;&quot;</span>
+</span><span class="line"><span class="k">print</span><span class="p">(</span><span class="n">q</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">show</span><span class="p">(</span><span class="n">q</span><span class="p">)))</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h3 id="lazyk-iota">一般的な例 lazyk (iota)</h3>
+<p><a href="/blog/2014/04/17/quine-in-lazy-k/">次の記事</a></p>
+
+<h2 id="section-4">参考</h2>
+<ul>
+  <li><a href="http://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%AF%E3%82%A4%E3%83%B3_\(%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0\)">クワイン (プログラミング) - Wikipedia</a></li>
+  <li><a href="http://d.hatena.ne.jp/fumiexcel/20120402/1333343067">文字列リテラルが無いLazy Kで黒魔術も力技も使わずにクワイン - fumievalの日記</a></li>
+</ul>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">そろうさぎ</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-17T23:44:24+09:00" pubdate data-updated="true">Apr 17<span>th</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/quine/'>quine</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://solorab.github.io/blog/2014/04/17/how-to-write-a-quine/" data-via="solo_rab" data-counturl="http://solorab.github.io/blog/2014/04/17/how-to-write-a-quine/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/04/13/octopress-table-stylesheet/" title="Previous Post: octopressのtableのstylesheet設定した">&laquo; octopressのtableのstylesheet設定した</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/04/17/quine-in-lazy-k/" title="Next Post: lazy kでquine書いた (iota記法)">lazy kでquine書いた (iota記法) &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/04/17/quine-in-lazy-k/">Lazy Kでquine書いた (Iota記法)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/17/how-to-write-a-quine/">Quineを書く一般的な方法</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/13/octopress-table-stylesheet/">Octopressのtableのstylesheet設定した</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/13/one-point-basis/">一点基底について調べた</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/13/fizzbuzz-in-lazy-k/">Lazk Kでfizzbuzz書いた</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/solorab">@solorab</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'solorab',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - そろうさぎ -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

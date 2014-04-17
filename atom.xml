@@ -4,7 +4,7 @@
   <title><![CDATA[Higher Order うさぎ小屋]]></title>
   <link href="http://solorab.github.io/atom.xml" rel="self"/>
   <link href="http://solorab.github.io/"/>
-  <updated>2014-04-13T19:21:26+09:00</updated>
+  <updated>2014-04-18T01:04:33+09:00</updated>
   <id>http://solorab.github.io/</id>
   <author>
     <name><![CDATA[そろうさぎ]]></name>
@@ -12,6 +12,265 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Lazy Kでquine書いた (Iota記法)]]></title>
+    <link href="http://solorab.github.io/blog/2014/04/17/quine-in-lazy-k/"/>
+    <updated>2014-04-17T23:45:00+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/04/17/quine-in-lazy-k</id>
+    <content type="html"><![CDATA[<ul>
+  <li><a href="https://twitter.com/fumieval">@fumieval</a>氏のそれの再実装であって、独自性は特に無い
+    <ul>
+      <li><a href="http://d.hatena.ne.jp/fumiexcel/20120402/1333343067">文字列リテラルが無いLazy Kで黒魔術も力技も使わずにクワイン - fumievalの日記</a></li>
+    </ul>
+  </li>
+  <li>自己満足性は非常に高いのでおすすめ</li>
+  <li><a href="http://solorab.github.io/blog/2014/04/17/how-to-write-a-quine/">前回記事</a>に沿って命名/実装した
+    <ul>
+      <li>もちろん先人の知恵も借りた</li>
+    </ul>
+  </li>
+</ul>
+
+<!-- more -->
+
+<h2 id="code">code</h2>
+
+<div class="bogus-wrapper" title="quine.scm"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+<span class="line-number">21</span>
+<span class="line-number">22</span>
+<span class="line-number">23</span>
+<span class="line-number">24</span>
+<span class="line-number">25</span>
+<span class="line-number">26</span>
+<span class="line-number">27</span>
+<span class="line-number">28</span>
+<span class="line-number">29</span>
+</pre></td><td class="code"><pre><code class="scheme"><span class="line"><span class="p">(</span><span class="nb">load </span><span class="s">&quot;/path/to/lazier.scm&quot;</span><span class="p">)</span>
+</span><span class="line"><span class="p">(</span><span class="nb">load </span><span class="s">&quot;/path/to/prelude.scm&quot;</span><span class="p">)</span>
+</span><span class="line"><span class="p">(</span><span class="nb">load </span><span class="s">&quot;/path/to/prelude-numbers.scm&quot;</span><span class="p">)</span>
+</span><span class="line">
+</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="ss">&#39;map</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">Y</span> <span class="p">(</span><span class="k">lambda </span><span class="p">(</span><span class="nf">recur</span> <span class="nv">f</span> <span class="nv">xs</span><span class="p">)</span> <span class="p">(</span><span class="nb">null? </span><span class="nv">xs</span> <span class="p">()</span> <span class="p">(</span><span class="nb">cons </span><span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nb">car </span><span class="nv">xs</span><span class="p">))</span> <span class="p">(</span><span class="nf">recur</span> <span class="nv">f</span> <span class="p">(</span><span class="nb">cdr </span><span class="nv">xs</span><span class="p">)))))))</span>
+</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="ss">&#39;append</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">Y</span> <span class="p">(</span><span class="k">lambda </span><span class="p">(</span><span class="nf">recur</span> <span class="nv">xs</span> <span class="nv">ys</span><span class="p">)</span> <span class="p">(</span><span class="nb">null? </span><span class="nv">xs</span> <span class="nv">ys</span> <span class="p">(</span><span class="nb">cons </span><span class="p">(</span><span class="nb">car </span><span class="nv">xs</span><span class="p">)</span> <span class="p">(</span><span class="nf">recur</span> <span class="p">(</span><span class="nb">cdr </span><span class="nv">xs</span><span class="p">)</span> <span class="nv">ys</span><span class="p">))))))</span>
+</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="ss">&#39;concat</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">Y</span> <span class="p">(</span><span class="k">lambda </span><span class="p">(</span><span class="nf">recur</span> <span class="nv">xs</span><span class="p">)</span> <span class="p">(</span><span class="nb">null? </span><span class="nv">xs</span> <span class="p">()</span> <span class="p">(</span><span class="nb">append </span><span class="p">(</span><span class="nb">car </span><span class="nv">xs</span><span class="p">)</span> <span class="p">(</span><span class="nf">recur</span> <span class="p">(</span><span class="nb">cdr </span><span class="nv">xs</span><span class="p">)))))))</span>
+</span><span class="line">
+</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="ss">&#39;star</span> <span class="mi">42</span><span class="p">)</span> <span class="c1">; apply operator `*&#39;</span>
+</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="ss">&#39;base</span> <span class="mi">105</span><span class="p">)</span> <span class="c1">; one point basis `i&#39;</span>
+</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="ss">&#39;newline</span> <span class="mi">10</span><span class="p">)</span>
+</span><span class="line">
+</span><span class="line"><span class="c1">; if x then `*&#39; else `i&#39;</span>
+</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">bit-&gt;program</span> <span class="nv">x</span><span class="p">)</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">x</span> <span class="nv">star</span> <span class="nv">base</span><span class="p">))</span>
+</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">str</span> <span class="nv">x</span><span class="p">)</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">map</span> <span class="nv">bit-&gt;program</span> <span class="nv">x</span><span class="p">))</span>
+</span><span class="line">
+</span><span class="line"><span class="c1">; #t -&gt; *i*i*ii</span>
+</span><span class="line"><span class="c1">; #f -&gt; **i*i*ii*ii</span>
+</span><span class="line"><span class="c1">; cons #t -&gt; ***i*i*i*ii**i*i*ii**i*i*i*ii***i*i*i*ii*ii**i*i*ii*i*i*ii*i*i*ii</span>
+</span><span class="line"><span class="c1">; cons #f -&gt; ***i*i*i*ii**i*i*ii**i*i*i*ii***i*i*i*ii*ii**i*i*ii**i*i*ii*ii*i*i*ii</span>
+</span><span class="line"><span class="c1">; () -&gt; **i*i*ii*i*i*ii</span>
+</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">bit-&gt;data</span> <span class="nv">x</span><span class="p">)</span>
+</span><span class="line">          <span class="o">&#39;</span><span class="p">(</span><span class="nv">x</span> <span class="p">(</span><span class="nf">str</span> <span class="p">((</span><span class="k">lambda </span><span class="p">(</span><span class="nf">t</span> <span class="nv">f</span><span class="p">)</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">f</span> <span class="p">())))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))</span> <span class="p">(</span><span class="nb">cons </span><span class="no">#t</span><span class="p">)</span> <span class="p">(</span><span class="nb">cons </span><span class="no">#f</span><span class="p">)))</span> <span class="c1">; `` cons #t</span>
+</span><span class="line">              <span class="p">(</span><span class="nf">str</span> <span class="p">((</span><span class="k">lambda </span><span class="p">(</span><span class="nf">t</span> <span class="nv">f</span><span class="p">)</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">f</span> <span class="p">())))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))</span> <span class="p">(</span><span class="nb">cons </span><span class="no">#t</span><span class="p">)</span> <span class="p">(</span><span class="nb">cons </span><span class="no">#f</span><span class="p">)))</span> <span class="c1">; `` cons #f</span>
+</span><span class="line">              <span class="p">))</span>
+</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">repr</span> <span class="nv">x</span><span class="p">)</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">append</span> <span class="p">(</span><span class="nf">concat</span> <span class="p">(</span><span class="nb">map </span><span class="nv">bit-&gt;data</span> <span class="nv">x</span><span class="p">))</span> <span class="p">(</span><span class="nf">str</span> <span class="p">((</span><span class="k">lambda </span><span class="p">(</span><span class="nf">t</span> <span class="nv">f</span><span class="p">)</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">t</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nf">f</span> <span class="p">()))))))))))))))))</span> <span class="p">(</span><span class="nb">cons </span><span class="no">#t</span><span class="p">)</span> <span class="p">(</span><span class="nb">cons </span><span class="no">#f</span><span class="p">)))))</span>
+</span><span class="line">
+</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">main</span> <span class="nv">input</span><span class="p">)</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">s</span> <span class="p">(</span><span class="k">lambda </span><span class="p">(</span><span class="nf">x</span> <span class="nv">y</span><span class="p">)</span> <span class="p">(</span><span class="nb">append </span><span class="p">(</span><span class="nf">str</span> <span class="nv">x</span><span class="p">)</span> <span class="p">(</span><span class="nb">append </span><span class="nv">y</span> <span class="p">(</span><span class="nb">append </span><span class="p">(</span><span class="nb">cons </span><span class="nv">newline</span> <span class="p">())</span> <span class="nv">end-of-output</span><span class="p">))))</span> <span class="nv">repr</span> <span class="nv">code</span><span class="p">))</span>
+</span><span class="line"><span class="p">(</span><span class="nf">print-as-iota</span> <span class="p">(</span><span class="nf">laze</span> <span class="ss">&#39;main</span><span class="p">))</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper" title="quine.scm"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+</pre></td><td class="code"><pre><code class="sh"><span class="line"><span class="c">#!/bin/sh</span>
+</span><span class="line">code<span class="o">()</span> <span class="o">{</span>
+</span><span class="line">    gosh quine.scm | sed -e <span class="s1">&#39;s/\[code\]$//&#39;</span>
+</span><span class="line"><span class="o">}</span>
+</span><span class="line">quote<span class="o">()</span> <span class="o">{</span>
+</span><span class="line">    <span class="c"># /*/` cons #t/ ; /i/` cons #f/</span>
+</span><span class="line">    tr -t <span class="s1">&#39;*i&#39;</span> <span class="s1">&#39;tf&#39;</span> |
+</span><span class="line">    sed -e <span class="s1">&#39;s/t/****i*i*i*ii**i*i*ii**i*i*i*ii***i*i*i*ii*ii**i*i*ii*i*i*ii*i*i*ii/g</span>
+</span><span class="line"><span class="s1">    ; s/f/****i*i*i*ii**i*i*ii**i*i*i*ii***i*i*i*ii*ii**i*i*ii**i*i*ii*ii*i*i*ii/g</span>
+</span><span class="line"><span class="s1">    ; s/$/**i*i*ii*i*i*ii/&#39;</span>
+</span><span class="line"><span class="o">}</span>
+</span><span class="line"><span class="nb">echo</span> <span class="k">$(</span>code<span class="k">)$(</span>code | quote<span class="k">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class="sh"><span class="line"><span class="nv">$ </span>./quine.sh &gt; quine.lazy
+</span><span class="line"><span class="nv">$ </span>lazy quine.lazy &gt; out.lazy
+</span><span class="line"><span class="nv">$ </span>diff quine.lazy out.lazy
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h2 id="points">ハマりpoints</h2>
+
+<h3 id="strrepr">strとreprの接合</h3>
+<p>formatのような関数を用意するのは辛いので、単に<code>append</code>を使用したい</p>
+
+<p>lazier.scmは解決できない識別子を<code>[code]</code>のようにbracketで囲って出力する<br />
+しかし単に<code>((lambda (x) (append (str x) (repr x))) code)</code>とすると、<code>lambda</code>が簡約され、<code>[code]</code>が式の内部に2つ出現する<br />
+これを回避するために<code>s</code>コンビネータを使い、<code>[code]</code>が変換後の式の末尾に登場するよう調整する</p>
+
+<h3 id="section">実行が遅い</h3>
+<p>2分かかった 諦めよう</p>
+
+<h3 id="section-1">デバッグ</h3>
+<p>何処が違うのか特定するのにひと手間要した<br />
+最終的には、</p>
+
+<ol>
+  <li><code>s/(i+)/\1 /g</code>等として、適当に空白で分ける</li>
+  <li><code>wdiff quine.lazy out.lazy | colordiff</code>として、単語単位diff+色</li>
+</ol>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Quineを書く一般的な方法]]></title>
+    <link href="http://solorab.github.io/blog/2014/04/17/how-to-write-a-quine/"/>
+    <updated>2014-04-17T23:44:24+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/04/17/how-to-write-a-quine</id>
+    <content type="html"><![CDATA[<ul>
+  <li>言語固有の機能を使い特殊な方法でquineする場合は考えない</li>
+  <li>とりあえず書ければいい人向け</li>
+</ul>
+
+<!-- more -->
+
+<h2 id="section">外観</h2>
+<p>quineは</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="python"><span class="line"><span class="nb">eval</span><span class="p">(</span><span class="s">&quot;program(data)&quot;</span><span class="p">)</span> <span class="c">#=&gt; &quot;program(data)&quot;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>となる<code>program</code>部と<code>data</code>部に分けられる</p>
+
+<h2 id="section-1">詳細</h2>
+<p><code>program</code>と<code>data</code>はたいてい以下のように動く<br />
+python風言語で示す</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+</pre></td><td class="code"><pre><code class="python"><span class="line"><span class="o">.</span>   <span class="nb">eval</span><span class="p">(</span><span class="s">&quot;program(data)&quot;</span><span class="p">)</span>
+</span><span class="line"><span class="o">-&gt;</span>  <span class="n">program</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</span><span class="line"><span class="o">=</span>   <span class="k">print</span><span class="p">(</span><span class="n">format</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">data</span><span class="p">),</span> <span class="nb">repr</span><span class="p">(</span><span class="n">data</span><span class="p">)))</span>
+</span><span class="line"><span class="o">-&gt;</span>  <span class="k">print</span><span class="p">(</span><span class="n">format</span><span class="p">(</span><span class="s">&quot;program&quot;</span><span class="p">,</span> <span class="s">&quot;data&quot;</span><span class="p">))</span>
+</span><span class="line"><span class="o">-&gt;</span>  <span class="k">print</span><span class="p">(</span><span class="s">&quot;program(data)&quot;</span><span class="p">)</span>
+</span><span class="line"><span class="c">#=&gt; &quot;program(data)&quot;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h2 id="section-2">実装</h2>
+<p>つまり、基本的に、実装/決定すべきは、</p>
+
+<ul>
+  <li>適当な入力<code>data</code></li>
+  <li>変換関数<code>str : data -&gt; "program"</code></li>
+  <li>変換関数<code>repr : data -&gt; "data"</code></li>
+  <li>結合関数<code>format : ("program", "data") -&gt; "program(data)"</code></li>
+  <li>適当な出力<code>print</code></li>
+</ul>
+
+<p>である<br />
+<code>str</code>,<code>repr</code>,<code>format</code>等の役割の境界は曖昧である
+言語によっては<code>print</code>と<code>format</code>に<code>printf</code>を採用し1つにまとめるなどできる</p>
+
+<p>これらはたいてい、</p>
+
+<ul>
+  <li><code>data = quote("program")</code></li>
+  <li><code>str = id</code></li>
+  <li><code>repr = quote</code></li>
+  <li><code>format = append, format</code></li>
+  <li><code>print = print</code></li>
+</ul>
+
+<p>が使われる<br />
+実装量が少なく楽だからである</p>
+
+<p>また、一般的な<code>print</code>が存在しない言語では、好みの方法で出力すれば良い</p>
+
+<h2 id="section-3">例</h2>
+
+<h3 id="haskell">分かりやすい例 haskell</h3>
+
+<p><code>show</code>が言語内に有るので非常に楽である</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="nf">main</span> <span class="ow">=</span> <span class="n">putStrLn</span> <span class="o">$</span> <span class="p">(</span><span class="nf">\</span> <span class="n">x</span> <span class="ow">-&gt;</span> <span class="n">x</span> <span class="o">++</span> <span class="n">show</span> <span class="n">x</span><span class="p">)</span> <span class="s">&quot;main = putStrLn $ (</span><span class="se">\\</span><span class="s"> x -&gt; x ++ show x) &quot;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li><code>data = "main = putStrLn $ (\\ x -&gt; x ++ show x) "</code></li>
+  <li><code>str = id</code> (省略)</li>
+  <li><code>repr = show</code></li>
+  <li><code>format = (++)</code></li>
+  <li><code>print = putStrLn</code></li>
+</ul>
+
+<h3 id="python">少し長い例 python</h3>
+
+<p>標準関数の<code>repr</code>は高機能すぎて、quineには利用できなかったので<code>repr</code>を実装<br />
+接続には<code>{}</code>で指定して<code>format</code>を使用</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+</pre></td><td class="code"><pre><code class="python"><span class="line"><span class="c">#!/usr/bin/python3</span>
+</span><span class="line"><span class="n">show</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">q</span><span class="p">:</span> <span class="s">&#39;&quot;&quot;&quot;&#39;</span> <span class="o">+</span> <span class="n">q</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\\</span><span class="s">&#39;</span><span class="p">,</span><span class="s">&#39;</span><span class="se">\\\\</span><span class="s">&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\&quot;</span><span class="s">&#39;</span><span class="p">,</span><span class="s">&#39;</span><span class="se">\\\&quot;</span><span class="s">&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s">&#39;&quot;&quot;&quot;&#39;</span>
+</span><span class="line"><span class="n">q</span> <span class="o">=</span> <span class="s">&quot;&quot;&quot;#!/usr/bin/python3</span>
+</span><span class="line"><span class="s">show = lambda q: &#39;</span><span class="se">\&quot;\&quot;\&quot;</span><span class="s">&#39; + q.replace(&#39;</span><span class="se">\\\\</span><span class="s">&#39;,&#39;</span><span class="se">\\\\\\\\</span><span class="s">&#39;).replace(&#39;</span><span class="se">\\\&quot;</span><span class="s">&#39;,&#39;</span><span class="se">\\\\\\\&quot;</span><span class="s">&#39;) + &#39;</span><span class="se">\&quot;\&quot;\&quot;</span><span class="s">&#39;</span>
+</span><span class="line"><span class="s">q = {}</span>
+</span><span class="line"><span class="s">print(q.format(show(q)))&quot;&quot;&quot;</span>
+</span><span class="line"><span class="k">print</span><span class="p">(</span><span class="n">q</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">show</span><span class="p">(</span><span class="n">q</span><span class="p">)))</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h3 id="lazyk-iota">一般的な例 lazyk (iota)</h3>
+<p><a href="http://solorab.github.io/blog/2014/04/17/quine-in-lazy-k/">次の記事</a></p>
+
+<h2 id="section-4">参考</h2>
+<ul>
+  <li><a href="http://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%AF%E3%82%A4%E3%83%B3_\(%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0\)">クワイン (プログラミング) - Wikipedia</a></li>
+  <li><a href="http://d.hatena.ne.jp/fumiexcel/20120402/1333343067">文字列リテラルが無いLazy Kで黒魔術も力技も使わずにクワイン - fumievalの日記</a></li>
+</ul>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Octopressのtableのstylesheet設定した]]></title>

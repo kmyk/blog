@@ -9,7 +9,33 @@
   <meta name="author" content="そろうさぎ">
 
   
-  <meta name="description" content=" @fumieval氏のそれの再実装であって、独自性は特に無い 文字列リテラルが無いLazy Kで黒魔術も力技も使わずにクワイン - fumievalの日記 自己満足性は非常に高いのでおすすめ 前回記事に沿って命名/実装した もちろん先人の知恵も借りた ">
+  <meta name="description" content="haskellを使って書いた solorab/brainfuck-hs 1763chars 整形済みcode start:1 1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+&gt;+++++&gt &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +92,106 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/04/27/quine-in-brainfuck/">Brainfuckでquine書いた</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-27T18:00:42+09:00" pubdate data-updated="true">Apr 27<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><ul>
+  <li>haskellを使って書いた</li>
+  <li><a href="https://github.com/solorab/brainfuck-hs">solorab/brainfuck-hs</a></li>
+  <li>1763chars</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>整形済みcode start:1 </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+<span class="line-number">21</span>
+<span class="line-number">22</span>
+<span class="line-number">23</span>
+<span class="line-number">24</span>
+<span class="line-number">25</span>
+<span class="line-number">26</span>
+</pre></td><td class="code"><pre><code class="bf"><span class="line"><span class="nv">&gt;</span><span class="nb">+++++</span><span class="nv">&gt;</span><span class="nb">+++++</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">++++++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="nv">&gt;</span><span class="nb">++++++</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">+++++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="c"></span>
+</span><span class="line"><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="c"></span>
+</span><span class="line"><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+++++++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">++</span><span class="c"></span>
+</span><span class="line"><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">+++++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="c"></span>
+</span><span class="line"><span class="nv">&gt;</span><span class="nb">+++++++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">++++++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="nv">&gt;</span><span class="nb">+++++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">++++++</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">++++++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="nv">&gt;</span><span class="c"></span>
+</span><span class="line"><span class="nb">+++++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="nv">&gt;</span><span class="nb">++++++</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">+++++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="c"></span>
+</span><span class="line"><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">+++++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">+++++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="c"></span>
+</span><span class="line"><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+++++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">+++++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">+++++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">+++++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">+++++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">++++++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="nv">&gt;</span><span class="c"></span>
+</span><span class="line"><span class="nb">+++++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">+++++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">++++++</span><span class="nv">&gt;</span><span class="nb">++++++</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">++++++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="nv">&gt;</span><span class="nb">+++++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="c"></span>
+</span><span class="line"><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="c"></span>
+</span><span class="line"><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">+++++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">++++++</span><span class="nv">&gt;</span><span class="nb">++++++</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">++++++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="nv">&gt;</span><span class="nb">+++++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="c"></span>
+</span><span class="line"><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">+</span><span class="c"></span>
+</span><span class="line"><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">++++++</span><span class="nv">&gt;</span><span class="nb">++++++</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">++++++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="nv">&gt;</span><span class="nb">+++++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">+++++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">++++++</span><span class="nv">&gt;</span><span class="nb">++++++</span><span class="nv">&gt;</span><span class="c"></span>
+</span><span class="line"><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">++++++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="nv">&gt;</span><span class="nb">+++++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">+++++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">++++++</span><span class="nv">&gt;</span><span class="nb">+</span><span class="c"></span>
+</span><span class="line"><span class="nb">+++++</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">++++++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="nv">&gt;</span><span class="nb">+++++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">+++++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="c"></span>
+</span><span class="line"><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">++++++</span><span class="nv">&gt;</span><span class="nb">++++++</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">++++++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="nv">&gt;</span><span class="nb">+++++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">+++++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">++++++</span><span class="nv">&gt;</span><span class="nb">++++++</span><span class="nv">&gt;</span><span class="nb">+++</span><span class="nv">&gt;</span><span class="nb">+++++++</span><span class="nv">&gt;</span><span class="c"></span>
+</span><span class="line"><span class="nb">+++++</span><span class="nv">&gt;</span><span class="nb">++++</span><span class="nv">&gt;</span><span class="nb">++++++</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="nb">++++++</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="nb">+++++++</span><span class="c"></span>
+</span><span class="line"><span class="k">[[</span><span class="nv">&gt;&gt;&gt;</span><span class="nb">+</span><span class="nv">&lt;&lt;&lt;</span><span class="nb">-</span><span class="k">]</span><span class="nv">&lt;</span><span class="k">]</span><span class="nv">&gt;&gt;&gt;&gt;</span><span class="c"></span>
+</span><span class="line"><span class="k">[</span><span class="nv">&lt;</span><span class="nb">++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</span><span class="nt">.</span><span class="nb">---------------</span><span class="c"></span>
+</span><span class="line"><span class="nb">----</span><span class="nv">&gt;</span><span class="k">[</span><span class="nv">&lt;</span><span class="nt">.</span><span class="nv">&lt;</span><span class="nb">+</span><span class="nv">&gt;&gt;</span><span class="nb">-</span><span class="k">]</span><span class="nv">&lt;</span><span class="k">[</span><span class="nb">-</span><span class="k">]</span><span class="nv">&gt;&gt;</span><span class="k">]</span><span class="nv">&lt;&lt;&lt;</span><span class="c"></span>
+</span><span class="line"><span class="k">[</span><span class="nv">&lt;</span><span class="k">]</span><span class="nv">&gt;</span><span class="c"></span>
+</span><span class="line"><span class="k">[</span><span class="nv">&lt;&lt;</span><span class="nb">+++++++++++++++++++++++++++++++++++++++++++</span><span class="nv">&gt;&gt;</span><span class="nb">-</span><span class="nv">&lt;</span><span class="nb">+</span><span class="nv">&gt;</span><span class="k">[</span><span class="nb">-</span><span class="k">[</span><span class="nb">-</span><span class="k">[</span><span class="nb">-</span><span class="k">[</span><span class="nb">-</span><span class="k">[</span><span class="nb">-</span><span class="k">[</span><span class="nb">-</span><span class="k">[</span><span class="nb">-</span><span class="nv">&lt;</span><span class="nb">-</span><span class="nv">&gt;</span><span class="k">]</span><span class="nv">&lt;</span><span class="k">[</span><span class="nv">&lt;</span><span class="nb">+++</span><span class="nv">&gt;</span><span class="k">[</span><span class="nb">-</span><span class="k">]</span><span class="c"></span>
+</span><span class="line"><span class="k">]</span><span class="nv">&gt;</span><span class="k">]</span><span class="nv">&lt;</span><span class="k">[</span><span class="nv">&lt;</span><span class="nb">++++++++++++++++++++++++++++++++++++++++++++++++++</span><span class="nv">&gt;</span><span class="k">[</span><span class="nb">-</span><span class="k">]]</span><span class="nv">&gt;</span><span class="k">]</span><span class="nv">&lt;</span><span class="k">[</span><span class="nv">&lt;</span><span class="nb">++++++++++++++</span><span class="c"></span>
+</span><span class="line"><span class="nb">++++++++++++++++++++++++++++++++++</span><span class="nv">&gt;</span><span class="k">[</span><span class="nb">-</span><span class="k">]]</span><span class="nv">&gt;</span><span class="k">]</span><span class="nv">&lt;</span><span class="k">[</span><span class="nv">&lt;</span><span class="nb">++</span><span class="nv">&gt;</span><span class="k">[</span><span class="nb">-</span><span class="k">]]</span><span class="nv">&gt;</span><span class="k">]</span><span class="nv">&lt;</span><span class="k">[</span><span class="nv">&lt;</span><span class="nb">+++++++++++++++++</span><span class="nv">&gt;</span><span class="k">[</span><span class="nb">-</span><span class="k">]]</span><span class="nv">&gt;</span><span class="k">]</span><span class="c"></span>
+</span><span class="line"><span class="nv">&lt;</span><span class="k">[</span><span class="nv">&lt;</span><span class="nb">+++++++++++++++++++</span><span class="nv">&gt;</span><span class="k">[</span><span class="nb">-</span><span class="k">]]</span><span class="nv">&gt;</span><span class="k">]</span><span class="nv">&lt;</span><span class="k">[</span><span class="nv">&lt;&gt;</span><span class="k">[</span><span class="nb">-</span><span class="k">]]</span><span class="nv">&lt;</span><span class="nt">.</span><span class="k">[</span><span class="nb">-</span><span class="k">]</span><span class="nv">&gt;&gt;&gt;</span><span class="k">]</span><span class="c"></span>
+</span><span class="line"><span class="nb">++++++++++</span><span class="nt">.</span><span class="c"></span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/04/27/quine-in-brainfuck/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -627,47 +753,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/03/28/goal-or-contract/">目標と契約</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-03-28T23:20:46+09:00" pubdate data-updated="true">Mar 28<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>もう(すぐ)春ですが、私はコミュ症です</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2014/03/28/goal-or-contract/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -683,6 +768,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/04/27/quine-in-brainfuck/">Brainfuckでquine書いた</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/04/17/quine-in-lazy-k/">Lazy Kでquine書いた (Iota記法)</a>
       </li>
     
@@ -696,10 +785,6 @@
     
       <li class="post">
         <a href="/blog/2014/04/13/one-point-basis/">一点基底について調べた</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/04/13/fizzbuzz-in-lazy-k/">Lazk Kでfizzbuzz書いた</a>
       </li>
     
   </ul>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: quine | Higher Order うさぎ小屋]]></title>
   <link href="http://solorab.github.io/blog/categories/quine/atom.xml" rel="self"/>
   <link href="http://solorab.github.io/"/>
-  <updated>2014-04-28T00:49:23+09:00</updated>
+  <updated>2014-05-10T17:22:52+09:00</updated>
   <id>http://solorab.github.io/</id>
   <author>
     <name><![CDATA[そろうさぎ]]></name>
@@ -82,11 +82,12 @@
 <!-- more -->
 
 <h2 id="section">処理手順</h2>
-<p>### data読み込み
-<code>&gt;&lt;+-[].,</code>を<code>1..8</code>に適当に対応付け、1文字1byteで格納<br />
+
+<h3 id="data">data読み込み</h3>
+<p><code>&gt;&lt;+-[].,</code>を<code>1..8</code>に適当に対応付け、1文字1byteで格納<br />
 先頭byteを<code>0</code>とし番兵、data末尾で停止</p>
 
-<h3 id="data">data移動</h3>
+<h3 id="data-1">data移動</h3>
 <p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>start:18 </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bf'><span class='line'><span class="k">[[</span><span class="c">»&amp;gt;</span><span class="nb">+</span><span class="c">«&amp;lt;</span><span class="nb">-</span><span class="k">]</span><span class="c">&amp;lt;</span><span class="k">]</span><span class="c">»»</span>
@@ -95,7 +96,7 @@
 <p>作業用空間の確保のため、全体を3byte右へずらしながら先頭へ<br />
 番兵<code>0</code>でwhileを脱出し、data部分の先頭に移動し停止</p>
 
-<h3 id="data-1">data部出力</h3>
+<h3 id="data-2">data部出力</h3>
 <p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>start:19 </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>

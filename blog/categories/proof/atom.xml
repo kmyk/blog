@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: proof | Higher Order うさぎ小屋]]></title>
+  <link href="http://solorab.github.io/blog/categories/proof/atom.xml" rel="self"/>
+  <link href="http://solorab.github.io/"/>
+  <updated>2014-06-11T00:49:51+09:00</updated>
+  <id>http://solorab.github.io/</id>
+  <author>
+    <name><![CDATA[そろうさぎ]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[idrisに挑戦した]]></title>
+    <link href="http://solorab.github.io/blog/2014/05/16/tried-idris/"/>
+    <updated>2014-05-16T22:23:42+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/05/16/tried-idris</id>
+    <content type="html"><![CDATA[<p>再挑戦する日のため、敗北した過程のメモ</p>
+
+<p><code>sh
+    $ idris
+         ____    __     _
+        /  _/___/ /____(_)____
+        / // __  / ___/ / ___/     Version 0.9.12-git:dae7d7d
+      _/ // /_/ / /  / (__  )      http://www.idris-lang.org/
+     /___/\__,_/_/  /_/____/       Type :? for help
+</code></p>
+
+<!-- more -->
+
+<h2 id="install">install</h2>
+<p><code>sh
+    $ git clone git://github.com/edwinb/Idris-dev.git idris
+    $ cd idris
+    $ echo 'CABALFLAGS += -f FFI -f curses' &gt; custom.mk
+    $ make
+</code></p>
+
+<p><code>custom.mk</code>にFFIを加えていないと<code>:x</code>で<code>IO</code>を評価できなかった<br />
+それ以外は簡単ですね</p>
+
+<h2 id="repl">replで遊ぶ</h2>
+
+<h3 id="head">head</h3>
+
+<p><code>haskell
+    Idris&gt; :total List.head
+    Prelude.List.head is Total
+    Idris&gt; :type List.head
+    Prelude.List.head : (l : List a) -&gt; (isCons l = True) -&gt; a
+    Idris&gt; with List head [42, 64] refl
+    42 : Integer
+    Idris&gt; with List head [] refl
+    (input):1:16:When elaborating argument ok to function Prelude.List.head:
+            Can't unify ...
+    Idris&gt; :doc refl
+    refl : x = x
+        A proof that x in fact equals x. ...
+</code></p>
+
+<p>listとそれがnilでないことの証明を引数にとるため、headが全域関数 すごい</p>
+
+<p>overloadできるので<code>with</code>構文とか<code>the</code>関数とかが必要<br />
+<code>[3] : List Int</code>のような型注釈はできない<br />
+<code>:type refl</code>したら怒られたので<code>refl</code>何者</p>
+
+<h3 id="io">IO</h3>
+
+<p><code>haskell
+    Idris&gt; print "foo"
+    MkIO (\{w0} =&gt; mkForeignPrim (FFun "putStr" [FString] FUnit) "\"foo\"\n" w) : IO ()
+    Idris&gt; :x print "foo"
+    "foo"
+    MkIO (\{w0} =&gt; prim__IO ()) : IO ()
+</code></p>
+
+<p><code>:x</code>で実行を促さない限り副作用ありません</p>
+
+<p>簡約後の式をreplに渡すと<code>w</code>や<code>{w0}</code>の辺りで怒られた</p>
+
+<h2 id="quine">quine</h2>
+<p><code>haskell
+    module Main
+    main : IO ()
+    main = putStrLn (s ++ show (the String s)) where
+      s = "module Main\nmain : IO ()\nmain = putStrLn (s ++ show (the String s)) where\n  s = "
+</code></p>
+
+<p><code>sh
+    $ idris quine.idr -o a.out
+    $ diff quine.idr &lt;(./a.out)
+</code></p>
+
+<p>haskell同様、<code>show</code>と<code>where</code>のおかげで非常にquineが書きやすい</p>
+
+<p><code>s</code>の型注釈が要るのは何故だ</p>
+
+<h2 id="fibonacci">fibonacci</h2>
+
+<p>``` haskell
+    module Main
+    fibs : Stream Nat
+    fibs = map fib [0..]</p>
+
+<pre><code>main : IO ()
+main = recur fibs where
+  recur (x :: xs) = do
+    print x
+    recur xs ```
+</code></pre>
+
+<p><code>fib : Nat -&gt; Nat</code>が<code>Prelude</code>にあるという恐ろしさよ</p>
+
+<p>haskellの<code>mapM_</code>が<code>traverse_</code>に吸収された 良い<br />
+また、<code>[0..]</code>が無限長なため全域関数<code>traverse_</code>では扱えず、<code>IO</code>の中で処理せねばならない</p>
+
+<h3 id="applicative-style">applicative style</h3>
+
+<p>しかし、haskellでは等価な以下のような別表現は動かない</p>
+
+<p>``` haskell
+    main’ : IO ()
+    main’ = recur fibs where
+      recur (x :: xs) = print x $&gt; recur xs</p>
+
+<pre><code>main'' : IO ()
+main'' = recur fibs where
+  recur (x :: xs) = print x &gt;&gt;= const (recur xs) ```
+</code></pre>
+
+<p>replで試すと <code>do</code> <code>$&gt;</code> <code>&gt;&gt;=</code> それぞれ以下のような簡約結果になる</p>
+
+<p><code>haskell
+    Idris&gt; do { putStrLn "hoge" ; print 3 }
+    io_bind (MkIO (\{w0} =&gt; mkForeignPrim (FFun "putStr" [FString] FUnit) "hoge\n" w))
+            (\{bindx0} =&gt; MkIO (\{w0} =&gt; mkForeignPrim (FFun "putStr" [FString] FUnit) "3\n" w)) : IO ()
+    Idris&gt; putStrLn "hoge" $&gt; print 3
+    io_bind (io_bind (MkIO (\{w0} =&gt; mkForeignPrim (FFun "putStr" [FString] FUnit) "hoge\n" w)) (\{b0} =&gt; io_return id))
+            (\f' =&gt; io_bind (MkIO (\{w0} =&gt; mkForeignPrim (FFun "putStr" [FString] FUnit) "3\n" w)) (\a' =&gt; io_return (f' a'))) : IO ()
+    Idris&gt; putStrLn "hoge" &gt;&gt;= const (print 3)
+    io_bind (MkIO (\{w0} =&gt; mkForeignPrim (FFun "putStr" [FString] FUnit) "hoge\n" w))
+            (\v =&gt; MkIO (\{w0} =&gt; mkForeignPrim (FFun "putStr" [FString] FUnit) "3\n" w)) : IO ()
+</code></p>
+
+<p>末尾再帰最適化が絡んでいるのかなと思ったが、下も動くので全く分からない</p>
+
+<p><code>haskell
+    main''' : IO ()
+    main''' = recur fibs where
+      recur (x :: xs) = do
+        print x
+        recur xs
+        putStrLn "foo"
+</code></p>
+
+<h2 id="fizzbuzz">fizzbuzz</h2>
+<p><code>Prelude</code>に<code>Semigroup</code>やばい<br />
+あるからには使わねばならない</p>
+
+<p>``` haskell
+    module Main</p>
+
+<pre><code>data FizzBuzz = Fizz | Buzz | Fizzbuzz
+
+fizz : Nat -&gt; Maybe FizzBuzz
+fizz n = if (n `mod` 3) == 0 then Just Fizz else Nothing
+buzz : Nat -&gt; Maybe FizzBuzz
+buzz n = if (n `mod` 5) == 0 then Just Buzz else Nothing
+
+instance Eq FizzBuzz where
+  Fizzbuzz == Fizzbuzz = True
+  Fizz == Fizz = True
+  Buzz == Buzz = True
+  _ == _ = False
+
+instance Semigroup FizzBuzz where
+  a &lt;+&gt; b = if a == b then a else Fizzbuzz
+
+fizzbuzz : Nat -&gt; Maybe FizzBuzz
+fizzbuzz n = fizz n &lt;+&gt; buzz n
+
+instance Show FizzBuzz where
+  show Fizz = "fizz"
+  show Buzz = "buzz"
+  show Fizzbuzz = "fizzbuzz"
+
+main : IO ()
+main = recur 1 where
+  recur : Nat -&gt; IO ()
+  recur n = do
+    putStrLn $ fromMaybe (show n) (map show $ fizzbuzz n)
+    recur $ succ n ```
+</code></pre>
+
+<p>半群なので結合律が必要なのですが、何故か後から追加で証明を与える仕様になっている<br />
+結合律の有無がよく分からないならそれはmagmaだと思うのですが、なにか理由があるのでしょう</p>
+
+<p>そして肝心の証明はよく分からなかったので全列挙しました</p>
+
+<p><code>haskell
+    instance VerifiedSemigroup FizzBuzz where
+      semigroupOpIsAssociative Fizz     Fizz     Fizz     = refl
+      semigroupOpIsAssociative Fizz     Fizz     Buzz     = refl
+      semigroupOpIsAssociative Fizz     Fizz     Fizzbuzz = refl
+      semigroupOpIsAssociative Fizz     Buzz     Fizz     = refl
+      semigroupOpIsAssociative Fizz     Buzz     Buzz     = refl
+      semigroupOpIsAssociative Fizz     Buzz     Fizzbuzz = refl
+      semigroupOpIsAssociative Fizz     Fizzbuzz Fizz     = refl
+      semigroupOpIsAssociative Fizz     Fizzbuzz Buzz     = refl
+      semigroupOpIsAssociative Fizz     Fizzbuzz Fizzbuzz = refl
+      semigroupOpIsAssociative Buzz     Fizz     Fizz     = refl
+      semigroupOpIsAssociative Buzz     Fizz     Buzz     = refl
+      semigroupOpIsAssociative Buzz     Fizz     Fizzbuzz = refl
+      semigroupOpIsAssociative Buzz     Buzz     Fizz     = refl
+      semigroupOpIsAssociative Buzz     Buzz     Buzz     = refl
+      semigroupOpIsAssociative Buzz     Buzz     Fizzbuzz = refl
+      semigroupOpIsAssociative Buzz     Fizzbuzz Fizz     = refl
+      semigroupOpIsAssociative Buzz     Fizzbuzz Buzz     = refl
+      semigroupOpIsAssociative Buzz     Fizzbuzz Fizzbuzz = refl
+      semigroupOpIsAssociative Fizzbuzz Fizz     Fizz     = refl
+      semigroupOpIsAssociative Fizzbuzz Fizz     Buzz     = refl
+      semigroupOpIsAssociative Fizzbuzz Fizz     Fizzbuzz = refl
+      semigroupOpIsAssociative Fizzbuzz Buzz     Fizz     = refl
+      semigroupOpIsAssociative Fizzbuzz Buzz     Buzz     = refl
+      semigroupOpIsAssociative Fizzbuzz Buzz     Fizzbuzz = refl
+      semigroupOpIsAssociative Fizzbuzz Fizzbuzz Fizz     = refl
+      semigroupOpIsAssociative Fizzbuzz Fizzbuzz Buzz     = refl
+      semigroupOpIsAssociative Fizzbuzz Fizzbuzz Fizzbuzz = refl
+</code></p>
+
+<p>証明力足りない</p>
+
+<h2 id="section">所感</h2>
+<p>現段階では、方が強すぎて書きにくく感じる<br />
+haskellで少し気をつけながら書くほうが楽である</p>
+
+<p>定理照明系に明るくないのが問題なのだろう<br />
+まずはcoqに習熟すべきかと思う</p>
+
+<p>また、document周りが不満<br />
+主にapi-documentがweb上に見つからないこと</p>
+
+<h2 id="refs">refs</h2>
+<ul>
+  <li><a href="http://www.idris-lang.org/">Idris -</a></li>
+  <li><a href="https://github.com/idris-lang/Idris-dev">idris-lang/Idris-dev</a>
+    <ul>
+      <li><a href="https://github.com/idris-lang/Idris-dev/wiki">Home · idris-lang/Idris-dev Wiki</a></li>
+    </ul>
+  </li>
+  <li><a href="http://mandel59.hateblo.jp/search?q=idris">記事一覧 - M59のブログ</a>
+    <ul>
+      <li><a href="http://mandel59.hateblo.jp/entry/2013/09/02/184831">こわくない Idris (1) - M59のブログ</a></li>
+    </ul>
+  </li>
+</ul>
+]]></content>
+  </entry>
+  
+</feed>

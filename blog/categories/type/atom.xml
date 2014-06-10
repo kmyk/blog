@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: type | Higher Order うさぎ小屋]]></title>
+  <link href="http://solorab.github.io/blog/categories/type/atom.xml" rel="self"/>
+  <link href="http://solorab.github.io/"/>
+  <updated>2014-06-11T00:49:51+09:00</updated>
+  <id>http://solorab.github.io/</id>
+  <author>
+    <name><![CDATA[そろうさぎ]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[関数をEnumにして遊んだ]]></title>
+    <link href="http://solorab.github.io/blog/2014/06/10/instance-enum-functions/"/>
+    <updated>2014-06-10T21:38:12+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/06/10/instance-enum-functions</id>
+    <content type="html"><![CDATA[<p>全域関数 <script type="math/tex"> f : \mathbb{A} \to \mathbb{B} </script> は <script type="math/tex"> { \left|
+\mathbb{B} \right|
+}^{ \left|
+\mathbb{A} \right|
+} </script> 個存在します<br />
+なので例えば型<code>Bool -&gt; Bool</code>を持つ関数は <script type="math/tex"> {\left| \mathbb{Bool} \right|}^{\left| \mathbb{Bool} \right|} = 2^2 = 4 </script> 個であり、十分列挙可能<br />
+ゆえにinstancingしました</p>
+
+<p><code>haskell
+    instance (..) =&gt; Enum (a -&gt; b) where ..
+</code></p>
+
+<!-- more -->
+
+<h2 id="section">必要物</h2>
+
+<p><code>haskell
+    {-# LANGUAGE ScopedTypeVariables #-}
+    import Data.Monoid (mconcat)
+</code></p>
+
+<h2 id="section-1">補助関数</h2>
+
+<p>``` haskell
+    habitant :: (Enum a, Bounded a) =&gt; a -&gt; Int
+    habitant a = f maxBound - f minBound + 1 where
+        f x = fromEnum (x <code>asTypeOf</code> a)</p>
+
+<pre><code>habitants :: forall a. (Enum a, Bounded a) =&gt; [a]
+habitants = [minBound :: a .. maxBound]
+
+digit :: Int -&gt; [Int] -&gt; Int
+digit n = sum . zipWith (\ ix x -&gt; x * pow n ix) [0 :: Int ..] where
+    pow _ 0 = 1
+    pow x y = x * pow x (y - 1)
+
+unndigit :: Int -&gt; Int -&gt; [Int]
+unndigit n = f where
+    f 0 = []
+    f x = f (x `div` n) ++ [x `mod` n]
+
+decode :: forall dom cod. (Enum dom, Bounded dom, Enum cod, Bounded cod) =&gt; Int -&gt; dom -&gt; cod
+decode n = if n &lt; 0 || (cod ^ dom) &lt;= n
+        then error "wrong index of functions"
+        else toEnum . (funcs !!) . fromEnum where
+    dom = habitant (undefined :: dom)
+    cod = habitant (undefined :: cod)
+    funcs = let xs = unndigit cod n in replicate (dom - length xs) 0 ++ xs
+
+encode :: forall dom cod. (Enum dom, Bounded dom, Enum cod, Bounded cod) =&gt; (dom -&gt; cod) -&gt; Int
+encode f = digit cod . map (fromEnum . f) . reverse $ enumFrom minDom where
+    cod = habitant (undefined :: cod)
+    minDom = minBound :: dom ```
+</code></pre>
+
+<p><code>digit</code>/<code>undigit</code>は、listと自然数を相互変換し、 <code>decode</code>/<code>encode</code>は、関数とlistを相互変換します</p>
+
+<p>具体的には</p>
+
+<ol>
+  <li>列挙型から列挙型への関数を、</li>
+  <li><code>fromEnum</code>/<code>toEnum</code>により、自然数から自然数への関数へ変換し、</li>
+  <li>添字を引数と見ることで、自然数のlistへ変換し、</li>
+  <li>listをdom進数cod桁の数と見て、1つの自然数に変換します</li>
+</ol>
+
+<h2 id="instancing">instancing</h2>
+
+<p>``` haskell
+    instance (Enum a, Bounded a, Enum b, Bounded b) =&gt; Enum (a, b) where
+        fromEnum (a, b) = fromEnum a * habitant b + fromEnum b
+        toEnum n = (toEnum (n <code>div</code> m), toEnum (n <code>mod</code> m)) where
+            m = habitant (undefined :: b)
+        enumFrom x       = map toEnum [fromEnum x .. fromEnum (maxBound :: (a, b))]
+        enumFromThen x y = map toEnum [fromEnum x, fromEnum y .. fromEnum (maxBound :: (a, b))]</p>
+
+<pre><code>instance (Enum a, Bounded a, Eq b) =&gt; Eq (a -&gt; b) where
+    f == g = all (\ x -&gt; f x == g x) habitants
+
+instance (Enum a, Bounded a, Ord b) =&gt; Ord (a -&gt; b) where
+    f `compare` g = mconcat $ map (\ x -&gt; f x `compare` g x) habitants
+
+instance (Bounded a, Bounded b) =&gt; Bounded (a -&gt; b) where
+    minBound = const minBound
+    maxBound = const maxBound
+
+instance (Enum a, Bounded a, Enum b, Bounded b) =&gt; Enum (a -&gt; b) where
+    fromEnum = encode
+    toEnum = decode
+    enumFrom x       = map toEnum [fromEnum x .. fromEnum (maxBound :: (a, b))]
+    enumFromThen x y = map toEnum [fromEnum x, fromEnum y .. fromEnum (maxBound :: (a, b))] ```
+</code></pre>
+
+<h2 id="section-2">利用</h2>
+
+<p>``` haskell
+    false’, not’, id’, true’ :: Bool -&gt; Bool
+    false’ = decode 0
+    id’    = decode 1
+    not’   = decode 2
+    true’  = decode 3</p>
+
+<pre><code>main :: IO ()
+main = do
+    print $ not' True
+    print $ fromEnum (toEnum 3 :: Bool -&gt; Bool -&gt; Bool)
+    print $ map (\ f -&gt; f True True) [(&amp;&amp;) .. (==) :: Bool -&gt; Bool -&gt; Bool] ```
+</code></pre>
+
+<p>闇っぽい</p>
+
+<h2 id="section-3">問題</h2>
+<ul>
+  <li><code>Integer</code>や<code>[a]</code>等の要素の数が無限なものは、この方法では列挙できない</li>
+  <li><code>Int</code>は有限だが、<code>toEnum</code>/<code>fromEnum</code>が<code>Int</code>を使うため、overflowし列挙できない</li>
+  <li><code>minBound == 0</code>等、<code>Enum</code>や<code>Bounded</code>に仮定多すぎ</li>
+</ul>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[idrisに挑戦した]]></title>
+    <link href="http://solorab.github.io/blog/2014/05/16/tried-idris/"/>
+    <updated>2014-05-16T22:23:42+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/05/16/tried-idris</id>
+    <content type="html"><![CDATA[<p>再挑戦する日のため、敗北した過程のメモ</p>
+
+<p><code>sh
+    $ idris
+         ____    __     _
+        /  _/___/ /____(_)____
+        / // __  / ___/ / ___/     Version 0.9.12-git:dae7d7d
+      _/ // /_/ / /  / (__  )      http://www.idris-lang.org/
+     /___/\__,_/_/  /_/____/       Type :? for help
+</code></p>
+
+<!-- more -->
+
+<h2 id="install">install</h2>
+<p><code>sh
+    $ git clone git://github.com/edwinb/Idris-dev.git idris
+    $ cd idris
+    $ echo 'CABALFLAGS += -f FFI -f curses' &gt; custom.mk
+    $ make
+</code></p>
+
+<p><code>custom.mk</code>にFFIを加えていないと<code>:x</code>で<code>IO</code>を評価できなかった<br />
+それ以外は簡単ですね</p>
+
+<h2 id="repl">replで遊ぶ</h2>
+
+<h3 id="head">head</h3>
+
+<p><code>haskell
+    Idris&gt; :total List.head
+    Prelude.List.head is Total
+    Idris&gt; :type List.head
+    Prelude.List.head : (l : List a) -&gt; (isCons l = True) -&gt; a
+    Idris&gt; with List head [42, 64] refl
+    42 : Integer
+    Idris&gt; with List head [] refl
+    (input):1:16:When elaborating argument ok to function Prelude.List.head:
+            Can't unify ...
+    Idris&gt; :doc refl
+    refl : x = x
+        A proof that x in fact equals x. ...
+</code></p>
+
+<p>listとそれがnilでないことの証明を引数にとるため、headが全域関数 すごい</p>
+
+<p>overloadできるので<code>with</code>構文とか<code>the</code>関数とかが必要<br />
+<code>[3] : List Int</code>のような型注釈はできない<br />
+<code>:type refl</code>したら怒られたので<code>refl</code>何者</p>
+
+<h3 id="io">IO</h3>
+
+<p><code>haskell
+    Idris&gt; print "foo"
+    MkIO (\{w0} =&gt; mkForeignPrim (FFun "putStr" [FString] FUnit) "\"foo\"\n" w) : IO ()
+    Idris&gt; :x print "foo"
+    "foo"
+    MkIO (\{w0} =&gt; prim__IO ()) : IO ()
+</code></p>
+
+<p><code>:x</code>で実行を促さない限り副作用ありません</p>
+
+<p>簡約後の式をreplに渡すと<code>w</code>や<code>{w0}</code>の辺りで怒られた</p>
+
+<h2 id="quine">quine</h2>
+<p><code>haskell
+    module Main
+    main : IO ()
+    main = putStrLn (s ++ show (the String s)) where
+      s = "module Main\nmain : IO ()\nmain = putStrLn (s ++ show (the String s)) where\n  s = "
+</code></p>
+
+<p><code>sh
+    $ idris quine.idr -o a.out
+    $ diff quine.idr &lt;(./a.out)
+</code></p>
+
+<p>haskell同様、<code>show</code>と<code>where</code>のおかげで非常にquineが書きやすい</p>
+
+<p><code>s</code>の型注釈が要るのは何故だ</p>
+
+<h2 id="fibonacci">fibonacci</h2>
+
+<p>``` haskell
+    module Main
+    fibs : Stream Nat
+    fibs = map fib [0..]</p>
+
+<pre><code>main : IO ()
+main = recur fibs where
+  recur (x :: xs) = do
+    print x
+    recur xs ```
+</code></pre>
+
+<p><code>fib : Nat -&gt; Nat</code>が<code>Prelude</code>にあるという恐ろしさよ</p>
+
+<p>haskellの<code>mapM_</code>が<code>traverse_</code>に吸収された 良い<br />
+また、<code>[0..]</code>が無限長なため全域関数<code>traverse_</code>では扱えず、<code>IO</code>の中で処理せねばならない</p>
+
+<h3 id="applicative-style">applicative style</h3>
+
+<p>しかし、haskellでは等価な以下のような別表現は動かない</p>
+
+<p>``` haskell
+    main’ : IO ()
+    main’ = recur fibs where
+      recur (x :: xs) = print x $&gt; recur xs</p>
+
+<pre><code>main'' : IO ()
+main'' = recur fibs where
+  recur (x :: xs) = print x &gt;&gt;= const (recur xs) ```
+</code></pre>
+
+<p>replで試すと <code>do</code> <code>$&gt;</code> <code>&gt;&gt;=</code> それぞれ以下のような簡約結果になる</p>
+
+<p><code>haskell
+    Idris&gt; do { putStrLn "hoge" ; print 3 }
+    io_bind (MkIO (\{w0} =&gt; mkForeignPrim (FFun "putStr" [FString] FUnit) "hoge\n" w))
+            (\{bindx0} =&gt; MkIO (\{w0} =&gt; mkForeignPrim (FFun "putStr" [FString] FUnit) "3\n" w)) : IO ()
+    Idris&gt; putStrLn "hoge" $&gt; print 3
+    io_bind (io_bind (MkIO (\{w0} =&gt; mkForeignPrim (FFun "putStr" [FString] FUnit) "hoge\n" w)) (\{b0} =&gt; io_return id))
+            (\f' =&gt; io_bind (MkIO (\{w0} =&gt; mkForeignPrim (FFun "putStr" [FString] FUnit) "3\n" w)) (\a' =&gt; io_return (f' a'))) : IO ()
+    Idris&gt; putStrLn "hoge" &gt;&gt;= const (print 3)
+    io_bind (MkIO (\{w0} =&gt; mkForeignPrim (FFun "putStr" [FString] FUnit) "hoge\n" w))
+            (\v =&gt; MkIO (\{w0} =&gt; mkForeignPrim (FFun "putStr" [FString] FUnit) "3\n" w)) : IO ()
+</code></p>
+
+<p>末尾再帰最適化が絡んでいるのかなと思ったが、下も動くので全く分からない</p>
+
+<p><code>haskell
+    main''' : IO ()
+    main''' = recur fibs where
+      recur (x :: xs) = do
+        print x
+        recur xs
+        putStrLn "foo"
+</code></p>
+
+<h2 id="fizzbuzz">fizzbuzz</h2>
+<p><code>Prelude</code>に<code>Semigroup</code>やばい<br />
+あるからには使わねばならない</p>
+
+<p>``` haskell
+    module Main</p>
+
+<pre><code>data FizzBuzz = Fizz | Buzz | Fizzbuzz
+
+fizz : Nat -&gt; Maybe FizzBuzz
+fizz n = if (n `mod` 3) == 0 then Just Fizz else Nothing
+buzz : Nat -&gt; Maybe FizzBuzz
+buzz n = if (n `mod` 5) == 0 then Just Buzz else Nothing
+
+instance Eq FizzBuzz where
+  Fizzbuzz == Fizzbuzz = True
+  Fizz == Fizz = True
+  Buzz == Buzz = True
+  _ == _ = False
+
+instance Semigroup FizzBuzz where
+  a &lt;+&gt; b = if a == b then a else Fizzbuzz
+
+fizzbuzz : Nat -&gt; Maybe FizzBuzz
+fizzbuzz n = fizz n &lt;+&gt; buzz n
+
+instance Show FizzBuzz where
+  show Fizz = "fizz"
+  show Buzz = "buzz"
+  show Fizzbuzz = "fizzbuzz"
+
+main : IO ()
+main = recur 1 where
+  recur : Nat -&gt; IO ()
+  recur n = do
+    putStrLn $ fromMaybe (show n) (map show $ fizzbuzz n)
+    recur $ succ n ```
+</code></pre>
+
+<p>半群なので結合律が必要なのですが、何故か後から追加で証明を与える仕様になっている<br />
+結合律の有無がよく分からないならそれはmagmaだと思うのですが、なにか理由があるのでしょう</p>
+
+<p>そして肝心の証明はよく分からなかったので全列挙しました</p>
+
+<p><code>haskell
+    instance VerifiedSemigroup FizzBuzz where
+      semigroupOpIsAssociative Fizz     Fizz     Fizz     = refl
+      semigroupOpIsAssociative Fizz     Fizz     Buzz     = refl
+      semigroupOpIsAssociative Fizz     Fizz     Fizzbuzz = refl
+      semigroupOpIsAssociative Fizz     Buzz     Fizz     = refl
+      semigroupOpIsAssociative Fizz     Buzz     Buzz     = refl
+      semigroupOpIsAssociative Fizz     Buzz     Fizzbuzz = refl
+      semigroupOpIsAssociative Fizz     Fizzbuzz Fizz     = refl
+      semigroupOpIsAssociative Fizz     Fizzbuzz Buzz     = refl
+      semigroupOpIsAssociative Fizz     Fizzbuzz Fizzbuzz = refl
+      semigroupOpIsAssociative Buzz     Fizz     Fizz     = refl
+      semigroupOpIsAssociative Buzz     Fizz     Buzz     = refl
+      semigroupOpIsAssociative Buzz     Fizz     Fizzbuzz = refl
+      semigroupOpIsAssociative Buzz     Buzz     Fizz     = refl
+      semigroupOpIsAssociative Buzz     Buzz     Buzz     = refl
+      semigroupOpIsAssociative Buzz     Buzz     Fizzbuzz = refl
+      semigroupOpIsAssociative Buzz     Fizzbuzz Fizz     = refl
+      semigroupOpIsAssociative Buzz     Fizzbuzz Buzz     = refl
+      semigroupOpIsAssociative Buzz     Fizzbuzz Fizzbuzz = refl
+      semigroupOpIsAssociative Fizzbuzz Fizz     Fizz     = refl
+      semigroupOpIsAssociative Fizzbuzz Fizz     Buzz     = refl
+      semigroupOpIsAssociative Fizzbuzz Fizz     Fizzbuzz = refl
+      semigroupOpIsAssociative Fizzbuzz Buzz     Fizz     = refl
+      semigroupOpIsAssociative Fizzbuzz Buzz     Buzz     = refl
+      semigroupOpIsAssociative Fizzbuzz Buzz     Fizzbuzz = refl
+      semigroupOpIsAssociative Fizzbuzz Fizzbuzz Fizz     = refl
+      semigroupOpIsAssociative Fizzbuzz Fizzbuzz Buzz     = refl
+      semigroupOpIsAssociative Fizzbuzz Fizzbuzz Fizzbuzz = refl
+</code></p>
+
+<p>証明力足りない</p>
+
+<h2 id="section">所感</h2>
+<p>現段階では、方が強すぎて書きにくく感じる<br />
+haskellで少し気をつけながら書くほうが楽である</p>
+
+<p>定理照明系に明るくないのが問題なのだろう<br />
+まずはcoqに習熟すべきかと思う</p>
+
+<p>また、document周りが不満<br />
+主にapi-documentがweb上に見つからないこと</p>
+
+<h2 id="refs">refs</h2>
+<ul>
+  <li><a href="http://www.idris-lang.org/">Idris -</a></li>
+  <li><a href="https://github.com/idris-lang/Idris-dev">idris-lang/Idris-dev</a>
+    <ul>
+      <li><a href="https://github.com/idris-lang/Idris-dev/wiki">Home · idris-lang/Idris-dev Wiki</a></li>
+    </ul>
+  </li>
+  <li><a href="http://mandel59.hateblo.jp/search?q=idris">記事一覧 - M59のブログ</a>
+    <ul>
+      <li><a href="http://mandel59.hateblo.jp/entry/2013/09/02/184831">こわくない Idris (1) - M59のブログ</a></li>
+    </ul>
+  </li>
+</ul>
+]]></content>
+  </entry>
+  
+</feed>

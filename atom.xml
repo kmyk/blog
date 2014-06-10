@@ -4,7 +4,7 @@
   <title><![CDATA[Higher Order うさぎ小屋]]></title>
   <link href="http://solorab.github.io/atom.xml" rel="self"/>
   <link href="http://solorab.github.io/"/>
-  <updated>2014-05-10T17:22:52+09:00</updated>
+  <updated>2014-06-11T00:49:51+09:00</updated>
   <id>http://solorab.github.io/</id>
   <author>
     <name><![CDATA[そろうさぎ]]></name>
@@ -12,6 +12,550 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[関数をEnumにして遊んだ]]></title>
+    <link href="http://solorab.github.io/blog/2014/06/10/instance-enum-functions/"/>
+    <updated>2014-06-10T21:38:12+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/06/10/instance-enum-functions</id>
+    <content type="html"><![CDATA[<p>全域関数 <script type="math/tex"> f : \mathbb{A} \to \mathbb{B} </script> は <script type="math/tex"> { \left|
+\mathbb{B} \right|
+}^{ \left|
+\mathbb{A} \right|
+} </script> 個存在します<br />
+なので例えば型<code>Bool -&gt; Bool</code>を持つ関数は <script type="math/tex"> {\left| \mathbb{Bool} \right|}^{\left| \mathbb{Bool} \right|} = 2^2 = 4 </script> 個であり、十分列挙可能<br />
+ゆえにinstancingしました</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="kr">instance</span> <span class="p">(</span><span class="o">..</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="kt">Enum</span> <span class="p">(</span><span class="n">a</span> <span class="ow">-&gt;</span> <span class="n">b</span><span class="p">)</span> <span class="kr">where</span> <span class="o">..</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<!-- more -->
+
+<h2 id="section">必要物</h2>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="cm">{-# LANGUAGE ScopedTypeVariables #-}</span>
+</span><span class="line"><span class="kr">import</span> <span class="nn">Data.Monoid</span> <span class="p">(</span><span class="nf">mconcat</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h2 id="section-1">補助関数</h2>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+<span class="line-number">21</span>
+<span class="line-number">22</span>
+<span class="line-number">23</span>
+<span class="line-number">24</span>
+<span class="line-number">25</span>
+<span class="line-number">26</span>
+<span class="line-number">27</span>
+<span class="line-number">28</span>
+<span class="line-number">29</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="nf">habitant</span> <span class="ow">::</span> <span class="p">(</span><span class="kt">Enum</span> <span class="n">a</span><span class="p">,</span> <span class="kt">Bounded</span> <span class="n">a</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="kt">Int</span>
+</span><span class="line"><span class="nf">habitant</span> <span class="n">a</span> <span class="ow">=</span> <span class="n">f</span> <span class="n">maxBound</span> <span class="o">-</span> <span class="n">f</span> <span class="n">minBound</span> <span class="o">+</span> <span class="mi">1</span> <span class="kr">where</span>
+</span><span class="line">    <span class="n">f</span> <span class="n">x</span> <span class="ow">=</span> <span class="n">fromEnum</span> <span class="p">(</span><span class="n">x</span> <span class="p">`</span><span class="n">asTypeOf</span><span class="p">`</span> <span class="n">a</span><span class="p">)</span>
+</span><span class="line">
+</span><span class="line"><span class="nf">habitants</span> <span class="ow">::</span> <span class="n">forall</span> <span class="n">a</span><span class="o">.</span> <span class="p">(</span><span class="kt">Enum</span> <span class="n">a</span><span class="p">,</span> <span class="kt">Bounded</span> <span class="n">a</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="p">[</span><span class="n">a</span><span class="p">]</span>
+</span><span class="line"><span class="nf">habitants</span> <span class="ow">=</span> <span class="p">[</span><span class="n">minBound</span> <span class="ow">::</span> <span class="n">a</span> <span class="o">..</span> <span class="n">maxBound</span><span class="p">]</span>
+</span><span class="line">
+</span><span class="line"><span class="nf">digit</span> <span class="ow">::</span> <span class="kt">Int</span> <span class="ow">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="ow">-&gt;</span> <span class="kt">Int</span>
+</span><span class="line"><span class="nf">digit</span> <span class="n">n</span> <span class="ow">=</span> <span class="n">sum</span> <span class="o">.</span> <span class="n">zipWith</span> <span class="p">(</span><span class="nf">\</span> <span class="n">ix</span> <span class="n">x</span> <span class="ow">-&gt;</span> <span class="n">x</span> <span class="o">*</span> <span class="n">pow</span> <span class="n">n</span> <span class="n">ix</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span> <span class="ow">::</span> <span class="kt">Int</span> <span class="o">..</span><span class="p">]</span> <span class="kr">where</span>
+</span><span class="line">    <span class="n">pow</span> <span class="kr">_</span> <span class="mi">0</span> <span class="ow">=</span> <span class="mi">1</span>
+</span><span class="line">    <span class="n">pow</span> <span class="n">x</span> <span class="n">y</span> <span class="ow">=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">pow</span> <span class="n">x</span> <span class="p">(</span><span class="n">y</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+</span><span class="line">
+</span><span class="line"><span class="nf">unndigit</span> <span class="ow">::</span> <span class="kt">Int</span> <span class="ow">-&gt;</span> <span class="kt">Int</span> <span class="ow">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span>
+</span><span class="line"><span class="nf">unndigit</span> <span class="n">n</span> <span class="ow">=</span> <span class="n">f</span> <span class="kr">where</span>
+</span><span class="line">    <span class="n">f</span> <span class="mi">0</span> <span class="ow">=</span> <span class="kt">[]</span>
+</span><span class="line">    <span class="n">f</span> <span class="n">x</span> <span class="ow">=</span> <span class="n">f</span> <span class="p">(</span><span class="n">x</span> <span class="p">`</span><span class="n">div</span><span class="p">`</span> <span class="n">n</span><span class="p">)</span> <span class="o">++</span> <span class="p">[</span><span class="n">x</span> <span class="p">`</span><span class="n">mod</span><span class="p">`</span> <span class="n">n</span><span class="p">]</span>
+</span><span class="line">
+</span><span class="line"><span class="nf">decode</span> <span class="ow">::</span> <span class="n">forall</span> <span class="n">dom</span> <span class="n">cod</span><span class="o">.</span> <span class="p">(</span><span class="kt">Enum</span> <span class="n">dom</span><span class="p">,</span> <span class="kt">Bounded</span> <span class="n">dom</span><span class="p">,</span> <span class="kt">Enum</span> <span class="n">cod</span><span class="p">,</span> <span class="kt">Bounded</span> <span class="n">cod</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="kt">Int</span> <span class="ow">-&gt;</span> <span class="n">dom</span> <span class="ow">-&gt;</span> <span class="n">cod</span>
+</span><span class="line"><span class="nf">decode</span> <span class="n">n</span> <span class="ow">=</span> <span class="kr">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="p">(</span><span class="n">cod</span> <span class="o">^</span> <span class="n">dom</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="n">n</span>
+</span><span class="line">        <span class="kr">then</span> <span class="ne">error</span> <span class="s">&quot;wrong index of functions&quot;</span>
+</span><span class="line">        <span class="kr">else</span> <span class="n">toEnum</span> <span class="o">.</span> <span class="p">(</span><span class="n">funcs</span> <span class="o">!!</span><span class="p">)</span> <span class="o">.</span> <span class="n">fromEnum</span> <span class="kr">where</span>
+</span><span class="line">    <span class="n">dom</span> <span class="ow">=</span> <span class="n">habitant</span> <span class="p">(</span><span class="n">undefined</span> <span class="ow">::</span> <span class="n">dom</span><span class="p">)</span>
+</span><span class="line">    <span class="n">cod</span> <span class="ow">=</span> <span class="n">habitant</span> <span class="p">(</span><span class="n">undefined</span> <span class="ow">::</span> <span class="n">cod</span><span class="p">)</span>
+</span><span class="line">    <span class="n">funcs</span> <span class="ow">=</span> <span class="kr">let</span> <span class="n">xs</span> <span class="ow">=</span> <span class="n">unndigit</span> <span class="n">cod</span> <span class="n">n</span> <span class="kr">in</span> <span class="n">replicate</span> <span class="p">(</span><span class="n">dom</span> <span class="o">-</span> <span class="n">length</span> <span class="n">xs</span><span class="p">)</span> <span class="mi">0</span> <span class="o">++</span> <span class="n">xs</span>
+</span><span class="line">
+</span><span class="line"><span class="nf">encode</span> <span class="ow">::</span> <span class="n">forall</span> <span class="n">dom</span> <span class="n">cod</span><span class="o">.</span> <span class="p">(</span><span class="kt">Enum</span> <span class="n">dom</span><span class="p">,</span> <span class="kt">Bounded</span> <span class="n">dom</span><span class="p">,</span> <span class="kt">Enum</span> <span class="n">cod</span><span class="p">,</span> <span class="kt">Bounded</span> <span class="n">cod</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="p">(</span><span class="n">dom</span> <span class="ow">-&gt;</span> <span class="n">cod</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="kt">Int</span>
+</span><span class="line"><span class="nf">encode</span> <span class="n">f</span> <span class="ow">=</span> <span class="n">digit</span> <span class="n">cod</span> <span class="o">.</span> <span class="n">map</span> <span class="p">(</span><span class="n">fromEnum</span> <span class="o">.</span> <span class="n">f</span><span class="p">)</span> <span class="o">.</span> <span class="n">reverse</span> <span class="o">$</span> <span class="n">enumFrom</span> <span class="n">minDom</span> <span class="kr">where</span>
+</span><span class="line">    <span class="n">cod</span> <span class="ow">=</span> <span class="n">habitant</span> <span class="p">(</span><span class="n">undefined</span> <span class="ow">::</span> <span class="n">cod</span><span class="p">)</span>
+</span><span class="line">    <span class="n">minDom</span> <span class="ow">=</span> <span class="n">minBound</span> <span class="ow">::</span> <span class="n">dom</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><code>digit</code>/<code>undigit</code>は、listと自然数を相互変換し、 <code>decode</code>/<code>encode</code>は、関数とlistを相互変換します</p>
+
+<p>具体的には</p>
+
+<ol>
+  <li>列挙型から列挙型への関数を、</li>
+  <li><code>fromEnum</code>/<code>toEnum</code>により、自然数から自然数への関数へ変換し、</li>
+  <li>添字を引数と見ることで、自然数のlistへ変換し、</li>
+  <li>listをdom進数cod桁の数と見て、1つの自然数に変換します</li>
+</ol>
+
+<h2 id="instancing">instancing</h2>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+<span class="line-number">21</span>
+<span class="line-number">22</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="kr">instance</span> <span class="p">(</span><span class="kt">Enum</span> <span class="n">a</span><span class="p">,</span> <span class="kt">Bounded</span> <span class="n">a</span><span class="p">,</span> <span class="kt">Enum</span> <span class="n">b</span><span class="p">,</span> <span class="kt">Bounded</span> <span class="n">b</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="kt">Enum</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="kr">where</span>
+</span><span class="line">    <span class="n">fromEnum</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="ow">=</span> <span class="n">fromEnum</span> <span class="n">a</span> <span class="o">*</span> <span class="n">habitant</span> <span class="n">b</span> <span class="o">+</span> <span class="n">fromEnum</span> <span class="n">b</span>
+</span><span class="line">    <span class="n">toEnum</span> <span class="n">n</span> <span class="ow">=</span> <span class="p">(</span><span class="n">toEnum</span> <span class="p">(</span><span class="n">n</span> <span class="p">`</span><span class="n">div</span><span class="p">`</span> <span class="n">m</span><span class="p">),</span> <span class="n">toEnum</span> <span class="p">(</span><span class="n">n</span> <span class="p">`</span><span class="n">mod</span><span class="p">`</span> <span class="n">m</span><span class="p">))</span> <span class="kr">where</span>
+</span><span class="line">        <span class="n">m</span> <span class="ow">=</span> <span class="n">habitant</span> <span class="p">(</span><span class="n">undefined</span> <span class="ow">::</span> <span class="n">b</span><span class="p">)</span>
+</span><span class="line">    <span class="n">enumFrom</span> <span class="n">x</span>       <span class="ow">=</span> <span class="n">map</span> <span class="n">toEnum</span> <span class="p">[</span><span class="n">fromEnum</span> <span class="n">x</span> <span class="o">..</span> <span class="n">fromEnum</span> <span class="p">(</span><span class="n">maxBound</span> <span class="ow">::</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">))]</span>
+</span><span class="line">    <span class="n">enumFromThen</span> <span class="n">x</span> <span class="n">y</span> <span class="ow">=</span> <span class="n">map</span> <span class="n">toEnum</span> <span class="p">[</span><span class="n">fromEnum</span> <span class="n">x</span><span class="p">,</span> <span class="n">fromEnum</span> <span class="n">y</span> <span class="o">..</span> <span class="n">fromEnum</span> <span class="p">(</span><span class="n">maxBound</span> <span class="ow">::</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">))]</span>
+</span><span class="line">
+</span><span class="line"><span class="kr">instance</span> <span class="p">(</span><span class="kt">Enum</span> <span class="n">a</span><span class="p">,</span> <span class="kt">Bounded</span> <span class="n">a</span><span class="p">,</span> <span class="kt">Eq</span> <span class="n">b</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="kt">Eq</span> <span class="p">(</span><span class="n">a</span> <span class="ow">-&gt;</span> <span class="n">b</span><span class="p">)</span> <span class="kr">where</span>
+</span><span class="line">    <span class="n">f</span> <span class="o">==</span> <span class="n">g</span> <span class="ow">=</span> <span class="n">all</span> <span class="p">(</span><span class="nf">\</span> <span class="n">x</span> <span class="ow">-&gt;</span> <span class="n">f</span> <span class="n">x</span> <span class="o">==</span> <span class="n">g</span> <span class="n">x</span><span class="p">)</span> <span class="n">habitants</span>
+</span><span class="line">
+</span><span class="line"><span class="kr">instance</span> <span class="p">(</span><span class="kt">Enum</span> <span class="n">a</span><span class="p">,</span> <span class="kt">Bounded</span> <span class="n">a</span><span class="p">,</span> <span class="kt">Ord</span> <span class="n">b</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="kt">Ord</span> <span class="p">(</span><span class="n">a</span> <span class="ow">-&gt;</span> <span class="n">b</span><span class="p">)</span> <span class="kr">where</span>
+</span><span class="line">    <span class="n">f</span> <span class="p">`</span><span class="n">compare</span><span class="p">`</span> <span class="n">g</span> <span class="ow">=</span> <span class="n">mconcat</span> <span class="o">$</span> <span class="n">map</span> <span class="p">(</span><span class="nf">\</span> <span class="n">x</span> <span class="ow">-&gt;</span> <span class="n">f</span> <span class="n">x</span> <span class="p">`</span><span class="n">compare</span><span class="p">`</span> <span class="n">g</span> <span class="n">x</span><span class="p">)</span> <span class="n">habitants</span>
+</span><span class="line">
+</span><span class="line"><span class="kr">instance</span> <span class="p">(</span><span class="kt">Bounded</span> <span class="n">a</span><span class="p">,</span> <span class="kt">Bounded</span> <span class="n">b</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="kt">Bounded</span> <span class="p">(</span><span class="n">a</span> <span class="ow">-&gt;</span> <span class="n">b</span><span class="p">)</span> <span class="kr">where</span>
+</span><span class="line">    <span class="n">minBound</span> <span class="ow">=</span> <span class="n">const</span> <span class="n">minBound</span>
+</span><span class="line">    <span class="n">maxBound</span> <span class="ow">=</span> <span class="n">const</span> <span class="n">maxBound</span>
+</span><span class="line">
+</span><span class="line"><span class="kr">instance</span> <span class="p">(</span><span class="kt">Enum</span> <span class="n">a</span><span class="p">,</span> <span class="kt">Bounded</span> <span class="n">a</span><span class="p">,</span> <span class="kt">Enum</span> <span class="n">b</span><span class="p">,</span> <span class="kt">Bounded</span> <span class="n">b</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="kt">Enum</span> <span class="p">(</span><span class="n">a</span> <span class="ow">-&gt;</span> <span class="n">b</span><span class="p">)</span> <span class="kr">where</span>
+</span><span class="line">    <span class="n">fromEnum</span> <span class="ow">=</span> <span class="n">encode</span>
+</span><span class="line">    <span class="n">toEnum</span> <span class="ow">=</span> <span class="n">decode</span>
+</span><span class="line">    <span class="n">enumFrom</span> <span class="n">x</span>       <span class="ow">=</span> <span class="n">map</span> <span class="n">toEnum</span> <span class="p">[</span><span class="n">fromEnum</span> <span class="n">x</span> <span class="o">..</span> <span class="n">fromEnum</span> <span class="p">(</span><span class="n">maxBound</span> <span class="ow">::</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">))]</span>
+</span><span class="line">    <span class="n">enumFromThen</span> <span class="n">x</span> <span class="n">y</span> <span class="ow">=</span> <span class="n">map</span> <span class="n">toEnum</span> <span class="p">[</span><span class="n">fromEnum</span> <span class="n">x</span><span class="p">,</span> <span class="n">fromEnum</span> <span class="n">y</span> <span class="o">..</span> <span class="n">fromEnum</span> <span class="p">(</span><span class="n">maxBound</span> <span class="ow">::</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">))]</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h2 id="section-2">利用</h2>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="nf">false&#39;</span><span class="p">,</span> <span class="n">not&#39;</span><span class="p">,</span> <span class="n">id&#39;</span><span class="p">,</span> <span class="n">true&#39;</span> <span class="ow">::</span> <span class="kt">Bool</span> <span class="ow">-&gt;</span> <span class="kt">Bool</span>
+</span><span class="line"><span class="nf">false&#39;</span> <span class="ow">=</span> <span class="n">decode</span> <span class="mi">0</span>
+</span><span class="line"><span class="nf">id&#39;</span>    <span class="ow">=</span> <span class="n">decode</span> <span class="mi">1</span>
+</span><span class="line"><span class="nf">not&#39;</span>   <span class="ow">=</span> <span class="n">decode</span> <span class="mi">2</span>
+</span><span class="line"><span class="nf">true&#39;</span>  <span class="ow">=</span> <span class="n">decode</span> <span class="mi">3</span>
+</span><span class="line">
+</span><span class="line"><span class="nf">main</span> <span class="ow">::</span> <span class="kt">IO</span> <span class="nb">()</span>
+</span><span class="line"><span class="nf">main</span> <span class="ow">=</span> <span class="kr">do</span>
+</span><span class="line">    <span class="n">print</span> <span class="o">$</span> <span class="n">not&#39;</span> <span class="kt">True</span>
+</span><span class="line">    <span class="n">print</span> <span class="o">$</span> <span class="n">fromEnum</span> <span class="p">(</span><span class="n">toEnum</span> <span class="mi">3</span> <span class="ow">::</span> <span class="kt">Bool</span> <span class="ow">-&gt;</span> <span class="kt">Bool</span> <span class="ow">-&gt;</span> <span class="kt">Bool</span><span class="p">)</span>
+</span><span class="line">    <span class="n">print</span> <span class="o">$</span> <span class="n">map</span> <span class="p">(</span><span class="nf">\</span> <span class="n">f</span> <span class="ow">-&gt;</span> <span class="n">f</span> <span class="kt">True</span> <span class="kt">True</span><span class="p">)</span> <span class="p">[(</span><span class="o">&amp;&amp;</span><span class="p">)</span> <span class="o">..</span> <span class="p">(</span><span class="o">==</span><span class="p">)</span> <span class="ow">::</span> <span class="kt">Bool</span> <span class="ow">-&gt;</span> <span class="kt">Bool</span> <span class="ow">-&gt;</span> <span class="kt">Bool</span><span class="p">]</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>闇っぽい</p>
+
+<h2 id="section-3">問題</h2>
+<ul>
+  <li><code>Integer</code>や<code>[a]</code>等の要素の数が無限なものは、この方法では列挙できない</li>
+  <li><code>Int</code>は有限だが、<code>toEnum</code>/<code>fromEnum</code>が<code>Int</code>を使うため、overflowし列挙できない</li>
+  <li><code>minBound == 0</code>等、<code>Enum</code>や<code>Bounded</code>に仮定多すぎ</li>
+</ul>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Idrisに挑戦した]]></title>
+    <link href="http://solorab.github.io/blog/2014/05/16/tried-idris/"/>
+    <updated>2014-05-16T22:23:42+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/05/16/tried-idris</id>
+    <content type="html"><![CDATA[<p>再挑戦する日のため、敗北した過程のメモ</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+</pre></td><td class="code"><pre><code class="sh"><span class="line"><span class="nv">$ </span>idris
+</span><span class="line">     ____    __     _
+</span><span class="line">    /  _/___/ /____<span class="o">(</span>_<span class="o">)</span>____
+</span><span class="line">    / // __  / ___/ / ___/     Version 0.9.12-git:dae7d7d
+</span><span class="line">  _/ // /_/ / /  / <span class="o">(</span>__  <span class="o">)</span>      http://www.idris-lang.org/
+</span><span class="line"> /___/<span class="se">\_</span>_,_/_/  /_/____/       Type :? <span class="k">for </span><span class="nb">help</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<!-- more -->
+
+<h2 id="install">install</h2>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class="sh"><span class="line"><span class="nv">$ </span>git clone git://github.com/edwinb/Idris-dev.git idris
+</span><span class="line"><span class="nv">$ </span><span class="nb">cd </span>idris
+</span><span class="line"><span class="nv">$ </span><span class="nb">echo</span> <span class="s1">&#39;CABALFLAGS += -f FFI -f curses&#39;</span> &gt; custom.mk
+</span><span class="line"><span class="nv">$ </span>make
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><code>custom.mk</code>にFFIを加えていないと<code>:x</code>で<code>IO</code>を評価できなかった<br />
+それ以外は簡単ですね</p>
+
+<h2 id="repl">replで遊ぶ</h2>
+
+<h3 id="head">head</h3>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="kt">Idris</span><span class="o">&gt;</span> <span class="kt">:</span><span class="n">total</span> <span class="kt">List</span><span class="o">.</span><span class="n">head</span>
+</span><span class="line"><span class="kt">Prelude</span><span class="o">.</span><span class="kt">List</span><span class="o">.</span><span class="n">head</span> <span class="n">is</span> <span class="kt">Total</span>
+</span><span class="line"><span class="kt">Idris</span><span class="o">&gt;</span> <span class="kt">:</span><span class="kr">type</span> <span class="kt">List</span><span class="o">.</span><span class="n">head</span>
+</span><span class="line"><span class="kt">Prelude</span><span class="o">.</span><span class="kt">List</span><span class="o">.</span><span class="n">head</span> <span class="kt">:</span> <span class="p">(</span><span class="n">l</span> <span class="kt">:</span> <span class="kt">List</span> <span class="n">a</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="p">(</span><span class="n">isCons</span> <span class="n">l</span> <span class="ow">=</span> <span class="kt">True</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="n">a</span>
+</span><span class="line"><span class="kt">Idris</span><span class="o">&gt;</span> <span class="n">with</span> <span class="kt">List</span> <span class="n">head</span> <span class="p">[</span><span class="mi">42</span><span class="p">,</span> <span class="mi">64</span><span class="p">]</span> <span class="n">refl</span>
+</span><span class="line"><span class="mi">42</span> <span class="kt">:</span> <span class="kt">Integer</span>
+</span><span class="line"><span class="kt">Idris</span><span class="o">&gt;</span> <span class="n">with</span> <span class="kt">List</span> <span class="n">head</span> <span class="kt">[]</span> <span class="n">refl</span>
+</span><span class="line"><span class="p">(</span><span class="n">input</span><span class="p">)</span><span class="kt">:</span><span class="mi">1</span><span class="kt">:</span><span class="mi">16</span><span class="kt">:When</span> <span class="n">elaborating</span> <span class="n">argument</span> <span class="n">ok</span> <span class="n">to</span> <span class="n">function</span> <span class="kt">Prelude</span><span class="o">.</span><span class="kt">List</span><span class="o">.</span><span class="n">head</span><span class="kt">:</span>
+</span><span class="line">        <span class="kt">Can&#39;t</span> <span class="n">unify</span> <span class="o">...</span>
+</span><span class="line"><span class="kt">Idris</span><span class="o">&gt;</span> <span class="kt">:</span><span class="n">doc</span> <span class="n">refl</span>
+</span><span class="line"><span class="nf">refl</span> <span class="kt">:</span> <span class="n">x</span> <span class="ow">=</span> <span class="n">x</span>
+</span><span class="line">    <span class="kt">A</span> <span class="n">proof</span> <span class="n">that</span> <span class="n">x</span> <span class="kr">in</span> <span class="n">fact</span> <span class="n">equals</span> <span class="n">x</span><span class="o">.</span> <span class="o">...</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>listとそれがnilでないことの証明を引数にとるため、headが全域関数 すごい</p>
+
+<p>overloadできるので<code>with</code>構文とか<code>the</code>関数とかが必要<br />
+<code>[3] : List Int</code>のような型注釈はできない<br />
+<code>:type refl</code>したら怒られたので<code>refl</code>何者</p>
+
+<h3 id="io">IO</h3>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="kt">Idris</span><span class="o">&gt;</span> <span class="n">print</span> <span class="s">&quot;foo&quot;</span>
+</span><span class="line"><span class="kt">MkIO</span> <span class="p">(</span><span class="nf">\</span><span class="p">{</span><span class="n">w0</span><span class="p">}</span> <span class="ow">=&gt;</span> <span class="n">mkForeignPrim</span> <span class="p">(</span><span class="kt">FFun</span> <span class="s">&quot;putStr&quot;</span> <span class="p">[</span><span class="kt">FString</span><span class="p">]</span> <span class="kt">FUnit</span><span class="p">)</span> <span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">foo</span><span class="se">\&quot;\n</span><span class="s">&quot;</span> <span class="n">w</span><span class="p">)</span> <span class="kt">:</span> <span class="kt">IO</span> <span class="nb">()</span>
+</span><span class="line"><span class="kt">Idris</span><span class="o">&gt;</span> <span class="kt">:</span><span class="n">x</span> <span class="n">print</span> <span class="s">&quot;foo&quot;</span>
+</span><span class="line"><span class="s">&quot;foo&quot;</span>
+</span><span class="line"><span class="kt">MkIO</span> <span class="p">(</span><span class="nf">\</span><span class="p">{</span><span class="n">w0</span><span class="p">}</span> <span class="ow">=&gt;</span> <span class="n">prim__IO</span> <span class="nb">()</span><span class="p">)</span> <span class="kt">:</span> <span class="kt">IO</span> <span class="nb">()</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><code>:x</code>で実行を促さない限り副作用ありません</p>
+
+<p>簡約後の式をreplに渡すと<code>w</code>や<code>{w0}</code>の辺りで怒られた</p>
+
+<h2 id="quine">quine</h2>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="kr">module</span> <span class="nn">Main</span>
+</span><span class="line"><span class="nf">main</span> <span class="kt">:</span> <span class="kt">IO</span> <span class="nb">()</span>
+</span><span class="line"><span class="nf">main</span> <span class="ow">=</span> <span class="n">putStrLn</span> <span class="p">(</span><span class="n">s</span> <span class="o">++</span> <span class="n">show</span> <span class="p">(</span><span class="n">the</span> <span class="kt">String</span> <span class="n">s</span><span class="p">))</span> <span class="kr">where</span>
+</span><span class="line">  <span class="n">s</span> <span class="ow">=</span> <span class="s">&quot;module Main</span><span class="se">\n</span><span class="s">main : IO ()</span><span class="se">\n</span><span class="s">main = putStrLn (s ++ show (the String s)) where</span><span class="se">\n</span><span class="s">  s = &quot;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="sh"><span class="line"><span class="nv">$ </span>idris quine.idr -o a.out
+</span><span class="line"><span class="nv">$ </span>diff quine.idr &lt;<span class="o">(</span>./a.out<span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>haskell同様、<code>show</code>と<code>where</code>のおかげで非常にquineが書きやすい</p>
+
+<p><code>s</code>の型注釈が要るのは何故だ</p>
+
+<h2 id="fibonacci">fibonacci</h2>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="kr">module</span> <span class="nn">Main</span>
+</span><span class="line"><span class="nf">fibs</span> <span class="kt">:</span> <span class="kt">Stream</span> <span class="kt">Nat</span>
+</span><span class="line"><span class="nf">fibs</span> <span class="ow">=</span> <span class="n">map</span> <span class="n">fib</span> <span class="p">[</span><span class="mi">0</span><span class="o">..</span><span class="p">]</span>
+</span><span class="line">
+</span><span class="line"><span class="nf">main</span> <span class="kt">:</span> <span class="kt">IO</span> <span class="nb">()</span>
+</span><span class="line"><span class="nf">main</span> <span class="ow">=</span> <span class="n">recur</span> <span class="n">fibs</span> <span class="kr">where</span>
+</span><span class="line">  <span class="n">recur</span> <span class="p">(</span><span class="n">x</span> <span class="ow">::</span> <span class="n">xs</span><span class="p">)</span> <span class="ow">=</span> <span class="kr">do</span>
+</span><span class="line">    <span class="n">print</span> <span class="n">x</span>
+</span><span class="line">    <span class="n">recur</span> <span class="n">xs</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><code>fib : Nat -&gt; Nat</code>が<code>Prelude</code>にあるという恐ろしさよ</p>
+
+<p>haskellの<code>mapM_</code>が<code>traverse_</code>に吸収された 良い<br />
+また、<code>[0..]</code>が無限長なため全域関数<code>traverse_</code>では扱えず、<code>IO</code>の中で処理せねばならない</p>
+
+<h3 id="applicative-style">applicative style</h3>
+
+<p>しかし、haskellでは等価な以下のような別表現は動かない</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="nf">main&#39;</span> <span class="kt">:</span> <span class="kt">IO</span> <span class="nb">()</span>
+</span><span class="line"><span class="nf">main&#39;</span> <span class="ow">=</span> <span class="n">recur</span> <span class="n">fibs</span> <span class="kr">where</span>
+</span><span class="line">  <span class="n">recur</span> <span class="p">(</span><span class="n">x</span> <span class="ow">::</span> <span class="n">xs</span><span class="p">)</span> <span class="ow">=</span> <span class="n">print</span> <span class="n">x</span> <span class="o">$&gt;</span> <span class="n">recur</span> <span class="n">xs</span>
+</span><span class="line">
+</span><span class="line"><span class="nf">main&#39;&#39;</span> <span class="kt">:</span> <span class="kt">IO</span> <span class="nb">()</span>
+</span><span class="line"><span class="nf">main&#39;&#39;</span> <span class="ow">=</span> <span class="n">recur</span> <span class="n">fibs</span> <span class="kr">where</span>
+</span><span class="line">  <span class="n">recur</span> <span class="p">(</span><span class="n">x</span> <span class="ow">::</span> <span class="n">xs</span><span class="p">)</span> <span class="ow">=</span> <span class="n">print</span> <span class="n">x</span> <span class="o">&gt;&gt;=</span> <span class="n">const</span> <span class="p">(</span><span class="n">recur</span> <span class="n">xs</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>replで試すと <code>do</code> <code>$&gt;</code> <code>&gt;&gt;=</code> それぞれ以下のような簡約結果になる</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="kt">Idris</span><span class="o">&gt;</span> <span class="kr">do</span> <span class="p">{</span> <span class="n">putStrLn</span> <span class="s">&quot;hoge&quot;</span> <span class="p">;</span> <span class="n">print</span> <span class="mi">3</span> <span class="p">}</span>
+</span><span class="line"><span class="nf">io_bind</span> <span class="p">(</span><span class="kt">MkIO</span> <span class="p">(</span><span class="nf">\</span><span class="p">{</span><span class="n">w0</span><span class="p">}</span> <span class="ow">=&gt;</span> <span class="n">mkForeignPrim</span> <span class="p">(</span><span class="kt">FFun</span> <span class="s">&quot;putStr&quot;</span> <span class="p">[</span><span class="kt">FString</span><span class="p">]</span> <span class="kt">FUnit</span><span class="p">)</span> <span class="s">&quot;hoge</span><span class="se">\n</span><span class="s">&quot;</span> <span class="n">w</span><span class="p">))</span>
+</span><span class="line">        <span class="p">(</span><span class="nf">\</span><span class="p">{</span><span class="n">bindx0</span><span class="p">}</span> <span class="ow">=&gt;</span> <span class="kt">MkIO</span> <span class="p">(</span><span class="nf">\</span><span class="p">{</span><span class="n">w0</span><span class="p">}</span> <span class="ow">=&gt;</span> <span class="n">mkForeignPrim</span> <span class="p">(</span><span class="kt">FFun</span> <span class="s">&quot;putStr&quot;</span> <span class="p">[</span><span class="kt">FString</span><span class="p">]</span> <span class="kt">FUnit</span><span class="p">)</span> <span class="s">&quot;3</span><span class="se">\n</span><span class="s">&quot;</span> <span class="n">w</span><span class="p">))</span> <span class="kt">:</span> <span class="kt">IO</span> <span class="nb">()</span>
+</span><span class="line"><span class="kt">Idris</span><span class="o">&gt;</span> <span class="n">putStrLn</span> <span class="s">&quot;hoge&quot;</span> <span class="o">$&gt;</span> <span class="n">print</span> <span class="mi">3</span>
+</span><span class="line"><span class="nf">io_bind</span> <span class="p">(</span><span class="n">io_bind</span> <span class="p">(</span><span class="kt">MkIO</span> <span class="p">(</span><span class="nf">\</span><span class="p">{</span><span class="n">w0</span><span class="p">}</span> <span class="ow">=&gt;</span> <span class="n">mkForeignPrim</span> <span class="p">(</span><span class="kt">FFun</span> <span class="s">&quot;putStr&quot;</span> <span class="p">[</span><span class="kt">FString</span><span class="p">]</span> <span class="kt">FUnit</span><span class="p">)</span> <span class="s">&quot;hoge</span><span class="se">\n</span><span class="s">&quot;</span> <span class="n">w</span><span class="p">))</span> <span class="p">(</span><span class="nf">\</span><span class="p">{</span><span class="n">b0</span><span class="p">}</span> <span class="ow">=&gt;</span> <span class="n">io_return</span> <span class="n">id</span><span class="p">))</span>
+</span><span class="line">        <span class="p">(</span><span class="nf">\</span><span class="n">f&#39;</span> <span class="ow">=&gt;</span> <span class="n">io_bind</span> <span class="p">(</span><span class="kt">MkIO</span> <span class="p">(</span><span class="nf">\</span><span class="p">{</span><span class="n">w0</span><span class="p">}</span> <span class="ow">=&gt;</span> <span class="n">mkForeignPrim</span> <span class="p">(</span><span class="kt">FFun</span> <span class="s">&quot;putStr&quot;</span> <span class="p">[</span><span class="kt">FString</span><span class="p">]</span> <span class="kt">FUnit</span><span class="p">)</span> <span class="s">&quot;3</span><span class="se">\n</span><span class="s">&quot;</span> <span class="n">w</span><span class="p">))</span> <span class="p">(</span><span class="nf">\</span><span class="n">a&#39;</span> <span class="ow">=&gt;</span> <span class="n">io_return</span> <span class="p">(</span><span class="n">f&#39;</span> <span class="n">a&#39;</span><span class="p">)))</span> <span class="kt">:</span> <span class="kt">IO</span> <span class="nb">()</span>
+</span><span class="line"><span class="kt">Idris</span><span class="o">&gt;</span> <span class="n">putStrLn</span> <span class="s">&quot;hoge&quot;</span> <span class="o">&gt;&gt;=</span> <span class="n">const</span> <span class="p">(</span><span class="n">print</span> <span class="mi">3</span><span class="p">)</span>
+</span><span class="line"><span class="nf">io_bind</span> <span class="p">(</span><span class="kt">MkIO</span> <span class="p">(</span><span class="nf">\</span><span class="p">{</span><span class="n">w0</span><span class="p">}</span> <span class="ow">=&gt;</span> <span class="n">mkForeignPrim</span> <span class="p">(</span><span class="kt">FFun</span> <span class="s">&quot;putStr&quot;</span> <span class="p">[</span><span class="kt">FString</span><span class="p">]</span> <span class="kt">FUnit</span><span class="p">)</span> <span class="s">&quot;hoge</span><span class="se">\n</span><span class="s">&quot;</span> <span class="n">w</span><span class="p">))</span>
+</span><span class="line">        <span class="p">(</span><span class="nf">\</span><span class="n">v</span> <span class="ow">=&gt;</span> <span class="kt">MkIO</span> <span class="p">(</span><span class="nf">\</span><span class="p">{</span><span class="n">w0</span><span class="p">}</span> <span class="ow">=&gt;</span> <span class="n">mkForeignPrim</span> <span class="p">(</span><span class="kt">FFun</span> <span class="s">&quot;putStr&quot;</span> <span class="p">[</span><span class="kt">FString</span><span class="p">]</span> <span class="kt">FUnit</span><span class="p">)</span> <span class="s">&quot;3</span><span class="se">\n</span><span class="s">&quot;</span> <span class="n">w</span><span class="p">))</span> <span class="kt">:</span> <span class="kt">IO</span> <span class="nb">()</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>末尾再帰最適化が絡んでいるのかなと思ったが、下も動くので全く分からない</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="nf">main&#39;&#39;&#39;</span> <span class="kt">:</span> <span class="kt">IO</span> <span class="nb">()</span>
+</span><span class="line"><span class="nf">main&#39;&#39;&#39;</span> <span class="ow">=</span> <span class="n">recur</span> <span class="n">fibs</span> <span class="kr">where</span>
+</span><span class="line">  <span class="n">recur</span> <span class="p">(</span><span class="n">x</span> <span class="ow">::</span> <span class="n">xs</span><span class="p">)</span> <span class="ow">=</span> <span class="kr">do</span>
+</span><span class="line">    <span class="n">print</span> <span class="n">x</span>
+</span><span class="line">    <span class="n">recur</span> <span class="n">xs</span>
+</span><span class="line">    <span class="n">putStrLn</span> <span class="s">&quot;foo&quot;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h2 id="fizzbuzz">fizzbuzz</h2>
+<p><code>Prelude</code>に<code>Semigroup</code>やばい<br />
+あるからには使わねばならない</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+<span class="line-number">21</span>
+<span class="line-number">22</span>
+<span class="line-number">23</span>
+<span class="line-number">24</span>
+<span class="line-number">25</span>
+<span class="line-number">26</span>
+<span class="line-number">27</span>
+<span class="line-number">28</span>
+<span class="line-number">29</span>
+<span class="line-number">30</span>
+<span class="line-number">31</span>
+<span class="line-number">32</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="kr">module</span> <span class="nn">Main</span>
+</span><span class="line">
+</span><span class="line"><span class="kr">data</span> <span class="kt">FizzBuzz</span> <span class="ow">=</span> <span class="kt">Fizz</span> <span class="o">|</span> <span class="kt">Buzz</span> <span class="o">|</span> <span class="kt">Fizzbuzz</span>
+</span><span class="line">
+</span><span class="line"><span class="nf">fizz</span> <span class="kt">:</span> <span class="kt">Nat</span> <span class="ow">-&gt;</span> <span class="kt">Maybe</span> <span class="kt">FizzBuzz</span>
+</span><span class="line"><span class="nf">fizz</span> <span class="n">n</span> <span class="ow">=</span> <span class="kr">if</span> <span class="p">(</span><span class="n">n</span> <span class="p">`</span><span class="n">mod</span><span class="p">`</span> <span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span> <span class="kr">then</span> <span class="kt">Just</span> <span class="kt">Fizz</span> <span class="kr">else</span> <span class="kt">Nothing</span>
+</span><span class="line"><span class="nf">buzz</span> <span class="kt">:</span> <span class="kt">Nat</span> <span class="ow">-&gt;</span> <span class="kt">Maybe</span> <span class="kt">FizzBuzz</span>
+</span><span class="line"><span class="nf">buzz</span> <span class="n">n</span> <span class="ow">=</span> <span class="kr">if</span> <span class="p">(</span><span class="n">n</span> <span class="p">`</span><span class="n">mod</span><span class="p">`</span> <span class="mi">5</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span> <span class="kr">then</span> <span class="kt">Just</span> <span class="kt">Buzz</span> <span class="kr">else</span> <span class="kt">Nothing</span>
+</span><span class="line">
+</span><span class="line"><span class="kr">instance</span> <span class="kt">Eq</span> <span class="kt">FizzBuzz</span> <span class="kr">where</span>
+</span><span class="line">  <span class="kt">Fizzbuzz</span> <span class="o">==</span> <span class="kt">Fizzbuzz</span> <span class="ow">=</span> <span class="kt">True</span>
+</span><span class="line">  <span class="kt">Fizz</span> <span class="o">==</span> <span class="kt">Fizz</span> <span class="ow">=</span> <span class="kt">True</span>
+</span><span class="line">  <span class="kt">Buzz</span> <span class="o">==</span> <span class="kt">Buzz</span> <span class="ow">=</span> <span class="kt">True</span>
+</span><span class="line">  <span class="kr">_</span> <span class="o">==</span> <span class="kr">_</span> <span class="ow">=</span> <span class="kt">False</span>
+</span><span class="line">
+</span><span class="line"><span class="kr">instance</span> <span class="kt">Semigroup</span> <span class="kt">FizzBuzz</span> <span class="kr">where</span>
+</span><span class="line">  <span class="n">a</span> <span class="o">&lt;+&gt;</span> <span class="n">b</span> <span class="ow">=</span> <span class="kr">if</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span> <span class="kr">then</span> <span class="n">a</span> <span class="kr">else</span> <span class="kt">Fizzbuzz</span>
+</span><span class="line">
+</span><span class="line"><span class="nf">fizzbuzz</span> <span class="kt">:</span> <span class="kt">Nat</span> <span class="ow">-&gt;</span> <span class="kt">Maybe</span> <span class="kt">FizzBuzz</span>
+</span><span class="line"><span class="nf">fizzbuzz</span> <span class="n">n</span> <span class="ow">=</span> <span class="n">fizz</span> <span class="n">n</span> <span class="o">&lt;+&gt;</span> <span class="n">buzz</span> <span class="n">n</span>
+</span><span class="line">
+</span><span class="line"><span class="kr">instance</span> <span class="kt">Show</span> <span class="kt">FizzBuzz</span> <span class="kr">where</span>
+</span><span class="line">  <span class="n">show</span> <span class="kt">Fizz</span> <span class="ow">=</span> <span class="s">&quot;fizz&quot;</span>
+</span><span class="line">  <span class="n">show</span> <span class="kt">Buzz</span> <span class="ow">=</span> <span class="s">&quot;buzz&quot;</span>
+</span><span class="line">  <span class="n">show</span> <span class="kt">Fizzbuzz</span> <span class="ow">=</span> <span class="s">&quot;fizzbuzz&quot;</span>
+</span><span class="line">
+</span><span class="line"><span class="nf">main</span> <span class="kt">:</span> <span class="kt">IO</span> <span class="nb">()</span>
+</span><span class="line"><span class="nf">main</span> <span class="ow">=</span> <span class="n">recur</span> <span class="mi">1</span> <span class="kr">where</span>
+</span><span class="line">  <span class="n">recur</span> <span class="kt">:</span> <span class="kt">Nat</span> <span class="ow">-&gt;</span> <span class="kt">IO</span> <span class="nb">()</span>
+</span><span class="line">  <span class="n">recur</span> <span class="n">n</span> <span class="ow">=</span> <span class="kr">do</span>
+</span><span class="line">    <span class="n">putStrLn</span> <span class="o">$</span> <span class="n">fromMaybe</span> <span class="p">(</span><span class="n">show</span> <span class="n">n</span><span class="p">)</span> <span class="p">(</span><span class="n">map</span> <span class="n">show</span> <span class="o">$</span> <span class="n">fizzbuzz</span> <span class="n">n</span><span class="p">)</span>
+</span><span class="line">    <span class="n">recur</span> <span class="o">$</span> <span class="n">succ</span> <span class="n">n</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>半群なので結合律が必要なのですが、何故か後から追加で証明を与える仕様になっている<br />
+結合律の有無がよく分からないならそれはmagmaだと思うのですが、なにか理由があるのでしょう</p>
+
+<p>そして肝心の証明はよく分からなかったので全列挙しました</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+<span class="line-number">21</span>
+<span class="line-number">22</span>
+<span class="line-number">23</span>
+<span class="line-number">24</span>
+<span class="line-number">25</span>
+<span class="line-number">26</span>
+<span class="line-number">27</span>
+<span class="line-number">28</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="kr">instance</span> <span class="kt">VerifiedSemigroup</span> <span class="kt">FizzBuzz</span> <span class="kr">where</span>
+</span><span class="line">  <span class="n">semigroupOpIsAssociative</span> <span class="kt">Fizz</span>     <span class="kt">Fizz</span>     <span class="kt">Fizz</span>     <span class="ow">=</span> <span class="n">refl</span>
+</span><span class="line">  <span class="n">semigroupOpIsAssociative</span> <span class="kt">Fizz</span>     <span class="kt">Fizz</span>     <span class="kt">Buzz</span>     <span class="ow">=</span> <span class="n">refl</span>
+</span><span class="line">  <span class="n">semigroupOpIsAssociative</span> <span class="kt">Fizz</span>     <span class="kt">Fizz</span>     <span class="kt">Fizzbuzz</span> <span class="ow">=</span> <span class="n">refl</span>
+</span><span class="line">  <span class="n">semigroupOpIsAssociative</span> <span class="kt">Fizz</span>     <span class="kt">Buzz</span>     <span class="kt">Fizz</span>     <span class="ow">=</span> <span class="n">refl</span>
+</span><span class="line">  <span class="n">semigroupOpIsAssociative</span> <span class="kt">Fizz</span>     <span class="kt">Buzz</span>     <span class="kt">Buzz</span>     <span class="ow">=</span> <span class="n">refl</span>
+</span><span class="line">  <span class="n">semigroupOpIsAssociative</span> <span class="kt">Fizz</span>     <span class="kt">Buzz</span>     <span class="kt">Fizzbuzz</span> <span class="ow">=</span> <span class="n">refl</span>
+</span><span class="line">  <span class="n">semigroupOpIsAssociative</span> <span class="kt">Fizz</span>     <span class="kt">Fizzbuzz</span> <span class="kt">Fizz</span>     <span class="ow">=</span> <span class="n">refl</span>
+</span><span class="line">  <span class="n">semigroupOpIsAssociative</span> <span class="kt">Fizz</span>     <span class="kt">Fizzbuzz</span> <span class="kt">Buzz</span>     <span class="ow">=</span> <span class="n">refl</span>
+</span><span class="line">  <span class="n">semigroupOpIsAssociative</span> <span class="kt">Fizz</span>     <span class="kt">Fizzbuzz</span> <span class="kt">Fizzbuzz</span> <span class="ow">=</span> <span class="n">refl</span>
+</span><span class="line">  <span class="n">semigroupOpIsAssociative</span> <span class="kt">Buzz</span>     <span class="kt">Fizz</span>     <span class="kt">Fizz</span>     <span class="ow">=</span> <span class="n">refl</span>
+</span><span class="line">  <span class="n">semigroupOpIsAssociative</span> <span class="kt">Buzz</span>     <span class="kt">Fizz</span>     <span class="kt">Buzz</span>     <span class="ow">=</span> <span class="n">refl</span>
+</span><span class="line">  <span class="n">semigroupOpIsAssociative</span> <span class="kt">Buzz</span>     <span class="kt">Fizz</span>     <span class="kt">Fizzbuzz</span> <span class="ow">=</span> <span class="n">refl</span>
+</span><span class="line">  <span class="n">semigroupOpIsAssociative</span> <span class="kt">Buzz</span>     <span class="kt">Buzz</span>     <span class="kt">Fizz</span>     <span class="ow">=</span> <span class="n">refl</span>
+</span><span class="line">  <span class="n">semigroupOpIsAssociative</span> <span class="kt">Buzz</span>     <span class="kt">Buzz</span>     <span class="kt">Buzz</span>     <span class="ow">=</span> <span class="n">refl</span>
+</span><span class="line">  <span class="n">semigroupOpIsAssociative</span> <span class="kt">Buzz</span>     <span class="kt">Buzz</span>     <span class="kt">Fizzbuzz</span> <span class="ow">=</span> <span class="n">refl</span>
+</span><span class="line">  <span class="n">semigroupOpIsAssociative</span> <span class="kt">Buzz</span>     <span class="kt">Fizzbuzz</span> <span class="kt">Fizz</span>     <span class="ow">=</span> <span class="n">refl</span>
+</span><span class="line">  <span class="n">semigroupOpIsAssociative</span> <span class="kt">Buzz</span>     <span class="kt">Fizzbuzz</span> <span class="kt">Buzz</span>     <span class="ow">=</span> <span class="n">refl</span>
+</span><span class="line">  <span class="n">semigroupOpIsAssociative</span> <span class="kt">Buzz</span>     <span class="kt">Fizzbuzz</span> <span class="kt">Fizzbuzz</span> <span class="ow">=</span> <span class="n">refl</span>
+</span><span class="line">  <span class="n">semigroupOpIsAssociative</span> <span class="kt">Fizzbuzz</span> <span class="kt">Fizz</span>     <span class="kt">Fizz</span>     <span class="ow">=</span> <span class="n">refl</span>
+</span><span class="line">  <span class="n">semigroupOpIsAssociative</span> <span class="kt">Fizzbuzz</span> <span class="kt">Fizz</span>     <span class="kt">Buzz</span>     <span class="ow">=</span> <span class="n">refl</span>
+</span><span class="line">  <span class="n">semigroupOpIsAssociative</span> <span class="kt">Fizzbuzz</span> <span class="kt">Fizz</span>     <span class="kt">Fizzbuzz</span> <span class="ow">=</span> <span class="n">refl</span>
+</span><span class="line">  <span class="n">semigroupOpIsAssociative</span> <span class="kt">Fizzbuzz</span> <span class="kt">Buzz</span>     <span class="kt">Fizz</span>     <span class="ow">=</span> <span class="n">refl</span>
+</span><span class="line">  <span class="n">semigroupOpIsAssociative</span> <span class="kt">Fizzbuzz</span> <span class="kt">Buzz</span>     <span class="kt">Buzz</span>     <span class="ow">=</span> <span class="n">refl</span>
+</span><span class="line">  <span class="n">semigroupOpIsAssociative</span> <span class="kt">Fizzbuzz</span> <span class="kt">Buzz</span>     <span class="kt">Fizzbuzz</span> <span class="ow">=</span> <span class="n">refl</span>
+</span><span class="line">  <span class="n">semigroupOpIsAssociative</span> <span class="kt">Fizzbuzz</span> <span class="kt">Fizzbuzz</span> <span class="kt">Fizz</span>     <span class="ow">=</span> <span class="n">refl</span>
+</span><span class="line">  <span class="n">semigroupOpIsAssociative</span> <span class="kt">Fizzbuzz</span> <span class="kt">Fizzbuzz</span> <span class="kt">Buzz</span>     <span class="ow">=</span> <span class="n">refl</span>
+</span><span class="line">  <span class="n">semigroupOpIsAssociative</span> <span class="kt">Fizzbuzz</span> <span class="kt">Fizzbuzz</span> <span class="kt">Fizzbuzz</span> <span class="ow">=</span> <span class="n">refl</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>証明力足りない</p>
+
+<h2 id="section">所感</h2>
+<p>現段階では、方が強すぎて書きにくく感じる<br />
+haskellで少し気をつけながら書くほうが楽である</p>
+
+<p>定理照明系に明るくないのが問題なのだろう<br />
+まずはcoqに習熟すべきかと思う</p>
+
+<p>また、document周りが不満<br />
+主にapi-documentがweb上に見つからないこと</p>
+
+<h2 id="refs">refs</h2>
+<ul>
+  <li><a href="http://www.idris-lang.org/">Idris -</a></li>
+  <li><a href="https://github.com/idris-lang/Idris-dev">idris-lang/Idris-dev</a>
+    <ul>
+      <li><a href="https://github.com/idris-lang/Idris-dev/wiki">Home · idris-lang/Idris-dev Wiki</a></li>
+    </ul>
+  </li>
+  <li><a href="http://mandel59.hateblo.jp/search?q=idris">記事一覧 - M59のブログ</a>
+    <ul>
+      <li><a href="http://mandel59.hateblo.jp/entry/2013/09/02/184831">こわくない Idris (1) - M59のブログ</a></li>
+    </ul>
+  </li>
+</ul>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Brainfuckでquine書いた]]></title>
@@ -2727,97 +3271,6 @@ prefixの指定が必須のようだ</p>
 
 <h2 id="library">他のlibrary</h2>
 <p><a href="http://tomoe.sourceforge.jp/cgi-bin/ja/blog/index.rb">tomoe</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Coffeescriptのis Notとisntは違う]]></title>
-    <link href="http://solorab.github.io/blog/2013/12/05/is-not-is-not-isnt/"/>
-    <updated>2013-12-05T14:24:25+09:00</updated>
-    <id>http://solorab.github.io/blog/2013/12/05/is-not-is-not-isnt</id>
-    <content type="html"><![CDATA[<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-</pre></td><td class="code"><pre><code class="coffeescript"><span class="line"><span class="nx">a</span> <span class="o">is</span> <span class="o">not</span> <span class="nx">b</span>
-</span><span class="line"><span class="nx">a</span> <span class="o">isnt</span> <span class="nx">b</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>は</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-</pre></td><td class="code"><pre><code class="javascript"><span class="line"><span class="nx">a</span> <span class="o">===</span> <span class="o">!</span><span class="nx">b</span>
-</span><span class="line"><span class="nx">a</span> <span class="o">!===</span> <span class="nx">b</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>だそうだ<br />
-つまり <code>a is not b</code> = <code>a is (not b)</code></p>
-
-<p><a href="http://coffeescript.org/#try:a%20is%20not%20b%0Aa%20isnt%20b">try</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Pixivをscarpingした]]></title>
-    <link href="http://solorab.github.io/blog/2013/11/27/scraped-pixiv/"/>
-    <updated>2013-11-27T21:47:44+09:00</updated>
-    <id>http://solorab.github.io/blog/2013/11/27/scraped-pixiv</id>
-    <content type="html"><![CDATA[<h2 id="pixiv-toolshttpsgithubcomsolorabpixiv-tools"><a href="https://github.com/solorab/pixiv-tools">pixiv-tools</a></h2>
-<p>勢いで作った<br />
-CasperJS + PhantomJS でかなり強引に処理</p>
-
-<!-- more -->
-
-<h2 id="memo">memo</h2>
-
-<h3 id="javascript--flashlibrary">javascript (や flash)を扱えるlibraryたち</h3>
-<ul>
-  <li>mechanizeさんはむりぽ</li>
-  <li>他にもたくさん</li>
-</ul>
-
-<h4 id="phantomjshttpphantomjsorg"><a href="http://phantomjs.org/">PhantomJS</a></h4>
-<ul>
-  <li>WebKit</li>
-  <li>nodeでない</li>
-  <li><a href="http://casperjs.org/">CasperJS</a>
-    <ul>
-      <li>nodejsでないwrapper</li>
-    </ul>
-  </li>
-  <li><a href="http://nodejs.org/">Node.js</a>
-    <ul>
-      <li>bridge はいくつかあったが、結局使わなかった
-        <ul>
-          <li><a href="https://github.com/sgentle/phantomjs-node">phantomjs-node</a></li>
-          <li><a href="https://github.com/WaterfallEngineering/SpookyJS">SpookyJS</a></li>
-          <li><a href="https://github.com/Obvious/phantomjs">phantomjs</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<h4 id="chimerahttpsgithubcomdeanmaonode-chimera"><a href="https://github.com/deanmao/node-chimera">Chimera</a></h4>
-<ul>
-  <li>WebKit</li>
-  <li><code>npm install chimera</code></li>
-  <li>うまく使えなかった</li>
-  <li>documentどこですか</li>
-</ul>
-
-<h4 id="slimerjshttpslimerjsorg"><a href="http://slimerjs.org/">SlimerJS</a></h4>
-<ul>
-  <li>Gecko</li>
-  <li>試してないのでよく分からない</li>
-</ul>
-
-<h3 id="section">競合</h3>
-
-<h4 id="pixivutil2httpsgithubcomnandakapixivutil2"><a href="https://github.com/Nandaka/PixivUtil2">PixivUtil2</a></h4>
-<ul>
-  <li>作り終わってから見つけた 少し触った</li>
-  <li>python + mechanize 製</li>
-  <li>script tag内をそれらしいurlでgrepしてる</li>
-  <li>機能豊富で良くできている むしろ多すぎ感ある</li>
-</ul>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: haskell | Higher Order うさぎ小屋]]></title>
   <link href="http://solorab.github.io/blog/categories/haskell/atom.xml" rel="self"/>
   <link href="http://solorab.github.io/"/>
-  <updated>2014-05-10T17:22:52+09:00</updated>
+  <updated>2014-06-11T00:49:51+09:00</updated>
   <id>http://solorab.github.io/</id>
   <author>
     <name><![CDATA[そろうさぎ]]></name>
@@ -12,6 +12,378 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[関数をEnumにして遊んだ]]></title>
+    <link href="http://solorab.github.io/blog/2014/06/10/instance-enum-functions/"/>
+    <updated>2014-06-10T21:38:12+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/06/10/instance-enum-functions</id>
+    <content type="html"><![CDATA[<p>全域関数 <script type="math/tex"> f : \mathbb{A} \to \mathbb{B} </script> は <script type="math/tex"> { \left|
+\mathbb{B} \right|
+}^{ \left|
+\mathbb{A} \right|
+} </script> 個存在します<br />
+なので例えば型<code>Bool -&gt; Bool</code>を持つ関数は <script type="math/tex"> {\left| \mathbb{Bool} \right|}^{\left| \mathbb{Bool} \right|} = 2^2 = 4 </script> 個であり、十分列挙可能<br />
+ゆえにinstancingしました</p>
+
+<p><code>haskell
+    instance (..) =&gt; Enum (a -&gt; b) where ..
+</code></p>
+
+<!-- more -->
+
+<h2 id="section">必要物</h2>
+
+<p><code>haskell
+    {-# LANGUAGE ScopedTypeVariables #-}
+    import Data.Monoid (mconcat)
+</code></p>
+
+<h2 id="section-1">補助関数</h2>
+
+<p>``` haskell
+    habitant :: (Enum a, Bounded a) =&gt; a -&gt; Int
+    habitant a = f maxBound - f minBound + 1 where
+        f x = fromEnum (x <code>asTypeOf</code> a)</p>
+
+<pre><code>habitants :: forall a. (Enum a, Bounded a) =&gt; [a]
+habitants = [minBound :: a .. maxBound]
+
+digit :: Int -&gt; [Int] -&gt; Int
+digit n = sum . zipWith (\ ix x -&gt; x * pow n ix) [0 :: Int ..] where
+    pow _ 0 = 1
+    pow x y = x * pow x (y - 1)
+
+unndigit :: Int -&gt; Int -&gt; [Int]
+unndigit n = f where
+    f 0 = []
+    f x = f (x `div` n) ++ [x `mod` n]
+
+decode :: forall dom cod. (Enum dom, Bounded dom, Enum cod, Bounded cod) =&gt; Int -&gt; dom -&gt; cod
+decode n = if n &lt; 0 || (cod ^ dom) &lt;= n
+        then error "wrong index of functions"
+        else toEnum . (funcs !!) . fromEnum where
+    dom = habitant (undefined :: dom)
+    cod = habitant (undefined :: cod)
+    funcs = let xs = unndigit cod n in replicate (dom - length xs) 0 ++ xs
+
+encode :: forall dom cod. (Enum dom, Bounded dom, Enum cod, Bounded cod) =&gt; (dom -&gt; cod) -&gt; Int
+encode f = digit cod . map (fromEnum . f) . reverse $ enumFrom minDom where
+    cod = habitant (undefined :: cod)
+    minDom = minBound :: dom ```
+</code></pre>
+
+<p><code>digit</code>/<code>undigit</code>は、listと自然数を相互変換し、 <code>decode</code>/<code>encode</code>は、関数とlistを相互変換します</p>
+
+<p>具体的には</p>
+
+<ol>
+  <li>列挙型から列挙型への関数を、</li>
+  <li><code>fromEnum</code>/<code>toEnum</code>により、自然数から自然数への関数へ変換し、</li>
+  <li>添字を引数と見ることで、自然数のlistへ変換し、</li>
+  <li>listをdom進数cod桁の数と見て、1つの自然数に変換します</li>
+</ol>
+
+<h2 id="instancing">instancing</h2>
+
+<p>``` haskell
+    instance (Enum a, Bounded a, Enum b, Bounded b) =&gt; Enum (a, b) where
+        fromEnum (a, b) = fromEnum a * habitant b + fromEnum b
+        toEnum n = (toEnum (n <code>div</code> m), toEnum (n <code>mod</code> m)) where
+            m = habitant (undefined :: b)
+        enumFrom x       = map toEnum [fromEnum x .. fromEnum (maxBound :: (a, b))]
+        enumFromThen x y = map toEnum [fromEnum x, fromEnum y .. fromEnum (maxBound :: (a, b))]</p>
+
+<pre><code>instance (Enum a, Bounded a, Eq b) =&gt; Eq (a -&gt; b) where
+    f == g = all (\ x -&gt; f x == g x) habitants
+
+instance (Enum a, Bounded a, Ord b) =&gt; Ord (a -&gt; b) where
+    f `compare` g = mconcat $ map (\ x -&gt; f x `compare` g x) habitants
+
+instance (Bounded a, Bounded b) =&gt; Bounded (a -&gt; b) where
+    minBound = const minBound
+    maxBound = const maxBound
+
+instance (Enum a, Bounded a, Enum b, Bounded b) =&gt; Enum (a -&gt; b) where
+    fromEnum = encode
+    toEnum = decode
+    enumFrom x       = map toEnum [fromEnum x .. fromEnum (maxBound :: (a, b))]
+    enumFromThen x y = map toEnum [fromEnum x, fromEnum y .. fromEnum (maxBound :: (a, b))] ```
+</code></pre>
+
+<h2 id="section-2">利用</h2>
+
+<p>``` haskell
+    false’, not’, id’, true’ :: Bool -&gt; Bool
+    false’ = decode 0
+    id’    = decode 1
+    not’   = decode 2
+    true’  = decode 3</p>
+
+<pre><code>main :: IO ()
+main = do
+    print $ not' True
+    print $ fromEnum (toEnum 3 :: Bool -&gt; Bool -&gt; Bool)
+    print $ map (\ f -&gt; f True True) [(&amp;&amp;) .. (==) :: Bool -&gt; Bool -&gt; Bool] ```
+</code></pre>
+
+<p>闇っぽい</p>
+
+<h2 id="section-3">問題</h2>
+<ul>
+  <li><code>Integer</code>や<code>[a]</code>等の要素の数が無限なものは、この方法では列挙できない</li>
+  <li><code>Int</code>は有限だが、<code>toEnum</code>/<code>fromEnum</code>が<code>Int</code>を使うため、overflowし列挙できない</li>
+  <li><code>minBound == 0</code>等、<code>Enum</code>や<code>Bounded</code>に仮定多すぎ</li>
+</ul>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[idrisに挑戦した]]></title>
+    <link href="http://solorab.github.io/blog/2014/05/16/tried-idris/"/>
+    <updated>2014-05-16T22:23:42+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/05/16/tried-idris</id>
+    <content type="html"><![CDATA[<p>再挑戦する日のため、敗北した過程のメモ</p>
+
+<p><code>sh
+    $ idris
+         ____    __     _
+        /  _/___/ /____(_)____
+        / // __  / ___/ / ___/     Version 0.9.12-git:dae7d7d
+      _/ // /_/ / /  / (__  )      http://www.idris-lang.org/
+     /___/\__,_/_/  /_/____/       Type :? for help
+</code></p>
+
+<!-- more -->
+
+<h2 id="install">install</h2>
+<p><code>sh
+    $ git clone git://github.com/edwinb/Idris-dev.git idris
+    $ cd idris
+    $ echo 'CABALFLAGS += -f FFI -f curses' &gt; custom.mk
+    $ make
+</code></p>
+
+<p><code>custom.mk</code>にFFIを加えていないと<code>:x</code>で<code>IO</code>を評価できなかった<br />
+それ以外は簡単ですね</p>
+
+<h2 id="repl">replで遊ぶ</h2>
+
+<h3 id="head">head</h3>
+
+<p><code>haskell
+    Idris&gt; :total List.head
+    Prelude.List.head is Total
+    Idris&gt; :type List.head
+    Prelude.List.head : (l : List a) -&gt; (isCons l = True) -&gt; a
+    Idris&gt; with List head [42, 64] refl
+    42 : Integer
+    Idris&gt; with List head [] refl
+    (input):1:16:When elaborating argument ok to function Prelude.List.head:
+            Can't unify ...
+    Idris&gt; :doc refl
+    refl : x = x
+        A proof that x in fact equals x. ...
+</code></p>
+
+<p>listとそれがnilでないことの証明を引数にとるため、headが全域関数 すごい</p>
+
+<p>overloadできるので<code>with</code>構文とか<code>the</code>関数とかが必要<br />
+<code>[3] : List Int</code>のような型注釈はできない<br />
+<code>:type refl</code>したら怒られたので<code>refl</code>何者</p>
+
+<h3 id="io">IO</h3>
+
+<p><code>haskell
+    Idris&gt; print "foo"
+    MkIO (\{w0} =&gt; mkForeignPrim (FFun "putStr" [FString] FUnit) "\"foo\"\n" w) : IO ()
+    Idris&gt; :x print "foo"
+    "foo"
+    MkIO (\{w0} =&gt; prim__IO ()) : IO ()
+</code></p>
+
+<p><code>:x</code>で実行を促さない限り副作用ありません</p>
+
+<p>簡約後の式をreplに渡すと<code>w</code>や<code>{w0}</code>の辺りで怒られた</p>
+
+<h2 id="quine">quine</h2>
+<p><code>haskell
+    module Main
+    main : IO ()
+    main = putStrLn (s ++ show (the String s)) where
+      s = "module Main\nmain : IO ()\nmain = putStrLn (s ++ show (the String s)) where\n  s = "
+</code></p>
+
+<p><code>sh
+    $ idris quine.idr -o a.out
+    $ diff quine.idr &lt;(./a.out)
+</code></p>
+
+<p>haskell同様、<code>show</code>と<code>where</code>のおかげで非常にquineが書きやすい</p>
+
+<p><code>s</code>の型注釈が要るのは何故だ</p>
+
+<h2 id="fibonacci">fibonacci</h2>
+
+<p>``` haskell
+    module Main
+    fibs : Stream Nat
+    fibs = map fib [0..]</p>
+
+<pre><code>main : IO ()
+main = recur fibs where
+  recur (x :: xs) = do
+    print x
+    recur xs ```
+</code></pre>
+
+<p><code>fib : Nat -&gt; Nat</code>が<code>Prelude</code>にあるという恐ろしさよ</p>
+
+<p>haskellの<code>mapM_</code>が<code>traverse_</code>に吸収された 良い<br />
+また、<code>[0..]</code>が無限長なため全域関数<code>traverse_</code>では扱えず、<code>IO</code>の中で処理せねばならない</p>
+
+<h3 id="applicative-style">applicative style</h3>
+
+<p>しかし、haskellでは等価な以下のような別表現は動かない</p>
+
+<p>``` haskell
+    main’ : IO ()
+    main’ = recur fibs where
+      recur (x :: xs) = print x $&gt; recur xs</p>
+
+<pre><code>main'' : IO ()
+main'' = recur fibs where
+  recur (x :: xs) = print x &gt;&gt;= const (recur xs) ```
+</code></pre>
+
+<p>replで試すと <code>do</code> <code>$&gt;</code> <code>&gt;&gt;=</code> それぞれ以下のような簡約結果になる</p>
+
+<p><code>haskell
+    Idris&gt; do { putStrLn "hoge" ; print 3 }
+    io_bind (MkIO (\{w0} =&gt; mkForeignPrim (FFun "putStr" [FString] FUnit) "hoge\n" w))
+            (\{bindx0} =&gt; MkIO (\{w0} =&gt; mkForeignPrim (FFun "putStr" [FString] FUnit) "3\n" w)) : IO ()
+    Idris&gt; putStrLn "hoge" $&gt; print 3
+    io_bind (io_bind (MkIO (\{w0} =&gt; mkForeignPrim (FFun "putStr" [FString] FUnit) "hoge\n" w)) (\{b0} =&gt; io_return id))
+            (\f' =&gt; io_bind (MkIO (\{w0} =&gt; mkForeignPrim (FFun "putStr" [FString] FUnit) "3\n" w)) (\a' =&gt; io_return (f' a'))) : IO ()
+    Idris&gt; putStrLn "hoge" &gt;&gt;= const (print 3)
+    io_bind (MkIO (\{w0} =&gt; mkForeignPrim (FFun "putStr" [FString] FUnit) "hoge\n" w))
+            (\v =&gt; MkIO (\{w0} =&gt; mkForeignPrim (FFun "putStr" [FString] FUnit) "3\n" w)) : IO ()
+</code></p>
+
+<p>末尾再帰最適化が絡んでいるのかなと思ったが、下も動くので全く分からない</p>
+
+<p><code>haskell
+    main''' : IO ()
+    main''' = recur fibs where
+      recur (x :: xs) = do
+        print x
+        recur xs
+        putStrLn "foo"
+</code></p>
+
+<h2 id="fizzbuzz">fizzbuzz</h2>
+<p><code>Prelude</code>に<code>Semigroup</code>やばい<br />
+あるからには使わねばならない</p>
+
+<p>``` haskell
+    module Main</p>
+
+<pre><code>data FizzBuzz = Fizz | Buzz | Fizzbuzz
+
+fizz : Nat -&gt; Maybe FizzBuzz
+fizz n = if (n `mod` 3) == 0 then Just Fizz else Nothing
+buzz : Nat -&gt; Maybe FizzBuzz
+buzz n = if (n `mod` 5) == 0 then Just Buzz else Nothing
+
+instance Eq FizzBuzz where
+  Fizzbuzz == Fizzbuzz = True
+  Fizz == Fizz = True
+  Buzz == Buzz = True
+  _ == _ = False
+
+instance Semigroup FizzBuzz where
+  a &lt;+&gt; b = if a == b then a else Fizzbuzz
+
+fizzbuzz : Nat -&gt; Maybe FizzBuzz
+fizzbuzz n = fizz n &lt;+&gt; buzz n
+
+instance Show FizzBuzz where
+  show Fizz = "fizz"
+  show Buzz = "buzz"
+  show Fizzbuzz = "fizzbuzz"
+
+main : IO ()
+main = recur 1 where
+  recur : Nat -&gt; IO ()
+  recur n = do
+    putStrLn $ fromMaybe (show n) (map show $ fizzbuzz n)
+    recur $ succ n ```
+</code></pre>
+
+<p>半群なので結合律が必要なのですが、何故か後から追加で証明を与える仕様になっている<br />
+結合律の有無がよく分からないならそれはmagmaだと思うのですが、なにか理由があるのでしょう</p>
+
+<p>そして肝心の証明はよく分からなかったので全列挙しました</p>
+
+<p><code>haskell
+    instance VerifiedSemigroup FizzBuzz where
+      semigroupOpIsAssociative Fizz     Fizz     Fizz     = refl
+      semigroupOpIsAssociative Fizz     Fizz     Buzz     = refl
+      semigroupOpIsAssociative Fizz     Fizz     Fizzbuzz = refl
+      semigroupOpIsAssociative Fizz     Buzz     Fizz     = refl
+      semigroupOpIsAssociative Fizz     Buzz     Buzz     = refl
+      semigroupOpIsAssociative Fizz     Buzz     Fizzbuzz = refl
+      semigroupOpIsAssociative Fizz     Fizzbuzz Fizz     = refl
+      semigroupOpIsAssociative Fizz     Fizzbuzz Buzz     = refl
+      semigroupOpIsAssociative Fizz     Fizzbuzz Fizzbuzz = refl
+      semigroupOpIsAssociative Buzz     Fizz     Fizz     = refl
+      semigroupOpIsAssociative Buzz     Fizz     Buzz     = refl
+      semigroupOpIsAssociative Buzz     Fizz     Fizzbuzz = refl
+      semigroupOpIsAssociative Buzz     Buzz     Fizz     = refl
+      semigroupOpIsAssociative Buzz     Buzz     Buzz     = refl
+      semigroupOpIsAssociative Buzz     Buzz     Fizzbuzz = refl
+      semigroupOpIsAssociative Buzz     Fizzbuzz Fizz     = refl
+      semigroupOpIsAssociative Buzz     Fizzbuzz Buzz     = refl
+      semigroupOpIsAssociative Buzz     Fizzbuzz Fizzbuzz = refl
+      semigroupOpIsAssociative Fizzbuzz Fizz     Fizz     = refl
+      semigroupOpIsAssociative Fizzbuzz Fizz     Buzz     = refl
+      semigroupOpIsAssociative Fizzbuzz Fizz     Fizzbuzz = refl
+      semigroupOpIsAssociative Fizzbuzz Buzz     Fizz     = refl
+      semigroupOpIsAssociative Fizzbuzz Buzz     Buzz     = refl
+      semigroupOpIsAssociative Fizzbuzz Buzz     Fizzbuzz = refl
+      semigroupOpIsAssociative Fizzbuzz Fizzbuzz Fizz     = refl
+      semigroupOpIsAssociative Fizzbuzz Fizzbuzz Buzz     = refl
+      semigroupOpIsAssociative Fizzbuzz Fizzbuzz Fizzbuzz = refl
+</code></p>
+
+<p>証明力足りない</p>
+
+<h2 id="section">所感</h2>
+<p>現段階では、方が強すぎて書きにくく感じる<br />
+haskellで少し気をつけながら書くほうが楽である</p>
+
+<p>定理照明系に明るくないのが問題なのだろう<br />
+まずはcoqに習熟すべきかと思う</p>
+
+<p>また、document周りが不満<br />
+主にapi-documentがweb上に見つからないこと</p>
+
+<h2 id="refs">refs</h2>
+<ul>
+  <li><a href="http://www.idris-lang.org/">Idris -</a></li>
+  <li><a href="https://github.com/idris-lang/Idris-dev">idris-lang/Idris-dev</a>
+    <ul>
+      <li><a href="https://github.com/idris-lang/Idris-dev/wiki">Home · idris-lang/Idris-dev Wiki</a></li>
+    </ul>
+  </li>
+  <li><a href="http://mandel59.hateblo.jp/search?q=idris">記事一覧 - M59のブログ</a>
+    <ul>
+      <li><a href="http://mandel59.hateblo.jp/entry/2013/09/02/184831">こわくない Idris (1) - M59のブログ</a></li>
+    </ul>
+  </li>
+</ul>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[brainfuckでquine書いた]]></title>
@@ -345,363 +717,6 @@ main = runLift $ runProgram adventIO prog ```
   <ol>
     <li id="fn:1">
       <p>On Lispの説明による<a href="#fnref:1" rel="reference">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[[Int]をparsecでパースする]]></title>
-    <link href="http://solorab.github.io/blog/2014/01/25/parse-list-of-ints-with-parsec/"/>
-    <updated>2014-01-25T17:50:35+09:00</updated>
-    <id>http://solorab.github.io/blog/2014/01/25/parse-list-of-ints-with-parsec</id>
-    <content type="html"><![CDATA[<p>``` haskell
-    »&gt; parse (many even’) “numbers” [0,0,2,4,9999]
-    Right [0,0,2,4]</p>
-
-<pre><code>&gt;&gt;&gt; parse (many (zero &lt;|&gt; odd') &gt;&gt; eof) "numbers" [0,1,1,3,5,8]
-Left "numbers" (line 1, column 6):
-unexpected 8
-expecting zero, odd or end of input ```
-</code></pre>
-
-<p><code>[Int]</code>だとおふざけだが、複雑な何かだと便利かもしれない<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p>
-
-<!-- more -->
-
-<p><code>Monad m =&gt; Stream [tok] m tok</code>とあるので、<code>list</code>に包めば何でもparse可能に見える<br />
-しかし<code>Stream s m Char =&gt;</code>制約の代わりに<code>(Stream s m tok, Eq tok) =&gt;</code>なものが<del>見当たらない</del><br />
-標準の<code>satisfy</code>さえ<code>:: Stream s m Char =&gt; (Char -&gt; Bool) -&gt; ParsecT s u m Char</code>と、<code>Char</code>しか受け入れてくれない<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup><br />
-<del>仕方がないので</del><ins>仕方なくなかった(<a href="#ins">追記</a>)</ins><code>satisfy</code>を再定義する</p>
-
-<p>``` haskell
-    updatePos :: SourcePos -&gt; Column -&gt; SourcePos
-    updatePos p n = setSourceColumn p (sourceColumn p + n)</p>
-
-<pre><code>satisfy' :: (Stream s m t, Show t) =&gt; (t -&gt; Bool) -&gt; ParsecT s u m t
-satisfy' f = tokenPrim show
-    (\ pos _ _ -&gt; updatePos pos 1)
-    (\ c -&gt; if f c then Just c else Nothing) ```
-</code></pre>
-
-<p><code>Text.Parsec.Char</code>のほぼ全ての関数<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>は<code>satisfy</code>経由で定義されているので、<br />
-<code>Text.Parsec.Int</code>を作ることが可能になる</p>
-
-<p><code>haskell
-    zero :: (Num a, Eq a, Stream s m a, Show a) =&gt; ParsecT s u m a
-    zero = satisfy' (== 0) &lt;?&gt; "zero"
-    even', odd' :: (Integral a, Stream s m a, Show a) =&gt; ParsecT s u m a
-    even' = satisfy' even &lt;?&gt; "even"
-    odd' = satisfy' odd &lt;?&gt; "odd"
-</code></p>
-
-<h2 id="section">参考</h2>
-<ul>
-  <li><a href="http://hackage.haskell.org/package/parsec">Hackage: parsec: Monadic parser combinators</a></li>
-  <li><a href="http://qiita.com/hiratara/items/a451b04fb19bfcc7ff08">Haskell - Parsecのソースちら見(3) - Qiita</a></li>
-</ul>
-
-<h2 id="ins">追記</h2>
-<p>定義されてた</p>
-
-<p><a href="http://hackage.haskell.org/package/parsec-3.1.5/docs/Text-Parsec-Combinator.html#v:anyToken">Text.Parsec.Combinator.anyToken</a><br />
-<code>anyToken :: (Stream s m t, Show t) =&gt; ParsecT s u m t</code></p>
-
-<p>なので</p>
-
-<p><code>haskell
-    satisfy' f = try $ lookAhead (anyToken &gt;&gt;= (\ x -&gt; if f x then return x else unexpected $ show x))
-</code>
-としても良い</p>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>便利でないかもしれない<a href="#fnref:1" rel="reference">&#8617;</a></p>
-    </li>
-    <li id="fn:2">
-      <p>parser-libraryなので当然<a href="#fnref:2" rel="reference">&#8617;</a></p>
-    </li>
-    <li id="fn:3">
-      <p><code>Text.Parsec.Char.string</code>以外の全て<a href="#fnref:3" rel="reference">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[free monadとはmonadそのものである]]></title>
-    <link href="http://solorab.github.io/blog/2013/12/29/free-monad-is-monad-itself/"/>
-    <updated>2013-12-29T17:22:11+09:00</updated>
-    <id>http://solorab.github.io/blog/2013/12/29/free-monad-is-monad-itself</id>
-    <content type="html"><![CDATA[<p>以前少し挑戦して敗れたが、ふと思い出してリベンジした</p>
-
-<p>結論としては<code>free monad</code>とはmonadをdataとして表現したものであると</p>
-
-<p><code>haskell
-    data Free f a = Pure a | Free (f (Free f a))
-    instance Functor f =&gt; Monad (Free f) where
-        return = Pure
-        Pure a &gt;&gt;= k = k a
-        Free fm &gt;&gt;= k = Free (fmap (&gt;&gt;=k) fm)
-</code></p>
-
-<!-- more -->
-
-<h2 id="section">型のイメージ</h2>
-<p>型レベルで、<code>ffffffffa</code>や<code>ffa</code>のような構造を畳み込む<br />
-つまり<code>Free f a</code>は<code>fffffffa</code>と読み替えられる</p>
-
-<p>たとえば</p>
-
-<ul>
-  <li><code>Free [] a</code> ~ <code>[[[[[a]]]]]</code></li>
-  <li><code>Free Maybe a</code> ~ <code>Maybe (Maybe (Maybe a))</code></li>
-</ul>
-
-<h2 id="section-1">値と型</h2>
-<p><code>haskell
-    Free [Free [Free [Pure ()]]] :: Free [] ()
-    Free [Pure 3, Pure 2, Free [Pure 1, Free []], Pure 0] :: Num a =&gt; Free [] a
-    Free [] :: Free [] a
-    Pure () :: Free f ()
-    Free [Pure $ Free [Pure ()]] :: Free [] (Free [] ())
-</code>
-よく分からない</p>
-
-<h2 id="join">手を動かす: join</h2>
-<p><code>&gt;&gt;=</code>や<code>bind</code>と呼ばれる<code>Monad m =&gt; m a -&gt; (a -&gt; m b) -&gt; m b</code>は<br />
-<code>Control.Monad.join</code>こと<code>Monad m =&gt; m (m a) -&gt; m a</code>で定義できる<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>ので<br />
-理解のため<code>join</code>を定義してみる</p>
-
-<p><code>haskell
-    join' :: Functor f =&gt; Free f (Free f a) -&gt; Free f a
-    join' (Pure a) = a
-    join' (Free fFreefa) = Free (fmap join' fFreefa)
-</code></p>
-
-<h3 id="maybe">実際に: Maybe</h3>
-<p><code>haskell
-    &gt;&gt;&gt; let x = Free$Just (Free$Just (Pure (Free$Just (Pure Nothing))))
-    &gt;&gt;&gt; :t x
-    x :: Free Maybe (Free Maybe (Maybe a))
-    &gt;&gt;&gt; join x
-    Free (Just (Free (Just (Free (Just (Pure Nothing))))))
-</code>
-手で追う</p>
-
-<p><code>haskell
-    join          (Free$Just (Free$Just (Pure (Free$Just (Pure Nothing)))))
-    Free (fmap   join $ Just (Free$Just (Pure (Free$Just (Pure Nothing)))))
-    Free (Just $ join        (Free$Just (Pure (Free$Just (Pure Nothing)))))
-    Free$Just          (join (Free$Just (Pure (Free$Just (Pure Nothing)))))
-    Free$Just          (Free$Just (join (Pure (Free$Just (Pure Nothing)))))
-    Free$Just          (Free$Just             (Free$Just (Pure Nothing)))
-                   Free$Just (Free$Just       (Free$Just (Pure Nothing)))
-</code></p>
-
-<ol>
-  <li>初期状態</li>
-  <li><code>join</code>の展開</li>
-  <li><code>fmap</code>の展開: <code>fmap f (Just a) = Just (f a)</code></li>
-  <li>見やすくしただけ: <code>join</code>と<code>Free$Just</code>が入れ替わったのが分かる</li>
-  <li>同様にする</li>
-  <li><code>Pure</code>は<code>join</code>と対消滅する</li>
-  <li>見やすくしただけ: 外側のPureを道連れにjoinが消え、外側と内側のFreeの境目を潰しているのが分かる</li>
-</ol>
-
-<h3 id="list">もう少し複雑な例: List</h3>
-<p><code>haskell
-    &gt;&gt;&gt; let x = Free[ Free[ Free[], Pure( Free[] ) ], Pure( Free[ Pure() ] ) ]
-    &gt;&gt;&gt; :t x
-    x :: Free [] (Free [] ())
-    &gt;&gt;&gt; join x
-    Free [Free [Free [],Free []],Free [Pure ()]]
-</code></p>
-
-<p><code>haskell
-    join$Free[      Free[      Free[],      Pure( Free[] ) ],      Pure( Free[ Pure() ] ) ]
-         Free[ join$Free[      Free[],      Pure( Free[] ) ], join$Pure( Free[ Pure() ] ) ]
-         Free[      Free[ join$Free[], join$Pure( Free[] ) ],            Free[ Pure() ]   ]
-         Free[      Free[      Free[],            Free[]   ],            Free[ Pure() ]   ]
-</code></p>
-
-<h3 id="section-2">解釈</h3>
-<p><code>join</code>の型が<code>Free f (Free f a) -&gt; Free f a</code>で、<code>Free f a</code>は<code>fffffffa</code>などと読み替えられることから、<br />
-<code>join</code>とは<code>ffff(ffffa) -&gt; ffffffffa</code>的ななにかである<br />
-それともつじつまの合う結果である<br />
-なんとなく雰囲気はつかめた</p>
-
-<h3 id="bind">bindへ</h3>
-<p>そして</p>
-
-<p><code>haskell
-    bind :: (Functor m, Monad m) =&gt; m a -&gt; (a -&gt; m b) -&gt; m b
-    bind x f = join $ fmap f x
-</code>
-である<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup></p>
-
-<p><code>haskell
-    &gt;&gt;&gt; Free[ Pure 7, Pure 2 ] &gt;&gt;= (\ x -&gt; Free[ Pure (show x), Pure (show (x ^ x)) ])
-    Free [Free [Pure "7",Pure "823543"],Free [Pure "2",Pure "4"]]
-</code>
-右辺のPureの位置に左辺が埋め込まれている</p>
-
-<h2 id="section-3">自由</h2>
-<p>弄っていたらいつの間にか気がついた<br />
-<code>Free</code>の<code>free</code>とはおそらくfree monoidやfree magmaの<code>free</code>であろう<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup><br />
-つまり、公理の等式以外に元の間の関係式をもたない、という意味<br />
-この場合公理とはモナド則</p>
-
-<p>つまりGADTsで定義して見やすくすると</p>
-
-<p><code>haskell
-    class Functor m =&gt; Monad m where
-        unit :: a -&gt; m a
-        join :: m (m a) -&gt; m a
-    data FreeMonad f a where
-        Unit :: a -&gt; FreeMonad f a
-        Join :: f (FreeMonad f a) -&gt; FreeMonad f a
-</code>
-とある程度綺麗に対応している</p>
-
-<h2 id="section-4">結論</h2>
-<p><code>Free</code>とはmonadそのものであり、monadをdataとして表現したものである<br />
-lispに似ているなと感じる</p>
-
-<h2 id="section-5">予防線と残った疑問</h2>
-<p><code>free monad</code>には別の定義も存在して</p>
-
-<p><code>haskell
-    -- join / f無し
-    data FreeMonad a where
-        Unit :: a -&gt; FreeMonad a
-        Join :: FreeMonad (FreeMonad a) -&gt; FreeMonad a
-</code></p>
-
-<p><code>haskell
-    -- bind / f無し
-    data FreeMonad a where
-        Return :: a -&gt; FreeMonad a
-        Bind :: FreeMonad x -&gt; (x -&gt; FreeMonad a) -&gt; FreeMonad a
-</code></p>
-
-<p><code>haskell
-    -- bind / f有り(BindのFreeMonad消去)
-    data FreeMonad f a where
-        Return :: a -&gt; FreeMonad f a
-        Bind :: f x -&gt; (x -&gt; FreeMonad f a) -&gt; FreeMonad f a
-</code>
-と思いつく範囲だけで3つ<br />
-しかもこの3つは<code>f Functor</code>制約なしでmonadになる</p>
-
-<p><code>haskell
-    -- bind / f無し
-    instance Monad FreeMonad where
-        return = Return
-        (&gt;&gt;=) = Bind
-</code></p>
-
-<p><code>haskell
-    -- bind / f有り(BindのFreeMonad消去)
-    instance Monad (FreeMonad f) where
-        return = Return
-        (&gt;&gt;=) (Return a) a2fb = a2fb a
-        (&gt;&gt;=) (Bind fx x2fa) a2fb = Bind fx ((&gt;&gt;= a2fb) . x2fa)
-</code></p>
-
-<p>一方<code>Free</code>で使われている定義は</p>
-
-<p><code>haskell
-    -- join / f有り(JoinのFreeMonad消去)
-    instance Functor f =&gt; Functor (FreeMonad f) where
-        fmap a2b (Unit a) = Unit $ a2b a
-        fmap a2b (Join ffa) = Join $ fmap (fmap a2b) ffa
-    join' :: Functor f =&gt; FreeMonad f (FreeMonad f a) -&gt; FreeMonad f a
-    join' (Unit a) = a
-    join' (Join ffa) = Join $ fmap join' ffa
-    instance Functor f =&gt; Monad (FreeMonad f) where
-        return = Unit
-        (&gt;&gt;=) fa a2fb = join' $ fmap a2fb fa
-</code>
-と要Functor制約<br />
-<code>Join</code>の<code>f (FreeMonad f a)</code>を展開するのにどうしても必要なようだ<sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup></p>
-
-<p>そしてそもそも<code>f</code>が入るとはどういうことなのかいまいち分からない<br />
-もしかしたら<code>Free</code>はfree monadでなく類似の別な概念のfreeかもしれない<br />
-圏論に精通していないので分からない<sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup></p>
-
-<h3 id="operational">operational</h3>
-<p>さらに強いと聞くoperational monadはこのbind型のfree monadなのではと考えた</p>
-
-<p><code>haskell
-    type Program t = Free (Coyoneda t)
-</code>
-らしく、</p>
-
-<p><code>haskell
-    data Coyoneda t x where
-        Coyoneda :: t r -&gt; (r -&gt; a) -&gt; Coyoneda t a
-    instance Functor (Coyoneda t) where
-        fmap f (Coyoneda t g) = Coyoneda t (f . g)
-</code>
-とcoyonedaは制約なしでfunctorを作るので、ただのdataからmonadになるのだそうだ</p>
-
-<p>coyonedaのmoduleも<code>Data.Functor.Coyoneda</code>にあるので、free functor的ななにかだと思い、<br />
-free functorとfree monadを合成してもfree monadだろうという発想から少し頑張った<br />
-しかし型パズルが解けずinterpretが定義できないので、全く違うのかもしれないし、haskell力足りていないだけかもしれない</p>
-
-<h2 id="section-6">参考</h2>
-<ul>
-  <li><a href="http://d.hatena.ne.jp/fumiexcel/20121111/1352614885">そろそろFreeモナドに関して一言いっとくか - fumievalの日記</a></li>
-  <li><a href="http://d.hatena.ne.jp/its_out_of_tune/20121111/1352632815">Freeモナドって何なのさっ！？ - capriccioso String Creating(Object something){ return My.Expression(something); }</a></li>
-</ul>
-
-<h3 id="operational-1">operational</h3>
-<ul>
-  <li><a href="http://d.hatena.ne.jp/its_out_of_tune/20130601/1370109743">YonedaとCoYoneda、そしてFunctor - capriccioso String Creating(Object something){ return My.Expression(something); }</a></li>
-  <li><a href="http://fumieval.hatenablog.com/entry/2013/11/11/154146">Operationalモナドをゲームに応用した話 - モナドとわたしとコモナド</a></li>
-  <li><a href="http://myuon-myon.hatenablog.com/entry/2013/06/09/135407">Yoneda lemmaとOperational Monad - Just $ A sandbox</a></li>
-  <li><a href="http://togetter.com/li/526588">Operational Monad - Togetterまとめ</a></li>
-</ul>
-
-<h2 id="packages">packages</h2>
-<ul>
-  <li><a href="http://hackage.haskell.org/package/free">http://hackage.haskell.org/package/free</a> # 推奨</li>
-  <li><a href="http://hackage.haskell.org/package/control-monad-free">http://hackage.haskell.org/package/control-monad-free</a> # ?</li>
-  <li><a href="http://hackage.haskell.org/package/transformers-free">http://hackage.haskell.org/package/transformers-free</a> # deprecated</li>
-</ul>
-
-<h3 id="operational-2">operational</h3>
-<ul>
-  <li><a href="http://hackage.haskell.org/package/operational">http://hackage.haskell.org/package/operational</a> # 一番人気</li>
-  <li><a href="http://hackage.haskell.org/package/free-operational">http://hackage.haskell.org/package/free-operational</a> # freeを使った実装</li>
-  <li><a href="http://hackage.haskell.org/package/minioperational">http://hackage.haskell.org/package/minioperational</a> # 上に挙げたoperationalの解説記事など書いてる人の再実装</li>
-</ul>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p><a href="https://ja.wikibooks.org/wiki/Haskell/%E5%9C%8F%E8%AB%96#.E3.83.A2.E3.83.8A.E3.83.89">https://ja.wikibooks.org/wiki/Haskell/%E5%9C%8F%E8%AB%96#.E3.83.A2.E3.83.8A.E3.83.89</a><a href="#fnref:1" rel="reference">&#8617;</a></p>
-    </li>
-    <li id="fn:2">
-      <p>むしろmonadの定義としてはjoinの方が自然に見える<a href="#fnref:2" rel="reference">&#8617;</a></p>
-    </li>
-    <li id="fn:3">
-      <p>functorの制約はhaskellのmonadの定義が悪い<a href="#fnref:3" rel="reference">&#8617;</a></p>
-    </li>
-    <li id="fn:4">
-      <p>あまり圏論に明るくないので少し怪しい<a href="#fnref:4" rel="reference">&#8617;</a></p>
-    </li>
-    <li id="fn:5">
-      <p>haskellのmonadがbindである理由かもしれない<a href="#fnref:5" rel="reference">&#8617;</a></p>
-    </li>
-    <li id="fn:6">
-      <p>圏論に精通していれば分かるのかどうかも分からない<a href="#fnref:6" rel="reference">&#8617;</a></p>
     </li>
   </ol>
 </div>

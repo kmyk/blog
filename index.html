@@ -9,33 +9,14 @@
   <meta name="author" content="そろうさぎ">
 
   
-  <meta name="description" content="haskellを使って書いた solorab/brainfuck-hs 1763chars 整形済みcode start:1 1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-&gt;+++++&gt &hellip;">
+  <meta name="description" content="全域関数 は { \left|
+\mathbb{B} \right|
+}^{ \left|
+\mathbb{A} \right|
+} 個存在します
+なので例えば型Bool -&gt; Boolを持つ関数は 個であり、十分列挙可能
+ゆえにinstancingしました 1
+instance &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -55,6 +36,7 @@
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+ <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> 
 
   
 
@@ -92,6 +74,112 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/06/10/instance-enum-functions/">関数をEnumにして遊んだ</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-10T21:38:12+09:00" pubdate data-updated="true">Jun 10<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>全域関数 <script type="math/tex"> f : \mathbb{A} \to \mathbb{B} </script> は <script type="math/tex"> { \left|
+\mathbb{B} \right|
+}^{ \left|
+\mathbb{A} \right|
+} </script> 個存在します<br />
+なので例えば型<code>Bool -&gt; Bool</code>を持つ関数は <script type="math/tex"> {\left| \mathbb{Bool} \right|}^{\left| \mathbb{Bool} \right|} = 2^2 = 4 </script> 個であり、十分列挙可能<br />
+ゆえにinstancingしました</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="kr">instance</span> <span class="p">(</span><span class="o">..</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="kt">Enum</span> <span class="p">(</span><span class="n">a</span> <span class="ow">-&gt;</span> <span class="n">b</span><span class="p">)</span> <span class="kr">where</span> <span class="o">..</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/06/10/instance-enum-functions/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/05/16/tried-idris/">Idrisに挑戦した</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-16T22:23:42+09:00" pubdate data-updated="true">May 16<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>再挑戦する日のため、敗北した過程のメモ</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+</pre></td><td class="code"><pre><code class="sh"><span class="line"><span class="nv">$ </span>idris
+</span><span class="line">     ____    __     _
+</span><span class="line">    /  _/___/ /____<span class="o">(</span>_<span class="o">)</span>____
+</span><span class="line">    / // __  / ___/ / ___/     Version 0.9.12-git:dae7d7d
+</span><span class="line">  _/ // /_/ / /  / <span class="o">(</span>__  <span class="o">)</span>      http://www.idris-lang.org/
+</span><span class="line"> /___/<span class="se">\_</span>_,_/_/  /_/____/       Type :? <span class="k">for </span><span class="nb">help</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/05/16/tried-idris/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -659,100 +747,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/04/05/church-number-and-pred-function/">チャーチ数とpred関数</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-04-05T21:04:13+09:00" pubdate data-updated="true">Apr 5<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="n">pred</span> <span class="n">n</span> <span class="o">=</span> <span class="err">\</span> <span class="n">s</span> <span class="n">o</span><span class="p">.</span> <span class="n">n</span> <span class="p">(</span><span class="err">\</span> <span class="n">f</span> <span class="n">g</span><span class="p">.</span> <span class="n">g</span> <span class="p">(</span><span class="n">f</span> <span class="n">s</span><span class="p">))</span> <span class="p">(</span><span class="err">\</span> <span class="n">x</span><span class="p">.</span> <span class="n">o</span><span class="p">)</span> <span class="p">(</span><span class="err">\</span> <span class="n">x</span><span class="p">.</span> <span class="n">x</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<ul>
-  <li>church数を<code>- 1</code>する関数</li>
-  <li>基本的なはずなのに、他のと比べてやけに複雑</li>
-</ul>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2014/04/05/church-number-and-pred-function/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/04/05/lambda-calculus-for-great-good/">すごいラムダ計算楽しく学ぼう</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-04-05T20:24:26+09:00" pubdate data-updated="true">Apr 5<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><ul>
-  <li>以前挑んだ時は惨敗したが、今回は程よく分かるので楽しい</li>
-  <li>haskellにとってのlambda計算は、cにとってのbrainf*ckみたいなものっぽい</li>
-  <li>教養の域を出なさそうだが楽しいので許す</li>
-  <li>楽しい(自己暗示)</li>
-</ul>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2014/04/05/lambda-calculus-for-great-good/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -768,6 +762,14 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/06/10/instance-enum-functions/">関数をEnumにして遊んだ</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/05/16/tried-idris/">Idrisに挑戦した</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/04/27/quine-in-brainfuck/">Brainfuckでquine書いた</a>
       </li>
     
@@ -777,14 +779,6 @@
     
       <li class="post">
         <a href="/blog/2014/04/17/how-to-write-a-quine/">Quineを書く一般的な方法</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/04/13/octopress-table-stylesheet/">Octopressのtableのstylesheet設定した</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/04/13/one-point-basis/">一点基底について調べた</a>
       </li>
     
   </ul>

@@ -9,7 +9,15 @@
   <meta name="author" content="そろうさぎ">
 
   
-  <meta name="description" content="それはもうごっそりと ">
+  <meta name="description" content="1
+2
+a is not b
+a isnt b は 1
+2
+a === !b
+a !=== b だそうだ
+つまり a is not b = a is (not b) try
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -29,6 +37,7 @@
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+ <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> 
 
   
 
@@ -66,6 +75,100 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/12/05/is-not-is-not-isnt/">Coffeescriptのis Notとisntは違う</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-12-05T14:24:25+09:00" pubdate data-updated="true">Dec 5<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="coffeescript"><span class="line"><span class="nx">a</span> <span class="o">is</span> <span class="o">not</span> <span class="nx">b</span>
+</span><span class="line"><span class="nx">a</span> <span class="o">isnt</span> <span class="nx">b</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p>は</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="javascript"><span class="line"><span class="nx">a</span> <span class="o">===</span> <span class="o">!</span><span class="nx">b</span>
+</span><span class="line"><span class="nx">a</span> <span class="o">!===</span> <span class="nx">b</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p>だそうだ<br />
+つまり <code>a is not b</code> = <code>a is (not b)</code></p>
+
+<p><a href="http://coffeescript.org/#try:a%20is%20not%20b%0Aa%20isnt%20b">try</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/11/27/scraped-pixiv/">Pixivをscarpingした</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-11-27T21:47:44+09:00" pubdate data-updated="true">Nov 27<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2 id="pixiv-toolshttpsgithubcomsolorabpixiv-tools"><a href="https://github.com/solorab/pixiv-tools">pixiv-tools</a></h2>
+<p>勢いで作った<br />
+CasperJS + PhantomJS でかなり強引に処理</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/11/27/scraped-pixiv/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -123,6 +226,14 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/06/10/instance-enum-functions/">関数をEnumにして遊んだ</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/05/16/tried-idris/">Idrisに挑戦した</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/04/27/quine-in-brainfuck/">Brainfuckでquine書いた</a>
       </li>
     
@@ -132,14 +243,6 @@
     
       <li class="post">
         <a href="/blog/2014/04/17/how-to-write-a-quine/">Quineを書く一般的な方法</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/04/13/octopress-table-stylesheet/">Octopressのtableのstylesheet設定した</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/04/13/one-point-basis/">一点基底について調べた</a>
       </li>
     
   </ul>

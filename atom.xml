@@ -4,7 +4,7 @@
   <title><![CDATA[Higher Order うさぎ小屋]]></title>
   <link href="http://solorab.github.io/atom.xml" rel="self"/>
   <link href="http://solorab.github.io/"/>
-  <updated>2014-06-11T00:49:51+09:00</updated>
+  <updated>2014-06-17T21:16:14+09:00</updated>
   <id>http://solorab.github.io/</id>
   <author>
     <name><![CDATA[そろうさぎ]]></name>
@@ -12,6 +12,40 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Awkでquine書いた]]></title>
+    <link href="http://solorab.github.io/blog/2014/06/17/quine-in-awk/"/>
+    <updated>2014-06-17T20:51:00+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/06/17/quine-in-awk</id>
+    <content type="html"><![CDATA[<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+</pre></td><td class="code"><pre><code class="awk"><span class="line"><span class="c1">#!/usr/bin/awk -f</span>
+</span><span class="line">    <span class="nx">BEGIN</span> <span class="p">{</span>
+</span><span class="line">        <span class="nx">s</span><span class="o">=</span><span class="s2">&quot;#!/usr/bin/awk -f\nBEGIN {\n    s=%s;\n    t=s;\n    gsub(\&quot;\\\\\\\\\&quot;, \&quot;\\\\\\\\\&quot;, t);\n    gsub(\&quot;\\\&quot;\&quot;, \&quot;\\\\\\\&quot;\&quot;, t);\n    gsub(\&quot;\\n\&quot;, \&quot;\\\\n\&quot;, t);\n    t=\&quot;\\\&quot;\&quot; t \&quot;\\\&quot;\&quot;;\n    printf(s,t);\n}\n&quot;</span><span class="p">;</span>
+</span><span class="line">        <span class="nx">t</span><span class="o">=</span><span class="nx">s</span><span class="p">;</span>
+</span><span class="line">        <span class="kr">gsub</span><span class="p">(</span><span class="s2">&quot;\\\\&quot;</span><span class="p">,</span> <span class="s2">&quot;\\\\&quot;</span><span class="p">,</span> <span class="nx">t</span><span class="p">);</span>
+</span><span class="line">        <span class="kr">gsub</span><span class="p">(</span><span class="s2">&quot;\&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;\\\&quot;&quot;</span><span class="p">,</span> <span class="nx">t</span><span class="p">);</span>
+</span><span class="line">        <span class="kr">gsub</span><span class="p">(</span><span class="s2">&quot;\n&quot;</span><span class="p">,</span> <span class="s2">&quot;\\n&quot;</span><span class="p">,</span> <span class="nx">t</span><span class="p">);</span>
+</span><span class="line">        <span class="nx">t</span><span class="o">=</span><span class="s2">&quot;\&quot;&quot;</span> <span class="nx">t</span> <span class="s2">&quot;\&quot;&quot;</span><span class="p">;</span>
+</span><span class="line">        <span class="kr">printf</span><span class="p">(</span><span class="nx">s</span><span class="p">,</span><span class="nx">t</span><span class="p">);</span>
+</span><span class="line">    <span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>quineは書くこと/書けることが無い時の暇潰しに良いと気付きました</li>
+  <li><code>gsub</code>がキャプチャできないの知りませんでした</li>
+</ul>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[関数をEnumにして遊んだ]]></title>
@@ -3152,125 +3186,6 @@ application autostartのxmonadのcommandを<code>zsh -c 'xmonad --replace'</code
 以前からsuspend後に画面の電源がつかなかった<br />
 さらに蓋を閉じてもアウトに<br />
 これは治せるだろうが面倒なので放置</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[日本語ocrをinstallした]]></title>
-    <link href="http://solorab.github.io/blog/2013/12/06/install-japanese-ocr/"/>
-    <updated>2013-12-06T14:57:47+09:00</updated>
-    <id>http://solorab.github.io/blog/2013/12/06/install-japanese-ocr</id>
-    <content type="html"><![CDATA[<p><a href="http://code.google.com/p/nhocr/">nhocr</a> and <a href="http://code.google.com/p/tesseract-ocr/">tesseract</a></p>
-
-<p>日本語ではnhocrが、英数字ではtesseractが良いようだ</p>
-
-<!-- more -->
-
-<h2 id="tesseract">tesseract</h2>
-<p>日本語専用ではない</p>
-
-<h3 id="install">install</h3>
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class="sh"><span class="line">sudo apt-get install tesseract-ocr tesseract-ocr-jpn
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>簡単</p>
-
-<h3 id="test">test</h3>
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-</pre></td><td class="code"><pre><code class="sh"><span class="line"><span class="c"># tesseract 3.02.01</span>
-</span><span class="line"><span class="nv">$ </span>convert -font /usr/share/fonts/truetype/fonts-japanese-gothic.ttf -pointsize 32 label:<span class="s1">&#39;こんにちは 世界&#39;</span> a.pbm
-</span><span class="line"><span class="nv">$ </span>tesseract a.pbm a -l jpn -psm 7 2&gt;/dev/null ; cat a.txt
-</span><span class="line">こん~二ち【ま 世界
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>倍角文字やギャル文字の自動生成に使えそうだと思ったが</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-</pre></td><td class="code"><pre><code class="sh"><span class="line"><span class="nv">$ </span>convert -font /usr/share/fonts/truetype/fonts-japanese-gothic.ttf -pointsize 32 label:<span class="s1">&#39;超絶核爆&#39;</span> -geometry 200%x100% a.pbm
-</span><span class="line"><span class="nv">$ </span>tesseract a.pbm a -l jpn -psm 7 2&gt;/dev/null ; cat a.txt
-</span><span class="line">超絶核曝
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>と、漢字には強いようだ<br />
-表音文字より表意文字の方が得意とは驚きである</p>
-
-<h2 id="nhocr">nhocr</h2>
-
-<h3 id="install-1">install</h3>
-<p>少し嵌まった<br />
-prefixの指定が必須のようだ</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-</pre></td><td class="code"><pre><code class="sh"><span class="line"><span class="c"># cd O2-tools</span>
-</span><span class="line">./configure --prefix<span class="o">=</span>/usr/local
-</span><span class="line">make
-</span><span class="line">sudo make install
-</span><span class="line"><span class="c"># cd nhocr</span>
-</span><span class="line">./configure --prefix<span class="o">=</span>/usr/local --with-O2tools<span class="o">=</span>/usr/local
-</span><span class="line">make
-</span><span class="line">sudo make install
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<h3 id="test-1">test</h3>
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-</pre></td><td class="code"><pre><code class="sh"><span class="line"><span class="c"># NHocr - Japanese OCR  v0.21</span>
-</span><span class="line"><span class="nv">$ </span>convert -font /usr/share/fonts/truetype/fonts-japanese-gothic.ttf -pointsize 32 label:<span class="s1">&#39;こんにちは 世界&#39;</span> a.pbm
-</span><span class="line"><span class="nv">$ </span>nhocr -o - -line a.pbm
-</span><span class="line">こんにちは世界
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>問題ない<br />
-しかし非常にきれいな画像での結果なので、実際に使うと違ってくるかもしれない</p>
-
-<h2 id="section">日本語以外の比較</h2>
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-</pre></td><td class="code"><pre><code class="sh"><span class="line"><span class="nv">$ </span>convert -pointsize 32 label:<span class="s1">&#39;Hello World&#39;</span> a.pbm
-</span><span class="line"><span class="nv">$ </span>nhocr -o - -line a.pbm
-</span><span class="line">H引foWohd
-</span><span class="line"><span class="nv">$ </span>tesseract a.pbm a -l jpn -psm 7 2&gt;/dev/null ; cat a.txt
-</span><span class="line">Heーー。 W。「ーd
-</span><span class="line"><span class="nv">$ </span>tesseract a.pbm a -psm 7 2&gt;/dev/null ; cat a.txt
-</span><span class="line">Hello World
-</span><span class="line">
-</span><span class="line"><span class="nv">$ </span>convert -pointsize 32 label:<span class="s1">&#39;2.71828183&#39;</span> a.pbm
-</span><span class="line"><span class="nv">$ </span>nhocr -o - -line a.pbm
-</span><span class="line">2.7i828i88
-</span><span class="line"><span class="nv">$ </span>tesseract a.pbm a -l jpn -psm 7 2&gt;/dev/null ; cat a.txt
-</span><span class="line">2<span class="err">&#39;</span>7ー 828ー 83
-</span><span class="line"><span class="nv">$ </span>tesseract a.pbm a -psm 7 2&gt;/dev/null ; cat a.txt
-</span><span class="line">2.71828183
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>日本語以外ではtesseract(-l jpn 無し)が強い<br />
-予想通りの結果</p>
-
-<h2 id="library">他のlibrary</h2>
-<p><a href="http://tomoe.sourceforge.jp/cgi-bin/ja/blog/index.rb">tomoe</a></p>
 ]]></content>
   </entry>
   

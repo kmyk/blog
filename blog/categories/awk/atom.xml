@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: awk | Higher Order うさぎ小屋]]></title>
+  <link href="http://solorab.github.io/blog/categories/awk/atom.xml" rel="self"/>
+  <link href="http://solorab.github.io/"/>
+  <updated>2014-06-17T21:16:14+09:00</updated>
+  <id>http://solorab.github.io/</id>
+  <author>
+    <name><![CDATA[そろうさぎ]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[awkでquine書いた]]></title>
+    <link href="http://solorab.github.io/blog/2014/06/17/quine-in-awk/"/>
+    <updated>2014-06-17T20:51:00+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/06/17/quine-in-awk</id>
+    <content type="html"><![CDATA[<p><code>awk
+#!/usr/bin/awk -f
+    BEGIN {
+        s="#!/usr/bin/awk -f\nBEGIN {\n    s=%s;\n    t=s;\n    gsub(\"\\\\\\\\\", \"\\\\\\\\\", t);\n    gsub(\"\\\"\", \"\\\\\\\"\", t);\n    gsub(\"\\n\", \"\\\\n\", t);\n    t=\"\\\"\" t \"\\\"\";\n    printf(s,t);\n}\n";
+        t=s;
+        gsub("\\\\", "\\\\", t);
+        gsub("\"", "\\\"", t);
+        gsub("\n", "\\n", t);
+        t="\"" t "\"";
+        printf(s,t);
+    }
+</code></p>
+
+<ul>
+  <li>quineは書くこと/書けることが無い時の暇潰しに良いと気付きました</li>
+  <li><code>gsub</code>がキャプチャできないの知りませんでした</li>
+</ul>
+]]></content>
+  </entry>
+  
+</feed>

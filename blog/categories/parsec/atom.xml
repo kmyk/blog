@@ -4,7 +4,7 @@
   <title><![CDATA[Category: parsec | Higher Order うさぎ小屋]]></title>
   <link href="http://solorab.github.io/blog/categories/parsec/atom.xml" rel="self"/>
   <link href="http://solorab.github.io/"/>
-  <updated>2014-06-18T01:08:00+09:00</updated>
+  <updated>2014-07-05T21:28:42+09:00</updated>
   <id>http://solorab.github.io/</id>
   <author>
     <name><![CDATA[そろうさぎ]]></name>
@@ -32,7 +32,7 @@
 <p><code>ParsecT</code>をlist-monadと合成するだけなので、上のように定義する<br />
 型注釈なしなら<code>join . lift :: (Monad (t m), Monad m, MonadTrans t) =&gt; m (t m a) -&gt; t m a</code></p>
 
-<p>非決定的の厳密な定義を知らないが、chooseとfail<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>が使えるので非決定的と呼んでいいはず<br />
+<p>非決定的の厳密な定義を知らないが、chooseとfail<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>が使えるので非決定的と呼んでいいはず<br />
 ただし<code>fail = fork []</code>であって、<code>Prelude.fail</code>(<code>Text.Parsec.parserFail</code>)ではない</p>
 
 <h2 id="section">例</h2>
@@ -77,7 +77,7 @@
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>On Lispの説明による<a href="#fnref:1" rel="reference">&#8617;</a></p>
+      <p>On Lispの説明による <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -99,13 +99,13 @@ unexpected 8
 expecting zero, odd or end of input ```
 </code></pre>
 
-<p><code>[Int]</code>だとおふざけだが、複雑な何かだと便利かもしれない<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p>
+<p><code>[Int]</code>だとおふざけだが、複雑な何かだと便利かもしれない<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
 
 <!-- more -->
 
 <p><code>Monad m =&gt; Stream [tok] m tok</code>とあるので、<code>list</code>に包めば何でもparse可能に見える<br />
 しかし<code>Stream s m Char =&gt;</code>制約の代わりに<code>(Stream s m tok, Eq tok) =&gt;</code>なものが<del>見当たらない</del><br />
-標準の<code>satisfy</code>さえ<code>:: Stream s m Char =&gt; (Char -&gt; Bool) -&gt; ParsecT s u m Char</code>と、<code>Char</code>しか受け入れてくれない<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup><br />
+標準の<code>satisfy</code>さえ<code>:: Stream s m Char =&gt; (Char -&gt; Bool) -&gt; ParsecT s u m Char</code>と、<code>Char</code>しか受け入れてくれない<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup><br />
 <del>仕方がないので</del><ins>仕方なくなかった(<a href="#ins">追記</a>)</ins><code>satisfy</code>を再定義する</p>
 
 <p>``` haskell
@@ -118,7 +118,7 @@ satisfy' f = tokenPrim show
     (\ c -&gt; if f c then Just c else Nothing) ```
 </code></pre>
 
-<p><code>Text.Parsec.Char</code>のほぼ全ての関数<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>は<code>satisfy</code>経由で定義されているので、<br />
+<p><code>Text.Parsec.Char</code>のほぼ全ての関数<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup>は<code>satisfy</code>経由で定義されているので、<br />
 <code>Text.Parsec.Int</code>を作ることが可能になる</p>
 
 <p><code>haskell
@@ -153,13 +153,13 @@ satisfy' f = tokenPrim show
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>便利でないかもしれない<a href="#fnref:1" rel="reference">&#8617;</a></p>
+      <p>便利でないかもしれない <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:2">
-      <p>parser-libraryなので当然<a href="#fnref:2" rel="reference">&#8617;</a></p>
+      <p>parser-libraryなので当然 <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:3">
-      <p><code>Text.Parsec.Char.string</code>以外の全て<a href="#fnref:3" rel="reference">&#8617;</a></p>
+      <p><code>Text.Parsec.Char.string</code>以外の全て <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

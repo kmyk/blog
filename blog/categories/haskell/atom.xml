@@ -4,7 +4,7 @@
   <title><![CDATA[Category: haskell | Higher Order うさぎ小屋]]></title>
   <link href="http://solorab.github.io/blog/categories/haskell/atom.xml" rel="self"/>
   <link href="http://solorab.github.io/"/>
-  <updated>2014-06-18T01:08:00+09:00</updated>
+  <updated>2014-07-05T21:28:42+09:00</updated>
   <id>http://solorab.github.io/</id>
   <author>
     <name><![CDATA[そろうさぎ]]></name>
@@ -671,7 +671,7 @@ main = runLift $ runProgram adventIO prog ```
 <p><code>ParsecT</code>をlist-monadと合成するだけなので、上のように定義する<br />
 型注釈なしなら<code>join . lift :: (Monad (t m), Monad m, MonadTrans t) =&gt; m (t m a) -&gt; t m a</code></p>
 
-<p>非決定的の厳密な定義を知らないが、chooseとfail<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>が使えるので非決定的と呼んでいいはず<br />
+<p>非決定的の厳密な定義を知らないが、chooseとfail<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>が使えるので非決定的と呼んでいいはず<br />
 ただし<code>fail = fork []</code>であって、<code>Prelude.fail</code>(<code>Text.Parsec.parserFail</code>)ではない</p>
 
 <h2 id="section">例</h2>
@@ -716,7 +716,7 @@ main = runLift $ runProgram adventIO prog ```
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>On Lispの説明による<a href="#fnref:1" rel="reference">&#8617;</a></p>
+      <p>On Lispの説明による <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

@@ -4,7 +4,7 @@
   <title><![CDATA[Higher Order うさぎ小屋]]></title>
   <link href="http://solorab.github.io/atom.xml" rel="self"/>
   <link href="http://solorab.github.io/"/>
-  <updated>2014-06-18T01:08:00+09:00</updated>
+  <updated>2014-07-05T21:28:42+09:00</updated>
   <id>http://solorab.github.io/</id>
   <author>
     <name><![CDATA[そろうさぎ]]></name>
@@ -12,6 +12,33 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[標準入出力を循環的にリダイレクトする]]></title>
+    <link href="http://solorab.github.io/blog/2014/07/05/redirect-stdio-cyclically/"/>
+    <updated>2014-07-05T20:55:05+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/07/05/redirect-stdio-cyclically</id>
+    <content type="html"><![CDATA[<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="sh"><span class="line"><span class="nv">$ </span>tailf foo <span class="p">|</span> bar &gt;&gt; foo
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>もちろん逐次処理するコマンドでないといけない
+    <ul>
+      <li>例えば<code>sed</code>する時は<code>-u --unbuffered</code>optionが要るなど</li>
+      <li>困ったら<code>while</code>に突っ込めば解決</li>
+    </ul>
+  </li>
+  <li><code>sh</code>でも可</li>
+  <li><code>&gt;&gt;</code>を<code>&gt;</code>にすると動いたり動かなかったりする
+    <ul>
+      <li>誰か解説ください</li>
+    </ul>
+  </li>
+  <li>例えば <code>$ echo &gt; foo &amp;&amp; tailf foo | tee &gt;&amp;2 | sed -ue 's/$/*/' &gt;&gt; foo</code> とかすると楽しい</li>
+</ul>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[STAP細胞が見つかるまでひたすら適当な細胞を生成し続けるプログラム]]></title>
@@ -803,7 +830,6 @@ haskellで少し気をつけながら書くほうが楽である</p>
 先頭byteを<code>0</code>とし番兵、data末尾で停止</p>
 
 <h3 id="data-1">data移動</h3>
-
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>start:18 </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 </pre></td><td class="code"><pre><code class="bf"><span class="line"><span class="k">[[</span><span class="nv">&gt;&gt;&gt;</span><span class="nb">+</span><span class="nv">&lt;&lt;&lt;</span><span class="nb">-</span><span class="k">]</span><span class="nv">&lt;</span><span class="k">]</span><span class="nv">&gt;&gt;&gt;&gt;</span><span class="c"></span>
@@ -813,7 +839,6 @@ haskellで少し気をつけながら書くほうが楽である</p>
 番兵<code>0</code>でwhileを脱出し、data部分の先頭に移動し停止</p>
 
 <h3 id="data-2">data部出力</h3>
-
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>start:19 </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
@@ -826,14 +851,12 @@ haskellで少し気をつけながら書くほうが楽である</p>
 dataを舐め終わると、作業領域の分だけ多めに左へ戻る</p>
 
 <h3 id="section-1">先頭へ</h3>
-
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>start:21 </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 </pre></td><td class="code"><pre><code class="bf"><span class="line"><span class="k">[</span><span class="nv">&lt;</span><span class="k">]</span><span class="nv">&gt;</span><span class="c"></span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <h3 id="program">program部出力</h3>
-
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>start:22 </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
@@ -853,12 +876,10 @@ dataはもう使わないので破壊的に舐める<br />
 <p>最も短縮の余地を残す部分である</p>
 
 <h3 id="section-2">改行出力</h3>
-
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>start:26 </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 </pre></td><td class="code"><pre><code class="bf"><span class="line"><span class="nb">++++++++++</span><span class="nt">.</span><span class="c"></span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
-
 ]]></content>
   </entry>
   
@@ -2689,7 +2710,7 @@ eta変換</dd>
 <p><code>ParsecT</code>をlist-monadと合成するだけなので、上のように定義する<br />
 型注釈なしなら<code>join . lift :: (Monad (t m), Monad m, MonadTrans t) =&gt; m (t m a) -&gt; t m a</code></p>
 
-<p>非決定的の厳密な定義を知らないが、chooseとfail<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>が使えるので非決定的と呼んでいいはず<br />
+<p>非決定的の厳密な定義を知らないが、chooseとfail<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>が使えるので非決定的と呼んでいいはず<br />
 ただし<code>fail = fork []</code>であって、<code>Prelude.fail</code>(<code>Text.Parsec.parserFail</code>)ではない</p>
 
 <h2 id="section">例</h2>
@@ -2752,7 +2773,7 @@ eta変換</dd>
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>On Lispの説明による<a href="#fnref:1" rel="reference">&#8617;</a></p>
+      <p>On Lispの説明による <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -2780,13 +2801,13 @@ eta変換</dd>
 </span><span class="line"><span class="nf">expecting</span> <span class="n">zero</span><span class="p">,</span> <span class="n">odd</span> <span class="n">or</span> <span class="n">end</span> <span class="kr">of</span> <span class="n">input</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p><code>[Int]</code>だとおふざけだが、複雑な何かだと便利かもしれない<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p>
+<p><code>[Int]</code>だとおふざけだが、複雑な何かだと便利かもしれない<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
 
 <!-- more -->
 
 <p><code>Monad m =&gt; Stream [tok] m tok</code>とあるので、<code>list</code>に包めば何でもparse可能に見える<br />
 しかし<code>Stream s m Char =&gt;</code>制約の代わりに<code>(Stream s m tok, Eq tok) =&gt;</code>なものが<del>見当たらない</del><br />
-標準の<code>satisfy</code>さえ<code>:: Stream s m Char =&gt; (Char -&gt; Bool) -&gt; ParsecT s u m Char</code>と、<code>Char</code>しか受け入れてくれない<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup><br />
+標準の<code>satisfy</code>さえ<code>:: Stream s m Char =&gt; (Char -&gt; Bool) -&gt; ParsecT s u m Char</code>と、<code>Char</code>しか受け入れてくれない<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup><br />
 <del>仕方がないので</del><ins>仕方なくなかった(<a href="#ins">追記</a>)</ins><code>satisfy</code>を再定義する</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
@@ -2805,7 +2826,7 @@ eta変換</dd>
 </span><span class="line">    <span class="p">(</span><span class="nf">\</span> <span class="n">c</span> <span class="ow">-&gt;</span> <span class="kr">if</span> <span class="n">f</span> <span class="n">c</span> <span class="kr">then</span> <span class="kt">Just</span> <span class="n">c</span> <span class="kr">else</span> <span class="kt">Nothing</span><span class="p">)</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p><code>Text.Parsec.Char</code>のほぼ全ての関数<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>は<code>satisfy</code>経由で定義されているので、<br />
+<p><code>Text.Parsec.Char</code>のほぼ全ての関数<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup>は<code>satisfy</code>経由で定義されているので、<br />
 <code>Text.Parsec.Int</code>を作ることが可能になる</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
@@ -2844,350 +2865,13 @@ eta変換</dd>
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>便利でないかもしれない<a href="#fnref:1" rel="reference">&#8617;</a></p>
+      <p>便利でないかもしれない <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:2">
-      <p>parser-libraryなので当然<a href="#fnref:2" rel="reference">&#8617;</a></p>
+      <p>parser-libraryなので当然 <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:3">
-      <p><code>Text.Parsec.Char.string</code>以外の全て<a href="#fnref:3" rel="reference">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Free Monadとはmonadそのものである]]></title>
-    <link href="http://solorab.github.io/blog/2013/12/29/free-monad-is-monad-itself/"/>
-    <updated>2013-12-29T17:22:11+09:00</updated>
-    <id>http://solorab.github.io/blog/2013/12/29/free-monad-is-monad-itself</id>
-    <content type="html"><![CDATA[<p>以前少し挑戦して敗れたが、ふと思い出してリベンジした</p>
-
-<p>結論としては<code>free monad</code>とはmonadをdataとして表現したものであると</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="kr">data</span> <span class="kt">Free</span> <span class="n">f</span> <span class="n">a</span> <span class="ow">=</span> <span class="kt">Pure</span> <span class="n">a</span> <span class="o">|</span> <span class="kt">Free</span> <span class="p">(</span><span class="n">f</span> <span class="p">(</span><span class="kt">Free</span> <span class="n">f</span> <span class="n">a</span><span class="p">))</span>
-</span><span class="line"><span class="kr">instance</span> <span class="kt">Functor</span> <span class="n">f</span> <span class="ow">=&gt;</span> <span class="kt">Monad</span> <span class="p">(</span><span class="kt">Free</span> <span class="n">f</span><span class="p">)</span> <span class="kr">where</span>
-</span><span class="line">    <span class="n">return</span> <span class="ow">=</span> <span class="kt">Pure</span>
-</span><span class="line">    <span class="kt">Pure</span> <span class="n">a</span> <span class="o">&gt;&gt;=</span> <span class="n">k</span> <span class="ow">=</span> <span class="n">k</span> <span class="n">a</span>
-</span><span class="line">    <span class="kt">Free</span> <span class="n">fm</span> <span class="o">&gt;&gt;=</span> <span class="n">k</span> <span class="ow">=</span> <span class="kt">Free</span> <span class="p">(</span><span class="n">fmap</span> <span class="p">(</span><span class="o">&gt;&gt;=</span><span class="n">k</span><span class="p">)</span> <span class="n">fm</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<!-- more -->
-
-<h2 id="section">型のイメージ</h2>
-<p>型レベルで、<code>ffffffffa</code>や<code>ffa</code>のような構造を畳み込む<br />
-つまり<code>Free f a</code>は<code>fffffffa</code>と読み替えられる</p>
-
-<p>たとえば</p>
-
-<ul>
-  <li><code>Free [] a</code> ~ <code>[[[[[a]]]]]</code></li>
-  <li><code>Free Maybe a</code> ~ <code>Maybe (Maybe (Maybe a))</code></li>
-</ul>
-
-<h2 id="section-1">値と型</h2>
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="kt">Free</span> <span class="p">[</span><span class="kt">Free</span> <span class="p">[</span><span class="kt">Free</span> <span class="p">[</span><span class="kt">Pure</span> <span class="nb">()</span><span class="p">]]]</span> <span class="ow">::</span> <span class="kt">Free</span> <span class="kt">[]</span> <span class="nb">()</span>
-</span><span class="line"><span class="kt">Free</span> <span class="p">[</span><span class="kt">Pure</span> <span class="mi">3</span><span class="p">,</span> <span class="kt">Pure</span> <span class="mi">2</span><span class="p">,</span> <span class="kt">Free</span> <span class="p">[</span><span class="kt">Pure</span> <span class="mi">1</span><span class="p">,</span> <span class="kt">Free</span> <span class="kt">[]</span><span class="p">],</span> <span class="kt">Pure</span> <span class="mi">0</span><span class="p">]</span> <span class="ow">::</span> <span class="kt">Num</span> <span class="n">a</span> <span class="ow">=&gt;</span> <span class="kt">Free</span> <span class="kt">[]</span> <span class="n">a</span>
-</span><span class="line"><span class="kt">Free</span> <span class="kt">[]</span> <span class="ow">::</span> <span class="kt">Free</span> <span class="kt">[]</span> <span class="n">a</span>
-</span><span class="line"><span class="kt">Pure</span> <span class="nb">()</span> <span class="ow">::</span> <span class="kt">Free</span> <span class="n">f</span> <span class="nb">()</span>
-</span><span class="line"><span class="kt">Free</span> <span class="p">[</span><span class="kt">Pure</span> <span class="o">$</span> <span class="kt">Free</span> <span class="p">[</span><span class="kt">Pure</span> <span class="nb">()</span><span class="p">]]</span> <span class="ow">::</span> <span class="kt">Free</span> <span class="kt">[]</span> <span class="p">(</span><span class="kt">Free</span> <span class="kt">[]</span> <span class="nb">()</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>よく分からない</p>
-
-<h2 id="join">手を動かす: join</h2>
-<p><code>&gt;&gt;=</code>や<code>bind</code>と呼ばれる<code>Monad m =&gt; m a -&gt; (a -&gt; m b) -&gt; m b</code>は<br />
-<code>Control.Monad.join</code>こと<code>Monad m =&gt; m (m a) -&gt; m a</code>で定義できる<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>ので<br />
-理解のため<code>join</code>を定義してみる</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="nf">join&#39;</span> <span class="ow">::</span> <span class="kt">Functor</span> <span class="n">f</span> <span class="ow">=&gt;</span> <span class="kt">Free</span> <span class="n">f</span> <span class="p">(</span><span class="kt">Free</span> <span class="n">f</span> <span class="n">a</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="kt">Free</span> <span class="n">f</span> <span class="n">a</span>
-</span><span class="line"><span class="nf">join&#39;</span> <span class="p">(</span><span class="kt">Pure</span> <span class="n">a</span><span class="p">)</span> <span class="ow">=</span> <span class="n">a</span>
-</span><span class="line"><span class="nf">join&#39;</span> <span class="p">(</span><span class="kt">Free</span> <span class="n">fFreefa</span><span class="p">)</span> <span class="ow">=</span> <span class="kt">Free</span> <span class="p">(</span><span class="n">fmap</span> <span class="n">join&#39;</span> <span class="n">fFreefa</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<h3 id="maybe">実際に: Maybe</h3>
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="o">&gt;&gt;&gt;</span> <span class="kr">let</span> <span class="n">x</span> <span class="ow">=</span> <span class="kt">Free</span><span class="o">$</span><span class="kt">Just</span> <span class="p">(</span><span class="kt">Free</span><span class="o">$</span><span class="kt">Just</span> <span class="p">(</span><span class="kt">Pure</span> <span class="p">(</span><span class="kt">Free</span><span class="o">$</span><span class="kt">Just</span> <span class="p">(</span><span class="kt">Pure</span> <span class="kt">Nothing</span><span class="p">))))</span>
-</span><span class="line"><span class="o">&gt;&gt;&gt;</span> <span class="kt">:</span><span class="n">t</span> <span class="n">x</span>
-</span><span class="line"><span class="nf">x</span> <span class="ow">::</span> <span class="kt">Free</span> <span class="kt">Maybe</span> <span class="p">(</span><span class="kt">Free</span> <span class="kt">Maybe</span> <span class="p">(</span><span class="kt">Maybe</span> <span class="n">a</span><span class="p">))</span>
-</span><span class="line"><span class="o">&gt;&gt;&gt;</span> <span class="n">join</span> <span class="n">x</span>
-</span><span class="line"><span class="kt">Free</span> <span class="p">(</span><span class="kt">Just</span> <span class="p">(</span><span class="kt">Free</span> <span class="p">(</span><span class="kt">Just</span> <span class="p">(</span><span class="kt">Free</span> <span class="p">(</span><span class="kt">Just</span> <span class="p">(</span><span class="kt">Pure</span> <span class="kt">Nothing</span><span class="p">))))))</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>手で追う</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="nf">join</span>          <span class="p">(</span><span class="kt">Free</span><span class="o">$</span><span class="kt">Just</span> <span class="p">(</span><span class="kt">Free</span><span class="o">$</span><span class="kt">Just</span> <span class="p">(</span><span class="kt">Pure</span> <span class="p">(</span><span class="kt">Free</span><span class="o">$</span><span class="kt">Just</span> <span class="p">(</span><span class="kt">Pure</span> <span class="kt">Nothing</span><span class="p">)))))</span>
-</span><span class="line"><span class="kt">Free</span> <span class="p">(</span><span class="n">fmap</span>   <span class="n">join</span> <span class="o">$</span> <span class="kt">Just</span> <span class="p">(</span><span class="kt">Free</span><span class="o">$</span><span class="kt">Just</span> <span class="p">(</span><span class="kt">Pure</span> <span class="p">(</span><span class="kt">Free</span><span class="o">$</span><span class="kt">Just</span> <span class="p">(</span><span class="kt">Pure</span> <span class="kt">Nothing</span><span class="p">)))))</span>
-</span><span class="line"><span class="kt">Free</span> <span class="p">(</span><span class="kt">Just</span> <span class="o">$</span> <span class="n">join</span>        <span class="p">(</span><span class="kt">Free</span><span class="o">$</span><span class="kt">Just</span> <span class="p">(</span><span class="kt">Pure</span> <span class="p">(</span><span class="kt">Free</span><span class="o">$</span><span class="kt">Just</span> <span class="p">(</span><span class="kt">Pure</span> <span class="kt">Nothing</span><span class="p">)))))</span>
-</span><span class="line"><span class="kt">Free</span><span class="o">$</span><span class="kt">Just</span>          <span class="p">(</span><span class="n">join</span> <span class="p">(</span><span class="kt">Free</span><span class="o">$</span><span class="kt">Just</span> <span class="p">(</span><span class="kt">Pure</span> <span class="p">(</span><span class="kt">Free</span><span class="o">$</span><span class="kt">Just</span> <span class="p">(</span><span class="kt">Pure</span> <span class="kt">Nothing</span><span class="p">)))))</span>
-</span><span class="line"><span class="kt">Free</span><span class="o">$</span><span class="kt">Just</span>          <span class="p">(</span><span class="kt">Free</span><span class="o">$</span><span class="kt">Just</span> <span class="p">(</span><span class="n">join</span> <span class="p">(</span><span class="kt">Pure</span> <span class="p">(</span><span class="kt">Free</span><span class="o">$</span><span class="kt">Just</span> <span class="p">(</span><span class="kt">Pure</span> <span class="kt">Nothing</span><span class="p">)))))</span>
-</span><span class="line"><span class="kt">Free</span><span class="o">$</span><span class="kt">Just</span>          <span class="p">(</span><span class="kt">Free</span><span class="o">$</span><span class="kt">Just</span>             <span class="p">(</span><span class="kt">Free</span><span class="o">$</span><span class="kt">Just</span> <span class="p">(</span><span class="kt">Pure</span> <span class="kt">Nothing</span><span class="p">)))</span>
-</span><span class="line">               <span class="kt">Free</span><span class="o">$</span><span class="kt">Just</span> <span class="p">(</span><span class="kt">Free</span><span class="o">$</span><span class="kt">Just</span>       <span class="p">(</span><span class="kt">Free</span><span class="o">$</span><span class="kt">Just</span> <span class="p">(</span><span class="kt">Pure</span> <span class="kt">Nothing</span><span class="p">)))</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<ol>
-  <li>初期状態</li>
-  <li><code>join</code>の展開</li>
-  <li><code>fmap</code>の展開: <code>fmap f (Just a) = Just (f a)</code></li>
-  <li>見やすくしただけ: <code>join</code>と<code>Free$Just</code>が入れ替わったのが分かる</li>
-  <li>同様にする</li>
-  <li><code>Pure</code>は<code>join</code>と対消滅する</li>
-  <li>見やすくしただけ: 外側のPureを道連れにjoinが消え、外側と内側のFreeの境目を潰しているのが分かる</li>
-</ol>
-
-<h3 id="list">もう少し複雑な例: List</h3>
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="o">&gt;&gt;&gt;</span> <span class="kr">let</span> <span class="n">x</span> <span class="ow">=</span> <span class="kt">Free</span><span class="p">[</span> <span class="kt">Free</span><span class="p">[</span> <span class="kt">Free[]</span><span class="p">,</span> <span class="kt">Pure</span><span class="p">(</span> <span class="kt">Free[]</span> <span class="p">)</span> <span class="p">],</span> <span class="kt">Pure</span><span class="p">(</span> <span class="kt">Free</span><span class="p">[</span> <span class="kt">Pure</span><span class="nb">()</span> <span class="p">]</span> <span class="p">)</span> <span class="p">]</span>
-</span><span class="line"><span class="o">&gt;&gt;&gt;</span> <span class="kt">:</span><span class="n">t</span> <span class="n">x</span>
-</span><span class="line"><span class="nf">x</span> <span class="ow">::</span> <span class="kt">Free</span> <span class="kt">[]</span> <span class="p">(</span><span class="kt">Free</span> <span class="kt">[]</span> <span class="nb">()</span><span class="p">)</span>
-</span><span class="line"><span class="o">&gt;&gt;&gt;</span> <span class="n">join</span> <span class="n">x</span>
-</span><span class="line"><span class="kt">Free</span> <span class="p">[</span><span class="kt">Free</span> <span class="p">[</span><span class="kt">Free</span> <span class="kt">[]</span><span class="p">,</span><span class="kt">Free</span> <span class="kt">[]</span><span class="p">],</span><span class="kt">Free</span> <span class="p">[</span><span class="kt">Pure</span> <span class="nb">()</span><span class="p">]]</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="nf">join</span><span class="o">$</span><span class="kt">Free</span><span class="p">[</span>      <span class="kt">Free</span><span class="p">[</span>      <span class="kt">Free[]</span><span class="p">,</span>      <span class="kt">Pure</span><span class="p">(</span> <span class="kt">Free[]</span> <span class="p">)</span> <span class="p">],</span>      <span class="kt">Pure</span><span class="p">(</span> <span class="kt">Free</span><span class="p">[</span> <span class="kt">Pure</span><span class="nb">()</span> <span class="p">]</span> <span class="p">)</span> <span class="p">]</span>
-</span><span class="line">     <span class="kt">Free</span><span class="p">[</span> <span class="n">join</span><span class="o">$</span><span class="kt">Free</span><span class="p">[</span>      <span class="kt">Free[]</span><span class="p">,</span>      <span class="kt">Pure</span><span class="p">(</span> <span class="kt">Free[]</span> <span class="p">)</span> <span class="p">],</span> <span class="n">join</span><span class="o">$</span><span class="kt">Pure</span><span class="p">(</span> <span class="kt">Free</span><span class="p">[</span> <span class="kt">Pure</span><span class="nb">()</span> <span class="p">]</span> <span class="p">)</span> <span class="p">]</span>
-</span><span class="line">     <span class="kt">Free</span><span class="p">[</span>      <span class="kt">Free</span><span class="p">[</span> <span class="n">join</span><span class="o">$</span><span class="kt">Free[]</span><span class="p">,</span> <span class="n">join</span><span class="o">$</span><span class="kt">Pure</span><span class="p">(</span> <span class="kt">Free[]</span> <span class="p">)</span> <span class="p">],</span>            <span class="kt">Free</span><span class="p">[</span> <span class="kt">Pure</span><span class="nb">()</span> <span class="p">]</span>   <span class="p">]</span>
-</span><span class="line">     <span class="kt">Free</span><span class="p">[</span>      <span class="kt">Free</span><span class="p">[</span>      <span class="kt">Free[]</span><span class="p">,</span>            <span class="kt">Free[]</span>   <span class="p">],</span>            <span class="kt">Free</span><span class="p">[</span> <span class="kt">Pure</span><span class="nb">()</span> <span class="p">]</span>   <span class="p">]</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<h3 id="section-2">解釈</h3>
-<p><code>join</code>の型が<code>Free f (Free f a) -&gt; Free f a</code>で、<code>Free f a</code>は<code>fffffffa</code>などと読み替えられることから、<br />
-<code>join</code>とは<code>ffff(ffffa) -&gt; ffffffffa</code>的ななにかである<br />
-それともつじつまの合う結果である<br />
-なんとなく雰囲気はつかめた</p>
-
-<h3 id="bind">bindへ</h3>
-<p>そして</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="nf">bind</span> <span class="ow">::</span> <span class="p">(</span><span class="kt">Functor</span> <span class="n">m</span><span class="p">,</span> <span class="kt">Monad</span> <span class="n">m</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="n">m</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="p">(</span><span class="n">a</span> <span class="ow">-&gt;</span> <span class="n">m</span> <span class="n">b</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="n">m</span> <span class="n">b</span>
-</span><span class="line"><span class="nf">bind</span> <span class="n">x</span> <span class="n">f</span> <span class="ow">=</span> <span class="n">join</span> <span class="o">$</span> <span class="n">fmap</span> <span class="n">f</span> <span class="n">x</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>である<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup></p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="o">&gt;&gt;&gt;</span> <span class="kt">Free</span><span class="p">[</span> <span class="kt">Pure</span> <span class="mi">7</span><span class="p">,</span> <span class="kt">Pure</span> <span class="mi">2</span> <span class="p">]</span> <span class="o">&gt;&gt;=</span> <span class="p">(</span><span class="nf">\</span> <span class="n">x</span> <span class="ow">-&gt;</span> <span class="kt">Free</span><span class="p">[</span> <span class="kt">Pure</span> <span class="p">(</span><span class="n">show</span> <span class="n">x</span><span class="p">),</span> <span class="kt">Pure</span> <span class="p">(</span><span class="n">show</span> <span class="p">(</span><span class="n">x</span> <span class="o">^</span> <span class="n">x</span><span class="p">))</span> <span class="p">])</span>
-</span><span class="line"><span class="kt">Free</span> <span class="p">[</span><span class="kt">Free</span> <span class="p">[</span><span class="kt">Pure</span> <span class="s">&quot;7&quot;</span><span class="p">,</span><span class="kt">Pure</span> <span class="s">&quot;823543&quot;</span><span class="p">],</span><span class="kt">Free</span> <span class="p">[</span><span class="kt">Pure</span> <span class="s">&quot;2&quot;</span><span class="p">,</span><span class="kt">Pure</span> <span class="s">&quot;4&quot;</span><span class="p">]]</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>右辺のPureの位置に左辺が埋め込まれている</p>
-
-<h2 id="section-3">自由</h2>
-<p>弄っていたらいつの間にか気がついた<br />
-<code>Free</code>の<code>free</code>とはおそらくfree monoidやfree magmaの<code>free</code>であろう<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup><br />
-つまり、公理の等式以外に元の間の関係式をもたない、という意味<br />
-この場合公理とはモナド則</p>
-
-<p>つまりGADTsで定義して見やすくすると</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="kr">class</span> <span class="kt">Functor</span> <span class="n">m</span> <span class="ow">=&gt;</span> <span class="kt">Monad</span> <span class="n">m</span> <span class="kr">where</span>
-</span><span class="line">    <span class="n">unit</span> <span class="ow">::</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="n">m</span> <span class="n">a</span>
-</span><span class="line">    <span class="n">join</span> <span class="ow">::</span> <span class="n">m</span> <span class="p">(</span><span class="n">m</span> <span class="n">a</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="n">m</span> <span class="n">a</span>
-</span><span class="line"><span class="kr">data</span> <span class="kt">FreeMonad</span> <span class="n">f</span> <span class="n">a</span> <span class="kr">where</span>
-</span><span class="line">    <span class="kt">Unit</span> <span class="ow">::</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="kt">FreeMonad</span> <span class="n">f</span> <span class="n">a</span>
-</span><span class="line">    <span class="kt">Join</span> <span class="ow">::</span> <span class="n">f</span> <span class="p">(</span><span class="kt">FreeMonad</span> <span class="n">f</span> <span class="n">a</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="kt">FreeMonad</span> <span class="n">f</span> <span class="n">a</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>とある程度綺麗に対応している</p>
-
-<h2 id="section-4">結論</h2>
-<p><code>Free</code>とはmonadそのものであり、monadをdataとして表現したものである<br />
-lispに似ているなと感じる</p>
-
-<h2 id="section-5">予防線と残った疑問</h2>
-<p><code>free monad</code>には別の定義も存在して</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="c1">-- join / f無し</span>
-</span><span class="line"><span class="kr">data</span> <span class="kt">FreeMonad</span> <span class="n">a</span> <span class="kr">where</span>
-</span><span class="line">    <span class="kt">Unit</span> <span class="ow">::</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="kt">FreeMonad</span> <span class="n">a</span>
-</span><span class="line">    <span class="kt">Join</span> <span class="ow">::</span> <span class="kt">FreeMonad</span> <span class="p">(</span><span class="kt">FreeMonad</span> <span class="n">a</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="kt">FreeMonad</span> <span class="n">a</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="c1">-- bind / f無し</span>
-</span><span class="line"><span class="kr">data</span> <span class="kt">FreeMonad</span> <span class="n">a</span> <span class="kr">where</span>
-</span><span class="line">    <span class="kt">Return</span> <span class="ow">::</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="kt">FreeMonad</span> <span class="n">a</span>
-</span><span class="line">    <span class="kt">Bind</span> <span class="ow">::</span> <span class="kt">FreeMonad</span> <span class="n">x</span> <span class="ow">-&gt;</span> <span class="p">(</span><span class="n">x</span> <span class="ow">-&gt;</span> <span class="kt">FreeMonad</span> <span class="n">a</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="kt">FreeMonad</span> <span class="n">a</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="c1">-- bind / f有り(BindのFreeMonad消去)</span>
-</span><span class="line"><span class="kr">data</span> <span class="kt">FreeMonad</span> <span class="n">f</span> <span class="n">a</span> <span class="kr">where</span>
-</span><span class="line">    <span class="kt">Return</span> <span class="ow">::</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="kt">FreeMonad</span> <span class="n">f</span> <span class="n">a</span>
-</span><span class="line">    <span class="kt">Bind</span> <span class="ow">::</span> <span class="n">f</span> <span class="n">x</span> <span class="ow">-&gt;</span> <span class="p">(</span><span class="n">x</span> <span class="ow">-&gt;</span> <span class="kt">FreeMonad</span> <span class="n">f</span> <span class="n">a</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="kt">FreeMonad</span> <span class="n">f</span> <span class="n">a</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>と思いつく範囲だけで3つ<br />
-しかもこの3つは<code>f Functor</code>制約なしでmonadになる</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="c1">-- bind / f無し</span>
-</span><span class="line"><span class="kr">instance</span> <span class="kt">Monad</span> <span class="kt">FreeMonad</span> <span class="kr">where</span>
-</span><span class="line">    <span class="n">return</span> <span class="ow">=</span> <span class="kt">Return</span>
-</span><span class="line">    <span class="p">(</span><span class="o">&gt;&gt;=</span><span class="p">)</span> <span class="ow">=</span> <span class="kt">Bind</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="c1">-- bind / f有り(BindのFreeMonad消去)</span>
-</span><span class="line"><span class="kr">instance</span> <span class="kt">Monad</span> <span class="p">(</span><span class="kt">FreeMonad</span> <span class="n">f</span><span class="p">)</span> <span class="kr">where</span>
-</span><span class="line">    <span class="n">return</span> <span class="ow">=</span> <span class="kt">Return</span>
-</span><span class="line">    <span class="p">(</span><span class="o">&gt;&gt;=</span><span class="p">)</span> <span class="p">(</span><span class="kt">Return</span> <span class="n">a</span><span class="p">)</span> <span class="n">a2fb</span> <span class="ow">=</span> <span class="n">a2fb</span> <span class="n">a</span>
-</span><span class="line">    <span class="p">(</span><span class="o">&gt;&gt;=</span><span class="p">)</span> <span class="p">(</span><span class="kt">Bind</span> <span class="n">fx</span> <span class="n">x2fa</span><span class="p">)</span> <span class="n">a2fb</span> <span class="ow">=</span> <span class="kt">Bind</span> <span class="n">fx</span> <span class="p">((</span><span class="o">&gt;&gt;=</span> <span class="n">a2fb</span><span class="p">)</span> <span class="o">.</span> <span class="n">x2fa</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>一方<code>Free</code>で使われている定義は</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="c1">-- join / f有り(JoinのFreeMonad消去)</span>
-</span><span class="line"><span class="kr">instance</span> <span class="kt">Functor</span> <span class="n">f</span> <span class="ow">=&gt;</span> <span class="kt">Functor</span> <span class="p">(</span><span class="kt">FreeMonad</span> <span class="n">f</span><span class="p">)</span> <span class="kr">where</span>
-</span><span class="line">    <span class="n">fmap</span> <span class="n">a2b</span> <span class="p">(</span><span class="kt">Unit</span> <span class="n">a</span><span class="p">)</span> <span class="ow">=</span> <span class="kt">Unit</span> <span class="o">$</span> <span class="n">a2b</span> <span class="n">a</span>
-</span><span class="line">    <span class="n">fmap</span> <span class="n">a2b</span> <span class="p">(</span><span class="kt">Join</span> <span class="n">ffa</span><span class="p">)</span> <span class="ow">=</span> <span class="kt">Join</span> <span class="o">$</span> <span class="n">fmap</span> <span class="p">(</span><span class="n">fmap</span> <span class="n">a2b</span><span class="p">)</span> <span class="n">ffa</span>
-</span><span class="line"><span class="nf">join&#39;</span> <span class="ow">::</span> <span class="kt">Functor</span> <span class="n">f</span> <span class="ow">=&gt;</span> <span class="kt">FreeMonad</span> <span class="n">f</span> <span class="p">(</span><span class="kt">FreeMonad</span> <span class="n">f</span> <span class="n">a</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="kt">FreeMonad</span> <span class="n">f</span> <span class="n">a</span>
-</span><span class="line"><span class="nf">join&#39;</span> <span class="p">(</span><span class="kt">Unit</span> <span class="n">a</span><span class="p">)</span> <span class="ow">=</span> <span class="n">a</span>
-</span><span class="line"><span class="nf">join&#39;</span> <span class="p">(</span><span class="kt">Join</span> <span class="n">ffa</span><span class="p">)</span> <span class="ow">=</span> <span class="kt">Join</span> <span class="o">$</span> <span class="n">fmap</span> <span class="n">join&#39;</span> <span class="n">ffa</span>
-</span><span class="line"><span class="kr">instance</span> <span class="kt">Functor</span> <span class="n">f</span> <span class="ow">=&gt;</span> <span class="kt">Monad</span> <span class="p">(</span><span class="kt">FreeMonad</span> <span class="n">f</span><span class="p">)</span> <span class="kr">where</span>
-</span><span class="line">    <span class="n">return</span> <span class="ow">=</span> <span class="kt">Unit</span>
-</span><span class="line">    <span class="p">(</span><span class="o">&gt;&gt;=</span><span class="p">)</span> <span class="n">fa</span> <span class="n">a2fb</span> <span class="ow">=</span> <span class="n">join&#39;</span> <span class="o">$</span> <span class="n">fmap</span> <span class="n">a2fb</span> <span class="n">fa</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>と要Functor制約<br />
-<code>Join</code>の<code>f (FreeMonad f a)</code>を展開するのにどうしても必要なようだ<sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup></p>
-
-<p>そしてそもそも<code>f</code>が入るとはどういうことなのかいまいち分からない<br />
-もしかしたら<code>Free</code>はfree monadでなく類似の別な概念のfreeかもしれない<br />
-圏論に精通していないので分からない<sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup></p>
-
-<h3 id="operational">operational</h3>
-<p>さらに強いと聞くoperational monadはこのbind型のfree monadなのではと考えた</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="kr">type</span> <span class="kt">Program</span> <span class="n">t</span> <span class="ow">=</span> <span class="kt">Free</span> <span class="p">(</span><span class="kt">Coyoneda</span> <span class="n">t</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>らしく、</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="kr">data</span> <span class="kt">Coyoneda</span> <span class="n">t</span> <span class="n">x</span> <span class="kr">where</span>
-</span><span class="line">    <span class="kt">Coyoneda</span> <span class="ow">::</span> <span class="n">t</span> <span class="n">r</span> <span class="ow">-&gt;</span> <span class="p">(</span><span class="n">r</span> <span class="ow">-&gt;</span> <span class="n">a</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="kt">Coyoneda</span> <span class="n">t</span> <span class="n">a</span>
-</span><span class="line"><span class="kr">instance</span> <span class="kt">Functor</span> <span class="p">(</span><span class="kt">Coyoneda</span> <span class="n">t</span><span class="p">)</span> <span class="kr">where</span>
-</span><span class="line">    <span class="n">fmap</span> <span class="n">f</span> <span class="p">(</span><span class="kt">Coyoneda</span> <span class="n">t</span> <span class="n">g</span><span class="p">)</span> <span class="ow">=</span> <span class="kt">Coyoneda</span> <span class="n">t</span> <span class="p">(</span><span class="n">f</span> <span class="o">.</span> <span class="n">g</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>とcoyonedaは制約なしでfunctorを作るので、ただのdataからmonadになるのだそうだ</p>
-
-<p>coyonedaのmoduleも<code>Data.Functor.Coyoneda</code>にあるので、free functor的ななにかだと思い、<br />
-free functorとfree monadを合成してもfree monadだろうという発想から少し頑張った<br />
-しかし型パズルが解けずinterpretが定義できないので、全く違うのかもしれないし、haskell力足りていないだけかもしれない</p>
-
-<h2 id="section-6">参考</h2>
-<ul>
-  <li><a href="http://d.hatena.ne.jp/fumiexcel/20121111/1352614885">そろそろFreeモナドに関して一言いっとくか - fumievalの日記</a></li>
-  <li><a href="http://d.hatena.ne.jp/its_out_of_tune/20121111/1352632815">Freeモナドって何なのさっ！？ - capriccioso String Creating(Object something){ return My.Expression(something); }</a></li>
-</ul>
-
-<h3 id="operational-1">operational</h3>
-<ul>
-  <li><a href="http://d.hatena.ne.jp/its_out_of_tune/20130601/1370109743">YonedaとCoYoneda、そしてFunctor - capriccioso String Creating(Object something){ return My.Expression(something); }</a></li>
-  <li><a href="http://fumieval.hatenablog.com/entry/2013/11/11/154146">Operationalモナドをゲームに応用した話 - モナドとわたしとコモナド</a></li>
-  <li><a href="http://myuon-myon.hatenablog.com/entry/2013/06/09/135407">Yoneda lemmaとOperational Monad - Just $ A sandbox</a></li>
-  <li><a href="http://togetter.com/li/526588">Operational Monad - Togetterまとめ</a></li>
-</ul>
-
-<h2 id="packages">packages</h2>
-<ul>
-  <li><a href="http://hackage.haskell.org/package/free">http://hackage.haskell.org/package/free</a> # 推奨</li>
-  <li><a href="http://hackage.haskell.org/package/control-monad-free">http://hackage.haskell.org/package/control-monad-free</a> # ?</li>
-  <li><a href="http://hackage.haskell.org/package/transformers-free">http://hackage.haskell.org/package/transformers-free</a> # deprecated</li>
-</ul>
-
-<h3 id="operational-2">operational</h3>
-<ul>
-  <li><a href="http://hackage.haskell.org/package/operational">http://hackage.haskell.org/package/operational</a> # 一番人気</li>
-  <li><a href="http://hackage.haskell.org/package/free-operational">http://hackage.haskell.org/package/free-operational</a> # freeを使った実装</li>
-  <li><a href="http://hackage.haskell.org/package/minioperational">http://hackage.haskell.org/package/minioperational</a> # 上に挙げたoperationalの解説記事など書いてる人の再実装</li>
-</ul>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p><a href="https://ja.wikibooks.org/wiki/Haskell/%E5%9C%8F%E8%AB%96#.E3.83.A2.E3.83.8A.E3.83.89">https://ja.wikibooks.org/wiki/Haskell/%E5%9C%8F%E8%AB%96#.E3.83.A2.E3.83.8A.E3.83.89</a><a href="#fnref:1" rel="reference">&#8617;</a></p>
-    </li>
-    <li id="fn:2">
-      <p>むしろmonadの定義としてはjoinの方が自然に見える<a href="#fnref:2" rel="reference">&#8617;</a></p>
-    </li>
-    <li id="fn:3">
-      <p>functorの制約はhaskellのmonadの定義が悪い<a href="#fnref:3" rel="reference">&#8617;</a></p>
-    </li>
-    <li id="fn:4">
-      <p>あまり圏論に明るくないので少し怪しい<a href="#fnref:4" rel="reference">&#8617;</a></p>
-    </li>
-    <li id="fn:5">
-      <p>haskellのmonadがbindである理由かもしれない<a href="#fnref:5" rel="reference">&#8617;</a></p>
-    </li>
-    <li id="fn:6">
-      <p>圏論に精通していれば分かるのかどうかも分からない<a href="#fnref:6" rel="reference">&#8617;</a></p>
+      <p><code>Text.Parsec.Char.string</code>以外の全て <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

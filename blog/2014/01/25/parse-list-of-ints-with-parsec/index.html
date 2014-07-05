@@ -94,7 +94,7 @@ Right [0,0,2,4] &gt;&gt;&gt; parse (many (zero &lt;|&gt; odd&#39 &hellip;">
   
 
 
-<time datetime="2014-01-25T17:50:35+09:00" pubdate data-updated="true">Jan 25<span>th</span>, 2014</time>
+<time datetime="2014-01-25T17:50:35+09:00" pubdate data-updated="true">Jan 25<sup>th</sup>, 2014</time>
         
       </p>
     
@@ -117,13 +117,13 @@ Right [0,0,2,4] &gt;&gt;&gt; parse (many (zero &lt;|&gt; odd&#39 &hellip;">
 </span><span class="line"><span class="nf">expecting</span> <span class="n">zero</span><span class="p">,</span> <span class="n">odd</span> <span class="n">or</span> <span class="n">end</span> <span class="kr">of</span> <span class="n">input</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p><code>[Int]</code>だとおふざけだが、複雑な何かだと便利かもしれない<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p>
+<p><code>[Int]</code>だとおふざけだが、複雑な何かだと便利かもしれない<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
 
 <!-- more -->
 
 <p><code>Monad m =&gt; Stream [tok] m tok</code>とあるので、<code>list</code>に包めば何でもparse可能に見える<br />
 しかし<code>Stream s m Char =&gt;</code>制約の代わりに<code>(Stream s m tok, Eq tok) =&gt;</code>なものが<del>見当たらない</del><br />
-標準の<code>satisfy</code>さえ<code>:: Stream s m Char =&gt; (Char -&gt; Bool) -&gt; ParsecT s u m Char</code>と、<code>Char</code>しか受け入れてくれない<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup><br />
+標準の<code>satisfy</code>さえ<code>:: Stream s m Char =&gt; (Char -&gt; Bool) -&gt; ParsecT s u m Char</code>と、<code>Char</code>しか受け入れてくれない<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup><br />
 <del>仕方がないので</del><ins>仕方なくなかった(<a href="#ins">追記</a>)</ins><code>satisfy</code>を再定義する</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
@@ -142,7 +142,7 @@ Right [0,0,2,4] &gt;&gt;&gt; parse (many (zero &lt;|&gt; odd&#39 &hellip;">
 </span><span class="line">    <span class="p">(</span><span class="nf">\</span> <span class="n">c</span> <span class="ow">-&gt;</span> <span class="kr">if</span> <span class="n">f</span> <span class="n">c</span> <span class="kr">then</span> <span class="kt">Just</span> <span class="n">c</span> <span class="kr">else</span> <span class="kt">Nothing</span><span class="p">)</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p><code>Text.Parsec.Char</code>のほぼ全ての関数<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>は<code>satisfy</code>経由で定義されているので、<br />
+<p><code>Text.Parsec.Char</code>のほぼ全ての関数<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup>は<code>satisfy</code>経由で定義されているので、<br />
 <code>Text.Parsec.Int</code>を作ることが可能になる</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
@@ -181,13 +181,13 @@ Right [0,0,2,4] &gt;&gt;&gt; parse (many (zero &lt;|&gt; odd&#39 &hellip;">
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>便利でないかもしれない<a href="#fnref:1" rel="reference">&#8617;</a></p>
+      <p>便利でないかもしれない <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:2">
-      <p>parser-libraryなので当然<a href="#fnref:2" rel="reference">&#8617;</a></p>
+      <p>parser-libraryなので当然 <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:3">
-      <p><code>Text.Parsec.Char.string</code>以外の全て<a href="#fnref:3" rel="reference">&#8617;</a></p>
+      <p><code>Text.Parsec.Char.string</code>以外の全て <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -213,7 +213,7 @@ Right [0,0,2,4] &gt;&gt;&gt; parse (many (zero &lt;|&gt; odd&#39 &hellip;">
   
 
 
-<time datetime="2014-01-25T17:50:35+09:00" pubdate data-updated="true">Jan 25<span>th</span>, 2014</time>
+<time datetime="2014-01-25T17:50:35+09:00" pubdate data-updated="true">Jan 25<sup>th</sup>, 2014</time>
       
 
 <span class="categories">
@@ -254,6 +254,10 @@ Right [0,0,2,4] &gt;&gt;&gt; parse (many (zero &lt;|&gt; odd&#39 &hellip;">
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/07/05/redirect-stdio-cyclically/">標準入出力を循環的にリダイレクトする</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/06/18/generate-stap-cells/">STAP細胞が見つかるまでひたすら適当な細胞を生成し続けるプログラム</a>
       </li>
     
@@ -267,10 +271,6 @@ Right [0,0,2,4] &gt;&gt;&gt; parse (many (zero &lt;|&gt; odd&#39 &hellip;">
     
       <li class="post">
         <a href="/blog/2014/05/16/tried-idris/">Idrisに挑戦した</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/04/27/quine-in-brainfuck/">Brainfuckでquine書いた</a>
       </li>
     
   </ul>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: category-theory | Higher Order うさぎ小屋]]></title>
   <link href="http://solorab.github.io/blog/categories/category-theory/atom.xml" rel="self"/>
   <link href="http://solorab.github.io/"/>
-  <updated>2014-06-18T01:08:00+09:00</updated>
+  <updated>2014-07-05T21:28:42+09:00</updated>
   <id>http://solorab.github.io/</id>
   <author>
     <name><![CDATA[そろうさぎ]]></name>
@@ -55,7 +55,7 @@
 
 <h2 id="join">手を動かす: join</h2>
 <p><code>&gt;&gt;=</code>や<code>bind</code>と呼ばれる<code>Monad m =&gt; m a -&gt; (a -&gt; m b) -&gt; m b</code>は<br />
-<code>Control.Monad.join</code>こと<code>Monad m =&gt; m (m a) -&gt; m a</code>で定義できる<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>ので<br />
+<code>Control.Monad.join</code>こと<code>Monad m =&gt; m (m a) -&gt; m a</code>で定義できる<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup><sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>ので<br />
 理解のため<code>join</code>を定義してみる</p>
 
 <p><code>haskell
@@ -123,7 +123,7 @@
     bind :: (Functor m, Monad m) =&gt; m a -&gt; (a -&gt; m b) -&gt; m b
     bind x f = join $ fmap f x
 </code>
-である<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup></p>
+である<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup></p>
 
 <p><code>haskell
     &gt;&gt;&gt; Free[ Pure 7, Pure 2 ] &gt;&gt;= (\ x -&gt; Free[ Pure (show x), Pure (show (x ^ x)) ])
@@ -133,7 +133,7 @@
 
 <h2 id="section-3">自由</h2>
 <p>弄っていたらいつの間にか気がついた<br />
-<code>Free</code>の<code>free</code>とはおそらくfree monoidやfree magmaの<code>free</code>であろう<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup><br />
+<code>Free</code>の<code>free</code>とはおそらくfree monoidやfree magmaの<code>free</code>であろう<sup id="fnref:4"><a href="#fn:4" class="footnote">4</a></sup><br />
 つまり、公理の等式以外に元の間の関係式をもたない、という意味<br />
 この場合公理とはモナド則</p>
 
@@ -209,11 +209,11 @@ lispに似ているなと感じる</p>
         (&gt;&gt;=) fa a2fb = join' $ fmap a2fb fa
 </code>
 と要Functor制約<br />
-<code>Join</code>の<code>f (FreeMonad f a)</code>を展開するのにどうしても必要なようだ<sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup></p>
+<code>Join</code>の<code>f (FreeMonad f a)</code>を展開するのにどうしても必要なようだ<sup id="fnref:5"><a href="#fn:5" class="footnote">5</a></sup></p>
 
 <p>そしてそもそも<code>f</code>が入るとはどういうことなのかいまいち分からない<br />
 もしかしたら<code>Free</code>はfree monadでなく類似の別な概念のfreeかもしれない<br />
-圏論に精通していないので分からない<sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup></p>
+圏論に精通していないので分からない<sup id="fnref:6"><a href="#fn:6" class="footnote">6</a></sup></p>
 
 <h3 id="operational">operational</h3>
 <p>さらに強いと聞くoperational monadはこのbind型のfree monadなのではと考えた</p>
@@ -266,22 +266,22 @@ free functorとfree monadを合成してもfree monadだろうという発想か
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p><a href="https://ja.wikibooks.org/wiki/Haskell/%E5%9C%8F%E8%AB%96#.E3.83.A2.E3.83.8A.E3.83.89">https://ja.wikibooks.org/wiki/Haskell/%E5%9C%8F%E8%AB%96#.E3.83.A2.E3.83.8A.E3.83.89</a><a href="#fnref:1" rel="reference">&#8617;</a></p>
+      <p><a href="https://ja.wikibooks.org/wiki/Haskell/%E5%9C%8F%E8%AB%96#.E3.83.A2.E3.83.8A.E3.83.89">https://ja.wikibooks.org/wiki/Haskell/%E5%9C%8F%E8%AB%96#.E3.83.A2.E3.83.8A.E3.83.89</a> <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:2">
-      <p>むしろmonadの定義としてはjoinの方が自然に見える<a href="#fnref:2" rel="reference">&#8617;</a></p>
+      <p>むしろmonadの定義としてはjoinの方が自然に見える <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:3">
-      <p>functorの制約はhaskellのmonadの定義が悪い<a href="#fnref:3" rel="reference">&#8617;</a></p>
+      <p>functorの制約はhaskellのmonadの定義が悪い <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:4">
-      <p>あまり圏論に明るくないので少し怪しい<a href="#fnref:4" rel="reference">&#8617;</a></p>
+      <p>あまり圏論に明るくないので少し怪しい <a href="#fnref:4" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:5">
-      <p>haskellのmonadがbindである理由かもしれない<a href="#fnref:5" rel="reference">&#8617;</a></p>
+      <p>haskellのmonadがbindである理由かもしれない <a href="#fnref:5" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:6">
-      <p>圏論に精通していれば分かるのかどうかも分からない<a href="#fnref:6" rel="reference">&#8617;</a></p>
+      <p>圏論に精通していれば分かるのかどうかも分からない <a href="#fnref:6" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

@@ -9,28 +9,8 @@
   <meta name="author" content="そろうさぎ">
 
   
-  <meta name="description" content="完全に出遅れたが書いてみた (lazy kで)
-実行が遅すぎて発見の希望が持てない 1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-FWDS細胞
-BSVO細胞
-TORK細胞
-PKNG細胞
-LGJC細胞
-HCFY細胞
-DUBU細胞
-ZQXQ細胞
-VMTM細胞
-... 1
-`k````sii``s`k``s &hellip;">
+  <meta name="description" content="1
+$ tailf foo | bar &gt;&gt; foo もちろん逐次処理するコマンドでないといけない 例えばsedする時は-u --unbufferedoptionが要るなど 困ったらwhileに突っ込めば解決 shでも可 &gt;&gt;を&gt;にすると動いたり動かなかったりする &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -94,6 +74,60 @@ VMTM細胞
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2014/07/05/redirect-stdio-cyclically/">標準入出力を循環的にリダイレクトする</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-05T20:55:05+09:00" pubdate data-updated="true">Jul 5<sup>th</sup>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="sh"><span class="line"><span class="nv">$ </span>tailf foo <span class="p">|</span> bar &gt;&gt; foo
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>もちろん逐次処理するコマンドでないといけない
+    <ul>
+      <li>例えば<code>sed</code>する時は<code>-u --unbuffered</code>optionが要るなど</li>
+      <li>困ったら<code>while</code>に突っ込めば解決</li>
+    </ul>
+  </li>
+  <li><code>sh</code>でも可</li>
+  <li><code>&gt;&gt;</code>を<code>&gt;</code>にすると動いたり動かなかったりする
+    <ul>
+      <li>誰か解説ください</li>
+    </ul>
+  </li>
+  <li>例えば <code>$ echo &gt; foo &amp;&amp; tailf foo | tee &gt;&amp;2 | sed -ue 's/$/*/' &gt;&gt; foo</code> とかすると楽しい</li>
+</ul>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2014/06/18/generate-stap-cells/">STAP細胞が見つかるまでひたすら適当な細胞を生成し続けるプログラム</a></h1>
     
     
@@ -110,7 +144,7 @@ VMTM細胞
   
 
 
-<time datetime="2014-06-18T00:18:42+09:00" pubdate data-updated="true">Jun 18<span>th</span>, 2014</time>
+<time datetime="2014-06-18T00:18:42+09:00" pubdate data-updated="true">Jun 18<sup>th</sup>, 2014</time>
         
       </p>
     
@@ -183,7 +217,7 @@ VMTM細胞
   
 
 
-<time datetime="2014-06-17T20:51:00+09:00" pubdate data-updated="true">Jun 17<span>th</span>, 2014</time>
+<time datetime="2014-06-17T20:51:00+09:00" pubdate data-updated="true">Jun 17<sup>th</sup>, 2014</time>
         
       </p>
     
@@ -244,7 +278,7 @@ VMTM細胞
   
 
 
-<time datetime="2014-06-10T21:38:12+09:00" pubdate data-updated="true">Jun 10<span>th</span>, 2014</time>
+<time datetime="2014-06-10T21:38:12+09:00" pubdate data-updated="true">Jun 10<sup>th</sup>, 2014</time>
         
       </p>
     
@@ -295,7 +329,7 @@ VMTM細胞
   
 
 
-<time datetime="2014-05-16T22:23:42+09:00" pubdate data-updated="true">May 16<span>th</span>, 2014</time>
+<time datetime="2014-05-16T22:23:42+09:00" pubdate data-updated="true">May 16<sup>th</sup>, 2014</time>
         
       </p>
     
@@ -350,7 +384,7 @@ VMTM細胞
   
 
 
-<time datetime="2014-04-27T18:00:42+09:00" pubdate data-updated="true">Apr 27<span>th</span>, 2014</time>
+<time datetime="2014-04-27T18:00:42+09:00" pubdate data-updated="true">Apr 27<sup>th</sup>, 2014</time>
         
       </p>
     
@@ -450,7 +484,7 @@ VMTM細胞
   
 
 
-<time datetime="2014-04-17T23:45:00+09:00" pubdate data-updated="true">Apr 17<span>th</span>, 2014</time>
+<time datetime="2014-04-17T23:45:00+09:00" pubdate data-updated="true">Apr 17<sup>th</sup>, 2014</time>
         
       </p>
     
@@ -503,7 +537,7 @@ VMTM細胞
   
 
 
-<time datetime="2014-04-17T23:44:24+09:00" pubdate data-updated="true">Apr 17<span>th</span>, 2014</time>
+<time datetime="2014-04-17T23:44:24+09:00" pubdate data-updated="true">Apr 17<sup>th</sup>, 2014</time>
         
       </p>
     
@@ -547,7 +581,7 @@ VMTM細胞
   
 
 
-<time datetime="2014-04-13T16:19:23+09:00" pubdate data-updated="true">Apr 13<span>th</span>, 2014</time>
+<time datetime="2014-04-13T16:19:23+09:00" pubdate data-updated="true">Apr 13<sup>th</sup>, 2014</time>
         
       </p>
     
@@ -588,7 +622,7 @@ VMTM細胞
   
 
 
-<time datetime="2014-04-13T13:53:18+09:00" pubdate data-updated="true">Apr 13<span>th</span>, 2014</time>
+<time datetime="2014-04-13T13:53:18+09:00" pubdate data-updated="true">Apr 13<sup>th</sup>, 2014</time>
         
       </p>
     
@@ -662,136 +696,9 @@ VMTM細胞
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/04/13/fizzbuzz-in-lazy-k/">Lazk Kでfizzbuzz書いた</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-04-13T02:27:48+09:00" pubdate data-updated="true">Apr 13<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><ul>
-  <li>妥協してschemeで書いた</li>
-  <li>非常に簡単</li>
-  <li>lazier.scmが強力すぎた</li>
-  <li><code>$ grep -c '\&lt;[ski]\&gt;'</code>すると2 (2行 計3つ)</li>
-  <li>4300byte</li>
-</ul>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-<span class="line-number">16</span>
-<span class="line-number">17</span>
-<span class="line-number">18</span>
-<span class="line-number">19</span>
-<span class="line-number">20</span>
-<span class="line-number">21</span>
-<span class="line-number">22</span>
-<span class="line-number">23</span>
-<span class="line-number">24</span>
-<span class="line-number">25</span>
-<span class="line-number">26</span>
-<span class="line-number">27</span>
-<span class="line-number">28</span>
-<span class="line-number">29</span>
-<span class="line-number">30</span>
-<span class="line-number">31</span>
-<span class="line-number">32</span>
-<span class="line-number">33</span>
-<span class="line-number">34</span>
-<span class="line-number">35</span>
-</pre></td><td class="code"><pre><code class="scheme"><span class="line"><span class="p">(</span><span class="nb">load </span><span class="s">&quot;/path/to/lazier.scm&quot;</span><span class="p">)</span>
-</span><span class="line"><span class="p">(</span><span class="nb">load </span><span class="s">&quot;/path/to/prelude.scm&quot;</span><span class="p">)</span>
-</span><span class="line"><span class="p">(</span><span class="nb">load </span><span class="s">&quot;/path/to/prelude-numbers.scm&quot;</span><span class="p">)</span>
-</span><span class="line">
-</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">ifzero</span> <span class="nv">n</span> <span class="nv">x</span> <span class="nv">y</span><span class="p">)</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">ifnonzero</span> <span class="nv">n</span> <span class="nv">y</span> <span class="nv">x</span><span class="p">))</span>
-</span><span class="line">
-</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">pred</span> <span class="nv">n</span><span class="p">)</span> <span class="o">&#39;</span><span class="p">(</span><span class="k">lambda </span><span class="p">(</span><span class="nf">f</span> <span class="nv">x</span><span class="p">)</span> <span class="p">(</span><span class="nf">n</span> <span class="p">(</span><span class="k">lambda </span><span class="p">(</span><span class="nf">p</span> <span class="nv">q</span><span class="p">)</span> <span class="p">(</span><span class="nf">q</span> <span class="p">(</span><span class="nf">p</span> <span class="nv">f</span><span class="p">)))</span> <span class="p">(</span><span class="nf">k</span> <span class="nv">x</span><span class="p">)</span> <span class="nv">i</span><span class="p">)))</span>
-</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">-</span> <span class="nv">n</span> <span class="nv">m</span><span class="p">)</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">m</span> <span class="nv">pred</span> <span class="nv">n</span><span class="p">))</span>
-</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="ss">&#39;mod</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">Y</span> <span class="p">(</span><span class="k">lambda </span><span class="p">(</span><span class="nf">recur</span> <span class="nv">m</span> <span class="nv">n</span><span class="p">)</span> <span class="p">((</span><span class="nf">if&lt;</span> <span class="nv">m</span> <span class="nv">n</span><span class="p">)</span> <span class="nv">m</span> <span class="p">(</span><span class="nf">recur</span> <span class="p">(</span><span class="nb">- </span><span class="nv">m</span> <span class="nv">n</span><span class="p">)</span> <span class="nv">n</span><span class="p">)))))</span>
-</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="ss">&#39;div</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">Y</span> <span class="p">(</span><span class="k">lambda </span><span class="p">(</span><span class="nf">recur</span> <span class="nv">m</span> <span class="nv">n</span><span class="p">)</span> <span class="p">((</span><span class="nf">if&lt;</span> <span class="nv">m</span> <span class="nv">n</span><span class="p">)</span> <span class="mi">0</span> <span class="p">(</span><span class="nf">succ</span> <span class="p">(</span><span class="nf">recur</span> <span class="p">(</span><span class="nb">- </span><span class="nv">m</span> <span class="nv">n</span><span class="p">)</span> <span class="nv">n</span><span class="p">))))))</span>
-</span><span class="line">
-</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="ss">&#39;map</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">Y</span> <span class="p">(</span><span class="k">lambda </span><span class="p">(</span><span class="nf">recur</span> <span class="nv">f</span> <span class="nv">xs</span><span class="p">)</span> <span class="p">(</span><span class="nb">null? </span><span class="nv">xs</span> <span class="p">()</span> <span class="p">(</span><span class="nb">cons </span><span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nb">car </span><span class="nv">xs</span><span class="p">))</span> <span class="p">(</span><span class="nf">recur</span> <span class="nv">f</span> <span class="p">(</span><span class="nb">cdr </span><span class="nv">xs</span><span class="p">)))))))</span>
-</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="ss">&#39;append</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">Y</span> <span class="p">(</span><span class="k">lambda </span><span class="p">(</span><span class="nf">recur</span> <span class="nv">xs</span> <span class="nv">ys</span><span class="p">)</span> <span class="p">(</span><span class="nb">null? </span><span class="nv">xs</span> <span class="nv">ys</span> <span class="p">(</span><span class="nb">cons </span><span class="p">(</span><span class="nb">car </span><span class="nv">xs</span><span class="p">)</span> <span class="p">(</span><span class="nf">recur</span> <span class="p">(</span><span class="nb">cdr </span><span class="nv">xs</span><span class="p">)</span> <span class="nv">ys</span><span class="p">))))))</span>
-</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="ss">&#39;concat</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">Y</span> <span class="p">(</span><span class="k">lambda </span><span class="p">(</span><span class="nf">recur</span> <span class="nv">xs</span><span class="p">)</span> <span class="p">(</span><span class="nb">null? </span><span class="nv">xs</span> <span class="p">()</span> <span class="p">(</span><span class="nb">append </span><span class="p">(</span><span class="nb">car </span><span class="nv">xs</span><span class="p">)</span> <span class="p">(</span><span class="nf">recur</span> <span class="p">(</span><span class="nb">cdr </span><span class="nv">xs</span><span class="p">)))))))</span>
-</span><span class="line">
-</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="ss">&#39;enum-from</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">Y</span> <span class="p">(</span><span class="k">lambda </span><span class="p">(</span><span class="nf">recur</span> <span class="nv">n</span><span class="p">)</span> <span class="p">(</span><span class="nb">cons </span><span class="nv">n</span> <span class="p">(</span><span class="nf">recur</span> <span class="p">(</span><span class="nf">succ</span> <span class="nv">n</span><span class="p">))))))</span>
-</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">append-newline</span> <span class="nv">x</span><span class="p">)</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">append</span> <span class="nv">x</span> <span class="p">(</span><span class="nb">cons </span><span class="mi">10</span> <span class="p">())))</span>
-</span><span class="line">
-</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="ss">&#39;fizz</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">cons</span> <span class="mi">102</span> <span class="p">(</span><span class="nb">cons </span><span class="mi">105</span> <span class="p">(</span><span class="nb">cons </span><span class="mi">122</span> <span class="p">(</span><span class="nb">cons </span><span class="mi">122</span> <span class="p">())))))</span>
-</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="ss">&#39;buzz</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">cons</span> <span class="mi">98</span> <span class="p">(</span><span class="nb">cons </span><span class="mi">117</span> <span class="p">(</span><span class="nb">cons </span><span class="mi">122</span> <span class="p">(</span><span class="nb">cons </span><span class="mi">122</span> <span class="p">())))))</span>
-</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="ss">&#39;fizzbuzz</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">append</span> <span class="nv">fizz</span> <span class="nv">buzz</span><span class="p">))</span>
-</span><span class="line">
-</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="ss">&#39;num-&gt;char</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">+</span> <span class="mi">48</span><span class="p">))</span>
-</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="ss">&#39;posnum-&gt;string</span>
-</span><span class="line">          <span class="o">&#39;</span><span class="p">(</span><span class="nv">Y</span> <span class="p">(</span><span class="k">lambda </span><span class="p">(</span><span class="nf">recur</span> <span class="nv">n</span><span class="p">)</span> <span class="p">((</span><span class="nf">ifzero</span> <span class="nv">n</span><span class="p">)</span> <span class="p">()</span>
-</span><span class="line">                                            <span class="p">(</span><span class="nb">append </span><span class="p">(</span><span class="nf">recur</span> <span class="p">(</span><span class="nf">div</span> <span class="nv">n</span> <span class="mi">10</span><span class="p">))</span> <span class="p">(</span><span class="nb">cons </span><span class="p">(</span><span class="nf">num-&gt;char</span> <span class="p">(</span><span class="nf">mod</span> <span class="nv">n</span> <span class="mi">10</span><span class="p">))</span> <span class="p">()))))))</span>
-</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">num-&gt;string</span> <span class="nv">n</span><span class="p">)</span> <span class="o">&#39;</span><span class="p">((</span><span class="nf">ifnonzero</span> <span class="nv">n</span><span class="p">)</span> <span class="p">(</span><span class="nf">posnum-&gt;string</span> <span class="nv">n</span><span class="p">)</span> <span class="p">(</span><span class="nf">num-&gt;char</span> <span class="mi">0</span><span class="p">)))</span>
-</span><span class="line">
-</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">num-&gt;fizzbuzz</span> <span class="nv">n</span><span class="p">)</span> <span class="o">&#39;</span><span class="p">((</span><span class="nf">ifzero</span> <span class="p">(</span><span class="nf">mod</span> <span class="nv">n</span> <span class="mi">15</span><span class="p">)</span> <span class="nv">fizzbuzz</span>
-</span><span class="line">                                       <span class="p">(</span><span class="nf">ifzero</span> <span class="p">(</span><span class="nf">mod</span> <span class="nv">n</span> <span class="mi">5</span><span class="p">)</span> <span class="nv">buzz</span>
-</span><span class="line">                                               <span class="p">(</span><span class="nf">ifzero</span> <span class="p">(</span><span class="nf">mod</span> <span class="nv">n</span> <span class="mi">3</span><span class="p">)</span> <span class="nv">fizz</span>
-</span><span class="line">                                                       <span class="p">(</span><span class="nf">num-&gt;string</span> <span class="nv">n</span><span class="p">))))))</span>
-</span><span class="line">
-</span><span class="line"><span class="p">(</span><span class="nf">lazy-def</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">main</span> <span class="nv">input</span><span class="p">)</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">concat</span> <span class="p">(</span><span class="nb">map </span><span class="p">(</span><span class="nf">o</span> <span class="nv">append-newline</span> <span class="nv">num-&gt;fizzbuzz</span><span class="p">)</span> <span class="p">(</span><span class="nf">enum-from</span> <span class="mi">1</span><span class="p">))))</span>
-</span><span class="line"><span class="p">(</span><span class="nf">print-as-unlambda</span> <span class="p">(</span><span class="nf">laze</span> <span class="ss">&#39;main</span><span class="p">))</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<hr />
-
-<dl>
-  <dt>2014/04/17</dt>
-  <dd>
-    <ul>
-      <li>Yコンビネータの無駄な再定義を除去</li>
-      <li>map系関数のnil周りを修正</li>
-      <li>入力の無視の方法を改良</li>
-    </ul>
-  </dd>
-</dl>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
-      <a class="prev" href="/blog/page/2/">&larr; Older</a>
+      <a class="prev" href="2">&larr; Older</a>
     
     <a href="/blog/archives">Blog Archives</a>
     
@@ -802,6 +709,10 @@ VMTM細胞
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/07/05/redirect-stdio-cyclically/">標準入出力を循環的にリダイレクトする</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2014/06/18/generate-stap-cells/">STAP細胞が見つかるまでひたすら適当な細胞を生成し続けるプログラム</a>
@@ -817,10 +728,6 @@ VMTM細胞
     
       <li class="post">
         <a href="/blog/2014/05/16/tried-idris/">Idrisに挑戦した</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/04/27/quine-in-brainfuck/">Brainfuckでquine書いた</a>
       </li>
     
   </ul>

@@ -89,7 +89,7 @@ fork = join . lift ※ list-monadで非決定的計算できるのは、parsec�
   
 
 
-<time datetime="2014-01-25T18:28:27+09:00" pubdate data-updated="true">Jan 25<span>th</span>, 2014</time>
+<time datetime="2014-01-25T18:28:27+09:00" pubdate data-updated="true">Jan 25<sup>th</sup>, 2014</time>
         
       </p>
     
@@ -111,7 +111,7 @@ fork = join . lift ※ list-monadで非決定的計算できるのは、parsec�
 <p><code>ParsecT</code>をlist-monadと合成するだけなので、上のように定義する<br />
 型注釈なしなら<code>join . lift :: (Monad (t m), Monad m, MonadTrans t) =&gt; m (t m a) -&gt; t m a</code></p>
 
-<p>非決定的の厳密な定義を知らないが、chooseとfail<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>が使えるので非決定的と呼んでいいはず<br />
+<p>非決定的の厳密な定義を知らないが、chooseとfail<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>が使えるので非決定的と呼んでいいはず<br />
 ただし<code>fail = fork []</code>であって、<code>Prelude.fail</code>(<code>Text.Parsec.parserFail</code>)ではない</p>
 
 <h2 id="section">例</h2>
@@ -174,7 +174,7 @@ fork = join . lift ※ list-monadで非決定的計算できるのは、parsec�
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>On Lispの説明による<a href="#fnref:1" rel="reference">&#8617;</a></p>
+      <p>On Lispの説明による <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -200,7 +200,7 @@ fork = join . lift ※ list-monadで非決定的計算できるのは、parsec�
   
 
 
-<time datetime="2014-01-25T18:28:27+09:00" pubdate data-updated="true">Jan 25<span>th</span>, 2014</time>
+<time datetime="2014-01-25T18:28:27+09:00" pubdate data-updated="true">Jan 25<sup>th</sup>, 2014</time>
       
 
 <span class="categories">
@@ -241,6 +241,10 @@ fork = join . lift ※ list-monadで非決定的計算できるのは、parsec�
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/07/05/redirect-stdio-cyclically/">標準入出力を循環的にリダイレクトする</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/06/18/generate-stap-cells/">STAP細胞が見つかるまでひたすら適当な細胞を生成し続けるプログラム</a>
       </li>
     
@@ -254,10 +258,6 @@ fork = join . lift ※ list-monadで非決定的計算できるのは、parsec�
     
       <li class="post">
         <a href="/blog/2014/05/16/tried-idris/">Idrisに挑戦した</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/04/27/quine-in-brainfuck/">Brainfuckでquine書いた</a>
       </li>
     
   </ul>

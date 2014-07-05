@@ -92,7 +92,7 @@ instance Functor f =&gt; &hellip;">
   
 
 
-<time datetime="2013-12-29T17:22:11+09:00" pubdate data-updated="true">Dec 29<span>th</span>, 2013</time>
+<time datetime="2013-12-29T17:22:11+09:00" pubdate data-updated="true">Dec 29<sup>th</sup>, 2013</time>
         
       </p>
     
@@ -144,7 +144,7 @@ instance Functor f =&gt; &hellip;">
 
 <h2 id="join">手を動かす: join</h2>
 <p><code>&gt;&gt;=</code>や<code>bind</code>と呼ばれる<code>Monad m =&gt; m a -&gt; (a -&gt; m b) -&gt; m b</code>は<br />
-<code>Control.Monad.join</code>こと<code>Monad m =&gt; m (m a) -&gt; m a</code>で定義できる<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>ので<br />
+<code>Control.Monad.join</code>こと<code>Monad m =&gt; m (m a) -&gt; m a</code>で定義できる<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup><sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>ので<br />
 理解のため<code>join</code>を定義してみる</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
@@ -232,7 +232,7 @@ instance Functor f =&gt; &hellip;">
 </pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="nf">bind</span> <span class="ow">::</span> <span class="p">(</span><span class="kt">Functor</span> <span class="n">m</span><span class="p">,</span> <span class="kt">Monad</span> <span class="n">m</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="n">m</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="p">(</span><span class="n">a</span> <span class="ow">-&gt;</span> <span class="n">m</span> <span class="n">b</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="n">m</span> <span class="n">b</span>
 </span><span class="line"><span class="nf">bind</span> <span class="n">x</span> <span class="n">f</span> <span class="ow">=</span> <span class="n">join</span> <span class="o">$</span> <span class="n">fmap</span> <span class="n">f</span> <span class="n">x</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>である<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup></p>
+<p>である<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup></p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
@@ -243,7 +243,7 @@ instance Functor f =&gt; &hellip;">
 
 <h2 id="section-3">自由</h2>
 <p>弄っていたらいつの間にか気がついた<br />
-<code>Free</code>の<code>free</code>とはおそらくfree monoidやfree magmaの<code>free</code>であろう<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup><br />
+<code>Free</code>の<code>free</code>とはおそらくfree monoidやfree magmaの<code>free</code>であろう<sup id="fnref:4"><a href="#fn:4" class="footnote">4</a></sup><br />
 つまり、公理の等式以外に元の間の関係式をもたない、という意味<br />
 この場合公理とはモナド則</p>
 
@@ -349,11 +349,11 @@ lispに似ているなと感じる</p>
 </span><span class="line">    <span class="p">(</span><span class="o">&gt;&gt;=</span><span class="p">)</span> <span class="n">fa</span> <span class="n">a2fb</span> <span class="ow">=</span> <span class="n">join&#39;</span> <span class="o">$</span> <span class="n">fmap</span> <span class="n">a2fb</span> <span class="n">fa</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 <p>と要Functor制約<br />
-<code>Join</code>の<code>f (FreeMonad f a)</code>を展開するのにどうしても必要なようだ<sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup></p>
+<code>Join</code>の<code>f (FreeMonad f a)</code>を展開するのにどうしても必要なようだ<sup id="fnref:5"><a href="#fn:5" class="footnote">5</a></sup></p>
 
 <p>そしてそもそも<code>f</code>が入るとはどういうことなのかいまいち分からない<br />
 もしかしたら<code>Free</code>はfree monadでなく類似の別な概念のfreeかもしれない<br />
-圏論に精通していないので分からない<sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup></p>
+圏論に精通していないので分からない<sup id="fnref:6"><a href="#fn:6" class="footnote">6</a></sup></p>
 
 <h3 id="operational">operational</h3>
 <p>さらに強いと聞くoperational monadはこのbind型のfree monadなのではと考えた</p>
@@ -409,22 +409,22 @@ free functorとfree monadを合成してもfree monadだろうという発想か
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p><a href="https://ja.wikibooks.org/wiki/Haskell/%E5%9C%8F%E8%AB%96#.E3.83.A2.E3.83.8A.E3.83.89">https://ja.wikibooks.org/wiki/Haskell/%E5%9C%8F%E8%AB%96#.E3.83.A2.E3.83.8A.E3.83.89</a><a href="#fnref:1" rel="reference">&#8617;</a></p>
+      <p><a href="https://ja.wikibooks.org/wiki/Haskell/%E5%9C%8F%E8%AB%96#.E3.83.A2.E3.83.8A.E3.83.89">https://ja.wikibooks.org/wiki/Haskell/%E5%9C%8F%E8%AB%96#.E3.83.A2.E3.83.8A.E3.83.89</a> <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:2">
-      <p>むしろmonadの定義としてはjoinの方が自然に見える<a href="#fnref:2" rel="reference">&#8617;</a></p>
+      <p>むしろmonadの定義としてはjoinの方が自然に見える <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:3">
-      <p>functorの制約はhaskellのmonadの定義が悪い<a href="#fnref:3" rel="reference">&#8617;</a></p>
+      <p>functorの制約はhaskellのmonadの定義が悪い <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:4">
-      <p>あまり圏論に明るくないので少し怪しい<a href="#fnref:4" rel="reference">&#8617;</a></p>
+      <p>あまり圏論に明るくないので少し怪しい <a href="#fnref:4" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:5">
-      <p>haskellのmonadがbindである理由かもしれない<a href="#fnref:5" rel="reference">&#8617;</a></p>
+      <p>haskellのmonadがbindである理由かもしれない <a href="#fnref:5" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:6">
-      <p>圏論に精通していれば分かるのかどうかも分からない<a href="#fnref:6" rel="reference">&#8617;</a></p>
+      <p>圏論に精通していれば分かるのかどうかも分からない <a href="#fnref:6" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -450,7 +450,7 @@ free functorとfree monadを合成してもfree monadだろうという発想か
   
 
 
-<time datetime="2013-12-29T17:22:11+09:00" pubdate data-updated="true">Dec 29<span>th</span>, 2013</time>
+<time datetime="2013-12-29T17:22:11+09:00" pubdate data-updated="true">Dec 29<sup>th</sup>, 2013</time>
       
 
 <span class="categories">
@@ -491,6 +491,10 @@ free functorとfree monadを合成してもfree monadだろうという発想か
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/07/05/redirect-stdio-cyclically/">標準入出力を循環的にリダイレクトする</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/06/18/generate-stap-cells/">STAP細胞が見つかるまでひたすら適当な細胞を生成し続けるプログラム</a>
       </li>
     
@@ -504,10 +508,6 @@ free functorとfree monadを合成してもfree monadだろうという発想か
     
       <li class="post">
         <a href="/blog/2014/05/16/tried-idris/">Idrisに挑戦した</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/04/27/quine-in-brainfuck/">Brainfuckでquine書いた</a>
       </li>
     
   </ul>

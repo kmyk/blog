@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: shell | Higher Order うさぎ小屋]]></title>
+  <link href="http://solorab.github.io/blog/categories/shell/atom.xml" rel="self"/>
+  <link href="http://solorab.github.io/"/>
+  <updated>2014-07-05T21:28:42+09:00</updated>
+  <id>http://solorab.github.io/</id>
+  <author>
+    <name><![CDATA[そろうさぎ]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[標準入出力を循環的にリダイレクトする]]></title>
+    <link href="http://solorab.github.io/blog/2014/07/05/redirect-stdio-cyclically/"/>
+    <updated>2014-07-05T20:55:05+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/07/05/redirect-stdio-cyclically</id>
+    <content type="html"><![CDATA[<p><code>sh
+    $ tailf foo | bar &gt;&gt; foo
+</code></p>
+
+<ul>
+  <li>もちろん逐次処理するコマンドでないといけない
+    <ul>
+      <li>例えば<code>sed</code>する時は<code>-u --unbuffered</code>optionが要るなど</li>
+      <li>困ったら<code>while</code>に突っ込めば解決</li>
+    </ul>
+  </li>
+  <li><code>sh</code>でも可</li>
+  <li><code>&gt;&gt;</code>を<code>&gt;</code>にすると動いたり動かなかったりする
+    <ul>
+      <li>誰か解説ください</li>
+    </ul>
+  </li>
+  <li>例えば <code>$ echo &gt; foo &amp;&amp; tailf foo | tee &gt;&amp;2 | sed -ue 's/$/*/' &gt;&gt; foo</code> とかすると楽しい</li>
+</ul>
+]]></content>
+  </entry>
+  
+</feed>

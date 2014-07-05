@@ -4,7 +4,7 @@
   <title><![CDATA[Category: stdio | Higher Order うさぎ小屋]]></title>
   <link href="http://solorab.github.io/blog/categories/stdio/atom.xml" rel="self"/>
   <link href="http://solorab.github.io/"/>
-  <updated>2014-07-05T21:28:42+09:00</updated>
+  <updated>2014-07-05T21:35:56+09:00</updated>
   <id>http://solorab.github.io/</id>
   <author>
     <name><![CDATA[そろうさぎ]]></name>
@@ -14,10 +14,10 @@
 
   
   <entry>
-    <title type="html"><![CDATA[標準入出力を循環的にリダイレクトする]]></title>
-    <link href="http://solorab.github.io/blog/2014/07/05/redirect-stdio-cyclically/"/>
+    <title type="html"><![CDATA[循環的にリダイレクトする]]></title>
+    <link href="http://solorab.github.io/blog/2014/07/05/redirect-cyclically/"/>
     <updated>2014-07-05T20:55:05+09:00</updated>
-    <id>http://solorab.github.io/blog/2014/07/05/redirect-stdio-cyclically</id>
+    <id>http://solorab.github.io/blog/2014/07/05/redirect-cyclically</id>
     <content type="html"><![CDATA[<p><code>sh
     $ tailf foo | bar &gt;&gt; foo
 </code></p>

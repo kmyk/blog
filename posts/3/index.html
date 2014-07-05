@@ -9,13 +9,15 @@
   <meta name="author" content="そろうさぎ">
 
   
-  <meta name="description" content="以前少し挑戦して敗れたが、ふと思い出してリベンジした 結論としてはfree monadとはmonadをdataとして表現したものであると 1
+  <meta name="description" content="1
 2
 3
 4
 5
-data Free f a = Pure a | Free (f (Free f a))
-instance Functor f =&gt; &hellip;">
+6
+7
+&gt;&gt;&gt; parse (many even&#39;) &quot;numbers&quot; [0,0,2,4,9999]
+Right [0,0,2,4] &gt;&gt;&gt; parse (many (zero &lt;|&gt; odd&#39 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -73,6 +75,63 @@ instance Functor f =&gt; &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/01/25/parse-list-of-ints-with-parsec/">[Int]をparsecでパースする</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-25T17:50:35+09:00" pubdate data-updated="true">Jan 25<sup>th</sup>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="o">&gt;&gt;&gt;</span> <span class="n">parse</span> <span class="p">(</span><span class="n">many</span> <span class="n">even&#39;</span><span class="p">)</span> <span class="s">&quot;numbers&quot;</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">9999</span><span class="p">]</span>
+</span><span class="line"><span class="kt">Right</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+</span><span class="line">
+</span><span class="line"><span class="o">&gt;&gt;&gt;</span> <span class="n">parse</span> <span class="p">(</span><span class="n">many</span> <span class="p">(</span><span class="n">zero</span> <span class="o">&lt;|&gt;</span> <span class="n">odd&#39;</span><span class="p">)</span> <span class="o">&gt;&gt;</span> <span class="n">eof</span><span class="p">)</span> <span class="s">&quot;numbers&quot;</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">]</span>
+</span><span class="line"><span class="kt">Left</span> <span class="s">&quot;numbers&quot;</span> <span class="p">(</span><span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="n">column</span> <span class="mi">6</span><span class="p">)</span><span class="kt">:</span>
+</span><span class="line"><span class="nf">unexpected</span> <span class="mi">8</span>
+</span><span class="line"><span class="nf">expecting</span> <span class="n">zero</span><span class="p">,</span> <span class="n">odd</span> <span class="n">or</span> <span class="n">end</span> <span class="kr">of</span> <span class="n">input</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><code>[Int]</code>だとおふざけだが、複雑な何かだと便利かもしれない<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/01/25/parse-list-of-ints-with-parsec/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -364,6 +423,10 @@ CasperJS + PhantomJS でかなり強引に処理</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/07/05/require-order-in-python-argparse/">Pythonのargparseでrequire_order</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/07/05/redirect-cyclically/">循環的にリダイレクトする</a>
       </li>
     
@@ -377,10 +440,6 @@ CasperJS + PhantomJS でかなり強引に処理</p>
     
       <li class="post">
         <a href="/blog/2014/06/10/instance-enum-functions/">関数をEnumにして遊んだ</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/05/16/tried-idris/">Idrisに挑戦した</a>
       </li>
     
   </ul>

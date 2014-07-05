@@ -9,8 +9,8 @@
   <meta name="author" content="そろうさぎ">
 
   
-  <meta name="description" content="1
-$ tailf foo | bar &gt;&gt; foo もちろん逐次処理するコマンドでないといけない 例えばsedする時は-u --unbufferedoptionが要るなど 困ったらwhileに突っ込めば解決 shでも可 &gt;&gt;を&gt;にすると動いたり動かなかったりする &hellip;">
+  <meta name="description" content="optionでない引数以降は全て非optionにしたい
+つまり --foo a --bar b c を --foo --bar -- a b c ではなく --foo -- a --bar b c と等価にしたい &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -68,6 +68,56 @@ $ tailf foo | bar &gt;&gt; foo もちろん逐次処理するコマンドでな�
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/07/05/require-order-in-python-argparse/">Pythonのargparseでrequire_order</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-05T22:06:54+09:00" pubdate data-updated="true">Jul 5<sup>th</sup>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>optionでない引数以降は全て非optionにしたい<br />
+つまり <code>--foo a --bar b c</code> を <code>--foo --bar -- a b c</code> ではなく <code>--foo -- a --bar b c</code> と等価にしたい<br />
+perlのGetOptなどだと<code>require_order</code>と<code>permute</code>という指定子がありますよね</p>
+
+<p>調べたところ、</p>
+
+<ul>
+  <li><code>nargs=argparse.REMAINDER</code>を使えば良い</li>
+  <li><code>nargs=argparse.PARSER</code>なら引数がない時失敗 (<code>*</code>と<code>+</code>のような違い)</li>
+</ul>
+
+<p>他にも<code>argparse.SUPPRESS</code>を見つけた<br />
+<code>description</code>や<code>help</code>といったoption引数に入れるとhelpやusageから消える</p>
+
+<p>documentに書いてなかったりするあたりは注意すべきなのかな</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -601,101 +651,6 @@ $ tailf foo | bar &gt;&gt; foo もちろん逐次処理するコマンドでな�
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/04/13/one-point-basis/">一点基底について調べた</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-04-13T13:53:18+09:00" pubdate data-updated="true">Apr 13<sup>th</sup>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><table>
-  <thead>
-    <tr>
-      <th>発見者</th>
-      <th>一点基底</th>
-      <th><code>S</code></th>
-      <th><code>K</code></th>
-      <th>他</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td> </td>
-      <td><code>\x.xSK</code></td>
-      <td><code>X(X(X(XX)))</code></td>
-      <td><code>X(X(XX))</code></td>
-      <td><code>I = XX</code>, iotaで使われている</td>
-    </tr>
-    <tr>
-      <td>John Barkley Rosser</td>
-      <td><code>\x.xKSK</code></td>
-      <td><code>X(XX)</code></td>
-      <td><code>XXX</code></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Corrado Bohm</td>
-      <td><code>\x.x(fS(KI))K</code></td>
-      <td><code>X(XX)</code></td>
-      <td><code>XX</code></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Henk Barendregt</td>
-      <td><code>\x.x(fS(KK))K</code></td>
-      <td><code>X(XXX)</code></td>
-      <td><code>XXX</code></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Jeroen Fokker</td>
-      <td><code>\f.fS(\xyz.x)</code></td>
-      <td><code>X(XX)</code></td>
-      <td><code>XX</code></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Carew Meredith</td>
-      <td><code>\abcd.cd(a(Kd))</code></td>
-      <td><code>V(XXX(XX)(XXXX(XXXX(VV))(K(XXXX))))</code></td>
-      <td><code>XXXX(XXXX(XXX(XX))(XX))(XX)</code></td>
-      <td><code>V = XXXX(K(XXXX))</code>とする</td>
-    </tr>
-  </tbody>
-</table>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2014/04/13/one-point-basis/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="2">&larr; Older</a>
@@ -711,6 +666,10 @@ $ tailf foo | bar &gt;&gt; foo もちろん逐次処理するコマンドでな�
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/07/05/require-order-in-python-argparse/">Pythonのargparseでrequire_order</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/07/05/redirect-cyclically/">循環的にリダイレクトする</a>
       </li>
     
@@ -724,10 +683,6 @@ $ tailf foo | bar &gt;&gt; foo もちろん逐次処理するコマンドでな�
     
       <li class="post">
         <a href="/blog/2014/06/10/instance-enum-functions/">関数をEnumにして遊んだ</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/05/16/tried-idris/">Idrisに挑戦した</a>
       </li>
     
   </ul>

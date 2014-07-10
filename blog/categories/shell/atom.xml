@@ -4,7 +4,7 @@
   <title><![CDATA[Category: shell | Higher Order うさぎ小屋]]></title>
   <link href="http://solorab.github.io/blog/categories/shell/atom.xml" rel="self"/>
   <link href="http://solorab.github.io/"/>
-  <updated>2014-07-05T22:56:41+09:00</updated>
+  <updated>2014-07-11T02:01:16+09:00</updated>
   <id>http://solorab.github.io/</id>
   <author>
     <name><![CDATA[そろうさぎ]]></name>
@@ -12,6 +12,224 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[競技プログラミング用の基本的な道具の使い方]]></title>
+    <link href="http://solorab.github.io/blog/2014/07/11/basic-tools-for-competitive-programming/"/>
+    <updated>2014-07-11T01:38:41+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/07/11/basic-tools-for-competitive-programming</id>
+    <content type="html"><![CDATA[<p>友人達のために</p>
+
+<ul>
+  <li>gdb</li>
+  <li>gprof</li>
+  <li>redirect</li>
+  <li>diff</li>
+</ul>
+
+<!-- more -->
+
+<h1 id="gdb">gdb</h1>
+<p><code>GNU debugger</code></p>
+
+<p><code>sh
+    $ clang++ -g a.cpp
+</code></p>
+
+<p>のように、<code>-g</code>optionを付けてdebug用の情報を埋め込みコンパイルしたバイナリを</p>
+
+<p><code>sh
+   $ gdb a.out
+</code></p>
+
+<p>と引数に起動する</p>
+
+<p>種々の情報の後に以下のようなプロンプトが現れ、ここにコマンドを入力していく</p>
+
+<p><code>plain
+    (gdb)
+</code></p>
+
+<h2 id="run--start">run / start</h2>
+
+<p><code>plain
+    (gdb) run
+</code></p>
+
+<p>とすると、バイナリの実行が始まる</p>
+
+<p><code>plain
+    (gdb) run &lt; sample.in
+</code></p>
+
+<p>とすれば、入力を指定できる</p>
+
+<p><code>start</code>で起動した場合、<code>main</code>関数でbreakする</p>
+
+<h2 id="list">list</h2>
+<p><code>plain
+    (gdb) list
+</code></p>
+
+<p>現在停止位置周辺のソースコードを表示する</p>
+
+<p><code>l</code>, <code>li</code>, <code>lis</code>等でも反応する 他のコマンドでも同様である</p>
+
+<h2 id="break">break</h2>
+
+<p><code>plain
+    (gdb) break 42
+    (gdb) break solve
+</code></p>
+
+<p>などと行や関数を指定しbreak pointを設定する<br />
+実行中、指定した部分に到達したとき実行が一時停止する</p>
+
+<h2 id="print">print</h2>
+
+<p>``` plain
+    (gdb) print ary
+    $1 = {1, 2, 3, 4, 0 &lt;repeats 252 times&gt;}</p>
+
+<p>```</p>
+
+<p>指定した変数の中身を表示する</p>
+
+<h2 id="watch">watch</h2>
+
+<p>指定した変数の中身が変更された時、停止する</p>
+
+<p>``` plain
+    (gdb) watch x
+    Hardware watchpoint 1: x
+    (gdb) run
+    Starting program: /path/to/a.out
+    Hardware watchpoint 1: x</p>
+
+<pre><code>Old value = 0
+New value = 1
+0x000000000040055c in func (n=3) at a.c:4
+4       int func(int n) { return x = n % 2; } ```
+</code></pre>
+
+<h2 id="next--step">next / step</h2>
+
+<p><code>plain
+    (gdb) next
+    (gdb) step
+</code></p>
+
+<p>現在位置の次の行を実行し停止する<br />
+<code>step</code>は関数呼び出しの内側へ入り込んでいく</p>
+
+<h2 id="cont">cont</h2>
+
+<p><code>plain
+    (gdb) cont
+</code></p>
+
+<p>実行を再開する 次のbreak pointまで停止しない</p>
+
+<h2 id="up--down">up / down</h2>
+
+<p><code>plain
+    (gdb) up
+    (gdb) down
+</code></p>
+
+<p>stackを上がったり下がったり</p>
+
+<h2 id="backtrace">backtrace</h2>
+<p>どのような関数呼び出しを経て現在位置に至ったかを表示する<br />
+segvした後に呼ぶと、何処でこけたか判明する</p>
+
+<p><code>plain
+    (gdb) backtrace
+    #0  fact (n=0) at a.c:3
+    #1  0x000000000040054b in fact (n=1) at a.c:3
+    #2  0x000000000040054b in fact (n=2) at a.c:3
+    #3  0x000000000040054b in fact (n=3) at a.c:3
+    #4  0x000000000040054b in fact (n=4) at a.c:3
+    #5  0x0000000000400566 in main () at a.c:6
+</code></p>
+
+<h1 id="gprof">gprof</h1>
+
+<p><code>sh
+    $ clang++ -pg a.cpp
+</code></p>
+
+<p>のように、<code>-pg</code>optionを付けてprofile用の情報を埋め込みコンパイルする<br />
+manを見ると、末尾の<code>g</code>は<code>-g</code>とは違うようだ</p>
+
+<p>そうしてできたバイナリを実行するとプロファイル結果が出力されるので、その後<code>gprof</code>を呼び出すとその結果を表示してくれる</p>
+
+<p><code>sh
+    $ ./a.out #=&gt; gmon.out
+    $ gprof a.out
+</code></p>
+
+<h1 id="redirect">redirect</h1>
+
+<p>入力したい文字列をクリップボードでなくファイルに書き出し、</p>
+
+<p><code>sh
+    $ cat test.in | ./a.out
+</code></p>
+
+<p>とすると、ファイルの中身を自動で入力に渡してくれる</p>
+
+<p><code>sh
+    $ ./a.out &lt; test.in &gt; test.out
+</code></p>
+
+<p>等とすれば、さらに出力をファイルに書き出すこともできる</p>
+
+<h1 id="diff">diff</h1>
+
+<p><code>sh
+    $ cat foo
+    abc
+    def
+    xyz
+    $ cat bar
+    and
+    def
+    xyzzy
+</code></p>
+
+<p>のように、ファイルに格納された比較対象を、</p>
+
+<p><code>sh
+    $ diff foo bar
+    1c1
+    &lt; abc
+    ---
+    &gt; and
+    3c3
+    &lt; xyz
+    ---
+    &gt; xyzzy
+</code></p>
+
+<p>と<code>diff</code>に渡すと、行ごとの比較をしてくれる</p>
+
+<h2 id="more">more</h2>
+
+<p><code>sh
+    $ cat sample.in | ./a.out | diff - sample.out
+    $ diff &lt;(./a.out &lt; sample.in) sample.out
+</code></p>
+
+<p>等とすると便利</p>
+
+<p><code>sh
+    $ diff out out
+</code></p>
+
+<p>しないように注意</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[循環的にリダイレクトする]]></title>

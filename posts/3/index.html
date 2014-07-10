@@ -9,15 +9,10 @@
   <meta name="author" content="そろうさぎ">
 
   
-  <meta name="description" content="1
+  <meta name="description" content="ざっくりparseして、出力をfilterやheadで加工したかった 1
 2
-3
-4
-5
-6
-7
-&gt;&gt;&gt; parse (many even&#39;) &quot;numbers&quot; [0,0,2,4,9999]
-Right [0,0,2,4] &gt;&gt;&gt; parse (many (zero &lt;|&gt; odd&#39 &hellip;">
+fork :: [ParsecT s u [] a] -&gt; ParsecT s u [] a
+fork = join . lift ※ list-monadで非決定的計算できるのは、parsecに限った話ではない ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -75,6 +70,55 @@ Right [0,0,2,4] &gt;&gt;&gt; parse (many (zero &lt;|&gt; odd&#39 &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/01/25/non-deterministic-parsing-with-parsec/">Parsecで非決定的パース</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-25T18:28:27+09:00" pubdate data-updated="true">Jan 25<sup>th</sup>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>ざっくりparseして、出力を<code>filter</code>や<code>head</code>で加工したかった</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="nf">fork</span> <span class="ow">::</span> <span class="p">[</span><span class="kt">ParsecT</span> <span class="n">s</span> <span class="n">u</span> <span class="kt">[]</span> <span class="n">a</span><span class="p">]</span> <span class="ow">-&gt;</span> <span class="kt">ParsecT</span> <span class="n">s</span> <span class="n">u</span> <span class="kt">[]</span> <span class="n">a</span>
+</span><span class="line"><span class="nf">fork</span> <span class="ow">=</span> <span class="n">join</span> <span class="o">.</span> <span class="n">lift</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>※ list-monadで非決定的計算できるのは、parsecに限った話ではない</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/01/25/non-deterministic-parsing-with-parsec/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -423,6 +467,10 @@ CasperJS + PhantomJS でかなり強引に処理</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/07/11/basic-tools-for-competitive-programming/">競技プログラミング用の基本的な道具の使い方</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/07/05/require-order-in-python-argparse/">Pythonのargparseでrequire_order</a>
       </li>
     
@@ -436,10 +484,6 @@ CasperJS + PhantomJS でかなり強引に処理</p>
     
       <li class="post">
         <a href="/blog/2014/06/17/quine-in-awk/">Awkでquine書いた</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/06/10/instance-enum-functions/">関数をEnumにして遊んだ</a>
       </li>
     
   </ul>

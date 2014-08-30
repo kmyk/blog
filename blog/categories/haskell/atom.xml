@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: haskell | Higher Order うさぎ小屋]]></title>
+  <title><![CDATA[Category: haskell | めっちゃもふもふ]]></title>
   <link href="http://solorab.github.io/blog/categories/haskell/atom.xml" rel="self"/>
   <link href="http://solorab.github.io/"/>
-  <updated>2014-07-11T02:01:16+09:00</updated>
+  <updated>2014-08-30T10:41:29+09:00</updated>
   <id>http://solorab.github.io/</id>
   <author>
     <name><![CDATA[そろうさぎ]]></name>
@@ -12,6 +12,68 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[template haskellでfoldを定義させてみた]]></title>
+    <link href="http://solorab.github.io/blog/2014/08/30/define-fold-by-template-haskell/"/>
+    <updated>2014-08-30T09:41:12+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/08/30/define-fold-by-template-haskell</id>
+    <content type="html"><![CDATA[<p><code>haskell
+    data Tree a = Leaf a | Tree (Tree a) (Tree a) deriving (Show)
+    $(catamorphism ''Tree "foldTree")
+</code></p>
+
+<p>と呼び出すと</p>
+
+<p><code>haskell
+    &gt;&gt;&gt; :t foldTree
+    foldTree :: (a0 -&gt; a1) -&gt; (a1 -&gt; a1 -&gt; a1) -&gt; Tree a0 -&gt; a1
+    &gt;&gt;&gt; foldTree id (++) (Tree (Leaf "foo") (Tree (Leaf "bar") (Leaf "baz")))
+    "foobarbaz"
+</code></p>
+
+<p>と定義される</p>
+
+<p>楽しい</p>
+
+<!-- more -->
+
+<h2 id="section">中身</h2>
+
+<p><a href="https://github.com/solorab/etude/blob/master/haskell/Catamorphism.hs">Catamorphism.hs</a></p>
+
+<p><code>haskell
+    a.hs:1:1: Splicing declarations
+        catamorphism ''Tree "foldTree"
+      ======&gt;
+        a.hs:8:1-30
+        foldTree ::
+          forall a_a25h a_a2ml.
+          (a_a25h -&gt; a_a2ml)
+          -&gt; (a_a2ml -&gt; a_a2ml -&gt; a_a2ml) -&gt; Tree a_a25h -&gt; a_a2ml
+        foldTree f_a2mm f_a2mn x_a2mq
+          = g_a2mr x_a2mq
+          where
+              g_a2mr (Leaf y_a2mo) = f_a2mm y_a2mo
+              g_a2mr (Tree y_a2mo y_a2mp)
+                = f_a2mn (g_a2mr y_a2mo) (g_a2mr y_a2mp)
+</code></p>
+
+<ul>
+  <li>やるだけ</li>
+  <li>100行ぐらい</li>
+  <li>多相型は少し面倒</li>
+</ul>
+
+<h2 id="section-1">参考</h2>
+
+<ul>
+  <li><a href="http://haskell.g.hatena.ne.jp/mr_konn/20111218/1324220725">できる！Template Haskell (完) - はてな使ったら負けだと思っている deriving Haskell</a></li>
+  <li><a href="http://hackage.haskell.org/package/thorn">Hackage: thorn</a></li>
+  <li><a href="http://hackage.haskell.org/package/th-fold">Hackage: th-fold</a></li>
+</ul>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[関数をEnumにして遊んだ]]></title>
@@ -649,77 +711,6 @@ main = runLift $ runProgram adventIO prog ```
   <dt>2014/04/11</dt>
   <dd>冗長だった部分を削減</dd>
 </dl>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[parsecで非決定的パース]]></title>
-    <link href="http://solorab.github.io/blog/2014/01/25/non-deterministic-parsing-with-parsec/"/>
-    <updated>2014-01-25T18:28:27+09:00</updated>
-    <id>http://solorab.github.io/blog/2014/01/25/non-deterministic-parsing-with-parsec</id>
-    <content type="html"><![CDATA[<p>ざっくりparseして、出力を<code>filter</code>や<code>head</code>で加工したかった</p>
-
-<p><code>haskell
-    fork :: [ParsecT s u [] a] -&gt; ParsecT s u [] a
-    fork = join . lift
-</code></p>
-
-<p>※ list-monadで非決定的計算できるのは、parsecに限った話ではない</p>
-
-<!-- more -->
-
-<p><code>ParsecT</code>をlist-monadと合成するだけなので、上のように定義する<br />
-型注釈なしなら<code>join . lift :: (Monad (t m), Monad m, MonadTrans t) =&gt; m (t m a) -&gt; t m a</code></p>
-
-<p>非決定的の厳密な定義を知らないが、chooseとfail<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>が使えるので非決定的と呼んでいいはず<br />
-ただし<code>fail = fork []</code>であって、<code>Prelude.fail</code>(<code>Text.Parsec.parserFail</code>)ではない</p>
-
-<h2 id="section">例</h2>
-
-<p>``` haskell
-    p = try p’ &lt;|&gt; many1 anyChar where
-        p’ = do
-            x &lt;- manyTill anyChar $ char ‘+’
-            fork
-                [ return x
-                , (x ++) &lt;$&gt; p
-                ]</p>
-
-<pre><code>&gt;&gt;&gt; runParserT p () "input" "a+b+c" where
-[Right "a",Right "ab",Right "abc"] ```
-</code></pre>
-
-<p>``` haskell
-    q = try q’ &lt;|&gt; fork [] where
-        q’ = do
-            x &lt;- p
-            fork
-                [ return [x]
-                , (x :) &lt;$&gt; q
-                ]</p>
-
-<pre><code>&gt;&gt;&gt; runParserT p () "input" "a+b+c" where
-[Right ["a"],Right ["a","b"],Right ["a","b","c"],Right ["a","bc"],Right ["ab"],Right ["ab","c"],Right ["abc"]] ```
-</code></pre>
-
-<p><code>ここではきものをぬいでください</code>のような文をparseするとき便利なんじゃないでしょうか</p>
-
-<h2 id="section-1">参考</h2>
-
-<ul>
-  <li><a href="http://www.asahi-net.or.jp/~kc7k-nd/onlispjhtml/nondeterminism.html">On Lisp — 非決定性</a></li>
-  <li><a href="http://hooki.blog23.fc2.com/blog-entry-74.html">雑草ブログ Listモナドで非決定的計算をしよう</a></li>
-</ul>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>On Lispの説明による <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 ]]></content>
   </entry>
   

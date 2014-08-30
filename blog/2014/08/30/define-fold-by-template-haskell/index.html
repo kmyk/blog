@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Template Haskellでfoldを定義させてみた - めっちゃもふもふ</title>
+  <meta name="author" content="そろうさぎ">
+
+  
+  <meta name="description" content="1
+2
+data Tree a = Leaf a | Tree (Tree a) (Tree a) deriving (Show)
+$(catamorphism &#39;&#39;Tree &quot;foldTree&quot;) と呼び出すと 1
+2
+3
+4
+&gt;&gt;&gt; :t &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://solorab.github.io/blog/2014/08/30/define-fold-by-template-haskell">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="めっちゃもふもふ" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+ <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> 
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">めっちゃもふもふ</a></h1>
+  
+    <h2>へっぽこプログラマの成長の記録</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:solorab.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/games">Games</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Template Haskellでfoldを定義させてみた</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-08-30T09:41:12+09:00" pubdate data-updated="true">Aug 30<sup>th</sup>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="kr">data</span> <span class="kt">Tree</span> <span class="n">a</span> <span class="ow">=</span> <span class="kt">Leaf</span> <span class="n">a</span> <span class="o">|</span> <span class="kt">Tree</span> <span class="p">(</span><span class="kt">Tree</span> <span class="n">a</span><span class="p">)</span> <span class="p">(</span><span class="kt">Tree</span> <span class="n">a</span><span class="p">)</span> <span class="kr">deriving</span> <span class="p">(</span><span class="kt">Show</span><span class="p">)</span>
+</span><span class="line"><span class="o">$</span><span class="p">(</span><span class="n">catamorphism</span> <span class="kt">&#39;&#39;Tree</span> <span class="s">&quot;foldTree&quot;</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>と呼び出すと</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="o">&gt;&gt;&gt;</span> <span class="kt">:</span><span class="n">t</span> <span class="n">foldTree</span>
+</span><span class="line"><span class="nf">foldTree</span> <span class="ow">::</span> <span class="p">(</span><span class="n">a0</span> <span class="ow">-&gt;</span> <span class="n">a1</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="p">(</span><span class="n">a1</span> <span class="ow">-&gt;</span> <span class="n">a1</span> <span class="ow">-&gt;</span> <span class="n">a1</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="kt">Tree</span> <span class="n">a0</span> <span class="ow">-&gt;</span> <span class="n">a1</span>
+</span><span class="line"><span class="o">&gt;&gt;&gt;</span> <span class="n">foldTree</span> <span class="n">id</span> <span class="p">(</span><span class="o">++</span><span class="p">)</span> <span class="p">(</span><span class="kt">Tree</span> <span class="p">(</span><span class="kt">Leaf</span> <span class="s">&quot;foo&quot;</span><span class="p">)</span> <span class="p">(</span><span class="kt">Tree</span> <span class="p">(</span><span class="kt">Leaf</span> <span class="s">&quot;bar&quot;</span><span class="p">)</span> <span class="p">(</span><span class="kt">Leaf</span> <span class="s">&quot;baz&quot;</span><span class="p">)))</span>
+</span><span class="line"><span class="s">&quot;foobarbaz&quot;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>と定義される</p>
+
+<p>楽しい</p>
+
+<!-- more -->
+
+<h2 id="section">中身</h2>
+
+<p><a href="https://github.com/solorab/etude/blob/master/haskell/Catamorphism.hs">Catamorphism.hs</a></p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="nf">a</span><span class="o">.</span><span class="n">hs</span><span class="kt">:</span><span class="mi">1</span><span class="kt">:</span><span class="mi">1</span><span class="kt">:</span> <span class="kt">Splicing</span> <span class="n">declarations</span>
+</span><span class="line">    <span class="n">catamorphism</span> <span class="kt">&#39;&#39;Tree</span> <span class="s">&quot;foldTree&quot;</span>
+</span><span class="line">  <span class="o">======&gt;</span>
+</span><span class="line">    <span class="n">a</span><span class="o">.</span><span class="n">hs</span><span class="kt">:</span><span class="mi">8</span><span class="kt">:</span><span class="mi">1</span><span class="o">-</span><span class="mi">30</span>
+</span><span class="line">    <span class="n">foldTree</span> <span class="ow">::</span>
+</span><span class="line">      <span class="n">forall</span> <span class="n">a_a25h</span> <span class="n">a_a2ml</span><span class="o">.</span>
+</span><span class="line">      <span class="p">(</span><span class="n">a_a25h</span> <span class="ow">-&gt;</span> <span class="n">a_a2ml</span><span class="p">)</span>
+</span><span class="line">      <span class="ow">-&gt;</span> <span class="p">(</span><span class="n">a_a2ml</span> <span class="ow">-&gt;</span> <span class="n">a_a2ml</span> <span class="ow">-&gt;</span> <span class="n">a_a2ml</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="kt">Tree</span> <span class="n">a_a25h</span> <span class="ow">-&gt;</span> <span class="n">a_a2ml</span>
+</span><span class="line">    <span class="n">foldTree</span> <span class="n">f_a2mm</span> <span class="n">f_a2mn</span> <span class="n">x_a2mq</span>
+</span><span class="line">      <span class="ow">=</span> <span class="n">g_a2mr</span> <span class="n">x_a2mq</span>
+</span><span class="line">      <span class="kr">where</span>
+</span><span class="line">          <span class="n">g_a2mr</span> <span class="p">(</span><span class="kt">Leaf</span> <span class="n">y_a2mo</span><span class="p">)</span> <span class="ow">=</span> <span class="n">f_a2mm</span> <span class="n">y_a2mo</span>
+</span><span class="line">          <span class="n">g_a2mr</span> <span class="p">(</span><span class="kt">Tree</span> <span class="n">y_a2mo</span> <span class="n">y_a2mp</span><span class="p">)</span>
+</span><span class="line">            <span class="ow">=</span> <span class="n">f_a2mn</span> <span class="p">(</span><span class="n">g_a2mr</span> <span class="n">y_a2mo</span><span class="p">)</span> <span class="p">(</span><span class="n">g_a2mr</span> <span class="n">y_a2mp</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>やるだけ</li>
+  <li>100行ぐらい</li>
+  <li>多相型は少し面倒</li>
+</ul>
+
+<h2 id="section-1">参考</h2>
+
+<ul>
+  <li><a href="http://haskell.g.hatena.ne.jp/mr_konn/20111218/1324220725">できる！Template Haskell (完) - はてな使ったら負けだと思っている deriving Haskell</a></li>
+  <li><a href="http://hackage.haskell.org/package/thorn">Hackage: thorn</a></li>
+  <li><a href="http://hackage.haskell.org/package/th-fold">Hackage: th-fold</a></li>
+</ul>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">そろうさぎ</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-08-30T09:41:12+09:00" pubdate data-updated="true">Aug 30<sup>th</sup>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/fold/'>fold</a>, <a class='category' href='/blog/categories/haskell/'>haskell</a>, <a class='category' href='/blog/categories/template/'>template</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://solorab.github.io/blog/2014/08/30/define-fold-by-template-haskell/" data-via="solo_rab" data-counturl="http://solorab.github.io/blog/2014/08/30/define-fold-by-template-haskell/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/07/11/basic-tools-for-competitive-programming/" title="Previous Post: 競技プログラミング用の基本的な道具の使い方">&laquo; 競技プログラミング用の基本的な道具の使い方</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/08/30/define-fold-by-template-haskell/">Template Haskellでfoldを定義させてみた</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/07/11/basic-tools-for-competitive-programming/">競技プログラミング用の基本的な道具の使い方</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/07/05/require-order-in-python-argparse/">Pythonのargparseでrequire_order</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/07/05/redirect-cyclically/">循環的にリダイレクトする</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/06/18/generate-stap-cells/">STAP細胞が見つかるまでひたすら適当な細胞を生成し続けるプログラム</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/solorab">@solorab</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'solorab',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - そろうさぎ -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

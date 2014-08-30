@@ -5,14 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Higher Order うさぎ小屋</title>
+  <title>めっちゃもふもふ</title>
   <meta name="author" content="そろうさぎ">
 
   
-  <meta name="description" content="ざっくりparseして、出力をfilterやheadで加工したかった 1
-2
-fork :: [ParsecT s u [] a] -&gt; ParsecT s u [] a
-fork = join . lift ※ list-monadで非決定的計算できるのは、parsecに限った話ではない ">
+  <meta name="description" content="extensible-effects上にoperational作った
+正確には、型パズル解いて遊んでいたらoperationalができていた 利点: extensible-effectsとoperationalが合わさって最強に見える 欠点: Typeable1の宣言が必要 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -24,7 +22,7 @@ fork = join . lift ※ list-monadで非決定的計算できるのは、parsec�
   <link rel="canonical" href="http://solorab.github.io/posts/3">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Higher Order うさぎ小屋" type="application/atom+xml">
+  <link href="/atom.xml" rel="alternate" title="めっちゃもふもふ" type="application/atom+xml">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
@@ -40,9 +38,9 @@ fork = join . lift ※ list-monadで非決定的計算できるのは、parsec�
 
 <body   >
   <header role="banner"><hgroup>
-  <h1><a href="/">Higher Order うさぎ小屋</a></h1>
+  <h1><a href="/">めっちゃもふもふ</a></h1>
   
-    <h2>めっちゃ もふもふ</h2>
+    <h2>へっぽこプログラマの成長の記録</h2>
   
 </hgroup>
 
@@ -70,6 +68,64 @@ fork = join . lift ※ list-monadで非決定的計算できるのは、parsec�
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/03/13/operational-monad-on-extensible-effects/">Extensible-effects上にoperational Monad作ってみた</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-13T22:29:54+09:00" pubdate data-updated="true">Mar 13<sup>th</sup>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>extensible-effects上にoperational作った<br />
+正確には、型パズル解いて遊んでいたらoperationalができていた</p>
+
+<p>利点:</p>
+
+<ul>
+  <li>extensible-effectsとoperationalが合わさって最強に見える</li>
+</ul>
+
+<p>欠点:</p>
+
+<ul>
+  <li>Typeable1の宣言が必要
+    <ul>
+      <li>GADTs使うとderivingできないので面倒 (THで解決?)</li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/03/13/operational-monad-on-extensible-effects/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -467,6 +523,10 @@ CasperJS + PhantomJS でかなり強引に処理</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/08/30/define-fold-by-template-haskell/">Template Haskellでfoldを定義させてみた</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/07/11/basic-tools-for-competitive-programming/">競技プログラミング用の基本的な道具の使い方</a>
       </li>
     
@@ -480,10 +540,6 @@ CasperJS + PhantomJS でかなり強引に処理</p>
     
       <li class="post">
         <a href="/blog/2014/06/18/generate-stap-cells/">STAP細胞が見つかるまでひたすら適当な細胞を生成し続けるプログラム</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/06/17/quine-in-awk/">Awkでquine書いた</a>
       </li>
     
   </ul>

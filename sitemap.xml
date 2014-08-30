@@ -3,6 +3,12 @@
   
   
   <url>
+    <loc>http://solorab.github.io/blog/2014/08/30/define-fold-by-template-haskell/</loc>
+    <lastmod>2014-08-30T09:41:12+09:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://solorab.github.io/blog/2014/07/11/basic-tools-for-competitive-programming/</loc>
     <lastmod>2014-07-11T01:38:41+09:00</lastmod>
     <priority>0.8</priority>
@@ -173,21 +179,21 @@
   
   <url>
     <loc>http://solorab.github.io/</loc>
-    <lastmod>2014-07-11T02:01:16+09:00</lastmod>
+    <lastmod>2014-08-30T10:41:29+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://solorab.github.io/blog/archives/</loc>
-    <lastmod>2014-07-11T02:01:16+09:00</lastmod>
+    <lastmod>2014-08-30T10:41:29+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://solorab.github.io/games/</loc>
-    <lastmod>2014-07-11T02:01:16+09:00</lastmod>
+    <lastmod>2014-08-30T10:41:29+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

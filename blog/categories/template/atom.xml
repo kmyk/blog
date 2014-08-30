@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: template | めっちゃもふもふ]]></title>
+  <link href="http://solorab.github.io/blog/categories/template/atom.xml" rel="self"/>
+  <link href="http://solorab.github.io/"/>
+  <updated>2014-08-30T10:41:29+09:00</updated>
+  <id>http://solorab.github.io/</id>
+  <author>
+    <name><![CDATA[そろうさぎ]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[template haskellでfoldを定義させてみた]]></title>
+    <link href="http://solorab.github.io/blog/2014/08/30/define-fold-by-template-haskell/"/>
+    <updated>2014-08-30T09:41:12+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/08/30/define-fold-by-template-haskell</id>
+    <content type="html"><![CDATA[<p><code>haskell
+    data Tree a = Leaf a | Tree (Tree a) (Tree a) deriving (Show)
+    $(catamorphism ''Tree "foldTree")
+</code></p>
+
+<p>と呼び出すと</p>
+
+<p><code>haskell
+    &gt;&gt;&gt; :t foldTree
+    foldTree :: (a0 -&gt; a1) -&gt; (a1 -&gt; a1 -&gt; a1) -&gt; Tree a0 -&gt; a1
+    &gt;&gt;&gt; foldTree id (++) (Tree (Leaf "foo") (Tree (Leaf "bar") (Leaf "baz")))
+    "foobarbaz"
+</code></p>
+
+<p>と定義される</p>
+
+<p>楽しい</p>
+
+<!-- more -->
+
+<h2 id="section">中身</h2>
+
+<p><a href="https://github.com/solorab/etude/blob/master/haskell/Catamorphism.hs">Catamorphism.hs</a></p>
+
+<p><code>haskell
+    a.hs:1:1: Splicing declarations
+        catamorphism ''Tree "foldTree"
+      ======&gt;
+        a.hs:8:1-30
+        foldTree ::
+          forall a_a25h a_a2ml.
+          (a_a25h -&gt; a_a2ml)
+          -&gt; (a_a2ml -&gt; a_a2ml -&gt; a_a2ml) -&gt; Tree a_a25h -&gt; a_a2ml
+        foldTree f_a2mm f_a2mn x_a2mq
+          = g_a2mr x_a2mq
+          where
+              g_a2mr (Leaf y_a2mo) = f_a2mm y_a2mo
+              g_a2mr (Tree y_a2mo y_a2mp)
+                = f_a2mn (g_a2mr y_a2mo) (g_a2mr y_a2mp)
+</code></p>
+
+<ul>
+  <li>やるだけ</li>
+  <li>100行ぐらい</li>
+  <li>多相型は少し面倒</li>
+</ul>
+
+<h2 id="section-1">参考</h2>
+
+<ul>
+  <li><a href="http://haskell.g.hatena.ne.jp/mr_konn/20111218/1324220725">できる！Template Haskell (完) - はてな使ったら負けだと思っている deriving Haskell</a></li>
+  <li><a href="http://hackage.haskell.org/package/thorn">Hackage: thorn</a></li>
+  <li><a href="http://hackage.haskell.org/package/th-fold">Hackage: th-fold</a></li>
+</ul>
+]]></content>
+  </entry>
+  
+</feed>

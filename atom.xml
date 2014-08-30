@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Higher Order うさぎ小屋]]></title>
+  <title><![CDATA[めっちゃもふもふ]]></title>
   <link href="http://solorab.github.io/atom.xml" rel="self"/>
   <link href="http://solorab.github.io/"/>
-  <updated>2014-07-11T02:01:16+09:00</updated>
+  <updated>2014-08-30T10:41:29+09:00</updated>
   <id>http://solorab.github.io/</id>
   <author>
     <name><![CDATA[そろうさぎ]]></name>
@@ -12,6 +12,85 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Template Haskellでfoldを定義させてみた]]></title>
+    <link href="http://solorab.github.io/blog/2014/08/30/define-fold-by-template-haskell/"/>
+    <updated>2014-08-30T09:41:12+09:00</updated>
+    <id>http://solorab.github.io/blog/2014/08/30/define-fold-by-template-haskell</id>
+    <content type="html"><![CDATA[<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="kr">data</span> <span class="kt">Tree</span> <span class="n">a</span> <span class="ow">=</span> <span class="kt">Leaf</span> <span class="n">a</span> <span class="o">|</span> <span class="kt">Tree</span> <span class="p">(</span><span class="kt">Tree</span> <span class="n">a</span><span class="p">)</span> <span class="p">(</span><span class="kt">Tree</span> <span class="n">a</span><span class="p">)</span> <span class="kr">deriving</span> <span class="p">(</span><span class="kt">Show</span><span class="p">)</span>
+</span><span class="line"><span class="o">$</span><span class="p">(</span><span class="n">catamorphism</span> <span class="kt">&#39;&#39;Tree</span> <span class="s">&quot;foldTree&quot;</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>と呼び出すと</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="o">&gt;&gt;&gt;</span> <span class="kt">:</span><span class="n">t</span> <span class="n">foldTree</span>
+</span><span class="line"><span class="nf">foldTree</span> <span class="ow">::</span> <span class="p">(</span><span class="n">a0</span> <span class="ow">-&gt;</span> <span class="n">a1</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="p">(</span><span class="n">a1</span> <span class="ow">-&gt;</span> <span class="n">a1</span> <span class="ow">-&gt;</span> <span class="n">a1</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="kt">Tree</span> <span class="n">a0</span> <span class="ow">-&gt;</span> <span class="n">a1</span>
+</span><span class="line"><span class="o">&gt;&gt;&gt;</span> <span class="n">foldTree</span> <span class="n">id</span> <span class="p">(</span><span class="o">++</span><span class="p">)</span> <span class="p">(</span><span class="kt">Tree</span> <span class="p">(</span><span class="kt">Leaf</span> <span class="s">&quot;foo&quot;</span><span class="p">)</span> <span class="p">(</span><span class="kt">Tree</span> <span class="p">(</span><span class="kt">Leaf</span> <span class="s">&quot;bar&quot;</span><span class="p">)</span> <span class="p">(</span><span class="kt">Leaf</span> <span class="s">&quot;baz&quot;</span><span class="p">)))</span>
+</span><span class="line"><span class="s">&quot;foobarbaz&quot;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>と定義される</p>
+
+<p>楽しい</p>
+
+<!-- more -->
+
+<h2 id="section">中身</h2>
+
+<p><a href="https://github.com/solorab/etude/blob/master/haskell/Catamorphism.hs">Catamorphism.hs</a></p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="nf">a</span><span class="o">.</span><span class="n">hs</span><span class="kt">:</span><span class="mi">1</span><span class="kt">:</span><span class="mi">1</span><span class="kt">:</span> <span class="kt">Splicing</span> <span class="n">declarations</span>
+</span><span class="line">    <span class="n">catamorphism</span> <span class="kt">&#39;&#39;Tree</span> <span class="s">&quot;foldTree&quot;</span>
+</span><span class="line">  <span class="o">======&gt;</span>
+</span><span class="line">    <span class="n">a</span><span class="o">.</span><span class="n">hs</span><span class="kt">:</span><span class="mi">8</span><span class="kt">:</span><span class="mi">1</span><span class="o">-</span><span class="mi">30</span>
+</span><span class="line">    <span class="n">foldTree</span> <span class="ow">::</span>
+</span><span class="line">      <span class="n">forall</span> <span class="n">a_a25h</span> <span class="n">a_a2ml</span><span class="o">.</span>
+</span><span class="line">      <span class="p">(</span><span class="n">a_a25h</span> <span class="ow">-&gt;</span> <span class="n">a_a2ml</span><span class="p">)</span>
+</span><span class="line">      <span class="ow">-&gt;</span> <span class="p">(</span><span class="n">a_a2ml</span> <span class="ow">-&gt;</span> <span class="n">a_a2ml</span> <span class="ow">-&gt;</span> <span class="n">a_a2ml</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="kt">Tree</span> <span class="n">a_a25h</span> <span class="ow">-&gt;</span> <span class="n">a_a2ml</span>
+</span><span class="line">    <span class="n">foldTree</span> <span class="n">f_a2mm</span> <span class="n">f_a2mn</span> <span class="n">x_a2mq</span>
+</span><span class="line">      <span class="ow">=</span> <span class="n">g_a2mr</span> <span class="n">x_a2mq</span>
+</span><span class="line">      <span class="kr">where</span>
+</span><span class="line">          <span class="n">g_a2mr</span> <span class="p">(</span><span class="kt">Leaf</span> <span class="n">y_a2mo</span><span class="p">)</span> <span class="ow">=</span> <span class="n">f_a2mm</span> <span class="n">y_a2mo</span>
+</span><span class="line">          <span class="n">g_a2mr</span> <span class="p">(</span><span class="kt">Tree</span> <span class="n">y_a2mo</span> <span class="n">y_a2mp</span><span class="p">)</span>
+</span><span class="line">            <span class="ow">=</span> <span class="n">f_a2mn</span> <span class="p">(</span><span class="n">g_a2mr</span> <span class="n">y_a2mo</span><span class="p">)</span> <span class="p">(</span><span class="n">g_a2mr</span> <span class="n">y_a2mp</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>やるだけ</li>
+  <li>100行ぐらい</li>
+  <li>多相型は少し面倒</li>
+</ul>
+
+<h2 id="section-1">参考</h2>
+
+<ul>
+  <li><a href="http://haskell.g.hatena.ne.jp/mr_konn/20111218/1324220725">できる！Template Haskell (完) - はてな使ったら負けだと思っている deriving Haskell</a></li>
+  <li><a href="http://hackage.haskell.org/package/thorn">Hackage: thorn</a></li>
+  <li><a href="http://hackage.haskell.org/package/th-fold">Hackage: th-fold</a></li>
+</ul>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[競技プログラミング用の基本的な道具の使い方]]></title>
@@ -2758,201 +2837,6 @@ eta変換</dd>
   <li>単位はpixel</li>
   <li>左上が原点</li>
 </ul>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Extensible-effects上にoperational Monad作ってみた]]></title>
-    <link href="http://solorab.github.io/blog/2014/03/13/operational-monad-on-extensible-effects/"/>
-    <updated>2014-03-13T22:29:54+09:00</updated>
-    <id>http://solorab.github.io/blog/2014/03/13/operational-monad-on-extensible-effects</id>
-    <content type="html"><![CDATA[<p>extensible-effects上にoperational作った<br />
-正確には、型パズル解いて遊んでいたらoperationalができていた</p>
-
-<p>利点:</p>
-
-<ul>
-  <li>extensible-effectsとoperationalが合わさって最強に見える</li>
-</ul>
-
-<p>欠点:</p>
-
-<ul>
-  <li>Typeable1の宣言が必要
-    <ul>
-      <li>GADTs使うとderivingできないので面倒 (THで解決?)</li>
-    </ul>
-  </li>
-</ul>
-
-<!-- more -->
-
-<h2 id="code">code</h2>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-<span class="line-number">16</span>
-<span class="line-number">17</span>
-<span class="line-number">18</span>
-<span class="line-number">19</span>
-<span class="line-number">20</span>
-<span class="line-number">21</span>
-<span class="line-number">22</span>
-<span class="line-number">23</span>
-<span class="line-number">24</span>
-<span class="line-number">25</span>
-<span class="line-number">26</span>
-<span class="line-number">27</span>
-<span class="line-number">28</span>
-</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="cm">{-# LANGUAGE ExistentialQuantification #-}</span>
-</span><span class="line"><span class="cm">{-# LANGUAGE FlexibleContexts #-}</span>
-</span><span class="line"><span class="cm">{-# LANGUAGE MultiParamTypeClasses #-}</span>
-</span><span class="line"><span class="cm">{-# LANGUAGE Rank2Types #-}</span>
-</span><span class="line"><span class="cm">{-# LANGUAGE ScopedTypeVariables #-}</span>
-</span><span class="line"><span class="cm">{-# LANGUAGE TypeOperators #-}</span>
-</span><span class="line"><span class="kr">module</span> <span class="nn">Control.Eff.Operational</span> <span class="p">(</span><span class="kt">Program</span><span class="p">,</span> <span class="nf">singleton</span><span class="p">,</span> <span class="nf">runProgram</span><span class="p">)</span> <span class="kr">where</span>
-</span><span class="line">
-</span><span class="line"><span class="kr">import</span> <span class="nn">Control.Eff</span> <span class="p">(</span><span class="kt">Eff</span><span class="p">,</span> <span class="kt">Member</span><span class="p">,</span> <span class="p">(</span><span class="o">:&gt;</span><span class="p">),</span> <span class="kt">VE</span><span class="p">(</span><span class="kt">Val</span><span class="p">,</span> <span class="kt">E</span><span class="p">),</span> <span class="nf">inj</span><span class="p">,</span> <span class="nf">send</span><span class="p">,</span> <span class="nf">admin</span><span class="p">,</span> <span class="nf">handleRelay</span><span class="p">)</span>
-</span><span class="line"><span class="kr">import</span> <span class="nn">Data.Typeable</span> <span class="p">(</span><span class="kt">Typeable1</span><span class="p">,</span> <span class="nf">typeOf1</span><span class="p">,</span> <span class="nf">mkTyCon3</span><span class="p">,</span> <span class="nf">mkTyConApp</span><span class="p">)</span>
-</span><span class="line">
-</span><span class="line"><span class="kr">data</span> <span class="kt">Program</span> <span class="n">m</span> <span class="n">v</span> <span class="ow">=</span> <span class="n">forall</span> <span class="n">a</span><span class="o">.</span> <span class="kt">Program</span> <span class="p">(</span><span class="n">m</span> <span class="n">a</span><span class="p">)</span> <span class="p">(</span><span class="n">a</span> <span class="ow">-&gt;</span> <span class="n">v</span><span class="p">)</span>
-</span><span class="line">
-</span><span class="line"><span class="kr">instance</span> <span class="kt">Functor</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">m</span><span class="p">)</span> <span class="kr">where</span>
-</span><span class="line">    <span class="n">fmap</span> <span class="n">f</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">m</span> <span class="n">k</span><span class="p">)</span> <span class="ow">=</span> <span class="kt">Program</span> <span class="n">m</span> <span class="p">(</span><span class="n">f</span> <span class="o">.</span> <span class="n">k</span><span class="p">)</span>
-</span><span class="line">
-</span><span class="line"><span class="kr">instance</span> <span class="kt">Typeable1</span> <span class="n">m</span> <span class="ow">=&gt;</span> <span class="kt">Typeable1</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">m</span><span class="p">)</span> <span class="kr">where</span>
-</span><span class="line">    <span class="n">typeOf1</span> <span class="kr">_</span> <span class="ow">=</span> <span class="n">mkTyConApp</span> <span class="p">(</span><span class="n">mkTyCon3</span> <span class="s">&quot;&quot;</span> <span class="s">&quot;Control.Eff.Operational&quot;</span> <span class="s">&quot;Program&quot;</span><span class="p">)</span>
-</span><span class="line">                           <span class="p">[</span><span class="n">typeOf1</span> <span class="p">(</span><span class="n">undefined</span> <span class="ow">::</span> <span class="n">m</span> <span class="nb">()</span><span class="p">)]</span>
-</span><span class="line">
-</span><span class="line"><span class="nf">singleton</span> <span class="ow">::</span> <span class="p">(</span><span class="kt">Typeable1</span> <span class="n">m</span><span class="p">,</span> <span class="kt">Member</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">m</span><span class="p">)</span> <span class="n">r</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="n">m</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="kt">Eff</span> <span class="n">r</span> <span class="n">a</span>
-</span><span class="line"><span class="nf">singleton</span> <span class="n">m</span> <span class="ow">=</span> <span class="n">send</span> <span class="p">(</span><span class="n">inj</span> <span class="o">.</span> <span class="kt">Program</span> <span class="n">m</span><span class="p">)</span>
-</span><span class="line">
-</span><span class="line"><span class="nf">runProgram</span> <span class="ow">::</span> <span class="kt">Typeable1</span> <span class="n">f</span> <span class="ow">=&gt;</span> <span class="p">(</span><span class="n">forall</span> <span class="n">x</span><span class="o">.</span> <span class="n">f</span> <span class="n">x</span> <span class="ow">-&gt;</span> <span class="kt">Eff</span> <span class="n">r</span> <span class="n">x</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="kt">Eff</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">f</span> <span class="kt">:&gt;</span> <span class="n">r</span><span class="p">)</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="kt">Eff</span> <span class="n">r</span> <span class="n">a</span>
-</span><span class="line"><span class="nf">runProgram</span> <span class="n">advent</span> <span class="ow">=</span> <span class="n">loop</span> <span class="o">.</span> <span class="n">admin</span> <span class="kr">where</span>
-</span><span class="line">    <span class="n">loop</span> <span class="p">(</span><span class="kt">Val</span> <span class="n">x</span><span class="p">)</span> <span class="ow">=</span> <span class="n">return</span> <span class="n">x</span>
-</span><span class="line">    <span class="n">loop</span> <span class="p">(</span><span class="kt">E</span> <span class="n">u</span><span class="p">)</span> <span class="ow">=</span> <span class="n">handleRelay</span> <span class="n">u</span> <span class="n">loop</span>
-</span><span class="line">        <span class="p">(</span><span class="nf">\</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">m</span> <span class="n">k</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="n">loop</span> <span class="o">.</span> <span class="n">k</span> <span class="o">=&lt;&lt;</span> <span class="n">advent</span> <span class="n">m</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<h2 id="section">比較</h2>
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="nf">runProgram</span> <span class="ow">::</span> <span class="kt">Typeable1</span> <span class="n">f</span>          <span class="ow">=&gt;</span> <span class="p">(</span><span class="n">forall</span> <span class="n">x</span><span class="o">.</span> <span class="n">f</span> <span class="n">x</span> <span class="ow">-&gt;</span> <span class="kt">Eff</span> <span class="n">r</span> <span class="n">x</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="kt">Eff</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">f</span> <span class="kt">:&gt;</span> <span class="n">r</span><span class="p">)</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="kt">Eff</span> <span class="n">r</span> <span class="n">a</span>
-</span><span class="line"><span class="nf">interpret</span>  <span class="ow">::</span> <span class="p">(</span><span class="kt">Functor</span> <span class="n">m</span><span class="p">,</span> <span class="kt">Monad</span> <span class="n">m</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="p">(</span><span class="n">forall</span> <span class="n">x</span><span class="o">.</span> <span class="n">instr</span> <span class="n">x</span> <span class="ow">-&gt;</span> <span class="n">m</span> <span class="n">x</span><span class="p">)</span> <span class="ow">-&gt;</span>      <span class="kt">Program</span> <span class="n">instr</span>   <span class="n">a</span> <span class="ow">-&gt;</span>     <span class="n">m</span> <span class="n">a</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>当然似ている</p>
-
-<h2 id="example">example</h2>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-<span class="line-number">16</span>
-<span class="line-number">17</span>
-<span class="line-number">18</span>
-<span class="line-number">19</span>
-<span class="line-number">20</span>
-</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="kr">data</span> <span class="kt">Jail</span> <span class="n">a</span> <span class="kr">where</span>
-</span><span class="line">    <span class="kt">Print</span> <span class="ow">::</span> <span class="kt">String</span> <span class="ow">-&gt;</span> <span class="kt">Jail</span> <span class="nb">()</span>
-</span><span class="line">    <span class="kt">Scan</span> <span class="ow">::</span> <span class="kt">Jail</span> <span class="kt">String</span>
-</span><span class="line">
-</span><span class="line"><span class="kr">instance</span> <span class="kt">Typeable1</span> <span class="kt">Jail</span> <span class="kr">where</span>
-</span><span class="line">    <span class="n">typeOf1</span> <span class="kr">_</span> <span class="ow">=</span> <span class="n">mkTyConApp</span> <span class="p">(</span><span class="n">mkTyCon3</span> <span class="s">&quot;test&quot;</span> <span class="s">&quot;Main&quot;</span> <span class="s">&quot;Jail&quot;</span><span class="p">)</span> <span class="kt">[]</span>
-</span><span class="line">
-</span><span class="line"><span class="nf">prog</span> <span class="ow">::</span> <span class="kt">Member</span> <span class="p">(</span><span class="kt">Program</span> <span class="kt">Jail</span><span class="p">)</span> <span class="n">r</span> <span class="ow">=&gt;</span> <span class="kt">Eff</span> <span class="n">r</span> <span class="nb">()</span>
-</span><span class="line"><span class="nf">prog</span> <span class="ow">=</span> <span class="kr">do</span>
-</span><span class="line">    <span class="n">singleton</span> <span class="o">$</span> <span class="kt">Print</span> <span class="s">&quot;getting input...&quot;</span>
-</span><span class="line">    <span class="n">str</span> <span class="ow">&lt;-</span> <span class="n">singleton</span> <span class="kt">Scan</span>
-</span><span class="line">    <span class="n">singleton</span> <span class="o">$</span> <span class="kt">Print</span> <span class="s">&quot;ok&quot;</span>
-</span><span class="line">    <span class="n">singleton</span> <span class="o">$</span> <span class="kt">Print</span> <span class="p">(</span><span class="s">&quot;the input is &quot;</span> <span class="o">++</span> <span class="n">str</span><span class="p">)</span>
-</span><span class="line">
-</span><span class="line"><span class="nf">adventIO</span> <span class="ow">::</span> <span class="p">(</span><span class="kt">Member</span> <span class="p">(</span><span class="kt">Lift</span> <span class="kt">IO</span><span class="p">)</span> <span class="n">r</span><span class="p">,</span> <span class="kt">SetMember</span> <span class="kt">Lift</span> <span class="p">(</span><span class="kt">Lift</span> <span class="kt">IO</span><span class="p">)</span> <span class="n">r</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="kt">Jail</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="kt">Eff</span> <span class="n">r</span> <span class="n">a</span>
-</span><span class="line"><span class="nf">adventIO</span> <span class="p">(</span><span class="kt">Print</span> <span class="n">a</span><span class="p">)</span> <span class="ow">=</span> <span class="n">lift</span> <span class="o">$</span> <span class="n">putStrLn</span> <span class="n">a</span>
-</span><span class="line"><span class="nf">adventIO</span> <span class="kt">Scan</span> <span class="ow">=</span> <span class="n">lift</span> <span class="n">getLine</span>
-</span><span class="line">
-</span><span class="line"><span class="nf">main</span> <span class="ow">::</span> <span class="kt">IO</span> <span class="nb">()</span>
-</span><span class="line"><span class="nf">main</span> <span class="ow">=</span> <span class="n">runLift</span> <span class="o">$</span> <span class="n">runProgram</span> <span class="n">adventIO</span> <span class="n">prog</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>もちろんrunProgramの第一引数は自由に差し替えられる</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="nf">adventPure</span> <span class="ow">::</span> <span class="p">(</span><span class="kt">Member</span> <span class="p">(</span><span class="kt">Writer</span> <span class="kt">String</span><span class="p">)</span> <span class="n">r</span><span class="p">,</span> <span class="kt">Member</span> <span class="p">(</span><span class="kt">State</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span> <span class="n">r</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="kt">Jail</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="kt">Eff</span> <span class="n">r</span> <span class="n">a</span>
-</span><span class="line"><span class="nf">adventPure</span> <span class="p">(</span><span class="kt">Print</span> <span class="n">a</span><span class="p">)</span> <span class="ow">=</span> <span class="n">tell</span> <span class="n">a</span>
-</span><span class="line"><span class="nf">adventPure</span> <span class="kt">Scan</span> <span class="ow">=</span> <span class="kr">do</span>
-</span><span class="line">    <span class="n">x</span> <span class="ow">&lt;-</span> <span class="p">(</span><span class="n">fromMaybe</span> <span class="kt">[]</span> <span class="o">.</span> <span class="n">headMay</span><span class="p">)</span> <span class="o">&lt;$&gt;</span> <span class="n">get</span>
-</span><span class="line">    <span class="n">modify</span> <span class="p">(</span><span class="n">tailSafe</span> <span class="ow">::</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span> <span class="ow">-&gt;</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span>
-</span><span class="line">    <span class="n">return</span> <span class="n">x</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>型注釈はextensible-effectsの問題 newtypeすれば消えます</p>
-
-<h2 id="section-1">おまけ</h2>
-<p>advent部分の制約にoperationalを使うと、つまりoperationalの実装をoperationalで与えるといろいろ楽しい</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="nf">advent</span> <span class="ow">::</span> <span class="p">(</span><span class="kt">Member</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">t</span><span class="p">)</span> <span class="n">r</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="n">t</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="kt">Eff</span> <span class="n">r</span> <span class="n">a</span>
-</span><span class="line"><span class="nf">runProgram</span> <span class="n">advent</span> <span class="ow">::</span> <span class="p">(</span><span class="kt">Member</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">t</span><span class="p">)</span> <span class="n">r</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="kt">Eff</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">t</span> <span class="kt">:&gt;</span> <span class="n">r</span><span class="p">)</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="kt">Eff</span> <span class="n">r</span> <span class="n">a</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="nf">advent</span> <span class="ow">::</span> <span class="p">(</span><span class="kt">Member</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">t</span><span class="p">)</span> <span class="n">r</span><span class="p">,</span> <span class="kt">Member</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">u</span><span class="p">)</span> <span class="n">r</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="n">s</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="kt">Eff</span> <span class="n">r</span> <span class="n">a</span>
-</span><span class="line"><span class="nf">runProgram</span> <span class="n">advent</span> <span class="ow">::</span> <span class="p">(</span><span class="kt">Member</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">t</span><span class="p">)</span> <span class="n">r</span><span class="p">,</span> <span class="kt">Member</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">u</span><span class="p">)</span> <span class="n">r</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="kt">Eff</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">s</span> <span class="kt">:&gt;</span> <span class="n">r</span><span class="p">)</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="kt">Eff</span> <span class="n">r</span> <span class="n">a</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-</pre></td><td class="code"><pre><code class="haskell"><span class="line"><span class="nf">advent</span>  <span class="ow">::</span> <span class="p">(</span><span class="kt">Member</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">u</span><span class="p">)</span> <span class="n">r</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="n">s</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="kt">Eff</span> <span class="n">r</span> <span class="n">a</span>
-</span><span class="line"><span class="nf">advent&#39;</span> <span class="ow">::</span> <span class="p">(</span><span class="kt">Member</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">u</span><span class="p">)</span> <span class="n">r</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="n">t</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="kt">Eff</span> <span class="n">r</span> <span class="n">a</span>
-</span><span class="line"><span class="nf">runProgram</span> <span class="n">advent&#39;</span> <span class="o">.</span> <span class="n">runProgram</span> <span class="n">advent</span> <span class="ow">::</span> <span class="p">(</span><span class="kt">Member</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">u</span><span class="p">)</span> <span class="n">r</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="kt">Eff</span> <span class="p">(</span><span class="kt">Program</span> <span class="n">s</span> <span class="kt">:&gt;</span> <span class="kt">Program</span> <span class="n">t</span> <span class="kt">:&gt;</span> <span class="n">r</span><span class="p">)</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="kt">Eff</span> <span class="n">r</span> <span class="n">a</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<h2 id="section-2">関連</h2>
-<ul>
-  <li><a href="http://notogawa.hatenablog.com/entry/2014/02/22/004828">IOアクションひとつひとつを利用許諾し・テスト可能にする - ぼくのぬまち 出張版</a></li>
-  <li><a href="http://fumieval.hatenablog.com/entry/2013/05/09/223604">Freeモナドを超えた！？operationalモナドを使ってみよう - モナドとわたしとコモナド</a></li>
-</ul>
-
-<hr />
-
-<dl>
-  <dt>2014/04/11</dt>
-  <dd>冗長だった部分を削減</dd>
-</dl>
 ]]></content>
   </entry>
   

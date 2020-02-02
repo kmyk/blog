@@ -1,0 +1,17 @@
+digraph G {
+    graph [ rankdir = LR, bgcolor="#00000000" ]
+    node [ shape = circle, style=filled, fillcolor="#ffffffff" ]
+    s [ rank = source ]
+    t [ rank = sink ]
+    { rank = same; 0; 2; 3; 4; 5; 6; }
+    #
+    s -> 2 [ xlabel = 2 ]
+    s -> 4 [ xlabel = 2 ]
+    s -> 5 [ xlabel = 2 ]
+    2 -> 0 [ xlabel = "\infty" ]
+    5 -> 2 [ xlabel = "\infty" ]
+    6 -> 2 [ xlabel = "\infty" ]
+    0 -> t [ xlabel = 3 ]
+    3 -> t [ xlabel = 1 ]
+    6 -> t [ xlabel = 1 ]
+}

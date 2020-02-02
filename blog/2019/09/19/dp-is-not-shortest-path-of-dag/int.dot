@@ -1,0 +1,52 @@
+digraph {
+	graph [ rankdir = TB, bgcolor = "#00000000" ]
+	node [ shape = circle, style = filled, fillcolor = "#ffffffff" ]
+	source2 [ style = invis, label = "" ]
+	source1 [ shape = none, label = "..." ]
+	source [ style = invis, label = "" ]
+	b3 [ label = "-3" ]
+	b2 [ label = "-2" ]
+	b1 [ label = "-1" ]
+	a0 [ label = "0" ]
+	a1 [ label = "1" ]
+	a2 [ label = "2" ]
+	a3 [ label = "3" ]
+	sink [ style = invis, label = "" ]
+	sink1 [ shape = none, label = "..." ]
+	sink2 [ style = invis, label = "" ]
+	{ rank = same; source2, source1, source, b3, b2, b1, a0, a1, a2, a3, sink, sink1, sink2 }
+	#
+	source2 -> source1 [ style = invis ]
+	source1 -> source [ style = invis ]
+	source -> b3
+	b3 -> b2
+	b2 -> b1
+	b1 -> a0
+	a0 -> a1
+	a1 -> a2
+	a2 -> a3
+	a3 -> sink
+	sink -> sink1 [ style = invis ]
+	sink1 -> sink2 [ style = invis ]
+	#
+	source1 -> b3
+	source -> b2
+	b3 -> b1
+	b2 -> a0
+	b1 -> a1
+	a0 -> a2
+	a1 -> a3
+	a2 -> sink
+	a3 -> sink1
+	#
+	source2 -> b3
+	source1 -> b2
+	source -> b1
+	b3 -> a0
+	b2 -> a1
+	b1 -> a2
+	a0 -> a3
+	a1 -> sink
+	a2 -> sink1
+	a3 -> sink2
+}

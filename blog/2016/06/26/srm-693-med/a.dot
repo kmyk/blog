@@ -1,0 +1,35 @@
+graph G {
+    graph [ bgcolor = "#00000000" ]
+    node [ shape = circle, style = filled, fillcolor = "#ffffffff" ]
+    { rank = same; a0; a1; a2; a3; a4; a5; a6 }
+    { rank = same; b0; b1; b2; b3; b4; b5; b6 }
+    a0 [ label = "19" ]
+    a1 [ label = "..." ]
+    a2 [ label = "4" ]
+    a3 [ label = "3" ]
+    a4 [ label = "2" ]
+    a5 [ label = "1" ]
+    a6 [ label = "0" ]
+    b0 [ label = "19" ]
+    b1 [ label = "..." ]
+    b2 [ label = "4" ]
+    b3 [ label = "3" ]
+    b4 [ label = "2" ]
+    b5 [ label = "1" ]
+    b6 [ label = "0" ]
+    a0 -- a1 -- a2 -- a3 -- a4 -- a5 -- a6 [ style = invis ]
+    b0 -- b1 -- b2 -- b3 -- b4 -- b5 -- b6 [ style = invis ]
+    { edge [ style = invis ]; a0 -- b0; a1 -- b1; a2 -- b2; a3 -- b3; a4 -- b4; a5 -- b5; a6 -- b6 }
+    { edge [ style = invis ]; a0 -- b0; a1 -- b1; a2 -- b2; a3 -- b3; a4 -- b4; a5 -- b5; a6 -- b6 }
+    a0 -- b0; a1 -- b1; a2 -- b2; a3 -- b3; a4 -- b4; a5 -- b5
+    { edge [ style = invis ]; a0 -- b0; a1 -- b1; a2 -- b2; a3 -- b3; a4 -- b4; a5 -- b5; a6 -- b6 }
+    { edge [ style = invis ]; a0 -- b0; a1 -- b1; a2 -- b2; a3 -- b3; a4 -- b4; a5 -- b5; a6 -- b6 }
+    a0 -- b1; a1 -- b2; a2 -- b3; a3 -- b4; a4 -- b5; a5 -- b6
+    a0 -- b1; a1 -- b2; a2 -- b3; a3 -- b4; a4 -- b5; a5 -- b6
+    a0 -- b1; a1 -- b2; a2 -- b3; a3 -- b4; a4 -- b5; a5 -- b6
+
+    a6 -- b5
+    a6 -- b4
+    a6 -- b4
+    a6 -- b3
+}

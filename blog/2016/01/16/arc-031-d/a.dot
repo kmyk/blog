@@ -1,0 +1,28 @@
+digraph G {
+    graph [ rankdir = LR, bgcolor="#00000000" ]
+    node [ shape = circle, style=filled, fillcolor="#ffffffff" ]
+    s [ rank = source ]
+    t [ rank = sink ]
+    X_1 -> X_2 [ style = invis ]
+    X_2 -> X_3 [ style = invis ]
+    { rank = same; X_1; X_2; X_3; }
+    Y_1 -> Y_2 [ style = invis ]
+    Y_2 -> Y_3 [ style = invis ]
+    Y_3 -> Y_4 [ style = invis ]
+    { rank = same; Y_1; Y_2; Y_3; Y_4; }
+    #
+    s -> X_1 [ label = S_1 ]
+    s -> X_2 [ label = S_2 ]
+    s -> X_3 [ label = S_3 ]
+    X_1 -> Y_1 [ label = "\infty" ]
+    X_1 -> Y_2 [ label = "\infty" ]
+    X_2 -> Y_1 [ label = "\infty" ]
+    X_2 -> Y_3 [ label = "\infty" ]
+    X_3 -> Y_2 [ label = "\infty" ]
+    X_3 -> Y_3 [ label = "\infty" ]
+    X_3 -> Y_4 [ label = "\infty" ]
+    Y_1 -> t [ label = xT_1 ]
+    Y_2 -> t [ label = xT_2 ]
+    Y_3 -> t [ label = xT_3 ]
+    Y_4 -> t [ label = xT_3 ]
+}

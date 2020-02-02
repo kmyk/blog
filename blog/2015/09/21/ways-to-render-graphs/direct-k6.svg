@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink" 
+     width="160" height="180">
+    <g transform="translate(10,10) scale(10,10)" fill="none" stroke="black" stroke-width="0.1">
+        <path d="M 14  4 L  7  0" />
+        <path d="M 14  4 L  0  4" />
+        <path d="M 14  4 L  0 12" />
+        <path d="M 14  4 L  7 16" />
+        <path d="M 14  4 L 14 12" />
+        <path d="M  7  0 L  0  4" />
+        <path d="M  7  0 L  0 12" />
+        <path d="M  7  0 L  7 16" />
+        <path d="M  7  0 L 14 12" />
+        <path d="M  0  4 L  0 12" />
+        <path d="M  0  4 L  7 16" />
+        <path d="M  0  4 L 14 12" />
+        <path d="M  0 12 L  7 16" />
+        <path d="M  0 12 L 14 12" />
+        <path d="M  7 16 L 14 12" />
+    </g>
+</svg>

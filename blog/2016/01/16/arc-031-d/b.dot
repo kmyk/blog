@@ -1,0 +1,20 @@
+digraph G {
+    graph [ rankdir = LR, bgcolor="#00000000" ]
+    node [ shape = circle, style=filled, fillcolor="#ffffffff" ]
+    s [ rank = source ]
+    t [ rank = sink ]
+    X_1 -> X_2 [ style = invis ]
+    { rank = same; X_1; X_2; }
+    Y_1 -> Y_2 [ style = invis ]
+    Y_2 -> Y_3 [ style = invis ]
+    { rank = same; Y_1; Y_2; Y_3; }
+    #
+    s -> X_1 [ label = 1 ]
+    s -> X_2 [ label = 30 ]
+    X_1 -> Y_1 [ label = "\infty" ]
+    X_2 -> Y_2 [ label = "\infty" ]
+    X_2 -> Y_3 [ label = "\infty" ]
+    Y_1 -> t [ label = "100x" ]
+    Y_2 -> t [ label = "x" ]
+    Y_3 -> t [ label = "2x" ]
+}

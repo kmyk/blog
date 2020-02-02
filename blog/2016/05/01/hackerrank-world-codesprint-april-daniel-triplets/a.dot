@@ -1,0 +1,21 @@
+// $ neato a.dot -T svg > a.svg
+graph G {
+    graph [ rankdir = LR, bgcolor="#00000000" ]
+    node [ shape = circle, style=filled, fillcolor="#ffffffff" ]
+    a1 -- b1 -- c1 -- a1
+    a1 -- a2 -- a3 -- a4
+    b1 -- b2 -- b3 -- b4
+    c1 -- c2 -- c3 -- c4
+    a4 -- a5x
+    a4 -- a5y
+    a4 -- a5z
+    a4 -- a5w
+    a4 -- a5v
+    b4 -- b5x
+    b4 -- b5y
+    b4 -- b5z
+    b4 -- b5w
+    c4 -- c5x
+    c4 -- c5y
+    c4 -- c5z
+}

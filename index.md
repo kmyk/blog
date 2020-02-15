@@ -5,8 +5,9 @@ layout: default
 ## about me
 
 -   [GitHub](https://github.com/kmyk/)
--   [CTFtime](https://ctftime.org/user/12503)
+-   [Twitter](https://twitter.com/kimiyuki_u)
 -   [AtCoder](https://atcoder.jp/user/kimiyuki) / [TopCoder](https://www.topcoder.com/members/kimiyuki/) / [Codeforces](https://codeforces.com/profile/kimiyuki)
+-   [CTFtime](https://ctftime.org/user/12503)
 -   [Instagram](https://www.instagram.com/usg_cooking/)
 -   [Amazon Wish List](https://www.amazon.co.jp/hz/wishlist/ls/1C2SP7ASBHO7V)
 -   [Anarchy Golf](http://golf.shinh.org/u.rb?bf)

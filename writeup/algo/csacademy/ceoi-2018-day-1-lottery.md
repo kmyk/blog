@@ -3,6 +3,8 @@ layout: post
 date: 2018-08-15T04:05:54+09:00
 tags: [ "competitive", "writeup", "csacademy", "cumulative-sum", "optimization" ]
 "target_url": [ "https://csacademy.com/contest/ceoi-2018-day-1/task/lottery/" ]
+redirect_from:
+  - /writeup/algo/cs-academy/ceoi-2018-day-1-lottery/
 ---
 
 # CS Academy CEOI 2018 Day 1: Lottery

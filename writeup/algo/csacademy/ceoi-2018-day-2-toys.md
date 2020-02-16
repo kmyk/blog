@@ -3,6 +3,8 @@ layout: post
 date: 2018-08-17T03:49:03+09:00
 tags: [ "competitive", "writeup", "csacademy", "dp", "prime-factors" ]
 "target_url": [ "https://csacademy.com/contest/ceoi-2018-day-2/task/toys-small/", "https://csacademy.com/contest/ceoi-2018-day-2/task/toys-big/" ]
+redirect_from:
+  - /writeup/algo/cs-academy/ceoi-2018-day-2-toys/
 ---
 
 # CS Academy CEOI 2018 Day 2: Toys Small / Toys Big

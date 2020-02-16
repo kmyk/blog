@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Code Festival (2018) Team Relay: I - 一円を笑う者は一円に泣く"
 date: 2018-11-21T11:26:01+09:00
 tags: [ "competitive", "writeup", "atcoder", "code-festival", "construction" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf18-relay-open/tasks/relay2018_i" ]
 ---
+
+# Code Festival (2018) Team Relay: I - 一円を笑う者は一円に泣く
 
 ## 解法
 

@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2017/12/19/icpc-2017-asia-b/"
-title: "AOJ 1379 / ACM-ICPC 2017 Asia Tsukuba Regional Contest: B. Parallel Lines"
 date: "2017-12-19T03:49:14+09:00"
 tags: [ "competitive", "writeup", "icpc", "icpc-asia", "dp", "bit-dp" ]
 ---
+
+# AOJ 1379 / ACM-ICPC 2017 Asia Tsukuba Regional Contest: B. Parallel Lines
 
 -   <http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1379>
 -   <http://judge.u-aizu.ac.jp/onlinejudge/cdescription.jsp?cid=ICPCOOC2017&pid=B>

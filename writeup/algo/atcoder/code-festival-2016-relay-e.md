@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/11/30/code-festival-2016-relay-e/"
 date: "2016-11-30T01:33:24+09:00"
-title: "CODE FESTIVAL 2016 Relay: E - 方眼紙と線分 / Segment on Grid Paper"
 tags: [ "competitive", "writeup", "atcoder", "codefestival" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf16-relay-open/tasks/relay_e" ]
 ---
+
+# CODE FESTIVAL 2016 Relay: E - 方眼紙と線分 / Segment on Grid Paper
 
 本番、配られたゼッケン代わりのシールの台紙を方眼紙として利用していた。
 

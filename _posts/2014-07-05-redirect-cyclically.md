@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "循環的にリダイレクトする"
 date: 2014-07-05T20:55:05+09:00
 tags: [ "stdio", "shell" ]
 ---
+
+# 循環的にリダイレクトする
 
 ``` sh
 $ tailf foo | bar >> foo

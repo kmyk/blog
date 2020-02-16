@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2017/12/29/utpc2011-l/"
-title: "東京大学プログラミングコンテスト2011: L. L番目の数字"
 date: "2017-12-29T07:48:37+09:00"
 tags: [ "competitive", "writeup", "utpc", "atcoder", "aoj", "tree", "query", "coordinate-compression", "heavy-light-decomposition", "lowest-common-ancestor", "fully-indexable-dictionary", "wavelet-tree", "binary-search" ]
 ---
+
+# 東京大学プログラミングコンテスト2011: L. L番目の数字
 
 -   <http://www.utpc.jp/2011/problems/l_th.html>
 -   <https://beta.atcoder.jp/contests/utpc2011/tasks/utpc2011_12>

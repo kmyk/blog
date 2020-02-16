@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/01/15/arc-067-d/"
 date: "2017-01-15T22:49:43+09:00"
-title: "AtCoder Regular Contest 067: D - Walk and Teleport"
 tags: [ "competitive", "writeup", "arc", "atcoder" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc067/tasks/arc067_b" ]
 ---
+
+# AtCoder Regular Contest 067: D - Walk and Teleport
 
 実装結果が短くて驚く。
 

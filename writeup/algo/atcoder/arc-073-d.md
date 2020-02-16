@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/04/30/arc-073-d/"
 date: "2017-04-30T20:54:23+09:00"
-title: "AtCoder Regular Contest 073: D - Simple Knapsack"
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp", "knapsack-problem" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc073/tasks/arc073_b" ]
 ---
+
+# AtCoder Regular Contest 073: D - Simple Knapsack
 
 たくさんバグを埋めた。
 

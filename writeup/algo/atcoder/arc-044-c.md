@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/11/03/arc-044-c/"
-title: "AtCoder Regular Contest 044 C - ビーム"
 date: 2015-11-03T18:18:43+09:00
 tags: [ "competitive", "arc", "atcoder", "writeup" ]
 ---
+
+# AtCoder Regular Contest 044 C - ビーム
 
 分からないのでヒントを見てしまった。自力で解く/解けるべきだった。
 

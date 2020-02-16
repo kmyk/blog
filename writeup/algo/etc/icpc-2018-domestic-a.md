@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "ACM-ICPC 2018 国内予選: A. 所得格差"
 date: 2018-07-10T13:01:00+09:00
 tags: [ "competitive", "writeup", "icpc" ]
 "target_url": [ "http://icpc.iisf.or.jp/past-icpc/domestic2018/contest/all_ja.html", "http://icpc.iisf.or.jp/past-icpc/domestic2018/judgedata/A/" ]
 ---
+
+# ACM-ICPC 2018 国内予選: A. 所得格差
 
 ## implementation
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/06/22/agc-005-e/"
 date: "2017-06-22T02:45:02+09:00"
-title: "AtCoder Grand Contest 005: E - Sugigma: The Showdown"
 tags: [ "competitive", "writeup", "atcoder", "agc", "tree", "graph", "game" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc005/tasks/agc005_e" ]
 ---
+
+# AtCoder Grand Contest 005: E - Sugigma: The Showdown
 
 答え見たけどしばらくしていい感じに記憶が薄れた後に実装したのでまあはい。
 

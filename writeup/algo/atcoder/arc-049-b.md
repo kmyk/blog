@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/03/19/arc-049-b/"
-title: "AtCoder Regular Contest 049 B - 高橋ノルム君"
 date: 2016-03-19T23:37:24+09:00
 tags: [ "competitive", "writeup", "atcoder", "binary-search" ]
 ---
+
+# AtCoder Regular Contest 049 B - 高橋ノルム君
 
 ## [B - 高橋ノルム君](https://beta.atcoder.jp/contests/arc049/tasks/arc049_b)
 

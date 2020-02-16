@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/05/16/gcj-2017-round2-b/"
 date: "2017-05-16T23:07:40+09:00"
-title: "Google Code Jam 2017 Round 2: B. Roller Coaster Scheduling"
 tags: [ "competitive", "writeup", "gcj" ]
 "target_url": [ "https://code.google.com/codejam/contest/5314486/dashboard#s=p1" ]
 ---
+
+# Google Code Jam 2017 Round 2: B. Roller Coaster Scheduling
 
 本番はflowを流してSmallだけ。
 Largeは後から解いたが、Contest Analysis読んでも分からなかったのでなんとなくで書いたら通った。

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/05/07/agc-014-d/"
 date: "2017-05-07T23:09:54+09:00"
-title: "AtCoder Grand Contest 014: D - Black and White Tree"
 tags: [ "competitive", "writeup", "atcoder", "agc", "tree", "complete-matching" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc014/tasks/agc014_d" ]
 ---
+
+# AtCoder Grand Contest 014: D - Black and White Tree
 
 こういうの解けるようになりたい。
 
@@ -15,6 +16,8 @@ tags: [ "competitive", "writeup", "atcoder", "agc", "tree", "complete-matching" 
 証明はeditorial見て。
 
 ---
+
+# AtCoder Grand Contest 014: D - Black and White Tree
 
 少なくとも、完全マッチングが存在するなら後手必勝の向きは自明。
 逆方向も示せると言われればできるので、完全マッチングの発想がなかったのが敗因。

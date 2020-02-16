@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/01/14/dwacon2018-prelims-d/"
-title: "第4回 ドワンゴからの挑戦状 予選: D - ディスクの節約"
 date: "2018-01-14T03:41:57+09:00"
 tags: [ "competitive", "writeup", "atcoder", "dwacon", "dp", "tree", "bit-dp", "dijkstra" ]
 "target_url": [ "https://beta.atcoder.jp/contests/dwacon2018-prelims/tasks/dwacon2018_prelims_d" ]
 ---
+
+# 第4回 ドワンゴからの挑戦状 予選: D - ディスクの節約
 
 木DPして死。$1$WAだけなのいやらしい。
 

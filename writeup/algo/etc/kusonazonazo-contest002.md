@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/12/11/kusonazonazo-contest002/"
 date: "2016-12-11T23:45:43+09:00"
-title: "KusoNazonazo Contest002"
 tags: [ "kusonazonazo", "writeup", "hackerrank", "guessing" ]
 "target_url": [ "https://www.hackerrank.com/contests/kusonazonazo-contest002/challenges" ]
 ---
+
+# KusoNazonazo Contest002
 
 `ooxxoxxoxxx`。$5$完$20$位。友人が$3$位取ってて驚いた。
 

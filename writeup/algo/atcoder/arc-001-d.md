@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/26/arc-001-d/"
-title: "AtCoder Regular Contest 001 D - レースゲーム"
 date: 2016-05-26T04:43:22+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "geometry" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc001/tasks/arc001_4" ]
 ---
+
+# AtCoder Regular Contest 001 D - レースゲーム
 
 TLEが厳しい幾何はだめ。
 

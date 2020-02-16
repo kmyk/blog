@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/12/04/code-festival-2016-asapro-2-a/"
 date: "2016-12-04T02:32:02+09:00"
-title: "CODE FESTIVAL 2016 Elimination Tournament Round 2: A - 迷子の高橋君 / Takahashi is Missing!"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "expected-value" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf16-tournament-round2-open/tasks/asaporo_e" ]
 ---
+
+# CODE FESTIVAL 2016 Elimination Tournament Round 2: A - 迷子の高橋君 / Takahashi is Missing!
 
 実績解除: editorialを撃墜
 

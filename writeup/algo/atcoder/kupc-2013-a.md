@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/05/12/kupc-2013-a/"
 date: "2017-05-12T20:28:46+09:00"
-title: "京都大学プログラミングコンテスト2013: A - 旧総合研究７号館"
 tags: [ "competitive", "writeup", "atcoder", "kupc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/kupc2013/tasks/kupc2013_a" ]
 ---
+
+# 京都大学プログラミングコンテスト2013: A - 旧総合研究７号館
 
 ## implementation
 

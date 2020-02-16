@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/02/24/anagol-join-lines/"
-title: "Anarchy Golf 55. join lines"
 date: 2016-02-24T05:07:59+09:00
 tags: [ "writeup", "golf", "anarchy-golf" ]
 ---
+
+# Anarchy Golf 55. join lines
 
 ## [join lines](http://golf.shinh.org/p.rb?join+lines)
 

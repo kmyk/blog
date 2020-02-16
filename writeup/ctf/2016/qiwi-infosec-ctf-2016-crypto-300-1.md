@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2016/11/19/qiwi-infosec-ctf-2016-crypto-300-1/"
 date: "2016-11-19T01:31:03+09:00"
-title: "Qiwi Infosec CTF 2016: Crypto 300_1"
 tags: [ "ctf", "writeup", "qiwi-ctf", "crypto", "diffie-hellman" ]
 ---
+
+# Qiwi Infosec CTF 2016: Crypto 300_1
 
 Diffie-Hellman鍵共有が題材のなにか。
 $c$が未知でも$a, b, g^c$があれば$(g^c)^{ab} = g^{abc}$は求まるので`pow`するだけ。

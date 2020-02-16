@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/11/10/hackerrank-optimization-oct17-skipping-subpath-sum/"
 date: "2017-11-10T22:52:04+09:00"
-title: "HackerRank Performance Optimization: D. Skipping Subpath Sum"
 tags: [ "competitive", "writeup", "hackerrank", "kadane-algorithm", "lowest-common-ancestor" ]
 "target_url": [ "https://www.hackerrank.com/contests/optimization-oct17/challenges/skipping-subpath-sum" ]
 ---
+
+# HackerRank Performance Optimization: D. Skipping Subpath Sum
 
 ## problem
 

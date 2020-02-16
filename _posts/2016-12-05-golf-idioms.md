@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2016-12-05T22:32:26+09:00"
-title: "golfテクを4つ紹介する"
 tags: [ "golf" ]
 ---
+
+# golfテクを4つ紹介する
 
 適当な基準で$4$つ選びました。
 

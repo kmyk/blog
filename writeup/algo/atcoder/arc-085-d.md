@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/12/31/arc-085-d/"
-title: "AtCoder Regular Contest 085: D - ABS"
 date: "2017-12-31T16:04:26+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp", "coordinate-compression" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc085/tasks/arc085_b" ]
 ---
+
+# AtCoder Regular Contest 085: D - ABS
 
 頭のいい人たちはみんな$O(1)$をしてたが、私は思考停止$O(N^2)$DP。
 

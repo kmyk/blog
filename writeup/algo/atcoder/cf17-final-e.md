@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/11/26/cf17-final-e/"
 date: "2017-11-26T10:02:29+09:00"
-title: "CODE FESTIVAL 2017 Final: E - Combination Lock"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "greedy", "interval", "segment-tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf17-final-open/tasks/cf17_final_e" ]
 ---
+
+# CODE FESTIVAL 2017 Final: E - Combination Lock
 
 editorialに書かれている解法は思い付くのが難しそうなので貪欲がおすすめ。
 

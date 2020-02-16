@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/07/31/agc-002-b/"
 date: "2016-07-31T22:58:23+09:00"
-title: "AtCoder Grand Contest 002: B - Box and Ball"
 tags: [ "competitive", "writeup", "atcoder", "agc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc002/tasks/agc002_b" ]
 ---
+
+# AtCoder Grand Contest 002: B - Box and Ball
 
 ## solution
 

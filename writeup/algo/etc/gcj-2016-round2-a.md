@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/29/gcj-2016-round2-a/"
-title: "Google Code Jam 2016 Round 2 A. Rather Perplexing Showdown"
 date: 2016-05-29T01:47:13+09:00
 tags: [ "competitive", "writeup", "gcj", "google-code-jam" ]
 "target_url": [ "https://code.google.com/codejam/contest/10224486/dashboard#s=p0" ]
 ---
+
+# Google Code Jam 2016 Round 2 A. Rather Perplexing Showdown
 
 誤読した。
 全体としては、Tシャツは貰えなかった。(ボーダーを誤認していたために解く順番を間違えた)

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/05/10/arc-033-d/"
 date: "2017-05-10T21:48:48+09:00"
-title: "AtCoder Regular Contest 033: D - 見たことのない多項式"
 tags: [ "competitive", "writeup", "atcoder", "arc", "polynomial-interpolation", "lagrange-interpolation" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc033/tasks/arc033_4" ]
 ---
+
+# AtCoder Regular Contest 033: D - 見たことのない多項式
 
 多項式補完、ほぼ知らなかった
 

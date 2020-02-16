@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2017-05-27T03:23:58+09:00"
-title: "動的計画法と競技プログラミング"
 tags: [ "competitive", "dp" ]
 ---
+
+# 動的計画法と競技プログラミング
 
 書き直したのでこっちを読んで: <https://kimiyuki.net/blog/2019/02/11/dp-itself/>
 

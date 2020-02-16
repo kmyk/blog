@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/05/16/arc-068-c/"
 date: "2017-05-16T21:32:37+09:00"
-title: "AtCoder Regular Contest 068: C - X: Yet Another Die Game"
 tags: [ "competitive", "writeup", "atcoder", "arc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc068/tasks/arc068_a" ]
 ---
+
+# AtCoder Regular Contest 068: C - X: Yet Another Die Game
 
 部内でやったら誤読率$30$%ぐらいでした。
 

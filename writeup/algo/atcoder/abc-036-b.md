@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/04/09/abc-036-b/"
-title: "AtCoder Beginner Contest 036 B - 回転"
 date: 2016-04-09T22:16:42+09:00
 tags: [ "competitive", "writeup", "atcoder", "abc", "brainfuck" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc036/tasks/abc036_b" ]
 ---
+
+# AtCoder Beginner Contest 036 B - 回転
 
 入れ換えるだけなので楽。
 `rev|tac`で簡単に通ったりはしない。

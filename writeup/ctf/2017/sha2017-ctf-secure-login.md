@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2017/08/07/sha2017-ctf-secure-login/"
-title: "SHA2017 CTF: crypto 200 - Secure Login"
 date: "2017-08-07T16:50:23+09:00"
 tags: [ "ctf", "writeup", "sha-ctf", "crypto", "rsa" ]
 ---
+
+# SHA2017 CTF: crypto 200 - Secure Login
 
 ## problem
 

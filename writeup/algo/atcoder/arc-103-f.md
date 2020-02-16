@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 103: F - Distance Sums"
 date: 2018-10-05T04:28:06+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "graph", "tree", "construction", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc103/tasks/arc103_d" ]
 ---
+
+# AtCoder Regular Contest 103: F - Distance Sums
 
 ## 解法
 

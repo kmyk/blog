@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/07/02/icpc-2017-domestic-practice-f/"
 date: "2017-07-02T23:30:08+09:00"
-title: "ACM-ICPC 2017 模擬国内予選: F. マトリョーシカ"
 tags: [ "competitive", "writeup", "aoj", "icpc-domestic", "minimum-cost-flow", "dag" ]
 ---
+
+# ACM-ICPC 2017 模擬国内予選: F. マトリョーシカ
 
 [解説](http://acm-icpc.aitea.net/index.php?2017%2FPractice%2F%E6%A8%A1%E6%93%AC%E5%9B%BD%E5%86%85%E4%BA%88%E9%81%B8%2F%E8%AC%9B%E8%A9%95)を見た。面倒なのでライブラリもコピペ。負辺もいける最小費用流ライブラリは便利。
 

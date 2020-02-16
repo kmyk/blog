@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Grand Contest 025: B - RGB Coloring"
 date: 2018-08-11T00:39:06+09:00
 tags: [ "competitive", "writeup", "atcoder", "agc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc025/tasks/agc025_b" ]
 ---
+
+# AtCoder Grand Contest 025: B - RGB Coloring
 
 ## solution
 

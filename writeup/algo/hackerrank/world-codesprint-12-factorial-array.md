@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/12/31/hackerrank-world-codesprint-12-factorial-array/"
-title: "HackerRank World CodeSprint 12: Factorial Array"
 date: "2017-12-31T16:26:43+09:00"
 tags: [ "competitive", "writeup", "hackerrank", "codesprint", "lazy-propagation", "segment-tree", "query" ]
 "target_url": [ "https://www.hackerrank.com/contests/world-codesprint-12/challenges/factorial-array" ]
 ---
+
+# HackerRank World CodeSprint 12: Factorial Array
 
 $10^9+7$と誤読すると解けない。気を付けよう。
 ついでに$1$減らすクエリがあっても難しくなる (無理矢理やれば解けそうだが)。

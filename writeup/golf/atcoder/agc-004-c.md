@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/08/07/agc-004-c/"
-title: "AtCoder Grand Contest 004: C - AND Grid"
 date: "2017-08-07T15:29:09+09:00"
 tags: [ "competitive", "writeup", "atcoder", "agc", "golf", "sed" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc004/tasks/agc004_c" ]
 ---
+
+# AtCoder Grand Contest 004: C - AND Grid
 
 後輩に「おすすめの問題ない？」って聞いたら返ってきた問題。たしかに面白い問題。
 

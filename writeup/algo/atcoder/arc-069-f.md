@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/04/04/arc-069-f/"
 date: "2017-04-04T13:56:34+09:00"
-title: "AtCoder Regular Contest 069: F - Flags"
 tags: [ "competitive", "writeup", "atcoder", "arc", "2-sat", "segment-tree", "binary-search" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc069/tasks/arc069_d" ]
 ---
+
+# AtCoder Regular Contest 069: F - Flags
 
 二分探索の上限とかで定数倍高速化したらいけるかなと思ったらだめだった。
 それでも最悪ケース以外はsegment木しない方がかなり速くなるっぽい。

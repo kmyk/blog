@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "微分積分学の基本定理型の包除原理"
 date: "2019-04-30T00:00:00+09:00"
 tags: [ "competitive", "inclusion-exclusion-principle" ]
 ---
+
+# 微分積分学の基本定理型の包除原理
 
 ## 概要
 

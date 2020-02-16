@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/03/29/joisc2016-h/"
 date: "2017-03-29T21:50:31+09:00"
-title: "JOI春合宿2016: H - 回転寿司"
 tags: [ "competitive", "writeup", "atcoder", "joi", "square-root-decomposition" ]
 ---
+
+# JOI春合宿2016: H - 回転寿司
 
 -   <https://beta.atcoder.jp/contests/joisc2016/tasks/joisc2016_h>
 -   <https://www.ioi-jp.org/camp/2016/2016-sp-tasks/index.html>

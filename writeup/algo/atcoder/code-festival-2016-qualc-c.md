@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/10/23/code-festival-2016-qualc-c/"
 date: "2016-10-23T23:00:14+09:00"
-title: "CODE FESTIVAL 2016 qual C: C - 二人のアルピニスト / Two Alpinists"
 tags: [ "competitive", "writeup", "atcoder", "codefestival" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-festival-2016-qualc/tasks/codefestival_2016_qualC_c" ]
 ---
+
+# CODE FESTIVAL 2016 qual C: C - 二人のアルピニスト / Two Alpinists
 
 矛盾する入力を失念しており$2$WA。ペナなしなので救われた。
 

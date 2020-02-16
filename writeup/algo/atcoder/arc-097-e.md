@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 097: E - Sorted and Sorted"
 date: 2018-12-07T01:52:27+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc097/tasks/arc097_c" ]
 ---
+
+# AtCoder Regular Contest 097: E - Sorted and Sorted
 
 ## 解法
 

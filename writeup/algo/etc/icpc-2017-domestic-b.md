@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/07/14/icpc-2017-domestic-b/"
 date: "2017-07-14T23:50:35+09:00"
-title: "ACM-ICPC 2017 国内予選: B. ほとんど同じプログラム"
 tags: [ "competitive", "writeup", "icpc", "icpc-domestic", "python" ]
 ---
+
+# ACM-ICPC 2017 国内予選: B. ほとんど同じプログラム
 
 B問題 ほとんど同じ プログラム。
 

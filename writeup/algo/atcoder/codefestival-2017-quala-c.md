@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/10/03/codefestival-2017-quala-c/"
 date: "2017-10-03T06:36:51+09:00"
-title: "CODE FESTIVAL 2017 qual A: C - Palindromic Matrix"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "palindrome" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-festival-2017-quala/tasks/code_festival_2017_quala_c" ]
 ---
+
+# CODE FESTIVAL 2017 qual A: C - Palindromic Matrix
 
 ## solution
 

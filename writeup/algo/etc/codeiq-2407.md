@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/11/19/codeiq-2407/"
-title: "CodeIQ 【コードゴルフ】シンプル・ライフゲーム"
 date: 2015-11-19T21:38:39+09:00
 tags: [ "golf", "codeiq", "writeup", "ruby" ]
 ---
+
+# CodeIQ 【コードゴルフ】シンプル・ライフゲーム
 
 CODE FESTIVALでgolfをして、その勢いで参加した。ruby内で6位取れたのでちょっと嬉しい。
 

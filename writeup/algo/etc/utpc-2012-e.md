@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/12/31/utpc-2012-e/"
-title: "東京大学プログラミングコンテスト2012: E - 選挙"
 date: "2017-12-31T17:56:01+09:00"
 tags: [ "competitive", "writeup", "utpc", "atcoder" ]
 "target_url": [ "https://beta.atcoder.jp/contests/utpc2012/tasks/utpc2012_05" ]
 ---
+
+# 東京大学プログラミングコンテスト2012: E - 選挙
 
 ## solution
 

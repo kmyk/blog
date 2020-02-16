@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2017-12-01T23:19:55+09:00"
-title: "CODE FESTIVAL 2017: 参加記"
 tags: [ "competitive", "codefestival", "onsite" ]
 ---
+
+# CODE FESTIVAL 2017: 参加記
 
 <https://www.recruit-jinji.jp/recruitment/code_fes/>
 

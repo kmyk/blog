@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2016/10/10/hitcon-ctf-2016-quals-regexpert/"
 date: "2016-10-10T23:03:41+09:00"
-title: "HITCON QUALS CTF 2016: RegExpert"
 tags: [ "ctf", "writeup", "misc", "regex", "ruby", "palindrome", "context-free-grammaer", "context-sensitive-grammar" ]
 ---
+
+# HITCON QUALS CTF 2016: RegExpert
 
 I like this.
 I didn't know about context-sensitive in regex.

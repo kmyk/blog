@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/07/30/tenka1-2016-quala-b/"
 date: "2016-07-30T23:24:29+09:00"
-title: "天下一プログラマーコンテスト2016予選A: PackDrop"
 tags: [ "competitive", "wirteup", "atcoder", "tenka1-programmer-contest", "tree", "greedy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/tenka1-2016-quala/tasks/tenka1_2016_qualA_b" ]
 ---
+
+# 天下一プログラマーコンテスト2016予選A: PackDrop
 
 ## solution
 

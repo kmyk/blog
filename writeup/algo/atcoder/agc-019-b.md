@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/08/27/agc-019-b/"
 date: "2017-08-27T00:14:21+09:00"
-title: "AtCoder Grand Contest 019: B - Reverse and Compare"
 tags: [ "competitive", "writeup", "atcoder", "agc", "experiment" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc019/tasks/agc019_b" ]
 ---
+
+# AtCoder Grand Contest 019: B - Reverse and Compare
 
 ## solution
 

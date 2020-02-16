@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2016/07/23/arc-058-e/"
 date: "2016-07-23T23:10:45+09:00"
-title: "AtCoder Regular Contest 058 E - 和風いろはちゃん / Iroha and Haiku"
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp", "bit-dp" ]
 ---
+
+# AtCoder Regular Contest 058 E - 和風いろはちゃん / Iroha and Haiku
 
 -   <https://beta.atcoder.jp/contests/arc058/tasks/arc058_c>
 -   editorial: <https://beta.atcoder.jp/contests/arc058/data/arc/058/editorial.pdf>

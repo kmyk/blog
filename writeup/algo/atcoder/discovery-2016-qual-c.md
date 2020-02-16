@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/30/discovery-2016-qual-c/"
-title: "DISCO presents ディスカバリーチャンネル Programming Contest 2016 Qualification C - アメージングな文字列は、きみが作る！"
 date: 2016-01-30T23:17:28+09:00
 tags: [ "competitive", "writeup", "discovery-channel", "atcoder", "suffix-array" ]
 ---
+
+# DISCO presents ディスカバリーチャンネル Programming Contest 2016 Qualification C - アメージングな文字列は、きみが作る！
 
 通せず。通せていればonsite獲得だったようであるし通せてもおかしくない問題だったのでけっこうくやしい。
 

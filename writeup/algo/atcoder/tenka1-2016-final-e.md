@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "天下一プログラマーコンテスト2016本戦: E - 串焼きパーティ"
 date: 2018-07-12T22:25:22+09:00
 tags: [ "competitive", "writeup", "atcoder", "tenka1", "convex-hull-trick" ]
 "target_url": [ "https://beta.atcoder.jp/contests/tenka1-2016-final/tasks/tenka1_2016_final_e" ]
 ---
+
+# 天下一プログラマーコンテスト2016本戦: E - 串焼きパーティ
 
 ## solution
 

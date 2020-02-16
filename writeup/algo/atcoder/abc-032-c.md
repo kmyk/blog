@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/02/22/abc-032-c/"
-title: "AtCoder Beginner Contest 032 C - 列"
 date: 2016-02-22T21:58:10+09:00
 tags: [ "competitive", "writeup", "atcoder", "abc", "shakutori-hou", "typical-problem" ]
 ---
+
+# AtCoder Beginner Contest 032 C - 列
 
 典型的なしゃくとり法。
 この手の教科書に載ってるアルゴリズムそのままな問題[^1]は練習会でまだ不慣れな人に投げつけるのに良いので[tag](http://kimiyuki.net/blog/categories/typical-problem)付けて集めておきたい。
@@ -31,5 +32,7 @@ print(ans)
 ```
 
 ---
+
+# AtCoder Beginner Contest 032 C - 列
 
 [^1]: 典型問題/教育的問題/良問 あたりの単語の一般的な用法を理解してないので通用する呼び方がいまいち分からない。とりあえず`典型`を使っておく。

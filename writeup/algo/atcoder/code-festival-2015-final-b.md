@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/11/21/code-festival-2015-final-b/"
-title: "CODE FESTIVAL 2015 決勝 B - ダイスゲーム"
 date: 2015-11-21T17:18:49+09:00
 tags: [ "competitive", "writeup", "codefestival", "atcoder" ]
 ---
+
+# CODE FESTIVAL 2015 決勝 B - ダイスゲーム
 
 これも本番でgolf。
 証明はしていない。

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/10/22/kupc-2017-j/"
 date: "2017-10-22T13:33:34+09:00"
-title: "Kyoto University Programming Contest 2017: J - Paint Red and Make Graph"
 tags: [ "competitive", "writeup", "kupc", "atcoder", "matrix", "tree", "bipartite-graph" ]
 "target_url": [ "https://beta.atcoder.jp/contests/kupc2017/tasks/kupc2017_j" ]
 ---
+
+# Kyoto University Programming Contest 2017: J - Paint Red and Make Graph
 
 後から解いた。本番は間に合わずでほとんど見てない。
 二部グラフなら行列の形が綺麗ということらしい。

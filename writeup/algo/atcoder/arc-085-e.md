@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/12/31/arc-085-e/"
-title: "AtCoder Regular Contest 085: E - MUL"
 date: "2017-12-31T16:04:28+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "flow", "maximum-flow", "project-selection-problem" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc085/tasks/arc085_c" ]
 ---
+
+# AtCoder Regular Contest 085: E - MUL
 
 ## solution
 

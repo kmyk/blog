@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 083: F - Collecting Balls"
 date: 2018-09-26T05:41:54+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "implementation", "topological-sort", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc083/tasks/arc083_d" ]
 ---
+
+# AtCoder Regular Contest 083: F - Collecting Balls
 
 ## 解法
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/04/10/asis-ctf-quals-2017-start-hard/"
 date: "2017-04-10T02:45:37+09:00"
-title: "ASIS CTF Quals 2017: Start hard"
 tags: [ "ctf", "writeup", "asis-ctf", "pwn", "one-gadget-rce" ]
 "target_url": [ "https://asis-ctf.ir/challenges/" ]
 ---
+
+# ASIS CTF Quals 2017: Start hard
 
 <https://github.com/david942j/one_gadget> 便利だった。
 

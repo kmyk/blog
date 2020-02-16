@@ -1,11 +1,12 @@
 ---
 category: blog
 layout: post
-title: "CODE FESTIVAL 2015 短縮王 感想と解説"
 date: 2015-11-17T14:38:10+09:00
 edited: 2018-10-21T04:38:10+09:00
 tags: [ "competitive", "codefestival", "atcoder", "golf", "perl", "ruby", "regex" ]
 ---
+
+# CODE FESTIVAL 2015 短縮王 感想と解説
 
 CODE FESTIVAL 2015のコンテンツとして行われたgolf、ショートコーディングコンテスト「短縮王」に関して。
 全言語部門の全問題で1位or1位タイを取って総合1位を取りました。
@@ -251,6 +252,8 @@ $_=<>;@b=split//,<>;pop@b;s/./($b[0]-=$&)%10||shift@b/eg;print@b?NO:YES,$/
 
 
 ---
+
+# CODE FESTIVAL 2015 短縮王 感想と解説
 
 -   Tue Nov 17 20:18:29 JST 2015
     -   rubyのarrow記法に関して教えてもらったので追記

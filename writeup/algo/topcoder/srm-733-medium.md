@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2018/04/15/srm-733-medium/"
-title: "TopCoder SRM 733 Medium. BuildingSpanningTreesDiv1"
 date: "2018-04-15T02:35:10+09:00"
 tags: [ "competitive", "writeup", "topcoder", "srm", "graph", "matrix-tree-theorem", "matrix", "spanning-tree" ]
 ---
+
+# TopCoder SRM 733 Medium. BuildingSpanningTreesDiv1
 
 ## problem
 

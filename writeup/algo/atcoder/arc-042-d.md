@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 042: D - あまり"
 date: 2018-09-15T13:19:19+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "meet-in-the-middle", "discrete-log", "baby-step-giant-step" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc042/tasks/arc042_d" ]
 ---
+
+# AtCoder Regular Contest 042: D - あまり
 
 ## 解法
 

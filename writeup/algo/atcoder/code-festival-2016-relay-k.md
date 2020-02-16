@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/11/30/code-festival-2016-relay-k/"
 date: "2016-11-30T01:33:37+09:00"
-title: "CODE FESTIVAL 2016 Relay: K - 木の問題 / Problem on Tree"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "tree", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf16-relay-open/tasks/relay_k" ]
 ---
+
+# CODE FESTIVAL 2016 Relay: K - 木の問題 / Problem on Tree
 
 darinflarさんとsigmaさんにほぼ任せていた。木DPであり話を聞く限り通りそうだったがWAが出て通らず。
 後から解きなおして(WAを出して)気付いたが本番での自分の理解には抜けがあって、親方向の葉を見るのを忘れていた。

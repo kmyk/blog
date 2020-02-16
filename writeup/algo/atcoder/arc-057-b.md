@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/07/10/arc-057-b/"
 date: "2016-07-10T15:36:23+09:00"
-title: "AtCoder Regular Contest 057 B - 高橋君ゲーム"
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc057/tasks/arc057_b" ]
 ---
+
+# AtCoder Regular Contest 057 B - 高橋君ゲーム
 
 本番では、下限だけでなく上限も丁寧にDPして、下限と上限の間は全て実行可能であるとしてこれを未証明のまま投げて一発ACした。
 通ったからよいけど、すごくだめな感じがする。

@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "双対セグメント木という概念について"
 date: 2019-02-22T00:00:00+09:00
 tags: [ "competitive", "segment-tree", "dual-segment-tree" ]
 ---
+
+# 双対セグメント木という概念について
 
 注意: この記事は概念の整理のために新しい名前を導入するだけであり、新しい木を提案するものではない
 

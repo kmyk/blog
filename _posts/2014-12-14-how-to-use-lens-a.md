@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "haskellのlensの使い方 (基本)"
 date: 2014-12-14T00:00:00+09:00
 tags: [ "haskell", "lens" ]
 ---
+
+# haskellのlensの使い方 (基本)
 
 ekmett先生のlensに関して
 

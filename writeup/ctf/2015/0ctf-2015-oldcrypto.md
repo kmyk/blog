@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/08/26/0ctf-2015-oldcrypto/"
 date: "2016-08-26T14:59:38+09:00"
-title: "0CTF 2015 Quals CTF: oldcrypto"
 tags: [ "ctf", "writeup", "0ctf", "crypto", "vigenere-cipher", "kasiski-test" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2015/tree/master/0ctf-2015/crypto/oldcrypto" ]
 ---
+
+# 0CTF 2015 Quals CTF: oldcrypto
 
 解けず。writeupを見た: <https://web.archive.org/web/20150407090556/https://b01lers.net/challenges/0ctf/Old%20cryptography/39/>。
 
@@ -171,6 +172,8 @@ incryptanalysiskasiskiexaminationisamethodofattackingpolyalphabeticsubstitutionc
 ```
 
 ---
+
+# 0CTF 2015 Quals CTF: oldcrypto
 
 -   2016年  9月  5日 月曜日 00:31:59 JST
     -   類問を解くのにいい感じの平文があるといいかもと思ったので追記とか修正とか

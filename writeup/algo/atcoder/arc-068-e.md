@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/05/16/arc-068-e/"
 date: "2017-05-16T21:32:40+09:00"
-title: "AtCoder Regular Contest 068: E - Snuke Line"
 tags: [ "competitive", "writeup", "atcoder", "arc", "binary-indexed-tree", "segment-tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc068/tasks/arc068_c" ]
 ---
+
+# AtCoder Regular Contest 068: E - Snuke Line
 
 ## solution
 

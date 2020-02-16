@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "template haskellでfoldを定義させてみた"
 date: 2014-08-30T09:41:12+09:00
 tags: [ "template", "haskell", "fold" ]
 ---
+
+# template haskellでfoldを定義させてみた
 
 ``` haskell
 data Tree a = Leaf a | Tree (Tree a) (Tree a) deriving (Show)

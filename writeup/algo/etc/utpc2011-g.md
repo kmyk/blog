@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2017/12/25/utpc2011-g/"
-title: "東京大学プログラミングコンテスト2011: G. プログラミングコンテストチャレンジブック"
 date: "2017-12-25T19:10:59+09:00"
 tags: [ "competitive", "writeup", "utpc", "atcoder", "aoj" ]
 ---
+
+# 東京大学プログラミングコンテスト2011: G. プログラミングコンテストチャレンジブック
 
 -   <http://www.utpc.jp/2011/problems/triangle.html>
 -   <https://beta.atcoder.jp/contests/utpc2011/tasks/utpc2011_7>

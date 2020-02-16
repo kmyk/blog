@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/02/18/anagol-easy-regexp/"
-title: "Anarchy Golf 47. easy regexp"
 date: 2016-02-18T13:34:57+09:00
 tags: [ "writeup", "anarchy-golf", "golf", "perl", "ruby", "regex", "glob", "parsing" ]
 ---
+
+# Anarchy Golf 47. easy regexp
 
 去年のcode festivalの際にshinhさんにgolfの練習法を聞いたらanagolの過去問を勧められたので、それをやっていこうと思う。
 

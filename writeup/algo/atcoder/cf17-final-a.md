@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/11/26/cf17-final-a/"
 date: "2017-11-26T10:02:20+09:00"
-title: "CODE FESTIVAL 2017 Final: A - AKIBA"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "regexp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf17-final-open/tasks/cf17_final_a" ]
 ---
+
+# CODE FESTIVAL 2017 Final: A - AKIBA
 
 ## solution
 

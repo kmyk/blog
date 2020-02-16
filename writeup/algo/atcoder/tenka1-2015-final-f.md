@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/11/12/tenka1-2015-final-f/"
-title: "天下一プログラマーコンテスト2015本戦 F - 根付き木のみさわさん"
 date: 2015-11-12T19:10:46+09:00
 tags: [ "competitive", "writeup", "atcoder", "tenka1-programmer-contest", "tree", "lowest-common-ancestor", "euler-tour" ]
 ---
+
+# 天下一プログラマーコンテスト2015本戦 F - 根付き木のみさわさん
 
 heavy-light decompositionを使う問題と聞いて解き始めたのだけど、euler tour + lcaが想定解法ぽくて、euler tourも書いたことがなかったのでeuler tourで解いた。
 euler tour解を思い付けと言われると厳しいが、解法を聞いて書くだけなら苦労しない。

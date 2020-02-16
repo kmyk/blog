@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/09/04/arc-082-f/"
 date: "2017-09-04T15:19:36+09:00"
-title: "AtCoder Regular Contest 082: F - Sandglass"
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc082/tasks/arc082_d" ]
 ---
+
+# AtCoder Regular Contest 082: F - Sandglass
 
 バグか誤読がなければぎりぎり間に合っていたかと思われます。(rating $-38$)
 

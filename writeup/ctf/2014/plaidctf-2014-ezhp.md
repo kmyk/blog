@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/08/17/plaidctf-2014-ezhp/"
 date: "2016-08-17T00:43:10+09:00"
-title: "PlaidCTF 2014 ezhp"
 tags: [ "writeup", "ctf", "pwn", "heap", "plaidctf" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2014/tree/master/plaid-ctf-2014/ezhp" ]
 ---
+
+# PlaidCTF 2014 ezhp
 
 heap問のrevは疲れる。
 キャンプの夜の短い自由時間に挑んだのだが、それで解くのは私には厳しかったので後から時間で殴った。

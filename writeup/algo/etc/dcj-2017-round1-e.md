@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/05/15/dcj-2017-round1-e/"
 date: "2017-05-15T11:08:49+09:00"
-title: "Google Code Jam Distributed Round 1 2017: E. query_of_death"
 tags: [ "competitive", "writeup", "dcj", "distributed-code-jam" ]
 "target_url": [ "https://code.google.com/codejam/contest/8314486/dashboard#s=p4" ]
 ---
+
+# Google Code Jam Distributed Round 1 2017: E. query_of_death
 
 全完$45$位という大勝利だった。
 

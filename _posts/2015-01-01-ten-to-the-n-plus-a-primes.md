@@ -1,11 +1,12 @@
 ---
 category: blog
 layout: post
-title: "10^n+aの形の素数一覧"
 date: 2015-01-01T17:52:40+09:00
 tags: [ "math", "prime" ]
 math: true
 ---
+
+# 10^n+aの形の素数一覧
 
 -   日付に関する素数デマが出回ったおかげで、`factor`という素因数分解コマンドを知った
 -   なんとcoreutilsに入っていて、man pageは1番、ソースコードはcで2500行らしくかなり速い

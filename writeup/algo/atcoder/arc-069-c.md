@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/01/05/arc-069-c/"
-title: "AtCoder Regular Contest 069: C - Scc Puzzle"
 date: "2018-01-05T23:34:39+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc069/tasks/arc069_a" ]
 ---
+
+# AtCoder Regular Contest 069: C - Scc Puzzle
 
 ## solution
 

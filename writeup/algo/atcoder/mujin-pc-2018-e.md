@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Mujin Programming Challenge 2018: E - 迷路"
 date: 2018-08-05T01:03:33+09:00
 tags: [ "competitive", "writeup", "atcoder", "mujin-pc", "dijkstra" ]
 "target_url": [ "https://beta.atcoder.jp/contests/mujin-pc-2018/tasks/mujin_pc_2018_e" ]
 ---
+
+# Mujin Programming Challenge 2018: E - 迷路
 
 ## solution
 

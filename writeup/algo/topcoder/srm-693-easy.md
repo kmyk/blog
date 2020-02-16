@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/06/26/srm-693-easy/"
-title: "TopCoder SRM 693 Div1 Easy: BiconnectedDiv1"
 date: 2016-06-26T02:51:44+09:00
 tags: [ "competitive", "writeup", "topcoder", "srm", "dp", "dp-on-intervals" ]
 ---
+
+# TopCoder SRM 693 Div1 Easy: BiconnectedDiv1
 
 昨日のICPC国内予選のDですこし雰囲気の似た区間DPが出てるし、日本勢に有利だった。
 

@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/10/06/arc-042-c/"
-title: "AtCoder Regular Contest 042 C - おやつ"
 date: 2015-10-06T14:42:44+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp", "order", "sort", "knapsack", "monotonicity" ]
 ---
+
+# AtCoder Regular Contest 042 C - おやつ
 
 本番解けなかったのを解いた。良い問題だと思う。
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/03/26/yahoo-procon-2017-final-c/"
 date: "2017-03-26T11:26:39+09:00"
-title: "「みんなのプロコン」本選: C - 倍数クエリ"
 tags: [ "competitive", "writeup", "atcoder", "yahoo-procon", "simd", "optimization" ]
 "target_url": [ "https://beta.atcoder.jp/contests/yahoo-procon2017-final-open/tasks/yahoo_procon2017_final_c" ]
 ---
+
+# 「みんなのプロコン」本選: C - 倍数クエリ
 
 SIMDを意識しすぎてreadとcache missを増やしすぎてTLEし続けていた。精進が足りない。
 

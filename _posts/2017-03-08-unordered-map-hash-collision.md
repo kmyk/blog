@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2017-03-08T11:46:59+09:00"
-title: "std::unordered_mapのhash衝突による速度低下をさせてみる"
 tags: [ "hash", "unordered-map" ]
 ---
+
+# std::unordered_mapのhash衝突による速度低下をさせてみる
 
 ## 概要
 

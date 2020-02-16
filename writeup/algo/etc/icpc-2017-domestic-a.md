@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/07/14/icpc-2017-domestic-a/"
 date: "2017-07-14T23:50:33+09:00"
-title: "ACM-ICPC 2017 国内予選: A. 太郎君の買物"
 tags: [ "competitive", "writeup", "icpc", "icpc-domestic" ]
 ---
+
+# ACM-ICPC 2017 国内予選: A. 太郎君の買物
 
 終了後に解いて書いた。
 

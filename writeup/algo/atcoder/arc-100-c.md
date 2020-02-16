@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 100: C - Linear Approximation"
 date: 2018-07-01T23:11+09:00
 tags: [ "atcoder", "arc", "competitive", "writeup" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc100/tasks/arc100_a" ]
 ---
+
+# AtCoder Regular Contest 100: C - Linear Approximation
 
 ## solution
 

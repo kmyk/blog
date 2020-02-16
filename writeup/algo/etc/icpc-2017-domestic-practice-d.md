@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/07/02/icpc-2017-domestic-practice-d/"
 date: "2017-07-02T22:11:25+09:00"
-title: "ACM-ICPC 2017 模擬国内予選: D. ゲームバランス"
 tags: [ "competitive", "writeup", "aoj", "icpc-domestic", "binary-search", "greedy" ]
 ---
+
+# ACM-ICPC 2017 模擬国内予選: D. ゲームバランス
 
 落としたのは反省しています。しかしテストケースが悪意に満ちているのだけは許せない。
 

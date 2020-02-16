@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/04/11/atc-002-a/"
-title: "AtCoder Typical Contest 002 A - 幅優先探索"
 date: 2016-04-11T06:48:02+09:00
 tags: [ "competitive", "writeup", "atcoder", "atc", "bfs" ]
 "target_url": [ "https://beta.atcoder.jp/contests/atc002/tasks/abc007_3" ]
 ---
+
+# AtCoder Typical Contest 002 A - 幅優先探索
 
 <!-- {% raw %} -->
 

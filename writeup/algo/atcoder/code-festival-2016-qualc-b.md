@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/10/23/code-festival-2016-qualc-b/"
 date: "2016-10-23T23:00:12+09:00"
-title: "CODE FESTIVAL 2016 qual C: B - K個のケーキ / K Cakes"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "greedy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-festival-2016-qualc/tasks/codefestival_2016_qualC_b" ]
 ---
+
+# CODE FESTIVAL 2016 qual C: B - K個のケーキ / K Cakes
 
 ## solution
 

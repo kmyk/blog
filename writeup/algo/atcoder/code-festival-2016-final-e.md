@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/12/24/code-festival-2016-final-e/"
 date: "2016-12-24T19:57:43+09:00"
-title: "CODE FESTIVAL 2016 Final: E - Cookies"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "binary-search" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf16-final-open/tasks/codefestival_2016_final_e" ]
 ---
+
+# CODE FESTIVAL 2016 Final: E - Cookies
 
 少ない種類に上手く場合分けして尽くすやつ。
 本番では嘘が混ったメモ化再帰で無理矢理に部分点を奪った。

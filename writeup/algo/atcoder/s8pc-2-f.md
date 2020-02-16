@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/04/24/s8pc-2-f/"
-title: "square869120Contest #2 F - Range Sum Queries"
 date: 2016-04-24T22:58:42+09:00
 tags: [ "competitive", "writeup", "atcoder", "s8pc", "math" ]
 "target_url": [ "https://beta.atcoder.jp/contests/s8pc-2/tasks/s8pc_2_f" ]
 ---
+
+# square869120Contest #2 F - Range Sum Queries
 
 ## solution
 

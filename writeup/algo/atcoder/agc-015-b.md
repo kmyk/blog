@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/05/28/agc-015-b/"
 date: "2017-05-28T03:30:07+09:00"
-title: "AtCoder Grand Contest 015: B - Evilator"
 tags: [ "competitive", "writeup", "atcoder", "agc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc015/tasks/agc015_b" ]
 ---
+
+# AtCoder Grand Contest 015: B - Evilator
 
 ## solution
 

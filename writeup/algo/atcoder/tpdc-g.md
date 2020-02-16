@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/19/tpdc-g/"
-title: "Typical DP Contest G - 辞書順"
 date: 2016-01-19T17:24:02+09:00
 tags: [ "comepetitive", "writeup", "atcoder", "dp", "typical-dp-contest", "reconstruct", "overflow" ]
 ---
+
+# Typical DP Contest G - 辞書順
 
 dpは苦手。
 解説を見た。

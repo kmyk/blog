@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/12/31/arc-080-c/"
-title: "AtCoder Regular Contest 080: C - 4-adjacent"
 date: "2017-12-31T20:31:41+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc080/tasks/arc080_a" ]
 ---
+
+# AtCoder Regular Contest 080: C - 4-adjacent
 
 ## solution
 

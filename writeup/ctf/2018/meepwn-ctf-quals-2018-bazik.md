@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Meepwn CTF Quals 2018: Bazik"
 date: 2018-07-18T19:01:49+09:00
 tags: [ "ctf", "writeup", "crypto", "meepwn-ctf", "rsa", "coppersmith", "coppersmith-short-pad-attack" ]
 "target_url": [ "https://ctftime.org/task/6293" ]
 ---
+
+# Meepwn CTF Quals 2018: Bazik
 
 ## solution
 

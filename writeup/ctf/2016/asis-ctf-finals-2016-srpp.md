@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2016/09/12/asis-ctf-finals-2016-srpp/"
 date: "2016-09-12T02:27:08+09:00"
-title: "ASIS CTF Finals 2016: SRPP"
 tags: [ "ctf", "writeup", "asis-ctf", "crypto" ]
 ---
+
+# ASIS CTF Finals 2016: SRPP
 
 SRPP is an abbreviation of <https://en.wikipedia.org/wiki/Secure_Remote_Password_protocol>.
 

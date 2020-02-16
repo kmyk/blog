@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "NJPC2017: E - 限界集落"
 date: 2018-08-02T08:01:03+09:00
 tags: [ "competitive", "writeup", "atcoder", "njpc", "rerooting", "tree-dp", "graph" ]
 "target_url": [ "https://beta.atcoder.jp/contests/njpc2017/tasks/njpc2017_e" ]
 ---
+
+# NJPC2017: E - 限界集落
 
 <!-- {% raw %} -->
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/05/14/gcj-2017-round2-c/"
 date: "2017-05-14T01:55:08+09:00"
-title: "Google Code Jam 2017 Round 2: C. Beaming With Joy"
 tags: [ "competitive", "writeup", "gcj", "sat", "3-sat", "togasat" ]
 "target_url": [ "https://code.google.com/codejam/contest/5314486/dashboard#s=p2" ]
 ---
+
+# Google Code Jam 2017 Round 2: C. Beaming With Joy
 
 ``` c++
 dir_t mirror(char c, dir_t d) {

@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/02/32c3-ctf-readme/"
-title: "32C3 CTF readme"
 date: 2016-01-02T23:20:13+09:00
 tags: [ "ctf", "writeup", "pwn", "xinetd", "buffer-overflow", "stack-smashing-protection" ]
 ---
+
+# 32C3 CTF readme
 
 手decompileした結果を眺めてみて、flagを取り出す方法が分からなかったので、他人のwriteupを見て解いた。初心者が初見で解くのはつらい問題だと感じる。
 

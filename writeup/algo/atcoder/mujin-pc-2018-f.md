@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Mujin Programming Challenge 2018: F - チーム分け"
 date: 2018-08-05T01:12:09+09:00
 tags: [ "competitive", "writeup", "atcoder", "mujin-pc", "dp", "combinatorics" ]
 "target_url": [ "https://beta.atcoder.jp/contests/mujin-pc-2018/tasks/mujin_pc_2018_f" ]
 ---
+
+# Mujin Programming Challenge 2018: F - チーム分け
 
 ## solution
 

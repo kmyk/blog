@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "九州大学プログラミングコンテスト2018: G - Tapu &amp; Tapi 2"
 date: 2018-10-25T14:23:31+09:00
 tags: [ "competitive", "writeup", "atcoder", "graph", "tree-dp", "fold" ]
 "target_url": [ "https://beta.atcoder.jp/contests/qupc2018/tasks/qupc2018_g" ]
 ---
+
+# 九州大学プログラミングコンテスト2018: G - Tapu &amp; Tapi 2
 
 ## 解法
 

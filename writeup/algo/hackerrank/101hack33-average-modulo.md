@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/21/hackerrank-101hack33-average-modulo/"
-title: "Hackerrank 101 Hack Jan 2016 Average Modulo"
 date: 2016-01-21T21:33:26+09:00
 tags: [ "competitive", "writeup", "hackerrank", "dp", "math" ]
 ---
+
+# Hackerrank 101 Hack Jan 2016 Average Modulo
 
 本番では解けず。簡単ではないが、解けるべき問題。
 

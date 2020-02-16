@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "codeFlyer （bitFlyer Programming Contest）: F - 配信パズル"
 date: 2018-07-02T20:13:44+09:00
 tags: [ "competitive", "writeup", "atcoder", "codeflyer", "data-structure" ]
 "target_url": [ "https://beta.atcoder.jp/contests/bitflyer2018-final-open/tasks/bitflyer2018_final_f" ]
 ---
+
+# codeFlyer （bitFlyer Programming Contest）: F - 配信パズル
 
 ## solution
 

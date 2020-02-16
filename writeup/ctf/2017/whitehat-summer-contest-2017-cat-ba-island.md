@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/05/28/whitehat-summer-contest-2017-cat-ba-island/"
 date: "2017-05-28T23:24:14+09:00"
-title: "WhiteHat Summer Contest 2017: Cat Ba island"
 tags: [ "ctf", "writeup", "whitehat-wargame", "crypto", "aes", "cbc-mode" ]
 ---
+
+# WhiteHat Summer Contest 2017: Cat Ba island
 
 ## problem
 

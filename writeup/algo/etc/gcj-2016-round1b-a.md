@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/01/gcj-2016-round1b-a/"
-title: "Google Code Jam 2016 Round 1B A. Getting the Digits"
 date: 2016-05-01T03:54:08+09:00
 tags: [ "competitive", "writeup", "google-code-jam", "gcj" ]
 "target_url": [ "https://code.google.com/codejam/contest/11254486/dashboard#s=p0" ]
 ---
+
+# Google Code Jam 2016 Round 1B A. Getting the Digits
 
 競技の問題としては珍しめだなあという印象(転職系のサービスとかでならありそう)
 

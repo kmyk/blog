@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/01/gcj-2016-round1b-b/"
-title: "Google Code Jam 2016 Round 1B B. Close Match"
 date: 2016-05-01T03:54:13+09:00
 tags: [ "competitive", "writeup", "google-code-jam", "gcj" ]
 "target_url": [ "https://code.google.com/codejam/contest/11254486/dashboard#s=p1" ]
 ---
+
+# Google Code Jam 2016 Round 1B B. Close Match
 
 The logic is simple, but the code is long. This is golfable?
 

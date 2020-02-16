@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/07/04/abc-041-d/"
 date: "2016-07-04T11:50:37+09:00"
-title: "AtCoder Beginner Contest 041 D - 徒競走"
 tags: [ "competitive", "writeup", "atcoder", "abc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc041/tasks/abc041_d" ]
 ---
+
+# AtCoder Beginner Contest 041 D - 徒競走
 
 解けず。解けないといけないやつだった。
 丁寧に再帰して$O(N)$なのかな木にならないのがつらいなしかも$N \le 16$なんだよな、とか言ってたのすごくだめっぽい。

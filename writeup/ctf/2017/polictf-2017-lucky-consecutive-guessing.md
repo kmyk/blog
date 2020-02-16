@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/07/10/polictf-2017-lucky-consecutive-guessing/"
 date: "2017-07-10T00:10:11+09:00"
-title: "polictf 2017: Lucky Consecutive Guessing"
 tags: [ "ctf", "writeup", "polictf", "crypto", "linear-congruential-generator", "prng" ]
 "target_url": [ "https://scoreboard.polictf.it" ]
 ---
+
+# polictf 2017: Lucky Consecutive Guessing
 
 しほさんがURLを置いてくれていたので実装するだけだった。
 他のcryptoやguessingは解けずだったのでやったのはこれだけ。

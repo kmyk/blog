@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/03/30/abc-035-d/"
-title: "AtCoder Beginner Contest 035 D - トレジャーハント"
 date: 2016-03-30T03:20:57+09:00
 tags: [ "competitive", "writeup", "atcoder", "abc", "graph", "boost", "bgl", "dijkstra" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc035/tasks/abc035_d" ]
 ---
+
+# AtCoder Beginner Contest 035 D - トレジャーハント
 
 atcoderにboostが入った。なのでboost graph libraryを使ってみた。
 

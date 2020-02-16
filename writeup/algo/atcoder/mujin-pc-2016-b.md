@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/02/27/mujin-pc-2016-b/"
-title: "MUJIN プログラミングチャレンジ B - ロボットアーム / Robot Arm"
 date: 2016-02-27T23:48:20+09:00
 tags: [ "competitive", "writeup", "atcoder", "mujin-pc", "golf" ]
 ---
+
+# MUJIN プログラミングチャレンジ B - ロボットアーム / Robot Arm
 
 ## [B - ロボットアーム / Robot Arm](https://beta.atcoder.jp/contests/mujin-pc-2016/tasks/mujin_pc_2016_b)
 

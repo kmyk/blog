@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/23/hackerrank-may-world-codesprint-xor-quadruples/"
-title: "HackerRank May World CodeSprint: Beautiful Quadruples"
 date: 2016-05-23T01:50:16+09:00
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint", "meet-in-middle" ]
 "target_url": [ "https://www.hackerrank.com/contests/may-world-codesprint/challenges/xor-quadruples" ]
 ---
+
+# HackerRank May World CodeSprint: Beautiful Quadruples
 
 ## problem
 

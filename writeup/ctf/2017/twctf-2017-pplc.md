@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/09/04/twctf-2017-pplc/"
 date: "2017-09-04T13:34:05+09:00"
-title: "Tokyo Westerns CTF 3rd 2017: pplc"
 tags: [ "ctf", "writeup", "twctf", "ppc" ]
 ---
+
+# Tokyo Westerns CTF 3rd 2017: pplc
 
 ## private
 

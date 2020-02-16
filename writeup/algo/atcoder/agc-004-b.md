@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/09/05/agc-004-b/"
 date: "2017-09-05T17:22:45+09:00"
-title: "AtCoder Grand Contest 004: B - Colorful Slimes"
 tags: [ "competitive", "writeup", "atcoder", "agc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc004/tasks/agc004_b" ]
 ---
+
+# AtCoder Grand Contest 004: B - Colorful Slimes
 
 誤読していた。
 変色の際に元の色のスライムも残るのだと思っていた。

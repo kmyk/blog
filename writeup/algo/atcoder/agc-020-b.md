@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/02/22/agc-020-b/"
-title: "AtCoder Grand Contest 020: B - Ice Rink Game"
 date: "2018-02-22T22:20:44+09:00"
 tags: [ "competitive", "writeup", "atcoder", "agc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc020/tasks/agc020_b" ]
 ---
+
+# AtCoder Grand Contest 020: B - Ice Rink Game
 
 ## solution
 

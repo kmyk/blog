@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2016/07/23/abctf-2016/"
 date: "2016-07-23T10:33:17+09:00"
-title: "ABCTF 2016"
 tags: [ "ctf", "writeup", "abctf" ]
 ---
+
+# ABCTF 2016
 
 -   <http://abctf.xyz/>
 -   <https://ctftime.org/event/333>

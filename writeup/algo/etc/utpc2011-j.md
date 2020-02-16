@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2017/12/29/utpc2011-j/"
-title: "東京大学プログラミングコンテスト2011: J. 乱択平衡分二分探索木"
 date: "2017-12-29T07:48:34+09:00"
 tags: [ "competitive", "writeup", "utpc", "aoj", "dp", "treap", "fast-fourier-transformation", "probability" ]
 ---
+
+# 東京大学プログラミングコンテスト2011: J. 乱択平衡分二分探索木
 
 -   <http://www.utpc.jp/2011/problems/treap.html>
 -   <http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=2268>

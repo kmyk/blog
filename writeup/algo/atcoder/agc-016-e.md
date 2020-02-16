@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/06/26/agc-016-e/"
 date: "2017-06-26T03:47:11+09:00"
-title: "AtCoder Grand Contest 016: E - Poor Turkeys"
 tags: [ "competitive", "writeup", "atcoder", "agc", "graph" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc016/tasks/agc016_e" ]
 ---
+
+# AtCoder Grand Contest 016: E - Poor Turkeys
 
 検証用に$O(2^M)$愚直解を投げるときは`1 << m`でoverflowしないよう注意が必要であることが知られている。
 

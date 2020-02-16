@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/09/02/easyctf-2015-matrices/"
 date: "2016-09-02T15:30:25+09:00"
-title: "EasyCTF 2015: Matrices"
 tags: [ "ctf", "writeup", "crypto", "easyctf", "hill-cipher" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2015/tree/master/easyctf-2015/cryptography/matrices" ]
 ---
+
+# EasyCTF 2015: Matrices
 
 CBC modeな感じのHill暗号ぽいやつ。
 blockごとに集めてきてmodularな逆行列を含む行列演算で鍵がでて、同様にやれば複合化できる。

@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/11/03/arc-024-c/"
-title: "AtCoder Regular Contest 024 C - だれじゃ"
 date: 2015-11-03T17:02:11+09:00
 tags: [ "competitive", "writeup", "arc", "atcoder", "string-search" ]
 ---
+
+# AtCoder Regular Contest 024 C - だれじゃ
 
 arcのc埋め、残り3問に。
 

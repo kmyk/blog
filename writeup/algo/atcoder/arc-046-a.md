@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/02/02/arc-046-a/"
-title: "AtCoder Regular Contest 046 A - ゾロ目数"
 date: 2016-02-02T14:46:05+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "brainfuck" ]
 ---
+
+# AtCoder Regular Contest 046 A - ゾロ目数
 
 除算なしでいける気がしたから書き初めたが、すぐに除算が必要だと気付いてしまった。しかたがないのでlibraryから`/mod`を召喚して殴った。
 

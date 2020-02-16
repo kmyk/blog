@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/10/08/arc-019-c/"
-title: "AtCoder Regular Contest 019 C - 最後の森"
 date: 2015-10-08T23:59:59+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "dijkstra", "shortest-path" ]
 ---
+
+# AtCoder Regular Contest 019 C - 最後の森
 
 一日一問がそろそろつらい。ARCのC問題を全完したら止めようかなという思いがある。
 

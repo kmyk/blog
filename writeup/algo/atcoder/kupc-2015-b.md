@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/10/24/kupc-2015-b/"
-title: "京都大学プログラミングコンテスト2015 B - GUARDIANS"
 date: 2015-10-24T23:55:09+09:00
 tags: [ "kupc", "competitive", "writeup", "exhaustive-search", "local-execution" ]
 ---
+
+# 京都大学プログラミングコンテスト2015 B - GUARDIANS
 
 手で解けそう、ってのが先行したせいで、手元で探索させればいいってのに気付くのがとても遅れた。
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/06/06/agc-014-e/"
 date: "2017-06-06T22:33:18+09:00"
-title: "AtCoder Grand Contest 014: E - Blue and Red Tree"
 tags: [ "competitive", "atcoder", "agc", "greedy", "segment-tree", "lazy-propagation", "heavy-light-decomposision", "lowest-common-ancestor", "lie", "time", "submit-debug" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc014/tasks/agc014_e" ]
 ---
+
+# AtCoder Grand Contest 014: E - Blue and Red Tree
 
 通ると思ったら考察の漏れで計算量に$N$がひとつ載ってしまい、嘘解法で殴ることとなった。
 最小共通祖先も重軽分解も再帰でふわっと書いてあったので空間計算量の定数倍が重たく、書き直すはめになった。

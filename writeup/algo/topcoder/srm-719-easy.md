@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/08/15/srm-719-easy/"
 date: "2017-08-15T11:50:48+09:00"
-title: "TopCoder SRM 719 Div1 Easy: LongMansionDiv1"
 tags: [ "competitive", "writeup", "topcoder", "srm" ]
 ---
+
+# TopCoder SRM 719 Div1 Easy: LongMansionDiv1
 
 問題文がこどふぉのように難しい。
 どうでもいいストーリーを付けるな。

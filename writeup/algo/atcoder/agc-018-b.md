@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/07/23/agc-018-b/"
-title: "AtCoder Grand Contest 018: B - Sports Festival"
 date: "2017-07-23T23:17:15+09:00"
 tags: [ "competitive", "writeup", "atcoder", "agc", "greedy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc018/tasks/agc018_b" ]
 ---
+
+# AtCoder Grand Contest 018: B - Sports Festival
 
 大量提出による荒らしがあったらしい。
 対策の予定どうこうと言っているけど、不正(不正ではない)っぽい手法で捩じ込むようなACするやつがしにくくなりそうで嬉しくない。

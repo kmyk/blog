@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/10/10/jag2016autumn-j/"
 date: "2016-10-10T21:51:39+09:00"
-title: "JAG Practice Contest for ACM-ICPC Asia Regional 2016: J - Compressed Formula"
 tags: [ "competitive", "writeup", "atcoder", "jag", "icpc", "matrix", "exponentiation-by-squaring" ]
 "target_url": [ "https://beta.atcoder.jp/contests/jag2016autumn/tasks/icpc2016autumn_j" ]
 ---
+
+# JAG Practice Contest for ACM-ICPC Asia Regional 2016: J - Compressed Formula
 
 この問題はかなり好き。
 

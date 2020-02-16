@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/11/21/code-festival-2015-final-d/"
-title: "CODE FESTIVAL 2015 決勝 D - 足ゲームII"
 date: 2015-11-21T17:19:01+09:00
 tags: [ "competitive", "writeup", "codefestival", "atcoder", "segment-tree", "starry-sky-tree", "range-add-query", "range-maximum-query", "library" ]
 ---
+
+# CODE FESTIVAL 2015 決勝 D - 足ゲームII
 
 問題読んで即ライブラリを貼った。
 

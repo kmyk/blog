@@ -1,11 +1,12 @@
 ---
 category: blog
 layout: post
-title: "遅延伝搬segment木についてもっと詳しく"
 date: "2018-11-03T05:43:25+09:00"
 edited: "2018-12-06T00:00:00+09:00"
 tags: [ "competitive", "segment-tree", "lazy-propagation", "range-extension", "partiality-extension", "total-function", "coordinate-compression", "monoid", "operator-monoid" ]
 ---
+
+# 遅延伝搬segment木についてもっと詳しく
 
 ## 概要
 

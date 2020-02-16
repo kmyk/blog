@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2016-12-01T00:40:32+09:00"
-title: "CTF Esolang Challenges List (2016)"
 tags: [ "ctf", "esolang" ]
 ---
+
+# CTF Esolang Challenges List (2016)
 
 CTF(capture the flag)をしていて見つけたesolang問を覚えている範囲で全部列挙した。
 と言っても出てないCTFは多いので漏れも多いはず。
@@ -108,6 +109,8 @@ $\newcommand{\rrbrace}{\}\!\}}$
 ここまで考慮して実装(を出力するプログラムを実装)すれば$1, 2, 3$全てのflagが得られる。
 
 ---
+
+# CTF Esolang Challenges List (2016)
 
 この記事は[Esolang(難解プログラミング言語) Advent Calendar 2016](http://qiita.com/advent-calendar/2016/esolang)の$1$日目です。
 次はiroriさんの UnlambdaでVMを実装する（前編） です。

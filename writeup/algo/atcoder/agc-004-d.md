@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/10/03/agc-004-d/"
 date: "2017-10-03T05:33:31+09:00"
-title: "AtCoder Grand Contest 004: D - Teleporter"
 tags: [ "competitive", "writeup", "atcoder", "agc", "graph", "tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc004/tasks/agc004_d" ]
 ---
+
+# AtCoder Grand Contest 004: D - Teleporter
 
 ## solution
 

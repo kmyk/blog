@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2017/09/11/asis-ctf-finals-2017-greg-lestrade/"
-title: "ASIS CTF Finals 2017: Greg Lestrade"
 date: "2017-09-11T08:09:22+09:00"
 tags: [ "ctf", "writeup", "pwn", "asis-ctf" ]
 ---
+
+# ASIS CTF Finals 2017: Greg Lestrade
 
 他の問題が解けないのでプロが放置してたやるだけをやってお茶を濁した回2。
 

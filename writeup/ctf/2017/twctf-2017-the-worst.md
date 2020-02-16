@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/09/04/twctf-2017-the-worst/"
 date: "2017-09-04T13:34:22+09:00"
-title: "Tokyo Westerns CTF 3rd 2017: The Worst"
 tags: [ "ctf", "writeup", "twctf", "crypto", "rsa", "coppersmiths-attack" ]
 ---
+
+# Tokyo Westerns CTF 3rd 2017: The Worst
 
 ## problem
 

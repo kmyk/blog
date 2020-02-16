@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/02/17/agc-010-e/"
 date: "2017-02-17T22:52:54+09:00"
-title: "AtCoder Grand Contest 010: E - Rearranging"
 tags: [ "competitive", "writeup", "atcoder", "game" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc010/tasks/agc010_e" ]
 ---
+
+# AtCoder Grand Contest 010: E - Rearranging
 
 適当にやればできるという感じがあったので流れで書いたらなんとなく通った。ただしそのような書き方の常として、不注意なバグを埋めて苦しんだ。
 

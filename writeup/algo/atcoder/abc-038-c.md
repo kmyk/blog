@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/28/abc-038-c/"
-title: "AtCoder Beginner Contest 038 C - 単調増加"
 date: 2016-05-28T23:00:03+09:00
 tags: [ "competitive", "writeup", "atcoder", "abc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc038/tasks/abc038_c" ]
 ---
+
+# AtCoder Beginner Contest 038 C - 単調増加
 
 連続する区間長を持ってなめて$O(N)$
 

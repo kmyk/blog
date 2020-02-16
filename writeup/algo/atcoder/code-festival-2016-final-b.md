@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/11/28/code-festival-2016-final-b/"
 date: "2016-11-28T02:15:08+09:00"
-title: "CODE FESTIVAL 2016 Final: B - Exactly N points"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "greedy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf16-final-open/tasks/codefestival_2016_final_b" ]
 ---
+
+# CODE FESTIVAL 2016 Final: B - Exactly N points
 
 分からなくて焦ったのだが、なんとなく書いてみたら通った。
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/10/03/codefestival-2017-quala-d/"
 date: "2017-10-03T06:36:53+09:00"
-title: "CODE FESTIVAL 2017 qual A: D - Four Coloring"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "experiment" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-festival-2017-quala/tasks/code_festival_2017_quala_d" ]
 ---
+
+# CODE FESTIVAL 2017 qual A: D - Four Coloring
 
 問題文を読んでとりあえず雑に上から貪欲に決めていく実験を書き綺麗な模様を見たが、コードに落とすのを面倒がって貪欲を修正したもので通そうとした。
 盤面の境界の影響でずれなどがあり、できそうに見えたが思っていたより難しくて時間を解かした。

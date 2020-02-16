@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/09/02/agc-009-b/"
 date: "2017-09-02T08:27:46+09:00"
-title: "AtCoder Grand Contest 009: B - Tournament"
 tags: [ "competitive", "writeup", "atcoder", "agc", "graph", "tree", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc009/tasks/agc009_b" ]
 ---
+
+# AtCoder Grand Contest 009: B - Tournament
 
 ## solution
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/11/25/kusonazonazo-contest-1-75/"
 date: "2016-11-25T20:43:01+09:00"
-title: "KusoNazonazo Contest 1.75"
 tags: [ "kusonazonazo", "writeup", "hackerrank", "guessing" ]
 "target_url": [ "https://www.hackerrank.com/kusonazonazo-contes-1-75" ]
 ---
+
+# KusoNazonazo Contest 1.75
 
 何だか気になってしまったので後から遅れて出てみた。
 

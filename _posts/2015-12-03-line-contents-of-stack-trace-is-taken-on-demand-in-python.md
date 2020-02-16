@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "pythonのstacktraceで表示される行の内容は毎回その場で取得されているという話"
 date: 2015-12-03T13:27:31+09:00
 tags: [ "python", "debug", "stacktrace" ]
 ---
+
+# pythonのstacktraceで表示される行の内容は毎回その場で取得されているという話
 
 条件が揃うと、以下のようなstacktraceが表示されて混乱が生じる。
 `print('yeah')`の行で`ZeroDivisionError`が発生しているように見えて困る。

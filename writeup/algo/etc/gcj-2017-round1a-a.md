@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/04/23/gcj-2017-round1a-a/"
 date: "2017-04-23T01:08:35+09:00"
-title: "Google Code Jam 2017 Round 1A: A. Alphabet Cake"
 tags: [ "competitive", "writeup", "gcj" ]
 "target_url": [ "https://code.google.com/codejam/contest/5304486/dashboard#s=p0" ]
 ---
+
+# Google Code Jam 2017 Round 1A: A. Alphabet Cake
 
 面白い問題。
 

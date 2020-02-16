@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/07/14/icpc-2017-domestic-g/"
 date: "2017-07-14T23:50:43+09:00"
-title: "ACM-ICPC 2017 国内予選: G. 迷宮を一周"
 tags: [ "competitive", "writeup", "icpc", "icpc-domestic", "cycle" ]
 ---
+
+# ACM-ICPC 2017 国内予選: G. 迷宮を一周
 
 チームメンバーの助けを多いに借りて、いい感じに実装したらあまりよく分からないまま通った。
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/08/02/agc-012-c/"
 date: "2017-08-02T14:28:01+09:00"
-title: "AtCoder Grand Contest 012: C - Tautonym Puzzle"
 tags: [ "competitive", "writeup", "atcoder", "agc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc012/tasks/agc012_c" ]
 ---
+
+# AtCoder Grand Contest 012: C - Tautonym Puzzle
 
 ## solution
 

@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "天下一プログラマーコンテスト2016本戦: C - たんごたくさん"
 date: 2018-07-07T03:00:16+09:00
 tags: [ "competitive", "writeup", "atcoder", "tenka1", "rolling-hash", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/tenka1-2016-final/tasks/tenka1_2016_final_c" ]
 ---
+
+# 天下一プログラマーコンテスト2016本戦: C - たんごたくさん
 
 ## 解法
 

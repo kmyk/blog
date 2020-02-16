@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 098: F - Donation"
 date: 2018-08-12T03:39:04+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "graph", "tree-dp", "union-find-tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc098/tasks/arc098_d" ]
 ---
+
+# AtCoder Regular Contest 098: F - Donation
 
 ## solution
 

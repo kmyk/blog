@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2017-01-17T04:06:26+09:00"
-title: "Segment木の種類とその要件"
 tags: [ "competitive", "segment-tree", "lazy-propagation" ]
 ---
+
+# Segment木の種類とその要件
 
 ## 単純なsegment木
 
@@ -167,6 +168,8 @@ struct lazy_propagation_segment_tree { // on monoids
 [^1]: 遅延伝播と遅延伝搬で表記揺れがある。共にlazy propagationの訳語で、どちらが間違いという訳ではない。遅延評価という記述もあるが、こちらは複数の点でよくないので使わないほうがよいだろう。
 
 ---
+
+# Segment木の種類とその要件
 
 -   2017年  5月 25日 木曜日 04:14:15 JST
     -   自己準同型

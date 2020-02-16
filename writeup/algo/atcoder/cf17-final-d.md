@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/11/26/cf17-final-d/"
 date: "2017-11-26T10:02:25+09:00"
-title: "CODE FESTIVAL 2017 Final: D - Zabuton"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "greedy", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf17-final-open/tasks/cf17_final_d" ]
 ---
+
+# CODE FESTIVAL 2017 Final: D - Zabuton
 
 正当性の証明についてhamkoさんと議論した。
 editorialは読めば分かった気にはなれる(当然)のだが、もうちょっと厳密で一般的なところが気になる。

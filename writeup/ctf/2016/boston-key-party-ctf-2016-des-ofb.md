@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/06/22/boston-key-party-ctf-2016-des-ofb/"
 date: "2017-06-22T04:38:19+09:00"
-title: "Boston Key Party CTF : des ofb"
 tags: [ "ctf", "writeup", "crypto", "boston-key-party-ctf", "des", "ofb" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2016/tree/master/boston-key-party-2016/crypto/des-ofb-2" ]
 ---
+
+# Boston Key Party CTF : des ofb
 
 guessingが無理だったのでwriteupを見ました。
 

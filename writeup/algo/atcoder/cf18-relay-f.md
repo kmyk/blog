@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Code Festival (2018) Team Relay: F - バス旅行"
 date: 2018-11-21T11:15:35+09:00
 tags: [ "competitive", "writeup", "atcoder", "code-festival", "dp", "expected-value", "imos-method" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf18-relay-open/tasks/relay2018_f" ]
 ---
+
+# Code Festival (2018) Team Relay: F - バス旅行
 
 ## 解法
 

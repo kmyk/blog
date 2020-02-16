@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "F - 文字列大好きいろはちゃん / Iroha Loves Strings"
 date: 2018-08-23T05:01:07+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp", "string", "lie", "optimization" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc058/tasks/arc058_d" ]
 ---
+
+# F - 文字列大好きいろはちゃん / Iroha Loves Strings
 
 ## solution
 

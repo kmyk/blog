@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/27/anagol-midi-note-number-to-frequency/"
-title: "Anarch Golf 953. MIDI note number to frequency"
 date: 2016-05-27T13:22:01+09:00
 tags: [ "golf", "writeup", "anagol", "float" ]
 "target_url": [ "http://golf.shinh.org/p.rb?MIDI+note+number+to+frequency" ]
 ---
+
+# Anarch Golf 953. MIDI note number to frequency
 
 ## perl
 

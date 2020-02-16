@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/14/abc-037-d/"
-title: "AtCoder Beginner Contest 037 D - 経路"
 date: 2016-05-14T20:01:12+09:00
 tags: [ "competitive", "writeup", "atcoder", "abc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc037/tasks/abc037_d" ]
 ---
+
+# AtCoder Beginner Contest 037 D - 経路
 
 atcoderで`cin`を殺してくるの珍しい。油断してTLEした。
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/12/20/world-codesprint-8-sams-puzzle/"
 date: "2016-12-20T02:33:07+09:00"
-title: "HackerRank World CodeSprint 8: Sam's Puzzle (Approximate)"
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint" ]
 "target_url": [ "https://www.hackerrank.com/contests/world-codesprint-8/challenges/sams-puzzle" ]
 ---
+
+# HackerRank World CodeSprint 8: Sam's Puzzle (Approximate)
 
 I got $60.35$pts of $85$pts. In cases of $n = 30$, the $\max \\{ 0, \frac{g_a - g_b}{g\_{\mathrm{max}} - g_b} \\} \approx 0.45$. This is not bad.
 

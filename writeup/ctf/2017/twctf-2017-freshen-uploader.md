@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/09/04/twctf-2017-freshen-uploader/"
 date: "2017-09-04T16:40:28+09:00"
-title: "Tokyo Westerns CTF 3rd 2017: Freshen Uploader"
 tags: [ "ctf", "writeup", "twctf", "web", "php" ]
 ---
+
+# Tokyo Westerns CTF 3rd 2017: Freshen Uploader
 
 動的scoringと基本点の結果によりWelcome問より得点が低いの好き。
 

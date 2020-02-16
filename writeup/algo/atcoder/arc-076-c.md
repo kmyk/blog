@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/12/31/arc-076-c/"
-title: "AtCoder Regular Contest 076: C - Reconciled?"
 date: "2017-12-31T20:37:14+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc076/tasks/arc076_a" ]
 ---
+
+# AtCoder Regular Contest 076: C - Reconciled?
 
 ## solution
 

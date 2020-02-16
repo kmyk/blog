@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/11/05/ddcc-2016-qual-c/"
 date: "2016-11-05T22:26:13+09:00"
-title: "DISCO presents ディスカバリーチャンネル コードコンテスト2016 予選: C - ロト2"
 tags: [ "competitive", "writeup", "atcoder", "ddcc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/ddcc2016-qual/tasks/ddcc_2016_qual_c" ]
 ---
+
+# DISCO presents ディスカバリーチャンネル コードコンテスト2016 予選: C - ロト2
 
 これで通ると思うともっと簡単な解法が見えなくなるのやめたい。
 

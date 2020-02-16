@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/30/discovery-2016-qual-a/"
-title: "DISCO presents ディスカバリーチャンネル Programming Contest 2016 Qualification A - DISCO presents ディスカバリーチャンネルプログラミングコンテスト 2016"
 date: 2016-01-30T23:17:12+09:00
 tags: [ "competitive", "writeup", "atcoder", "discovery-channel" ]
 ---
+
+# DISCO presents ディスカバリーチャンネル Programming Contest 2016 Qualification A - DISCO presents ディスカバリーチャンネルプログラミングコンテスト 2016
 
 golfで鍛えたperl力。
 

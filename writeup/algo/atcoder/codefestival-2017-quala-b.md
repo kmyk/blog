@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/10/03/codefestival-2017-quala-b/"
 date: "2017-10-03T06:36:50+09:00"
-title: "CODE FESTIVAL 2017 qual A: B - fLIP"
 tags: [ "competitive", "writeup", "atcoder", "codefestival" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-festival-2017-quala/tasks/code_festival_2017_quala_b" ]
 ---
+
+# CODE FESTIVAL 2017 qual A: B - fLIP
 
 最近競プロを始めた友人はここで詰まっていた。
 解けるだろうのに勘違いで落としたようで、後から解法聞いて「なんか悔しいので以降の予選も受けます」って言ってたので将来有望ぽい。

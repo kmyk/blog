@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/03/01/yahoo-procon2018-final-b/"
-title: "「みんなのプロコン 2018」決勝: B - 経路が色々"
 date: "2018-03-01T08:24:46+09:00"
 tags: [ "competitive", "writeup", "atcoder", "yahoo-procon", "construction", "combination" ]
 "target_url": [ "https://beta.atcoder.jp/contests/yahoo-procon2018-final-open/tasks/yahoo_procon2018_final_b" ]
 ---
+
+# 「みんなのプロコン 2018」決勝: B - 経路が色々
 
 ## note
 

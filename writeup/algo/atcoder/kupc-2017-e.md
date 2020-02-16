@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/10/22/kupc-2017-e/"
 date: "2017-10-22T13:33:27+09:00"
-title: "Kyoto University Programming Contest 2017: E - Treasure Hunt"
 tags: [ "competitive", "writeup", "kupc", "atcoder", "graph" ]
 "target_url": [ "https://beta.atcoder.jp/contests/kupc2017/tasks/kupc2017_e" ]
 ---
+
+# Kyoto University Programming Contest 2017: E - Treasure Hunt
 
 これ好き。
 

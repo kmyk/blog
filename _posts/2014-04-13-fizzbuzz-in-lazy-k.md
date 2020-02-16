@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "lazk kでfizzbuzz書いた"
 date: 2014-04-13T02:27:48+09:00
 tags: [ "lazyk", "fizzbuzz", "scheme" ]
 ---
+
+# lazk kでfizzbuzz書いた
 
 -   妥協してschemeで書いた
 -   非常に簡単
@@ -51,6 +52,8 @@ tags: [ "lazyk", "fizzbuzz", "scheme" ]
 ```
 
 ---
+
+# lazk kでfizzbuzz書いた
 
 2014/04/17
 :   -   Yコンビネータの無駄な再定義を除去

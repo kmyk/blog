@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "SoundHound Inc. Programming Contest 2018 -Masters Tournament-: E - + Graph"
 date: 2018-07-07T23:53:38+09:00
 tags: [ "competitive", "writeup", "atcoder", "polynomial", "bipartite-graph" ]
 "target_url": [ "https://beta.atcoder.jp/contests/soundhound2018-summer-qual/tasks/soundhound2018_summer_qual_e" ]
 ---
+
+# SoundHound Inc. Programming Contest 2018 -Masters Tournament-: E - + Graph
 
 ## 解法
 

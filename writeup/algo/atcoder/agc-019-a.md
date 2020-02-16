@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/08/27/agc-019-a/"
 date: "2017-08-27T00:14:19+09:00"
-title: "AtCoder Grand Contest 019: A - Ice Tea Store"
 tags: [ "competitive", "writeup", "atcoder", "agc", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc019/tasks/agc019_a" ]
 ---
+
+# AtCoder Grand Contest 019: A - Ice Tea Store
 
 ## solution
 

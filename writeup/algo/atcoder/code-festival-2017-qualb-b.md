@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/11/10/code-festival-2017-qualb-b/"
 date: "2017-11-10T23:55:43+09:00"
-title: "CODE FESTIVAL 2017 qual B: B - Problem Set"
 tags: [ "competitive", "writeup", "atcoder", "codefestival" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-festival-2017-qualb/tasks/code_festival_2017_qualb_b" ]
 ---
+
+# CODE FESTIVAL 2017 qual B: B - Problem Set
 
 ## solution
 

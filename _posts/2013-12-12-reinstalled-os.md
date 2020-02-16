@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "os入れ直した"
 date: 2013-12-12T02:18:26+09:00
 tags: [ "install", "arch", "xfce", "fcitx", "memo" ]
 ---
+
+# os入れ直した
 
 XUbuntu, xmonad, fcitx + mozc  
 導入のメモ

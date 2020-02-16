@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/24/fhc-2016-round2-a/"
-title: "Facebook Hacker Cup 2016 Round 2 Boomerang Decoration"
 date: 2016-01-24T06:02:35+09:00
 tags: [ "competitive", "writeup", "facebook-hacker-cup", "greedy" ]
 ---
+
+# Facebook Hacker Cup 2016 Round 2 Boomerang Decoration
 
 ## [Boomerang Decoration](https://www.facebook.com/hackercup/problem/424794494381569/)
 

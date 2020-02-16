@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2017/12/29/utpc2011-k/"
-title: "東京大学プログラミングコンテスト2011: K. 巡回セールスマン問題"
 date: "2017-12-29T07:48:35+09:00"
 tags: [ "competitive", "writeup", "utpc", "aoj", "graph", "dijkstra", "warshall-floyd", "lowest-common-ancestor", "sparse-table", "optimization" ]
 ---
+
+# 東京大学プログラミングコンテスト2011: K. 巡回セールスマン問題
 
 -   <http://www.utpc.jp/2011/problems/travel.html>
 -   <http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=2269>

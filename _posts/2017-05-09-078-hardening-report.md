@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2017-05-09T20:44:41+09:00"
-title: "078 Hardening: 参加記"
 tags: [ "hardening", "mini-hardening" ]
 ---
+
+# 078 Hardening: 参加記
 
 <http://peatix.com/event/254844>
 

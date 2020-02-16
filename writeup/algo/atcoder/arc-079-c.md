@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/07/29/arc-079-c/"
 date: "2017-07-29T23:07:07+09:00"
-title: "AtCoder Regular Contest 079: C - Cat Snuke and a Voyage"
 tags: [ "competitive", "writeup", "atcoder", "arc", "graph" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc079/tasks/arc079_a" ]
 ---
+
+# AtCoder Regular Contest 079: C - Cat Snuke and a Voyage
 
 ## solution
 

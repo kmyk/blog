@@ -1,11 +1,12 @@
 ---
 category: blog
 layout: post
-title: "素数列をcplで"
 date: 2015-06-12T23:27:18+09:00
 math: true
 tags: [ ]
 ---
+
+# 素数列をcplで
 
 cplでなにか複雑なもの、これが書けたのでまあcpl使えますと言える程度のものを書こうと思って、素数列を書きました。
 

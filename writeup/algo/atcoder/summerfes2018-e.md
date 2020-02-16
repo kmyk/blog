@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Summer Festival Contest 2018 (Division 1): E - 石積み (Pyramid Piling)"
 date: 2018-08-25T17:16:58+09:00
 tags: [ "competitive", "writeup", "atcoder", "math" ]
 "target_url": [ "https://beta.atcoder.jp/contests/summerfes2018-div1/tasks/summerfes2018_e" ]
 ---
+
+# Summer Festival Contest 2018 (Division 1): E - 石積み (Pyramid Piling)
 
 ## 解法
 

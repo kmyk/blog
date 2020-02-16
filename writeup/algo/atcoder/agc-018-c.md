@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/07/23/agc-018-c/"
-title: "AtCoder Grand Contest 018: C - Coins"
 date: "2017-07-23T23:18:15+09:00"
 tags: [ "competitive", "writeup", "atcoder", "agc", "flow", "minimum-cost-flow" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc018/tasks/agc018_c" ]
 ---
+
+# AtCoder Grand Contest 018: C - Coins
 
 橙になった。
 

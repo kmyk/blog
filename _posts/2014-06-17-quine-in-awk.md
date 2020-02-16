@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "awkでquine書いた"
 date: 2014-06-17T20:51:00+09:00
 tags: [ "awk", "quine" ]
 ---
+
+# awkでquine書いた
 
 ``` awk
 #!/usr/bin/awk -f

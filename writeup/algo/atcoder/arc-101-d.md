@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 101: D - Median of Medians"
 date: 2018-08-29T03:18:39+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "median", "bianry-search" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc101/tasks/arc101_b" ]
 ---
+
+# AtCoder Regular Contest 101: D - Median of Medians
 
 ## 解法
 

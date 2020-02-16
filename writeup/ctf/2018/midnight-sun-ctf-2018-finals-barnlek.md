@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Midnight Sun CTF Finals 2018: Barnlek"
 date: "2018-06-25T11:39+09:00"
 tags: [ "ctf", "writeup", "midnight-sun-ctf", "pwn", "buffer-overflow" ]
 "target_url": [ "https://ctftime.org/event/635" ]
 ---
+
+# Midnight Sun CTF Finals 2018: Barnlek
 
 ## problem
 

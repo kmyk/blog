@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/01/15/arc-067-f/"
 date: "2017-01-15T23:28:43+09:00"
-title: "AtCoder Regular Contest 067: F - Yakiniku Restaurants"
 tags: [ "competitive", "writeup", "arc", "atcoder", "optimization" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc067/tasks/arc067_d" ]
 ---
+
+# AtCoder Regular Contest 067: F - Yakiniku Restaurants
 
 だめ。こういうのを通せると気持ちいいんだけどなあ。
 

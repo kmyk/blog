@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/12/20/world-codesprint-8-climbing-the-leaderboard/"
 date: "2016-12-20T02:33:02+09:00"
-title: "HackerRank World CodeSprint 8: Climbing the Leaderboard"
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint" ]
 "target_url": [ "https://www.hackerrank.com/contests/world-codesprint-8/challenges/climbing-the-leaderboard" ]
 ---
+
+# HackerRank World CodeSprint 8: Climbing the Leaderboard
 
 ## solution
 

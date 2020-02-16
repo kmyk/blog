@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2016/09/19/csaw-quals-2016-sleeping-guard/"
 date: "2016-09-19T22:09:45+09:00"
-title: "CSAW Quals CTF 2016: Sleeping Guard"
 tags: [ "ctf", "writeup", "csaw-ctf", "crypto" ]
 ---
+
+# CSAW Quals CTF 2016: Sleeping Guard
 
 固定の文字列が飛んでくるserver。
 直接ファイルで渡すのではだめだったのか。手元に落とすときbufferingを殺しておかないと末尾が切れるので注意。

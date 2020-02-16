@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/02/32c3-ctf-teufel/"
-title: "32C3 CTF teufel"
 date: 2016-01-02T23:20:01+09:00
 tags: [ "ctf", "pwn", "writeup", "xinetd", "buffer-overflow", "rop" ]
 ---
+
+# 32C3 CTF teufel
 
 ## [pwn 200: teufel](https://github.com/ctfs/write-ups-2015/tree/master/32c3-ctf-2015/pwn/teufel-200)
 

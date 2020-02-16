@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/03/13/agc-011-e/"
 date: "2017-03-13T01:49:43+09:00"
-title: "AtCoder Grand Contest 011: E - Increasing Numbers"
 tags: [ "competitive", "writeup", "atcoder", "agc", "multiprecision" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc011/tasks/agc011_e" ]
 ---
+
+# AtCoder Grand Contest 011: E - Increasing Numbers
 
 解説を見てそのまま書いた。
 pythonでやると入力取って$9$の乗算1回に$1.5$秒ぐらいで基数変換が走っててだめそうだった。なのでc++した。

@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2018/02/21/srm-730-medium/"
-title: "TopCoder SRM 730 Div 1 Medium. Subgraphs"
 date: "2018-02-21T13:53:03+09:00"
 tags: [ "competitive", "writeup", "topcoder", "srm", "graph", "construction" ]
 ---
+
+# TopCoder SRM 730 Div 1 Medium. Subgraphs
 
 ## problem
 

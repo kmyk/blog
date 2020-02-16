@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "parsecで非決定的パース"
 date: 2014-01-25T18:28:27+09:00
 tags: [ "haskell", "parsec" ]
 ---
+
+# parsecで非決定的パース
 
 ざっくりparseして、出力を`filter`や`head`で加工したかった
 
@@ -60,5 +61,7 @@ q = try q' <|> fork [] where
 -   [雑草ブログ Listモナドで非決定的計算をしよう](http://hooki.blog23.fc2.com/blog-entry-74.html)
 
 ---
+
+# parsecで非決定的パース
 
 [^1]: On Lispの説明による

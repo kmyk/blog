@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2017-05-18T03:02:39+09:00"
-title: "オンラインジャッジサーバ上でstd::threadを使う"
 tags: [ "competitive", "optimization", "pthread", "elf-format" ]
 ---
+
+# オンラインジャッジサーバ上でstd::threadを使う
 
 ## 背景
 

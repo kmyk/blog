@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/02/07/abc-033-d/"
-title: "AtCoder Beginner Contest 033 D - 三角形の分類"
 date: 2016-02-07T01:53:04+09:00
 tags: [ "competitive", "writeup", "atcoder", "abc", "angle", "geometry", "sort" ]
 ---
+
+# AtCoder Beginner Contest 033 D - 三角形の分類
 
 角度ソート系の発想は苦手。誤差に敏感な実装も苦手。
 とりあえず一定の数を解いて慣れるしかないのだろうか。

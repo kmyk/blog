@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/07/31/agc-017-d/"
 date: "2017-07-31T09:52:19+09:00"
-title: "AtCoder Grand Contest 017: D - Game on Tree"
 tags: [ "competitive", "writeup", "atcoder", "agc", "grundy-number", "game", "tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc017/tasks/agc017_d" ]
 ---
+
+# AtCoder Grand Contest 017: D - Game on Tree
 
 ## solution
 

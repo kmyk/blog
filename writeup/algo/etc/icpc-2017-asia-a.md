@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2017/12/19/icpc-2017-asia-a/"
-title: "AOJ 1378 / ACM-ICPC 2017 Asia Tsukuba Regional Contest: A. Secret of Chocolate Poles"
 date: "2017-12-19T03:48:50+09:00"
 tags: [ "competitive", "writeup", "icpc", "icpc-asia", "dp" ]
 ---
+
+# AOJ 1378 / ACM-ICPC 2017 Asia Tsukuba Regional Contest: A. Secret of Chocolate Poles
 
 -   <http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1378>
 -   <http://judge.u-aizu.ac.jp/onlinejudge/cdescription.jsp?cid=ICPCOOC2017&pid=A>

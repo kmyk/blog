@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/12/24/xmascontest-2015-g/"
-title: "Xmas Contest 2015 G - Good Sequence"
 date: 2015-12-24T22:55:25+09:00
 tags: [ "competitive", "atcoder", "writeup", "greedy" ]
 ---
+
+# Xmas Contest 2015 G - Good Sequence
 
 ## [G - Good Sequence](https://beta.atcoder.jp/contests/xmascontest2015/tasks/xmascontest2015_g) {#g}
 

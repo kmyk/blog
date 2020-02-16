@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/18/fhc-2016-round1-b/"
-title: "Facebook Hacker Cup 2016 Round 1 Laundro, Matt"
 date: 2016-01-18T01:17:34+09:00
 tags: [ "competitive", "writeup", "facebook-hacker-cup", "greedy", "simulation" ]
 ---
+
+# Facebook Hacker Cup 2016 Round 1 Laundro, Matt
 
 ## [Laundro, Matt](https://www.facebook.com/hackercup/problem/1611251319125133/)
 

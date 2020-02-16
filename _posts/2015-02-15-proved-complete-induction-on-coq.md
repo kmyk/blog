@@ -1,11 +1,12 @@
 ---
 category: blog
 layout: post
-title: "coqで完全帰納法書いた"
 date: 2015-02-15T15:07:51+09:00
 tags: [ "coq", "math", "induction", "proof" ]
 math: true
 ---
+
+# coqで完全帰納法書いた
 
 完全帰納法, complete induction, strong inductionとか呼ばれるやつをcoqで証明した
 
@@ -64,6 +65,8 @@ $O$のときは$H$の仮定が空、$S n$のときは帰納法の仮定が$H$の
 ところで、2重帰納法は`Theorem nat_double_ind`として標準libraryにあるのに何故これはないのだろうか。
 
 ---
+
+# coqで完全帰納法書いた
 
 ついでにlistの長さに関する帰納法も書いた。
 

@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/31/hackerrank-worldcodesprint-zurikela/"
-title: "HackerRank World Codesprint: Zurikela's Graph"
 date: 2016-01-31T01:43:49+09:00
 tags: [ "competitive", "writeup", "hackerrank", "independent-set", "maximum-independent-set", "graph", "world-codesprint" ]
 ---
+
+# HackerRank World Codesprint: Zurikela's Graph
 
 ## [Zurikela's Graph](https://www.hackerrank.com/contests/worldcodesprint/challenges/zurikela)
 

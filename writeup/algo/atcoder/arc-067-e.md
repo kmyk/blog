@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/01/15/arc-067-e/"
 date: "2017-01-15T22:49:44+09:00"
-title: "AtCoder Regular Contest 067: E - Grouping"
 tags: [ "competitive", "writeup", "arc", "atcoder", "dp", "combination" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc067/tasks/arc067_c" ]
 ---
+
+# AtCoder Regular Contest 067: E - Grouping
 
 提出したらsampleだけTLEでそれ以外がACし、AtCoderの点数付けの性質により、TLEだが満点になった。
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/05/12/dcj-2015-practice-b/"
 date: "2017-05-12T22:26:01+09:00"
-title: "Google Code Jam Distributed Practice Round 2015: B. sandwich"
 tags: [ "competitive", "writeup", "dcj", "distributed-code-jam", "mle" ]
 "target_url": [ "https://codejam.withgoogle.com/codejam/contest/4264486/dashboard#s=p1" ]
 ---
+
+# Google Code Jam Distributed Practice Round 2015: B. sandwich
 
 DCJ通過者へメールでURLが送られてくるPractice Roundにて。
 MLEを踏んだので本番のためにまとめておいた。

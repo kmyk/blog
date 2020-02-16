@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/02/14/yahoo-procon2018-qual-b/"
-title: "「みんなのプロコン 2018」: B - オークション"
 date: "2018-02-14T20:15:24+09:00"
 tags: [ "competitive", "writeup", "atcoder", "yahoo-procon" ]
 "target_url": [ "https://beta.atcoder.jp/contests/yahoo-procon2018-qual/tasks/yahoo_procon2018_qual_b" ]
 ---
+
+# 「みんなのプロコン 2018」: B - オークション
 
 ## implementation
 

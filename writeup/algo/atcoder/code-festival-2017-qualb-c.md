@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/11/10/code-festival-2017-qualb-c/"
 date: "2017-11-10T23:55:45+09:00"
-title: "CODE FESTIVAL 2017 qual B: C - 3 Steps"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "bipartite-graph" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-festival-2017-qualb/tasks/code_festival_2017_qualb_c" ]
 ---
+
+# CODE FESTIVAL 2017 qual B: C - 3 Steps
 
 ## 感想
 

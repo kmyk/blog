@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/06/12/abc-063-a/"
 date: "2017-06-12T15:39:25+09:00"
-title: "AtCoder Beginner Contest 063: A - Restricted"
 tags: [ "competitive", "writeup", "atcoder", "abc", "sed", "golf" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc063/tasks/abc063_a" ]
 ---
+
+# AtCoder Beginner Contest 063: A - Restricted
 
 $102$byte。
 

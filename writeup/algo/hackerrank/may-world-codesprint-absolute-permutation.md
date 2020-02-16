@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/23/hackerrank-may-world-codesprint-absolute-permutation/"
-title: "HackerRank May World CodeSprint: Absolute Permutation"
 date: 2016-05-23T01:50:01+09:00
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint" ]
 "target_url": [ "https://www.hackerrank.com/contests/may-world-codesprint/challenges/absolute-permutation" ]
 ---
+
+# HackerRank May World CodeSprint: Absolute Permutation
 
 ## problem
 

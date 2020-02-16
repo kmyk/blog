@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/01/30/seccon-finals-2016-welcome/"
 date: "2017-01-30T03:49:21+09:00"
-title: "SECCON finals 2016: 六(6) welcome"
 tags: [ "ctf", "writeup", "seccon", "rev" ]
 ---
+
+# SECCON finals 2016: 六(6) welcome
 
 <!-- {% raw %} -->
 

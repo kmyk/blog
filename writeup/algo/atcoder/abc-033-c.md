@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/02/06/abc-033-c/"
-title: "AtCoder Beginner Contest 033 C - 数式の書き換え"
 date: 2016-02-06T23:22:52+09:00
 tags: [ "competitive", "writeup", "atcoder", "abc", "brainfuck", "greedy" ]
 ---
+
+# AtCoder Beginner Contest 033 C - 数式の書き換え
 
 ## [C - 数式の書き換え](https://beta.atcoder.jp/contests/abc033/tasks/abc033_c)
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/07/23/arc-058-d/"
 date: "2016-07-23T23:10:43+09:00"
-title: "AtCoder Regular Contest 058 D - いろはちゃんとマス目 / Iroha and a Grid"
 tags: [ "competitive", "writeup", "atcoder", "arc", "combination" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc058/tasks/arc058_b" ]
 ---
+
+# AtCoder Regular Contest 058 D - いろはちゃんとマス目 / Iroha and a Grid
 
 ## solution
 

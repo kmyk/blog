@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 095: E - Symmetric Grid"
 date: 2018-12-07T02:18:56+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "optimization", "exhaustive-search" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc095/tasks/arc095_c" ]
 ---
+
+# AtCoder Regular Contest 095: E - Symmetric Grid
 
 ## 解法
 

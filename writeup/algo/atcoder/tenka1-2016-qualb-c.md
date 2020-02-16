@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "天下一プログラマーコンテスト2016予選B: C - 天下一プログラマーコンテスト1999"
 date: 2018-07-07T07:17:47+09:00
 tags: [ "competitive", "writeup", "atcoder", "tenka1", "dp", "probability" ]
 "target_url": [ "https://beta.atcoder.jp/contests/tenka1-2016-qualb/tasks/tenka1_2016_qualB_c" ]
 ---
+
+# 天下一プログラマーコンテスト2016予選B: C - 天下一プログラマーコンテスト1999
 
 ## 解法
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/09/04/arc-082-c/"
 date: "2017-09-04T15:19:33+09:00"
-title: "AtCoder Regular Contest 082: C - Together"
 tags: [ "competitive", "writeup", "atcoder", "arc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc082/tasks/arc082_a" ]
 ---
+
+# AtCoder Regular Contest 082: C - Together
 
 ## solution
 

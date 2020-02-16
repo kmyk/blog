@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/06/11/abc-039-d/"
-title: "AtCoder Beginner Contest 039 D - 画像処理高橋君"
 date: 2016-06-11T23:00:04+09:00
 tags: [ "competitive", "writeup", "atcoder", "abc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc039/tasks/abc039_d" ]
 ---
+
+# AtCoder Beginner Contest 039 D - 画像処理高橋君
 
 やるだけなわりに面倒だなと思ったままACしたが、その面倒はなんらかの勘違いに起因したものだったので敗北感がある。
 

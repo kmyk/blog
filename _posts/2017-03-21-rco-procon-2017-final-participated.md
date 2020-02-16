@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2017-03-21T03:05:31+09:00"
-title: "RCO presents 日本橋ハーフマラソン 本戦: 参加記"
 tags: [ "competitive" ]
 ---
+
+# RCO presents 日本橋ハーフマラソン 本戦: 参加記
 
 <https://beta.atcoder.jp/contests/rco-contest-2017-final-open/>
 

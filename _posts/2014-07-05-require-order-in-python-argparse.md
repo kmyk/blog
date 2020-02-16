@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "pythonのargparseでrequire_order"
 date: 2014-07-05T22:06:54+09:00
 tags: [ "python", "argparse" ]
 ---
+
+# pythonのargparseでrequire_order
 
 optionでない引数以降は全て非optionにしたい  
 つまり `--foo a --bar b c` を `--foo --bar -- a b c` ではなく `--foo -- a --bar b c` と等価にしたい  

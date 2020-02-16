@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/10/25/codefestival-2015-qualb/"
-title: "CODE FESTIVAL 2015 予選B"
 date: 2015-10-25T22:10:49+09:00
 tags: [ "competitive", "writeup", "codefestival" ]
 ---
+
+# CODE FESTIVAL 2015 予選B
 
 予選Aはぎりぎりだったが、予選Bは好成績。
 

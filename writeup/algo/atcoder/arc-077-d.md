@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/07/20/arc-077-d/"
-title: "AtCoder Regular Contest 077: D - 11"
 date: "2017-07-20T03:11:57+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "combination", "inclusion-exclusion-principle" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc077/tasks/arc077_b" ]
 ---
+
+# AtCoder Regular Contest 077: D - 11
 
 ## solution
 

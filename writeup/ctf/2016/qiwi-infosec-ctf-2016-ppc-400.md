@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2016/11/19/qiwi-infosec-ctf-2016-ppc-400/"
 date: "2016-11-19T01:30:54+09:00"
-title: "Qiwi Infosec CTF 2016: PPC 400"
 tags: [ "ctf", "writeup", "qiwi-ctf", "ppc", "sqlite", "dijkstra" ]
 ---
+
+# Qiwi Infosec CTF 2016: PPC 400
 
 sqliteの`maze.db`から迷路を読み込んで解く。$50 \times 50$なので余裕だが、flagは$695$文字と大きくて驚く。
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/06/14/agc-012-b/"
 date: "2017-06-14T11:27:32+09:00"
-title: "AtCoder Grand Contest 012: B - Splatter Painting"
 tags: [ "competitive", "writeup", "atcoder", "agc", "graph", "bfs" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc012/tasks/agc012_b" ]
 ---
+
+# AtCoder Grand Contest 012: B - Splatter Painting
 
 ## solution
 

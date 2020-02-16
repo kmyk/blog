@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2015/09/01/codeforces-319/"
-title: "Codeforces Round #189 (Div. 1)"
 date: 2015-09-01T01:14:51+09:00
 tags: [ "codeforces", "competitive", "writeup" ]
 "target_url": [ "http://codeforces.com/contest/319" ]
 ---
+
+# Codeforces Round #189 (Div. 1)
 
 解いたらまとめを書いていこうと思った。
 
@@ -67,5 +68,7 @@ int main() {
 先輩はrange minimum query使ってた。editorialにはrandom-access doubly linked list上でsimulationしても解けるよってあった。
 
 ---
+
+# Codeforces Round #189 (Div. 1)
 
 [^1]: 部内の練習会

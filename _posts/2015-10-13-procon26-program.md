@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "第26回全国高等専門学校プログラミングコンテスト 競技部門 プログラム解説"
 date: 2015-10-13T10:16:44+09:00
 tags: [ "procon", "procon26", "competitive", "beam-search", "chokudai-search", "boyer-moore" ]
 ---
+
+# 第26回全国高等専門学校プログラミングコンテスト 競技部門 プログラム解説
 
 やるべきことやっただけという感じのビームサーチ。
 なお気付かなかっただとかでやり漏らし多数。

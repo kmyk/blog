@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/07/10/secuinside-ctf-trendyweb/"
 date: "2016-07-10T14:32:36+09:00"
-title: "SECUINSIDE CTF Quals 2016 web100: trendyweb"
 tags: [ "ctf", "writeup", "web", "php" ]
 "target_url": [ "https://ctftime.org/event/335" ]
 ---
+
+# SECUINSIDE CTF Quals 2016 web100: trendyweb
 
 This CTF was diffcult, and it seemed to be not well-prepared. I want to see the graph of the number of problems.
 

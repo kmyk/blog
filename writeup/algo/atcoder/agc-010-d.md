@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/02/17/agc-010-d/"
 date: "2017-02-17T14:34:17+09:00"
-title: "AtCoder Grand Contest 010: D - Decrementing"
 tags: [ "competitive", "writeup", "atcoder", "game" ]
 ---
+
+# AtCoder Grand Contest 010: D - Decrementing
 
 1000点にしてはかなり簡単だった。
 この回はBもCも難しくて未提出撤退をした記憶があるのになあ。

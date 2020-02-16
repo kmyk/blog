@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2017/12/19/icpc-2017-asia-g/"
-title: "AOJ 1384 / ACM-ICPC 2017 Asia Tsukuba Regional Contest: G. Rendezvous on a Tetrahedron"
 date: "2017-12-19T03:49:23+09:00"
 tags: [ "competitive", "writeup", "icpc", "icpc-asia", "implementation", "linear-aldgebra", "geometry" ]
 ---
+
+# AOJ 1384 / ACM-ICPC 2017 Asia Tsukuba Regional Contest: G. Rendezvous on a Tetrahedron
 
 -   <http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1384>
 -   <http://judge.u-aizu.ac.jp/onlinejudge/cdescription.jsp?cid=ICPCOOC2017&pid=G>

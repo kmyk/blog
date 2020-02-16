@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/12/06/seccon-2015-online-command-line-quiz/"
-title: "SECCON 2015 オンライン予選 Command-Line Quiz"
 date: 2015-12-06T20:32:40+09:00
 tags: [ "ctf", "writeup", "seccon", "quiz", "pwn" ]
 ---
+
+# SECCON 2015 オンライン予選 Command-Line Quiz
 
 気付かなければ気付かない系のパズル。unix系のosを常用している人で、勘が良いか時間をつぎ込むかすれば解ける。
 

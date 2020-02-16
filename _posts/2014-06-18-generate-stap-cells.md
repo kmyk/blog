@@ -1,11 +1,12 @@
 ---
 category: blog
 layout: post
-title: "STAP細胞が見つかるまでひたすら適当な細胞を生成し続けるプログラム"
 date: 2014-06-18T00:18:42+09:00
 tags: [ "stap", "lazy-k", "lcgs", "random" ]
 math: true
 ---
+
+# STAP細胞が見つかるまでひたすら適当な細胞を生成し続けるプログラム
 
 完全に出遅れたが書いてみた (lazy kで)  
 実行が遅すぎて発見の希望が持てない

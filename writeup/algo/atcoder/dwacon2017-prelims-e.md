@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/12/21/dwacon2017-prelims-e/"
 date: "2016-12-21T15:17:39+09:00"
-title: "第3回 ドワンゴからの挑戦状 予選: E - 偶奇飴分け"
 tags: [ "competitive", "writeup", "atcoder", "dwacon", "dp", "segment-tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/dwacon2017-prelims/tasks/dwango2017qual_e" ]
 ---
+
+# 第3回 ドワンゴからの挑戦状 予選: E - 偶奇飴分け
 
 本番中でもsegment木だろうなというのは想像できたが、部分点DPを書いて通過圏内に入り、体力を使い切って/満足してしまった。
 

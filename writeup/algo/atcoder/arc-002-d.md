@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/09/27/arc-002-d/"
-title: "AtCoder Regular Contest 002 D - ボードゲーム"
 date: 2015-09-27T15:06:41+09:00
 tags: [ "arc", "atcoder", "competitive", "writeup" ]
 ---
+
+# AtCoder Regular Contest 002 D - ボードゲーム
 
 少し難しめの問題を、と思ってD問題。もちろん簡単ではないが、とても難しいとも感じなかった。
 バグが取れなかったのでヒントとして他人の解説記事を覗いてしまったが、それ以外は全て自力で解けた。

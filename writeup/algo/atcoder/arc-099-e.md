@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 099: E - Independence"
 date: 2018-08-18T09:45:33+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "graph", "bipartite-graph", "clique" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc099/tasks/arc099_c" ]
 ---
+
+# AtCoder Regular Contest 099: E - Independence
 
 ## solution
 

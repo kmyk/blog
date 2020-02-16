@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2017-03-24T17:13:10+09:00"
-title: "getrusageによるメモリ使用量の計測をbypassしてみた"
 tags: [ "linux", "getrusage" ]
 ---
+
+# getrusageによるメモリ使用量の計測をbypassしてみた
 
 ## 概要
 

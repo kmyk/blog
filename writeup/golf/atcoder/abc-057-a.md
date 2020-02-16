@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/03/27/abc-057-a/"
 date: "2017-03-27T13:08:32+09:00"
-title: "AtCoder Beginner Contest 057: A - Remaining Time"
 tags: [ "competitive", "writeup", "atcoder", "abc", "golf", "awk" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc057/tasks/abc057_a" ]
 ---
+
+# AtCoder Beginner Contest 057: A - Remaining Time
 
 awk $15$byteを提出した。
 

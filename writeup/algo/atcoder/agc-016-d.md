@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/10/03/agc-016-d/"
 date: "2017-10-03T05:15:04+09:00"
-title: "AtCoder Grand Contest 016: D - XOR Replace"
 tags: [ "competitive", "writeup", "atcoder", "agc", "xor" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc016/tasks/agc016_d" ]
 ---
+
+# AtCoder Grand Contest 016: D - XOR Replace
 
 ## solution
 

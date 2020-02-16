@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/01/15/arc-077-f/"
-title: "AtCoder Regular Contest 077: F - SS"
 date: "2018-01-15T15:32:09+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "string" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc077/tasks/arc077_d" ]
 ---
+
+# AtCoder Regular Contest 077: F - SS
 
 まったく分からなかった。
 editorialを見た (英語版の方が詳しい)。

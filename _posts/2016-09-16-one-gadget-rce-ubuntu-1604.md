@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2016-09-16T17:13:37+09:00"
-title: "one-gadget RCE in Ubuntu 16.04 libc"
 tags: [ "ctf", "pwn", "libc", "shell", "one-gadget-rce" ]
 ---
+
+# one-gadget RCE in Ubuntu 16.04 libc
 
 In libc, there are `execve("/bin/sh", NULL, NULL)` gadgets.
 There is the document of Dragon Sector: <http://j00ru.vexillium.org/?p=2485>.
@@ -13,6 +14,8 @@ But I couldn't find documents about the concrete values of them.
 So I write them (of both x86\_64 and x86) and their preconditions here.
 
 ---
+
+# one-gadget RCE in Ubuntu 16.04 libc
 
 ## Ubuntu 16.04, x86_64
 
@@ -127,6 +130,8 @@ For bug reporting instructions, please see:
 ```
 
 ---
+
+# one-gadget RCE in Ubuntu 16.04 libc
 
 ## Ubuntu 16.04, x86
 
@@ -280,6 +285,8 @@ or
 ```
 
 ---
+
+# one-gadget RCE in Ubuntu 16.04 libc
 
 -   Tue Sep 20 02:27:06 JST 2016
     -   the gadgets of x86 are added.

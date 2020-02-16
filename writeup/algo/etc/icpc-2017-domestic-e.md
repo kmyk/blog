@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/07/14/icpc-2017-domestic-e/"
 date: "2017-07-14T23:50:41+09:00"
-title: "ACM-ICPC 2017 国内予選: E. 論理式圧縮機"
 tags: [ "competitive", "writeup", "icpc", "icpc-domestic", "parsing", "math" ]
 ---
+
+# ACM-ICPC 2017 国内予選: E. 論理式圧縮機
 
 ## solution
 

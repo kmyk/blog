@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Midnight Sun CTF Finals 2018: Snurre128"
 date: "2018-06-28T22:36+09:00"
 tags: [ "ctf", "writeup", "midnight-sun-ctf", "crypto", "lfsr", "linearity" ]
 "target_url": [ "https://ctftime.org/event/635" ]
 ---
+
+# Midnight Sun CTF Finals 2018: Snurre128
 
 ## note
 

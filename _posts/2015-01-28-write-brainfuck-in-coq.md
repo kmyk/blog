@@ -1,11 +1,12 @@
 ---
 category: blog
 layout: post
-title: "coqでbrainfuck処理系書いた"
 date: 2015-01-28T21:51:25+09:00
 tags: [ "coq", "brainfuck", "esolang" ]
 math: true
 ---
+
+# coqでbrainfuck処理系書いた
 
 ![](/blog/2015/01/28/write-brainfuck-in-coq/ss.png)
 

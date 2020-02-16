@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/11/30/code-festival-2016-relay-h/"
 date: "2016-11-30T01:33:30+09:00"
-title: "CODE FESTIVAL 2016 Relay: H - 早起き / Early Bird"
 tags: [ "competitive", "writeup", "atcoder", "codefestival" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf16-relay-open/tasks/relay_h" ]
 ---
+
+# CODE FESTIVAL 2016 Relay: H - 早起き / Early Bird
 
 overflowとちょうど$3,7$時の両方を含むことの見落しで$2$WA。
 

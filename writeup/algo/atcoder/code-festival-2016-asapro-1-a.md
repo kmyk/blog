@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/11/30/code-festival-2016-asapro-1-a/"
 date: "2016-11-30T13:42:26+09:00"
-title: "CODE FESTIVAL 2016 Elimination Tournament Round 1: A - グラフ / Graph"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "minimum-spanning-tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf16-tournament-round1-open/tasks/asaporo_c" ]
 ---
+
+# CODE FESTIVAL 2016 Elimination Tournament Round 1: A - グラフ / Graph
 
 最小全域木のライブラリがなかった(ないということも気付いてなかった)ため、Bを先にやったのと合わせて本番間に合わず。
 

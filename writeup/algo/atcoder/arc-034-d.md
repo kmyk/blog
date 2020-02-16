@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 034: D - インフレゲーム"
 date: 2018-08-31T18:26:50+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp", "expected-value", "linearity" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc034/tasks/arc034_4" ]
 ---
+
+# AtCoder Regular Contest 034: D - インフレゲーム
 
 ## 解法
 

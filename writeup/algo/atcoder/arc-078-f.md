@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/07/15/arc-078-f/"
 date: "2017-07-15T23:15:39+09:00"
-title: "AtCoder Regular Contest 078: F - Mole and Abandoned Mine"
 tags: [ "competitive", "writeup", "atcoder", "arc", "graph", "optimization", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc078/tasks/arc078_d" ]
 ---
+
+# AtCoder Regular Contest 078: F - Mole and Abandoned Mine
 
 ## solution
 

@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "free monadとはmonadそのものである"
 date: 2013-12-29T17:22:11+09:00
 tags: [ "haskell", "category-theory" ]
 ---
+
+# free monadとはmonadそのものである
 
 以前少し挑戦して敗れたが、ふと思い出してリベンジした
 

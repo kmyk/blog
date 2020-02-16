@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 101: E - Ribbons on Tree"
 date: 2018-12-07T17:24:58+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "inclusion-exclusion-principle", "tree-dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc101/tasks/arc101_c" ]
 ---
+
+# AtCoder Regular Contest 101: E - Ribbons on Tree
 
 ## 解法
 

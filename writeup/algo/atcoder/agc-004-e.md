@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/04/28/agc-004-e/"
 date: "2017-04-28T08:06:38+09:00"
-title: "AtCoder Grand Contest 004: E - Salvage Robots"
 tags: [ "competitive", "writeup", "atcoder", "agc", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc004/tasks/agc004_e" ]
 ---
+
+# AtCoder Grand Contest 004: E - Salvage Robots
 
 $O(H^2W^2)$でbounding boxを尽くせば求まりそうだとは思ったが、細部を詰めるのも実装するのも面倒だなあと思ってしまったので解説を見てしまった。方向は合ってた。
 

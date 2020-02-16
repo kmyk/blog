@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/10/20/hacklu-ctf-2017-prime-enigma/"
 date: "2017-10-20T01:32:34+09:00"
-title: "hack.lu CTF 2017: PRIME ENIGMA"
 tags: [ "ctf", "writeup", "hacklu-ctf", "crypto" ]
 ---
+
+# hack.lu CTF 2017: PRIME ENIGMA
 
 苦戦した。ちゃんと考えたら分かったが、$d = \frac{p - 1}{2}$でよいというのは私にはまだ自明でなかった。
 

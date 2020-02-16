@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/01/16/dwacon-2017-finals-b/"
 date: "2017-01-16T16:27:14+09:00"
-title: "第3回 ドワンゴからの挑戦状 本選: B - ニワンゴくんの約数"
 tags: [ "competitive", "writeup", "dwacon", "atcoder", "mo-algorithm" ]
 "target_url": [ "https://beta.atcoder.jp/contests/dwacon2017-honsen/tasks/dwango2017final_b" ]
 ---
+
+# 第3回 ドワンゴからの挑戦状 本選: B - ニワンゴくんの約数
 
 ## solution
 

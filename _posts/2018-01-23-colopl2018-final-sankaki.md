@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "COLOCON -Colopl programming contest 2018- Final: 参加記"
 date: "2018-01-23T00:35:36+09:00"
 tags: [ "competitive", "colopl", "atcoder", "sankaki" ]
 ---
+
+# COLOCON -Colopl programming contest 2018- Final: 参加記
 
 <https://be-ars.colopl.co.jp/recruitevent/colocon.html>
 

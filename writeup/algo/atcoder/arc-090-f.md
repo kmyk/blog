@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/04/09/arc-090-f/"
-title: "AtCoder Regular Contest 090: F - Number of Digits"
 date: "2018-04-09T23:19:44+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "counting" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc090/tasks/arc090_d" ]
 ---
+
+# AtCoder Regular Contest 090: F - Number of Digits
 
 ## solution
 

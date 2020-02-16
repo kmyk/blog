@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "coffeescriptのis notとisntは違う"
 date: 2013-12-05T14:24:25+09:00
 tags: [ "coffee" ]
 ---
+
+# coffeescriptのis notとisntは違う
 
 ```coffeescript
 a is not b

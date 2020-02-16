@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "ackermann関数をcplで"
 date: 2015-06-12T23:27:30+09:00
 tags: [ "cpl", "ackermann-function" ]
 ---
+
+# ackermann関数をcplで
 
 ackermann関数は高階原始帰納的関数なので関数空間を使えば書ける[^1][^2]、というのを幾つか見たので気になって書いた。特に高度なことではなかった。
 
@@ -40,11 +41,15 @@ let ack = ev.first(pr(cur(s.pi2),cur(ev.pair(I,s.o.!).fpow.second(s))));
 
 ---
 
+# ackermann関数をcplで
+
 -   Sun Jun 21 00:30:20 JST 2015
     -   fpowの無駄な`!`を消去
     -   図書きました <https://twitter.com/a3VtYQo/status/612245917668749312> <https://pbs.twimg.com/media/CH8iZ65UAAAjKqT.jpg:orig>
 
 ---
+
+# ackermann関数をcplで
 
 [^1]: <http://ci.nii.ac.jp/naid/110003743564>
 [^2]: <http://msakai.jp/d/?date=20030114>

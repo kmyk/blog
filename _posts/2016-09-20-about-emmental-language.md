@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2016-09-20T08:03:26+09:00"
-title: "Emmental言語の紹介と記録"
 tags: [ "esolang", "emmental" ]
 ---
+
+# Emmental言語の紹介と記録
 
 <http://esolangs.org/wiki/Emmental>
 
@@ -194,5 +195,7 @@ l
 ```
 
 ---
+
+# Emmental言語の紹介と記録
 
 書き易いから上記でもって満足してしまっているが、漏らしている面白さがあれば教えてほしい。

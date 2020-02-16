@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/04/02/csa-66-counting-quacks/"
-title: "CS Academy Round #66 (Div. 2 only): Counting Quacks"
 date: "2018-04-02T01:49:03+09:00"
 tags: [ "competitive", "writeup", "csa", "eratosthenes-seive" ]
 "target_url": [ "https://csacademy.com/contest/round-66/task/counting-quacks/statement/" ]
 ---
+
+# CS Academy Round #66 (Div. 2 only): Counting Quacks
 
 ## solution
 

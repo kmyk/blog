@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/24/anagol-hypotenuse-length/"
-title: "Anarch Golf 951. Hypotenuse length"
 date: 2016-05-24T23:35:20+09:00
 tags: [ "golf", "writeup", "anagol", "anarch-golf", "float" ]
 "target_url": [ "http://golf.shinh.org/p.rb?Hypotenuse+length" ]
 ---
+
+# Anarch Golf 951. Hypotenuse length
 
 浮動小数点数の問題は横並びになりやすい印象がある。
 

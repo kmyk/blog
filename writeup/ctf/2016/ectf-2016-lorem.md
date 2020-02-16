@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/10/23/ectf-2016-lorem/"
 date: "2016-10-23T23:49:38+09:00"
-title: "ECTF 2016: lorem"
 tags: [ "ctf", "ectf", "rev", "angr" ]
 "target_url": [ "http://www.ectf.in/" ]
 ---
+
+# ECTF 2016: lorem
 
 Our team, scryptos, solved all problems and got the $1$st place :)
 And I solved the 2 of 9 problems.

@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "TCO19 Single Round Match 744: Hard - CoverTreePaths"
 date: 2018-12-15T06:00:00+09:00
 tags: [ "competitive", "writeup", "topcoder", "srm", "duality", "linear-programming", "graph", "tree" ]
 ---
+
+# TCO19 Single Round Match 744: Hard - CoverTreePaths
 
 ## 問題概要
 

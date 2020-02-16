@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/12/31/arc-076-f/"
-title: "AtCoder Regular Contest 076: F - Exhausted?"
 date: "2017-12-31T21:19:18+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "maximum-flow" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc076/tasks/arc076_d" ]
 ---
+
+# AtCoder Regular Contest 076: F - Exhausted?
 
 自力で解けたとメモにはあったが、寝かせてから解説を書こうとしたらまったく分からなくなっていた。
 

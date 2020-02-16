@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Grand Contest 026: C - String Coloring"
 date: 2018-08-09T21:34:32+09:00
 tags: [ "competitive", "writeup", "atcoder", "agc", "string", "meet-in-the-middle" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc026/tasks/agc026_c" ]
 ---
+
+# AtCoder Grand Contest 026: C - String Coloring
 
 ## solution
 

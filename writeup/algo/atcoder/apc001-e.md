@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Petrozavodsk Contest 001: E - Antennas on Tree"
 date: 2018-07-13T14:52:40+09:00
 tags: [ "competitive", "writeup", "atcoder", "tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/apc001/tasks/apc001_e" ]
 ---
+
+# AtCoder Petrozavodsk Contest 001: E - Antennas on Tree
 
 ## solution
 

@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/12/08/code-blue-ctf-2017-common-modulus-2/"
-title: "CODE BLUE CTF 2017: Common Modulus 2"
 date: "2017-12-08T10:07:11+09:00"
 tags: [ "ctf", "writeup", "crypto", "code-blue-ctf", "rsa", "gcd", "coppersmith-attack" ]
 "target_url": [ "https://ctftime.org/task/4873" ]
 ---
+
+# CODE BLUE CTF 2017: Common Modulus 2
 
 実質WA。
 

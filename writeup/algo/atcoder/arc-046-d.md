@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 046: D - うさぎとマス目"
 date: 2018-09-04T06:03:41+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "gcd" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc046/tasks/arc046_d" ]
 ---
+
+# AtCoder Regular Contest 046: D - うさぎとマス目
 
 ## 解法
 

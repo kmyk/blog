@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/21/hackerrank-101hack33-intersecting-paths/"
-title: "Hackerrank 101 Hack Jan 2016 Intersecting Paths"
 date: 2016-01-21T22:22:54+09:00
 tags: [ "competitive", "writeup", "hackerrank", "dp", "stack", "doubling" ]
 ---
+
+# Hackerrank 101 Hack Jan 2016 Intersecting Paths
 
 editorialを見た。これはまだ解くには厳しい。
 
@@ -17,6 +18,8 @@ $x,y$のpathが交差 $\Leftrightarrow$ $x,y$のpathの終端が同じあるい�
 
 "target_url": [ "small" ]
 ---
+
+# Hackerrank 101 Hack Jan 2016 Intersecting Paths
 成り立つことの証明(editorialにある)はちゃんと追えていない。
 </small>
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/10/23/code-festival-2016-qualc-d/"
 date: "2016-10-23T23:00:16+09:00"
-title: "CODE FESTIVAL 2016 qual C: D - Friction"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-festival-2016-qualc/tasks/codefestival_2016_qualC_d" ]
 ---
+
+# CODE FESTIVAL 2016 qual C: D - Friction
 
 通ってほしくて気にしていた人たちがいるのですが、なんとも言えない結果になった。
 特に、他に合う機会がない人がおり(私が一方的にそう思っているだけではあるが)一度直接話してみたかったのですが、通過はかなり厳しそうで残念。

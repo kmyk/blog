@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/10/03/jag2017summer-day3-d/"
 date: "2017-10-03T06:58:40+09:00"
-title: "Japan Alumni Group Summer Camp 2017 Day 3: D - Janken Master"
 tags: [ "competitive", "writeup", "atcoder", "jag-summer", "bit-dp", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/jag2017summer-day3/tasks/jag2017summer_day3_d" ]
 ---
+
+# Japan Alumni Group Summer Camp 2017 Day 3: D - Janken Master
 
 AtCoderのレートが高いとじゃんけんで有利であるのは有名事実ですが、斜め読みしてる英文中に出てくると混乱するのでやめてほしい。
 

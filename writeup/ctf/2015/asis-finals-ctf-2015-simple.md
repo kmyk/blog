@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/08/27/asis-finals-ctf-2015-simple/"
 date: "2016-08-27T01:03:28+09:00"
-title: "ASIS Cyber Security Contest 2015: simple"
 tags: [ "ctf", "writeup", "asis-ctf", "crypto", "xor" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2015/tree/master/asis-finals-ctf-2015/crypto/simple" ]
 ---
+
+# ASIS Cyber Security Contest 2015: simple
 
 これは分からない。解説を見た: <https://kt.pe/blog/2015/10/asis-2015-finals-simple/>。
 

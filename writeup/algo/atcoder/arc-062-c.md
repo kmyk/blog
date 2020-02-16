@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/10/15/arc-062-c/"
 date: "2016-10-15T23:54:54+09:00"
-title: "AtCoder Regular Contest 062 C - AtCoDeerくんと選挙速報 / AtCoDeer and Election Report"
 tags: [ "competitive", "writeup", "atcoder", "arc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc062/tasks/arc062_a" ]
 ---
+
+# AtCoder Regular Contest 062 C - AtCoDeerくんと選挙速報 / AtCoDeer and Election Report
 
 ICPCアジア地区予選のため、つくばのホテルで解いた。
 

@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/10/05/tdpc-semiexp/"
-title: "Typical DP Contest F - 準急"
 date: 2015-10-05T22:44:24+09:00
 tags: [ "atcoder", "competitive", "writeup", "dp", "typical-dp-contest" ]
 ---
+
+# Typical DP Contest F - 準急
 
 半日かかった。dp苦手すぎる。
 

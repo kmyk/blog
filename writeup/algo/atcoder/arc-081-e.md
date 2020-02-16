@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/08/21/arc-081-e/"
 date: "2017-08-21T00:12:17+09:00"
-title: "AtCoder Regular Contest 081: E - Don't Be a Subsequence"
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc081/tasks/arc081_c" ]
 ---
+
+# AtCoder Regular Contest 081: E - Don't Be a Subsequence
 
 解けたけど遅かったので提出せず。
 もう既に橙からは落ちているのでわざわざ下げる行為はしなくていいやという気持ちがあった。

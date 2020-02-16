@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/05/12/kupc-2013-d/"
 date: "2017-05-12T20:28:51+09:00"
-title: "京都大学プログラミングコンテスト2013: D - カーペット"
 tags: [ "competitive", "writeup", "atcoder", "kupc", "stack" ]
 "target_url": [ "https://beta.atcoder.jp/contests/kupc2013/tasks/kupc2013_d" ]
 ---
+
+# 京都大学プログラミングコンテスト2013: D - カーペット
 
 これはノーミス。
 

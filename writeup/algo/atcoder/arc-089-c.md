@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/01/23/arc-089-c/"
-title: "AtCoder Regular Contest 089: C - Traveling"
 date: "2018-01-23T19:41:41+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc089/tasks/arc089_a" ]
 ---
+
+# AtCoder Regular Contest 089: C - Traveling
 
 ## solution
 

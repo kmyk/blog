@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/12/12/code-festival-2016-asapro-3-a/"
 date: "2016-12-12T14:28:58+09:00"
-title: "CODE FESTIVAL 2016 Tournament Round 3: A - ストラックアウト / Struck Out"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "sliding-window-minimum", "range-maximum-query", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf16-tournament-round3-open/tasks/asaporo_d" ]
 ---
+
+# CODE FESTIVAL 2016 Tournament Round 3: A - ストラックアウト / Struck Out
 
 本番ではスライド最小値を知らず部分点。蟻本に載ってるらしいので反省。
 

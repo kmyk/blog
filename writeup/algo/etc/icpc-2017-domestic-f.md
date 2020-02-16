@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/07/15/icpc-2017-domestic-f/"
 date: "2017-07-15T01:15:26+09:00"
-title: "ACM-ICPC 2017 国内予選: F.  リボンたたみ"
 tags: [ "competitive", "writeup", "icpc", "icpc-domestic" ]
 ---
+
+# ACM-ICPC 2017 国内予選: F.  リボンたたみ
 
 $2$進数でいい感じにするのだろうけどなんだか面倒だな、と思ってたら後輩氏が解法を投げてきた問題。
 
@@ -75,6 +76,8 @@ int main() {
 ```
 
 ---
+
+# ACM-ICPC 2017 国内予選: F.  リボンたたみ
 
 -   2017年  7月 23日 日曜日 00:39:37 JST
     -   ACを確認

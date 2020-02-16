@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/02/04/agc-010-c/"
 date: "2017-02-04T23:05:35+09:00"
-title: "AtCoder Grand Contest 010: C - Cleaning"
 tags: [ "competitive", "writeup", "atcoder", "agc", "tree", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc010/tasks/agc010_c" ]
 ---
+
+# AtCoder Grand Contest 010: C - Cleaning
 
 Aを書いた後それをBかCが書けたら投げようと思ったら、BもCも最後まで分からなかったので無提出rating変化なし。
 あまり良くないとは思うのだけれど、短期的なratingを考えると十分選択肢に入る戦略なのでこうなってしまう。

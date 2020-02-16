@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2016/11/21/rc3-ctf-2016-bork-bork/"
 date: "2016-11-21T17:47:26+09:00"
-title: "RC3 CTF 2016: bork bork"
 tags: [ "ctf", "writeup", "rc3-ctf", "web", "os-command-injection" ]
 ---
+
+# RC3 CTF 2016: bork bork
 
 
 れべな氏にosコマンドインジェクションと言われて続きをやった。

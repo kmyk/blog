@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/10/22/kupc-2017-g/"
 date: "2017-10-22T13:33:30+09:00"
-title: "Kyoto University Programming Contest 2017: G - encode/decode 2017"
 tags: [ "competitive", "writeup", "kupc", "atcoder", "lie", "tree", "special-judge" ]
 "target_url": [ "https://beta.atcoder.jp/contests/kupc2017/tasks/kupc2017_g" ]
 ---
+
+# Kyoto University Programming Contest 2017: G - encode/decode 2017
 
 問題文みたら誰もが自明に思い付く(と思っていた)のを試してみたらWAで、やはり駄目かと思って普通に解いてACした後からrejudgeでWAだったのがACになり、しばらくして社長判断で提出取消になりました。
 何も怪しいことはしてないので不正かどうかの疑いすらせず提出したが、手法そのものより「意図的な問題破壊」がNGということです。

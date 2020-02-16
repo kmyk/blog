@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2016-10-16T22:16:30+09:00"
-title: "ACM-ICPC 2016 Asia Tsukuba Regional: 参加記"
 tags: [ "competitive", "icpc" ]
 ---
+
+# ACM-ICPC 2016 Asia Tsukuba Regional: 参加記
 
 <http://icpc.iisf.or.jp/2016-tsukuba/>
 

@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/12/10/seccon-2017-quals-very-smooth/"
-title: "SECCON 2017 Online CTF: Very smooth"
 date: "2017-12-10T15:18:58+09:00"
 tags: [ "ctf", "writeup", "seccon", "seccon-quals", "crypto", "network", "rsa" ]
 "target_url": [ "https://ctftime.org/event/512/" ]
 ---
+
+# SECCON 2017 Online CTF: Very smooth
 
 ## solution
 

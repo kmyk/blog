@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/10/15/arc-062-e/"
 date: "2016-10-15T23:54:58+09:00"
-title: "AtCoder Regular Contest 062 E - AtCoDeerくんと立方体づくり / Building Cubes with AtCoDeer"
 tags: [ "competitive", "writeup", "atcoder", "arc", "combination" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc062/tasks/arc062_c" ]
 ---
+
+# AtCoder Regular Contest 062 E - AtCoDeerくんと立方体づくり / Building Cubes with AtCoDeer
 
 環境が普段と違うこともあり、分からなかったら撤退のつもりで$3$問目のこれからopenした。
 そして解けた。

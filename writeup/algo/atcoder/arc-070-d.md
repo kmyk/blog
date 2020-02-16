@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/05/02/arc-070-d/"
 date: "2017-05-02T22:28:01+09:00"
-title: "AtCoder Regular Contest 070: D - No Need"
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp", "bitset", "optimization", "lie" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc070/tasks/arc070_b" ]
 ---
+
+# AtCoder Regular Contest 070: D - No Need
 
 `bitset`定数倍高速化でなんとかしようとしたけど、あと$2,3$倍ぐらい足りなかった。
 仕方がないので考察をし、その上で嘘解法をした。

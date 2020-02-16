@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Google Capture The Flag 2018 (Quals): perfect secrecy"
 date: "2018-06-25T11:39+09:00"
 tags: [ "ctf", "writeup", "google-ctf", "crypto", "rsa", "lsb-leak-attack" ]
 "target_url": [ "https://ctftime.org/event/623" ]
 ---
+
+# Google Capture The Flag 2018 (Quals): perfect secrecy
 
 ## solution
 

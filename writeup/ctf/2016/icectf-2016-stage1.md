@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/08/27/icectf-2016-stage1/"
 date: "2016-08-27T01:22:11+09:00"
-title: "IceCTF 2016: stage1"
 tags: [ "ctf", "writeup", "icectf" ]
 "target_url": [ "https://icec.tf/" ]
 ---
+
+# IceCTF 2016: stage1
 
 ## Hello World!
 

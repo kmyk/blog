@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/12/25/agc-008-c/"
 date: "2016-12-25T23:01:24+09:00"
-title: "AtCoder Grand Contest 008: C - Tetromino Tiling"
 tags: [ "competitive", "writeup", "atcoder", "agc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc008/tasks/agc008_c" ]
 ---
+
+# AtCoder Grand Contest 008: C - Tetromino Tiling
 
 ## 反省
 

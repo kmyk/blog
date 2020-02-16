@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/03/22/easyctf-2017-a-maze-ing/"
 date: "2017-03-22T16:32:19+09:00"
-title: "EasyCTF 2017: A-maze-ing"
 tags: [ "ctf", "writeup", "easyctf", "misc", "guessing" ]
 ---
+
+# EasyCTF 2017: A-maze-ing
 
 なぜかflag提出の結果が帰ってくるのがすごく遅いのに、こういう問題を出してくるのはすごいですね。
 

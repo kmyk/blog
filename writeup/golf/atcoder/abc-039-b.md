@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/06/11/abc-039-b/"
-title: "AtCoder Beginner Contest 039 B - エージェント高橋君"
 date: 2016-06-11T23:00:02+09:00
 tags: [ "competitive", "writeup", "atcoder", "abc", "awk", "golf", "perl" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc039/tasks/abc039_b" ]
 ---
+
+# AtCoder Beginner Contest 039 B - エージェント高橋君
 
 ## implementation
 

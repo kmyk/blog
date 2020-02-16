@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2016-12-11T00:29:45+09:00"
-title: "CODE VS for STUDENT 2016: 参加記"
 tags: [ "competitive", "marathon-match", "codevs" ]
 ---
+
+# CODE VS for STUDENT 2016: 参加記
 
 <https://student.codevs.jp/>
 

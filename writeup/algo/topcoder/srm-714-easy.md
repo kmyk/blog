@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/05/07/srm-714-easy/"
 date: "2017-05-07T22:01:05+09:00"
-title: "TopCoder SRM 714 Div1 Easy: ParenthesisRemoval"
 tags: [ "competitive", "writeup", "topcoder", "srm" ]
 ---
+
+# TopCoder SRM 714 Div1 Easy: ParenthesisRemoval
 
 実験。
 
@@ -13,6 +14,8 @@ tags: [ "competitive", "writeup", "topcoder", "srm" ]
 全ての `(` (あるいは`)`) についてそのnestの深さの積。$O(\|s\|)$。
 
 ---
+
+# TopCoder SRM 714 Div1 Easy: ParenthesisRemoval
 
 未証明。editorialもないしよく分からない。
 

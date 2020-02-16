@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/06/19/abc-040-a/"
-title: "AtCoder Beginner Contest 040 A - 赤赤赤赤青"
 date: 2016-06-19T22:20:00+09:00
 tags: [ "competitive", "writeup", "atcoder", "golf", "sed" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc040/tasks/abc040_a" ]
 ---
+
+# AtCoder Beginner Contest 040 A - 赤赤赤赤青
 
 sedによる$10$進数の$1$進数化はよく使われるのでパターン化しているが、その逆をしたのは始めてだった。
 

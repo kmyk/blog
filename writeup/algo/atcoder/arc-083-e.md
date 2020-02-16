@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/10/03/arc-083-e/"
 date: "2017-10-03T06:01:39+09:00"
-title: "AtCoder Regular Contest 083: E - Bichrome Tree"
 tags: [ "competitive", "writeup", "atcoder", "arc", "tree", "dp", "knapsack-problem" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc083/tasks/arc083_c" ]
 ---
+
+# AtCoder Regular Contest 083: E - Bichrome Tree
 
 ## solution
 

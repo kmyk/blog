@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/03/18/defcon-qualifier-ctf-2014-heap/"
-title: "DEF CON CTF Qualifier 2014: heap"
 date: 2016-03-18T22:26:56+09:00
 tags: [ "ctf", "writeup", "pwn", "heap", "heap-metadata", "shellcode" ]
 ---
+
+# DEF CON CTF Qualifier 2014: heap
 
 同じような問題を以前解いた([Exploit Exercises Protostar Heap3](http://kimiyuki.net/blog/2016/02/04/exploit-exercises-protostar-heap3/))ので、これと同じことをした。
 

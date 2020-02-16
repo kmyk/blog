@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/06/12/jag2016-domestic2-b/"
-title: "JAG 模擬国内予選 2016: B - jfen"
 date: 2016-06-12T22:30:39+09:00
 tags: [ "competitive", "writeup", "icpc", "jag" ]
 "target_url": [ "http://acm-icpc.aitea.net/index.php?2016%2FPractice%2F%E6%A8%A1%E6%93%AC%E5%9B%BD%E5%86%85%E4%BA%88%E9%81%B8B" ]
 ---
+
+# JAG 模擬国内予選 2016: B - jfen
 
 コンテスト中に書いた。
 

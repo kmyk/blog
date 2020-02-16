@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/03/29/arc-023-d/"
-title: "AtCoder Regular Contest 023 D - GCD区間"
 date: 2016-03-29T17:56:25+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "gcd", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc023/tasks/arc023_4" ]
 ---
+
+# AtCoder Regular Contest 023 D - GCD区間
 
 解けないと思って解説を見たが、ねばっていれば解けていたかもしれない。
 $2^n$の増加が急なのは当然すぐ出てくるが、$n$の約数の個数の増加が緩やかなのは知っているのになかなか出てこない。

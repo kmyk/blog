@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2016-12-08T18:49:10+09:00"
-title: "Chainerで A + B を計算した"
 tags: [ "chainer", "neural-network", "lstm", "machine-learning" ]
 ---
+
+# Chainerで A + B を計算した
 
 ニューラルネットワークに足し算をさせた。
 ただし、$a + b$の形の数式を$10$進数表記文字列として与え、その計算結果を$10$進数表記文字列として結果を受けとる。
@@ -207,6 +208,8 @@ if __name__ == '__main__':
 ```
 
 ---
+
+# Chainerで A + B を計算した
 
 
 -   Fri Dec 23 23:37:20 JST 2016

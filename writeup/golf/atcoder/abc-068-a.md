@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/03/01/abc-068-a/"
-title: "AtCoder Beginner Contest 068: A - ABCxxx"
 date: "2018-03-01T09:49:34+09:00"
 tags: [ "competitive", "writeup", "atcoder", "abc", "brainfuck", "golf" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc068/tasks/abc068_a" ]
 ---
+
+# AtCoder Beginner Contest 068: A - ABCxxx
 
 wrappingの魔法楽しい。手で思い付ける気はしないが。
 

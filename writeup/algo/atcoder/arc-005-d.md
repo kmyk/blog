@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/09/30/arc-005-d/"
-title: "AtCoder Regular Contest 005 D - 連射王高橋君"
 date: 2015-09-30T17:17:51+09:00
 tags: [ "atcoder", "competitive", "arc", "writeup" ]
 ---
+
+# AtCoder Regular Contest 005 D - 連射王高橋君
 
 苦戦した。答え見まくった。精進には丁度よい難易度だったように思う。
 

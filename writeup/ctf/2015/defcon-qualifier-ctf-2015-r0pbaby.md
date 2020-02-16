@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/07/defcon-qualifier-ctf-2015-r0pbaby/"
-title: "DEF CON Qualifier 2015: r0pbaby"
 date: 2016-01-07T00:49:08+09:00
 tags: [ "ctf", "writeup", "pwn", "rop" ]
 ---
+
+# DEF CON Qualifier 2015: r0pbaby
 
 ## [Baby's First 1: r0pbaby](https://github.com/ctfs/write-ups-2015/tree/master/defcon-qualifier-ctf-2015/babys-first/r0pbaby)
 

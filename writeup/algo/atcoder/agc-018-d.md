@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/07/23/agc-018-d/"
-title: "AtCoder Grand Contest 018: D - Tree and Hamilton Path"
 date: "2017-07-23T23:19:15+09:00"
 tags: [ "competitive", "writeup", "atcoder", "agc", "tree", "centroid", "hamiltonian-path" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc018/tasks/agc018_d" ]
 ---
+
+# AtCoder Grand Contest 018: D - Tree and Hamilton Path
 
 後輩氏が「木の重心を求める方法が分からなかったので解けなかった」と言っていた。そこ以外は分かっていたようなのでプロみを感じた。
 

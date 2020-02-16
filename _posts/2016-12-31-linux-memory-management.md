@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2016-12-31T23:33:38+09:00"
-title: "Linuxにおけるメモリ管理機構の利用に関する覚え書き"
 tags: [ "linux", "oom-killer", "ulimit" ]
 ---
+
+# Linuxにおけるメモリ管理機構の利用に関する覚え書き
 
 ## OOM killer
 

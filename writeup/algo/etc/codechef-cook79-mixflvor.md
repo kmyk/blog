@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/04/05/codechef-cook79-mixflvor/"
-title: "CodeChef Cook79: E. Mixing flavors"
 date: "2018-04-05T07:02:02+09:00"
 tags: [ "competitive", "writeup", "codechef", "square-root-decomposition", "two-pointers", "mo-algorithm", "xor", "gaussian-elimination" ]
 "target_url": [ "https://www.codechef.com/COOK79/problems/MIXFLVOR" ]
 ---
+
+# CodeChef Cook79: E. Mixing flavors
 
 ## problem
 

@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/03/06/pragyanctf-2017-shane-and-the-binary-files/"
 date: "2017-03-06T00:02:36+09:00"
-title: "Pragyan CTF 2017: Shane and the binary files"
 tags: [ "ctf", "pragyan-ctf", "java", "jad" ]
 ---
+
+# Pragyan CTF 2017: Shane and the binary files
 
 普通の問題。pragyanctfにはguessingを期待しているのでそういのはやめてほしい。
 

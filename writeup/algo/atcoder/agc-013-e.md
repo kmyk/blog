@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/06/13/agc-013-e/"
 date: "2017-06-13T02:39:40+09:00"
-title: "AtCoder Grand Contest 013: E - Placing Squares"
 tags: [ "competitive", "writeup", "atcoder", "arc", "optimization", "dp", "linearity" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc013/tasks/agc013_e" ]
 ---
+
+# AtCoder Grand Contest 013: E - Placing Squares
 
 $N = 10^9$で剰余が実質ないのでぎりぎり通せる。
 意図せず最短コードを得た。

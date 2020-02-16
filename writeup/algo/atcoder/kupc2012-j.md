@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/02/15/kupc2012-j/"
-title: "京都大学プログラミングコンテスト2012: J - 刺身"
 date: "2018-02-15T21:19:28+09:00"
 tags: [ "competitive", "writeup", "atcoder", "kupc", "dp", "monge", "knuth-yao-speedup" ]
 "target_url": [ "https://beta.atcoder.jp/contests/kupc2012/tasks/kupc2012_10" ]
 ---
+
+# 京都大学プログラミングコンテスト2012: J - 刺身
 
 monge性のそれの練習のために解いた
 

@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "各種サービスにおけるbrainfuck処理系について"
 date: 2016-03-21T21:44:30+09:00
 tags: [ "esolang", "competitive", "golf", "brainfuck", "atcoder", "anagol", "hackerrank", "codeiq", "ideone" ]
 ---
+
+# 各種サービスにおけるbrainfuck処理系について
 
 サービスによって処理系の特性の差があるのでまとめておこうと思った。
 どれも記事作製時の情報。c言語の規格がどうとか、処理系の話とバイナリの話は別だとか、そういう細かいことはあまり気にせず適当に読んでね。
@@ -591,6 +592,8 @@ rj+Hf9Ow1GHkqfn7D8EkK1uI77ULfDPyL+6UkoAgJQAA
 -->
 
 ---
+
+# 各種サービスにおけるbrainfuck処理系について
 
 -   Sun Mar 27 04:44:02 JST 2016
     -   バイナリ取れるあたりのことを追記

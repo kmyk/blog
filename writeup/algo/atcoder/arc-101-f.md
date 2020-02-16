@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 101: F - Robots and Exits"
 date: 2018-09-27T03:46:08+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp", "inline-dp", "segment-tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc101/tasks/arc101_d" ]
 ---
+
+# AtCoder Regular Contest 101: F - Robots and Exits
 
 ## 解法
 

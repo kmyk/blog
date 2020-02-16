@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "セグメント木の上に乗る構造はモノイドではなく圏である"
 date: "2018-12-06T12:00:00+09:00"
 tags: [ "competitive", "segment-tree", "monoid", "category" ]
 ---
+
+# セグメント木の上に乗る構造はモノイドではなく圏である
 
 ## 主張
 

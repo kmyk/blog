@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 065: E - へんなコンパス / Manhattan Compass"
 date: 2018-12-07T02:45:59+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "manhattan-distance", "45-degree-rotation" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc065/tasks/arc065_c" ]
 ---
+
+# AtCoder Regular Contest 065: E - へんなコンパス / Manhattan Compass
 
 ## 解法
 

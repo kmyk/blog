@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2017-03-04T01:06:27+09:00"
-title: "オンラインジャッジサーバの/proc/cpuinfoを集めた"
 tags: [ "competitive", "simd" ]
 ---
+
+# オンラインジャッジサーバの/proc/cpuinfoを集めた
 
 -   Codeforcesではthread並列がよく効く
     -   それ以外では基本的にだめ
@@ -333,6 +334,8 @@ flags*          : SSE4.1/4.2, AVX 2.0 ...
 ```
 
 ---
+
+# オンラインジャッジサーバの/proc/cpuinfoを集めた
 
 -   2017年  3月  8日 水曜日 00:27:07 JST
     -   Codeforcesで実際に使ってみたので追記

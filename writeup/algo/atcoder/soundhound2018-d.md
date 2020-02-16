@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "SoundHound Inc. Programming Contest 2018 (春): D - 建物"
 date: 2018-10-26T06:02:34+09:00
 tags: [ "competitive", "writeup", "atcoder", "soundhound", "dp", "max", "linearity" ]
 "target_url": [ "https://beta.atcoder.jp/contests/soundhound2018/tasks/soundhound2018_d" ]
 ---
+
+# SoundHound Inc. Programming Contest 2018 (春): D - 建物
 
 ## 解法
 

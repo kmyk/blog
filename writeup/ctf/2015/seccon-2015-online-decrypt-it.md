@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/12/06/seccon-2015-online-decrypt-it/"
-title: "SECCON 2015 オンライン予選 Decrypt it"
 date: 2015-12-06T20:32:54+09:00
 tags: [ "ctf", "seccon", "writeup", "crypto" ]
 ---
+
+# SECCON 2015 オンライン予選 Decrypt it
 
 競技屋なら問題なく解ける問題。ただし罠がひとつある。
 

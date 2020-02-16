@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/28/abc-038-d/"
-title: "AtCoder Beginner Contest 038 D - プレゼント"
 date: 2016-05-28T23:00:04+09:00
 tags: [ "competitive", "writeup", "atcoder", "abc", "binary-indexed-tree", "range-max-query", "greedy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc038/tasks/abc038_d" ]
 ---
+
+# AtCoder Beginner Contest 038 D - プレゼント
 
 同じ`y`をまとめてやるのを忘れていたのと、`y`と`x`を混乱させたのとで、WAを生やした。
 特に後者は$2$ケースしかWAにならなかったので原因の判断にとても困った。
@@ -82,6 +83,8 @@ int main() {
 ```
 
 ---
+
+# AtCoder Beginner Contest 038 D - プレゼント
 
 -   Sun May 29 11:17:43 JST 2016
     -   追記

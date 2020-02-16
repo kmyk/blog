@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/04/28/agc-002-e/"
 date: "2017-04-28T03:51:52+09:00"
-title: "AtCoder Grand Contest 002: E - Candy Piles"
 tags: [ "competitive", "writeup", "atcoder", "agc", "game" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc002/tasks/agc002_e" ]
 ---
+
+# AtCoder Grand Contest 002: E - Candy Piles
 
 山のキャンディを全て食べる操作を任意の山に対して行えると誤読し、解説を読んで気付いた。
 
@@ -15,6 +16,8 @@ ad-hocに。$O(N)$。
 図が載ってて分かりやすいので、[editorial](https://beta.atcoder.jp/contests/agc002/data/agc/002/editorial.pdf)を見て。
 
 ---
+
+# AtCoder Grand Contest 002: E - Candy Piles
 
 解法はeditorialに譲ったので、感じたことを書く。
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/12/11/seccon-2016-online-vigenere/"
 date: "2016-12-11T22:06:03+09:00"
-title: "SECCON 2016 Online CTF: Vigenere"
 tags: [ "ctf", "writeup", "seccon", "crypto", "vigenere-cipher" ]
 "target_url": [ "https://score-quals.seccon.jp/question/a5480aaca0b46d7785bd9916186ede557a91835f" ]
 ---
+
+# SECCON 2016 Online CTF: Vigenere
 
 CODEVS帰りの新幹線でCTFの布教をしながら解いた。
 影白さんとhikaliumさんが途中までやって残りは実装だけになっていて、その続きをした。

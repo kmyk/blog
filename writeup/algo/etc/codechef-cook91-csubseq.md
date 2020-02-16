@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/03/31/codechef-cook91-csubseq/"
-title: "CodeChef February Cook-Off 2018: Chef and Chefness"
 date: "2018-03-31T02:13:03+09:00"
 tags: [ "competitive", "writeup", "codechef", "dp" ]
 "target_url": [ "https://www.codechef.com/COOK91/problems/CSUBSEQ" ]
 ---
+
+# CodeChef February Cook-Off 2018: Chef and Chefness
 
 ## problem
 

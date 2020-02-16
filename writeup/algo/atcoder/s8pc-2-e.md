@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/04/23/s8pc-2-e/"
-title: "square869120Contest #2 E - 部分文字列"
 date: 2016-04-23T23:02:37+09:00
 tags: [ "competitive", "writeup", "atcoder", "s8pc", "suffix-array", "longest-common-prefix" ]
 "target_url": [ "https://beta.atcoder.jp/contests/s8pc-2/tasks/s8pc_2_e" ]
 ---
+
+# square869120Contest #2 E - 部分文字列
 
 LCPの例題として良さそう。
 

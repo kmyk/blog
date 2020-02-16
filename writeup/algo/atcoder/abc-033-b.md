@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/02/06/abc-033-b/"
-title: "AtCoder Beginner Contest 033 B - 町の合併"
 date: 2016-02-06T23:22:49+09:00
 tags: [ "competitive", "writeup", "atcoder", "abc" ]
 ---
+
+# AtCoder Beginner Contest 033 B - 町の合併
 
 辞書っぽい構造や$10^9$程度の大きさの数値演算というbrainfuckでやるには面倒な要素が詰まっている問題。しかし割り算はないので頑張ればできるだろう。
 

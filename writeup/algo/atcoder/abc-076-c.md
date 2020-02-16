@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/12/08/abc-076-c/"
-title: "AtCoder Beginner Contest 076: C - Dubious Document 2"
 date: "2017-12-08T07:24:12+09:00"
 tags: [ "competitive", "writeup", "atcoder", "abc", "lie" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc076/tasks/abc076_c" ]
 ---
+
+# AtCoder Beginner Contest 076: C - Dubious Document 2
 
 ## solution
 

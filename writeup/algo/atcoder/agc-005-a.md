@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/09/02/agc-005-a/"
 date: "2017-09-02T08:22:06+09:00"
-title: "AtCoder Grand Contest 005: A - STring"
 tags: [ "competitive", "writeup", "atcoder", "agc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc005/tasks/agc005_a" ]
 ---
+
+# AtCoder Grand Contest 005: A - STring
 
 $i$回目には$a\_i$番目の`ST`を取り除く、のようにすると$O(\|X\|^2)$になりそう。
 

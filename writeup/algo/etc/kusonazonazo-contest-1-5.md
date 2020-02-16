@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/11/26/kusonazonazo-contest-1-5/"
 date: "2016-11-26T00:23:56+09:00"
-title: "KusoNazonazo Contest 1.5"
 tags: [ "kusonazonazo", "writeup", "hackerrank", "guessing" ]
 "target_url": [ "https://www.hackerrank.com/kusonazonazo-contests" ]
 ---
+
+# KusoNazonazo Contest 1.5
 
 なんだか気に入ってしまったらしく$2$セット目。`oooooxxxxo`。むずかしい。
 

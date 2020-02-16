@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/08/09/agc-016-c/"
 date: "2017-08-09T21:29:13+09:00"
-title: "AtCoder Grand Contest 016: C - +/- Rectangle"
 tags: [ "competitive", "writeup", "atcoder", "agc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc016/tasks/agc016_c" ]
 ---
+
+# AtCoder Grand Contest 016: C - +/- Rectangle
 
 $h, w$おきに$- hw$置いてそれ以外$1$にすればいいのではと思ったが、ぜんぜんそんなことはなかった。
 

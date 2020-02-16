@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/04/04/arc-050-c/"
-title: "AtCoder Regular Contest 050 C - LCM 111"
 date: 2016-04-04T17:37:39+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "math" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc050/tasks/arc050_c" ]
 ---
+
+# AtCoder Regular Contest 050 C - LCM 111
 
 ## 解法
 

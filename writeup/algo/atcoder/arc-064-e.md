@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/12/05/arc-064-e/"
 date: "2016-12-05T15:43:09+09:00"
-title: "AtCoder Regular Contest 064: E - Cosmic Rays"
 tags: [ "competitive", "writeup", "atcoder", "dijkstra" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc064/tasks/arc064_c" ]
 ---
+
+# AtCoder Regular Contest 064: E - Cosmic Rays
 
 なんでこれが$3$問目なんだICPC国内予選か？という印象。ABCの方の$4$問目の調整のために$2$問目とswapしたのだろうか。
 

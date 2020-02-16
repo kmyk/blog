@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/12/30/abc-084-b/"
-title: "AtCoder Beginner Contest 084: B - Postal Code"
 date: "2017-12-30T23:15:30+09:00"
 tags: [ "competitive", "writeup", "atcoder", "abc", "golf", "perl" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc084/tasks/abc084_b" ]
 ---
+
+# AtCoder Beginner Contest 084: B - Postal Code
 
 <!-- {% raw %} -->
 

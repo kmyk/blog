@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/03/22/0ctf-2017-onetimepad/"
 date: "2017-03-22T16:51:53+09:00"
-title: "0ctf 2017: oneTimePad"
 tags: [ "ctf", "writeup", "0ctf", "crypto" ]
 ---
+
+# 0ctf 2017: oneTimePad
 
 ## solution
 

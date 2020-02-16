@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/02/14/codegate-preliminary-2014-angrydoraemon/"
-title: "Codegate Preliminary CTF 2014: Angry Doraemon"
 date: 2016-02-14T17:50:10+09:00
 tags: [ "ctf", "writeup", "pwn", "codegate", "buffer-overflow", "stack-overflow", "return-oriented-programming" ]
 ---
+
+# Codegate Preliminary CTF 2014: Angry Doraemon
 
 pwn会2回目。今回は自力で<del>解けた</del>解けてなかった[^6]。
 
@@ -328,6 +329,8 @@ int main(void) {
 
 ---
 
+# Codegate Preliminary CTF 2014: Angry Doraemon
+
 [^1]: プログラミングを始めたとき、猫でもわかるcでwhile文ぐらいまで読んで、こんな感じの雑なゲームを作って喜んでいた覚えがある。懐しい。
 [^2]: 5番の明らかなそれはいったい何だったのだろう。他の人のwriteupを見ても使われていなかった。
 [^3]: `sprintf`がなくても$256 * 3$回程度の試行で判明するはず。`sleep(2);`があるが最悪でも30分は越えない。
@@ -336,6 +339,8 @@ int main(void) {
 [^6]: libcはuploadされてないだけで本番は与えられていたのかな、と思っていたけどそうではなかったらしい。
 
 ---
+
+# Codegate Preliminary CTF 2014: Angry Doraemon
 
 -   Thu Feb 18 17:42:57 JST 2016
     -   解けてなかったのでそのことを明記

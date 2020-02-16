@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/08/31/bctf-2015-warmup/"
 date: "2016-08-31T21:21:43+09:00"
-title: "BCTF CTF 2015: warmup"
 tags: [ "ctf", "writeup", "crypto", "bctf", "rsa", "wiener-attack" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2015/tree/master/bctf-2015/crypto/warmup" ]
 ---
+
+# BCTF CTF 2015: warmup
 
 解けず。Low Private-Exponent Attackかなというのは分かったが、道具を上手く使えず。具体的には関数に$e, n$を逆にして渡して動かず、解けないと判断してwriteupを見た。
 

@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2016/12/30/33c3-ctf-try/"
 date: "2016-12-30T13:39:37+09:00"
-title: "33C3 CTF: try"
 tags: [ "ctf", "writeup", "web", "33c3-ctf", "polyglot", "haskell" ]
 ---
+
+# 33C3 CTF: try
 
 <!-- {% raw %} -->
 

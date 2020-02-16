@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/04/06/arc-065-b/"
-title: "AtCoder Regular Contest 065: D - 連結 / Connectivity"
 date: "2018-04-06T19:51:00+09:00"
 tags: [ "competitive", "writeup", "arc", "union-find-tree" ]
 "target_url": [ "https://arc065.contest.atcoder.jp/tasks/arc065_b" ]
 ---
+
+# AtCoder Regular Contest 065: D - 連結 / Connectivity
 
 ## solution
 

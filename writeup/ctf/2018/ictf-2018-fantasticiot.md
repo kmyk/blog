@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2018/03/17/ictf-2018-fantasticiot/"
-title: "iCTF 2018: Fantasticiot"
 date: "2018-03-17T16:45:46+09:00"
 tags: [ "ctf", "writeup", "ictf", "attack-and-defense" ]
 ---
+
+# iCTF 2018: Fantasticiot
 
 -   <https://ictf2018.net/>
 -   <https://scoreboard.ictf2018.net/#/scores>

@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "CODE FESTIVAL 2018 Final: A - 2540"
 date: 2018-11-22T15:35:47+09:00
 tags: [ "competitive", "writeup", "atcoder", "code-festival" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-festival-2018-final/tasks/code_festival_2018_final_a" ]
 ---
+
+# CODE FESTIVAL 2018 Final: A - 2540
 
 ## 解法
 

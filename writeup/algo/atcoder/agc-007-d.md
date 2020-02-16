@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/09/05/agc-007-d/"
 date: "2017-09-05T16:30:03+09:00"
-title: "AtCoder Grand Contest 007: D - Shik and Game"
 tags: [ "competitive", "writeup", "atcoder", "agc", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc007/tasks/agc007_d" ]
 ---
+
+# AtCoder Grand Contest 007: D - Shik and Game
 
 自明DPの$O(N^2)$をsegment木とかで$O(N \log N)$で落とすやつでしょ知ってるけど$N \le 10^5$なので定数倍高速化で押し切るよ、って言いながらガチャガチャしてたらいつの間にか$O(N)$に落ちてしまっていた。レギュレーション違反。定数倍高速化でなんとかする方法は分からず。後$2$倍。本気でやればできるのかもだが、コンパイラに察してもらう範囲ではだめだった。
 

@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Grand Contest 029: B - Powers of two"
 date: 2018-12-16T04:10:40+09:00
 tags: [ "competitive", "writeup", "atcoder", "agc", "tree", "matching", "graph", "greedy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc029/tasks/agc029_b" ]
 ---
+
+# AtCoder Grand Contest 029: B - Powers of two
 
 ## 解法
 

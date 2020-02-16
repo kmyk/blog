@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/06/27/icpc-2016-domestic-a/"
-title: "ACM-ICPC 2016 国内予選 A: 被験者の選定"
 date: 2016-06-27T13:01:44+09:00
 tags: [ "competitive", "writeup", "icpc" ]
 ---
+
+# ACM-ICPC 2016 国内予選 A: 被験者の選定
 
 -   <http://icpcsec.storage.googleapis.com/icpc2016-domestic/problems/all_ja.html#section_A>
 -   <http://icpc.iisf.or.jp/past-icpc/domestic2016/judgedata/A/>

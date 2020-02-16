@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/07/14/icpc-2017-domestic-d/"
 date: "2017-07-14T23:50:39+09:00"
-title: "ACM-ICPC 2017 国内予選: D. 弁当作り"
 tags: [ "competitive", "writeup", "icpc", "icpc-domestic", "case-analysis" ]
 ---
+
+# ACM-ICPC 2017 国内予選: D. 弁当作り
 
 問題文の$1 \le n \times m \le 500$は太字で書かれていて親切。しかし印刷した紙ではまったく気付かなかった。
 

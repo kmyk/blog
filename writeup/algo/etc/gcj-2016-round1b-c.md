@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/01/gcj-2016-round1b-c/"
-title: "Google Code Jam 2016 Round 1B C. Technobabble"
 date: 2016-05-01T04:24:19+09:00
 tags: [ "competitive", "writeup", "google-code-jam", "gcj", "graph", "bipartite-graph", "flow", "ford-fulkerson", "maximum-flow", "maximum-matching", "minimum-edge-cover" ]
 "target_url": [ "https://code.google.com/codejam/contest/11254486/dashboard#s=p2" ]
 ---
+
+# Google Code Jam 2016 Round 1B C. Technobabble
 
 最小辺被覆でぐぐったら最大独立集合とでてきたので飛び付いた結果、通せなかった。
 最大流で最小辺被覆を求めるのは途中で考えていたので、これをちゃんとやれていれば通っていたはずだった。

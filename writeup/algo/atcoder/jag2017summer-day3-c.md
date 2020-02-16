@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/10/03/jag2017summer-day3-c/"
 date: "2017-10-03T06:58:38+09:00"
-title: "Japan Alumni Group Summer Camp 2017 Day 3: C - Ninja Map"
 tags: [ "competitive", "writeup", "atcoder", "jag-summer", "graph", "construction" ]
 "target_url": [ "https://beta.atcoder.jp/contests/jag2017summer-day3/tasks/jag2017summer_day3_c" ]
 ---
+
+# Japan Alumni Group Summer Camp 2017 Day 3: C - Ninja Map
 
 これもバグらせた。それでも私が全部実装する方が速いと思うがやはり不安定。本番こけたらごめんなさいという気持ち。
 

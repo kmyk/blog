@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/04/03/arc-050-b/"
-title: "AtCoder Regular Contest 050 B - 花束"
 date: 2016-04-03T03:35:19+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "linear-programming", "simplex-method", "boost", "ublas", "scipy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc050/tasks/arc050_b" ]
 ---
+
+# AtCoder Regular Contest 050 B - 花束
 
 ## 解法
 

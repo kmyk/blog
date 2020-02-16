@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/07/02/icpc-2017-domestic-practice-c/"
 date: "2017-07-02T22:46:14+09:00"
-title: "ACM-ICPC 2017 模擬国内予選: C. クイズ"
 tags: [ "competitive", "writeup", "aoj", "icpc-domestic" ]
 ---
+
+# ACM-ICPC 2017 模擬国内予選: C. クイズ
 
 ## solution
 

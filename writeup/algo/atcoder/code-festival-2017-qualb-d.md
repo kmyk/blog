@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/11/10/code-festival-2017-qualb-d/"
 date: "2017-11-10T23:55:46+09:00"
-title: "CODE FESTIVAL 2017 qual B: D - 101 to 010"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-festival-2017-qualb/tasks/code_festival_2017_qualb_d" ]
 ---
+
+# CODE FESTIVAL 2017 qual B: D - 101 to 010
 
 ## 感想
 

@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 097: F - Monochrome Cat"
 date: 2018-08-21T18:02:47+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "tree-dp", "tree", "rerooting" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc097/tasks/arc097_d" ]
 ---
+
+# AtCoder Regular Contest 097: F - Monochrome Cat
 
 ## solution
 

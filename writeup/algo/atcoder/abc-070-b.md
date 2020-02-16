@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/08/15/abc-070-b/"
 date: "2017-08-15T13:15:47+09:00"
-title: "AtCoder Beginner Contest 070: B - Two Switches"
 tags: [ "competitive", "writeup", "atcoder", "abc", "sed" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc070/tasks/abc070_b" ]
 ---
+
+# AtCoder Beginner Contest 070: B - Two Switches
 
 sedの数値演算はいつもanagolの過去問からコピペしてる。
 

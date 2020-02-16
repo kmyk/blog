@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 068: F - Solitaire"
 date: 2018-08-29T03:05:09+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp", "counting" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc068/tasks/arc068_d" ]
 ---
+
+# AtCoder Regular Contest 068: F - Solitaire
 
 ## 解法
 

@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/16/arc-031-d/"
-title: "AtCoder Regular Contest 031 D - 買い物上手"
 date: 2016-01-16T19:31:37+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "graph", "flow", "maximum-flow", "dinic", "binary-search", "graphviz" ]
 ---
+
+# AtCoder Regular Contest 031 D - 買い物上手
 
 フローだと聞いていても自力で思い付くのはつらいフロー。
 

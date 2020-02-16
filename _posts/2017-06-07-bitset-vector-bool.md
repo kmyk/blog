@@ -3,9 +3,10 @@ category: blog
 layout: post
 date: "2017-06-07T16:53:26+09:00"
 edited: "2018-12-14T00:00:00+09:00"
-title: "std::bitset<N> や std::vector<bool> の速度について"
 tags: [ "c++", "bitset", "optimization" ]
 ---
+
+# std::bitset<N> や std::vector<bool> の速度について
 
 雑な測定なので参考程度にどうぞ。
 
@@ -383,6 +384,8 @@ processor	: 1
 ```
 
 ---
+
+# std::bitset<N> や std::vector<bool> の速度について
 
 -   2018年 12月 14日 金曜日 18:15:09 JST
     -   表を追加

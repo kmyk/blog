@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/01/04/arc-060-d/"
-title: "AtCoder Regular Contest 060: D - 桁和 / Digit Sum"
 date: "2018-01-04T11:55:17+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "square-root" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc060/tasks/arc060_b" ]
 ---
+
+# AtCoder Regular Contest 060: D - 桁和 / Digit Sum
 
 ## 反省
 

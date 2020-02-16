@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/02/23/srm-682-easy/"
-title: "TopCoder SRM 682 Div1 Easy: SmilesTheFriendshipUnicorn"
 date: 2016-02-23T12:24:05+09:00
 tags: [ "competitive", "writeup", "topcoder", "srm", "graph" ]
 ---
+
+# TopCoder SRM 682 Div1 Easy: SmilesTheFriendshipUnicorn
 
 何かあるのかなと思って時間を溶かした結果、特に何もなかった。
 

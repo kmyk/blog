@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/05/26/arc-055-d/"
 date: "2017-05-26T05:11:48+09:00"
-title: "AtCoder Regular Contest 055: D - 隠された等差数列"
 tags: [ "competitive", "writeup", "atcoder", "arc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc055/tasks/arc055_d" ]
 ---
+
+# AtCoder Regular Contest 055: D - 隠された等差数列
 
 ## solution
 

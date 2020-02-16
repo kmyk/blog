@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/31/hackerrank-worldcodesprint-powerplants-in-flatland/"
-title: "HackerRank World Codesprint: Flatland Space Stations"
 date: 2016-01-31T01:42:58+09:00
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint" ]
 ---
+
+# HackerRank World Codesprint: Flatland Space Stations
 
 ## [Flatland Space Stations](https://www.hackerrank.com/contests/worldcodesprint/challenges/powerplants-in-flatland)
 

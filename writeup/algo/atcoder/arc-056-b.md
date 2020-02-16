@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/05/26/arc-056-b/"
 date: "2017-05-26T04:10:54+09:00"
-title: "AtCoder Regular Contest 056: B - 駐車場"
 tags: [ "competitive", "writeup", "atcoder", "arc", "graph" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc056/tasks/arc056_b" ]
 ---
+
+# AtCoder Regular Contest 056: B - 駐車場
 
 以前この回に参加したときは解けず。解法が記憶に残っていたのか、今やったらすぐだった。
 

@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/03/20/srm-685-easy/"
-title: "TopCoder SRM 685 Div1 Easy: MultiplicationTable2"
 date: 2016-03-20T03:16:56+09:00
 tags: [ "competitive", "writeup", "topcoder", "srm", "greedy" ]
 ---
+
+# TopCoder SRM 685 Div1 Easy: MultiplicationTable2
 
 ## Easy: MultiplicationTable2
 

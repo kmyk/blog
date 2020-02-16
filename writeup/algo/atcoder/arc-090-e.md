@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/04/09/arc-090-e/"
-title: "AtCoder Regular Contest 090: E - Avoiding Collision"
 date: "2018-04-09T23:19:41+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "graph" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc090/tasks/arc090_c" ]
 ---
+
+# AtCoder Regular Contest 090: E - Avoiding Collision
 
 ## solution
 

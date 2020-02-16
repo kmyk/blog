@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "befungeでライフゲーム書いた"
 date: 2015-08-21T02:25:02+09:00
 tags: [ "befunge", "esolang", "lifegame" ]
 ---
+
+# befungeでライフゲーム書いた
 
 思っていたより人にやさしい言語だったので勢いで作った。
 命令そのものは`Befunge-93`の範囲で書いたが、`Befunge-93`にはソースコードのサイズの制限があるらしいので、正確には`Funge-98`だと思われる。

@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/12/24/xmascontest-2015-a/"
-title: "Xmas Contest 2015 A - Accumulation"
 date: 2015-12-24T22:55:13+09:00
 tags: [ "competitive", "writeup", "atcoder", "matrix" ]
 ---
+
+# Xmas Contest 2015 A - Accumulation
 
 行列累乗法の例題のような素直な問題。
 

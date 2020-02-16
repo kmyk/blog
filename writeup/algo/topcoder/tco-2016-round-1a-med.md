@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/03/27/tco-2016-round-1a-med/"
-title: "TopCoderOpen 2016 round 1A Medium: EllysSocks"
 date: 2016-03-27T04:17:09+09:00
 tags: [ "competitive", "writeup", "topcoder", "tco", "binary-search" ]
 ---
+
+# TopCoderOpen 2016 round 1A Medium: EllysSocks
 
 最大の最小みたいな問題はにぶたん。
 mediumにしては簡単だった。

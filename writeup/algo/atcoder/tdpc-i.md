@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/06/10/tdpc-i/"
-title: "Typical DP Contest I - イウィ"
 date: 2016-06-10T20:25:42+09:00
 tags: [ "competitive", "writeup", "atcoder", "typical-dp-contest", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/tdpc/tasks/tdpc_iwi" ]
 ---
+
+# Typical DP Contest I - イウィ
 
 kmjpさんの[解説](http://kmjp.hatenablog.jp/entry/2013/09/06/0930)を見ました。
 

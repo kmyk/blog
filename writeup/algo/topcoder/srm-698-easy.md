@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2016/09/18/srm-698-easy/"
 date: "2016-09-18T02:32:25+09:00"
-title: "TopCoder SRM 698 Div1 Easy: RepeatString"
 tags: [ "competitive", "writeup", "topcoder", "srm", "dp" ]
 ---
+
+# TopCoder SRM 698 Div1 Easy: RepeatString
 
 解くのが遅くて実質WA。
 環境を更新後の初のするめだったらしくGreedのpathが通ってなくて手間取ってたのが悪いんだよきっと。

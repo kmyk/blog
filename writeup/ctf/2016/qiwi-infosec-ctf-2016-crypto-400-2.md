@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2016/11/19/qiwi-infosec-ctf-2016-crypto-400-2/"
 date: "2016-11-19T01:31:15+09:00"
-title: "Qiwi Infosec CTF 2016: Crypto 400_2"
 tags: [ "ctf", "writeup", "qiwi-ctf", "crypto", "rsa" ]
 ---
+
+# Qiwi Infosec CTF 2016: Crypto 400_2
 
 <http://factordb.com/> に投げたら$n$は平方数だって言われたので即終了。
 $e^{\phi(n)} \equiv 1 \pmod n$で使うEuler関数$\phi(p^2) = p^2(1 - \frac{1}{p}) = p(1-p)$なことに注意。

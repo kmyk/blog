@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/11/21/abc-031-b/"
-title: "AtCoder Beginner Contest 031 B - 運動管理"
 date: 2015-11-21T23:09:38+09:00
 tags: [ "competitive", "writeup", "atcoder", "abc", "awk" ]
 ---
+
+# AtCoder Beginner Contest 031 B - 運動管理
 
 awkを選んだ理由は特にない。
 

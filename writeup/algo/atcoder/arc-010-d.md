@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/12/22/arc-010-d/"
-title: "AtCoder Regular Contest 010 D - 情報伝播"
 date: 2015-12-22T23:42:32+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "scc", "strongly-connected-components-decomposition", "dag", "directed-acyclic-graph", "graph" ]
 ---
+
+# AtCoder Regular Contest 010 D - 情報伝播
 
 ライブラリ貼るだけだったのに、貼るライブラリを間違えてWAをたくさん生やした。
 具体的に言うと、長さ3以上の有向閉路を考えるのを漏らしていて、union find木で解こうとしていた。

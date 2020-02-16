@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/12/20/world-codesprint-8-torque-and-development/"
 date: "2016-12-20T02:33:03+09:00"
-title: "HackerRank World CodeSprint 8: Roads and Libraries"
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint" ]
 "target_url": [ "https://www.hackerrank.com/contests/world-codesprint-8/challenges/torque-and-development" ]
 ---
+
+# HackerRank World CodeSprint 8: Roads and Libraries
 
 ## solution
 

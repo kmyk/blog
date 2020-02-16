@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "DISCO presents ディスカバリーチャンネル コードコンテスト2019 予選: D - チップ・ストーリー　～黄金編～"
 date: 2018-11-24T02:04:51+09:00
 tags: [ "competitive", "writeup", "atcoder", "ddcc", "chinese-remainder-theorem", "digits-sum" ]
 "target_url": [ "https://beta.atcoder.jp/contests/ddcc2019-qual/tasks/ddcc2018_qual_d" ]
 ---
+
+# DISCO presents ディスカバリーチャンネル コードコンテスト2019 予選: D - チップ・ストーリー　～黄金編～
 
 ## 解法
 

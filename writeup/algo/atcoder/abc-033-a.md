@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/02/06/abc-033-a/"
-title: "AtCoder Beginner Contest 033 A - 暗証番号"
 date: 2016-02-06T23:22:45+09:00
 tags: [ "competitive", "writeup", "abc", "atcoder", "brainfuck" ]
 ---
+
+# AtCoder Beginner Contest 033 A - 暗証番号
 
 ## [A - 暗証番号](https://beta.atcoder.jp/contests/abc033/tasks/abc033_a)
 

@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/03/26/volgactf-2018-quals-forbidden/"
-title: "VolgaCTF 2018 Quals: Forbidden"
 date: "2018-03-26T00:00:02+09:00"
 tags: [ "ctf", "writeup", "volgactf", "crypto", "aes", "gcm-mode" ]
 "target_url": [ "https://quals.2018.volgactf.ru/tasks" ]
 ---
+
+# VolgaCTF 2018 Quals: Forbidden
 
 ## problem
 

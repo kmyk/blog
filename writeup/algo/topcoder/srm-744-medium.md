@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "TCO19 Single Round Match 744: Medium - UniformingMatrix"
 date: 2018-12-15T05:00:00+09:00
 tags: [ "competitive", "writeup", "topcoder", "srm", "lightsout" ]
 ---
+
+# TCO19 Single Round Match 744: Medium - UniformingMatrix
 
 ## 問題概要
 

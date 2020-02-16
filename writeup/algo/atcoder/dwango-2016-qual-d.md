@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/24/dwango-2016-qual-d/"
-title: "第2回 ドワンゴからの挑戦状 予選 D - 庭園"
 date: 2016-01-24T00:40:35+09:00
 tags: [ "competitive", "writeup", "atcoder", "dwango" ]
 ---
+
+# 第2回 ドワンゴからの挑戦状 予選 D - 庭園
 
 直線引いて分けるの思い付かなくても、気合いでやればできる。
 

@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/04/18/plaidctf-2016-fixedpoint/"
-title: "PlaidCTF 2016 fixedpoint"
 date: 2016-04-18T06:00:02+09:00
 tags: [ "ctf", "pwn", "writeup", "plaidctf" ]
 ---
+
+# PlaidCTF 2016 fixedpoint
 
 I like pwn with given the source code, and this is fun.
 

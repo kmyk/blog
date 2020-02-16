@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 089: F - ColoringBalls"
 date: 2018-09-28T05:29:48+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "counting", "dp", "longest-common-prefix", "experiment" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc089/tasks/arc089_d" ]
 ---
+
+# AtCoder Regular Contest 089: F - ColoringBalls
 
 ## 解法
 

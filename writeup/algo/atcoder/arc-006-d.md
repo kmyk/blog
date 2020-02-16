@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/10/01/arc-006-d/"
-title: "AtCoder Regular Contest 006 D - アルファベット探し"
 date: 2015-10-01T19:52:59+09:00
 tags: [ "atcoder", "arc", "competitive", "writeup" ]
 ---
+
+# AtCoder Regular Contest 006 D - アルファベット探し
 
 今日は意識が低い。たぶん気圧が低いのが悪い。
 

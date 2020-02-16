@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/10/23/ectf-2016-tayy/"
 date: "2016-10-23T23:49:35+09:00"
-title: "ECTF 2016: tayy"
 tags: [ "ctf", "ectf", "rev", "z3" ]
 "target_url": [ "http://www.ectf.in/" ]
 ---
+
+# ECTF 2016: tayy
 
 ## problem
 

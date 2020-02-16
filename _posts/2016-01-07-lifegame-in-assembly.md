@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "アセンブリ言語でlifegameを書いた"
 date: 2016-01-07T03:07:09+09:00
 tags: [ "asm", "lifegame" ]
 ---
+
+# アセンブリ言語でlifegameを書いた
 
 気合いで書きました。
 

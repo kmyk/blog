@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/12/03/ddcc-2016-final-a/"
 date: "2016-12-03T14:31:45+09:00"
-title: "DISCO presents ディスカバリーチャンネル コードコンテスト2016 本戦: A - 正方形のチップ"
 tags: [ "competitive", "writeup", "atcoder", "ddcc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/ddcc2016-final/tasks/ddcc_2016_final_a" ]
 ---
+
+# DISCO presents ディスカバリーチャンネル コードコンテスト2016 本戦: A - 正方形のチップ
 
 ## solution
 

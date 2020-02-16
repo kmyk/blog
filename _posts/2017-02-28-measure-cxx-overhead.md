@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2017-02-28T01:30:24+09:00"
-title: "std::vector等のC++の機能の利用による速度低下について計測した"
 tags: [ "competitive", "optimization" ]
 ---
+
+# std::vector等のC++の機能の利用による速度低下について計測した
 
 ## 概要
 
@@ -908,6 +909,8 @@ $ for i in `seq 10` ; do time ./a.out < input > /dev/null ; done
 ```
 
 ---
+
+# std::vector等のC++の機能の利用による速度低下について計測した
 
 -   2017年  2月 28日 火曜日 22:40:43 JST
     -   計測すべき対象をいくつか忘れていたので追加

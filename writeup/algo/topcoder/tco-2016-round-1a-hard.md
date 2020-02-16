@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/03/27/tco-2016-round-1a-hard/"
-title: "TopCoderOpen 2016 round 1A Hard: EllysTree"
 date: 2016-03-27T04:17:15+09:00
 tags: [ "competitive", "writeup", "topcoder", "tco", "tree", "graph", "greedy" ]
 ---
+
+# TopCoderOpen 2016 round 1A Hard: EllysTree
 
 本番解けず。2時間のコンテストだったら解けたかも。
 

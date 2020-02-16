@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/11/18/code-festival-2015-relay/"
-title: "CODE FESTIVAL 2015 チーム対抗早解きリレー"
 date: 2015-11-18T12:47:58+09:00
 tags: [ "competitive", "writeup", "codefestival", "atcoder" ]
 ---
+
+# CODE FESTIVAL 2015 チーム対抗早解きリレー
 
 去年もあったリレーのコンテンツ。けっこう楽しめた。チームメンバーと交流できる時間が増えていてよかった。
 どうせならメンバーとペアプロとかできたらもっと良いかもとか思った、けどアンケートに書き忘れたのでここに書いておきます。

@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/06/04/arc-055-a/"
-title: "AtCoder Regular Contest 055 A - 数え上げ"
 date: 2016-06-04T00:27:11+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "golf", "brainfuck", "sed" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc055/tasks/arc055_a" ]
 ---
+
+# AtCoder Regular Contest 055 A - 数え上げ
 
 ## solution
 

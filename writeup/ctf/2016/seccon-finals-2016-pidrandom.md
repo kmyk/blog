@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/01/30/seccon-finals-2016-pidrandom/"
 date: "2017-01-30T03:49:25+09:00"
-title: "SECCON finals 2016: 六(6) pidrandom"
 tags: [ "ctf", "writeup", "seccon", "rev" ]
 ---
+
+# SECCON finals 2016: 六(6) pidrandom
 
 ## problem
 

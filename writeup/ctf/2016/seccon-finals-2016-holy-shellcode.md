@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/01/30/seccon-finals-2016-holy-shellcode/"
 date: "2017-01-30T03:52:06+09:00"
-title: "SECCON finals 2016: 伍(5)"
 tags: [ "ctf", "writeup", "seccon", "pwn", "shellcode" ]
 ---
+
+# SECCON finals 2016: 伍(5)
 
 ## problem
 

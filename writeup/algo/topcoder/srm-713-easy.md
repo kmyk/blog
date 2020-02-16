@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/04/27/srm-713-easy/"
 date: "2017-04-27T11:50:22+09:00"
-title: "TopCoder SRM 711 Div1 Easy: PowerEquation"
 tags: [ "competitive", "writeup", "topcoder", "srm" ]
 ---
+
+# TopCoder SRM 711 Div1 Easy: PowerEquation
 
 Div 1/2共に荒れた回。
 

@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/02/25/utpc-2013-i/"
-title: "東京大学プログラミングコンテスト2013 I - 支配と友好"
 date: 2016-02-25T06:48:14+09:00
 tags: [ "competitive", "writeup", "codefestival" ]
 ---
+
+# 東京大学プログラミングコンテスト2013 I - 支配と友好
 
 なんとなく、こどふぇすの動画([続・ペアプログラミング](https://www.youtube.com/watch?v=jotn1-RzOC0))を見て、一緒に書いた。
 

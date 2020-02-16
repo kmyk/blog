@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/04/05/google-code-jam-2017-round-1c-a/"
-title: "Google Code Jam 2017 Round 1C: A. Ample Syrup"
 date: "2018-04-05T00:17:35+09:00"
 tags: [ "competitive", "writeup", "gcj", "greedy" ]
 "target_url": [ "https://codejam.withgoogle.com/codejam/contest/dashboard?c=3274486#s=p0" ]
 ---
+
+# Google Code Jam 2017 Round 1C: A. Ample Syrup
 
 ## solution
 

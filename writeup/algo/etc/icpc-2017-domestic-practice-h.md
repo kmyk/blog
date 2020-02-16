@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/07/02/icpc-2017-domestic-practice-h/"
 date: "2017-07-02T21:12:54+09:00"
-title: "ACM-ICPC 2017 模擬国内予選: H. Big Maze"
 tags: [ "competitive", "writeup", "aoj", "icpc-domestic", "dp", "frontier" ]
 ---
+
+# ACM-ICPC 2017 模擬国内予選: H. Big Maze
 
 A B C Hの$4$完だった。Dが最後までバグっていたので全体$33$位。だめ。
 問題に傾斜付けてくれ頼む。

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/08/21/arc-081-f/"
 date: "2017-08-21T00:12:19+09:00"
-title: "AtCoder Regular Contest 081: F - Flip and Rectangles"
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc081/tasks/arc081_d" ]
 ---
+
+# AtCoder Regular Contest 081: F - Flip and Rectangles
 
 解けず。
 

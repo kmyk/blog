@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/11/30/icpc-2015-asia-d/"
-title: "ACM ICPC 2015 アジア地区予選 D : Wall Clocks"
 date: 2015-11-30T01:24:33+09:00
 tags: [ "competitive", "writeup", "icpc", "aoj", "greedy" ]
 ---
+
+# ACM ICPC 2015 アジア地区予選 D : Wall Clocks
 
 本番では私は読んでない。
 これを読んだチームメンバーからさらっと話を聞いたのみである。

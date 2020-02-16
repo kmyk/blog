@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 045: D - みんな仲良し高橋君"
 date: 2018-10-05T15:01:37+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "graph", "2d-plane", "two-edge-connected-components", "articulation-point" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc045/tasks/arc045_d" ]
 ---
+
+# AtCoder Regular Contest 045: D - みんな仲良し高橋君
 
 ## 解法
 

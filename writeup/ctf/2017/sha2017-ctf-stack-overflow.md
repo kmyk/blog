@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2017/08/07/sha2017-ctf-stack-overflow/"
-title: "SHA2017 CTF: crypto 100 - Stack Overflow"
 date: "2017-08-07T16:50:15+09:00"
 tags: [ "ctf", "writeup", "sha-ctf", "crypto", "aes", "xor" ]
 ---
+
+# SHA2017 CTF: crypto 100 - Stack Overflow
 
 ## solution
 

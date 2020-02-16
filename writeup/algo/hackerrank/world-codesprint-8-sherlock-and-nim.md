@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/12/20/world-codesprint-8-sherlock-and-nim/"
 date: "2016-12-20T02:33:06+09:00"
-title: "HackerRank World CodeSprint 8: Return of the Nim"
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint", "dp", "oeis" ]
 "target_url": [ "https://www.hackerrank.com/contests/world-codesprint-8/challenges/sherlock-and-nim" ]
 ---
+
+# HackerRank World CodeSprint 8: Return of the Nim
 
 ## problem
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/08/28/ebctf-2013-md5colliding/"
 date: "2016-08-28T15:29:33+09:00"
-title: "ebctf 2013 md5colliding"
 tags: [ "ctf", "writeup", "crypto", "katagaitai", "hash" ]
 "target_url": [ "http://ebctf.nl/challenges/BIN400" ]
 ---
+
+# ebctf 2013 md5colliding
 
 [katagaitai CTF勉強会 #5 - 関西|med](https://atnd.org/events/77452)で解いた。
 

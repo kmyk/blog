@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/04/27/agc-001-e/"
 date: "2017-04-27T18:41:12+09:00"
-title: "AtCoder Grand Contest 001: E - BBQ Hard"
 tags: [ "competitive", "writeup", "atcoder", "agc", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc001/tasks/agc001_e" ]
 ---
+
+# AtCoder Grand Contest 001: E - BBQ Hard
 
 頭がいい感じの解法。imos法っぽい。
 

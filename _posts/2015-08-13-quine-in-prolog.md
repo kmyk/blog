@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "prologでquine書いた"
 date: 2015-08-13T05:29:45+09:00
 tags: [ "prolog", "quine" ]
 ---
+
+# prologでquine書いた
 
 ``` prolog
 f('\"') :- write("\\\"").

@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/03/31/codechef-cook91-cthree/"
-title: "CodeChef February Cook-Off 2018: Chef and Tuples"
 date: "2018-03-31T02:12:55+09:00"
 tags: [ "competitive", "writeup", "codechef", "prime-factors" ]
 "target_url": [ "https://www.codechef.com/COOK91/problems/CTHREE" ]
 ---
+
+# CodeChef February Cook-Off 2018: Chef and Tuples
 
 ## problem
 

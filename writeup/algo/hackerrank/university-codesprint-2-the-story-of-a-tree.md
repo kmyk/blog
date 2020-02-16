@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/02/22/hackerrank-university-codesprint-2-the-story-of-a-tree/"
 date: "2017-02-22T23:44:13+09:00"
-title: "HackerRank University CodeSprint 2: The Story of a Tree"
 tags: [ "competitive", "writeup", "hackerrank", "codesprint", "university-codesprint", "tree", "imos-method" ]
 "target_url": [ "https://www.hackerrank.com/contests/university-codesprint-2/challenges/the-story-of-a-tree" ]
 ---
+
+# HackerRank University CodeSprint 2: The Story of a Tree
 
 ## problem
 

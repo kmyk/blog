@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/24/fhc-2016-round2-c/"
-title: "Facebook Hacker Cup 2016 Round 2 Snakes and Ladders"
 date: 2016-01-24T06:02:47+09:00
 tags: [ "competitive", "writeup", "facebook-hacker-cup", "stack" ]
 ---
+
+# Facebook Hacker Cup 2016 Round 2 Snakes and Ladders
 
 ケース数$T \le 50$、はしごの数$N \le 200000$、制限時間$360$秒なので$O(n^2)$は怪しい。
 しかし、ねぼけて$O(n^2)$で挑んだら通ってしまった。

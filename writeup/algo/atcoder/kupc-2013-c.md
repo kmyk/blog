@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/05/12/kupc-2013-c/"
 date: "2017-05-12T20:28:49+09:00"
-title: "京都大学プログラミングコンテスト2013: C - チョコレート"
 tags: [ "competitive", "writeup", "atcoder", "kupc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/kupc2013/tasks/kupc2013_c" ]
 ---
+
+# 京都大学プログラミングコンテスト2013: C - チョコレート
 
 $2$行目以降を反転させるところ、偶数行を反転と勘違いして$7$WA。submitによるdebugをした。
 

@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "グラフとかを出力する方法いろいろ"
 date: 2015-09-21T09:24:41+09:00
 tags: [ "graph", "graph-theory", "graphviz", "dot", "tex", "latex", "tikz", "xypic", "svg" ]
 ---
+
+# グラフとかを出力する方法いろいろ
 
 グラフ理論の意味でのグラフを出力する/できるツールたちの紹介。
 

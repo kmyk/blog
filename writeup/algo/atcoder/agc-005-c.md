@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/12/29/agc-005-c/"
 date: "2016-12-29T22:58:35+09:00"
-title: "AtCoder Grand Contest 005: C - Tree Restoring"
 tags: [ "competitive", "writeup", "atcoder", "agc", "tree", "graph" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc005/tasks/agc005_c" ]
 ---
+
+# AtCoder Grand Contest 005: C - Tree Restoring
 
 SRM後に既出問として話題に上がったので。入出力部分だけ書き換えたら通った。
 

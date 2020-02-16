@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/11/14/dctf-finals-2016/"
 date: "2016-11-14T01:46:57+09:00"
-title: "D-CTF Finals 2016 参加記"
 tags: [ "ctf", "d-ctf" ]
 "target_url": [ "https://dctf.def.camp/" ]
 ---
+
+# D-CTF Finals 2016 参加記
 
 D-CTFの本戦へscryptosとして参加して優勝してきた。
 193s氏としほさんとふるかわ氏と私でルーマニアの会場へ行き、日本からはしゃろさんとバッタさんの支援を受けた。

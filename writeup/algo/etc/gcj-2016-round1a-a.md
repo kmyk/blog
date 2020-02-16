@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/04/16/gcj-2016-round1a-a/"
-title: "Google Code Jam 2016 Round 1A A. The Last Word"
 date: 2016-04-16T15:23:39+09:00
 tags: [ "competitive", "writeup", "gcj", "google-code-jam", "greedy" ]
 "target_url": [ "https://code.google.com/codejam/contest/4304486/dashboard#s=p0" ]
 ---
+
+# Google Code Jam 2016 Round 1A A. The Last Word
 
 Reading the English of the problem statement was more tiring than solving this.
 

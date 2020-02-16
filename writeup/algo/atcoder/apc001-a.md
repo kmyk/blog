@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Petrozavodsk Contest 001: A - Two Integers"
 date: 2018-07-09T20:26:40+09:00
 tags: [ "competitive", "writeup", "atcoder", "apc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/apc001/tasks/apc001_a" ]
 ---
+
+# AtCoder Petrozavodsk Contest 001: A - Two Integers
 
 ## note
 

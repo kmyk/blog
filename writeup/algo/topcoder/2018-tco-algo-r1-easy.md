@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2018/04/22/2018-tco-algo-r1-easy/"
-title: "2018 TCO Algorithm: Easy. RedDragonInn"
 date: "2018-04-22T02:57:49+09:00"
 tags: [ "competitive", "writeup", "topcoder", "srm", "tco", "binary-search" ]
 ---
+
+# 2018 TCO Algorithm: Easy. RedDragonInn
 
 ## solution
 

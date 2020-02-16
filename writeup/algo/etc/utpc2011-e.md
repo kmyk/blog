@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2017/12/25/utpc2011-e/"
-title: "東京大学プログラミングコンテスト2011: E. ファーストアクセプタンス"
 date: "2017-12-25T19:10:47+09:00"
 tags: [ "competitive", "writeup", "utpc", "atcoder", "aoj", "scheduling", "greedy" ]
 ---
+
+# 東京大学プログラミングコンテスト2011: E. ファーストアクセプタンス
 
 -   <http://www.utpc.jp/2011/problems/first_ac.html>
 -   <https://beta.atcoder.jp/contests/utpc2011/tasks/utpc2011_5>

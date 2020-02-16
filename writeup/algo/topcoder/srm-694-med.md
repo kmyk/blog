@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2016/07/10/srm-694-med/"
 date: "2016-07-10T19:17:38+09:00"
-title: "TopCoder SRM 694 Div1 Medium: DistinguishableSetDiv1"
 tags: [ "competitive", "writeup", "topcoder", "srm", "dp" ]
 ---
+
+# TopCoder SRM 694 Div1 Medium: DistinguishableSetDiv1
 
 rolling hashでなんとか間に合うかなと思ったが落ちた。零完つらい。
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/02/22/hackerrank-university-codesprint-2-sherlocks-array-merging-algorithm/"
 date: "2017-02-22T23:44:21+09:00"
-title: "HackerRank University CodeSprint 2: Sherlock's Array Merging Algorithm"
 tags: [ "competitive", "writeup", "hackerrank", "codesprint", "university-codesprint", "dp" ]
 "target_url": [ "https://www.hackerrank.com/contests/university-codesprint-2/challenges/sherlocks-array-merging-algorithm" ]
 ---
+
+# HackerRank University CodeSprint 2: Sherlock's Array Merging Algorithm
 
 ## problem
 

@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/04/05/arc-092-e/"
-title: "AtCoder Regular Contest 092: E - Both Sides Merger"
 date: "2018-04-05T04:30:12+09:00"
 tags: [ "competitive", "writeup", "arc", "dp", "greedy", "parity" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc092/tasks/arc092_c" ]
 ---
+
+# AtCoder Regular Contest 092: E - Both Sides Merger
 
 ## solution
 

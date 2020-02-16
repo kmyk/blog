@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Grand Contest 004: F - Namori"
 date: 2018-10-24T16:52:58+09:00
 tags: [ "competitive", "writeup", "atcoder", "agc", "graph", "namori-graph", "binary-search", "parity", "bipartite-graph" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc004/tasks/agc004_f" ]
 ---
+
+# AtCoder Grand Contest 004: F - Namori
 
 ## 解法
 

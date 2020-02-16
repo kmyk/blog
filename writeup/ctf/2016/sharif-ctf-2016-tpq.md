@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2016/12/26/sharif-ctf-2016-tpq/"
 date: "2016-12-26T02:37:55+09:00"
-title: "Sharif CTF 2016: TPQ"
 tags: [ "ctf", "writeup", "crypto", "sharif-ctf", "rsa" ]
 ---
+
+# Sharif CTF 2016: TPQ
 
 解けず。しほさんの残したwriteupを見て解いた。これは自力で解けるべき。
 

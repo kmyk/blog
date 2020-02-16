@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/10/29/ekoparty-ctf-2016-fuckzing-reverse/"
 date: "2016-10-29T13:00:35+09:00"
-title: "EKOPARTY CTF 2016: Fuckzing reverse"
 tags: [ "ctf", "writeup", "ekoparty-ctf", "rev", "angr" ]
 "target_url": [ "https://ctf.ekoparty.org/tasks/rev/250" ]
 ---
+
+# EKOPARTY CTF 2016: Fuckzing reverse
 
 -   Sun Oct 30 00:19:55 JST 2016
     -   The constraint for the payload seems to be misunderstanding of me.

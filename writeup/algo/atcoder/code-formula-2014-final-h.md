@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/02/22/code-formula-2014-final-h/"
 date: "2017-02-22T23:44:38+09:00"
-title: "Code Formula 2014 本選: H - 平和協定"
 tags: [ "competitive", "writeup", "atcoder", "codeformula", "lie", "loop-unrolling" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-formula-2014-final/tasks/code_formula_2014_final_h" ]
 ---
+
+# Code Formula 2014 本選: H - 平和協定
 
 この大会は予選通ったがこの本戦は交通費支給が渋かったので蹴った記憶がある。
 そしてそういう人が多かったのか次の年から開催が消えてしまった。

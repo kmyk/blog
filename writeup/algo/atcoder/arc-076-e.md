@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/12/31/arc-076-e/"
-title: "AtCoder Regular Contest 076: E - Connected?"
 date: "2017-12-31T21:19:17+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc076/tasks/arc076_c" ]
 ---
+
+# AtCoder Regular Contest 076: E - Connected?
 
 $R$と$C$は逆にしたいなあと思う
 

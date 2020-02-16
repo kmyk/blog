@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Google Capture The Flag 2018 (Quals): DM Collision"
 date: "2018-06-27T12:06+09:00"
 tags: [ "ctf", "writeup", "google-ctf", "crypto", "dea", "fixed-point", "weak-key", "davies-meyer", "one-way-compression-function" ]
 "target_url": [ "https://ctftime.org/event/623" ]
 ---
+
+# Google Capture The Flag 2018 (Quals): DM Collision
 
 ## note
 

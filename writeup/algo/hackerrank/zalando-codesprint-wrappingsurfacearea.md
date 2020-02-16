@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/06/05/hackerrank-zalando-codesprint-wrappingsurfacearea/"
-title: "HackerRank Zalando CodeSprint: Minimal Wrapping Surface Area"
 date: 2016-06-05T19:17:30+09:00
 tags: [ "competitive", "writeup", "hackerrank", "exhaustive-search" ]
 "target_url": [ "https://www.hackerrank.com/contests/zalando-codesprint/challenges/wrappingsurfacearea" ]
 ---
+
+# HackerRank Zalando CodeSprint: Minimal Wrapping Surface Area
 
 何故か`const ll inf = 1e8;`と書いてしまっていたためにWAが生まれた。
 

@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/03/02/dwango2016-prelims-e/"
-title: "第2回 ドワンゴからの挑戦状 予選: E - 花火"
 date: "2018-03-02T17:24:24+09:00"
 tags: [ "competitive", "writeup", "atcoder", "dwacon", "segment-tree", "dp", "inline-dp", "lazy-propagation", "binary-search" ]
 "target_url": [ "https://beta.atcoder.jp/contests/dwango2016-prelims/tasks/dwango2016qual_e" ]
 ---
+
+# 第2回 ドワンゴからの挑戦状 予選: E - 花火
 
 ## solution
 

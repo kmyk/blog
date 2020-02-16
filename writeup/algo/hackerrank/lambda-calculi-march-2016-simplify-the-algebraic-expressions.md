@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/03/28/hackerrank-lambda-calculi-march-2016-simplify-the-algebraic-expressions/"
-title: "Lambda Calculi - March 2016: Simplify the Algebraic Expressions"
 date: 2016-03-28T15:27:48+09:00
 tags: [ "competitive", "writeup", "hackerrank", "lambda-calculi", "haskell" ]
 "target_url": [ "https://www.hackerrank.com/contests/lambda-calculi-march-2016/challenges/simplify-the-algebraic-expressions" ]
 ---
+
+# Lambda Calculi - March 2016: Simplify the Algebraic Expressions
 
 ## 感想
 

@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/12/27/srm-677-easy/"
-title: "TopCoder SRM 676 Div1 Easy: DoubleOrOneEasy"
 date: 2015-12-27T04:08:43+09:00
 tags: [ "competitive", "writeup", "srm" ]
 ---
+
+# TopCoder SRM 676 Div1 Easy: DoubleOrOneEasy
 
 零完しました。$x' = f(x) = x \ll i + j$の$i$を総当たればよいのは気付いていたが、その先をDPだと思い込んでしまっていた。
 

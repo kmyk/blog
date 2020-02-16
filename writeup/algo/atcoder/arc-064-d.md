@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/12/05/arc-064-d/"
 date: "2016-12-05T15:43:07+09:00"
-title: "AtCoder Regular Contest 064: D - An Ordinary Game"
 tags: [ "competitive", "writeup", "atcoder", "game" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc064/tasks/arc064_b" ]
 ---
+
+# AtCoder Regular Contest 064: D - An Ordinary Game
 
 しばらく考えて分からなかったのですぐに解法を見てしまった。
 

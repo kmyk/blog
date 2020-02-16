@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "NPCJ2017: D - NMパズル"
 date: 2018-07-13T13:37:46+09:00
 tags: [ "competitive", "writeup", "atcoder", "njpc", "inversion-number" ]
 "target_url": [ "https://beta.atcoder.jp/contests/njpc2017/tasks/njpc2017_d" ]
 ---
+
+# NPCJ2017: D - NMパズル
 
 ## note
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/05/07/agc-014-a/"
 date: "2017-05-07T21:10:41+09:00"
-title: "AtCoder Grand Contest 014: A - Cookie Exchanges"
 tags: [ "competitive", "writeup", "atcoder", "agc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc014/tasks/agc014_a" ]
 ---
+
+# AtCoder Grand Contest 014: A - Cookie Exchanges
 
 なんだかいけそうだったので試したら当たった。計算量解析は後からだけど、すこし面白かった。
 

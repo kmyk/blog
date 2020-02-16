@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/09/28/arc-004-d/"
-title: "AtCoder Regular Contest 004 D - 表現の自由 ( Freedom of expression )"
 date: 2015-09-28T21:04:17+09:00
 tags: [ "competitive", "atcoder", "arc", "writeup" ]
 ---
+
+# AtCoder Regular Contest 004 D - 表現の自由 ( Freedom of expression )
 
 毎日blogを更新する(== 1日1問解く)の習慣になってきた
 

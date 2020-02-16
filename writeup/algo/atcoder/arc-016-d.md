@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 016: D - 軍艦ゲーム"
 date: 2018-08-23T15:07:42+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp", "binary-search", "expected-value", "graph", "dag", "fixed-point" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc016/tasks/arc016_4" ]
 ---
+
+# AtCoder Regular Contest 016: D - 軍艦ゲーム
 
 ## 解法
 

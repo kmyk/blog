@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/03/06/abc-089-d/"
-title: "AtCoder Beginner Contest 089: D - Practical Skill Test"
 date: "2018-03-06T23:37:08+09:00"
 tags: [ "competitive", "writeup", "atcoder", "abc", "cumulative-sum" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc089/tasks/abc089_d" ]
 ---
+
+# AtCoder Beginner Contest 089: D - Practical Skill Test
 
 ちょくだいさんが以下のようなことを言っていたので解いた。
 
@@ -71,6 +72,8 @@ int main() {
 ```
 
 ---
+
+# AtCoder Beginner Contest 089: D - Practical Skill Test
 
 -   2018年  3月  8日 木曜日 13:15:45 JST
     -   入力を緩めた場合の解法を修正

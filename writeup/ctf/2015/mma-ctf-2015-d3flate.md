@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/09/09/mma-ctf-2015-d3flate/"
 date: "2016-09-09T15:08:55+09:00"
-title: "MMA CTF 2015: d3flate"
 tags: [ "ctf", "writeup", "mmactf", "pwn", "zlib", "canary" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2015/tree/master/mma-ctf-2015/pwn/d3flate-500" ]
 ---
+
+# MMA CTF 2015: d3flate
 
 解けないからwriteupを見たが、writeupにあった実装ではどれもzlibの計算が停止する気配がなかった。追加で頑張った。
 

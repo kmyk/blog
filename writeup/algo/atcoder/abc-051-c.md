@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/01/07/abc-051-c/"
 date: "2017-01-07T22:12:34+09:00"
-title: "AtCoder Beginner Contest 051: C - Back and Forth"
 tags: [ "competitive", "writeup", "atcoder", "abc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc051/tasks/abc051_c" ]
 ---
+
+# AtCoder Beginner Contest 051: C - Back and Forth
 
 ロボット掃除機などの経路決定の際に、細かいグリッドに分けて軸平行に繋いでグラフを作るとギザギザに動いて一見最短距離のような経路とそうでない経路の距離が同じになって困る、という話が思い出された。
 

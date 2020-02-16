@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2015/11/21/abc-031-c/"
-title: "AtCoder Beginner Contest 031 C - 数列ゲーム"
 date: 2015-11-21T23:09:42+09:00
 tags: [ "competitive", "writeup", "atcoder", "abc" ]
 "target_url": [ "!-- more --" ]
 ---
+
+# AtCoder Beginner Contest 031 C - 数列ゲーム
 
 ## [C - 数列ゲーム](https://beta.atcoder.jp/contests/abc031/tasks/abc031_c) {#c}
 

@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "CODE RUNNER 2015 予選B 魔法の力を、ためて戦え！「Charge And Hit」"
 date: 2015-10-31T23:40:54+09:00
 tags: [ "competitive", "coderunner" ]
 ---
+
+# CODE RUNNER 2015 予選B 魔法の力を、ためて戦え！「Charge And Hit」
 
 本戦行けるのかとても怪しい。最高1位、最終74位。
 
@@ -68,6 +69,8 @@ while True:
 
 
 ---
+
+# CODE RUNNER 2015 予選B 魔法の力を、ためて戦え！「Charge And Hit」
 
 -   Tue Nov  3 00:26:27 JST 2015
     -   問題読み落としてたの発覚したので修正

@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2016/12/30/33c3-ctf-espr/"
 date: "2016-12-30T13:39:05+09:00"
-title: "33C3 CTF: ESPR"
 tags: [ "ctf", "writeup", "pwn", "33c3-ctf", "blind", "libc", "format-string-attack" ]
 ---
+
+# 33C3 CTF: ESPR
 
 blindでFSAする問題は先日の[Sharif CTF](https://ctftime.org/event/370)で$3$問出た。さらに同CTFでlibc特定する問題も出てたので完全に復習だった。
 

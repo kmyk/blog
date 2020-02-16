@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/04/10/gcj-2016-qual-a/"
-title: "Google Code Jam 2016 Qualification Round A. Counting Sheep"
 date: 2016-04-10T11:04:16+09:00
 tags: [ "competitive", "writeup", "google-code-jam", "gcj" ]
 "target_url": [ "https://code.google.com/codejam/contest/6254486/dashboard#s=p0" ]
 ---
+
+# Google Code Jam 2016 Qualification Round A. Counting Sheep
 
 I've noticed that, people who visit this blog are not only Japanese.
 So I'll try to write solutions in English, for problems written in English.

@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/01/01/utpc-2012-h/"
-title: "東京大学プログラミングコンテスト2012: H - 区間スケジューリングクエリ"
 date: "2018-01-01T10:51:19+09:00"
 tags: [ "competitive", "writeup", "utpc", "atcoder", "schduling", "doubling", "query", "segment-tree", "coodinate-compression" ]
 "target_url": [ "https://beta.atcoder.jp/contests/utpc2012/tasks/utpc2012_08" ]
 ---
+
+# 東京大学プログラミングコンテスト2012: H - 区間スケジューリングクエリ
 
 ## 反省
 

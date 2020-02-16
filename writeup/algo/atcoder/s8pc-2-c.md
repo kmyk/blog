@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/04/23/s8pc-2-c/"
-title: "square869120Contest #2 C - 何通りの分割方法がある？"
 date: 2016-04-23T23:02:30+09:00
 tags: [ "competitive", "writeup", "atcoder", "s8pc", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/s8pc-2/tasks/s8pc_2_c" ]
 ---
+
+# square869120Contest #2 C - 何通りの分割方法がある？
 
 ## solution
 

@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Beginner Contest 105: C - Base -2 Number"
 date: 2018-08-11T23:06:13+09:00
 tags: [ "competitive", "writeup", "atcoder", "abc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc105/tasks/abc105_c" ]
 ---
+
+# AtCoder Beginner Contest 105: C - Base -2 Number
 
 ## solution
 

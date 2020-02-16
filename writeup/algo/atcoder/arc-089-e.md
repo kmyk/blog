@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/01/23/arc-089-e/"
-title: "AtCoder Regular Contest 089: E - GraphXY"
 date: "2018-01-23T19:41:44+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "graph", "construction" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc089/tasks/arc089_c" ]
 ---
+
+# AtCoder Regular Contest 089: E - GraphXY
 
 すぐに思い付いたのに頂点番号に$+1$するのを忘れてWAをたくさん生やした。Pythonで書き始めて途中でC++に切り替えたときに混入したバグだった。
 

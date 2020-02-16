@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "チャーチ数とpred関数"
 date: 2014-04-05T21:04:13+09:00
 tags: [ "church", "number", "lambda", "calculus", "predecessor", "function" ]
 ---
+
+# チャーチ数とpred関数
 
 ``` c
 pred n = \ s o. n (\ f g. g (f s)) (\ x. o) (\ x. x)

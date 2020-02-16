@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/25/arc-054-b/"
-title: "AtCoder Regular Contest 054 B - ムーアの法則"
 date: 2016-05-25T19:40:56+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "ternary-search" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc054/tasks/arc054_b" ]
 ---
+
+# AtCoder Regular Contest 054 B - ムーアの法則
 
 ## solution
 

@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2016-09-20T21:41:45+09:00"
-title: "Entropies of ASLR/PIE in Ubuntu 16.04"
 tags: [ "pwn", "ctf", "aslr", "pie" ]
 ---
+
+# Entropies of ASLR/PIE in Ubuntu 16.04
 
 ## x86_64
 

@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/02/12/defcon-qualifier-ctf-2015-wibbly-wobbly-timey-wimey/"
-title: "DEF CON Qualifier 2015: wibbly wobbly timey wimey"
 date: 2016-02-12T23:53:24+09:00
 tags: [ "ctf", "writeup", "pwn", "defcon", "format-string-attack", "buffer-overflow", "position-independent-executable" ]
 ---
+
+# DEF CON Qualifier 2015: wibbly wobbly timey wimey
 
 友人らとのpwn解く会で<del>解いた</del>解けてなかった[^6]。分からなかったのでwriteup[^1]を見ました。
 
@@ -220,6 +221,8 @@ p.interactive()
 
 ---
 
+# DEF CON Qualifier 2015: wibbly wobbly timey wimey
+
 [^1]: <http://charo-it.hatenablog.jp/entry/2015/05/19/114004>
 [^2]: <http://stackoverflow.com/questions/16302575/distinguish-shared-objects-from-position-independent-executables>
 [^3]: <https://ezoeryou.github.io/blog/article/2015-04-16-PIC.html>
@@ -228,6 +231,8 @@ p.interactive()
 [^6]: libcはuploadされてないだけで本番は与えられていたのかな、と思っていたけどそうではなかったらしい。
 
 ---
+
+# DEF CON Qualifier 2015: wibbly wobbly timey wimey
 
 -   Thu Feb 18 17:42:57 JST 2016
     -   解けてなかったのでそのことを明記

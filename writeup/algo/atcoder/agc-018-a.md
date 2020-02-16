@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/07/23/agc-018-a/"
-title: "AtCoder Grand Contest 018: A - Getting Difference"
 date: "2017-07-23T23:16:15+09:00"
 tags: [ "competitive", "writeup", "atcoder", "agc", "gcd", "euclidean-algorithm" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc018/tasks/agc018_a" ]
 ---
+
+# AtCoder Grand Contest 018: A - Getting Difference
 
 B解けてA解けない人が見られた。
 

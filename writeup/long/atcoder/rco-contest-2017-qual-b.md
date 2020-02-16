@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/03/05/rco-contest-2017-qual-b/"
 date: "2017-03-05T01:50:07+09:00"
-title: "RCO presents 日本橋ハーフマラソン 予選: B - Food Collector"
 tags: [ "competitive", "writeup", "atcoder", "rco-contest", "half-marathon", "random", "greedy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/rco-contest-2017-qual/tasks/rco_contest_2017_qual_b" ]
 ---
+
+# RCO presents 日本橋ハーフマラソン 予選: B - Food Collector
 
 ## solution
 

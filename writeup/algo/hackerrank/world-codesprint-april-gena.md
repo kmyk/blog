@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/01/hackerrank-world-codesprint-april-gena/"
-title: "HackerRank World Codesprint April: Gena Playing Hanoi"
 date: 2016-05-01T12:20:46+09:00
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint" ]
 "target_url": [ "https://www.hackerrank.com/contests/world-codesprint-april/challenges/gena" ]
 ---
+
+# HackerRank World Codesprint April: Gena Playing Hanoi
 
 ## problem
 

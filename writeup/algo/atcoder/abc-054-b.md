@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/04/05/abc-054-b/"
 date: "2017-04-05T03:36:37+09:00"
-title: "AtCoder Beginner Contest 054: B - Template Matching"
 tags: [ "competitive", "writeup", "atcoder", "abc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc054/tasks/abc054_b" ]
 ---
+
+# AtCoder Beginner Contest 054: B - Template Matching
 
 入力の取り方もloopの回し方も分からない。もうちょっとすっきり書きたい。
 

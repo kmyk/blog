@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/04/16/srm-688-easy/"
-title: "TopCoder SRM 688 Easy: ParenthesesDiv1Easy"
 date: 2016-04-16T04:42:59+09:00
 tags: [ "competitive", "writeup", "topcoder", "srm" ]
 ---
+
+# TopCoder SRM 688 Easy: ParenthesesDiv1Easy
 
 I wrote a greedy one and got WA.
 

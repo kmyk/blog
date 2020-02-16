@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/02/14/yahoo-procon2018-qual-d/"
-title: "「みんなのプロコン 2018」: D - XOR XorY"
 date: "2018-02-14T20:15:27+09:00"
 tags: [ "competitive", "writeup", "atcoder", "yahoo-procon" ]
 "target_url": [ "https://beta.atcoder.jp/contests/yahoo-procon2018-qual/tasks/yahoo_procon2018_qual_d" ]
 ---
+
+# 「みんなのプロコン 2018」: D - XOR XorY
 
 本番中では間に合わなかったが解説なしで解くのは解けた。
 

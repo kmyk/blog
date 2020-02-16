@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/03/01/yahoo-procon2018-final-d/"
-title: "「みんなのプロコン 2018」決勝: D - LCP(prefix,suffix)"
 date: "2018-03-01T18:03:30+09:00"
 tags: [ "competitive", "writeup", "atcoder", "yahoo-procon", "lcp", "suffix-array" ]
 "target_url": [ "https://beta.atcoder.jp/contests/yahoo-procon2018-final-open/tasks/yahoo_procon2018_final_d" ]
 ---
+
+# 「みんなのプロコン 2018」決勝: D - LCP(prefix,suffix)
 
 公式解説がなかったので[準急さんの](https://beta.atcoder.jp/contests/yahoo-procon2018-final/submissions/2126707)を読んだ。
 

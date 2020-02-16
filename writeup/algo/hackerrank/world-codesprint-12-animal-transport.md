@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/12/31/hackerrank-world-codesprint-12-animal-transport/"
-title: "HackerRank World CodeSprint 12: Animal Transport"
 date: "2017-12-31T16:26:49+09:00"
 tags: [ "competitive", "writeup", "hackerrank", "codesprint", "dp", "segment-tree", "lazy-propagation" ]
 "target_url": [ "https://www.hackerrank.com/contests/world-codesprint-12/challenges/animal-transport" ]
 ---
+
+# HackerRank World CodeSprint 12: Animal Transport
 
 ## problem
 

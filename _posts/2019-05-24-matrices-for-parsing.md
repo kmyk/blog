@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "行列を用いた構文解析"
 date: 2019-05-24T00:00:00+09:00
 tags: [ "competitive", "matrix", "parsing" ]
 ---
+
+# 行列を用いた構文解析
 
 <small>
 前提知識: 行列やベクトルに関する理解と慣れ、正則言語や DFA に関する理解

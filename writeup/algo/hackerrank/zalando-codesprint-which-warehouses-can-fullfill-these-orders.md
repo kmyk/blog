@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/06/05/hackerrank-zalando-codesprint-which-warehouses-can-fullfill-these-orders/"
-title: "HackerRank Zalando CodeSprint: Which Warehouses Can Fulfill These Orders?"
 date: 2016-06-05T19:17:48+09:00
 tags: [ "competitive", "writeup", "hackerrank", "exhaustive-search" ]
 "target_url": [ "https://www.hackerrank.com/contests/zalando-codesprint/challenges/which-warehouses-can-fullfill-these-orders" ]
 ---
+
+# HackerRank Zalando CodeSprint: Which Warehouses Can Fulfill These Orders?
 
 ## problem
 

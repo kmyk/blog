@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/06/05/hackerrank-zalando-codesprint-match-the-shoes/"
-title: "HackerRank Zalando CodeSprint: Match the Shoes"
 date: 2016-06-05T19:16:33+09:00
 tags: [ "competitive", "writeup", "hackerrank" ]
 "target_url": [ "https://www.hackerrank.com/contests/zalando-codesprint/challenges/match-the-shoes" ]
 ---
+
+# HackerRank Zalando CodeSprint: Match the Shoes
 
 ## problem
 

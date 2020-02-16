@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/24/fhc-2016-round2-b/"
-title: "Facebook Hacker Cup 2016 Round 2 Carnival Coins"
 date: 2016-01-24T06:02:41+09:00
 tags: [ "competitive", "writeup", "facebook-hacker-cup", "expected-value", "dp" ]
 ---
+
+# Facebook Hacker Cup 2016 Round 2 Carnival Coins
 
 ## [Carnival Coins](https://www.facebook.com/hackercup/problem/1627951250755660/)
 

@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "TopCoder 2018 TCO Algorithm: Medium. Gangsters"
 date: 2018-08-26T03:05:55+09:00
 tags: [ "competitive", "writeup", "topcoder", "srm", "dp", "counting" ]
 ---
+
+# TopCoder 2018 TCO Algorithm: Medium. Gangsters
 
 ## 解法
 

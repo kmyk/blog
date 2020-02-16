@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "CODE FESTIVAL 2018 Final: C - Telephone Charge"
 date: 2018-11-22T20:39:22+09:00
 tags: [ "competitive", "writeup", "atcoder", "code-festival", "convex-hull-trick" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-festival-2018-final/tasks/code_festival_2018_final_c" ]
 ---
+
+# CODE FESTIVAL 2018 Final: C - Telephone Charge
 
 ## 解法
 

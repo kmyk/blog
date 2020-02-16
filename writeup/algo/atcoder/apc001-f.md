@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Petrozavodsk Contest 001: F - XOR Tree"
 date: 2018-07-27T03:19:07+09:00
 tags: [ "competitive", "writeup", "atcoder", "apc", "graph", "xor", "bit-dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/apc001/tasks/apc001_f" ]
 ---
+
+# AtCoder Petrozavodsk Contest 001: F - XOR Tree
 
 ## note
 

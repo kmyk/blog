@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "SoundHound Inc. Programming Contest 2018 -Masters Tournament-: C - Ordinary Beauty"
 date: 2018-07-07T23:53:03+09:00
 tags: [ "competitive", "writeup", "atcoder", "golf", "awk" ]
 "target_url": [ "https://beta.atcoder.jp/contests/soundhound2018-summer-qual/tasks/soundhound2018_summer_qual_c" ]
 ---
+
+# SoundHound Inc. Programming Contest 2018 -Masters Tournament-: C - Ordinary Beauty
 
 ## solution
 

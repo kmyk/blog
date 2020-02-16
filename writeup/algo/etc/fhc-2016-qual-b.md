@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/11/fhc-2016-qual-b/"
-title: "Facebook Hacker Cup 2016 Qualification Round High Security"
 date: 2016-01-12 9:00:00 +0900
 tags: [ "competitive", "writeup", "facebook-hacker-cup" ]
 ---
+
+# Facebook Hacker Cup 2016 Qualification Round High Security
 
 ## [High Security](https://www.facebook.com/hackercup/problem/1527664744192390/)
 

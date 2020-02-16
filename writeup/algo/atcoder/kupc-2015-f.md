@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/10/24/kupc-2015-f/"
-title: "京都大学プログラミングコンテスト2015 F - 逆ポーランド記法"
 date: 2015-10-24T23:55:42+09:00
 tags: [ "kupc", "competitive", "writeup", "reverse-polish-notation", "queue", "stack", "dfs", "bfs" ]
 ---
+
+# 京都大学プログラミングコンテスト2015 F - 逆ポーランド記法
 
 | stack | queue |
 |  dfs  |  bfs  |

@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/11/fhc-2016-qual-d/"
-title: "Facebook Hacker Cup 2016 Qualification Round Text Editor"
 date: 2016-01-12 9:00:00 +0900
 tags: [ "competitive", "writeup", "facebook-hacker-cup", "trie", "graph", "dp" ]
 ---
+
+# Facebook Hacker Cup 2016 Qualification Round Text Editor
 
 かなり好きな問題。
 

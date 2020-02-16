@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/02/23/abc-032-d/"
-title: "AtCoder Beginner Contest 032 D - ナップサック問題"
 date: 2016-02-23T01:29:36+09:00
 tags: [ "competitive", "writeup", "atcoder", "abc", "knapsack-problem", "dp", "typical-problem", "branch-and-bound" ]
 ---
+
+# AtCoder Beginner Contest 032 D - ナップサック問題
 
 0/1-knapsack問題を種々の制約の下での解く教科書的な問題。
 

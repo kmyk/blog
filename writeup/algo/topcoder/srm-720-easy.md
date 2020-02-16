@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/08/25/srm-720-easy/"
 date: "2017-08-25T21:47:49+09:00"
-title: "TopCoder SRM 720 Div1 Easy: SumProduct"
 tags: [ "competitive", "writeup", "topcoder", "srm", "dp", "combination" ]
 ---
+
+# TopCoder SRM 720 Div1 Easy: SumProduct
 
 実質Medium。
 

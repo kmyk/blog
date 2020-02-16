@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2016/11/19/qiwi-infosec-ctf-2016-crypto-300-2/"
 date: "2016-11-19T01:31:07+09:00"
-title: "Qiwi Infosec CTF 2016: Crypto 300_2"
 tags: [ "ctf", "writeup", "qiwi-ctf", "crypto", "diffie-hellman" ]
 ---
+
+# Qiwi Infosec CTF 2016: Crypto 300_2
 
 Diffie-Hellman鍵共有の秘密鍵を求める。
 一般に離散対数問題は難しいが、$g^a, g^b$が小さいことから$a, b$が小さいことが推測でき、下から順に試せば解ける。

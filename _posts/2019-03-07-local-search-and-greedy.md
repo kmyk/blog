@@ -1,11 +1,12 @@
 ---
 category: blog
 layout: post
-title: "貪欲法、山登り法、焼きなまし、ビームサーチ、これらの間の関係について"
 date: "2019-03-07T00:00:00+09:00"
 edited: "2019-03-08T03:00:00+09:00"
 tags: [ "competitive", "marathon-match", "local-search", "greedy", "hill-climing", "simulated-annealing", "beam-search" ]
 ---
+
+# 貪欲法、山登り法、焼きなまし、ビームサーチ、これらの間の関係について
 
 ## 概要
 
@@ -258,6 +259,8 @@ $$v \in V$$ に対し $$N(v) = \{ w \in V \mid (v, w) \in E \}$$ とおき、こ
 
 
 ---
+
+# 貪欲法、山登り法、焼きなまし、ビームサーチ、これらの間の関係について
 
 -   2019年  3月  7日 木曜日 23:30:00 JST
     -   [@kosakkun](https://twitter.com/kosakkun) さんに読んでもらい、文章の分かりにくかった点を修正

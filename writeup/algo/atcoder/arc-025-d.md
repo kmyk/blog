@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 025: D - コンセント"
 date: 2018-09-14T02:48:49+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "linarity", "matrix", "segment-tree", "dynamic-construction" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc025/tasks/arc025_4" ]
 ---
+
+# AtCoder Regular Contest 025: D - コンセント
 
 <!-- {% raw %} -->
 

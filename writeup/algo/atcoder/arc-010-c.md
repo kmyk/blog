@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/11/03/arc-010-c/"
-title: "AtCoder Regular Contest 010 C - 積み上げパズル"
 date: 2015-11-03T01:45:52+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp" ]
 ---
+
+# AtCoder Regular Contest 010 C - 積み上げパズル
 
 dpは分かると楽しい。
 

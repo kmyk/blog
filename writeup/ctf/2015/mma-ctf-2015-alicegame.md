@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/11/23/mma-ctf-2015-alicegame/"
 date: "2016-11-23T03:31:05+09:00"
-title: "MMA CTF 2015: Alicegame"
 tags: [ "ctf", "writeup", "mmactf", "crypto", "elgamal-encryption", "discrete-logarithm-problem", "baby-step-giant-step", "pohlig-hellman" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2015/tree/master/mma-ctf-2015/crypto/alice-game-250" ]
 ---
+
+# MMA CTF 2015: Alicegame
 
 安全素数を使わなかったときのElGamal暗号を破る問題。
 

@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/02/25/anagol-right-time/"
-title: "Anarchy Golf 53. right time"
 date: 2016-02-25T02:57:37+09:00
 tags: [ "writeup", "anarchy-golf", "golf", "time" ]
 ---
+
+# Anarchy Golf 53. right time
 
 閏秒の処理が分からなかった。閏秒を無視してperlで単純に`-pl`で`gmtime`して`strftime`するだけで49byteになって、1位まで残り18byteしか空きがなく、検索ゲーはあまり楽しくないので放棄した。
 

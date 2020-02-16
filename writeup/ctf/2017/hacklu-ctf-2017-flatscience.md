@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/10/20/hacklu-ctf-2017-flatscience/"
 date: "2017-10-20T01:32:23+09:00"
-title: "hack.lu CTF 2017: FLATSCIENCE"
 tags: [ "ctf", "writeup", "hacklu-ctf", "web", "misc" ]
 ---
+
+# hack.lu CTF 2017: FLATSCIENCE
 
 人が`robots.txt`など下調べをし、別の人がSQLiでhashedなpasswordを抜き、残りの逆像求める部分を私がした。
 たいてい独立にそれぞれ解いて終わるので、協力してやる感じは嫌いじゃないです。

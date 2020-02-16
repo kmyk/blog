@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/04/25/agc-013-d/"
 date: "2017-04-25T22:41:03+09:00"
-title: "AtCoder Grand Contest 013: D - Piling Up"
 tags: [ "competitive", "writeup", "atcoder", "agc", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc013/tasks/agc013_d" ]
 ---
+
+# AtCoder Grand Contest 013: D - Piling Up
 
 ## solution
 

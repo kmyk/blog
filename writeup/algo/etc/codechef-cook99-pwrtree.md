@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "CodeChef October Mega Cook-Off 2018 Division 2: Power Tree"
 date: 2018-10-22T06:39:53+09:00
 tags: [ "competitive", "writeup", "codechef", "cook-off", "ordinal", "construction" ]
 "target_url": [ "https://www.codechef.com/COOK99B/problems/PWRTREE" ]
 ---
+
+# CodeChef October Mega Cook-Off 2018 Division 2: Power Tree
 
 ## 問題
 

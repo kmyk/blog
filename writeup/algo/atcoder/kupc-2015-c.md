@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/10/24/kupc-2015-c/"
-title: "京都大学プログラミングコンテスト2015 C - 最短経路"
 date: 2015-10-24T23:55:24+09:00
 tags: [ "kupc", "competitive", "writeup", "graph", "warshall-floyd" ]
 ---
+
+# 京都大学プログラミングコンテスト2015 C - 最短経路
 
 そういえばbellman-ford法が記憶から消えつつあるし復習しないと
 

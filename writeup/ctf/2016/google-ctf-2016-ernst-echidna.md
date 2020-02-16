@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/02/google-ctf-2016-ernst-echidna/"
-title: "Google Capture The Flag 2016: Ernst Echidna"
 date: 2016-05-02T02:33:12+09:00
 tags: [ "ctf", "web", "writeup", "google-ctf" ]
 "target_url": [ "https://capturetheflag.withgoogle.com/challenges/" ]
 ---
+
+# Google Capture The Flag 2016: Ernst Echidna
 
 Follow the hint in the problem statement, you can know there is a directory `/admin`. And it seems that check the user by the cookie.
 

@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/01/05/arc-069-e/"
-title: "AtCoder Regular Contest 069: E - Frequency"
 date: "2018-01-05T23:34:43+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "wavelet-matrix" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc069/tasks/arc069_c" ]
 ---
+
+# AtCoder Regular Contest 069: E - Frequency
 
 非想定解。
 Wavelet木、最高。

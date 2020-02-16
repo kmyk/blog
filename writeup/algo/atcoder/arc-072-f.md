@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/09/02/arc-072-f/"
 date: "2017-09-02T08:06:58+09:00"
-title: "AtCoder Regular Contest 072: F - Dam"
 tags: [ "competitive", "writeup", "atcoder", "arc", "deque" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc072/tasks/arc072_d" ]
 ---
+
+# AtCoder Regular Contest 072: F - Dam
 
 ## solution
 

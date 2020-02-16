@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2016/07/10/srm-694-easy/"
 date: "2016-07-10T19:17:35+09:00"
-title: "TopCoder SRM 694 Div1 Easy: TrySail"
 tags: [ "competitive", "writeup", "topcoder", "srm", "dp", "xor" ]
 ---
+
+# TopCoder SRM 694 Div1 Easy: TrySail
 
 配列長を$256$でなく$255$で取ってて死んだ。
 とてもつらい。

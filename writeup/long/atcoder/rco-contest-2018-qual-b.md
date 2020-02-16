@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/02/13/rco-contest-2018-qual-b/"
-title: "第2回 RCO日本橋ハーフマラソン 予選: B - ゲーム実況者Xのデフラグ"
 date: "2018-02-13T15:09:45+09:00"
 tags: [ "competitive", "writeup", "atcoder", "rco-contest", "marathon-match", "simulated-annealing" ]
 "target_url": [ "https://rco-contest-2018-qual.contest.atcoder.jp/tasks/rco_contest_2018_qual_b" ]
 ---
+
+# 第2回 RCO日本橋ハーフマラソン 予選: B - ゲーム実況者Xのデフラグ
 
 Aと違ってBはだめで$48$位。
 総合順位の付け方が「問題Aでの順位$\times$問題Bでの順位」に変更になってなかったら通過が怪しかった。運が良い。

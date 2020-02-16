@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "技術室奥プログラミングコンテスト #3: H - 新入生歓迎数列 - Hard"
 date: 2018-08-02T10:04:47+09:00
 tags: [ "competitive", "writeup", "atcoder", "tkppc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/tkppc3/tasks/tkppc3_h" ]
 ---
+
+# 技術室奥プログラミングコンテスト #3: H - 新入生歓迎数列 - Hard
 
 ## solution
 

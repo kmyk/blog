@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/11/10/arc-007-d/"
-title: "AtCoder Regular Contest 007 D - 破れた宿題"
 date: 2015-11-10T21:31:17+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "corner-cases" ]
 ---
+
+# AtCoder Regular Contest 007 D - 破れた宿題
 
 発想は簡単だけどコーナーケースが多い問題。
 やれば通せる。

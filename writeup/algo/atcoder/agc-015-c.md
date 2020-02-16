@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/05/28/agc-015-c/"
 date: "2017-05-28T03:30:10+09:00"
-title: "AtCoder Grand Contest 015: C - Nuske vs Phantom Thnook"
 tags: [ "competitive", "writeup", "atcoder", "agc", "tree", "graph" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc015/tasks/agc015_c" ]
 ---
+
+# AtCoder Grand Contest 015: C - Nuske vs Phantom Thnook
 
 Dの方が簡単に見える。
 森$G = (V, E)$の成分の数は$\|V\| - \|E\|$ということだが、どこかの問題で有名なのだろうか。

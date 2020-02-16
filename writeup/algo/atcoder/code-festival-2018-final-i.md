@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "CODE FESTIVAL 2018 Final: I - Homework"
 date: 2018-11-22T23:26:48+09:00
 tags: [ "competitive", "writeup", "atcoder", "code-festival", "binary-search", "greedy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-festival-2018-final/tasks/code_festival_2018_final_i" ]
 ---
+
+# CODE FESTIVAL 2018 Final: I - Homework
 
 ## 解法
 

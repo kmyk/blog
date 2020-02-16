@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/30/discovery-2016-qual-b/"
-title: "DISCO presents ディスカバリーチャンネル Programming Contest 2016 Qualification B - ディスコ社内ツアー"
 date: 2016-01-30T23:17:12+09:00
 tags: [ "competitive", "writeup", "atcoder", "discovery-channel", "greedy", "binary-search" ]
 ---
+
+# DISCO presents ディスカバリーチャンネル Programming Contest 2016 Qualification B - ディスコ社内ツアー
 
 制約を、各周に関してその周のなかで面白さ$A_i$が広義単調、と誤読してlisを書いていた。これが無ければC通っていた可能性がある。
 

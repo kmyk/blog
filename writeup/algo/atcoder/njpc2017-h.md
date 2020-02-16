@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "NJPC2017: H - 白黒ツリー"
 date: 2018-08-06T20:26:00+09:00
 tags: [ "competitive", "writeup", "atcoder", "euler-tour", "segment-tree", "random" ]
 "target_url": [ "https://beta.atcoder.jp/contests/njpc2017/tasks/njpc2017_h" ]
 ---
+
+# NJPC2017: H - 白黒ツリー
 
 ## solution
 

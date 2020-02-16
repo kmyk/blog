@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/07/13/code-festival-2015-okinawa-open-a/"
 date: "2016-07-13T02:52:39+09:00"
-title: "CODE FESTIVAL 2015 OKINAWA OPEN A - Automatic Map Generator"
 tags: [ "competitive", "writeup", "codefestival", "atcoder", "construction" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-festival-2015-okinawa-open/tasks/code_festival_2015_okinawa_a" ]
 ---
+
+# CODE FESTIVAL 2015 OKINAWA OPEN A - Automatic Map Generator
 
 構成をするだけ。
 左上から順に$1 \times 1$の島を植えていく。

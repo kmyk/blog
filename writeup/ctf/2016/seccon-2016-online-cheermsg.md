@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/12/16/seccon-2016-online-cheermsg/"
 date: "2016-12-16T21:02:05+09:00"
-title: "SECCON 2016 Online CTF: cheer msg"
 tags: [ "ctf", "writeup", "pwn", "rop" ]
 "target_url": [ "https://score-quals.seccon.jp/question/3093a2f4584782e888feb5cf243d982dd3211e2b" ]
 ---
+
+# SECCON 2016 Online CTF: cheer msg
 
 本番でやりかけたら影白さんが先に解いてくれてそのままになってた。
 なのでpwn会で解いた。後輩らが村人Bで苦しんでるのを眺めながら解いて$3$時間かかった。もうちょっと速くしたい。

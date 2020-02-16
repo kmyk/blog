@@ -1,11 +1,12 @@
 ---
 category: blog
 layout: post
-title: "マラソンマッチにおける用語の一覧"
 date: "2019-03-08T06:00:00+09:00"
 edited: "2019-03-08T20:00:00+09:00"
 tags: [ "competitive", "marathon-match" ]
 ---
+
+# マラソンマッチにおける用語の一覧
 
 
 ## アルゴリズムの名前
@@ -233,6 +234,8 @@ MM と対比して通常の競プロを指す語。
 <https://git-scm.com/>
 
 ---
+
+# マラソンマッチにおける用語の一覧
 
 -   2019年  3月  8日 金曜日 20:30:00 JST
     -   [kosakkun](https://twitter.com/kosakkun) さんに読んでもらい、文章の分かりにくかった点を修正

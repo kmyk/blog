@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/05/15/dcj-2017-round1-d/"
 date: "2017-05-15T11:08:47+09:00"
-title: "Google Code Jam Distributed Round 1 2017: D. todd_and_steven"
 tags: [ "competitive", "writeup", "dcj", "distributed-code-jam", "binary-search" ]
 "target_url": [ "https://code.google.com/codejam/contest/8314486/dashboard#s=p3" ]
 ---
+
+# Google Code Jam Distributed Round 1 2017: D. todd_and_steven
 
 In progessな状態がscoreboard上でIncorrect扱いされるバグのせいで無駄な作業をしてしまった。
 

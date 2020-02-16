@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/18/fhc-2016-round1-d/"
-title: "Facebook Hacker Cup 2016 Round 1 Boomerang Tournament"
 date: 2016-01-18T01:17:51+09:00
 tags: [ "competitive", "writeup", "facebook-hacker-cup", "dp", "bit-dp" ]
 ---
+
+# Facebook Hacker Cup 2016 Round 1 Boomerang Tournament
 
 set dpを思い付くまでかなり時間がかかってしまった。
 

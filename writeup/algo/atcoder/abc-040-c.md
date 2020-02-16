@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/06/20/abc-040-c/"
-title: "AtCoder Beginner Contest 040 C - 柱柱柱柱柱"
 date: 2016-06-20T00:56:19+09:00
 tags: [ "competitive", "writeup", "abc", "atcoder", "graph", "dp", "dag" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc040/tasks/abc040_c" ]
 ---
+
+# AtCoder Beginner Contest 040 C - 柱柱柱柱柱
 
 分かりやすいDP。DPとはDAG上の最短路だ、みたいなのが実感できて好きです。
 

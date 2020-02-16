@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/02/26/mujin-pc-2017-c/"
 date: "2017-02-26T02:36:44+09:00"
-title: "Mujin Programming Challenge 2017: C - Robot and String"
 tags: [ "competitive", "writeup", "mujin-pc", "atcoder", "doubling", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/mujin-pc-2017/tasks/mujin_pc_2017_c" ]
 ---
+
+# Mujin Programming Challenge 2017: C - Robot and String
 
 $O(QN)$でなんとかならないかなと頑張ったが、少し無理があった。
 $QN = 5 \times 10^{10}$とちょっと大きいのと配列を引く操作が多くて並列化も難しいのが敗因。

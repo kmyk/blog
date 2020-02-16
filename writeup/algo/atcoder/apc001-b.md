@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Petrozavodsk Contest 001: B - Two Arrays"
 date: 2018-07-09T20:26:48+09:00
 tags: [ "competitive", "writeup", "atcoder", "apc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/apc001/tasks/apc001_b" ]
 ---
+
+# AtCoder Petrozavodsk Contest 001: B - Two Arrays
 
 ## solution
 

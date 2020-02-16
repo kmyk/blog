@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/11/03/arc-045-c/"
-title: "AtCoder Regular Contest 045 C - エックスオア多橋君"
 date: 2015-11-03T19:57:20+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "tree", "xor", "path", "dfs" ]
 ---
+
+# AtCoder Regular Contest 045 C - エックスオア多橋君
 
 分からなかったので解答を見た。どちらかというと難しいと感じた。
 

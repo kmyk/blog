@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/01/14/dwacon2018-prelims-e/"
-title: "第4回 ドワンゴからの挑戦状 予選: E - ニワンゴくんの家探し"
 date: "2018-01-14T03:41:58+09:00"
 tags: [ "competitive", "writeup", "atcoder", "dwacon", "reactive", "tree", "centroid" ]
 "target_url": [ "https://beta.atcoder.jp/contests/dwacon2018-prelims/tasks/dwacon2018_prelims_e" ]
 ---
+
+# 第4回 ドワンゴからの挑戦状 予選: E - ニワンゴくんの家探し
 
 C以降では最も簡単だと思います。でも最後の出力の前に`!`を付け忘れて$1$WAしました。
 
@@ -128,6 +129,8 @@ int main() {
 ```
 
 ---
+
+# 第4回 ドワンゴからの挑戦状 予選: E - ニワンゴくんの家探し
 
 -   2018年  1月 14日 日曜日 23:50:58 JST
     -   修正

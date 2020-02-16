@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/09/20/ekoparty-ctf-2017-shopwn/"
 date: "2017-09-20T20:39:31+09:00"
-title: "EKOPARTY CTF 2017: Shopwn"
 tags: [ "ctf", "writeup", "pwn", "ekoparty-ctf" ]
 ---
+
+# EKOPARTY CTF 2017: Shopwn
 
 ## problem
 

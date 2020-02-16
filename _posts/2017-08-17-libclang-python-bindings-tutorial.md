@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2017-08-17T02:37:28+09:00"
-title: "libclangのPython bindingsで構文解析する"
 tags: [ "clang", "python" ]
 ---
+
+# libclangのPython bindingsで構文解析する
 
 なんだか難しいやつという印象があったが使えば使えたので簡単にメモしておく。
 githubに上げて動態保存したいところだが、用途が死んでしまったのでblogに。

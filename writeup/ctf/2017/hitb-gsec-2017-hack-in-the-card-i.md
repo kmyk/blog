@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/08/29/hitb-gsec-2017-hack-in-the-card-i/"
 date: "2017-08-29T09:12:36+09:00"
-title: "HITB GSEC Singapore 2017: HACK IN THE CARD I"
 tags: [ "ctf", "writeup", "crypto", "hitb-gsec", "rsa", "side-channel-attack" ]
 ---
+
+# HITB GSEC Singapore 2017: HACK IN THE CARD I
 
 このようにするというのは分かっていたが、本番では解けず。
 writeup (<https://tradahacking.vn/hitb-gsec-singapore-2017-ctf-write-ups-crypto-category-803d6c770103>)を読んで追試した。

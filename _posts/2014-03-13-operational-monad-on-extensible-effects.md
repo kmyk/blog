@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "extensible-effects上にoperational monad作ってみた"
 date: 2014-03-13T22:29:54+09:00
 tags: [ "haskell", "extensible-effects", "operational" ]
 ---
+
+# extensible-effects上にoperational monad作ってみた
 
 extensible-effects上にoperational作った  
 正確には、型パズル解いて遊んでいたらoperationalができていた
@@ -127,6 +128,8 @@ runProgram advent' . runProgram advent :: (Member (Program u) r) => Eff (Program
 
 
 ---
+
+# extensible-effects上にoperational monad作ってみた
 
 2014/04/11
 :   冗長だった部分を削減

@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/10/24/kupc-2015-a/"
-title: "京都大学プログラミングコンテスト2015 A - 東京都"
 date: 2015-10-24T23:55:00+09:00
 tags: [ "kupc", "competitive", "writeup", "shellscript", "oneliner" ]
 ---
+
+# 京都大学プログラミングコンテスト2015 A - 東京都
 
 本体部分は1行
 

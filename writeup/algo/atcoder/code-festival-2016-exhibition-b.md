@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/12/13/code-festival-2016-exhibition-b/"
 date: "2016-12-13T02:16:23+09:00"
-title: "CODE FESTIVAL 2016 Exhibition: B - Exact Payment"
 tags: [ "competitive", "writeup", "atcoder", "codefestival" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf16-exhibition-open/tasks/codefestival_2016_ex_b" ]
 ---
+
+# CODE FESTIVAL 2016 Exhibition: B - Exact Payment
 
 解法を聞いてしまえば、何故あまり解かれなかったのか不思議に感じてしまう。
 円と他の図形との衝突判定の、円の厚みを他方に押し付けて点との衝突判定にするテクっぽさがある。

@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/01/01/code-festival-2017-qualc-d/"
-title: "CODE FESTIVAL 2017 qual C: D - Yet Another Palindrome Partitioning"
 date: "2018-01-01T12:14:06+09:00"
 tags: [ "competitive", "writeup", "codefestival", "palindrome", "dp", "cumulative-sum" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-festival-2017-qualc/tasks/code_festival_2017_qualc_d" ]
 ---
+
+# CODE FESTIVAL 2017 qual C: D - Yet Another Palindrome Partitioning
 
 本番も解いたはずなのに見返してしばらく悩んでしまった。
 本番では解くの遅くて順位低すぎて精神へのダメージがとても大きかった記憶がある。

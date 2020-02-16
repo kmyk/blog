@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2016/11/21/rc3-ctf-2016-calculus/"
 date: "2016-11-21T17:46:42+09:00"
-title: "RC3 CTF 2016: Calculus"
 tags: [ "ctf", "writeup", "rc3-ctf", "crypto", "guessing" ]
 ---
+
+# RC3 CTF 2016: Calculus
 
 以下からflagを推測するエスパー問。
 Crypto 200とは何だったのか。Crypto 300はさらに酷いっぽい(後からscryptosのslackを見に行ったらしほさんが解いてた)。

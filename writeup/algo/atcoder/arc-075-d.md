@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/06/03/arc-075-d/"
 date: "2017-06-03T22:57:59+09:00"
-title: "AtCoder Regular Contest 075: D - Widespread"
 tags: [ "competitive", "writeup", "atcoder", "arc", "binary-search" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc075/tasks/arc075_b" ]
 ---
+
+# AtCoder Regular Contest 075: D - Widespread
 
 ## solution
 

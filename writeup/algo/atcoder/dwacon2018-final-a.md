@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/02/14/dwacon2018-final-a/"
-title: "第4回 ドワンゴからの挑戦状 本選: A - アナログ時計"
 date: "2018-02-14T02:32:24+09:00"
 tags: [ "competitive", "writeup", "atcoder", "dwacon" ]
 "target_url": [ "https://beta.atcoder.jp/contests/dwacon2018-final-open/tasks/dwacon2018_final_a" ]
 ---
+
+# 第4回 ドワンゴからの挑戦状 本選: A - アナログ時計
 
 面倒やるだけなので嫌い。
 

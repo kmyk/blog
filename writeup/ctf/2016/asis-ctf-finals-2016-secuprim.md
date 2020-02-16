@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2016/09/12/asis-ctf-finals-2016-secuprim/"
 date: "2016-09-12T02:26:22+09:00"
-title: "ASIS CTF Finals 2016: SecuPrim"
 tags: [ "ctf", "writeup", "asis-ctf", "ppc" ]
 ---
+
+# ASIS CTF Finals 2016: SecuPrim
 
 
 $\mathrm{ans} = \mid\{ n \mid l \le n \le r \land (\mathrm{isprime}(n) \lor \exists m \lt n. \exists k. n = m^k ) \}\mid$.

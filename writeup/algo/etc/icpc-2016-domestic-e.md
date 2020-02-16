@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/06/27/icpc-2016-domestic-e/"
-title: "ACM-ICPC 2016 国内予選 E: 3D プリント"
 date: 2016-06-27T13:01:58+09:00
 tags: [ "competitive", "writeup", "icpc", "geometry", "graph" ]
 ---
+
+# ACM-ICPC 2016 国内予選 E: 3D プリント
 
 -   <http://icpcsec.storage.googleapis.com/icpc2016-domestic/problems/all_ja.html#section_E>
 -   <http://icpc.iisf.or.jp/past-icpc/domestic2016/judgedata/E/>

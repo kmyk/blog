@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/14/abc-037-b/"
-title: "AtCoder Beginner Contest 037 B - 編集"
 date: 2016-05-14T20:01:02+09:00
 tags: [ "competitive", "writeup", "atcoder", "abc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc037/tasks/abc037_b" ]
 ---
+
+# AtCoder Beginner Contest 037 B - 編集
 
 <!-- {% raw %} -->
 

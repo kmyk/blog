@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/02/27/mujin-pc-2016-c/"
-title: "MUJIN プログラミングチャレンジ C - オレンジグラフ / Orange Graph"
 date: 2016-02-27T23:48:23+09:00
 tags: [ "competitive", "writeup", "atcoder", "mujin-pc", "graph", "bipartite-graph" ]
 ---
+
+# MUJIN プログラミングチャレンジ C - オレンジグラフ / Orange Graph
 
 非想定解で無理矢理に通したがその分時間を取られた。
 

@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/12/31/hackerrank-world-codesprint-12-keko-the-brilliant/"
-title: "HackerRank World CodeSprint 12: Keko the Brilliant"
 date: "2017-12-31T16:26:58+09:00"
 tags: [ "competitive", "writeup", "hackerrank", "codesprint", "dp", "tree", "red-black-tree", "monotonicity", "weighted-union-heuristics" ]
 "target_url": [ "https://www.hackerrank.com/contests/world-codesprint-12/challenges/keko-the-brilliant" ]
 ---
+
+# HackerRank World CodeSprint 12: Keko the Brilliant
 
 ## problem
 

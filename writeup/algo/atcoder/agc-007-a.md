@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/08/10/agc-007-a/"
-title: "AtCoder Grand Contest 007: A - Shik and Stone"
 date: "2017-08-10T17:05:12+09:00"
 tags: [ "competitive", "writeup", "atcoder", "agc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc007/tasks/agc007_a" ]
 ---
+
+# AtCoder Grand Contest 007: A - Shik and Stone
 
 $1$WA。
 

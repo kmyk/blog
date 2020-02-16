@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/09/05/twctf-2016-vigenere-cipher/"
 date: "2016-09-05T13:47:53+09:00"
-title: "Tokyo Westerns/MMA CTF 2nd 2016: Vigenere Cipher"
 tags: [ "ctf", "writeup", "crypto", "mmactf", "twctf", "vigenere-cipher" ]
 "target_url": [ "https://score.ctf.westerns.tokyo/problems/25" ]
 ---
+
+# Tokyo Westerns/MMA CTF 2nd 2016: Vigenere Cipher
 
 (全部出るはずがbugにより)先頭blockの分の鍵しか出ないので困ってたら、そこからしほさんがguessing + known plaintext attackでflagを出してくれてプロだった。
 すこしくやしい。

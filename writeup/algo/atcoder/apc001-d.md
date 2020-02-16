@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Petrozavodsk Contest 001: D - Forest"
 date: 2018-07-10T07:47:01+09:00
 tags: [ "competitive", "writeup", "atcoder", "apc", "graph", "connected-components", "greedy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/apc001/tasks/apc001_d" ]
 ---
+
+# AtCoder Petrozavodsk Contest 001: D - Forest
 
 ## solution
 

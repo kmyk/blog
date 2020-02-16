@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 100: D - Equal Cut"
 date: 2018-07-01T23:12+09:00
 tags: [ "atcoder", "arc", "competitive", "writeup", "cumulative-sum", "binary-search" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc100/tasks/arc100_b" ]
 ---
+
+# AtCoder Regular Contest 100: D - Equal Cut
 
 <!-- {% raw %} -->
 

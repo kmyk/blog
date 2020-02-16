@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/04/08/arc-071-f/"
 date: "2017-04-08T23:10:06+09:00"
-title: "AtCoder Regular Contest 071: F - Infinite Sequence"
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc071/tasks/arc071_d" ]
 ---
+
+# AtCoder Regular Contest 071: F - Infinite Sequence
 
 これはみんな解いてくるよなあと思いつつだらだらやってたら落とした。誤読とか飯とかの影響とはいえ、つらい。
 

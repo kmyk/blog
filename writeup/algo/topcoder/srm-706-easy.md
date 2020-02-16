@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/01/22/srm-706-easy/"
 date: "2017-01-22T02:40:47+09:00"
-title: "TopCoder SRM 704 Div1 Easy: MovingCandies"
 tags: [ "competitive", "writeup", "topcoder", "srm", "dp" ]
 ---
+
+# TopCoder SRM 704 Div1 Easy: MovingCandies
 
 ## solution
 

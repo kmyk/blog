@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/05/20/arc-074-c/"
 date: "2017-05-20T22:32:36+09:00"
-title: "AtCoder Regular Contest 074: C - Chocolate Bar"
 tags: [ "competitive", "writeup", "atcoder", "arc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc074/tasks/arc074_a" ]
 ---
+
+# AtCoder Regular Contest 074: C - Chocolate Bar
 
 チャレンジ失敗をした。
 

@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "SECCON CTF 2019 Final"
 date: "2019-12-23T23:59+09:00"
 tags: [ "ctf", "writeup", "seccon" ]
 ---
+
+# SECCON CTF 2019 Final
 
 SECCON CTF 2019 国内決勝にわたし個人のみからなるチーム kimiyuki として参加し、$2260$ 点を得て $2$ 位でした。
 

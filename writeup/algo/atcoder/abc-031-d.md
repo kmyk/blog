@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/11/21/abc-031-d/"
-title: "AtCoder Beginner Contest 031 D - 語呂合わせ"
 date: 2015-11-21T23:09:47+09:00
 tags: [ "competitive", "writeup", "atcoder", "abc" ]
 ---
+
+# AtCoder Beginner Contest 031 D - 語呂合わせ
 
 やるだけなので解法面では何もないですが、題材と問題の仕方は好きです。
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/04/28/agc-003-e/"
 date: "2017-04-28T05:44:25+09:00"
-title: "AtCoder Grand Contest 003: E - Sequential operations on Sequence"
 tags: [ "competitive", "writeup", "atcoder", "agc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc003/tasks/agc003_e" ]
 ---
+
+# AtCoder Grand Contest 003: E - Sequential operations on Sequence
 
 途中で詰まったのでeditorialを読んだが、分かりにくかったので後半は読んでない。
 

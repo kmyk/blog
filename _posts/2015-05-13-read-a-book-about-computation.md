@@ -1,11 +1,12 @@
 ---
 category: blog
 layout: post
-title: "計算論を読んだ"
 date: 2015-05-13T23:13:06+09:00
 tags: [ "computation", "lambda" ]
 math: true
 ---
+
+# 計算論を読んだ
 
 -   高橋正子 計算論 計算可能性とラムダ計算 (コンピュータサイエンス大学講座)
 

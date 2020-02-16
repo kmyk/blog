@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/21/hackerrank-101hack33-longest-path/"
-title: "Hackerrank 101 Hack Jan 2016 Longest Path"
 date: 2016-01-21T21:33:08+09:00
 tags: [ "competitive", "writeup", "hackerrank", "tree", "diameter" ]
 ---
+
+# Hackerrank 101 Hack Jan 2016 Longest Path
 
 ## [Longest Path](https://www.hackerrank.com/contests/101hack33/challenges/longest-path)
 

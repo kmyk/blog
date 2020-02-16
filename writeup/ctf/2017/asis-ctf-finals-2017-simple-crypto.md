@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2017/09/11/asis-ctf-finals-2017-simple-crypto/"
-title: "ASIS CTF Finals 2017: Simple Crypto"
 date: "2017-09-11T08:09:00+09:00"
 tags: [ "ctf", "writeup", "crypto", "asis-ctf" ]
 ---
+
+# ASIS CTF Finals 2017: Simple Crypto
 
 最初はげきむずだったのでz3など色々試していたのに、消えて戻ってきたら自明問になっていました。
 

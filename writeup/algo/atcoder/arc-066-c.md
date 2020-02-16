@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/04/05/arc-066-c/"
-title: "AtCoder Regular Contest 066: C - Lining Up"
 date: "2018-04-05T01:23:47+09:00"
 tags: [ "competitive", "writeup", "arc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc066/tasks/arc066_a" ]
 ---
+
+# AtCoder Regular Contest 066: C - Lining Up
 
 ## solution
 

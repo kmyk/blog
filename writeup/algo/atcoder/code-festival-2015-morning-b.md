@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/11/20/code-festival-2015-morning-b/"
-title: "CODE FESTIVAL 2015 朝プロ B - ヘイホー君と置き換え"
 date: 2015-11-20T00:06:37+09:00
 tags: [ "competitive", "writeup", "codefestival", "atcoder" ]
 ---
+
+# CODE FESTIVAL 2015 朝プロ B - ヘイホー君と置き換え
 
 >   ある文字列を 2 回繰り返してできる文字列を、平方と呼びます。
 

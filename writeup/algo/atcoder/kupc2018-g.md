@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Kyoto University Programming Contest 2018: G - 数列を構成する問題"
 date: 2018-10-05T04:55:44+09:00
 tags: [ "competitive", "writeup", "atcoder", "kupc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/kupc2018/tasks/kupc2018_g" ]
 ---
+
+# Kyoto University Programming Contest 2018: G - 数列を構成する問題
 
 ## 解法
 

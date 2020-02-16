@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/04/02/aoj-ritscamp18day3-e/"
-title: "AOJ RitsCamp18Day3: E. ブロッコリー？カリフラワー？ (Broccoli or Cauliflower)"
 date: "2018-04-02T22:46:51+09:00"
 tags: [ "competitive", "writeup", "aoj", "rupc", "tree", "euler-tour", "segment-tree" ]
 "target_url": [ "https://onlinejudge.u-aizu.ac.jp/beta/room.html#RitsCamp18Day3/problems/E" ]
 ---
+
+# AOJ RitsCamp18Day3: E. ブロッコリー？カリフラワー？ (Broccoli or Cauliflower)
 
 ## solution
 

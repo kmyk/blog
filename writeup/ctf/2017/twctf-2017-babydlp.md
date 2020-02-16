@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/09/04/twctf-2017-babydlp/"
 date: "2017-09-04T16:40:40+09:00"
-title: "Tokyo Westerns CTF 3rd 2017: BabyDLP"
 tags: [ "ctf", "writeup", "twctf", "crypto", "dlp" ]
 ---
+
+# Tokyo Westerns CTF 3rd 2017: BabyDLP
 
 寝てる間にkonjoさんが解いてくれました。
 

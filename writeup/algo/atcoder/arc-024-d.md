@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/03/15/arc-024-d/"
-title: "AtCoder Regular Contest 024 D - バス停"
 date: 2016-03-15T22:44:21+09:00
 tags: [ "competitive", "writeup", "atcoder" ]
 ---
+
+# AtCoder Regular Contest 024 D - バス停
 
 考えやすい感じの問題なのでちょっと好き。
 

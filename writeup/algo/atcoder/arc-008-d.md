@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/11/10/arc-008-d/"
-title: "AtCoder Regular Contest 008 D - タコヤキオイシクナール"
 date: 2015-11-10T23:05:27+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "matrix", "segment-tree", "coordinates-compression" ]
 ---
+
+# AtCoder Regular Contest 008 D - タコヤキオイシクナール
 
 典型感あふれる問題。蟻本読んでれば難しくない。
 

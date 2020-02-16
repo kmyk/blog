@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2018/04/15/srm-733-easy/"
-title: "TopCoder SRM 733 Easy. MinimizeAbsoluteDifferenceDiv1"
 date: "2018-04-15T02:35:07+09:00"
 tags: [ "competitive", "writeup", "topcoder", "srm" ]
 ---
+
+# TopCoder SRM 733 Easy. MinimizeAbsoluteDifferenceDiv1
 
 ## solution
 

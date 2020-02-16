@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/06/05/hackerrank-zalando-codesprint-number-of-items-sorted-in-a-warehouse/"
-title: "HackerRank Zalando CodeSprint: Processing Time Inside a Warehouse"
 date: 2016-06-05T19:18:05+09:00
 tags: [ "competitive", "writeup", "hackerrank", "binary-search" ]
 "target_url": [ "https://www.hackerrank.com/contests/zalando-codesprint/challenges/number-of-items-sorted-in-a-warehouse" ]
 ---
+
+# HackerRank Zalando CodeSprint: Processing Time Inside a Warehouse
 
 ## problem
 

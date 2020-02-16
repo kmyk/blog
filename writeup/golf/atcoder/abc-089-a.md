@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/03/08/abc-089-a/"
-title: "AtCoder Beginner Contest 089: A - Grouping 2"
 date: "2018-03-08T12:03:38+09:00"
 tags: [ "competitive", "writeup", "atcoder", "abc", "golf" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc089/tasks/abc089_a" ]
 ---
+
+# AtCoder Beginner Contest 089: A - Grouping 2
 
 ## implementation
 

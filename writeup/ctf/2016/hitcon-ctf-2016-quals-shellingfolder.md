@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2016/10/10/hitcon-ctf-2016-quals-shellingfolder/"
 date: "2016-10-10T23:04:07+09:00"
-title: "HITCON QUALS CTF 2016: ShellingFolder"
 tags: [ "ctf", "writeup", "pwn", "heap" ]
 ---
+
+# HITCON QUALS CTF 2016: ShellingFolder
 
 The binary is an application which emulates a file system.
 The structure is like below.

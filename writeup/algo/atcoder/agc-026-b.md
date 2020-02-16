@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Grand Contest 026: B - rng_10s"
 date: 2018-08-10T00:31:20+09:00
 tags: [ "competitive", "writeup", "atcoder", "agc", "gcd" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc026/tasks/agc026_b" ]
 ---
+
+# AtCoder Grand Contest 026: B - rng_10s
 
 ## note
 

@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2016-08-03T16:12:25+09:00"
-title: "文脈自由文法とその構文解析法"
 tags: [ "context-free-grammer", "parsing", "lr", "ll", "slr", "lalr", "glr", "chomsky-normal-form", "greibach-normal-form", "shunting-yard-algorithm", "precedence-climbing-method", "dp", "yacc", "parsec", "antlr", "cyk-algorithm", "earley-parser" ]
 ---
+
+# 文脈自由文法とその構文解析法
 
 文脈自由文法とその構文解析法についてのまとめ[^5]。
 
@@ -372,6 +373,8 @@ $k \ge 2$な$\rm{LL}(k)$に関する状況を変えるものだったらしい�
 使ったことはないです。
 
 ---
+
+# 文脈自由文法とその構文解析法
 
 ## 付録: 参考実装
 

@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/06/12/jag2016-domestic2-c/"
-title: "JAG 模擬国内予選 2016: C - カーテン"
 date: 2016-06-12T22:30:42+09:00
 tags: [ "competitive", "writeup", "icpc", "jag", "imos-method" ]
 "target_url": [ "http://acm-icpc.aitea.net/index.php?2016%2FPractice%2F%E6%A8%A1%E6%93%AC%E5%9B%BD%E5%86%85%E4%BA%88%E9%81%B8B" ]
 ---
+
+# JAG 模擬国内予選 2016: C - カーテン
 
 コンテスト中は先輩氏が書いた。
 順番的には私だったが、私がやるとバグらせそうだったので代わってもらった。

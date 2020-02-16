@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 100: E - Or Plus Max"
 date: 2018-07-01T23:13+09:00
 tags: [ "atcoder", "arc", "competitive", "writeup", "fast-zeta-transformation" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc100/tasks/arc100_c" ]
 ---
+
+# AtCoder Regular Contest 100: E - Or Plus Max
 
 ## solution
 

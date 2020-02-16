@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "DPはDAG上の最短経路ではない"
 date: 2019-09-19T00:00:00+09:00
 tags: [ "competitive", "dp", "dag" ]
 ---
+
+# DPはDAG上の最短経路ではない
 
 <small>
 [DP](https://ja.wikipedia.org/wiki/動的計画法) の説明をするときに [DAG](https://ja.wikipedia.org/wiki/有向非巡回グラフ) という語を持ち出す競プロerは多いように思います。

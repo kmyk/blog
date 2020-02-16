@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 098: E - Range Minimum Queries"
 date: 2018-10-12T00:37:46+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc098/tasks/arc098_c" ]
 ---
+
+# AtCoder Regular Contest 098: E - Range Minimum Queries
 
 ## 解法
 

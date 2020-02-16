@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/03/24/srm-699-med/"
 date: "2017-03-24T13:13:30+09:00"
-title: "TopCoder SRM 699 Div1 Medium: FromToDivisible"
 tags: [ "competitive", "writeup", "topcoder", "srm", "graph", "bfs" ]
 "target_url": [ "https://community.topcoder.com/stat?c=problem_statement&pm=14387" ]
 ---
+
+# TopCoder SRM 699 Div1 Medium: FromToDivisible
 
 ## problem
 

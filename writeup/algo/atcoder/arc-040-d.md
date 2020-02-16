@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 040: D - カクカク塗り"
 date: 2018-09-14T02:59:41+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "divide-and-conquer", "partial-persistent", "undo" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc040/tasks/arc040_d" ]
 ---
+
+# AtCoder Regular Contest 040: D - カクカク塗り
 
 <!-- {% raw %} -->
 

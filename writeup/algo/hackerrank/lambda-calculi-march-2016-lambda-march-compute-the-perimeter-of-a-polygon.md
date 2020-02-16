@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/03/28/hackerrank-lambda-calculi-march-2016-lambda-march-compute-the-perimeter-of-a-polygon/"
-title: "Lambda Calculi - March 2016: Compute the Perimeter of a Polygon"
 date: 2016-03-28T15:26:14+09:00
 tags: [ "competitive", "writeup", "hackerrank", "lambda-calculi", "haskell" ]
 "target_url": [ "https://www.hackerrank.com/contests/lambda-calculi-march-2016/challenges/lambda-march-compute-the-perimeter-of-a-polygon" ]
 ---
+
+# Lambda Calculi - March 2016: Compute the Perimeter of a Polygon
 
 サンプルが意味もなく少ない。
 あと問題文が分かりにくい。エスパーした。

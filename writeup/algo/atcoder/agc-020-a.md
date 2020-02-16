@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/02/22/agc-020-a/"
-title: "AtCoder Grand Contest 020: A - Move and Win"
 date: "2018-02-22T22:20:42+09:00"
 tags: [ "competitive", "writeup", "atcoder", "agc", "game" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc020/tasks/agc020_a" ]
 ---
+
+# AtCoder Grand Contest 020: A - Move and Win
 
 ## solution
 

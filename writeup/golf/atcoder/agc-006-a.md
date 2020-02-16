@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/10/31/agc-006-a/"
 date: "2016-10-31T15:36:42+09:00"
-title: "AtCoder Grand Contest 006: A - Prefix and Suffix"
 tags: [ "competitive", "writeup", "atcoder", "agc", "golf" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc006/tasks/agc006_a" ]
 ---
+
+# AtCoder Grand Contest 006: A - Prefix and Suffix
 
 ``` python
 #!/usr/bin/env python3

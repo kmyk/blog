@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/01/04/arc-060-e/"
-title: "AtCoder Regular Contest 060: E - 高橋君とホテル / Tak and Hotels"
 date: "2018-01-04T11:55:19+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "doubling", "greedy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc060/tasks/arc060_c" ]
 ---
+
+# AtCoder Regular Contest 060: E - 高橋君とホテル / Tak and Hotels
 
 見れば分かった。[東京大学プログラミングコンテスト2012: H - 区間スケジューリングクエリ](https://beta.atcoder.jp/contests/utpc2012/tasks/utpc2012_08)を直前に解いていたため。
 

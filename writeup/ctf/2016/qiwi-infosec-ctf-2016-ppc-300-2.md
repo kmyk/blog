@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2016/11/19/qiwi-infosec-ctf-2016-ppc-300-2/"
 date: "2016-11-19T01:30:50+09:00"
-title: "Qiwi Infosec CTF 2016: PPC 300_2"
 tags: [ "ctf", "writeup", "qiwi-ctf", "ppc", "brainfuck" ]
 ---
+
+# Qiwi Infosec CTF 2016: PPC 300_2
 
 再帰的にbrainfuckのコードを出力するbrainfuckのコードが与えられるので実行。最後はpythonが出てきた。
 処理系最適化ゲーだと踏んでさあやるぞと思ったのに全然必要なかった。悲しい。

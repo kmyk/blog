@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Kyoto University Programming Contest 2018: D - ロストテクノロジー"
 date: 2018-10-01T01:23:15+09:00
 tags: [ "competitive", "writeup", "atcoder", "kupc", "reactive", "lsb-decryption-oracle-attack", "crypto" ]
 "target_url": [ "https://beta.atcoder.jp/contests/kupc2018/tasks/kupc2018_d" ]
 ---
+
+# Kyoto University Programming Contest 2018: D - ロストテクノロジー
 
 ## 解法
 

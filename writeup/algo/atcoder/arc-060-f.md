@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 060: F - 最良表現 / Best Representation"
 date: 2018-08-21T01:27:17+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "string", "rolling-hash" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc060/tasks/arc060_d" ]
 ---
+
+# AtCoder Regular Contest 060: F - 最良表現 / Best Representation
 
 ## solution
 

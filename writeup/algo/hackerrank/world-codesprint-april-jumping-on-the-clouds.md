@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/01/hackerrank-world-codesprint-april-jumping-on-the-clouds/"
-title: "HackerRank World Codesprint April: Jumping on the Clouds"
 date: 2016-05-01T12:20:10+09:00
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint" ]
 "target_url": [ "https://www.hackerrank.com/contests/world-codesprint-april/challenges/jumping-on-the-clouds" ]
 ---
+
+# HackerRank World Codesprint April: Jumping on the Clouds
 
 ## solution
 

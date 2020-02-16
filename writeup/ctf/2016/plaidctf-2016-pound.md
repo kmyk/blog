@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/04/18/plaidctf-2016-pound/"
-title: "PlaidCTF 2016 pound"
 date: 2016-04-18T06:00:03+09:00
 tags: [ "ctf", "pwn", "writeup", "plaidctf" ]
 ---
+
+# PlaidCTF 2016 pound
 
 I like the gimmick to give the source code and compiled binaries.
 

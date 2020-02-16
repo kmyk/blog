@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/07/13/code-festival-2015-okinawa-open-c/"
 date: "2016-07-13T02:52:42+09:00"
-title: "CODE FESTIVAL 2015 OKINAWA OPEN C - Cat versus Wolf"
 tags: [ "competitive", "writeup", "codefestival", "atcoder", "game", "nim", "grundy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-festival-2015-okinawa-open/tasks/code_festival_2015_okinawa_c" ]
 ---
+
+# CODE FESTIVAL 2015 OKINAWA OPEN C - Cat versus Wolf
 
 ジェンガのparseの部分で、対角だけ見ればいいというの気付きたかった。
 

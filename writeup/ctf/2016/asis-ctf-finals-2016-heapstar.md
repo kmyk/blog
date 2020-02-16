@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2016/09/12/asis-ctf-finals-2016-heapstar/"
 date: "2016-09-12T02:27:02+09:00"
-title: "ASIS CTF Finals 2016: Heapstar"
 tags: [ "ctf", "writeup", "asis-ctf", "pwn", "format-string-attack" ]
 ---
+
+# ASIS CTF Finals 2016: Heapstar
 
 Not difficult. It seems that I solved with non-expected solution (because I didn't use the `hp*` and `list*` function), but I like this.
 

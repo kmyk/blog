@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Grand Contest 025: F - Addition and Andition"
 date: 2018-09-07T23:48:01+09:00
 tags: [ "competitive", "writeup", "atcoder", "agc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc025/tasks/agc025_f" ]
 ---
+
+# AtCoder Grand Contest 025: F - Addition and Andition
 
 ## 解法
 

@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Mujin Programming Challenge 2018: C - 右折"
 date: 2018-08-05T00:43:17+09:00
 tags: [ "competitive", "writeup", "atcoder", "mujin-pc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/mujin-pc-2018/tasks/mujin_pc_2018_c" ]
 ---
+
+# Mujin Programming Challenge 2018: C - 右折
 
 ## solution
 

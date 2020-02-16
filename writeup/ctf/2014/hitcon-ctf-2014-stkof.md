@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/09/21/hitcon-ctf-2014-stkof/"
 date: "2016-09-21T03:29:10+09:00"
-title: "HITCON CTF 2014: stkof"
 tags: [ "ctf", "writeup", "pwn", "hitcon", "heap", "fastbins" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2014/tree/master/hitcon-ctf-2014/stkof" ]
 ---
+
+# HITCON CTF 2014: stkof
 
 
 ちひろさんが[fastbinsで解いてた](http://pwn.hatenadiary.jp/entry/2016/09/20/002430)ので解いた。

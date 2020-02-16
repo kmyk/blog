@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/02/22/hackerrank-university-codesprint-2-breaking-best-and-worst-records/"
 date: "2017-02-22T23:43:52+09:00"
-title: "HackerRank University CodeSprint 2: Breaking the Records"
 tags: [ "competitive", "writeup", "hackerrank", "codesprint", "university-codesprint" ]
 "target_url": [ "https://www.hackerrank.com/contests/university-codesprint-2/challenges/breaking-best-and-worst-records" ]
 ---
+
+# HackerRank University CodeSprint 2: Breaking the Records
 
 ## problem
 

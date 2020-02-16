@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/12/31/utpc-2012-b/"
-title: "東京大学プログラミングコンテスト2012: B - 残像に口紅を"
 date: "2017-12-31T17:55:49+09:00"
 tags: [ "competitive", "writeup", "utpc", "atcoder" ]
 "target_url": [ "https://beta.atcoder.jp/contests/utpc2012/tasks/utpc2012_02" ]
 ---
+
+# 東京大学プログラミングコンテスト2012: B - 残像に口紅を
 
 ## solution
 

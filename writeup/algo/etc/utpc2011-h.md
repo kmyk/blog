@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2017/12/29/utpc2011-h/"
-title: "東京大学プログラミングコンテスト2011: H. キャッシュ戦略"
 date: "2017-12-29T07:48:04+09:00"
 tags: [ "competitive", "writeup", "utpc", "atcoder", "aoj", "flow", "minimum-cost-flow" ]
 ---
+
+# 東京大学プログラミングコンテスト2011: H. キャッシュ戦略
 
 -   <http://www.utpc.jp/2011/problems/cache.html>
 -   <https://beta.atcoder.jp/contests/utpc2011/tasks/utpc2011_8>

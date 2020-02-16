@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/01/04/codefestival-2016-grand-final-a/"
-title: "CODE FESTIVAL 2016 Grand Final: A - 1D Matching"
 date: "2018-01-04T16:09:17+09:00"
 tags: [ "competitive", "writeup", "atcodr", "codefestival" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf16-exhibition-final/tasks/cf16_exhibition_final_a" ]
 ---
+
+# CODE FESTIVAL 2016 Grand Final: A - 1D Matching
 
 まあはいだけどなんだか解説が書きにくかった。
 

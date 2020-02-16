@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2016-11-27T19:22:03+09:00"
-title: "CODE FESTIVAL 2016 参加記"
 tags: [ "competitive", "codefestival" ]
 ---
+
+# CODE FESTIVAL 2016 参加記
 
 <http://r.recruit-jinji.jp/code_fes/>
 

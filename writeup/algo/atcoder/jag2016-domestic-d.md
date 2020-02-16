@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/04/24/jag2016-domestic-d/"
-title: "JAG Contest 2016 Domestic D - インビジブル"
 date: 2016-04-24T22:28:37+09:00
 tags: [ "competitive", "writeup", "atcoder", "jag", "icpc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/jag2016-domestic/tasks/jag2016secretspring_d" ]
 ---
+
+# JAG Contest 2016 Domestic D - インビジブル
 
 本番はペアプロした。私が見る側。実装が汚い(本番だったので仕方がない)のが原因でバグに苦しめられた。
 本番中は実装が重い気がしていたが、後から清書した結果そうでもない気がしてきた。

@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/01/14/dwacon2018-prelims-b/"
-title: "第4回 ドワンゴからの挑戦状 予選: B - 2525文字列分解"
 date: "2018-01-14T03:41:54+09:00"
 tags: [ "competitive", "writeup", "atcoder", "dwacon", "sed", "golf", "dp", "regex" ]
 "target_url": [ "https://beta.atcoder.jp/contests/dwacon2018-prelims/tasks/dwacon2018_prelims_b" ]
 ---
+
+# 第4回 ドワンゴからの挑戦状 予選: B - 2525文字列分解
 
 不覚にもコンテスト中はPythonを提出してしまったので後からsedで書き直した。
 

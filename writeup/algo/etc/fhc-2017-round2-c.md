@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/01/22/fhc-2017-round2-c/"
 date: "2017-01-22T07:00:10+09:00"
-title: "Facebook Hacker Cup 2017 Round 2: C - Fighting all the Zombies"
 tags: [ "competitive", "writeup", "facebook-hacker-cup", "segment-tree" ]
 "target_url": [ "https://www.facebook.com/hackercup/problem/1726375930948061/" ]
 ---
+
+# Facebook Hacker Cup 2017 Round 2: C - Fighting all the Zombies
 
 間に合わず。
 

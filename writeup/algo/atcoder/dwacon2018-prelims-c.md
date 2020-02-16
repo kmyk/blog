@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/01/14/dwacon2018-prelims-c/"
-title: "第4回 ドワンゴからの挑戦状 予選: C - Kill/Death"
 date: "2018-01-14T03:41:55+09:00"
 tags: [ "competitive", "writeup", "atcoder", "dwacon", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/dwacon2018-prelims/tasks/dwacon2018_prelims_c" ]
 ---
+
+# 第4回 ドワンゴからの挑戦状 予選: C - Kill/Death
 
 C以降では最も難しいと思います。
 

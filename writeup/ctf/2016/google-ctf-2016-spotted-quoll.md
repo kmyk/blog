@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/02/google-ctf-2016-spotted-quoll/"
-title: "Google Capture The Flag 2016: Spotted Quoll"
 date: 2016-05-02T02:33:29+09:00
 tags: [ "ctf", "web", "writeup", "google-ctf" ]
 "target_url": [ "https://capturetheflag.withgoogle.com/challenges/" ]
 ---
+
+# Google Capture The Flag 2016: Spotted Quoll
 
 You can find the file `/getCookie` in html, so try to GET:
 

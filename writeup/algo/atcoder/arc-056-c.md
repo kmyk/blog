@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/01/01/arc-056-c/"
-title: "AtCoder Regular Contest 056: C - 部門分け"
 date: "2018-01-01T18:45:17+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "lie", "dp", "bit-dp", "optimization" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc056/tasks/arc056_c" ]
 ---
+
+# AtCoder Regular Contest 056: C - 部門分け
 
 ## solution
 

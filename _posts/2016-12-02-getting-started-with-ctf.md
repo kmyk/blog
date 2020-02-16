@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2016-12-02T21:13:22+09:00"
-title: "CTFの紹介と始め方"
 tags: [ "ctf" ]
 ---
+
+# CTFの紹介と始め方
 
 アクセス解析を見ると過去に書いた記事がとても人気である。
 CTF 入門 初心者 始め方 といった記事が望まれているのだと思う。しかしあの記事はまだ私が始めて間もない時のものなので新たに書いた。
@@ -170,6 +171,8 @@ pwnしてれば自然とある程度できるようになるはず。
 [競](https://atcoder.jp/)[プ](http://yukicoder.me/)[ロ](http://judge.u-aizu.ac.jp/onlinejudge/)して。
 
 ---
+
+# CTFの紹介と始め方
 
 この記事は[CTF Advent Calendar 2016](http://www.adventar.org/calendars/1714)の$2$日目の記事です。
 昨日はakiymさんの[まずはCTFの過去問を解く](http://akiym.hateblo.jp/entry/2016/12/01/235939)、明日はBo Wangさんです。

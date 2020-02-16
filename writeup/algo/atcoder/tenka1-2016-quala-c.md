@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/07/30/tenka1-2016-quala-c/"
 date: "2016-07-30T23:24:31+09:00"
-title: "天下一プログラマーコンテスト2016予選A: C - 山田山本問題"
 tags: [ "competitive", "wirteup", "atcoder", "tenka1-programmer-contest", "graph", "directed-graph", "topological-sort" ]
 "target_url": [ "https://beta.atcoder.jp/contests/tenka1-2016-quala/tasks/tenka1_2016_qualC_a" ]
 ---
+
+# 天下一プログラマーコンテスト2016予選A: C - 山田山本問題
 
 ## solution
 

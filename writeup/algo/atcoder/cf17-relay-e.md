@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/11/27/cf17-relay-e/"
 date: "2017-11-27T17:58:11+09:00"
-title: "Code Festival Team Relay: E - White and Blue"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "team-relay" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf17-relay-open/tasks/relay2_e" ]
 ---
+
+# Code Festival Team Relay: E - White and Blue
 
 Fより難しい
 

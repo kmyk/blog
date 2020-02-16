@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2016/11/19/qiwi-infosec-ctf-2016-crypto-400-1/"
 date: "2016-11-19T01:31:11+09:00"
-title: "Qiwi Infosec CTF 2016: Crypto 400_1"
 tags: [ "ctf", "writeup", "qiwi-ctf", "crypto", "rsa" ]
 ---
+
+# Qiwi Infosec CTF 2016: Crypto 400_1
 
 RSA暗号の同一平文に関する攻撃。
 

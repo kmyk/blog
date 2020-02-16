@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/03/28/hackerrank-lambda-calculi-march-2016-tree-manager/"
-title: "Lambda Calculi - March 2016: Tree manager"
 date: 2016-03-28T15:27:21+09:00
 tags: [ "competitive", "writeup", "hackerrank", "lambda-calculi", "haskell", "zipper" ]
 "target_url": [ "https://www.hackerrank.com/contests/lambda-calculi-march-2016/challenges/tree-manager" ]
 ---
+
+# Lambda Calculi - March 2016: Tree manager
 
 これはかなり好きな問題。でもちょっとテストケースが弱い気がする。
 

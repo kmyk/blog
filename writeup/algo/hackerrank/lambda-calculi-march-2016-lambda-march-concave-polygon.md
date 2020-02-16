@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/03/28/hackerrank-lambda-calculi-march-2016-lambda-march-concave-polygon/"
-title: "Lambda Calculi - March 2016: Concave Polygon"
 date: 2016-03-28T15:27:06+09:00
 tags: [ "competitive", "writeup", "hackerrank", "lambda-calculi", "haskell" ]
 "target_url": [ "https://www.hackerrank.com/contests/lambda-calculi-march-2016/challenges/lambda-march-concave-polygon" ]
 ---
+
+# Lambda Calculi - March 2016: Concave Polygon
 
 問題文は不明瞭。
 相変わらずサンプルは少ない。

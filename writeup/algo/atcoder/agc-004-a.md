@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/12/31/agc-004-a/"
-title: "AtCoder Grand Contest 004: A - Divide a Cuboid"
 date: "2017-12-31T18:39:59+09:00"
 tags: [ "competitive", "writeup", "atcoder" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc004/tasks/agc004_a" ]
 ---
+
+# AtCoder Grand Contest 004: A - Divide a Cuboid
 
 ## solution
 

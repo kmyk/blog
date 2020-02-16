@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/10/22/kupc-2017-c/"
 date: "2017-10-22T13:33:24+09:00"
-title: "Kyoto University Programming Contest 2017: C - Best Password"
 tags: [ "competitive", "writeup", "kupc", "atcoder", "multiprecision" ]
 "target_url": [ "https://beta.atcoder.jp/contests/kupc2017/tasks/kupc2017_c" ]
 ---
+
+# Kyoto University Programming Contest 2017: C - Best Password
 
 hash値を持つのは正しい行いですが、可能ならsaltも付けたほうがよいですね。
 

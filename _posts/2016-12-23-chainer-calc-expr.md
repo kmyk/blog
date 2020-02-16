@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2016-12-23T23:05:49+09:00"
-title: "Chainerで中置記法の数式の計算をさせた"
 tags: [ "chainer", "neural-network", "lstm", "machine-learning" ]
 ---
+
+# Chainerで中置記法の数式の計算をさせた
 
 [前回](https://kimiyuki.net/blog/2016/12/08/chainer-a-plus-b/)を元に、`+` `-` `*` `(` `)`を含む不定形な数式を学習させた。
 特に何か劇的に変わったわけではない。

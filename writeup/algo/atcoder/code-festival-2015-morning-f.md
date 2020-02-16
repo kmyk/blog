@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/11/20/code-festival-2015-morning-f/"
-title: "CODE FESTIVAL 2015 朝プロ F - 立方体とペンキ"
 date: 2015-11-20T01:54:41+09:00
 tags: [ "competitive", "writeup", "codefestival", "atcoder" ]
 ---
+
+# CODE FESTIVAL 2015 朝プロ F - 立方体とペンキ
 
 本番で通せず。$k \le 10^{14}$だしpythonだなあとか言って`queue.PriorityQueue`で頑張ろうとしてた。どう見ても頭回ってない。前日深夜のgolfが響いたのだろうか。
 

@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/04/23/s8pc-2-d/"
-title: "square869120Contest #2 D - 2016"
 date: 2016-04-23T23:02:34+09:00
 tags: [ "competitive", "writeup", "atcoder", "s8pc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/s8pc-2/tasks/s8pc_2_d" ]
 ---
+
+# square869120Contest #2 D - 2016
 
 ## solution
 

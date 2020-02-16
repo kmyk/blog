@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/05/20/arc-074-e/"
 date: "2017-05-20T22:32:39+09:00"
-title: "AtCoder Regular Contest 074: E - RGB Sequence"
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc074/tasks/arc074_c" ]
 ---
+
+# AtCoder Regular Contest 074: E - RGB Sequence
 
 overflowでたくさんWAを生やした。
 clangかつ`-fsanitize=undefined`だと`bitset`と`std::hash`の周りでコンパイルこけるのが悪い、と思ったけど問題となるテストケース作ってなかったのでいずれにせよだめ。

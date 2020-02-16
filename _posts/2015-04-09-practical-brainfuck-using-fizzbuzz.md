@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "実践brainfuck fizzbuzzを書く"
 date: 2015-04-09T01:24:23+09:00
 tags: [ "brainfuck", "tutorial", "fizzbuzz", "c", "esolang" ]
 ---
+
+# 実践brainfuck fizzbuzzを書く
 
 brainfuckでfizzbuzzを書く工程を丁寧に解説
 
@@ -452,6 +453,8 @@ printf("\n");
 
 
 ---
+
+# 実践brainfuck fizzbuzzを書く
 
 -   Fri Nov 27 23:04:20 JST 2015
     -   数値のunderflowを許可しない処理系でも動作するよう修正

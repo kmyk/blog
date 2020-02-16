@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/12/17/dwacon2017-prelims-d/"
 date: "2016-12-17T22:04:46+09:00"
-title: "第3回 ドワンゴからの挑戦状 予選: D - ネタだけ食べたい寿司"
 tags: [ "competitive", "writeup", "atcoder", "dwacon" ]
 "target_url": [ "https://beta.atcoder.jp/contests/dwacon2017-prelims/tasks/dwango2017qual_d" ]
 ---
+
+# 第3回 ドワンゴからの挑戦状 予選: D - ネタだけ食べたい寿司
 
 $4.5$完早解きしたので$21$位だった。順位表$1$ページ目からは落ちた。threepipesさんが以前のDDCC参加者内での順位を出してくれており、見ると$9$位なのでその他枠通過の可能性がある。
 

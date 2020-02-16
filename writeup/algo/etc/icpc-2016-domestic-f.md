@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/06/27/icpc-2016-domestic-f/"
-title: "ACM-ICPC 2016 国内予選 F: 文字解読"
 date: 2016-06-27T13:02:00+09:00
 tags: [ "competitive", "writeup", "icpc" ]
 ---
+
+# ACM-ICPC 2016 国内予選 F: 文字解読
 
 -   <http://icpcsec.storage.googleapis.com/icpc2016-domestic/problems/all_ja.html#section_F>
 -   <http://icpc.iisf.or.jp/past-icpc/domestic2016/judgedata/F/>

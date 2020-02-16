@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/08/25/srm-720-med/"
 date: "2017-08-25T22:02:56+09:00"
-title: "TopCoder SRM 720 Div1 Medium: DistinctGrid"
 tags: [ "competitive", "writeup", "topcoder", "srm", "dp", "combination" ]
 ---
+
+# TopCoder SRM 720 Div1 Medium: DistinctGrid
 
 実質Easy。頭が悪いので落とした。$-134$した。
 

@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "Arch Linuxでの野良packageの作成方法"
 date: 2015-09-19T01:23:14+09:00
 tags: [ "arch" ]
 ---
+
+# Arch Linuxでの野良packageの作成方法
 
 詳しい方法は全部ArchWikiに日本語で載っているが、要点だけまとめておけば私が楽だから書く。
 checkinstallの代わりにpacmanを使うといったことを想定しており、他人に配布するためのものを作るのであればArchWikiを読むこと。

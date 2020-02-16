@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/04/22/arc-051-c/"
-title: "AtCoder Regular Contest 051 C - 掛け算"
 date: 2016-04-22T18:44:45+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc051/tasks/arc051_c" ]
 ---
+
+# AtCoder Regular Contest 051 C - 掛け算
 
 ## solution
 

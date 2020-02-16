@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/05/02/arc-070-c/"
 date: "2017-05-02T22:27:59+09:00"
-title: "AtCoder Regular Contest 070: C - Go Home"
 tags: [ "competitive", "writeup", "atcoder", "arc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc070/tasks/arc070_a" ]
 ---
+
+# AtCoder Regular Contest 070: C - Go Home
 
 ## solution
 

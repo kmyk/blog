@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "ctfにおけるlibc leakに関して"
 date: 2016-02-18T16:24:40+09:00
 tags: [ "ctf", "libc", "libc-leak" ]
 ---
+
+# ctfにおけるlibc leakに関して
 
 libcは与えられているものだと思って解いていた過去問が、そうではなかったとらしく、その際るくすさんに教えてもらった話のまとめ。
 

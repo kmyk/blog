@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/06/11/sha2017-ctf-teaser-maze/"
 date: "2017-06-11T22:37:51+09:00"
-title: "SHA2017 CTF Teaser: maze"
 tags: [ "ctf", "writeup", "pwn", "sha-ctf" ]
 ---
+
+# SHA2017 CTF Teaser: maze
 
 guessingなどはなく正しくpwnではあるが、なんだか手間な感じがありあまり好きでない。
 

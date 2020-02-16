@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/05/07/agc-014-c/"
 date: "2017-05-07T21:10:44+09:00"
-title: "AtCoder Grand Contest 014: C - Closed Rooms"
 tags: [ "competitive", "writeup", "atcoder", "agc", "bfs" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc014/tasks/agc014_c" ]
 ---
+
+# AtCoder Grand Contest 014: C - Closed Rooms
 
 誤読。問題文が多少難しいとはいえ、A問題ぐらいには簡単だし$700$点でなくて$300$点でよさそう。
 

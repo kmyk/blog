@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/04/29/anagol-merge-digits/"
-title: "Anarchy Golf 945. Merge Digits"
 date: 2016-04-29T18:33:48+09:00
 tags: [ "golf", "writeup", "anagol", "anarchy-golf", "c", "sed", "perl", "ruby", "brainfuck" ]
 ---
+
+# Anarchy Golf 945. Merge Digits
 
 今回はまったくだめ
 
@@ -329,6 +330,8 @@ I was going to try to write it if he writes this (because I have no confidence t
 I'll read later.
 
 ---
+
+# Anarchy Golf 945. Merge Digits
 
 [^1]: <http://docs.ruby-lang.org/ja/2.3.0/doc/spec=2frubycmd.html>
 [^2]: <http://docs.ruby-lang.org/ja/2.3.0/method/String/i/slice=21.html>

@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/01/01/code-festival-2017-qualc-b/"
-title: "CODE FESTIVAL 2017 qual C: B - Similar Arrays"
 date: "2018-01-01T12:14:02+09:00"
 tags: [ "competitive", "writeup", "codefestival" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-festival-2017-qualc/tasks/code_festival_2017_qualc_b" ]
 ---
+
+# CODE FESTIVAL 2017 qual C: B - Similar Arrays
 
 ## solution
 

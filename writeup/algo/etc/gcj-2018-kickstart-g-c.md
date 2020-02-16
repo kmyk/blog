@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Google Code Jam Kickstart Round G 2018: C. Cave Escape"
 date: 2018-10-25T15:59:13+09:00
 tags: [ "competitive", "writeup", "gcj", "kickstart", "maze", "graph", "bit-dp" ]
 "target_url": [ "https://codejam.withgoogle.com/codejam/contest/5374486/dashboard#s=p2" ]
 ---
+
+# Google Code Jam Kickstart Round G 2018: C. Cave Escape
 
 ## 問題
 

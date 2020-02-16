@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/07/13/code-festival-2015-okinawa-open-b/"
 date: "2016-07-13T02:52:41+09:00"
-title: "CODE FESTIVAL 2015 OKINAWA OPEN B - Beware of the Sogginess!"
 tags: [ "competitive", "writeup", "codefestival", "atcoder", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-festival-2015-okinawa-open/tasks/code_festival_2015_okinawa_b" ]
 ---
+
+# CODE FESTIVAL 2015 OKINAWA OPEN B - Beware of the Sogginess!
 
 解けず。必ず解くべき問題だった。DPは$\mathrm{dp} : X+1 \times Y+1 \to N+1$なやつだけ考えて棄却してたが、諦めて解説を見ようとしてDPの文字が目に入った瞬間に理解した。
 

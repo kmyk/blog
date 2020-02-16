@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "CS Academy CEOI 2018 Day 2: Fibonacci Representations Small / Fibonacci Representations Big"
 date: 2018-08-17T04:24:57+09:00
 tags: [ "competitive", "writeup", "csacademy", "fibonacci", "dp", "segment-tree", "matrix", "dynamic-construction", "range" ]
 "target_url": [ "https://csacademy.com/contest/ceoi-2018-day-2/task/fibonacci-representations-small/", "https://csacademy.com/contest/ceoi-2018-day-2/task/fibonacci-representations-big/" ]
 ---
+
+# CS Academy CEOI 2018 Day 2: Fibonacci Representations Small / Fibonacci Representations Big
 
 ## problem
 

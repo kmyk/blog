@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2016/12/19/sharif-ctf-2016-hippotie/"
 date: "2016-12-19T23:44:21+09:00"
-title: "Sharif CTF 2016: Hippotie"
 tags: [ "ctf", "writeup", "pwn", "sharif-ctf", "buffer-overflow", "libc" ]
 ---
+
+# Sharif CTF 2016: Hippotie
 
 libcのentry pointを使うと楽というの(と`s/deb8u7/deb8u6/`)はしゃろさんに教えてもらった。感謝。
 

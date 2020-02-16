@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Code Festival (2018) Team Relay: D - 数直線"
 date: 2018-11-21T10:46:18+09:00
 tags: [ "competitive", "writeup", "atcoder", "code-festival", "ternary-search" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf18-relay-open/tasks/relay2018_d" ]
 ---
+
+# Code Festival (2018) Team Relay: D - 数直線
 
 ## 解法
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/07/31/agc-015-e/"
 date: "2017-07-31T11:51:50+09:00"
-title: "AtCoder Grand Contest 015: E - Mr.Aoki Incubator"
 tags: [ "competitive", "writeup", "atcoder", "agc", "dp", "binary-indexed-tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc015/tasks/agc015_e" ]
 ---
+
+# AtCoder Grand Contest 015: E - Mr.Aoki Incubator
 
 ## 反省
 

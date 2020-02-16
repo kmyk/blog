@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/31/hackerrank-worldcodesprint-print-string/"
-title: "HackerRank World Codesprint: Build a String"
 date: 2016-01-31T01:43:38+09:00
 tags: [ "competitive", "writeup", "hackerrank", "dp", "suffix-array", "world-codesprint" ]
 ---
+
+# HackerRank World Codesprint: Build a String
 
 ## [Build a String](https://www.hackerrank.com/contests/worldcodesprint/challenges/print-string)
 
@@ -30,6 +31,8 @@ $i$より左から始まり、$i$から始まるものと一致しかつ一致�
 
 "target_url": [ "small" ]
 ---
+
+# HackerRank World Codesprint: Build a String
 editorialによると${\rm dp}\_i$は単調であるようだ。今回の場合、これを使っても使わなくても計算量は変化しない。
 </small>
 

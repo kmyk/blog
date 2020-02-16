@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/09/29/arc-044-b/"
-title: "AtCoder Regular Contest 044 B - 最短路問題"
 date: 2015-09-29T23:40:33+09:00
 tags: [ "atcoder", "competitive", "arc", "writeup" ]
 ---
+
+# AtCoder Regular Contest 044 B - 最短路問題
 
 時間がなかったが1日1問を絶やしたくなかったのでB問題。
 これでARCのB問題が尽きてしまった。

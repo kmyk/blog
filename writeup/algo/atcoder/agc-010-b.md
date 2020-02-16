@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/02/04/agc-010-b/"
 date: "2017-02-04T23:05:34+09:00"
-title: "AtCoder Grand Contest 010: B - Boxes"
 tags: [ "competitive", "writeup", "atcoder", "agc", "lie", "random" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc010/tasks/agc010_b" ]
 ---
+
+# AtCoder Grand Contest 010: B - Boxes
 
 <!-- {% raw %} -->
 

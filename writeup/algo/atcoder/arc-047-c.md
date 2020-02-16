@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/02/23/arc-047-c/"
-title: "AtCoder Regular Contest 047 C - N!÷K番目の単語"
 date: 2016-02-23T07:07:27+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "factoradic", "permutation" ]
 ---
+
+# AtCoder Regular Contest 047 C - N!÷K番目の単語
 
 本番は出ていたけど少し覗いただけで、Bに時間を取られて(結局解けなかった)触れなかった問題。
 こちらをやっていれば解けていたかもしれない。

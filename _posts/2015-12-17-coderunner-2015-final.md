@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "CODE RUNNER 2015 決勝"
 date: 2015-12-17T21:03:16+09:00
 tags: [ "competitive", "onsite", "coderunner" ]
 ---
+
+# CODE RUNNER 2015 決勝
 
 7位を取りました。とても嬉しい。
 

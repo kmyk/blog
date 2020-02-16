@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "pythonで関数がある引数に対し真に呼び出し可能か判定する方法"
 date: 2014-11-24T17:18:43+09:00
 tags: [ "python", "type", "function" ]
 ---
+
+# pythonで関数がある引数に対し真に呼び出し可能か判定する方法
 
 ``` python
 def f(a, b, c=True):

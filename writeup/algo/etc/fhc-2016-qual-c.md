@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/11/fhc-2016-qual-c/"
-title: "Facebook Hacker Cup 2016 Qualification Round The Price is Correct"
 date: 2016-01-12 9:00:00 +0900
 tags: [ "competitive", "writeup", "facebook-hacker-cup", "shakutori-hou" ]
 ---
+
+# Facebook Hacker Cup 2016 Qualification Round The Price is Correct
 
 ## [The Price is Correct](https://www.facebook.com/hackercup/problem/881509321917182/)
 

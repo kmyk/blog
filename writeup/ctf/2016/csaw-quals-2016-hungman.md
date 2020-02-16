@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2016/09/19/csaw-quals-2016-hungman/"
 date: "2016-09-19T22:10:02+09:00"
-title: "CSAW Quals CTF 2016: Hungman"
 tags: [ "ctf", "writeup", "csaw-ctf", "pwn" ]
 ---
+
+# CSAW Quals CTF 2016: Hungman
 
 ## solution
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/09/04/arc-082-d/"
 date: "2017-09-04T15:19:35+09:00"
-title: "AtCoder Regular Contest 082: D - Derangement"
 tags: [ "competitive", "writeup", "atcoder", "arc", "greedy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc082/tasks/arc082_b" ]
 ---
+
+# AtCoder Regular Contest 082: D - Derangement
 
 ## solution
 

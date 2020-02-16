@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/18/arc-048-d/"
-title: "AtCoder Regular Contest 048 D - たこ焼き屋とQ人の高橋君"
 date: 2016-05-18T01:19:19+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "heavy-light-decomposition", "lowest-common-ancestor", "segment-tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc048/tasks/arc048_d" ]
 ---
+
+# AtCoder Regular Contest 048 D - たこ焼き屋とQ人の高橋君
 
 自力で解けたので気持ちよかった。
 重軽分解や最小共通祖先等は全て貼っただけなので、実装もあまりつらくはなかった。

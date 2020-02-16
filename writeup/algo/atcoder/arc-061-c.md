@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/09/14/arc-061-c/"
 date: "2016-09-14T13:08:52+09:00"
-title: "AtCoder Regular Contest 061 C - たくさんの数式 / Many Formulas"
 tags: [ "competitive", "writeup", "atcoder", "arc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc061/tasks/arc061_a" ]
 ---
+
+# AtCoder Regular Contest 061 C - たくさんの数式 / Many Formulas
 
 ## solution
 

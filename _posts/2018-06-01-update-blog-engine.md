@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "blog engineの移行: Hugo -> Jekyll"
 date: "2018-06-02T07:21+09:00"
 tags: [ "blog" ]
 ---
+
+# blog engineの移行: Hugo -> Jekyll
 
 <!-- {% raw %} -->
 

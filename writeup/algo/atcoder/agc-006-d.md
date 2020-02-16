@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/08/15/agc-006-d/"
 date: "2017-08-15T13:03:10+09:00"
-title: "AtCoder Grand Contest 006: D - Median Pyramid Hard"
 tags: [ "competitive", "writeup", "atcoder", "agc", "binary-search" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc006/tasks/agc006_d" ]
 ---
+
+# AtCoder Grand Contest 006: D - Median Pyramid Hard
 
 多くの部分で定数倍高速化$O(N^2)$を試みたが、最良でも$5$倍足りずでだめだった。
 

@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/31/arc-015-d/"
-title: "AtCoder Regular Contest 015 D - きんいろクッキー"
 date: 2016-05-31T23:44:51+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "probability", "expected-value" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc015/tasks/arc015_4" ]
 ---
+
+# AtCoder Regular Contest 015 D - きんいろクッキー
 
 確率/期待値ゲーで、誤差の許容が広い、結果の値がとても大きい、などの怪しげな点が多いので身構えていた。しかし特に難しい点はなかった。
 

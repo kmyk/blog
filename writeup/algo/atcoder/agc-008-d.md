@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/12/25/agc-008-d/"
 date: "2016-12-25T23:01:25+09:00"
-title: "AtCoder Grand Contest 008: D - K-th K"
 tags: [ "competitive", "writeup", "atcoder", "agc", "greedy", "construction" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc008/tasks/agc008_d" ]
 ---
+
+# AtCoder Grand Contest 008: D - K-th K
 
 レート持ってかれた。
 

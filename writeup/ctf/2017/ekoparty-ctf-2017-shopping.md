@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/09/20/ekoparty-ctf-2017-shopping/"
 date: "2017-09-20T20:39:26+09:00"
-title: "EKOPARTY CTF 2017: Shopping"
 tags: [ "ctf", "writeup", "pwn", "ekoparty-ctf" ]
 ---
+
+# EKOPARTY CTF 2017: Shopping
 
 PoWがあって面倒と聞き、よし専用ライブラリで殴ってやろうという気持ちで向かったら自明問だった。
 まあ非自明だと解けないので はい。

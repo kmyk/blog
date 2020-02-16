@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/10/03/arc-080-e/"
 date: "2017-10-03T06:17:37+09:00"
-title: "AtCoder Regular Contest 080: E - Young Maids"
 tags: [ "competitive", "writeup", "atcoder", "arc", "segment-tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc080/tasks/arc080_c" ]
 ---
+
+# AtCoder Regular Contest 080: E - Young Maids
 
 editorialはOld Maidsになってるの何故。そもそもメイド要素どこ？
 

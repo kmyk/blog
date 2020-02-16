@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/02/32c3-ctf-forth/"
-title: "32C3 CTF forth"
 date: 2016-01-02T23:19:54+09:00
 tags: [ "ctf", "pwn", "writeup", "forth", "xinetd" ]
 ---
+
+# 32C3 CTF forth
 
 ## [pwn 150: forth](https://github.com/ctfs/write-ups-2015/tree/master/32c3-ctf-2015/pwn/forth-150)
 

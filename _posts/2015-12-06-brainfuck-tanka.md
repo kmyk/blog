@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "brainfuck短歌"
 date: 2015-12-06T00:00:00+09:00
 tags: [ "brainfuck", "poem", "tanka", "esolang" ]
 ---
+
+# brainfuck短歌
 
 この記事は[ポエム Advent Calendar 2015](http://www.adventar.org/calendars/732)の6日目の記事です。 
 ポエム Advent Calendarの趣旨としては、

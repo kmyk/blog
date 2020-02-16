@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/09/05/twctf-2016-rps-ng/"
 date: "2016-09-05T13:15:47+09:00"
-title: "Tokyo Westerns/MMA CTF 2nd 2016: rps-ng"
 tags: [ "ctf", "writeup", "ppc", "mmactf", "twctf" ]
 "target_url": [ "https://score.ctf.westerns.tokyo/problems/33" ]
 ---
+
+# Tokyo Westerns/MMA CTF 2nd 2016: rps-ng
 
 2015年のrpsは解けなかったがこれはまあ取れた。
 

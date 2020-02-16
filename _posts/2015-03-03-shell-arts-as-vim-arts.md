@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "vim芸としてのshell芸"
 date: 2015-03-03T17:29:02+09:00
 tags: [ "vim", "shell" ]
 ---
+
+# vim芸としてのshell芸
 
 vimはcommandを実行しその結果を埋め込む機能があります。便利です。なのでshell芸してみようと思いました。
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/08/27/agc-019-d/"
 date: "2017-08-27T00:14:33+09:00"
-title: "AtCoder Grand Contest 019: D - Shift and Flip"
 tags: [ "competitive", "writeup", "atcoder", "agc", "binary-search", "lie" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc019/tasks/agc019_d" ]
 ---
+
+# AtCoder Grand Contest 019: D - Shift and Flip
 
 ストレステストと嘘とテストケースの弱さを使ってAC。
 つまりバグが残っている。

@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/10/23/arc-045-b/"
-title: "AtCoder Regular Contest 045 B - ドキドキデート大作戦高橋君"
 date: 2015-10-23T02:27:34+09:00
 tags: [ "atcoder", "arc", "competitive", "writeup", "segment-tree", "range-add-query", "range-minimum-query", "imos", "cumulative-sum" ]
 ---
+
+# AtCoder Regular Contest 045 B - ドキドキデート大作戦高橋君
 
 segment treeへの苦手意識が薄まったかも。
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/05/20/arc-074-f/"
 date: "2017-05-20T22:32:41+09:00"
-title: "AtCoder Regular Contest 074: F - Lotus Leaves"
 tags: [ "competitive", "writeup", "atcoder", "arc", "minimum-cut", "maximum-flow", "ford-fulkerson" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc074/tasks/arc074_d" ]
 ---
+
+# AtCoder Regular Contest 074: F - Lotus Leaves
 
 無向グラフに流すときって単に両向きに張るだけでいいんだっけ？コストは両方同じ$1$でいいのか？とか言ってた。
 

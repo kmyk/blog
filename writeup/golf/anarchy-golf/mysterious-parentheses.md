@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/06/anagol-mysterious-parentheses/"
-title: "Anarchy Golf 949. mysterious parentheses"
 date: 2016-05-06T15:39:42+09:00
 tags: [ "golf", "writeup", "anarchy-golf", "anagol", "sed", "brainfuck" ]
 "target_url": [ "http://golf.shinh.org/p.rb?mysterious+parentheses" ]
 ---
+
+# Anarchy Golf 949. mysterious parentheses
 
 ## 概要
 
@@ -641,6 +642,8 @@ divmod。`x *c 0 0`から`x+c/2 *0 0 c%2`。
 その影響で出力の際に`[-]`が必要になるが、全体では短くなる。
 
 ---
+
+# Anarchy Golf 949. mysterious parentheses
 
 [^1]: <http://perl-users.jp/articles/advent-calendar/2008/14.html>
 [^2]: <http://perldoc.perl.org/perlrun.html>

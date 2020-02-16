@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/12/10/seccon-2017-quals-sha-1-is-dead/"
-title: "SECCON 2017 Online CTF: SHA-1 is dead"
 date: "2017-12-10T15:16:40+09:00"
 tags: [ "ctf", "writeup", "seccon", "seccon-quals", "crypto", "sha1", "hash-collision", "shattered" ]
 "target_url": [ "https://ctftime.org/event/512/" ]
 ---
+
+# SECCON 2017 Online CTF: SHA-1 is dead
 
 ## problem
 

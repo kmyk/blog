@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/02/15/plaidctf-2013-ropasaurusrex/"
-title: "Plaid CTF 2013 ropasaurusrex"
 date: 2016-02-15T23:20:14+09:00
 tags: [ "ctf", "writeup", "pwn", "plaidctf", "return-oriented-programming", "buffer-overflow", "stack-overflow" ]
 ---
+
+# Plaid CTF 2013 ropasaurusrex
 
 binary読んだり脆弱性探したりする必要がなく単にropするだけなのでとても楽。
 

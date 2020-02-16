@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 084: E - Finite Encyclopedia of Integer Sequences"
 date: 2018-12-07T02:09:01+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "construction" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc084/tasks/arc084_c" ]
 ---
+
+# AtCoder Regular Contest 084: E - Finite Encyclopedia of Integer Sequences
 
 ## 解法
 

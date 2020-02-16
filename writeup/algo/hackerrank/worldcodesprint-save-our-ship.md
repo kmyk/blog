@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/31/hackerrank-worldcodesprint-save-our-ship/"
-title: "HackerRank World Codesprint: Mars Exploration"
 date: 2016-01-31T01:42:23+09:00
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint" ]
 ---
+
+# HackerRank World Codesprint: Mars Exploration
 
 brainfuck-ableな問題。
 

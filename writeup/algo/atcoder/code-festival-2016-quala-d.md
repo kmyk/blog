@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/09/25/code-festival-2016-quala-d/"
 date: "2016-09-25T03:26:27+09:00"
-title: "CODE FESTIVAL 2016 qual A: D - マス目と整数 / Grid and Integers"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "graph" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-festival-2016-quala/tasks/codefestival_2016_qualA_d" ]
 ---
+
+# CODE FESTIVAL 2016 qual A: D - マス目と整数 / Grid and Integers
 
 解けず。
 A,B,Cやるだけ早解きD,E絶望のパターンは差がでないから困る。

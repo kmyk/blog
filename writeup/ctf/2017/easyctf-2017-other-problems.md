@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/03/22/easyctf-2017-other-problems/"
 date: "2017-03-22T16:31:19+09:00"
-title: "EasyCTF 2017: other problems"
 tags: [ "ctf", "writeup", "easyctf" ]
 "target_url": [ "https://ctftime.org/event/441" ]
 ---
+
+# EasyCTF 2017: other problems
 
 A-maze-ingという問題だけは面白かったので別のページに切り出しました。それ以外はそうでもなかったのでまとめた。
 

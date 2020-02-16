@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "TopCoder Marathon Matchに関する道具とメタ戦略"
 date: "2018-11-22T23:59:59+09:00"
 tags: [ "competitive", "topcoder", "marathon-match" ]
 ---
+
+# TopCoder Marathon Matchに関する道具とメタ戦略
 
 
 ## 概要

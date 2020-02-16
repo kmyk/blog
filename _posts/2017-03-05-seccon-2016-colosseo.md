@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2017-03-05T23:58:40+09:00"
-title: "サイバーコロッセオ x SECCON 2016: 感想"
 tags: [ "ctf", "writeup", "seccon" ]
 ---
+
+# サイバーコロッセオ x SECCON 2016: 感想
 
 <http://2016.seccon.jp/news/#137>
 
@@ -69,6 +70,8 @@ $ nano keyword2.txt
 -   明日はチームのひとりとpwn会をすることになった
 
 ---
+
+# サイバーコロッセオ x SECCON 2016: 感想
 
 -   2017年  3月 11日 土曜日 20:40:09 JST
     -   md5のそれに関して追記

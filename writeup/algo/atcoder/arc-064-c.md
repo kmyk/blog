@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/12/05/arc-064-c/"
 date: "2016-12-05T15:43:04+09:00"
-title: "AtCoder Regular Contest 064: C - Boxes and Candies"
 tags: [ "competitive", "writeup", "atcoder", "greedy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc064/tasks/arc064_a" ]
 ---
+
+# AtCoder Regular Contest 064: C - Boxes and Candies
 
 ## solution
 

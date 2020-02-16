@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "セキュキャン2016応募用紙その他まとめ"
 date: 2016-06-16T00:55:35+09:00
 tags: [ "seccamp", "security-camp" ]
 ---
+
+# セキュキャン2016応募用紙その他まとめ
 
 通りました。
 どこを評価されて通ったのかは分かりません。
@@ -103,6 +104,8 @@ $ cat /dev/port
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">残念ながらセキュリティキャンプに落ちてしまった人、申し訳ねぇ申し訳ねぇ。もし悔しい！気持ちがあれば、それをSECCON然り、CTF然り、参加者よりやるじゃんって講師や参加者を見返せるように、これからもっと圧倒的成長して是非我々を見返してくれ！</p>&mdash; CHUBACHI, Yosuke (@ybachi) <a href="https://twitter.com/ybachi/status/742592254070558721">June 14, 2016</a></blockquote><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ---
+
+# セキュキャン2016応募用紙その他まとめ
 
 ## 応募用紙
 
@@ -766,6 +769,8 @@ check02がNGになるような環境についてですが、これはVirtual PC�
 検索すると、 <http://ku.ido.nu/post/90224067584/can-detect-we-are-in-virtual-machine> のような記事が発見できます。
 
 ---
+
+# セキュキャン2016応募用紙その他まとめ
 
 -   Thu Jun 16 15:50:40 JST 2016
     -   他人の応募用紙を見つけたので追加

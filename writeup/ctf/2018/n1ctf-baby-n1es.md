@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/03/12/n1ctf-baby-n1es/"
-title: "N1CTF 2018: baby_N1ES"
 date: "2018-03-12T13:29:55+09:00"
 tags: [ "ctf", "writeup", "n1ctf", "crypto", "feistel-structure" ]
 "target_url": [ "https://ctftime.org/event/584" ]
 ---
+
+# N1CTF 2018: baby_N1ES
 
 ## solution
 
@@ -48,6 +49,8 @@ $ diff N1ES.py N1ES.modified.py
 <               
 \ No newline at end of file
 ---
+
+# N1CTF 2018: baby_N1ES
 >     def decrypt(self, ciphertext):
 >         if (len(ciphertext) % 16 != 0 or isinstance(ciphertext, bytes) == False):
 >             raise Exception("ciphertext must be a multiple of 16 in length")

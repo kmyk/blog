@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "whitespace言語の変換器を作った"
 date: 2015-03-01T19:55:22+09:00
 tags: [ "esolang", "whitespace", "javascript", "web" ]
 ---
+
+# whitespace言語の変換器を作った
 
 [/works/whitespace-translater](/works/whitespace-translater)
 

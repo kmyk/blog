@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/08/21/arc-081-d/"
 date: "2017-08-21T00:12:16+09:00"
-title: "AtCoder Regular Contest 081: D - Coloring Dominoes"
 tags: [ "competitive", "writeup", "atcoder", "arc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc081/tasks/arc081_b" ]
 ---
+
+# AtCoder Regular Contest 081: D - Coloring Dominoes
 
 縦幅が$2$というのを見落す誤読し、さらに手元でWAを重ねた。
 

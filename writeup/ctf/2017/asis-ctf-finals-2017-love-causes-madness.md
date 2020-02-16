@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2017/09/11/asis-ctf-finals-2017-love-causes-madness/"
-title: "ASIS CTF Finals 2017: Love Causes Madness"
 date: "2017-09-11T08:09:57+09:00"
 tags: [ "ctf", "writeup", "ppc", "asis-ctf", "bitcoin", "prime-factrization" ]
 ---
+
+# ASIS CTF Finals 2017: Love Causes Madness
 
 前回のそれで思い出したので異国の言葉をしたが、今回は特に難しい問題は解けてないので不要だった気がする。
 

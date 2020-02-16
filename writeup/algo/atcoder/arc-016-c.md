@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/11/04/arc-016-c/"
-title: "AtCoder Regular Contest 016 C - ソーシャルゲーム"
 date: 2015-11-04T22:24:05+09:00
 tags: [ "competitive", "writeup", "arc", "atcoder", "probability", "dp", "bit-dp" ]
 ---
+
+# AtCoder Regular Contest 016 C - ソーシャルゲーム
 
 AtCoder Regular ContestのC問題、全完しました。
 

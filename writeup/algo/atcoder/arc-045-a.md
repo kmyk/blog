@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/10/19/arc-045-a/"
-title: "AtCoder Regular Contest 045 A - スペース高橋君"
 date: 2015-10-19T22:46:52+09:00
 tags: [ "atcoder", "arc", "competitive", "writeup", "brainfuck", "sed" ]
 ---
+
+# AtCoder Regular Contest 045 A - スペース高橋君
 
 しばらくぶりのbrainfuck問
 

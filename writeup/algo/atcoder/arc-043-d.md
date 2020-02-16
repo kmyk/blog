@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/03/28/arc-043-d/"
-title: "AtCoder Regular Contest 043 D - 引っ越し"
 date: 2016-03-28T21:34:35+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "greedy", "beam-search", "chokudai-search", "lie" ]
 ---
+
+# AtCoder Regular Contest 043 D - 引っ越し
 
 -   <https://beta.atcoder.jp/contests/arc043/tasks/arc043_d>
 -   [editorial](http://www.slideshare.net/chokudai/arc043)

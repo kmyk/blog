@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/01/03/arc-088-d/"
-title: "AtCoder Regular Contest 088: D - Wide Flip"
 date: "2018-01-03T23:45:58+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc088/tasks/arc088_b" ]
 ---
+
+# AtCoder Regular Contest 088: D - Wide Flip
 
 そう難しくはないはずだがしばらく悩んだ。なぜなのか。
 

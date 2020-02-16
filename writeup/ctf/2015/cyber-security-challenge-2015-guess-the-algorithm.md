@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/09/01/cyber-security-challenge-2015-guess-the-algorithm/"
 date: "2016-09-01T13:54:42+09:00"
-title: "Cyber Security Challenge 2015: Guess the Algorithm"
 tags: [ "ctf", "writeup", "crypto", "cyber-security-challenge" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2015/tree/master/cyber-security-challenge-2015/cryptography/guess-the-algorithm" ]
 ---
+
+# Cyber Security Challenge 2015: Guess the Algorithm
 
 `md5 decryptor`とかで検索して適当なのに投げ付けたらでた。sha1だったがいい感じにしてくれた。
 

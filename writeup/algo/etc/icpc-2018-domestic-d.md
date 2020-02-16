@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "ACM-ICPC 2018 国内予選: D. 全チームによるプレーオフ"
 date: 2018-07-10T13:04:00+09:00
 tags: [ "competitive", "writeup", "icpc", "exhaustive-search" ]
 "target_url": [ "http://icpc.iisf.or.jp/past-icpc/domestic2018/contest/all_ja.html", "http://icpc.iisf.or.jp/past-icpc/domestic2018/judgedata/D/" ]
 ---
+
+# ACM-ICPC 2018 国内予選: D. 全チームによるプレーオフ
 
 ## solution
 

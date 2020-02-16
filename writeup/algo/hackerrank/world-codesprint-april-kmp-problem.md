@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/05/01/hackerrank-world-codesprint-april-kmp-problem/"
-title: "HackerRank World Codesprint April: Yet Another KMP Problem"
 date: 2016-05-01T12:20:55+09:00
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint", "greedy", "construct" ]
 ---
+
+# HackerRank World Codesprint April: Yet Another KMP Problem
 
 I don't dislike this problem, but the problem statement is too complicated.
 

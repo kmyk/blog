@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/09/15/plaidctf-2014-sass/"
 date: "2016-09-15T15:43:57+09:00"
-title: "Plaid CTF 2014: sass"
 tags: [ "competitive", "writeup", "pwn", "plaidctf" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2014/tree/master/plaid-ctf-2014/sass" ]
 ---
+
+# Plaid CTF 2014: sass
 
 手元で解いた。
 練習用に鯖を建てていたのだが、こちらに投げたら通らず。

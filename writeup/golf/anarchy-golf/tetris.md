@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/02/20/anagol-tetris/"
-title: "Anarchy Golf 49. Tetris"
 date: 2016-02-20T02:24:34+09:00
 tags: [ "writeup", "anarchy-golf", "golf", "ruby", "perl", "regex" ]
 ---
+
+# Anarchy Golf 49. Tetris
 
 <!-- {% raw %} -->
 

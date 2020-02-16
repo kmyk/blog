@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/19/tdpc-h/"
-title: "Typical DP Contest H - ナップザック"
 date: 2016-01-19T22:48:58+09:00
 tags: [ "competitive", "writeup", "atcoder", "typical-dp-contest", "dp" ]
 ---
+
+# Typical DP Contest H - ナップザック
 
 dpだけど自力で解けました。
 

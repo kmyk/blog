@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "codeFlyer （bitFlyer Programming Contest）: D - 数列 XOR"
 date: 2018-07-02T20:13:41+09:00
 tags: [ "competitive", "writeup", "atcoder", "codeflyer", "xor", "gaussian-elimination" ]
 "target_url": [ "https://beta.atcoder.jp/contests/bitflyer2018-final-open/tasks/bitflyer2018_final_d" ]
 ---
+
+# codeFlyer （bitFlyer Programming Contest）: D - 数列 XOR
 
 ## solution
 

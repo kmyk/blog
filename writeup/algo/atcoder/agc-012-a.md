@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/06/14/agc-012-a/"
 date: "2017-06-14T11:27:30+09:00"
-title: "AtCoder Grand Contest 012: A - AtCoder Group Contest"
 tags: [ "competitive", "writeup", "atcoder", "agc", "greedy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc012/tasks/agc012_a" ]
 ---
+
+# AtCoder Grand Contest 012: A - AtCoder Group Contest
 
 ## solution
 

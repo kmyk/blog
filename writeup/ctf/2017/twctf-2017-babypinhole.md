@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/09/04/twctf-2017-babypinhole/"
 date: "2017-09-04T13:34:15+09:00"
-title: "Tokyo Westerns CTF 3rd 2017: BabyPinhole"
 tags: [ "ctf", "writeup", "twctf", "crypto", "paillier-cryptosystem", "homomorphic-property", "hardcore-bit" ]
 ---
+
+# Tokyo Westerns CTF 3rd 2017: BabyPinhole
 
 -   こういう話があった: <https://twitter.com/elliptic_shiho/status/907221511173312513>
 -   加法のそれを使ってshiftしていい感じにしてるだけだからPaillier暗号である必然性はないよね、ぐらいの気持ち
@@ -108,6 +109,8 @@ log.info('flag = %s', flag)
 ```
 
 ---
+
+# Tokyo Westerns CTF 3rd 2017: BabyPinhole
 
 -   2017年  9月 11日 月曜日 21:50:55 JST
     -   怪しい部分を修正

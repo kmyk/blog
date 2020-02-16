@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/12/20/arc-009-d/"
-title: "AtCoder Regular Contest 009 D - 覚醒ノ高橋君"
 date: 2015-12-20T00:15:33+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "spanning-tree", "dp", "combinatorics", "overflow" ]
 ---
+
+# AtCoder Regular Contest 009 D - 覚醒ノ高橋君
 
 解法はそう難しくないが、実装が少し多めで、丁寧さが必要。
 問題文は難しい。

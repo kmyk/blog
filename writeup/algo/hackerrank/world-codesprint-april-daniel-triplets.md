@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/01/hackerrank-world-codesprint-april-daniel-triplets/"
-title: "HackerRank World Codesprint April: Lovely Triplets"
 date: 2016-05-01T12:21:14+09:00
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint", "graph", "graphviz" ]
 "target_url": [ "https://www.hackerrank.com/contests/world-codesprint-april/challenges/daniel-triplets" ]
 ---
+
+# HackerRank World Codesprint April: Lovely Triplets
 
 I misread the problem statement and be taken much time.
 

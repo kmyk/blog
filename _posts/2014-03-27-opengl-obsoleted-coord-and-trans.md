@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "openglの固定機能の座標変換を調べた"
 date: 2014-03-27T00:24:12+09:00
 tags: [ "opengl", "obsoleted", "coordinates", "transformation", "matrix", "sharder", "c", "c++" ]
 ---
+
+# openglの固定機能の座標変換を調べた
 
 -   座標変換がよく分かってないので調べた
 -   固定機能と言って時代遅れで削除予定な部分

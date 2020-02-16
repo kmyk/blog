@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/11/26/code-festival-2015-final-g/"
-title: "CODE FESTIVAL 2015 決勝 G - スタンプラリー"
 date: 2015-11-26T23:03:14+09:00
 tags: [ "competitive", "writeup", "codefestival", "graph", "dfs", "interval", "dp", "tree", "forest", "rooted-tree" ]
 ---
+
+# CODE FESTIVAL 2015 決勝 G - スタンプラリー
 
 本番は難しそうに感じたので手を付けなかった。
 

@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/04/24/jag2016-domestic-b/"
-title: "JAG Contest 2016 Domestic B - 豪邸と宅配便"
 date: 2016-04-24T22:28:32+09:00
 tags: [ "competitive", "writeup", "atcoder", "jag", "icpc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/jag2016-domestic/tasks/jag2016secretspring_b" ]
 ---
+
+# JAG Contest 2016 Domestic B - 豪邸と宅配便
 
 本番はちらっと見てDP感があったので他のメンバーに投げた。
 

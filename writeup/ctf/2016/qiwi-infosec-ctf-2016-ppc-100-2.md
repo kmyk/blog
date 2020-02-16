@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2016/11/19/qiwi-infosec-ctf-2016-ppc-100-2/"
 date: "2016-11-19T01:30:46+09:00"
-title: "Qiwi Infosec CTF 2016: PPC 100_1"
 tags: [ "ctf", "writeup", "qiwi-ctf", "ppc" ]
 ---
+
+# Qiwi Infosec CTF 2016: PPC 100_1
 
 名前が整数のファイルがたくさん与えられる。問題文に素数が重要とあるので、そのようなものの中身だけ集める。
 

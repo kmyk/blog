@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/04/10/gcj-2017-qual-a/"
 date: "2017-04-10T02:45:05+09:00"
-title: "Google Code Jam Qualification Round 2017: A. Oversized Pancake Flipper"
 tags: [ "competitive", "writeup", "gcj", "greedy" ]
 "target_url": [ "https://code.google.com/codejam/contest/3264486/dashboard#s=p0" ]
 ---
+
+# Google Code Jam Qualification Round 2017: A. Oversized Pancake Flipper
 
 ## solution
 

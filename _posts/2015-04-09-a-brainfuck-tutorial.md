@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "brainfuck入門"
 date: 2015-04-09T01:22:09+09:00
 tags: [ "brainfuck", "tutorial", "c" ]
 ---
+
+# brainfuck入門
 
 
 cの知識のみ仮定し、基本的な部分のみ解説する。
@@ -255,6 +256,8 @@ b = 0;
 他の日本語のよい資料としては[実用Brainf\*ckプログラミング](http://www.slideshare.net/KMC_JP/brainfck)があります。
 
 ---
+
+# brainfuck入門
 
 <small> 追記: 2016年  8月 24日 水曜日 21:28:38 JST </small>
 

@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/04/10/gcj-2016-qual-d/"
-title: "Google Code Jam 2016 Qualification Round D. Fractiles"
 date: 2016-04-10T11:04:32+09:00
 tags: [ "competitive", "writeup", "google-code-jam", "gcj", "tree" ]
 "target_url": [ "https://code.google.com/codejam/contest/6254486/dashboard#s=p3" ]
 ---
+
+# Google Code Jam 2016 Qualification Round D. Fractiles
 
 ## problem
 

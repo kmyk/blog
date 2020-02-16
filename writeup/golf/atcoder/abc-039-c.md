@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/06/11/abc-039-c/"
-title: "AtCoder Beginner Contest 039 C - ピアニスト高橋君"
 date: 2016-06-11T23:00:03+09:00
 tags: [ "competitive", "writeup", "atcoder", "abc", "sed", "golf" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc039/tasks/abc039_c" ]
 ---
+
+# AtCoder Beginner Contest 039 C - ピアニスト高橋君
 
 けっこう手間取った
 
@@ -25,6 +26,8 @@ s/F$/i/
 atcoderは改行が`\r\n`なので、`;`にすれば5byte減る。(忘れていた)
 
 ---
+
+# AtCoder Beginner Contest 039 C - ピアニスト高橋君
 
 また、%20さんが以下を提出しているので見るとよい
 

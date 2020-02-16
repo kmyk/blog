@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/04/02/aoj-ritscamp18day3-c/"
-title: "AOJ RitsCamp18Day3: C. AA グラフ (AA Graph)"
 date: "2018-04-02T22:46:48+09:00"
 tags: [ "competitive", "writeup", "aoj", "rupc", "graph", "bfs" ]
 "target_url": [ "https://onlinejudge.u-aizu.ac.jp/beta/room.html#RitsCamp18Day3/problems/C" ]
 ---
+
+# AOJ RitsCamp18Day3: C. AA グラフ (AA Graph)
 
 ## solution
 

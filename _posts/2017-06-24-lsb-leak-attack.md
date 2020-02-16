@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2017-06-24T03:50:46+09:00"
-title: "LSB Leak Attackを実装した"
 tags: [ "crypto", "binary-search", "rsa", "lsb-leak-attack" ]
 ---
+
+# LSB Leak Attackを実装した
 
 ## 概要
 
@@ -94,6 +95,8 @@ assert attack(e, n, c, oracle) == m
 -   <http://inaz2.hatenablog.com/entry/2016/11/09/220529>
 
 ---
+
+# LSB Leak Attackを実装した
 
 -   追記: 2018年  6月 25日 月曜日 09:42:48 JST
     -   二分探索でなくて単にLSBの値を並べるのでは不足。$n$が$2$羃でない限りはoverflowの有無とbitの0/1は一致しないため

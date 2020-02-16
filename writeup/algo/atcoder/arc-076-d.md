@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/12/31/arc-076-d/"
-title: "AtCoder Regular Contest 076: D - Built?"
 date: "2017-12-31T20:37:16+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "minimum-spanning-tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc076/tasks/arc076_b" ]
 ---
+
+# AtCoder Regular Contest 076: D - Built?
 
 ## solution
 
@@ -88,6 +89,8 @@ int main() {
 ```
 
 ---
+
+# AtCoder Regular Contest 076: D - Built?
 
 -   2018年  1月  3日 水曜日 11:11:48 JST
     -   距離の名前について勘違いしてたので修正

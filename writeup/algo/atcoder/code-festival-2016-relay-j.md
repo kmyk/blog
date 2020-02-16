@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/11/30/code-festival-2016-relay-j/"
 date: "2016-11-30T01:33:34+09:00"
-title: "CODE FESTIVAL 2016 Relay: J - 連結チェスボード / Connected Checkerboard"
 tags: [ "competitive", "writeup", "atcoder", "codefestival" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf16-relay-open/tasks/relay_j" ]
 ---
+
+# CODE FESTIVAL 2016 Relay: J - 連結チェスボード / Connected Checkerboard
 
 本番の終了後、担当だったsigmaさんが面白かったと言っていた。わかる。
 

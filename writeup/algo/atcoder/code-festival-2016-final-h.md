@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/12/24/code-festival-2016-final-h/"
 date: "2016-12-24T22:43:53+09:00"
-title: "CODE FESTIVAL 2016 Final: H - Tokaido"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "dp", "game" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf16-final-open/tasks/codefestival_2016_final_h" ]
 ---
+
+# CODE FESTIVAL 2016 Final: H - Tokaido
 
 本番では部分点まで。$x \gets \|x - a_i\|$を繰り返してるなあというのまでは気付いていたが、その先をするには頭も時間も足りてなかった。
 明らかに怪しい$\sum A_i$制約を部分点実装してる間に忘れてしまったのも一因のように思う。

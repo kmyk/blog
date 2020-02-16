@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "~/.ssh/configにHost githubと書くのは間違い"
 date: "2018-06-09T00:04:05+09:00"
 tags: [ "github", "ssh" ]
 ---
+
+# ~/.ssh/configにHost githubと書くのは間違い
 
 正解は `Host github.com` です。
 

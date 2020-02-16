@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/11/10/hackerrank-optimization-oct17-collatz-sequence-sum/"
 date: "2017-11-10T22:51:48+09:00"
-title: "HackerRank Performance Optimization: B. Collatz Sequence Sum"
 tags: [ "competitive", "writeup", "hackerrank", "memoization" ]
 "target_url": [ "https://www.hackerrank.com/contests/optimization-oct17/challenges/collatz-sequence-sum" ]
 ---
+
+# HackerRank Performance Optimization: B. Collatz Sequence Sum
 
 ## problem
 

@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/17/arc-047-b/"
-title: "AtCoder Regular Contest 047 B - 同一円周上"
 date: 2016-01-17T00:32:18+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc" ]
 ---
+
+# AtCoder Regular Contest 047 B - 同一円周上
 
 本番中に解けず。気合で実装すれば可能かもしれないがしたくない、という判断をして放棄。45度回せばよいことにすら気付いていなかったので駄目。
 

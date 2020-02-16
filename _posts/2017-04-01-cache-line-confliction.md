@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2017-04-01T04:10:17+09:00"
-title: "cache lineの衝突による速度の低下を確認した"
 tags: [ "optimization", "cache" ]
 ---
+
+# cache lineの衝突による速度の低下を確認した
 
 ## 概要
 

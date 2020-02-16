@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/01/07/abc-051-d/"
 date: "2017-01-07T22:12:36+09:00"
-title: "AtCoder Beginner Contest 051: D - Candidates of No Shortest Paths"
 tags: [ "competitive", "writeup", "atcoder", "abc", "graph", "warshall-floyd" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc051/tasks/abc051_d" ]
 ---
+
+# AtCoder Beginner Contest 051: D - Candidates of No Shortest Paths
 
 ひさしぶりのABCだった。#041以来らしい。順位表も上位が日本人ばかりで懐しい感じだった。
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/06/07/arc-054-d/"
 date: "2017-06-07T13:01:24+09:00"
-title: "AtCoder Regular Contest 054: D - バブルソート"
 tags: [ "competitive", "atcoder", "agc", "greedy", "segment-tree", "dynamic-construction", "weighted-union-heuristic" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc054/tasks/arc054_d" ]
 ---
+
+# AtCoder Regular Contest 054: D - バブルソート
 
 大きさに応じた配列と辞書の切り替えを書いたら間に合わなかった。
 解説に従って動的構築segment木を書いたら通った。

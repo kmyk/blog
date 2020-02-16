@@ -2,8 +2,9 @@
 category: blog
 layout: post
 date: "2016-12-03T23:51:47+09:00"
-title: "大学からの遠征費の補助について"
 ---
+
+# 大学からの遠征費の補助について
 
 聞いてきました。なさそうです。
 
@@ -33,6 +34,8 @@ title: "大学からの遠征費の補助について"
 
 ---
 
+# 大学からの遠征費の補助について
+
 追記:
 
 -   Thu Dec  8 14:02:53 JST 2016
@@ -41,5 +44,7 @@ title: "大学からの遠征費の補助について"
     -   関連記事見つけた: <http://hadrori.jp/articles/10>
 
 ---
+
+# 大学からの遠征費の補助について
 
 この記事は[Kobe University Advent Calendar 2016](http://www.adventar.org/calendars/1881)の$3$日目です。

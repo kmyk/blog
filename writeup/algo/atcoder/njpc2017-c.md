@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "NJPC2017: C - ハードル走"
 date: 2018-07-12T20:51:19+09:00
 tags: [ "competitive", "writeup", "atcoder", "njpc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/njpc2017/tasks/njpc2017_c" ]
 ---
+
+# NJPC2017: C - ハードル走
 
 ## note
 

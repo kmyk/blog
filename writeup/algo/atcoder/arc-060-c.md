@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/01/04/arc-060-c/"
-title: "AtCoder Regular Contest 060: C - 高橋君とカード / Tak and Cards"
 date: "2018-01-04T11:55:15+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp", "average" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc060/tasks/arc060_a" ]
 ---
+
+# AtCoder Regular Contest 060: C - 高橋君とカード / Tak and Cards
 
 editorialには$O(N \sum x\_i)$の解法があった。
 

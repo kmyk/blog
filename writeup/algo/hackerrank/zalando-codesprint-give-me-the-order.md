@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/06/05/hackerrank-zalando-codesprint-give-me-the-order/"
-title: "HackerRank Zalando CodeSprint: Give Me the Order"
 date: 2016-06-05T19:18:12+09:00
 tags: [ "competitive", "writeup", "hackerrank", "treap", "self-balancing-binary-serach-tree" ]
 "target_url": [ "https://www.hackerrank.com/contests/zalando-codesprint/challenges/give-me-the-order" ]
 ---
+
+# HackerRank Zalando CodeSprint: Give Me the Order
 
 本番は平衡二分探索木を知らず、解けず。
 

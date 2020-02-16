@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2018/03/18/srm-731-med/"
-title: "TopCoder SRM 731 Medium. RndSubTree"
 date: "2018-03-18T03:19:44+09:00"
 tags: [ "competitive", "writeup", "topcoder", "srm", "dp", "tree" ]
 ---
+
+# TopCoder SRM 731 Medium. RndSubTree
 
 ## problem
 

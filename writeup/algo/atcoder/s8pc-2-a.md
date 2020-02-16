@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/20/s8pc-2-a/"
-title: "square869120Contest #2 A - IOI列車で行こう2"
 date: 2016-05-20T14:20:07+09:00
 tags: [ "competitive", "writeup", "atcoder", "golf", "s8pc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/s8pc-2/tasks/s8pc_2_a" ]
 ---
+
+# square869120Contest #2 A - IOI列車で行こう2
 
 ## implementation
 

@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/03/27/arc-049-d/"
-title: "AtCoder Regular Contest 049 D - すわっぷしまーす"
 date: 2016-03-27T23:13:32+09:00
 tags: [ "competitive", "writeup", "atcoder", "segment-tree", "tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc049/tasks/arc049_d" ]
 ---
+
+# AtCoder Regular Contest 049 D - すわっぷしまーす
 
 解説slideは真っ白(修正されたらしいが白いまま、downloadしてviewerで開き直すと見れるとの話がある)で見れず、kmjpさんの解説を頼りに解いた。
 

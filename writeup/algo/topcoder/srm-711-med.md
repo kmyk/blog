@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/03/27/srm-711-med/"
 date: "2017-03-27T13:35:20+09:00"
-title: "TopCoder SRM 711 Div1 Medium: OrderedProduct"
 tags: [ "competitive", "writeup", "topcoder", "srm", "dp", "inclusion-exclusion-principle" ]
 "target_url": [ "https://community.topcoder.com/stat?c=problem_statement&pm=14550" ]
 ---
+
+# TopCoder SRM 711 Div1 Medium: OrderedProduct
 
 Div1 $40$位を取ってレート爆上げした。嬉しい。
 

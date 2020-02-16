@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/11/27/cf17-relay-f/"
 date: "2017-11-27T17:58:13+09:00"
-title: "Code Festival Team Relay: F - Capture"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "team-relay", "dp", "kadane-algorithm" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf17-relay-open/tasks/relay2_f" ]
 ---
+
+# Code Festival Team Relay: F - Capture
 
 本番で担当。
 $s\_i \le 10^9$だが$x\_i \le 10^{15}$なぜか変に大きく、入力取る部分でoverflowさせて焦った。

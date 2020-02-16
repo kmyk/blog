@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/03/07/yahoo-procon-2017-qual-a/"
 date: "2017-03-07T17:21:05+09:00"
-title: "「みんなのプロコン」: A - Yahoo"
 tags: [ "competitive", "writeup", "atcoder", "yahoo-procon", "golf", "sed", "lie" ]
 "target_url": [ "https://beta.atcoder.jp/contests/yahoo-procon2017-qual/tasks/yahoo_procon2017_qual_a" ]
 ---
+
+# 「みんなのプロコン」: A - Yahoo
 
 golf暫定最短はcielさんの嘘解法sed $25$byteであった。
 

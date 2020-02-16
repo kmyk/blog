@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/11/30/code-festival-2016-relay-c/"
 date: "2016-11-30T01:33:20+09:00"
-title: "CODE FESTIVAL 2016 Relay: C - 硬度フェスティバル / Kode Festival"
 tags: [ "competitive", "writeup", "atcoder", "codefestival" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf16-relay-open/tasks/relay_c" ]
 ---
+
+# CODE FESTIVAL 2016 Relay: C - 硬度フェスティバル / Kode Festival
 
 おそろしい祭りだ。
 

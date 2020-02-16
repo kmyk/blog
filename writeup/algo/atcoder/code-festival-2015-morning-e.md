@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/11/20/code-festival-2015-morning-e/"
-title: "CODE FESTIVAL 2015 朝プロ E - 一次元オセロ"
 date: 2015-11-20T00:06:52+09:00
 tags: [ "competitive", "writeup", "codefestival", "atcoder" ]
 ---
+
+# CODE FESTIVAL 2015 朝プロ E - 一次元オセロ
 
 まあ通せた。少し実装重めの方針で解いたが、実際は貪欲でよかった。
 

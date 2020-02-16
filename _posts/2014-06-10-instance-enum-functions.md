@@ -1,11 +1,12 @@
 ---
 category: blog
 layout: post
-title: "関数をEnumにして遊んだ"
 date: 2014-06-10T21:38:12+09:00
 tags: [ "haskell", "type" ]
 math: true
 ---
+
+# 関数をEnumにして遊んだ
 
 全域関数 $ f : \mathbb{A} \to \mathbb{B} $ は $ { \left|
 \mathbb{B} \right|

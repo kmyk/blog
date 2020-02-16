@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 022: D - スプリンクラー"
 date: 2018-09-14T02:28:36+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "geometry", "convex-hull", "lie", "postscript" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc022/tasks/arc022_4" ]
 ---
+
+# AtCoder Regular Contest 022: D - スプリンクラー
 
 ## 解法
 

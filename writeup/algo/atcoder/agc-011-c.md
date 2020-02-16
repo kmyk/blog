@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/03/13/agc-011-c/"
 date: "2017-03-13T00:29:16+09:00"
-title: "AtCoder Grand Contest 011: C - Squared Graph"
 tags: [ "competitive", "writeup", "atcoder", "agc", "graph", "bipartite-graph" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc011/tasks/agc011_c" ]
 ---
+
+# AtCoder Grand Contest 011: C - Squared Graph
 
 Dを優先してほぼ手を付けなかったが、解けていてもよい問題だった。
 

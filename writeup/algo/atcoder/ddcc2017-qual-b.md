@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/11/10/ddcc2017-qual-b/"
 date: "2017-11-10T23:33:59+09:00"
-title: "DISCO presents ディスカバリーチャンネル コードコンテスト2017 予選: B - 鉛筆"
 tags: [ "competitive", "writeup", "atcoder", "ddcc", "horner-method" ]
 "target_url": [ "https://beta.atcoder.jp/contests/ddcc2017-qual/tasks/ddcc2017_qual_b" ]
 ---
+
+# DISCO presents ディスカバリーチャンネル コードコンテスト2017 予選: B - 鉛筆
 
 ## 感想
 

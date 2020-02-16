@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Mujin Programming Challenge 2018: G - 移動"
 date: 2018-08-18T08:06:07+09:00
 tags: [ "competitive", "writeup", "atcoder", "z-module", "linear-aldgebra", "combination", "complement" ]
 "target_url": [ "https://beta.atcoder.jp/contests/mujin-pc-2018/tasks/mujin_pc_2018_g" ]
 ---
+
+# Mujin Programming Challenge 2018: G - 移動
 
 ## solution
 

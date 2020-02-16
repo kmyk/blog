@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/11/21/code-festival-2015-final-e/"
-title: "CODE FESTIVAL 2015 決勝 E - ショートコーディング"
 date: 2015-11-21T17:19:03+09:00
 tags: [ "competitive", "writeup", "codefestival", "atcoder" ]
 ---
+
+# CODE FESTIVAL 2015 決勝 E - ショートコーディング
 
 こういう問題は好きです。
 

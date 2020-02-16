@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/09/20/ekoparty-ctf-2017-malbolge/"
 date: "2017-09-20T20:38:24+09:00"
-title: "EKOPARTY CTF 2017: Shopping"
 tags: [ "ctf", "writeup", "misc", "ekoparty-ctf", "malbolge" ]
 ---
+
+# EKOPARTY CTF 2017: Shopping
 
 まさかhelloworld出力して終わりとは思わなかった。悲しい。
 

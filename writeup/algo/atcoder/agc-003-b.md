@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/08/21/agc-003-b/"
 date: "2016-08-21T23:55:19+09:00"
-title: "AtCoder Grand Contest 003 B - Simplified mahjong"
 tags: [ "competitive", "writeup", "atcoder", "agc", "greedy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc003/tasks/agc003_b" ]
 ---
+
+# AtCoder Grand Contest 003 B - Simplified mahjong
 
 ## solution
 

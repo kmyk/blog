@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/05/31/srm-691-easy/"
-title: "TopCoder SRM 691 Div1 Easy: Sunnygraphs"
 date: 2016-05-31T01:46:05+09:00
 tags: [ "competitive", "writeup", "srm", "topcoder", "graph" ]
 ---
+
+# TopCoder SRM 691 Div1 Easy: Sunnygraphs
 
 I solved this a bit quickly, and I could update my highest rating.
 

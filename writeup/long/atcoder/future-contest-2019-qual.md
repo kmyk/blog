@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "HACK TO THE FUTURE 2019予選: A - ばらばらロボット"
 date: 2018-11-10T22:40:36+09:00
 edited: 2018-11-19T22:00:00+09:00
 tags: [ "competitive", "writeup", "atcoder", "half-marathon", "simulated-annealing" ]
 "target_url": [ "https://beta.atcoder.jp/contests/future-contest-2019-qual/tasks/future_contest_2019_qual_a" ]
 ---
+
+# HACK TO THE FUTURE 2019予選: A - ばらばらロボット
 
 
 ## 解法

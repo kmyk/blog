@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/02/23/arc-046-b/"
-title: "AtCoder Regular Contest 046 B - 石取り大作戦"
 date: 2016-02-23T02:37:49+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "game", "experiment", "typical-problem" ]
 ---
+
+# AtCoder Regular Contest 046 B - 石取り大作戦
 
 典型的な実験ゲー。
 もちろんnimではない。単一のimpartial gameだし。

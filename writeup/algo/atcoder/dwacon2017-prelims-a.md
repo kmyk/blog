@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/12/17/dwacon2017-prelims-a/"
 date: "2016-12-17T22:04:41+09:00"
-title: "第3回 ドワンゴからの挑戦状 予選: A - 動画検索"
 tags: [ "competitive", "writeup", "atcoder", "dwacon", "golf" ]
 "target_url": [ "https://beta.atcoder.jp/contests/dwacon2017-prelims/tasks/dwango2017qual_a" ]
 ---
+
+# 第3回 ドワンゴからの挑戦状 予選: A - 動画検索
 
 ## solution
 

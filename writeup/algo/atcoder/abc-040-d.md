@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/06/20/abc-040-d/"
-title: "AtCoder Beginner Contest 040 D - 道路の老朽化対策について"
 date: 2016-06-20T01:45:12+09:00
 tags: [ "competitive", "writeup", "abc", "atcoder", "graph", "union-find-tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc040/tasks/abc040_d" ]
 ---
+
+# AtCoder Beginner Contest 040 D - 道路の老朽化対策について
 
 ## solution
 

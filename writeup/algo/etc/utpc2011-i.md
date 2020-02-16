@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2017/12/29/utpc2011-i/"
-title: "東京大学プログラミングコンテスト2011: I. ビット演算"
 date: "2017-12-29T07:48:16+09:00"
 tags: [ "competitive", "writeup", "utpc", "aoj", "dp" ]
 ---
+
+# 東京大学プログラミングコンテスト2011: I. ビット演算
 
 -   <http://www.utpc.jp/2011/problems/bit.html>
 -   <http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=2267>

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/10/10/jag2016autumn-e/"
 date: "2016-10-10T21:51:36+09:00"
-title: "JAG Practice Contest for ACM-ICPC Asia Regional 2016: E - Similarity of Subtrees"
 tags: [ "competitive", "writeup", "atcoder", "jag", "icpc", "rolling-hash", "tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/jag2016autumn/tasks/icpc2016autumn_e" ]
 ---
+
+# JAG Practice Contest for ACM-ICPC Asia Regional 2016: E - Similarity of Subtrees
 
 本番でバグらせて泥沼化したときの対処をどうするか、という話になった。
 気付いた時点で全員手を止めリファクタリング等を兼ねて違う人が書き直すのはどうかという結論。

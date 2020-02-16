@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "haskellのlensの使い方 (詳しめ)"
 date: 2014-12-14T00:00:00+09:00
 tags: [ "haskell", "lens" ]
 ---
+
+# haskellのlensの使い方 (詳しめ)
 
 `Lens`,`Getter`,`Setter`から`Equality`,`Iso`,`Prism`,`Review`に関して
 
@@ -326,6 +327,8 @@ assign, (.=) :: Setter s s a b -> b -> State s ()
 - Day 15: [ruiccさん](http://qiita.com/ruicc)
 
 ---
+
+# haskellのlensの使い方 (詳しめ)
 
 -   Sun Jun 21 01:59:23 JST 2015
     -   次記事へのlinkを削除

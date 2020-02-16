@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2017-02-14T01:29:16+09:00"
-title: "ELFの.interp sectionを書き換えてその挙動を確認してみる"
 tags: [ "elf", "linker" ]
 ---
+
+# ELFの.interp sectionを書き換えてその挙動を確認してみる
 
 ELFにおいて、共有libraryのlinkはOSでなくheader内で指定されてlinkerが行う。
 このlinkerを指定する文字列を書き換え、その挙動を確認した。

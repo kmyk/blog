@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Grand Contest 025: C - Interval Game"
 date: 2018-08-11T02:12:03+09:00
 tags: [ "competitive", "writeup", "atcoder", "agc", "sort", "greedy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc025/tasks/agc025_c" ]
 ---
+
+# AtCoder Grand Contest 025: C - Interval Game
 
 ## solution
 

@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/06/27/icpc-2016-domestic-c/"
-title: "ACM-ICPC 2016 国内予選 C: 竹の花"
 date: 2016-06-27T13:01:53+09:00
 tags: [ "competitive", "writeup", "icpc", "sieve-of-eratosthenes", "greedy" ]
 ---
+
+# ACM-ICPC 2016 国内予選 C: 竹の花
 
 -   <http://icpcsec.storage.googleapis.com/icpc2016-domestic/problems/all_ja.html#section_C>
 -   <http://icpc.iisf.or.jp/past-icpc/domestic2016/judgedata/C/>

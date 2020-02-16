@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/11/30/icpc-2015-asia-c/"
-title: "ACM ICPC 2015 アジア地区予選 C : Sibling Rivalry"
 date: 2015-11-30T01:24:25+09:00
 tags: [ "competitive", "writeup", "icpc", "aoj", "graph", "adjacency-matrix", "game" ]
 ---
+
+# ACM ICPC 2015 アジア地区予選 C : Sibling Rivalry
 
 我々のチームは本番通せず。`A`,`B`を解いた後、私は`F`を担当して、`C`はチームメンバーに任せた。しかし`C`も`F`もバグを埋めてしまった。`C`に関して、私は終了間際まで触る余裕がなく、チームメンバーの用いていた解法すら把握していない。他人の目が入れば解決しそうな間違いだったようなので、私が`F`に手間取らなければ通っていたのでは、と思う。くやしい。
 

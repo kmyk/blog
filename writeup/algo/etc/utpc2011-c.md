@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2017/12/25/utpc2011-c/"
-title: "東京大学プログラミングコンテスト2011: C. [[iwi]]"
 date: "2017-12-25T19:10:40+09:00"
 tags: [ "competitive", "writeup", "utpc", "atcoder", "aoj" ]
 ---
+
+# 東京大学プログラミングコンテスト2011: C. [[iwi]]
 
 -   <http://www.utpc.jp/2011/problems/iwi2.html>
 -   <https://beta.atcoder.jp/contests/utpc2011/tasks/utpc2011_3>

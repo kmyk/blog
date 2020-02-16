@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/08/26/asis-finals-ctf-2015-bodu/"
 date: "2016-08-26T20:08:46+09:00"
-title: "ASIS Cyber Security Contest 2015: bodu"
 tags: [ "ctf", "writeup", "asis-ctf", "crypto", "rsa", "boneh-durfee-attack" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2015/tree/master/asis-finals-ctf-2015/crypto/bodu" ]
 ---
+
+# ASIS Cyber Security Contest 2015: bodu
 
 解けない。writeupを見た: <https://kt.pe/blog/2015/10/asis-2015-finals-bodu/>。
 

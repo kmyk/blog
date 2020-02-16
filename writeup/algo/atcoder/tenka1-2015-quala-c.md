@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/18/tenka1-2015-quala-c/"
-title: "天下一プログラマーコンテスト2015予選A C - 天下一美術館"
 date: 2016-01-18T20:46:37+09:00
 tags: [ "competitive", "writeup", "atcoder", "tenka1-programmer-contest", "graph", "flow", "maximum-flow", "ford-fulkerson", "bipartite-graph", "maximum-matching" ]
 ---
+
+# 天下一プログラマーコンテスト2015予選A C - 天下一美術館
 
 フロー精進中。
 

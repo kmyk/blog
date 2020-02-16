@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/11/27/cf17-relay-d/"
 date: "2017-11-27T17:58:10+09:00"
-title: "Code Festival Team Relay: D - Shock"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "team-relay", "graph" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf17-relay-open/tasks/relay2_d" ]
 ---
+
+# Code Festival Team Relay: D - Shock
 
 ## solution
 

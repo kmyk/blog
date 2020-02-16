@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/11/06/arc-063-e/"
 date: "2016-11-06T22:48:20+09:00"
-title: "AtCoder Regular Contest 063: E - 木と整数 / Integers on a Tree"
 tags: [ "competitive", "wirteup", "atcoder", "arc", "tree", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc063/tasks/arc063_c" ]
 ---
+
+# AtCoder Regular Contest 063: E - 木と整数 / Integers on a Tree
 
 この問題から開いて書いて提出したら$1$WA生えて焦った。
 

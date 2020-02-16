@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/07/04/tenka1-2012-qualc-d/"
 date: "2017-07-04T22:54:03+09:00"
-title: "天下一プログラマーコンテスト2012 予選C: D - ゆうびんやさんのお花畑"
 tags: [ "competitive", "writeup", "atcoder", "tenka1", "dp", "frontier", "lie", "optimization" ]
 "target_url": [ "https://beta.atcoder.jp/contests/tenka1-2012-qualc/tasks/tenka1_2012_12" ]
 ---
+
+# 天下一プログラマーコンテスト2012 予選C: D - ゆうびんやさんのお花畑
 
 模擬国内のH問題の関連から名前が上がっていたので解いた。
 

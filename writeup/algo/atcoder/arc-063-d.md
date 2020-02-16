@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/11/06/arc-063-d/"
 date: "2016-11-06T22:48:18+09:00"
-title: "AtCoder Regular Contest 063: D - 高橋君と見えざる手 / An Invisible Hand"
 tags: [ "competitive", "wirteup", "atcoder", "arc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc063/tasks/arc063_b" ]
 ---
+
+# AtCoder Regular Contest 063: D - 高橋君と見えざる手 / An Invisible Hand
 
 誤読しやすい(した)など嫌らしい問題文だった。
 

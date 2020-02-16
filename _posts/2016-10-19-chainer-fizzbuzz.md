@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2016-10-19T00:57:49+09:00"
-title: "Chainerでfizzbuzzを書いた"
 tags: [ "fizzbuzz", "chainer", "neural-network", "machine-learning" ]
 ---
+
+# Chainerでfizzbuzzを書いた
 
 所用により計算環境等が降ってきたので、機械学習の特にnueral networkで遊ぶことになりました。
 以前試したときは単純perceptronやらを実装してみて線形分離可能性のあたりを眺めたぐらいで力尽きたのですが、ある程度の成果物への強制力があるので今回はちゃんとやります。

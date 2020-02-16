@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "NJPC2017: F - ダブルス"
 date: 2018-08-03T17:37:27+09:00
 tags: [ "competitive", "writeup", "atcoder", "njpc", "dp", "binary-search" ]
 "target_url": [ "https://beta.atcoder.jp/contests/njpc2017/tasks/njpc2017_f" ]
 ---
+
+# NJPC2017: F - ダブルス
 
 ## solution
 

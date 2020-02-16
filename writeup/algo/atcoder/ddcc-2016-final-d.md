@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/12/06/ddcc-2016-final-d/"
 date: "2016-12-06T13:32:19+09:00"
-title: "DISCO presents ディスカバリーチャンネル コードコンテスト2016 本戦: D - シャツの部屋"
 tags: [ "competitive", "writeup", "ddcc", "atcoder" ]
 "target_url": [ "https://beta.atcoder.jp/contests/ddcc2016-final/tasks/ddcc_2016_final_d" ]
 ---
+
+# DISCO presents ディスカバリーチャンネル コードコンテスト2016 本戦: D - シャツの部屋
 
 私は気付かずだったが、「初日はTシャツを買いにいくためのTシャツがないのでは」「そもそもTシャツは貰うものでは」といった点が指摘されていた。
 

@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/06/22/google-ctf-2017-quals-introspective-crc/"
 date: "2017-06-22T03:01:06+09:00"
-title: "Google Capture The Flag 2017 (Quals): Introspective CRC"
 tags: [ "ctf", "writeup", "crypto", "google-ctf", "crc", "linarity" ]
 ---
+
+# Google Capture The Flag 2017 (Quals): Introspective CRC
 
 ## problem
 

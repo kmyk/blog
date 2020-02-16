@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "ctfを始めてから1か月が経った"
 date: 2016-01-07T02:55:37+09:00
 tags: [ "ctf" ]
 ---
+
+# ctfを始めてから1か月が経った
 
 ので書きました。
 

@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "すごいラムダ計算楽しく学ぼう"
 date: 2014-04-05T20:24:26+09:00
 tags: [ "lambda", "calculus", "function", "ski", "combinator" ]
 ---
+
+# すごいラムダ計算楽しく学ぼう
 
 -   以前挑んだ時は惨敗したが、今回は程よく分かるので楽しい
 -   haskellにとってのlambda計算は、cにとってのbrainf\*ckみたいなものっぽい

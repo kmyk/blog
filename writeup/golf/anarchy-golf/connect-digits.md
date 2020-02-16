@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/06/15/anagol-connect-digits/"
-title: "Anarchy Golf 954. Connect Digits"
 date: 2016-06-15T22:20:15+09:00
 tags: [ "golf", "writeup", "anagol", "anarchy-golf", "sed", "brainfuck", "perl", "c" ]
 "target_url": [ "http://golf.shinh.org/p.rb?Connect+Digits" ]
 ---
+
+# Anarchy Golf 954. Connect Digits
 
 公開直後に縮まなくなるまでやってそのまま忘れていたら、提出した全ての言語で最下位になっていました。悲しい。
 

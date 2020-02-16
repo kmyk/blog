@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Code Festival (2018) Team Relay: J - 健康診断"
 date: 2018-11-21T11:28:54+09:00
 tags: [ "competitive", "writeup", "atcoder", "code-festival", "dp", "cumulative-sum" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf18-relay-open/tasks/relay2018_j" ]
 ---
+
+# Code Festival (2018) Team Relay: J - 健康診断
 
 ## 解法
 

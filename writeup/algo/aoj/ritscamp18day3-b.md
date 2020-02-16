@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/04/02/aoj-ritscamp18day3-b/"
-title: "AOJ RitsCamp18Day3: B. 階層的計算機 (Hierarchical Calculator)"
 date: "2018-04-02T22:46:46+09:00"
 tags: [ "competitive", "writeup", "aoj", "rupc", "greedy" ]
 "target_url": [ "https://onlinejudge.u-aizu.ac.jp/beta/room.html#RitsCamp18Day3/problems/B" ]
 ---
+
+# AOJ RitsCamp18Day3: B. 階層的計算機 (Hierarchical Calculator)
 
 ## solution
 

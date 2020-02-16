@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "radare2 使い方 メモ"
 date: "2018-03-11T18:36:06+09:00"
 tags: [ "ctf", "radare2", "tutorial" ]
 ---
+
+# radare2 使い方 メモ
 
 しばらく触らないと忘れるしググっても節操なく命令を列挙してるだけのなにかしか見付からないので自分で書いた。
 versionは2.4.0。

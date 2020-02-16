@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "brainfuckでquine書いた"
 date: 2014-04-27T18:00:42+09:00
 tags: [ "quine", "brainfuck", "haskell", "esolang", "metaprogramming" ]
 ---
+
+# brainfuckでquine書いた
 
 -   haskellを使って書いた
 -   [solorab/brainfuck-hs](https://github.com/kmyk/brainfuck-hs)

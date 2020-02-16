@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/04/07/arc-094-d/"
-title: "AtCoder Regular Contest 094: D - Worst Case"
 date: "2018-04-07T23:01:44+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "binary-search" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc094/tasks/arc094_b" ]
 ---
+
+# AtCoder Regular Contest 094: D - Worst Case
 
 ## solution
 

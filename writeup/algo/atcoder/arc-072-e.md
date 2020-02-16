@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/10/03/arc-072-e/"
 date: "2017-10-03T04:22:39+09:00"
-title: "AtCoder Regular Contest 072: E - Alice in linear land"
 tags: [ "competitive", "writeup", "atcoder", "arc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc072/tasks/arc072_c" ]
 ---
+
+# AtCoder Regular Contest 072: E - Alice in linear land
 
 ## solution
 

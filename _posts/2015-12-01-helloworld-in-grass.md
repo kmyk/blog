@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "Grassでhelloworldを書いた"
 date: 2015-12-01T00:00:00+09:00
 tags: [ "esolang", "grass", "helloworld", "haskell", "dsl", "lambda-calculus", "golf" ]
 ---
+
+# Grassでhelloworldを書いた
 
 植えました。
 

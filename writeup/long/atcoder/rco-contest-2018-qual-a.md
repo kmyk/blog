@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/02/13/rco-contest-2018-qual-a/"
-title: "第2回 RCO日本橋ハーフマラソン 予選: A - ゲーム実況者Xの挑戦"
 date: "2018-02-13T15:09:43+09:00"
 tags: [ "competitive", "writeup", "atcoder", "rco-contest", "marathon-match", "beam-search" ]
 "target_url": [ "https://rco-contest-2018-qual.contest.atcoder.jp/tasks/rco_contest_2018_qual_a" ]
 ---
+
+# 第2回 RCO日本橋ハーフマラソン 予選: A - ゲーム実況者Xの挑戦
 
 A問題に限れば$1$位だった。全体では$3$位。
 いつもの勝ちパターン「とりあえずで典型を実装したらなぜか$1$位でしかもそのまま逃げ切れてしまう」を引いた。

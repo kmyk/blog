@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/12/11/seccon-2016-online-uncomfortable-web/"
 date: "2016-12-11T22:52:05+09:00"
-title: "SECCON 2016 Online CTF: uncomfortable web"
 tags: [ "ctf", "writeup", "seccon", "web", "sql-injection", "null-byte-attack", "htaccess", "htpasswd", "sqlite" ]
 "target_url": [ "https://score-quals.seccon.jp/question/1707d3814069dec8ca49947830e3a51fdff4714b" ]
 ---
+
+# SECCON 2016 Online CTF: uncomfortable web
 
 本番ではそもそも開かず。生きてるweb問は貴重なので早めに復習。
 

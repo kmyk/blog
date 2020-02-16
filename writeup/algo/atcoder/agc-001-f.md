@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/03/06/agc-001-f/"
-title: "AtCoder Grand Contest 001: F - Wide Swap"
 date: "2018-03-06T01:11:28+09:00"
 tags: [ "competitive", "writeup", "atcoder", "agc", "sort", "bubble-sort", "insertion-sort", "binary-search", "red-black-tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc001/tasks/agc001_f" ]
 ---
+
+# AtCoder Grand Contest 001: F - Wide Swap
 
 ## solution
 

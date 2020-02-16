@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "codeFlyer （bitFlyer Programming Contest）: E - 数式とクエリ"
 date: 2018-07-02T20:13:43+09:00
 tags: [ "competitive", "writeup", "atcoder", "codeflyer", "parsing", "segment-tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/bitflyer2018-final-open/tasks/bitflyer2018_final_e" ]
 ---
+
+# codeFlyer （bitFlyer Programming Contest）: E - 数式とクエリ
 
 ## implementation
 

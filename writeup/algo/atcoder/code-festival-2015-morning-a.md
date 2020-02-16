@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/11/20/code-festival-2015-morning-a/"
-title: "CODE FESTIVAL 2015 朝プロ A - ヘイホー君と加算"
 date: 2015-11-20T00:06:20+09:00
 tags: [ "competitive", "writeup", "codefestival", "atcoder" ]
 ---
+
+# CODE FESTIVAL 2015 朝プロ A - ヘイホー君と加算
 
 EasyのA。本番中は触れていない。
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/09/07/hackerrank-camypapercon02-waiwai-otaku-panic/"
 date: "2016-09-07T00:49:30+09:00"
-title: "HackerRank Saiko~ No Contesuto #02: Waiwai Otaku Panic"
 tags: [ "competitive", "writeup", "hackerrank", "camypapercon", "graph", "flow", "dag", "maximum-flow" ]
 "target_url": [ "https://www.hackerrank.com/contests/camypapercon02/challenges/waiwai-otaku-panic" ]
 ---
+
+# HackerRank Saiko~ No Contesuto #02: Waiwai Otaku Panic
 
 ## solution
 

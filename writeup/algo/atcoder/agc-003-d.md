@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/08/21/agc-003-d/"
 date: "2016-08-21T23:55:23+09:00"
-title: "AtCoder Grand Contest 003 D - Anticube"
 tags: [ "competitive", "writeup", "atcoder", "agc", "boost", "normalization" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc003/tasks/agc003_d" ]
 ---
+
+# AtCoder Grand Contest 003 D - Anticube
 
 素因数分解の指数を$3$で割るぐらいは気付いていたが、正規化は思い付かず。
 

@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/12/10/srm-675-easy/"
-title: "TopCoder SRM 675 Div1 Easy: TreeAndPathLength3"
 date: 2015-12-10T23:20:32+09:00
 tags: [ "competitive", "writeup", "topcoder", "srm", "graph" ]
 ---
+
+# TopCoder SRM 675 Div1 Easy: TreeAndPathLength3
 
 $2\cdot{}\_aC_2$であるところを${}_aC_2$にしてWA。
 紙の上で考えてたときは分かっていたのに、何時の間にか頭から消えてしまっていた。

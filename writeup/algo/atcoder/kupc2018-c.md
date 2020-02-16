@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Kyoto University Programming Contest 2018: C - 七目"
 date: 2018-10-01T01:14:43+09:00
 tags: [ "competitive", "writeup", "atcoder", "kupc", "puzzle", "construction" ]
 "target_url": [ "https://beta.atcoder.jp/contests/kupc2018/tasks/kupc2018_c" ]
 ---
+
+# Kyoto University Programming Contest 2018: C - 七目
 
 ## 解法
 

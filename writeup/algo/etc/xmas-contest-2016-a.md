@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/12/24/xmas-contest-2016-a/"
 date: "2016-12-24T23:33:39+09:00"
-title: "Xmas Contest 2016: A - Array Sum"
 tags: [ "competitive", "writeup", "atcoder", "xmas-contest", "reactive" ]
 "target_url": [ "https://beta.atcoder.jp/contests/xmascon16noon/tasks/xmascon16_a" ]
 ---
+
+# Xmas Contest 2016: A - Array Sum
 
 高難度だった。$1$完。
 

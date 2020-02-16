@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2015/09/10/codeforces-333/"
-title: "Codeforces Round #194 (Div. 1)"
 date: 2015-09-10T22:59:34+09:00
 tags: [ "codeforces", "competitive", "writeup" ]
 "target_url": [ "http://codeforces.com/contest/333" ]
 ---
+
+# Codeforces Round #194 (Div. 1)
 
 茶会。Cは飛ばしたがDが解けたので嬉しい。
 

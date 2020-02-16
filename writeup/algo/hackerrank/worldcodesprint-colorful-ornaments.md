@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/31/hackerrank-worldcodesprint-colorful-ornaments/"
-title: "HackerRank World Codesprint: Alien Flowers"
 date: 2016-01-31T01:43:27+09:00
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint" ]
 ---
+
+# HackerRank World Codesprint: Alien Flowers
 
 ## [Alien Flowers](https://www.hackerrank.com/contests/worldcodesprint/challenges/colorful-ornaments)
 

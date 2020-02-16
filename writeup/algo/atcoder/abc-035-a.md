@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/03/28/abc-035-a/"
-title: "AtCoder Regular Contest 035 A - テレビ"
 date: 2016-03-28T00:01:36+09:00
 tags: [ "competitive", "writeup", "atcoder", "abc", "brainfuck" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc035/tasks/abc035_a" ]
 ---
+
+# AtCoder Regular Contest 035 A - テレビ
 
 wrap-aroundが禁止されてるつもりで書いていたが、途中でそうでないことに気付いた。
 結果、portableでもなければ簡潔でもない、何がしたいのかまったく分からない汚い実装が出現した。

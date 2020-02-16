@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "brainfuck処理系を1行のpythonで書く"
 date: 2015-02-24T18:03:42+09:00
 tags: [ "python", "python3", "brainfuck", "oneliner", "lambda" ]
 ---
+
+# brainfuck処理系を1行のpythonで書く
 
 pythonの哲学は`there's only one way to do it`らしいですね。`only one way`だとか言われると`alternative way`を探したくなりますね。探しました。
 

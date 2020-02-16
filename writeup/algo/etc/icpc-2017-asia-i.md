@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2017/12/19/icpc-2017-asia-i/"
-title: "AOJ 1386 / ACM-ICPC 2017 Asia Tsukuba Regional Contest: I. Starting a Scenic Railroad Service"
 date: "2017-12-19T03:49:25+09:00"
 tags: [ "competitive", "writeup", "icpc", "icpc-asia", "segment-tree", "range-sum-query", "imos", "scheduling" ]
 ---
+
+# AOJ 1386 / ACM-ICPC 2017 Asia Tsukuba Regional Contest: I. Starting a Scenic Railroad Service
 
 -   <http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1386>
 -   <http://judge.u-aizu.ac.jp/onlinejudge/cdescription.jsp?cid=ICPCOOC2017&pid=I>

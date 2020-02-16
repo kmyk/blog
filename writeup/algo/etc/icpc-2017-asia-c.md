@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2017/12/19/icpc-2017-asia-c/"
-title: "AOJ 1380 / ACM-ICPC 2017 Asia Tsukuba Regional Contest: C. Medical Checkup"
 date: "2017-12-19T03:49:16+09:00"
 tags: [ "competitive", "writeup", "icpc", "icpc-asia" ]
 ---
+
+# AOJ 1380 / ACM-ICPC 2017 Asia Tsukuba Regional Contest: C. Medical Checkup
 
 -   <http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1380>
 -   <http://judge.u-aizu.ac.jp/onlinejudge/cdescription.jsp?cid=ICPCOOC2017&pid=C>

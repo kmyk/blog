@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/01/17/dwacon-2017-finals-d/"
 date: "2017-01-17T06:26:30+09:00"
-title: "第3回 ドワンゴからの挑戦状 本選: D - 「ドワンゴからの挑戦状」製作秘話"
 tags: [ "competitive", "writeup", "dwacon", "atcoder", "segment-tree", "lazy-propagation" ]
 "target_url": [ "https://beta.atcoder.jp/contests/dwacon2017-honsen/tasks/dwango2017final_d" ]
 ---
+
+# 第3回 ドワンゴからの挑戦状 本選: D - 「ドワンゴからの挑戦状」製作秘話
 
 ## solution
 

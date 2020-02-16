@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2016/12/30/33c3-ctf-pay2win/"
 date: "2016-12-30T13:39:33+09:00"
-title: "33C3 CTF: pay2win"
 tags: [ "ctf", "writeup", "web", "33c3-ctf" ]
 ---
+
+# 33C3 CTF: pay2win
 
 SECCON本戦に向けてweb問中心に解いていた。まだwebは初心者なので経験値と能力の効率がよく、pwnを頑張るより効率がよいという判断。
 

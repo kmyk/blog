@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/12/09/twctf-2016-greeting/"
 date: "2016-12-09T18:17:13+09:00"
-title: "Tokyo Westerns/MMA CTF 2nd 2016: greeting"
 tags: [ "ctf", "writeup", "pwn", "twctf", "format-string-attack", "destructor", "got-overwrite" ]
 "target_url": [ "https://ctftime.org/task/2735" ]
 ---
+
+# Tokyo Westerns/MMA CTF 2nd 2016: greeting
 
 bataさんリストの先頭にあったのでpwn会でやった。これぐらいの難しさはbabyでなくてeasyじゃなかったっけか。
 

@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "技術室奥プログラミングコンテスト #3: F - 天使とふすま"
 date: 2018-08-02T08:36:32+09:00
 tags: [ "competitive", "writeup", "atcoder", "tkppc", "greedy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/tkppc3/tasks/tkppc3_f" ]
 ---
+
+# 技術室奥プログラミングコンテスト #3: F - 天使とふすま
 
 ## solution
 

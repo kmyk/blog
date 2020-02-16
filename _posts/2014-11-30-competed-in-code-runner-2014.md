@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "CODE RUNNER 2014 参加記"
 date: 2014-11-30T23:07:31+09:00
 tags: [ "coderunner", "report", "competitive" ]
 ---
+
+# CODE RUNNER 2014 参加記
 
 <https://coderunner.jp>
 

@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/07/20/arc-077-e/"
-title: "AtCoder Regular Contest 077: E - guruguru"
 date: "2017-07-20T03:11:58+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "imos" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc077/tasks/arc077_c" ]
 ---
+
+# AtCoder Regular Contest 077: E - guruguru
 
 ## solution
 

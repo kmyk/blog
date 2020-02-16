@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/08/defcon-qualifier-ctf-2015-babyecho/"
-title: "DEF CON Qualifier 2015: babyecho"
 date: 2016-01-08T02:18:11+09:00
 tags: [ "ctf", "pwn", "writeup", "format-string-attack", "shellcode" ]
 ---
+
+# DEF CON Qualifier 2015: babyecho
 
 ## [Baby's First 1: babyecho](https://github.com/ctfs/write-ups-2015/tree/master/defcon-qualifier-ctf-2015/babys-first/babyecho)
 

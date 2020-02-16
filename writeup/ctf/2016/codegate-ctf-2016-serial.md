@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/10/23/codegate-ctf-2016-serial/"
 date: "2016-10-23T00:50:29+09:00"
-title: "Codegate CTF 2016 : serial"
 tags: [ "ctf", "codegate-ctf", "pwn", "angr" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2016/tree/master/codegate-ctf-2016/pwn/serial-444" ]
 ---
+
+# Codegate CTF 2016 : serial
 
 ## problem
 

@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/20/srm-679-easy/"
-title: "TopCoder SRM 679 div1 Easy: FiringEmployees"
 date: 2016-01-20T23:42:10+09:00
 tags: [ "competitive", "writeup", "topcoder", "srm", "tree", "dp", "greedy" ]
 ---
+
+# TopCoder SRM 679 div1 Easy: FiringEmployees
 
 ## [FiringEmployees]()
 

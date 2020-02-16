@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/14/arc-053-c/"
-title: "AtCoder Regular Contest 053 C - 魔法使い高橋君"
 date: 2016-05-14T23:03:04+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "greedy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc053/tasks/arc053_c" ]
 ---
+
+# AtCoder Regular Contest 053 C - 魔法使い高橋君
 
 貪欲は(他と比べて)得意という感がある。
 

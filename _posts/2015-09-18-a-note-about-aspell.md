@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "aspell 覚書"
 date: 2015-09-18T01:52:10+09:00
 tags: [ "aspell", "command" ]
 ---
+
+# aspell 覚書
 
 ## aspell(1): interactive spell checker
 
@@ -48,5 +49,7 @@ $ aspell --mode=tex list < foo.tex
 Makefileにでも置いておくとよいでしょう。
 
 ---
+
+# aspell 覚書
 
 この記事は <del> 先日英語で発表したとき前日の夜に修正した部分でtypoしてaspell掛けずにそのまま使っちゃったのを反省し、 </del> Makefile内で自動で確認させたくて調べたので書きました。

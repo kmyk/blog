@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/04/30/arc-052-a/"
-title: "AtCoder Regular Contest 052 A - 何期生？"
 date: 2016-04-30T21:54:52+09:00
 tags: [ "competitive", "writeup", "atcoder", "brainfuck", "golf" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc052/tasks/arc052_a" ]
 ---
+
+# AtCoder Regular Contest 052 A - 何期生？
 
 `+[-[ foo ],----------]`の形式を偶然思い付いて(あるいは思い出して)、これは良いidiomだなと思ってたが、結局は不要だった。
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/08/27/icectf-2016-stage3/"
 date: "2016-08-27T01:22:15+09:00"
-title: "IceCTF 2016: stage3"
 tags: [ "ctf", "writeup", "icectf" ]
 "target_url": [ "https://icec.tf/" ]
 ---
+
+# IceCTF 2016: stage3
 
 ## Corrupt Transmission
 

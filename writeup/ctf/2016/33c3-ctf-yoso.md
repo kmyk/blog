@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2016/12/30/33c3-ctf-yoso/"
 date: "2016-12-30T13:39:40+09:00"
-title: "33C3 CTF: yoso"
 tags: [ "ctf", "writeup", "web", "33c3-ctf", "javascript", "xss", "session-hijack", "csrf", "csrf-token" ]
 ---
+
+# 33C3 CTF: yoso
 
 深夜まで必死で粘ってなんとか倒した。達成感があった。
 

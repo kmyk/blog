@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/03/30/arc-048-b/"
-title: "AtCoder Regular Contest 048 B - AtCoderでじゃんけんを"
 date: 2016-03-30T14:55:13+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc048/tasks/arc048_b" ]
 ---
+
+# AtCoder Regular Contest 048 B - AtCoderでじゃんけんを
 
 pythonで書いたらTLE。
 通している人もいるので定数倍の改善をすればよさそうだが、面倒なのでc++へ。

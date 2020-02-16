@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/20/arc-052-c/"
-title: "AtCoder Regular Contest 052 C - 高橋くんと不思議な道"
 date: 2016-05-20T21:56:25+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "dijkstra" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc052/tasks/arc052_c" ]
 ---
+
+# AtCoder Regular Contest 052 C - 高橋くんと不思議な道
 
 ## solution
 

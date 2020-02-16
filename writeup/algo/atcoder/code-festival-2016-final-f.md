@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/12/24/code-festival-2016-final-f/"
 date: "2016-12-24T21:02:34+09:00"
-title: "CODE FESTIVAL 2016 Final: F - Road of the King"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "dp", "graph" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf16-final-open/tasks/codefestival_2016_final_f" ]
 ---
+
+# CODE FESTIVAL 2016 Final: F - Road of the King
 
 $1000$点のわりに苦労なく解けた。
 本番で触らなかったのが悔やまれる。

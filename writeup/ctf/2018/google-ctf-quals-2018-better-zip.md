@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Google Capture The Flag 2018 (Quals): better zip"
 date: "2018-06-25T11:39+09:00"
 tags: [ "ctf", "writeup", "google-ctf", "crypto", "lfsr", "bruteforce" ]
 "target_url": [ "https://ctftime.org/event/623" ]
 ---
+
+# Google Capture The Flag 2018 (Quals): better zip
 
 <!-- {% raw %} -->
 
@@ -273,6 +274,8 @@ int main() {
 ```
 
 ---
+
+# Google Capture The Flag 2018 (Quals): better zip
 
 -   修正: 2018年  6月 27日 水曜日 10:54:52 JST
     -   PNGのmagicが `\x89PNG\r\n\r\n` になってた部分を修正。 実装に影響はない。 `\x89PNG\r\n\x1a\n` が正解

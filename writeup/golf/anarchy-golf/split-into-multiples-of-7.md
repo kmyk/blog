@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/03/17/anagol-split-into-multiples-of-7/"
-title: "Anarchy Golf 944. Split into multiples of 7"
 date: 2016-03-17T17:53:04+09:00
 tags: [ "writeup", "golf", "anarchy-golf", "ruby", "perl", "brainfuck", "sed", "regex" ]
 ---
+
+# Anarchy Golf 944. Split into multiples of 7
 
 ## [Split into multiples of 7](http://golf.shinh.org/p.rb?Split+into+multiples+of+7)
 

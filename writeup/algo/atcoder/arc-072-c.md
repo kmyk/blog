@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/10/03/arc-072-c/"
 date: "2017-10-03T04:22:36+09:00"
-title: "AtCoder Regular Contest 072: C - Sequence"
 tags: [ "competitive", "writeup", "atcoder", "arc", "greedy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc072/tasks/arc072_a" ]
 ---
+
+# AtCoder Regular Contest 072: C - Sequence
 
 ## solution
 

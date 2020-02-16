@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/09/26/codefestival-quala/"
-title: "CODE FESTIVAL 2015 予選A"
 date: 2015-09-26T23:11:00+09:00
 tags: [ "codefestival", "competitive", "atcoder", "writeup" ]
 ---
+
+# CODE FESTIVAL 2015 予選A
 
 残り1分切ってからやっと全完。
 モーダル閉じたときはlast ACだったけど、十分時間開けて次見たときには残り10秒で提出してる猛者がいた。
@@ -134,6 +135,8 @@ int main() {
 ```
 
 ---
+
+# CODE FESTIVAL 2015 予選A
 
 -   Wed Sep 30 00:04:56 JST 2015
     -   結果報告

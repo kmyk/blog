@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/04/05/abc-052-a/"
 date: "2017-04-05T16:29:17+09:00"
-title: "AtCoder Beginner Contest 052: A - Two Rectangles"
 tags: [ "competitive", "writeup", "atcoder", "abc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc052/tasks/abc052_a" ]
 ---
+
+# AtCoder Beginner Contest 052: A - Two Rectangles
 
 ``` sml
 fun solve a b c d =

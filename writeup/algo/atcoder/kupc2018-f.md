@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Kyoto University Programming Contest 2018: F - カード集め"
 date: 2018-10-05T04:55:07+09:00
 tags: [ "competitive", "writeup", "atcoder", "kupc", "graph", "game", "greedy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/kupc2018/tasks/kupc2018_f" ]
 ---
+
+# Kyoto University Programming Contest 2018: F - カード集め
 
 ## 解法
 

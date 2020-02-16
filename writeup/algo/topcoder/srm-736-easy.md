@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "TopCoder SRM 736 Div1 Easy: DigitRotation"
 date: 2018-08-16T02:18:40+09:00
 tags: [ "competitive", "writeup", "topcoder", "srm", "modulo" ]
 ---
+
+# TopCoder SRM 736 Div1 Easy: DigitRotation
 
 ## solution
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/10/03/agc-013-c/"
 date: "2017-10-03T04:55:46+09:00"
-title: "AtCoder Grand Contest 013: C - Ants on a Circle"
 tags: [ "competitive", "writeup", "atcoder", "agc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc013/tasks/agc013_c" ]
 ---
+
+# AtCoder Grand Contest 013: C - Ants on a Circle
 
 後輩に「おすすめの問題ある？」と聞いたら出てきたやつ。
 $700$点にしてはつらかった。

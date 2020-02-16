@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "ACM-ICPC 2018 国内予選: E. 浮動小数点数"
 date: 2018-07-10T13:05:00+09:00
 tags: [ "competitive", "writeup", "icpc", "floating-point-numbers", "binary-search" ]
 "target_url": [ "http://icpc.iisf.or.jp/past-icpc/domestic2018/contest/all_ja.html", "http://icpc.iisf.or.jp/past-icpc/domestic2018/judgedata/E/" ]
 ---
+
+# ACM-ICPC 2018 国内予選: E. 浮動小数点数
 
 ## solution
 

@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2017/12/19/icpc-2017-asia-e/"
-title: "AOJ 1382 / ACM-ICPC 2017 Asia Tsukuba Regional Contest: E. Black or White"
 date: "2017-12-19T03:49:19+09:00"
 tags: [ "competitive", "writeup", "icpc", "icpc-asia", "range-min-query" ]
 ---
+
+# AOJ 1382 / ACM-ICPC 2017 Asia Tsukuba Regional Contest: E. Black or White
 
 -   <http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1382>
 -   <http://judge.u-aizu.ac.jp/onlinejudge/cdescription.jsp?cid=ICPCOOC2017&pid=E>

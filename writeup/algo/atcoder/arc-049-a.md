@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/03/19/arc-049-a/"
-title: "AtCoder Regular Contest 049 A - \"強調\""
 date: 2016-03-19T23:37:20+09:00
 tags: [ "competitive", "writeup", "atcoder", "brainfuck" ]
 ---
+
+# AtCoder Regular Contest 049 A - \"強調\"
 
 atcoder、brainfuckを導入。
 

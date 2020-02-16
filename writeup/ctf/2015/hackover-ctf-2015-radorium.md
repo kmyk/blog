@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/11/17/hackover-ctf-2015-radorium/"
 date: "2016-11-17T05:47:32+09:00"
-title: "Hackover CTF 2015: radorium"
 tags: [ "ctf", "writeup", "hackover-ctf", "crypto", "ssh", "rsa", "gcd" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2015/tree/master/hackover-ctf-2015/crypto/radorium" ]
 ---
+
+# Hackover CTF 2015: radorium
 
 sshの公開鍵がたくさん与えられるので、秘密鍵を作る問題。
 gcdを取ってみれば互いに素でない組が見つかる。

@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/04/18/plaidctf-2016-butterfly/"
-title: "PlaidCTF 2016 butterfly"
 date: 2016-04-18T06:00:01+09:00
 tags: [ "ctf", "pwn", "writeup", "plaidctf", "mprotect" ]
 ---
+
+# PlaidCTF 2016 butterfly
 
 I like this problem, but this is a little easy.
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/01/31/anagol-implement-ministringfuck/"
 date: "2017-01-31T22:27:35+09:00"
-title: "Anarchy Golf: 999. Implement MiniStringFuck"
 tags: [ "golf", "writeup", "anagol", "anarchy-golf", "brainfuck", "sed" ]
 "target_url": [ "http://golf.shinh.org/p.rb?Implement+MiniStringFuck" ]
 ---
+
+# Anarchy Golf: 999. Implement MiniStringFuck
 
 もはや見慣れたよくあるコードという感じがあるけれど、それでも自己書き換えは好きです。
 

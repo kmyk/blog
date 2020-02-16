@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 065: F - シャッフル / Shuffling"
 date: 2018-09-25T01:10:19+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc065/tasks/arc065_d" ]
 ---
+
+# AtCoder Regular Contest 065: F - シャッフル / Shuffling
 
 ## 解法
 

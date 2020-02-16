@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/03/06/pragyanctf-2017-supreme-leader/"
 date: "2017-03-06T00:03:07+09:00"
-title: "Pragyan CTF 2017: Supreme Leader"
 tags: [ "ctf", "pragyan-ctf", "guessing" ]
 ---
+
+# Pragyan CTF 2017: Supreme Leader
 
 ``` sh
 $ curl -v http://139.59.62.216/supreme_leader/

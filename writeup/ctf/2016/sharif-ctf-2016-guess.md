@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2016/12/19/sharif-ctf-2016-guess/"
 date: "2016-12-19T23:44:15+09:00"
-title: "Sharif CTF 2016: Guess"
 tags: [ "ctf", "writeup", "pwn", "sharif-ctf", "format-string-attack" ]
 ---
+
+# Sharif CTF 2016: Guess
 
 Sharif CTFは特に暗号問が良かったのですが、私には$1$問も解けませんでした。
 pwnはこの問題を含めblind FSAが$3$問出て、悪くはないけどつらかった。

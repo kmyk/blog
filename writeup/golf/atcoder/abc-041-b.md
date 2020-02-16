@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/07/04/abc-041-b/"
 date: "2016-07-04T04:49:53+09:00"
-title: "AtCoder Beginner Contest 041 B - 直方体"
 tags: [ "competitive", "writeup", "atcoder", "abc", "golf", "ruby" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc041/submissions/790843" ]
 ---
+
+# AtCoder Beginner Contest 041 B - 直方体
 
 ## implementation
 

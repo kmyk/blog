@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/31/arc-012-d/"
-title: "AtCoder Regular Contest 012 D - Don't worry. Be Together"
 date: 2016-05-31T22:08:49+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "prime", "combination" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc012/tasks/arc012_4" ]
 ---
+
+# AtCoder Regular Contest 012 D - Don't worry. Be Together
 
 $\Sigma$外すのも合成数への対処も解説を見ました。
 

@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/01/01/agc-007-c/"
-title: "AtCoder Grand Contest 007: C - Pushing Balls"
 date: "2018-01-01T16:09:17+09:00"
 tags: [ "competitive", "writeup", "atcoder", "agc", "expected-value", "probability" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc007/tasks/agc007_c" ]
 ---
+
+# AtCoder Grand Contest 007: C - Pushing Balls
 
 分からなかった。Cの中では難しめに見える。
 [editorial](http://agc007.contest.atcoder.jp/data/agc/007/editorial.pdf)は正直何を言っているのか分からないが、[解説放送](https://www.youtube.com/watch?v=6ZP8JyGsQBs)は分かりやすかったのでこちらを見よう。

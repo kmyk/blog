@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/12/31/arc-051-d/"
-title: "AtCoder Regular Contest 051: D - 長方形"
 date: "2017-12-31T22:26:21+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "lie", "optimization" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc051/tasks/arc051_d" ]
 ---
+
+# AtCoder Regular Contest 051: D - 長方形
 
 ## solution
 

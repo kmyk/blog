@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/12/31/utpc-2012-c/"
-title: "東京大学プログラミングコンテスト2012: C - 森ですか？"
 date: "2017-12-31T17:55:51+09:00"
 tags: [ "competitive", "writeup", "utpc", "atcoder", "graph", "complete-graph", "forest" ]
 "target_url": [ "https://beta.atcoder.jp/contests/utpc2012/tasks/utpc2012_03" ]
 ---
+
+# 東京大学プログラミングコンテスト2012: C - 森ですか？
 
 ## solution
 

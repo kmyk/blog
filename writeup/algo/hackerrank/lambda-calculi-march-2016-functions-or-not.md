@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/03/28/hackerrank-lambda-calculi-march-2016-functions-or-not/"
-title: "Lambda Calculi - March 2016: Functions or Not?"
 date: 2016-03-28T15:25:59+09:00
 tags: [ "competitive", "writeup", "hackerrank", "lambda-calculi", "haskell" ]
 "target_url": [ "https://www.hackerrank.com/contests/lambda-calculi-march-2016/challenges/functions-or-not" ]
 ---
+
+# Lambda Calculi - March 2016: Functions or Not?
 
 問題文が不十分。サンプルまで見ればなんとか察することはできる。
 

@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2016-12-10T09:22:36+09:00"
-title: "CODE VS for STUDENT 2016: 提出AI 解説"
 tags: [ "competitive", "codevs", "marathon-match", "game", "beam-search", "chokudai-search" ]
 ---
+
+# CODE VS for STUDENT 2016: 提出AI 解説
 
 <https://student.codevs.jp>
 
@@ -12,6 +13,8 @@ tags: [ "competitive", "codevs", "marathon-match", "game", "beam-search", "choku
 -   最終提出したバイナリも置いておいた: <https://github.com/kmyk/codevs-for-student-2016/blob/master/history/final.out>
 
 ---
+
+# CODE VS for STUDENT 2016: 提出AI 解説
 
 -   探索<sup>[source](https://github.com/kmyk/codevs-for-student-2016/blob/ce1466ade2c0734f0e50b8e49bc84be61a92f5b7/Main.cpp#L974)</sup>はビームサーチ
     -   特にbeam stack search (通称chokudai search)にした<sup>[source](https://github.com/kmyk/codevs-for-student-2016/blob/ce1466ade2c0734f0e50b8e49bc84be61a92f5b7/Main.cpp#L764)</sup>

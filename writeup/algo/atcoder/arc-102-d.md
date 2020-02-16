@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 102: D - All Your Paths are Different Lengths"
 date: 2018-09-01T22:57:50+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "construction" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc102/tasks/arc102_b" ]
 ---
+
+# AtCoder Regular Contest 102: D - All Your Paths are Different Lengths
 
 ## 解法
 

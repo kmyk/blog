@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Google Code Jam Kickstart Round G 2018: B. Combining Classes"
 date: 2018-10-25T15:47:36+09:00
 tags: [ "competitive", "writeup", "gcj", "kickstart", "imos", "segment-tree" ]
 "target_url": [ "https://codejam.withgoogle.com/codejam/contest/5374486/dashboard#s=p1" ]
 ---
+
+# Google Code Jam Kickstart Round G 2018: B. Combining Classes
 
 ## 問題
 

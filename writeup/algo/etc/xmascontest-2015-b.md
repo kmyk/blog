@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/12/24/xmascontest-2015-b/"
-title: "Xmas Contest 2015 B - Broken Christmas Tree"
 date: 2015-12-24T22:55:20+09:00
 tags: [ "competitive", "writeup", "atcoder", "dfs" ]
 ---
+
+# Xmas Contest 2015 B - Broken Christmas Tree
 
 ## [B - Broken Christmas Tree](https://beta.atcoder.jp/contests/xmascontest2015/tasks/xmascontest2015_b) {#b}
 

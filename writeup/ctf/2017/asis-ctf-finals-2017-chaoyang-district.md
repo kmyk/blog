@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2017/09/11/asis-ctf-finals-2017-chaoyang-district/"
-title: "ASIS CTF Finals 2017: Chaoyang District"
 date: "2017-09-11T08:09:47+09:00"
 tags: [ "ctf", "writeup", "ppc", "asis-ctf", "othello" ]
 ---
+
+# ASIS CTF Finals 2017: Chaoyang District
 
 ## problem
 

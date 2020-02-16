@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2018/02/21/srm-730-easy/"
-title: "TopCoder SRM 730 Div 1 Easy. StonesOnATree"
 date: "2018-02-21T13:52:56+09:00"
 tags: [ "competitive", "writeup", "topcoder", "srm", "tree", "dp" ]
 ---
+
+# TopCoder SRM 730 Div 1 Easy. StonesOnATree
 
 ## problem
 

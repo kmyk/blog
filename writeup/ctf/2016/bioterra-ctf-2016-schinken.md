@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2016/08/22/bioterra-ctf-2016-schinken/"
 date: "2016-08-22T11:47:57+09:00"
-title: "BioTerra CTF 2016: Schinken"
 tags: [ "ctf", "writeup", "bioterra-ctf", "xor", "crypto" ]
 ---
+
+# BioTerra CTF 2016: Schinken
 
 The service encrypts a string with a password, into a pdf file (or the tex).
 You can notice that the letters of Lerem-ipsum have different fonts.

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/08/09/agc-016-b/"
 date: "2017-08-09T22:21:12+09:00"
-title: "AtCoder Grand Contest 016: B - Colorful Hats"
 tags: [ "competitive", "writeup", "atcoder", "agc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc016/tasks/agc016_b" ]
 ---
+
+# AtCoder Grand Contest 016: B - Colorful Hats
 
 丁寧さが必要。
 

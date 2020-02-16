@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "目標と契約"
 date: 2014-03-28T23:20:46+09:00
 tags: [ "contract", "goal" ]
 ---
+
+# 目標と契約
 
 もう(すぐ)春ですが、私はコミュ症です
 

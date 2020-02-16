@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/30/dcj-2016-round1-b/"
-title: "Google Code Jam 2016 Distributed Round 1 B. oops"
 date: 2016-05-30T02:57:03+09:00
 tags: [ "competitive", "writeup", "dcj", "distributed-code-jam" ]
 "target_url": [ "https://code.google.com/codejam/contest/11264486/dashboard#s=p1" ]
 ---
+
+# Google Code Jam 2016 Distributed Round 1 B. oops
 
 I've got MLE.
 So I couldn't advance the round 2. If there was a practice round or I joined the last year's one, I could...

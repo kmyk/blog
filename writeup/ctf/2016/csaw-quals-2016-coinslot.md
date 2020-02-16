@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2016/09/19/csaw-quals-2016-coinslot/"
 date: "2016-09-19T22:08:49+09:00"
-title: "CSAW Quals CTF 2016: Coinslot"
 tags: [ "ctf", "writeup", "csaw-ctf", "misc" ]
 ---
+
+# CSAW Quals CTF 2016: Coinslot
 
 金額を紙幣/硬貨で分解するやつ。
 実装するだけで面白くないし解かなくてもよくない？みたいな気分はあったが、すぐなので解いておいた。

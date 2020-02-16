@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/12/19/srm-676-med/"
-title: "TopCoder SRM 676 Div1 Medium: BoardEscape"
 date: 2015-12-19T02:32:14+09:00
 tags: [ "competitive", "writeup", "srm", "nim", "grundy" ]
 ---
+
+# TopCoder SRM 676 Div1 Medium: BoardEscape
 
 ## [Medium: BoardEscape]()
 

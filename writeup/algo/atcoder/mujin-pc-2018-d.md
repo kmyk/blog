@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Mujin Programming Challenge 2018: D - うほょじご"
 date: 2018-08-05T00:48:41+09:00
 tags: [ "competitive", "writeup", "atcoder", "mujin-pc", "dfs" ]
 "target_url": [ "https://beta.atcoder.jp/contests/mujin-pc-2018/tasks/mujin_pc_2018_d" ]
 ---
+
+# Mujin Programming Challenge 2018: D - うほょじご
 
 ## solution
 

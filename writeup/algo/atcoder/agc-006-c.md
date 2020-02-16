@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/10/29/agc-006-c/"
 date: "2016-10-29T23:35:15+09:00"
-title: "AtCoder Grand Contest 006: C - Rabbit Exercise"
 tags: [ "competitive", "writeup", "atcoder", "agc", "doubling", "difference" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc006/tasks/agc006_c" ]
 ---
+
+# AtCoder Grand Contest 006: C - Rabbit Exercise
 
 C openして無提出 零完。
 周期性(周期の上限が指数になりそう)や行列累乗($O(N^3(M + \log K))$)まで考えていたが、差分は予想外だった。

@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "天下一プログラマーコンテスト2016予選A: E - 無限グラフ"
 date: 2018-07-09T04:05:53+09:00
 tags: [ "competitive", "writeup", "atcoder", "tenka1", "graph", "infinite-graph" ]
 "target_url": [ "https://beta.atcoder.jp/contests/tenka1-2016-quala/tasks/tenka1_2016_qualA_e" ]
 ---
+
+# 天下一プログラマーコンテスト2016予選A: E - 無限グラフ
 
 ## note
 

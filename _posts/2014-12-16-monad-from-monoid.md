@@ -1,11 +1,12 @@
 ---
 category: blog
 layout: post
-title: "MonoidからMonadを作る"
 date: 2014-12-16T22:40:43+09:00
 tags: [ "haskell", "monoid", "monad", "category-theory" ]
 math: true
 ---
+
+# MonoidからMonadを作る
 
 ``` haskell
 import Data.Monoid

@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 084: F - XorShift"
 date: 2018-08-22T18:17:46+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "algebra", "ideal", "polynomial", "gcd", "dp", "digit-dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc084/tasks/arc084_d" ]
 ---
+
+# AtCoder Regular Contest 084: F - XorShift
 
 ## solution
 

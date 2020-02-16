@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/02/14/yahoo-procon2018-qual-c/"
-title: "「みんなのプロコン 2018」: C - 駆引取引"
 date: "2018-02-14T20:15:26+09:00"
 tags: [ "competitive", "writeup", "atcoder", "yahoo-procon", "dp", "bit-dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/yahoo-procon2018-qual/tasks/yahoo_procon2018_qual_c" ]
 ---
+
+# 「みんなのプロコン 2018」: C - 駆引取引
 
 勘違いにより時間が溶けた。
 

@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/14/arc-053-b/"
-title: "AtCoder Regular Contest 053 B - 回文分割"
 date: 2016-05-14T23:02:59+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc053/tasks/arc053_b" ]
 ---
+
+# AtCoder Regular Contest 053 B - 回文分割
 
 致命的な勘違いにより解けず。形式化のしすぎ。
 

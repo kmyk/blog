@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/11/21/abc-031-a/"
-title: "AtCoder Beginner Contest 031 A - ゲーム"
 date: 2015-11-21T23:09:34+09:00
 tags: [ "competitive", "writeup", "atcoder", "abc", "befunge" ]
 ---
+
+# AtCoder Beginner Contest 031 A - ゲーム
 
 brainfuckじゃ少し面倒そうだったからbefungeを選んで書いたが、末尾に空白入れるとだめとか言われてしまった。桁毎に出力する部分を書いたが、単にバグらせたり、自前処理系のバグを掘り出したりして、かなり時間がかかってしまった。2行目以降は全て出力のための処理です。
 

@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/02/21/ed-ctf-my-sandbox/"
-title: "ED CTF my\_sandbox"
 date: 2016-02-21T09:44:29+09:00
 tags: [ "ctf", "writeup", "pwn", "ed-ctf", "format-string-attack", "heap" ]
 ---
+
+# ED CTF my\_sandbox
 
 <https://www.dropbox.com/sh/74yf95b0u6gsbkm/AACb2UoOuLUW71dGSid8zOwha/My%20Sandbox>
 

@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/01/01/utpc-2012-i/"
-title: "東京大学プログラミングコンテスト2012: I - 最短路クエリ"
 date: "2018-01-01T10:51:21+09:00"
 tags: [ "competitive", "writeup", "utpc", "atcoder", "shortest-path", "dijkstra", "divide-and-conquer" ]
 "target_url": [ "https://beta.atcoder.jp/contests/utpc2012/tasks/utpc2012_09" ]
 ---
+
+# 東京大学プログラミングコンテスト2012: I - 最短路クエリ
 
 ## 反省
 

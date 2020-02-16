@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/26/arc-054-c/"
-title: "AtCoder Regular Contest 054 C - 鯛焼き"
 date: 2016-05-26T00:12:57+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "matrix", "determinant", "permanent" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc054/tasks/arc054_c" ]
 ---
+
+# AtCoder Regular Contest 054 C - 鯛焼き
 
 検索力と数学力が必要。
 
@@ -77,6 +78,8 @@ int main() {
 ```
 
 ---
+
+# AtCoder Regular Contest 054 C - 鯛焼き
 
 [^1]: <http://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/pdf/1799-01.pdf>
 [^2]: <https://en.wikipedia.org/wiki/Permanent>

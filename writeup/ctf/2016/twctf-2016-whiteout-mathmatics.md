@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/09/05/twctf-2016-whiteout-mathmatics/"
 date: "2016-09-05T13:25:34+09:00"
-title: "Tokyo Westerns/MMA CTF 2nd 2016: Whiteout Mathmatics"
 tags: [ "ctf", "writeup", "ppc", "mmactf", "twctf", "esolang", "whitespace" ]
 "target_url": [ "https://score.ctf.westerns.tokyo/problems/35" ]
 ---
+
+# Tokyo Westerns/MMA CTF 2nd 2016: Whiteout Mathmatics
 
 <!-- {% raw %} -->
 

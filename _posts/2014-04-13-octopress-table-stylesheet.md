@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "octopressのtableのstylesheet設定した"
 date: 2014-04-13T16:19:23+09:00
 tags: [ "octopress", "blog", "table", "stylesheet", "css", "scss" ]
 ---
+
+# octopressのtableのstylesheet設定した
 
 [Octopress Table Stylesheet - Junda Ong](http://samwize.com/2012/09/24/octopress-table-stylesheet/)のを加工&配置のmemo
 

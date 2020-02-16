@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/15/arc-052-b/"
-title: "AtCoder Regular Contest 052 B - 円錐"
 date: 2016-05-15T06:32:02+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc052/tasks/arc052_b" ]
 ---
+
+# AtCoder Regular Contest 052 B - 円錐
 
 ## solution
 

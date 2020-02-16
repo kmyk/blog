@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "How to execute Bash on Brainfuck on Anarchy Golf"
 date: 2016-04-01T07:37:20+09:00
 tags: [ "pwn", "golf", "brainfuck", "esolang" ]
 ---
+
+# How to execute Bash on Brainfuck on Anarchy Golf
 
 Brainfuck is Turing-complete.[^1][^2]
 
@@ -244,10 +245,14 @@ That's all. The rest is only writing brainfuck. It's easy. Try!
 
 ---
 
+# How to execute Bash on Brainfuck on Anarchy Golf
+
 -   Fri Apr  1 21:03:18 JST 2016
     -   added a little
 
 ---
+
+# How to execute Bash on Brainfuck on Anarchy Golf
 
 [^1]: As you know, the Turing-completeness has nothing to do with this exploitation.
 [^2]: This article is written in English[^3], because some of those who I want to be read by are not Japanese.

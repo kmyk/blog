@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "haskellのlensの使い方 (やばめ)"
 date: 2014-12-14T00:00:00+09:00
 tags: [ "haskell", "lens" ]
 ---
+
+# haskellのlensの使い方 (やばめ)
 
 `Traversal`,`Fold`,`MonadicFold`,`Action`に関して
 
@@ -40,6 +41,8 @@ view :: Monoid m => Fold s m -> s -> m
 -   `base-4.7.0.1`
 
 ---
+
+# haskellのlensの使い方 (やばめ)
 
 -   Sun Jun 21 01:52:37 JST 2015
     -   もっと詳しく書きたす予定だったけど、たぶんその機会はないので修正

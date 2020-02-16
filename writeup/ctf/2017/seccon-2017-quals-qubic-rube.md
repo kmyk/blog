@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/12/10/seccon-2017-quals-qubic-rube/"
-title: "SECCON 2017 Online CTF: Qubic Rube"
 date: "2017-12-10T15:18:17+09:00"
 tags: [ "ctf", "writeup", "seccon", "seccon-quals", "ppc", "pillow", "qr-code", "implementation" ]
 "target_url": [ "https://ctftime.org/event/512/" ]
 ---
+
+# SECCON 2017 Online CTF: Qubic Rube
 
 ## problem
 

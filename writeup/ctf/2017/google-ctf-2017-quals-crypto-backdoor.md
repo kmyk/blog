@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/06/22/google-ctf-2017-quals-crypto-backdoor/"
 date: "2017-06-22T03:01:10+09:00"
-title: "Google Capture The Flag 2017 (Quals): Crypto Backdoor"
 tags: [ "ctf", "writeup", "crypto", "google-ctf", "group", "chinese-remainder-theorem" ]
 ---
+
+# Google Capture The Flag 2017 (Quals): Crypto Backdoor
 
 ## problem
 

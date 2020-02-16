@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/11/30/code-festival-2016-asapro-1-b/"
 date: "2016-11-30T13:42:29+09:00"
-title: "CODE FESTIVAL 2016 Elimination Tournament Round 1: B - 数字列をカンマで分ける問題 / Problem where Commas Separate Digits"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "suffix-array", "binary-search" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf16-tournament-round1-open/tasks/asaporo_f" ]
 ---
+
+# CODE FESTIVAL 2016 Elimination Tournament Round 1: B - 数字列をカンマで分ける問題 / Problem where Commas Separate Digits
 
 内部の問題IDが`asaporo_f`なのとても気になる。
 

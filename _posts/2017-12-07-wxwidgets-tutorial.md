@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "wxWidgetsでお絵描きするまでの例"
 date: "2017-12-07T23:59:59+09:00"
 tags: [ "tutorial", "wxwidgets" ]
 ---
+
+# wxWidgetsでお絵描きするまでの例
 
 ## インストール
 

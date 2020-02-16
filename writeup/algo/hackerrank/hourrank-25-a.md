@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/01/03/hackerrank-hourrank-25-a/"
-title: "HackerRank HourRank 25: A. Constructing a Number"
 date: "2018-01-03T11:18:30+09:00"
 tags: [ "competitive", "writeup", "hackerrank", "hourrank" ]
 "target_url": [ "https://www.hackerrank.com/contests/hourrank-25/challenges/constructing-a-number" ]
 ---
+
+# HackerRank HourRank 25: A. Constructing a Number
 
 ## problem
 

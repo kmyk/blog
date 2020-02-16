@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/06/26/srm-693-med/"
-title: "TopCoder SRM 693 Div1 Medium: BipartiteConstruction"
 date: 2016-06-26T17:36:17+09:00
 tags: [ "competitive", "writeup", "topcoder", "srm", "graph", "bipartite-graph", "construction" ]
 ---
+
+# TopCoder SRM 693 Div1 Medium: BipartiteConstruction
 
 解けず。$k = (a_0a_1a_2 + a_3a_4a_5 + a_6a_7a_8)(a_9 + a\_{10})(a\_{11}a\_{12} + a\_{13}a\_{14})\dots$といい感じに分解できれば解けるというところまでは分かったが、分解がだめ。
 

@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/06/10/srm-692-easy/"
-title: "TopCoder SRM 692 Div1 Easy: HardProof"
 date: 2016-06-10T11:43:27+09:00
 tags: [ "competitive", "writeup", "topcoder", "srm", "graph" ]
 ---
+
+# TopCoder SRM 692 Div1 Easy: HardProof
 
 I tried to use my SCC library, but it causes TLE.
 

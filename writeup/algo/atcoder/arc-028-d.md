@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/02/23/arc-028-d/"
 date: "2017-02-23T23:52:33+09:00"
-title: "AtCoder Regular Contest 028: D - 注文の多い高橋商店"
 tags: [ "competitive", "writeup", "atcoder", "arc", "loop-unrolling", "cache", "factoring-out", "lie" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc028/tasks/arc028_4" ]
 ---
+
+# AtCoder Regular Contest 028: D - 注文の多い高橋商店
 
 $10^9$はloopの中身が十分軽くないと厳しいと認識してたが、やればACに持っていける量という認識に改めるべきかも。
 

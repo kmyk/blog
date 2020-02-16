@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2017/12/25/utpc2011-d/"
-title: "東京大学プログラミングコンテスト2011: D. 停止問題"
 date: "2017-12-25T19:10:43+09:00"
 tags: [ "competitive", "writeup", "utpc", "atcoder", "aoj", "befunge", "memoization" ]
 ---
+
+# 東京大学プログラミングコンテスト2011: D. 停止問題
 
 -   <http://www.utpc.jp/2011/problems/defunge.html>
 -   <https://beta.atcoder.jp/contests/utpc2011/tasks/utpc2011_4>

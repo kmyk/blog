@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/03/07/boston-key-party-2016-complex-calc/"
 date: "2017-03-07T15:50:38+09:00"
-title: "Boston Key Party CTF 2016: complex calc"
 tags: [ "ctf", "writeup", "pwn", "boston-key-party-ctf", "heap" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2016/tree/master/boston-key-party-2016/pwn/complex-calc-5" ]
 ---
+
+# Boston Key Party CTF 2016: complex calc
 
 適当にそれっぽくしてたらいつの間にか解けた。
 
@@ -21,11 +22,15 @@ $ diff <(objdump -d -M intel simple-calc) <(objdump -d -M intel complex-calc)
 2c2
 < simple-calc:     file format elf64-x86-64
 ---
+
+# Boston Key Party CTF 2016: complex calc
 > complex-calc:     file format elf64-x86-64
 22761,22762c22761,22762
 <   4156e0:	48 85 ff             	test   rdi,rdi
 <   4156e3:	0f 84 af 00 00 00    	je     415798 <__cfree+0xc8>
 ---
+
+# Boston Key Party CTF 2016: complex calc
 >   4156e0:	0f 1f 00             	nop    DWORD PTR [rax]
 >   4156e3:	66 0f 1f 44 00 00    	nop    WORD PTR [rax+rax*1+0x0]
 ```

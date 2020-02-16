@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/02/14/dwacon2018-final-b/"
-title: "第4回 ドワンゴからの挑戦状 本選: B - だんだん強く"
 date: "2018-02-14T02:32:26+09:00"
 tags: [ "competitive", "writeup", "atcoder", "dwacon", "dp", "binary-indexed-tree", "coordinate-compression" ]
 "target_url": [ "https://beta.atcoder.jp/contests/dwacon2018-final-open/tasks/dwacon2018_final_b" ]
 ---
+
+# 第4回 ドワンゴからの挑戦状 本選: B - だんだん強く
 
 $800$点は多すぎる気がする
 

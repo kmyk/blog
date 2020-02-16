@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/04/05/abc-057-c/"
 date: "2017-04-05T16:20:41+09:00"
-title: "AtCoder Beginner Contest 057: C - Digits in Multiplication"
 tags: [ "competitive", "writeup", "atcoder", "abc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc057/tasks/abc057_c" ]
 ---
+
+# AtCoder Beginner Contest 057: C - Digits in Multiplication
 
 深く考えず素因数の数$k$に対し$O(2^k)$したけど、想定は素因数分解も不要の$O(\sqrt{N})$だった。
 Standard MLの練習に集中してたのになんだか騙し討ちでも喰らった気分。

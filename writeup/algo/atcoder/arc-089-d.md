@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/01/23/arc-089-d/"
-title: "AtCoder Regular Contest 089: D - Checker"
 date: "2018-01-23T19:41:42+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "imos" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc089/tasks/arc089_b" ]
 ---
+
+# AtCoder Regular Contest 089: D - Checker
 
 ただの2次元imosなんだけど1次元imosを2回やってしまったので大変だった。実装が下手糞。
 

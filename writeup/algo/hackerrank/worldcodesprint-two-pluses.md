@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/31/hackerrank-worldcodesprint-two-pluses/"
-title: "HackerRank World Codesprint: Ema's Supercomputer"
 date: 2016-01-31T01:43:15+09:00
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint" ]
 ---
+
+# HackerRank World Codesprint: Ema's Supercomputer
 
 ## [Ema's Supercomputer](https://www.hackerrank.com/contests/worldcodesprint/challenges/two-pluses)
 

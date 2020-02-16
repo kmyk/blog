@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "[Int]をparsecでパースする"
 date: 2014-01-25T17:50:35+09:00
 tags: [ "haskell", "parsec" ]
 ---
+
+# [Int]をparsecでパースする
 
 ``` haskell
 >>> parse (many even') "numbers" [0,0,2,4,9999]
@@ -67,6 +68,8 @@ satisfy' f = try $ lookAhead (anyToken >>= (\ x -> if f x then return x else une
 
 
 ---
+
+# [Int]をparsecでパースする
 
 [^1]: 便利でないかもしれない
 [^2]: parser-libraryなので当然

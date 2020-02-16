@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 011: D - きつねさんからの挑戦状"
 date: 2018-09-04T04:48:34+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "geometry", "lie" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc011/tasks/arc011_4" ]
 ---
+
+# AtCoder Regular Contest 011: D - きつねさんからの挑戦状
 
 ## 解法
 

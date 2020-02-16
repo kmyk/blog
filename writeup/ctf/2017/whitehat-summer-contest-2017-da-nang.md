@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/05/28/whitehat-summer-contest-2017-da-nang/"
 date: "2017-05-28T23:24:22+09:00"
-title: "WhiteHat Summer Contest 2017: Da Nang"
 tags: [ "ctf", "writeup", "whitehat-wargame", "crypto", "rsa", "franklin-reiter" ]
 ---
+
+# WhiteHat Summer Contest 2017: Da Nang
 
 ## problem
 

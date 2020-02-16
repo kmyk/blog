@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/03/26/yahoo-procon-2017-final-b/"
 date: "2017-03-26T11:26:37+09:00"
-title: "「みんなのプロコン」本選: B - チーム決め"
 tags: [ "competitive", "writeup", "atcoder", "yahoo-procon", "binary-search", "greedy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/yahoo-procon2017-final-open/tasks/yahoo_procon2017_final_b" ]
 ---
+
+# 「みんなのプロコン」本選: B - チーム決め
 
 ## solution
 

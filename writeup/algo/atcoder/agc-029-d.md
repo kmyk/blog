@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Grand Contest 029: D - Grid game"
 date: 2018-12-16T04:34:24+09:00
 tags: [ "competitive", "writeup", "atcoder", "agc", "game", "greedy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc029/tasks/agc029_d" ]
 ---
+
+# AtCoder Grand Contest 029: D - Grid game
 
 ## 解法
 

@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/09/04/twctf-2017-liars-trap/"
 date: "2017-09-04T13:34:29+09:00"
-title: "Tokyo Westerns CTF 3rd 2017: Liar's Trap"
 tags: [ "ctf", "writeup", "twctf", "crypto", "rsa", "shamirs-secret-sharing", "bruteforce" ]
 ---
+
+# Tokyo Westerns CTF 3rd 2017: Liar's Trap
 
 <!-- {% raw %} -->
 
@@ -237,6 +238,8 @@ $
 ```
 
 ---
+
+# Tokyo Westerns CTF 3rd 2017: Liar's Trap
 
 -   2017年  9月  5日 火曜日 00:56:18 JST
     -   補間結果の検証に関して追記

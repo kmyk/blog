@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/03/28/hackerrank-lambda-calculi-march-2016-fighting-armies/"
-title: "Lambda Calculi - March 2016: Fighting Armies"
 date: 2016-03-28T15:27:36+09:00
 tags: [ "competitive", "writeup", "hackerrank", "lambda-calculi", "haskell", "lazy-evaluation" ]
 "target_url": [ "https://www.hackerrank.com/contests/lambda-calculi-march-2016/challenges/fighting-armies" ]
 ---
+
+# Lambda Calculi - March 2016: Fighting Armies
 
 TLEするから悩んでたら、入力取る部分が問題だった。
 2-3 finger treeとかleftist heapとかを調べてたのは何だったのか。

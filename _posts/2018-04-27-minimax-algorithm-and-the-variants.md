@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "minimax法とその派生の一覧"
 date: "2018-04-27T19:52:25+09:00"
 tags: [ "minimax", "alphabeta", "branch-and-bound", "binary-search" ]
 ---
+
+# minimax法とその派生の一覧
 
 minimax法の系列が良く分かってなかったので調べて整理した。
 minimax自体は分かるのだが、その派生が多すぎて混乱があったため。

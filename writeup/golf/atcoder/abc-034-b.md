@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/03/12/abc-034-b/"
-title: "AtCoder Beginner Contest 034 B - ペア"
 date: 2016-03-12T22:46:39+09:00
 tags: [ "competitive", "writeup", "atcoder", "brainfuck", "golf" ]
 ---
+
+# AtCoder Beginner Contest 034 B - ペア
 
 ## [B - ペア](https://beta.atcoder.jp/contests/abc034/tasks/abc034_b)
 

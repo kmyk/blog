@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/01/15/dwacon-2017-finals-a/"
 date: "2017-01-15T20:00:35+09:00"
-title: "第3回 ドワンゴからの挑戦状 本選: A - 計算ドリル"
 tags: [ "competitive", "writeup", "dwacon", "atcoder", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/dwacon2017-honsen/tasks/dwango2017final_a" ]
 ---
+
+# 第3回 ドワンゴからの挑戦状 本選: A - 計算ドリル
 
 ## solution
 

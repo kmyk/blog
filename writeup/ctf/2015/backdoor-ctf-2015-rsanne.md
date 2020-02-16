@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/08/31/backdoor-ctf-2015-rsanne/"
 date: "2016-08-31T20:23:29+09:00"
-title: "backdoor CTF 2015: RSANNE"
 tags: [ "ctf", "writeup", "crypto", "backdoor-ctf", "rsa" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2015/tree/master/backdoor-ctf-2015/crypto/rsanne" ]
 ---
+
+# backdoor CTF 2015: RSANNE
 
 <http://factordb.com> で一発だったが、本番で通用しなさそうなのでだめ。
 

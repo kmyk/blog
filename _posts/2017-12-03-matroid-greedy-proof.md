@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2017-12-03T23:59:59+09:00"
-title: "matroid上の貪欲法が最適解を得ることの証明"
 tags: [ "competitive", "greedy", "matroid" ]
 ---
+
+# matroid上の貪欲法が最適解を得ることの証明
 
 matroidは競プロで貪欲法をしていると背後に現れていることで有名。
 貪欲ができないのはこれをちゃんと理解していないからかなと思ったので調べ、ほしい部分に証明がなかったので書いた。

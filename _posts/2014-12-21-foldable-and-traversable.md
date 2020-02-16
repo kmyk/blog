@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "FoldableとTraversable"
 date: 2014-12-21T22:28:50+09:00
 tags: [ "haskell", "foldable", "traversable" ]
 ---
+
+# FoldableとTraversable
 
 -   `Data.Foldable`
 -   `Data.Traversable`

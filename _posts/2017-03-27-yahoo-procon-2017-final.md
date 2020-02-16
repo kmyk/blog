@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2017-03-27T14:00:40+09:00"
-title: "「みんなのプロコン」本選: 参加記"
 tags: [ "competitive", "yahoo-procon" ]
 ---
+
+# 「みんなのプロコン」本選: 参加記
 
 <http://linotice.tumblr.com/post/157643101269/20170224>
 

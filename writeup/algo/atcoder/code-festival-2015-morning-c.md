@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/11/20/code-festival-2015-morning-c/"
-title: "CODE FESTIVAL 2015 朝プロ C - ヘイホー君と最終試験"
 date: 2015-11-20T00:06:41+09:00
 tags: [ "competitive", "writeup", "codefestival", "atcoder" ]
 ---
+
+# CODE FESTIVAL 2015 朝プロ C - ヘイホー君と最終試験
 
 素早く通せた。でも2WA。
 

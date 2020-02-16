@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/08/15/srm-719-med/"
 date: "2017-08-15T11:50:50+09:00"
-title: "TopCoder SRM 719 Div1 Medium: OwaskiAndTree"
 tags: [ "competitive", "writeup", "topcoder", "srm" ]
 ---
+
+# TopCoder SRM 719 Div1 Medium: OwaskiAndTree
 
 問題文中に `Overwatch` って単語が出てきてなんだっけとぐぐったら固有名詞 (ゲーム名)だった。
 

@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/06/05/hackerrank-zalando-codesprint-does-it-fit/"
-title: "HackerRank Zalando CodeSprint: Does It Fit?"
 date: 2016-06-05T19:17:43+09:00
 tags: [ "competitive", "writeup", "hackerrank" ]
 "target_url": [ "https://www.hackerrank.com/contests/zalando-codesprint/challenges/does-it-fit" ]
 ---
+
+# HackerRank Zalando CodeSprint: Does It Fit?
 
 `C`のそれを$2r \le W \land 2r \le H$でなく$r \le W \land r \le H$としていたためにWAが生じ、$45$ptsしか取れなかった。
 `R`の側のバグだと思っていたため気付けなかった。

@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Petrozavodsk Contest 001: H - Generalized Insertion Sort"
 date: 2018-07-25T09:11:52+09:00
 tags: [ "competitive", "writeup", "atcoder", "apc", "tree", "construction" ]
 "target_url": [ "https://beta.atcoder.jp/contests/apc001/tasks/apc001_h" ]
 ---
+
+# AtCoder Petrozavodsk Contest 001: H - Generalized Insertion Sort
 
 ## note
 

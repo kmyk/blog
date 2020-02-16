@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2016/09/27/srm-699-easy/"
 date: "2016-09-27T01:43:26+09:00"
-title: "TopCoder SRM 699 Div1 Easy: OthersXor"
 tags: [ "competitive", "writeup", "topcoder", "srm", "dp" ]
 ---
+
+# TopCoder SRM 699 Div1 Easy: OthersXor
 
 I've got AC, but it's too slow and my rating didn't increase too much.
 

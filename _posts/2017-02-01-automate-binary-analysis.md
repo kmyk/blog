@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2017-02-01T01:23:23+09:00"
-title: "バイナリ中のalarm関数の呼び出しを自動で除去させてみる"
 tags: [ "ctf", "rev", "automation" ]
 ---
+
+# バイナリ中のalarm関数の呼び出しを自動で除去させてみる
 
 ## 設定
 

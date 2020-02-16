@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "天下一プログラマーコンテスト2016本戦: D - 右往左往"
 date: 2018-07-07T03:00:20+09:00
 tags: [ "competitive", "writeup", "atcoder", "tenka1", "dp", "bit-dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/tenka1-2016-final/tasks/tenka1_2016_final_d" ]
 ---
+
+# 天下一プログラマーコンテスト2016本戦: D - 右往左往
 
 ## 解法
 

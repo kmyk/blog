@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/08/31/asis-quals-ctf-2015-simple-algorithm/"
 date: "2016-08-31T17:31:55+09:00"
-title: "ASIS Quals CTF 2015: Simple Algorithm"
 tags: [ "ctf", "writeup", "crypto", "asis-ctf", "greedy" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2015/tree/master/asis-quals-ctf-2015/crypto/simple-algorithm" ]
 ---
+
+# ASIS Quals CTF 2015: Simple Algorithm
 
 解けず。競プロぽい問題だったので解けるべきだった。
 

@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/04/05/arc-092-d/"
-title: "AtCoder Regular Contest 092: D - Two Sequences"
 date: "2018-04-05T04:30:09+09:00"
 tags: [ "competitive", "writeup", "arc", "xor", "binary-search" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc092/tasks/arc092_b" ]
 ---
+
+# AtCoder Regular Contest 092: D - Two Sequences
 
 ## note
 

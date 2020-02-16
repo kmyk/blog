@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2015/09/22/codeforces-338/"
-title: "Codeforces Round #196 (Div. 1)"
 date: 2015-09-22T00:10:39+09:00
 tags: [ "codeforces", "competitive", "c++", "writeup", "matrix" ]
 "target_url": [ "http://codeforces.com/contest/338" ]
 ---
+
+# Codeforces Round #196 (Div. 1)
 
 茶会。1完。解けた人の数を見る限り2完したかった。
 

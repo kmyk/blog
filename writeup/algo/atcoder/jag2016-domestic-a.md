@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/04/24/jag2016-domestic-a/"
-title: "JAG Contest 2016 Domestic A - 阿吽の呼吸"
 date: 2016-04-24T22:28:23+09:00
 tags: [ "competitive", "writeup", "atcoder", "jag", "icpc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/jag2016-domestic/tasks/jag2016secretspring_a" ]
 ---
+
+# JAG Contest 2016 Domestic A - 阿吽の呼吸
 
 本番はチームのメンバーに任せた。
 後から自分で解いたら誤読した。

@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/09/12/twctf-2017-palindromes-pairs-challenge-phase/"
 date: "2017-09-12T18:33:52+09:00"
-title: "Tokyo Westerns CTF 3rd 2017: Palindromes Pairs - Challenge Phase -"
 tags: [ "ctf", "writeup", "ppc", "rolling-hash" ]
 ---
+
+# Tokyo Westerns CTF 3rd 2017: Palindromes Pairs - Challenge Phase -
 
 ## note
 
@@ -245,6 +246,8 @@ int main() {
 ```
 
 ---
+
+# Tokyo Westerns CTF 3rd 2017: Palindromes Pairs - Challenge Phase -
 
 -   2017年  9月 13日 水曜日 16:52:17 JST
     -   記号等を修正

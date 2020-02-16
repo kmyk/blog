@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "SoundHound Programming Contest 2018 Masters Tournament 本戦: C - Not Too Close"
 date: 2018-08-06T16:50:42+09:00
 tags: [ "competitive", "writeup", "atcoder", "dp", "graph", "combinatorics" ]
 "target_url": [ "https://beta.atcoder.jp/contests/soundhound2018-summer-final/tasks/soundhound2018_summer_final_c" ]
 ---
+
+# SoundHound Programming Contest 2018 Masters Tournament 本戦: C - Not Too Close
 
 ## solution
 

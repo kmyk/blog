@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/23/dwango-2016-qual-b/"
-title: "第2回 ドワンゴからの挑戦状 予選 B - 積み鉛筆"
 date: 2016-01-23T22:12:13+09:00
 tags: [ "competitive", "writeup", "atcoder", "dwango" ]
 ---
+
+# 第2回 ドワンゴからの挑戦状 予選 B - 積み鉛筆
 
 直感を信じて投げてみたら通った。
 

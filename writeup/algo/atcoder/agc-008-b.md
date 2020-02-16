@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/12/25/agc-008-b/"
 date: "2016-12-25T23:01:22+09:00"
-title: "AtCoder Grand Contest 008: B - Contiguous Repainting"
 tags: [ "competitive", "writeup", "atcoder", "agc", "cumulative-sum" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc008/tasks/agc008_b" ]
 ---
+
+# AtCoder Grand Contest 008: B - Contiguous Repainting
 
 ## 反省
 

@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/16/arc-013-d/"
-title: "AtCoder Regular Contest 013 D - 切り分けできるかな？"
 date: 2016-01-16T17:39:18+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "graph", "flow", "bipartite-graph", "maximum-matching", "maximum-flow" ]
 ---
+
+# AtCoder Regular Contest 013 D - 切り分けできるかな？
 
 ## [D - 切り分けできるかな？](https://beta.atcoder.jp/contests/arc013/tasks/arc013_4) {#d}
 

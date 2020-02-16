@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "CODE FESTIVAL 2018 Final: B - Theme Color"
 date: 2018-11-22T15:48:39+09:00
 tags: [ "competitive", "writeup", "atcoder", "code-festival", "error", "overflow", "log" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-festival-2018-final/tasks/code_festival_2018_final_b" ]
 ---
+
+# CODE FESTIVAL 2018 Final: B - Theme Color
 
 ## 解法
 

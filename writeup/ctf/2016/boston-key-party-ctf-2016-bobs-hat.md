@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/06/22/boston-key-party-ctf-2016-bobs-hat/"
 date: "2017-06-22T06:03:56+09:00"
-title: "Boston Key Party CTF : bobs hat"
 tags: [ "ctf", "writeup", "crypto", "boston-key-party-ctf", "rsa", "wieners-attack" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2016/tree/master/boston-key-party-2016/crypto/bobs-hat-4" ]
 ---
+
+# Boston Key Party CTF : bobs hat
 
 雑に解いてしまった気がする。
 

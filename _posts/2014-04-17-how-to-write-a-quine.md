@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "quineを書く一般的な方法"
 date: 2014-04-17T23:44:24+09:00
 tags: [ "quine" ]
 ---
+
+# quineを書く一般的な方法
 
 -   言語固有の機能を使い特殊な方法でquineする場合は考えない
 -   とりあえず書ければいい人向け

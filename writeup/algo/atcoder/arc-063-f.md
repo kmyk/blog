@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 063: F - すぬけ君の塗り絵 2 / Snuke's Coloring 2"
 date: 2018-08-22T03:30:20+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "divede-and-conquer", "branch-and-bound", "tow-pointers-technique" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc063/tasks/arc063_d" ]
 ---
+
+# AtCoder Regular Contest 063: F - すぬけ君の塗り絵 2 / Snuke's Coloring 2
 
 ## solution
 

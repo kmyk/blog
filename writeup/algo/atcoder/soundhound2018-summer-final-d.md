@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "SoundHound Programming Contest 2018 Masters Tournament 本戦: D - Propagating Edges"
 date: 2018-08-02T07:41:14+09:00
 tags: [ "competitive", "writeup", "atcoder", "graph", "union-find-tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/soundhound2018-summer-final/tasks/soundhound2018_summer_final_d" ]
 ---
+
+# SoundHound Programming Contest 2018 Masters Tournament 本戦: D - Propagating Edges
 
 ## solution
 

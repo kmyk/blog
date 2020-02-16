@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/03/13/agc-002-f/"
-title: "AtCoder Grand Contest 002: F - Leftmost Ball"
 date: "2018-03-13T22:54:25+09:00"
 tags: [ "competitive", "writeup", "atcoder", "agc", "dp", "topological-sort" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc002/tasks/agc002_f" ]
 ---
+
+# AtCoder Grand Contest 002: F - Leftmost Ball
 
 「topological sortの個数数えればいいのか綺麗だなあ」までは辿り着いたが「でも数えるのは無理なんだよな」で刈ってしまった。
 一般には実際にNPよりも難しいらしい[1](http://codeforces.com/blog/entry/10911)[2](https://math.stackexchange.com/questions/814177/how-many-topological-orderings-exist-for-a-graph)。

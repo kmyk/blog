@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/10/11/jag2016autumn-h/"
 date: "2016-10-11T22:47:11+09:00"
-title: "JAG Practice Contest for ACM-ICPC Asia Regional 2016: H - Pipe Fitter and the Fierce Dogs"
 tags: [ "competitive", "writeup", "atcoder", "jag", "icpc", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/jag2016autumn/tasks/icpc2016autumn_h" ]
 ---
+
+# JAG Practice Contest for ACM-ICPC Asia Regional 2016: H - Pipe Fitter and the Fierce Dogs
 
 icpc直前最後の茶会で、全員で束になって挑んで方針まで立てた。
 最近みな強くなってるし、次からもこの形式でよい気がしてる。

@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/03/06/pragyanctf-2017-answer-to-everything/"
 date: "2017-03-06T00:03:34+09:00"
-title: "Pragyan CTF 2017: Answer to Everything"
 tags: [ "ctf", "pragyan-ctf", "guessing", "western-lowland-gorilla" ]
 ---
+
+# Pragyan CTF 2017: Answer to Everything
 
 問題文は以下。
 

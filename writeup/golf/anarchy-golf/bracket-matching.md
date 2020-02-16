@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/02/22/anagol-bracket-matching/"
-title: "Anarchy golf 51. Bracket Matching"
 date: 2016-02-22T05:22:57+09:00
 tags: [ "writeup", "golf", "anarchy-golf", "ruby", "perl", "sed", "regex", "greedy" ]
 ---
+
+# Anarchy golf 51. Bracket Matching
 
 最短の解答の1.5倍以内には入っているので、今回はそこそこ戦えたかなあという印象。
 

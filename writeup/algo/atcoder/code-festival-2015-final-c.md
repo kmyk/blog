@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/11/21/code-festival-2015-final-c/"
-title: "CODE FESTIVAL 2015 決勝 C - 寿司タワー"
 date: 2015-11-21T17:18:56+09:00
 tags: [ "competitive", "writeup", "codefestival", "atcoder", "greedy" ]
 ---
+
+# CODE FESTIVAL 2015 決勝 C - 寿司タワー
 
 寿司を積む。
 本番は貪欲をc++で書いたが、1行で書ける問題だったようだ。

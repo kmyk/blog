@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/10/22/kupc-2017-h/"
 date: "2017-10-22T13:33:31+09:00"
-title: "Kyoto University Programming Contest 2017: H - Make a Potion"
 tags: [ "competitive", "writeup", "kupc", "atcoder", "flow", "maximum-flow", "dinic", "linear-programming" ]
 "target_url": [ "https://beta.atcoder.jp/contests/kupc2017/tasks/kupc2017_h" ]
 ---
+
+# Kyoto University Programming Contest 2017: H - Make a Potion
 
 私のライブラリのdinicは遅いという疑惑が浮上している。そのうち直す。そのうち。
 

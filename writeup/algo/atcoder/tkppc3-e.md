@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "技術室奥プログラミングコンテスト #3: E - デフレゲーム"
 date: 2018-08-02T08:16:01+09:00
 tags: [ "competitive", "writeup", "atcoder", "tkppc", "expected-value" ]
 "target_url": [ "https://beta.atcoder.jp/contests/tkppc3/tasks/tkppc3_e" ]
 ---
+
+# 技術室奥プログラミングコンテスト #3: E - デフレゲーム
 
 ## solution
 

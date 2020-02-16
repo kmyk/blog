@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/09/20/plaidctf-2015-lazy/"
 date: "2017-09-20T18:31:17+09:00"
-title: "PlaidCTF CTF 2015: Lazy"
 tags: [ "ctf", "writeup", "plaidctf", "crypto", "knapsack-cipher", "lll-algorithm", "clos-method", "low-density-attack" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2015/tree/master/plaidctf-2015/crypto/lazy" ]
 ---
+
+# PlaidCTF CTF 2015: Lazy
 
 ## problem
 
@@ -129,6 +130,8 @@ for x in B.LLL():
 ```
 
 ---
+
+# PlaidCTF CTF 2015: Lazy
 
 -   2017年  9月 26日 火曜日 13:39:21 JST
     -   LO法とCLOS法の論文が逆になってたので修正

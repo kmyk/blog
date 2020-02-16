@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 087: E - Prefix-free Game"
 date: 2018-10-12T17:22:17+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "grundy", "game", "binary-tree", "trie" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc087/tasks/arc087_c" ]
 ---
+
+# AtCoder Regular Contest 087: E - Prefix-free Game
 
 ## 解法
 

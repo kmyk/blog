@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/10/03/jag2017summer-day3-e/"
 date: "2017-10-03T06:58:41+09:00"
-title: "Japan Alumni Group Summer Camp 2017 Day 3: E - Route Calculator"
 tags: [ "competitive", "writeup", "atcoder", "jag-summer", "dp", "graph" ]
 "target_url": [ "https://beta.atcoder.jp/contests/jag2017summer-day3/tasks/jag2017summer_day3_e" ]
 ---
+
+# Japan Alumni Group Summer Camp 2017 Day 3: E - Route Calculator
 
 チームメンバーに任せた(私のlaptopの電源が切れたので)が、バグったので私が$0$から書き直した。
 私$\to$彼と私$\gets$彼のどちらの向きでも、大きめのコードをバグらせたら交代して$0$からが良いと踏んでいるがどうなのだろうか。

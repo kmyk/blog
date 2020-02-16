@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Code Festival (2018) Team Relay: H - 最悪のバス停決定戦"
 date: 2018-11-21T11:18:00+09:00
 tags: [ "competitive", "writeup", "atcoder", "code-festival", "dp", "fast-mobius-transformation", "inclusion-exclusion-principle" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf18-relay-open/tasks/relay2018_h" ]
 ---
+
+# Code Festival (2018) Team Relay: H - 最悪のバス停決定戦
 
 ## 解法
 

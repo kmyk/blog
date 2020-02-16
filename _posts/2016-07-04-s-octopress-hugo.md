@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2016-07-04T03:17:08+09:00"
-title: "OctopressからHugoに移行した"
 tags: [ "blog", "octopress", "hugo" ]
 ---
+
+# OctopressからHugoに移行した
 
 -   [Octopress](http://octopress.org/)
 -   [Hugo](http://gohugo.io/)

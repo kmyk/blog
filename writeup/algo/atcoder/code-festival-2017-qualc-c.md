@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/01/01/code-festival-2017-qualc-c/"
-title: "CODE FESTIVAL 2017 qual C: C - Inserting 'x'"
 date: "2018-01-01T12:14:04+09:00"
 tags: [ "competitive", "writeup", "codefestival", "palindrome" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-festival-2017-qualc/tasks/code_festival_2017_qualc_c" ]
 ---
+
+# CODE FESTIVAL 2017 qual C: C - Inserting 'x'
 
 ## solution
 

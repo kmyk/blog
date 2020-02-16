@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/18/fhc-2016-round1-a/"
-title: "Facebook Hacker Cup 2016 Round 1 Coding Contest Creation"
 date: 2016-01-18T01:17:27+09:00
 tags: [ "competitive", "writeup", "facebook-hacker-cup", "greedy" ]
 ---
+
+# Facebook Hacker Cup 2016 Round 1 Coding Contest Creation
 
 ## [Coding Contest Creation](https://www.facebook.com/hackercup/problem/798506286925018/)
 

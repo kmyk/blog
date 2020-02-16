@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/04/09/abc-036-c/"
-title: "AtCoder Beginner Contest 036 C - 座圧"
 date: 2016-04-09T22:16:46+09:00
 tags: [ "competitive", "writeup", "atcoder", "abc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc036/tasks/abc036_c" ]
 ---
+
+# AtCoder Beginner Contest 036 C - 座圧
 
 <!-- {% raw %} -->
 

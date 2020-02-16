@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/10/03/jag2017summer-day3-b/"
 date: "2017-10-03T06:58:36+09:00"
-title: "Japan Alumni Group Summer Camp 2017 Day 3: B - Slimming Plan"
 tags: [ "competitive", "writeup", "atcoder", "jag-summer" ]
 "target_url": [ "https://beta.atcoder.jp/contests/jag2017summer-day3/tasks/jag2017summer_day3_b" ]
 ---
+
+# Japan Alumni Group Summer Camp 2017 Day 3: B - Slimming Plan
 
 実装が下手でバグらせた。
 $D$日ずつまとめて見ていくところを除算でしていたのが悪かった。

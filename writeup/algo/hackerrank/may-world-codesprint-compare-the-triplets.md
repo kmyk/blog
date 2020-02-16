@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/23/hackerrank-may-world-codesprint-compare-the-triplets/"
-title: "HackerRank May World CodeSprint: Compare the Triplets"
 date: 2016-05-23T01:49:33+09:00
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint" ]
 "target_url": [ "https://www.hackerrank.com/contests/may-world-codesprint/challenges/compare-the-triplets" ]
 ---
+
+# HackerRank May World CodeSprint: Compare the Triplets
 
 ## problem
 

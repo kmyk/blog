@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/12/10/seccon-2017-quals-theory-of-relativity/"
-title: "SECCON 2017 Online CTF: Theory of Relativity"
 date: "2017-12-10T15:19:20+09:00"
 tags: [ "ctf", "writeup", "seccon", "seccon-quals", "web", "interpreter" ]
 "target_url": [ "https://ctftime.org/event/512/" ]
 ---
+
+# SECCON 2017 Online CTF: Theory of Relativity
 
 ## problem
 

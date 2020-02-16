@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/09/05/twctf-2016-interpreter/"
 date: "2016-09-05T12:58:30+09:00"
-title: "Tokyo Westerns/MMA CTF 2nd 2016: Interpreter"
 tags: [ "ctf", "writeup", "pwn", "mmactf", "twctf", "esolang", "befunge" ]
 "target_url": [ "https://score.ctf.westerns.tokyo/problems/24" ]
 ---
+
+# Tokyo Westerns/MMA CTF 2nd 2016: Interpreter
 
 `befunge.7z`の文字列だけで脆弱性も攻撃方法も推測できてしまって楽勝って感じだったのに、bug埋めたのでflag出すのには手間取ってしまった。
 

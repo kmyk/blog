@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/02/21/defcon-21-quals-annyong/"
-title: "defcon 21 quals annyong"
 date: 2016-02-21T04:42:03+09:00
 tags: [ "ctf", "writeup", "pwn", "defcon", "x64", "return-oriented-programming", "return-to-vuln", "libc-csu-init", "buffer-overflow" ]
 ---
+
+# defcon 21 quals annyong
 
 pwn会で。x64のrop問で解きたいものがあるが難しいので、その踏み台として持ってきたもの。
 

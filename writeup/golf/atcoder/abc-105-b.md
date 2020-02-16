@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "B - Cakes and Donuts"
 date: 2018-08-12T00:37:57+09:00
 tags: [ "competitive", "writeup", "atcoder", "abc", "perl", "golf" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc105/tasks/abc105_b" ]
 ---
+
+# B - Cakes and Donuts
 
 ## note
 

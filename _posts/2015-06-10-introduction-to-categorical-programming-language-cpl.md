@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "圏論プログラミング言語CPL入門"
 date: 2015-06-10T02:41:57+09:00
 tags: [ "cpl", "esolang", "category" ]
 ---
+
+# 圏論プログラミング言語CPL入門
 
 面白かったので入門記事を書きました。haskellの知識を仮定しますが圏論の知識は一切要求しません。
 
@@ -343,11 +344,15 @@ end object ;
 
 ---
 
+# 圏論プログラミング言語CPL入門
+
 -   Wed Jun 10 22:47:14 JST 2015
     -   vimのpluginについての記述を追加
 -   Thu Jun 25 22:47:45 JST 2015
     -   原始帰納法について注釈追加
 
 ---
+
+# 圏論プログラミング言語CPL入門
 
 [^1]: prはcatamorphismなので原始帰納法(paramorphism)と言ってしまうのは厳密でないかもしれない

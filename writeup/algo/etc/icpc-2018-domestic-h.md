@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "ACM-ICPC 2018 国内予選: H. 優秀なプログラマになるには"
 date: 2018-07-11T16:26:41+09:00
 tags: [ "competitive", "writeup", "icpc", "dp", "tree", "knapsack-problem", "sliding-window" ]
 "target_url": [ "http://icpc.iisf.or.jp/past-icpc/domestic2018/contest/all_ja.html", "http://icpc.iisf.or.jp/past-icpc/domestic2018/judgedata/H/" ]
 ---
+
+# ACM-ICPC 2018 国内予選: H. 優秀なプログラマになるには
 
 ## solution
 

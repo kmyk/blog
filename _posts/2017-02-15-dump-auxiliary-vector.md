@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2017-02-15T10:09:51+09:00"
-title: "auxiliary vectorをdumpしてみる"
 tags: [ "elf", "auxiliary-vector", "linux" ]
 ---
+
+# auxiliary vectorをdumpしてみる
 
 プログラムがそのentry pointから実行を始めるとき、そのstack上には`argv`や`envp`の中身の文字列が積まれている。
 これらの他にauxiliary vectorという値が積まれている。

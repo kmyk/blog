@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/04/07/arc-094-c/"
-title: "AtCoder Regular Contest 094: C - Same Integers"
 date: "2018-04-07T23:01:42+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "greedy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc094/tasks/arc094_a" ]
 ---
+
+# AtCoder Regular Contest 094: C - Same Integers
 
 ## solution
 

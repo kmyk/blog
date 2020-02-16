@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/10/03/jag2017summer-day3-f/"
 date: "2017-10-03T06:58:43+09:00"
-title: "Japan Alumni Group Summer Camp 2017 Day 3: F - Endless BFS"
 tags: [ "competitive", "writeup", "atcoder", "jag-summer", "graph", "bipartite-graph", "bfs" ]
 "target_url": [ "https://beta.atcoder.jp/contests/jag2017summer-day3/tasks/jag2017summer_day3_f" ]
 ---
+
+# Japan Alumni Group Summer Camp 2017 Day 3: F - Endless BFS
 
 頂点への訪問情報をふたつ持つDFSでいけそうと言っていたら、後輩が(同じなのだが)二部グラフだと整理してくれた。
 実装は彼に任せた。でも変なDijkstraライブラリ貼ってバグらせてた。

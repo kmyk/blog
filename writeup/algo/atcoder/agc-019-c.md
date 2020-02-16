@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/08/27/agc-019-c/"
 date: "2017-08-27T02:11:25+09:00"
-title: "AtCoder Grand Contest 019: C - Fountain Walk"
 tags: [ "competitive", "writeup", "atcoder", "agc", "longest-increasing-subsequence" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc019/tasks/agc019_c" ]
 ---
+
+# AtCoder Grand Contest 019: C - Fountain Walk
 
 LISって言われれば(バグらせたのを除いて)すぐだった。本番でもDをバグらさなければ解けてたのかも。
 

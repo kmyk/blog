@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2017/12/25/utpc2011-f/"
-title: "東京大学プログラミングコンテスト2011: F. 全域木"
 date: "2017-12-25T19:10:49+09:00"
 tags: [ "competitive", "writeup", "utpc", "aoj", "spanning-tree", "construction" ]
 ---
+
+# 東京大学プログラミングコンテスト2011: F. 全域木
 
 -   <http://www.utpc.jp/2011/problems/spanning.html>
 -   <http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=2264>

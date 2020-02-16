@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "日本語ocrをinstallした"
 date: 2013-12-06T14:57:47+09:00
 tags: [ "install", "ocr" ]
 ---
+
+# 日本語ocrをinstallした
 
 [nhocr](http://code.google.com/p/nhocr/) and [tesseract](http://code.google.com/p/tesseract-ocr/)
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/08/31/backdoor-ctf-2015-rsalot/"
 date: "2016-08-31T18:51:05+09:00"
-title: "backdoor CTF 2015: RSALOT"
 tags: [ "ctf", "writeup", "crypto", "backdoor-ctf", "rsa", "oaep" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2015/tree/master/backdoor-ctf-2015/crypto/rsalot" ]
 ---
+
+# backdoor CTF 2015: RSALOT
 
 解けず。gcdは何度も見てるので分かるが、OAEPは思い出せず。
 

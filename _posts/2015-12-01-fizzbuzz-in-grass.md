@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "Grassでfizzbuzzを書いた"
 date: 2015-12-01T00:00:01+09:00
 tags: [ "grass", "esolang", "fizzbuzz", "haskell", "dsl", "monad", "lambda-calculus" ]
 ---
+
+# Grassでfizzbuzzを書いた
 
 多めに植えておきました。
 
@@ -290,6 +291,8 @@ main = putStrLn . runGrass $ do
 
 
 ---
+
+# Grassでfizzbuzzを書いた
 
 この記事は[KobeUniv Advent Calendar 2015](http://www.adventar.org/calendars/891)の1日目の記事として書かれました。
 前々からgrassはやりたいなと思ってはいたが、特に書く機会もなかったのでちょうどよかったように思います。

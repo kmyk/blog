@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/03/31/anagol-left-pad/"
-title: "Anarchy Golf 946. left pad"
 date: 2016-03-31T19:34:24+09:00
 tags: [ "golf", "writeup", "anarchy-golf", "ruby", "sed", "brainfuck", "c", "perl" ]
 "target_url": [ "http://golf.shinh.org/p.rb?left+pad" ]
 ---
+
+# Anarchy Golf 946. left pad
 
 [時](https://medium.com/@azerbike/i-ve-just-liberated-my-modules-9045c06be67c#.fmuoxzddt)[事](http://cpplover.blogspot.jp/2016/03/npmkik.html)[ネ](http://yosuke-furukawa.hatenablog.com/entry/2016/03/27/152500)[タ](http://blog.npmjs.org/post/141577284765/kik-left-pad-and-npm)。
 

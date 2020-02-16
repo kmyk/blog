@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/04/22/bctf-2017-babyuse/"
 date: "2017-04-22T01:14:03+09:00"
-title: "BCTF 2017: babyuse"
 tags: [ "ctf", "writeup", "bctf", "pwn", "heap", "use-after-free" ]
 ---
+
+# BCTF 2017: babyuse
 
 それほど難しくはないはずだが、無限に時間がかかってしまった。
 

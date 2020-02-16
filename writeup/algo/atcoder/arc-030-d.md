@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/09/09/arc-030-d/"
 date: "2016-09-09T03:28:02+09:00"
-title: "AtCoder Regular Contest 030 D - グラフではない"
 tags: [ "competitive", "writeup", "atcoder", "arc", "rbst", "randomized-binary-search-tree", "persistence", "persistent-tree", "range-add-query", "range-sum-query" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc030/tasks/arc030_4" ]
 ---
+
+# AtCoder Regular Contest 030 D - グラフではない
 
 永続平衡二分探索木で区間queryをさばく問題。
 RBST(randomized binary search tree)は始めて書いたが、Treapは既に持っていたので比較部分だけ修正すればよいので楽。

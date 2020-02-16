@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "TokyoWesterns CTF 4th 2018: mixed cipher"
 date: 2018-09-04T06:11:12+09:00
 tags: [ "ctf", "writeup", "twctf", "crypto", "aes", "rsa", "mersenne-twister", "prng-prediction", "lsb-leak-attack" ]
 "target_url": [ "https://ctftime.org/task/6514" ]
 ---
+
+# TokyoWesterns CTF 4th 2018: mixed cipher
 
 ## 解法
 

@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/12/03/icpc-2015-asia-e/"
-title: "ACM ICPC 2015 アジア地区予選 E : Bringing Order to Disorder"
 date: 2015-12-03T02:33:19+09:00
 tags: [ "competitive", "writeup", "icpc", "aoj", "dp" ]
 ---
+
+# ACM ICPC 2015 アジア地区予選 E : Bringing Order to Disorder
 
 本番はちょっと見たけど、分からなさそうなので飛ばした。
 私の苦手な問題だったように見える。

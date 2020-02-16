@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "九州大学プログラミングコンテスト2018: F - Team Making"
 date: 2018-10-25T14:09:57+09:00
 tags: [ "competitive", "writeup", "atcoder", "qupc", "bit-dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/qupc2018/tasks/qupc2018_f" ]
 ---
+
+# 九州大学プログラミングコンテスト2018: F - Team Making
 
 ## 解法
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/04/04/arc-070-f/"
 date: "2017-04-04T10:54:47+09:00"
-title: "AtCoder Regular Contest 070: F - HonestOrUnkind"
 tags: [ "competitive", "writeup", "atcoder", "arc", "reactive", "propositional-logic" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc070/tasks/arc070_d" ]
 ---
+
+# AtCoder Regular Contest 070: F - HonestOrUnkind
 
 ## solution
 

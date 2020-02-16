@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/12/31/hackerrank-world-codesprint-12-the-salesman/"
-title: "HackerRank World CodeSprint 12: The Salesman"
 date: "2017-12-31T16:26:19+09:00"
 tags: [ "competitive", "writeup", "hackerrank", "codesprint" ]
 "target_url": [ "https://www.hackerrank.com/contests/world-codesprint-12/challenges/the-salesman" ]
 ---
+
+# HackerRank World CodeSprint 12: The Salesman
 
 ## solution
 

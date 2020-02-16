@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/07/04/abc-041-c/"
 date: "2016-07-04T05:28:18+09:00"
-title: "AtCoder Beginner Contest 041 C - 背の順"
 tags: [ "competitive", "writeup", "atcoder", "abc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc041/tasks/abc041_c" ]
 ---
+
+# AtCoder Beginner Contest 041 C - 背の順
 
 普段より簡単
 

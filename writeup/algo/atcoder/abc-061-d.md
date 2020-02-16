@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/04/09/abc-061-d/"
-title: "AtCoder Beginner Contest 061: D - Score Attack"
 date: "2018-04-09T18:59:39+09:00"
 tags: [ "competitive", "writeup", "atcoder", "abc", "bellman-ford", "longest-path-problem" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc061/tasks/abc061_d" ]
 ---
+
+# AtCoder Beginner Contest 061: D - Score Attack
 
 ## solution
 

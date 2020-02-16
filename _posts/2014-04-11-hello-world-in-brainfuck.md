@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "brainfuckでhello world"
 date: 2014-04-11T22:56:51+09:00
 tags: [ "helloworld", "brainfuck" ]
 ---
+
+# brainfuckでhello world
 
 ``` brainfuck
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.

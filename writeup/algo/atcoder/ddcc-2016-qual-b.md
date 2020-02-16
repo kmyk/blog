@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/11/05/ddcc-2016-qual-b/"
 date: "2016-11-05T22:26:11+09:00"
-title: "DISCO presents ディスカバリーチャンネル コードコンテスト2016 予選: B - ステップカット"
 tags: [ "competitive", "writeup", "atcoder", "ddcc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/ddcc2016-qual/tasks/ddcc_2016_qual_b" ]
 ---
+
+# DISCO presents ディスカバリーチャンネル コードコンテスト2016 予選: B - ステップカット
 
 誤読した。問題分が長くて面倒な感じだったから適当に読んだのが原因。今年は大きい枠に入ってるのでこれでも通るしunratedだから被害はなかったが要反省。
 

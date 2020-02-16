@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/06/19/tco-2016-round-2c-easy/"
-title: "TopCoderOpen 2016 Round 2C Easy: BearBall"
 date: 2016-06-19T20:33:05+09:00
 tags: [ "competitive", "writeup", "tco", "topcoder", "geometry" ]
 ---
+
+# TopCoderOpen 2016 Round 2C Easy: BearBall
 
 I thought that my problem was going to be TLE, but it is accepted (even some people tried to hack).
 

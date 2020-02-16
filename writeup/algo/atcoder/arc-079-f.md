@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/07/29/arc-079-f/"
 date: "2017-07-29T23:07:12+09:00"
-title: "AtCoder Regular Contest 079: F - Namori Grundy"
 tags: [ "competitive", "writeup", "atcoder", "arc", "graph", "tree", "grundy-number" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc079/tasks/arc079_d" ]
 ---
+
+# AtCoder Regular Contest 079: F - Namori Grundy
 
 誤読とかDに時間を取られたため実装が間に合わず。悲しい。
 

@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/14/arc-053-a/"
-title: "AtCoder Regular Contest 053 A - ドミノ色塗り"
 date: 2016-05-14T23:02:55+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc053/tasks/arc053_a" ]
 ---
+
+# AtCoder Regular Contest 053 A - ドミノ色塗り
 
 ## solution
 

@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/04/09/arc-090-d/"
-title: "AtCoder Regular Contest 090: D - People on a Line"
 date: "2018-04-09T23:19:38+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "graph" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc090/tasks/arc090_b" ]
 ---
+
+# AtCoder Regular Contest 090: D - People on a Line
 
 ## solution
 

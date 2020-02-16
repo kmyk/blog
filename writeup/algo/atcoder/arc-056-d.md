@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/05/27/arc-056-d/"
 date: "2017-05-27T03:24:10+09:00"
-title: "AtCoder Regular Contest 056: D - サケノミ"
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp", "segment-tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc056/tasks/arc056_d" ]
 ---
+
+# AtCoder Regular Contest 056: D - サケノミ
 
 ## solution
 

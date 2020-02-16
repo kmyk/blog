@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/10/10/jag2016autumn-c/"
 date: "2016-10-10T21:51:34+09:00"
-title: "JAG Practice Contest for ACM-ICPC Asia Regional 2016: C - We Don't Wanna Work!"
 tags: [ "competitive", "writeup", "atcoder", "jag", "icpc", "implementation" ]
 "target_url": [ "https://beta.atcoder.jp/contests/jag2016autumn/tasks/icpc2016autumn_c" ]
 ---
+
+# JAG Practice Contest for ACM-ICPC Asia Regional 2016: C - We Don't Wanna Work!
 
 今週末にICPC地区予選本番なのでチーム練習をした。
 朝14時まで寝てたら、チーム練習しようよと起こしにきてくれた。

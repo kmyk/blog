@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/10/03/coderunner-2015-quala/"
-title: "CODE RUNNER 2015 予選A 線分ゲーム「No Cross」 反省会"
 date: 2015-10-03T23:27:34+09:00
 tags: [ "coderunner", "competitive", "writeup" ]
 ---
+
+# CODE RUNNER 2015 予選A 線分ゲーム「No Cross」 反省会
 
 暫定13位でテンション上がってたら、最終的に70位台。去年の本戦からまったく成長していない。
 

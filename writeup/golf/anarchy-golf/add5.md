@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/03/05/anagol-add5/"
-title: "Anarchy Golf: 1038. add5"
 date: "2018-03-05T11:50:51+09:00"
 tags: [ "golf", "writeup", "anagol", "brainfuck" ]
 "target_url": [ "http://golf.shinh.org/p.rb?add5" ]
 ---
+
+# Anarchy Golf: 1038. add5
 
 ## brainfuck
 

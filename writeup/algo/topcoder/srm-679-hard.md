@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/20/srm-679-hard/"
-title: "TopCoder SRM 679 div1 Hard: BagAndCards"
 date: 2016-01-20T23:42:15+09:00
 tags: [ "competitive", "writeup", "topcoder", "srm", "convolution" ]
 ---
+
+# TopCoder SRM 679 div1 Hard: BagAndCards
 
 問題文は明らかに*HARD*だったけど、問題は難しめのeasyぐらいだったように思える。
 本番では問題の理解でかなりの時間を消費し、時間がない中fftだと踏んで実装しようとしていた。後から落ち着いて考えたらもっと簡単だった。
@@ -28,6 +29,8 @@ $a_k = {\rm count}\_{i,k}$, $b_k = {\rm count}\_{j,k}$として$w\_{i,j,k} = \Si
 
 "target_url": [ "small" ]
 ---
+
+# TopCoder SRM 679 div1 Hard: BagAndCards
 正答者の解答を眺めた限り、fftだとtleするようだ。
 そもそも、私の持っていたfft(fast fourier transformation)のlibraryを貼ったところ、おそらく誤差のためにサンプルが合わなかった。誤差に関してはntt(number-theoritical transformation)というのを使えばよいのだろうか。
 </small>

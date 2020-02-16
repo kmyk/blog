@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/02/07/burning-ctf/"
-title: "場阿忍愚CTF writeup"
 date: 2016-02-07T13:00:00+09:00
 tags: [ "ctf", "writeup", "burning-ctf" ]
 "target_url": [ "http://burningctf.yamatosecurity.com/score/puzzle" ]
 ---
+
+# 場阿忍愚CTF writeup
 
 ## 101 練習     image level 1
 
@@ -796,5 +797,7 @@ $ curl --dump-header - 'http://210.146.64.44/?ie=cp932' -H 'Cookie: PHPSESSID='$
 
 
 ---
+
+# 場阿忍愚CTF writeup
 
 [^1]: かなり偶然上手くいっただけっぽい。

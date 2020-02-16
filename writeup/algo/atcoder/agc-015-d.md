@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/05/28/agc-015-d/"
 date: "2017-05-28T03:30:11+09:00"
-title: "AtCoder Grand Contest 015: D - A or...or B Problem"
 tags: [ "competitive", "writeup", "atcoder", "agc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc015/tasks/agc015_d" ]
 ---
+
+# AtCoder Grand Contest 015: D - A or...or B Problem
 
 やればできそうだけどしんどい感じの問題。考察をあまりせずに書き始めたら時間が溶けるだけに終わった。
 

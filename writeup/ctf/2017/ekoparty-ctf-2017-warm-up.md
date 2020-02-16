@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/09/20/ekoparty-ctf-2017-warm-up/"
 date: "2017-09-20T20:38:47+09:00"
-title: "EKOPARTY CTF 2017: Warm Up"
 tags: [ "ctf", "writeup", "rev", "ekoparty-ctf", "angr" ]
 ---
+
+# EKOPARTY CTF 2017: Warm Up
 
 rev苦手勢なのでangrでなんとかなる問題しか倒せない。
 

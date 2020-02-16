@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2017-12-06T23:59:59+09:00"
-title: "生存戦略"
 tags: [ ]
 ---
+
+# 生存戦略
 
 <!-- more -->
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/07/15/arc-078-c/"
 date: "2017-07-15T23:15:34+09:00"
-title: "AtCoder Regular Contest 078: C - Splitting Pile"
 tags: [ "competitive", "writeup", "atcoder", "arc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc078/tasks/arc078_a" ]
 ---
+
+# AtCoder Regular Contest 078: C - Splitting Pile
 
 友人が
 

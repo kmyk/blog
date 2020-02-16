@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/06/10/tdpc-j/"
-title: "Typical DP Contest J - ボール"
 date: 2016-06-10T21:12:28+09:00
 tags: [ "competitive", "writeup", "atcoder", "typical-dp-contest", "math", "dp", "expected-value", "bit-dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/tdpc/tasks/tdpc_ball" ]
 ---
+
+# Typical DP Contest J - ボール
 
 良い問題。
 教科書の例題のような期待値DP。

@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/12/31/agc-009-d/"
-title: "AtCoder Grand Contest 009: D - Uninity"
 date: "2017-12-31T18:51:22+09:00"
 tags: [ "competitive", "writeup", "atcoder", "graph", "tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc009/tasks/agc009_d" ]
 ---
+
+# AtCoder Grand Contest 009: D - Uninity
 
 分からなかった。しばらく寝かせてから再び見たときも分からなかった。
 

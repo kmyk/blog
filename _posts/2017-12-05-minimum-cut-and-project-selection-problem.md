@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2017-12-05T19:57:47+09:00"
-title: "最小カットとProject Selection Problemのまとめ"
 tags: [ "competitive", "min-cut", "max-flow", "project-selection-problem" ]
 ---
+
+# 最小カットとProject Selection Problemのまとめ
 
 ## 前書き
 

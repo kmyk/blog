@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/09/04/twctf-2017-my-simple-cipher/"
 date: "2017-09-04T16:40:35+09:00"
-title: "Tokyo Westerns CTF 3rd 2017: My Simple Cipher"
 tags: [ "ctf", "writeup", "twctf", "crypto" ]
 ---
+
+# Tokyo Westerns CTF 3rd 2017: My Simple Cipher
 
 本番では自明っぽかったのでやらずに放置したらnkhrlab氏がやってくれた。
 

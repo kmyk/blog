@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/03/24/srm-698-med/"
 date: "2017-03-24T18:55:34+09:00"
-title: "TopCoder SRM 698 Div1 Medium: IntersectingConvexHull"
 tags: [ "competitive", "writeup", "topcoder", "srm", "convex-hull" ]
 "target_url": [ "https://community.topcoder.com/stat?c=problem_statement&pm=14357" ]
 ---
+
+# TopCoder SRM 698 Div1 Medium: IntersectingConvexHull
 
 見ためはやばそうだが解法を聞いてしまえば(理解できてなくても)実装は楽。
 間違った認識のまま通してしまったので後から詰めた。

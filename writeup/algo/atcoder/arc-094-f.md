@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 094: F - Normalization"
 date: 2018-09-29T02:49:01+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp", "invariant" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc094/tasks/arc094_d" ]
 ---
+
+# AtCoder Regular Contest 094: F - Normalization
 
 ## 解法
 

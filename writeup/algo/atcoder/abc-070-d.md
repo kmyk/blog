@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/08/15/abc-070-d/"
 date: "2017-08-15T13:15:50+09:00"
-title: "AtCoder Beginner Contest 070: D - Transit Tree Path"
 tags: [ "competitive", "writeup", "atcoder", "abc", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc070/tasks/abc070_d" ]
 ---
+
+# AtCoder Beginner Contest 070: D - Transit Tree Path
 
 LCAを貼りかけた。だめ。
 

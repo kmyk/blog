@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Code Festival (2018) Team Relay: E - 狼と狐"
 date: 2018-11-21T11:12:35+09:00
 tags: [ "competitive", "writeup", "atcoder", "code-festival", "linearity" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf18-relay-open/tasks/relay2018_e" ]
 ---
+
+# Code Festival (2018) Team Relay: E - 狼と狐
 
 ## 解法
 

@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/06/27/icpc-2016-domestic-d/"
-title: "ACM-ICPC 2016 国内予選 D: ダルマ落とし"
 date: 2016-06-27T13:01:55+09:00
 tags: [ "competitive", "writeup", "icpc", "dp", "dp-on-intervals" ]
 ---
+
+# ACM-ICPC 2016 国内予選 D: ダルマ落とし
 
 -   <http://icpcsec.storage.googleapis.com/icpc2016-domestic/problems/all_ja.html#section_D>
 -   <http://icpc.iisf.or.jp/past-icpc/domestic2016/judgedata/D/>

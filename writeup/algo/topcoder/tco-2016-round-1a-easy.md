@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/03/27/tco-2016-round-1a-easy/"
-title: "TopCoderOpen 2016 round 1A Easy: EllysTimeMachine"
 date: 2016-03-27T04:16:49+09:00
 tags: [ "competitive", "writeup", "topcoder", "tco" ]
 ---
+
+# TopCoderOpen 2016 round 1A Easy: EllysTimeMachine
 
 やるだけ。
 

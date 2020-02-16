@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/01/15/arc-067-c/"
 date: "2017-01-15T22:49:41+09:00"
-title: "AtCoder Regular Contest 067: C - Factors of Factorial"
 tags: [ "competitive", "writeup", "arc", "atcoder" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc067/tasks/arc067_a" ]
 ---
+
+# AtCoder Regular Contest 067: C - Factors of Factorial
 
 昨日dwaconでやったじゃんと思いながら書いた。
 

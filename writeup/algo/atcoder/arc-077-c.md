@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/07/20/arc-077-c/"
-title: "AtCoder Regular Contest 077: C - pushpush"
 date: "2017-07-20T03:11:56+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc077/tasks/arc077_a" ]
 ---
+
+# AtCoder Regular Contest 077: C - pushpush
 
 Pythonのversion違いでREになった。3.4.3をやめろ、あるいは最初にサンプルで実行してREやWAでもペナルティなし機能とか欲しい。
 

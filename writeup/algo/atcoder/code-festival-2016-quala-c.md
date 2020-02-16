@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/09/25/code-festival-2016-quala-c/"
 date: "2016-09-25T03:26:25+09:00"
-title: "CODE FESTIVAL 2016 qual A: C - 次のアルファベット / Next Letter"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "greedy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-festival-2016-quala/tasks/codefestival_2016_qualA_c" ]
 ---
+
+# CODE FESTIVAL 2016 qual A: C - 次のアルファベット / Next Letter
 
 辞書順最小を作るので、先頭の文字から`a`にできるか見ていく。触ると悪化するなら無視。全部舐めて$k$が余ったら末尾の文字に使う。
 

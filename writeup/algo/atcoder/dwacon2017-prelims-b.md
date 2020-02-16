@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/12/17/dwacon2017-prelims-b/"
 date: "2016-12-17T22:04:43+09:00"
-title: "第3回 ドワンゴからの挑戦状 予選: B - ニコニコレベル"
 tags: [ "competitive", "writeup", "atcoder", "dwacon", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/dwacon2017-prelims/tasks/dwango2017qual_b" ]
 ---
+
+# 第3回 ドワンゴからの挑戦状 予選: B - ニコニコレベル
 
 Eが解けないのでこの問題もgolfしようとしたのだが、雑に書いて提出したらWAったのでなかったことになった。
 

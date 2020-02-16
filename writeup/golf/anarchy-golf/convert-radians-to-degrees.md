@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/02/anagol-convert-radians-to-degrees/"
-title: "Anarchy Golf 948. Convert Radians To Degrees"
 date: 2016-05-02T21:03:43+09:00
 tags: [ "golf", "writeup", "anagol", "anarchy-golf", "ruby", "perl", "c", "float" ]
 "target_url": [ "http://golf.shinh.org/p.rb?Convert+Radians+to+Degrees" ]
 ---
+
+# Anarchy Golf 948. Convert Radians To Degrees
 
 浮動小数点数が絡むとesolangが軒並み死ぬのでだめ。
 
@@ -109,5 +110,7 @@ reference: <https://www.gnu.org/software/bc/manual/dc-1.05/html_mono/dc.html>
 計算式の具体的な中身は面倒なので読んでないです。
 
 ---
+
+# Anarchy Golf 948. Convert Radians To Degrees
 
 [^1]: <http://docs.ruby-lang.org/ja/2.3.0/method/Kernel/m/loop.html>

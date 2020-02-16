@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/09/20/csaw-quals-2017-another-xor/"
 date: "2017-09-20T20:33:18+09:00"
-title: "CSAW Quals CTF 2017: Another Xor"
 tags: [ "ctf", "writeup", "crypto", "csaw-ctf", "xor" ]
 ---
+
+# CSAW Quals CTF 2017: Another Xor
 
 EKOPARTYで忙しい + cryptoがほぼない なのでCSAWはほとんど手付かず。
 

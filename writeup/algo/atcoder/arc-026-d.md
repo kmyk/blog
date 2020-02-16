@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Regular Contest 026: D - 道を直すお仕事"
 date: 2018-09-14T01:41:11+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "binary-search", "minimum-spanning-tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc026/tasks/arc026_4" ]
 ---
+
+# AtCoder Regular Contest 026: D - 道を直すお仕事
 
 ## 解法
 

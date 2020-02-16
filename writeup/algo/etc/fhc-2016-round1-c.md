@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/01/18/fhc-2016-round1-c/"
-title: "Facebook Hacker Cup 2016 Round 1 Yachtzee"
 date: 2016-01-18T01:17:45+09:00
 tags: [ "competitive", "writeup", "facebook-hacker-cup", "expected-value" ]
 ---
+
+# Facebook Hacker Cup 2016 Round 1 Yachtzee
 
 ドルは実数。
 

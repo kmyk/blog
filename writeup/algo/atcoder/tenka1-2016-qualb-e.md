@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "天下一プログラマーコンテスト2016予選B: E - 天下一合体"
 date: 2018-07-07T07:40:13+09:00
 tags: [ "competitive", "writeup", "atcoder", "tenka1", "dp", "segment-tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/tenka1-2016-qualb/tasks/tenka1_2016_qualB_e" ]
 ---
+
+# 天下一プログラマーコンテスト2016予選B: E - 天下一合体
 
 ## 解法
 

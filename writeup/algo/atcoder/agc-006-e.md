@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2017/07/26/agc-006-e/"
-title: "AtCoder Grand Contest 006: E - Rotate 3x3"
 date: "2017-07-26T04:30:56+09:00"
 tags: [ "competitive", "writeup", "atcoder", "agc", "optimization", "insertion-sort" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc006/tasks/agc006_e" ]
 ---
+
+# AtCoder Grand Contest 006: E - Rotate 3x3
 
 挿入sortを使うと$O(N^2)$だが、符号の変化を転倒数とかを使って別で求めればquick sortなどができて$O(N \log N)$になるはず。だけどよく分からなかったので定数倍高速化で殴った。
 

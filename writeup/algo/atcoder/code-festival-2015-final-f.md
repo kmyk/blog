@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/11/26/code-festival-2015-final-f/"
-title: "CODE FESTIVAL 2015 決勝 F - 歩くピアニスト"
 date: 2015-11-26T23:03:08+09:00
 tags: [ "competitive", "writeup", "codefestival", "graph", "cycle", "math", "eulerian-path" ]
 ---
+
+# CODE FESTIVAL 2015 決勝 F - 歩くピアニスト
 
 本番中に解けた。6完できたのは嬉しいけれど、5完最速だった状況から終了間際の滑り込みACをしたので、順位の点ではほぼ変動がなかった。
 

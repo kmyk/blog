@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/04/24/jag2016-domestic-f/"
-title: "JAG Contest 2016 Domestic F - 土地相続"
 date: 2016-04-24T23:58:53+09:00
 tags: [ "competitive", "writeup", "atcoder", "jag", "icpc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/jag2016-domestic/tasks/jag2016secretspring_f" ]
 ---
+
+# JAG Contest 2016 Domestic F - 土地相続
 
 本番中に解法は分かっていたが、E問題を優先したため実装する時間はなかった。
 

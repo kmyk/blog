@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/04/16/gcj-2016-round1a-c/"
-title: "Google Code Jam 2016 Round 1A C. BFFs"
 date: 2016-04-16T15:23:58+09:00
 tags: [ "competitive", "writeup", "gcj", "google-code-jam", "graph", "tree" ]
 "target_url": [ "https://code.google.com/codejam/contest/4304486/dashboard#s=p2" ]
 ---
+
+# Google Code Jam 2016 Round 1A C. BFFs
 
 ## problem
 

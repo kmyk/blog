@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/04/25/jag2016-domestic-e/"
-title: "JAG Contest 2016 Domestic E - 選挙活動"
 date: 2016-04-25T21:22:18+09:00
 tags: [ "competitive", "writeup", "atcoder", "jag", "icpc", "geometry" ]
 "target_url": [ "https://beta.atcoder.jp/contests/jag2016-domestic/tasks/jag2016secretspring_e" ]
 ---
+
+# JAG Contest 2016 Domestic E - 選挙活動
 
 幾何ゲーはだめ
 

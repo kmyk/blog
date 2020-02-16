@@ -2,9 +2,10 @@
 category: blog
 layout: post
 date: "2017-07-16T00:26:26+09:00"
-title: "bit演算による集合の列挙"
 tags: [ "optimization", "bits" ]
 ---
+
+# bit演算による集合の列挙
 
 ## 順序数
 

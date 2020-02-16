@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "lazy kでhello world書いた"
 date: 2014-04-09T00:19:29+09:00
 tags: [ "lazyk", "helloworld", "ski", "combinator" ]
 ---
+
+# lazy kでhello world書いた
 
 -   "hello world"
 -   9000byteぐらい
@@ -31,6 +32,8 @@ tags: [ "lazyk", "helloworld", "ski", "combinator" ]
 
 
 ---
+
+# lazy kでhello world書いた
 
 
 ## ignore\_input
@@ -209,6 +212,8 @@ hello world
 
 
 ---
+
+# lazy kでhello world書いた
 
 2014/04/11
 :    `two`の定義が抜けてたので修正

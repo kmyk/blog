@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "TopCoder 2018 TCO Algorithm: Easy. CubesOnATable"
 date: 2018-08-26T02:55:08+09:00
 tags: [ "competitive", "writeup", "topcoder", "srm" ]
 ---
+
+# TopCoder 2018 TCO Algorithm: Easy. CubesOnATable
 
 ## 解法
 

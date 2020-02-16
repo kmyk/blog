@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/03/06/pragyanctf-2017-the-karaboudjan/"
 date: "2017-03-06T00:03:19+09:00"
-title: "Pragyan CTF 2017: The Karaboudjan"
 tags: [ "ctf", "pragyan-ctf" ]
 ---
+
+# Pragyan CTF 2017: The Karaboudjan
 
 問題文は次。brainfuckぽい記号列とclue.zipが与えられる。
 

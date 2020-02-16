@@ -1,11 +1,12 @@
 ---
 category: blog
 layout: post
-title: "Midnight Sun CTF Finals 2018 参加記"
 date: "2018-06-20T10:47+09:00"
 tags: [ "ctf", "midnight-sun-ctf" ]
 "target_url": [ "https"://ctftime.org/event/635 ]
 ---
+
+# Midnight Sun CTF Finals 2018 参加記
 
 ## 概要
 

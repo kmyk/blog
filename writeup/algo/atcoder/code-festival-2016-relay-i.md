@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/11/30/code-festival-2016-relay-i/"
 date: "2016-11-30T01:33:32+09:00"
-title: "CODE FESTIVAL 2016 Relay: I - 目があったら負け / 3y3s Challenge"
 tags: [ "competitive", "writeup", "atcoder", "codefestival" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf16-relay-open/tasks/relay_i" ]
 ---
+
+# CODE FESTIVAL 2016 Relay: I - 目があったら負け / 3y3s Challenge
 
 本番で担当した。やはり焦ってしまって、普段ならしない実装のミスを連発した。そういえば一昨年も似たことしてたなあ。
 

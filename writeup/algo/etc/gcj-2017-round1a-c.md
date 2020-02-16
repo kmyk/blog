@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/04/23/gcj-2017-round1a-c/"
 date: "2017-04-23T01:08:38+09:00"
-title: "Google Code Jam 2017 Round 1A: C. Play the Dragon"
 tags: [ "competitive", "writeup", "gcj", "aws" ]
 "target_url": [ "https://code.google.com/codejam/contest/5304486/dashboard#s=p2" ]
 ---
+
+# Google Code Jam 2017 Round 1A: C. Play the Dragon
 
 ## solution
 

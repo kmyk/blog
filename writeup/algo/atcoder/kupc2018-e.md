@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Kyoto University Programming Contest 2018: E - 転倒数"
 date: 2018-10-01T01:30:30+09:00
 tags: [ "competitive", "writeup", "atcoder", "kupc", "inversion-number", "binary-indexed-tree", "dp", "inline-dp", "digit-dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/kupc2018/tasks/kupc2018_e" ]
 ---
+
+# Kyoto University Programming Contest 2018: E - 転倒数
 
 ## 解法
 

@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/02/14/yahoo-procon2018-qual-e/"
-title: "「みんなのプロコン 2018」: E - グラフの問題"
 date: "2018-02-14T20:15:29+09:00"
 tags: [ "competitive", "writeup", "atcoder", "yahoo-procon", "segment-tree", "binary-search", "greedy", "graph" ]
 "target_url": [ "https://beta.atcoder.jp/contests/yahoo-procon2018-qual/tasks/yahoo_procon2018_qual_e" ]
 ---
+
+# 「みんなのプロコン 2018」: E - グラフの問題
 
 これは$400$点ぐらいしかなくない？
 実装部分だけならHackerRankで見た。

@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/10/20/hacklu-ctf-2017-salsa/"
 date: "2017-10-20T01:32:43+09:00"
-title: "hack.lu CTF 2017: SALSA"
 tags: [ "ctf", "writeup", "hacklu-ctf", "crypto", "salsa20" ]
 ---
+
+# hack.lu CTF 2017: SALSA
 
 ## problem
 

@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/04/10/gcj-2016-qual-c/"
-title: "Google Code Jam 2016 Qualification Round C. Coin Jam"
 date: 2016-04-10T11:04:27+09:00
 tags: [ "competitive", "writeup", "google-code-jam", "gcj" ]
 "target_url": [ "https://code.google.com/codejam/contest/6254486/dashboard#s=p2" ]
 ---
+
+# Google Code Jam 2016 Qualification Round C. Coin Jam
 
 ## problem
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/03/07/boston-key-party-2016-simple-calc/"
 date: "2017-03-07T15:50:34+09:00"
-title: "Boston Key Party CTF 2016: simple calc"
 tags: [ "ctf", "writeup", "pwn", "boston-key-party-ctf", "rop" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2016/tree/master/boston-key-party-2016/pwn/simple-calc-5" ]
 ---
+
+# Boston Key Party CTF 2016: simple calc
 
 tsunさんとSECCON翌日のpwn会で解いた。ふたりでやって$2$時間かかった。ROPで面倒な方法をしてたらtsunさんに先をshellを取られたりもした。
 

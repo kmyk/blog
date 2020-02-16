@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/03/12/agc-011-a/"
 date: "2017-03-12T22:48:16+09:00"
-title: "AtCoder Grand Contest 011: A - Airport Bus"
 tags: [ "competitive", "writeup", "atcoder", "agc", "greedy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc011/tasks/agc011_a" ]
 ---
+
+# AtCoder Grand Contest 011: A - Airport Bus
 
 ## solution
 

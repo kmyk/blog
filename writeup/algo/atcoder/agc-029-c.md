@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Grand Contest 029: C - Lexicographic constraints"
 date: 2018-12-16T04:23:18+09:00
 tags: [ "competitive", "writeup", "atcoder", "agc", "binary-search", "sequence", "run-length" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc029/tasks/agc029_c" ]
 ---
+
+# AtCoder Grand Contest 029: C - Lexicographic constraints
 
 ## 解法
 

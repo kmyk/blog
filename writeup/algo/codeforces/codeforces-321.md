@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2015/09/04/codeforces-321/"
-title: "Codeforces Round #190 (Div. 1)"
 date: 2015-09-04T00:31:27+09:00
 tags: [ "codeforces", "competitive", "writeup" ]
 "target_url": [ "http://codeforces.com/contest/321" ]
 ---
+
+# Codeforces Round #190 (Div. 1)
 
 茶会。2完で2位。提出時間見ると先輩氏は各問題を私の2倍速で解いててさすがだなあと思った。
 
@@ -242,6 +243,8 @@ int main() {
 引数の順を決めるのにけっこう困った。`find_by_depth`は`target`と`current`まとめた方が良かったですね。
 
 ---
+
+# Codeforces Round #190 (Div. 1)
 
 -   Fri Sep  4 21:31:03 JST 2015
     -   重心じゃなかったので訂正

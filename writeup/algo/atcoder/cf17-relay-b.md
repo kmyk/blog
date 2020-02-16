@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/11/27/cf17-relay-b/"
 date: "2017-11-27T17:58:07+09:00"
-title: "Code Festival Team Relay: B - Evergrowing Tree"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "team-relay", "tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf17-relay-open/tasks/relay2_b" ]
 ---
+
+# Code Festival Team Relay: B - Evergrowing Tree
 
 ## solution
 

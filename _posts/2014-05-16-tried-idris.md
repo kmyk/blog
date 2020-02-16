@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "idrisに挑戦した"
 date: 2014-05-16T22:23:42+09:00
 tags: [ "idris", "haskell", "proof", "type" ]
 ---
+
+# idrisに挑戦した
 
 再挑戦する日のため、敗北した過程のメモ
 

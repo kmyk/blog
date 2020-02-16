@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/01/03/arc-086-c/"
-title: "AtCoder Regular Contest 086: C - Not so Diverse"
 date: "2018-01-03T23:45:08+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc086/tasks/arc086_a" ]
 ---
+
+# AtCoder Regular Contest 086: C - Not so Diverse
 
 ## solution
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/01/25/insomnihack-2017-teaser-baby/"
 date: "2017-01-25T20:04:37+09:00"
-title: "Insomni'hack 2017 Teaser: baby"
 tags: [ "ctf", "writeup", "pwn", "insomnihack", "fork-server" ]
 "target_url": [ "https://teaser.insomnihack.ch/" ]
 ---
+
+# Insomni'hack 2017 Teaser: baby
 
 ## problem
 

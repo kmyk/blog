@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/02/27/mujin-pc-2016-d/"
-title: "MUJIN プログラミングチャレンジ  D - 括弧列 / Parenthesis Sequence"
 date: 2016-02-27T23:48:25+09:00
 tags: [ "competitive", "writeup", "atcoder", "mujin-pc", "segment-tree", "cumulative-sum", "range-minimum-query" ]
 ---
+
+# MUJIN プログラミングチャレンジ  D - 括弧列 / Parenthesis Sequence
 
 時間かければ解ける問題なのだが、これを開いた時点で残り30分を切っていたのでだめだった。賞金貰えず。
 いつかのicpc asia予選も似た感じの問題がでて似た状況で解けなかったような記憶がある。

@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2016/05/23/hackerrank-may-world-codesprint-richie-rich/"
-title: "HackerRank May World CodeSprint: Richie Rich"
 date: 2016-05-23T01:49:47+09:00
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint", "simulation" ]
 "target_url": [ "https://www.hackerrank.com/contests/may-world-codesprint/challenges/richie-rich" ]
 ---
+
+# HackerRank May World CodeSprint: Richie Rich
 
 ## problem
 

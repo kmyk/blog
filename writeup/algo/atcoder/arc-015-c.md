@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/10/02/arc-015-c/"
-title: "AtCoder Regular Contest 015 C - 変わった単位"
 date: 2015-10-02T23:59:59+09:00
 tags: [ "atcoder", "arc", "competitive", "writeup" ]
 ---
+
+# AtCoder Regular Contest 015 C - 変わった単位
 
 使っているノートパソコンのバックライトの調子が悪い。そのせいで色々あって`#ArchLinuxInstallBattle`したりしたのでACが遅れた。まあ事故だったので気にしないこととする。
 

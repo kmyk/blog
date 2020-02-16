@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "lazy kでquine書いた (iota記法)"
 date: 2014-04-17T23:45:00+09:00
 tags: [ "quine", "lazyk", "iota" ]
 ---
+
+# lazy kでquine書いた (iota記法)
 
 -   [@fumieval](https://twitter.com/fumieval)氏のそれの再実装であって、独自性は特に無い
     -   [文字列リテラルが無いLazy Kで黒魔術も力技も使わずにクワイン - fumievalの日記](http://d.hatena.ne.jp/fumiexcel/20120402/1333343067)

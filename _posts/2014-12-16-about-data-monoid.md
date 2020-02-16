@@ -1,11 +1,12 @@
 ---
 category: blog
 layout: post
-title: "Data.Monoidを眺めた"
 date: 2014-12-16T18:20:40+09:00
 tags: [ "haskell", "monoid", "prelude" ]
 math: true
 ---
+
+# Data.Monoidを眺めた
 
 haskellの`Monoid`のまとめ
 
@@ -250,6 +251,8 @@ instance MonadPlus Maybe
 
 
 ---
+
+# Data.Monoidを眺めた
 
 ## 参考
 

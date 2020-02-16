@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/10/23/arc-055-b/"
 date: "2017-10-23T17:13:58+09:00"
-title: "AtCoder Regular Contest 055: B - せんべい"
 tags: [ "competitive", "writeup", "atcoder", "arc", "probability", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc055/tasks/arc055_b" ]
 ---
+
+# AtCoder Regular Contest 055: B - せんべい
 
 hamkoさんが苦しんでて楽しそうだった: <https://docs.google.com/document/d/19z-mgAde_D_Xtom_dShy4ggrhzSWxGnNnoZ9T4jT6tU/edit>。なので解いた。
 非独立である部分に気付かず私も苦しんだ。kmjpさんの[解説](http://kmjp.hatenablog.jp/entry/2016/06/04/0900)を見た。

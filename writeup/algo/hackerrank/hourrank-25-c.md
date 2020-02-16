@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2018/01/04/hackerrank-hourrank-25-c/"
-title: "HackerRank HourRank 25: C. The Strange Function"
 date: "2018-01-04T13:20:00+09:00"
 tags: [ "competitive", "writeup", "hackerrank", "hourrank", "segment-tree", "lazy-propagation", "starry-sky-tree", "gcd", "sliding-window" ]
 "target_url": [ "https://www.hackerrank.com/contests/hourrank-25/challenges/the-strange-function" ]
 ---
+
+# HackerRank HourRank 25: C. The Strange Function
 
 [editorial](https://www.hackerrank.com/contests/hourrank-25/challenges/the-strange-function/editorial)見ても分からなかったので[kmjp](http://kmjp.hatenablog.jp/entry/2018/01/03/0930)さんのを見た。
 editorial中の`with stack`という$2$単語から諸々を読み取るのは私には難しかったです。

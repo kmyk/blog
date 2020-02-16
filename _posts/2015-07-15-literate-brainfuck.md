@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "文藝的brainfuck"
 date: 2015-07-15T01:19:11+09:00
 tags: [ "brainfuck", "esolang" ]
 ---
+
+# 文藝的brainfuck
 
 一見普通のポエムだけれども、brainfuckのプログラムとしても解釈される文章[/downloads/code/2015/07/15/jis.bf](/downloads/code/2015/07/15/jis.bf)を書きました。
 

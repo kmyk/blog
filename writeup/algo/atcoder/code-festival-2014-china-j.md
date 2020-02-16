@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/02/22/code-festival-2014-china-j/"
 date: "2017-02-22T23:44:51+09:00"
-title: "code festival 2014 上海: J - XORAND"
 tags: [ "competitive", "writeup", "atcoder", "codefestival" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-festival-2014-china/tasks/code_festival_china_j" ]
 ---
+
+# code festival 2014 上海: J - XORAND
 
 SIMDの練習問題にと思ったのに、SIMDを書き始める前に通ってしまった。
 clangさんは賢すぎるので何も言わずともvector化されてしまってるようだ。

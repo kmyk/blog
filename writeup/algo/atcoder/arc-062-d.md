@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/10/15/arc-062-d/"
 date: "2016-10-15T23:54:56+09:00"
-title: "AtCoder Regular Contest 062 D - AtCoDeerくんと変なじゃんけん / AtCoDeer and Rock-Paper"
 tags: [ "competitive", "writeup", "atcoder", "arc", "greedy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc062/tasks/arc062_b" ]
 ---
+
+# AtCoder Regular Contest 062 D - AtCoDeerくんと変なじゃんけん / AtCoDeer and Rock-Paper
 
 貪欲っぽいという直感により何も考えず投げてみたら通ったやつ。何故通ったかは分からなかったが、本番中なので通ればよし。
 

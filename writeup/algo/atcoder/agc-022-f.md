@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AtCoder Grand Contest 022: F - Checkers"
 date: 2018-09-15T04:03:49+09:00
 tags: [ "competitive", "writeup", "atcoder", "agc", "polynomial", "dp", "tree", "ast" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc022/tasks/agc022_f" ]
 ---
+
+# AtCoder Grand Contest 022: F - Checkers
 
 ## 解法
 

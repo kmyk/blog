@@ -1,11 +1,12 @@
 ---
 layout: post
 alias: "/blog/2015/09/11/codeforces-576/"
-title: "Codeforces Round #319 (Div. 1)"
 date: 2015-09-11T03:40:11+09:00
 tags: [ "codeforces", "competitive", "writeup" ]
 "target_url": [ "http://codeforces.com/contest/576" ]
 ---
+
+# Codeforces Round #319 (Div. 1)
 
 <del> こどふぉでも黄色くなりたい </del> 今回ので黄色になった (1715 -> 1900)
 
@@ -125,5 +126,7 @@ int main() {
 面積がないので分割線上の処理は今回のにはなかったが。
 
 ---
+
+# Codeforces Round #319 (Div. 1)
 
 Bは解けませんでした。終わった直後にちゃんと振り返ってみると怪しい点だらけでたいへん厳しい。

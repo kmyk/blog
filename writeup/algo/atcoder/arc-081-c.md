@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/08/21/arc-081-c/"
 date: "2017-08-21T00:12:14+09:00"
-title: "AtCoder Regular Contest 081: C - Make a Rectangle"
 tags: [ "competitive", "writeup", "atcoder", "arc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc081/tasks/arc081_a" ]
 ---
+
+# AtCoder Regular Contest 081: C - Make a Rectangle
 
 ## solution
 

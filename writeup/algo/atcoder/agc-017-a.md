@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/07/09/agc-017-a/"
 date: "2017-07-09T23:44:34+09:00"
-title: "AtCoder Grand Contest 017: A - Biscuits"
 tags: [ "competitive", "writeup", "atcoder", "agc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc017/tasks/agc017_a" ]
 ---
+
+# AtCoder Grand Contest 017: A - Biscuits
 
 ## solution
 

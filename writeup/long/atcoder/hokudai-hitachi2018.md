@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "北大・日立新概念コンピューティングコンテスト2018"
 date: 2019-02-28T00:00:00+09:00
 "target_url": [ "https://atcoder.jp/contests/hokudai-hitachi2018", "https://github.com/kmyk/atcoder-marathon-hokudai-hitachi2018" ]
 tags: [ "atcoder", "competitive", "writeup" ]
 ---
+
+# 北大・日立新概念コンピューティングコンテスト2018
 
 ## 解法概要
 
@@ -28,6 +29,8 @@ A問題は暫定 $$1$$ 位だがB問題とC問題はそれぞれ暫定で $$40$$
 
 
 ---
+
+# 北大・日立新概念コンピューティングコンテスト2018
 
 
 ## 問題概要

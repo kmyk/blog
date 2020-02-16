@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/01/20/codegate-ctf-2016-old-school/"
 date: "2017-01-20T16:12:06+09:00"
-title: "Codegate CTF 2016 : old-school"
 tags: [ "ctf", "writeup", "pwn", "codegate-ctf", "fini_array", "format-string-attack" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2016/tree/master/codegate-ctf-2016/pwn/old-school" ]
 ---
+
+# Codegate CTF 2016 : old-school
 
 `.fini_array`を忘れて「stackのaddress総当たりか？」とか言ってた。
 

@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/11/30/code-festival-2016-relay-d/"
 date: "2016-11-30T01:33:22+09:00"
-title: "CODE FESTIVAL 2016 Relay: D - 魔方陣2 / Magic Square 2"
 tags: [ "competitive", "writeup", "atcoder", "codefestival" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf16-relay-open/tasks/relay_d" ]
 ---
+
+# CODE FESTIVAL 2016 Relay: D - 魔方陣2 / Magic Square 2
 
 右上から左下へのななめの制約を忘れてWAした。
 

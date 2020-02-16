@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "天下一プログラマーコンテスト2016予選B: D - 天下一数列にクエリを投げます"
 date: 2018-07-07T07:29:13+09:00
 tags: [ "competitive", "writeup", "atcoder", "tenka1", "segment-tree", "events" ]
 "target_url": [ "https://beta.atcoder.jp/contests/tenka1-2016-qualb/tasks/tenka1_2016_qualB_d" ]
 ---
+
+# 天下一プログラマーコンテスト2016予選B: D - 天下一数列にクエリを投げます
 
 ## 解法
 

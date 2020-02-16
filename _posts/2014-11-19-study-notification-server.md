@@ -1,10 +1,11 @@
 ---
 category: blog
 layout: post
-title: "Desktop通知サーバーについて調べた"
 date: 2014-11-19T10:38:32+09:00
 tags: [ "dbus", "python", "notify-send", "libnotify" ]
 ---
+
+# Desktop通知サーバーについて調べた
 
 ubuntuに標準で入ってる、「email届いたよ」「battery少なくなってるよ」などの通知を右上あたりに表示してくれるあの子
 
@@ -152,6 +153,8 @@ if __name__ == '__main__':
 -   [Libnotify Reference Manual](https://developer.gnome.org/libnotify/0.7/)
 
 ---
+
+# Desktop通知サーバーについて調べた
 
 [^1]: `variant`を使わないサーバーに対しては送れる
 [^2]: `string * uint32 * string * string * string * array{string} * dict{string,variant} * int32`の意

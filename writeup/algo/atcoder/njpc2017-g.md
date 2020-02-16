@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "NJPC2017: G - 交換法則"
 date: 2018-08-04T08:59:50+09:00
 tags: [ "competitive", "writeup", "atcoder", "njpc", "suffix-array", "string", "stack" ]
 "target_url": [ "https://beta.atcoder.jp/contests/njpc2017/tasks/njpc2017_g" ]
 ---
+
+# NJPC2017: G - 交換法則
 
 ## solution
 

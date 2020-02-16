@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/05/12/kupc-2013-f/"
 date: "2017-05-12T20:28:53+09:00"
-title: "京都大学プログラミングコンテスト2013: F - ７歳教"
 tags: [ "competitive", "writeup", "atcoder", "kupc", "dp", "graph", "warshall-floyd" ]
 "target_url": [ "https://beta.atcoder.jp/contests/kupc2013/tasks/kupc2013_f" ]
 ---
+
+# 京都大学プログラミングコンテスト2013: F - ７歳教
 
 これも$3$WA。
 

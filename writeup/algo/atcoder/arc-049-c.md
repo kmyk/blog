@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2016/03/20/arc-049-c/"
-title: "AtCoder Regular Contest 049 C - ぬりまーす"
 date: 2016-03-20T00:52:17+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "graph" ]
 ---
+
+# AtCoder Regular Contest 049 C - ぬりまーす
 
 ## [C - ぬりまーす](https://beta.atcoder.jp/contests/arc049/tasks/arc049_c)
 
@@ -86,6 +87,8 @@ int main() {
 ```
 
 ---
+
+# AtCoder Regular Contest 049 C - ぬりまーす
 
 -   2017年  5月 10日 水曜日 22:02:12 JST
     -   計算量を間違えてると教えてもらったので修正: <https://twitter.com/kosakkun/status/862289354168741888>

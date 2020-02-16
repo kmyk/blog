@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2016/09/05/twctf-2016-lights-out/"
 date: "2016-09-05T14:31:00+09:00"
-title: "Tokyo Westerns/MMA CTF 2nd 2016: Lights Out!"
 tags: [ "ctf", "writeup", "ppc", "mmactf", "twctf", "dp", "matrix" ]
 "target_url": [ "https://score.ctf.westerns.tokyo/problems/13" ]
 ---
+
+# Tokyo Westerns/MMA CTF 2nd 2016: Lights Out!
 
 とても時間を取られた。指数でしかできない気がしていたのが原因。z3とかで無理矢理やろうとしたけど駄目だった。
 

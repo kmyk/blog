@@ -2,9 +2,10 @@
 layout: post
 alias: "/blog/2017/09/12/twctf-2017-backpackers-problem/"
 date: "2017-09-12T21:28:33+09:00"
-title: "Tokyo Westerns CTF 3rd 2017: Backpacker's Problem"
 tags: [ "ctf", "writeup", "ppc", "meet-in-the-middle", "overflow" ]
 ---
+
+# Tokyo Westerns CTF 3rd 2017: Backpacker's Problem
 
 ## note
 

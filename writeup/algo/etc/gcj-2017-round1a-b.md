@@ -2,10 +2,11 @@
 layout: post
 alias: "/blog/2017/04/23/gcj-2017-round1a-b/"
 date: "2017-04-23T01:08:36+09:00"
-title: "Google Code Jam 2017 Round 1A: B. Ratatouille"
 tags: [ "competitive", "writeup", "gcj" ]
 "target_url": [ "https://code.google.com/codejam/contest/5304486/dashboard#s=p1" ]
 ---
+
+# Google Code Jam 2017 Round 1A: B. Ratatouille
 
 問題文が難しすぎる。嫌い。
 

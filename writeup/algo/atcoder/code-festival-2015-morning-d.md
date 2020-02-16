@@ -1,10 +1,11 @@
 ---
 layout: post
 alias: "/blog/2015/11/20/code-festival-2015-morning-d/"
-title: "CODE FESTIVAL 2015 朝プロ D - ヘイホー君と削除"
 date: 2015-11-20T00:06:47+09:00
 tags: [ "competitive", "writeup", "codefestival", "atcoder", "dp" ]
 ---
+
+# CODE FESTIVAL 2015 朝プロ D - ヘイホー君と削除
 
 そこそこの速度でAC。でもDPの周りで実装ミスして1WA。
 

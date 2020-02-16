@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/07/02/icpc-2017-domestic-practice-a/"
+redirect_from:
+  - /blog/2017/07/02/icpc-2017-domestic-practice-a/
 date: "2017-07-02T22:35:52+09:00"
 tags: [ "competitive", "writeup", "aoj", "icpc-domestic" ]
 ---

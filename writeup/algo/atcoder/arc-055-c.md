@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/01/02/arc-055-c/"
+redirect_from:
+  - /blog/2018/01/02/arc-055-c/
 date: "2018-01-02T11:10:35+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "string", "combinatorics", "binary-search", "rolling-hash" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc055/tasks/arc055_c" ]

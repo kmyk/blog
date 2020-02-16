@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/05/12/kupc-2013-f/"
+redirect_from:
+  - /blog/2017/05/12/kupc-2013-f/
 date: "2017-05-12T20:28:53+09:00"
 tags: [ "competitive", "writeup", "atcoder", "kupc", "dp", "graph", "warshall-floyd" ]
 "target_url": [ "https://beta.atcoder.jp/contests/kupc2013/tasks/kupc2013_f" ]

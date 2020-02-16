@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/04/05/codechef-cook79-chairs/"
+redirect_from:
+  - /blog/2018/04/05/codechef-cook79-chairs/
 date: "2018-04-05T06:48:39+09:00"
 tags: [ "competitive", "writeup", "codechef" ]
 "target_url": [ "https://www.codechef.com/COOK79/problems/CHAIRS" ]

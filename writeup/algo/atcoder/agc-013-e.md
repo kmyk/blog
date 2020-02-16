@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/06/13/agc-013-e/"
+redirect_from:
+  - /blog/2017/06/13/agc-013-e/
 date: "2017-06-13T02:39:40+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "optimization", "dp", "linearity" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc013/tasks/agc013_e" ]

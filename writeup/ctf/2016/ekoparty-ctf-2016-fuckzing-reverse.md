@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/10/29/ekoparty-ctf-2016-fuckzing-reverse/"
+redirect_from:
+  - /blog/2016/10/29/ekoparty-ctf-2016-fuckzing-reverse/
 date: "2016-10-29T13:00:35+09:00"
 tags: [ "ctf", "writeup", "ekoparty-ctf", "rev", "angr" ]
 "target_url": [ "https://ctf.ekoparty.org/tasks/rev/250" ]

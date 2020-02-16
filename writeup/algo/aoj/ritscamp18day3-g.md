@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/04/02/aoj-ritscamp18day3-g/"
+redirect_from:
+  - /blog/2018/04/02/aoj-ritscamp18day3-g/
 date: "2018-04-02T22:46:53+09:00"
 tags: [ "competitive", "writeup", "aoj", "rupc", "string", "rolling-hash", "greedy", "suffix-array" ]
 "target_url": [ "https://onlinejudge.u-aizu.ac.jp/beta/room.html#RitsCamp18Day3/problems/G" ]

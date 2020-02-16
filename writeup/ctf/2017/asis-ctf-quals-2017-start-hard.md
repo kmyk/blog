@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/04/10/asis-ctf-quals-2017-start-hard/"
+redirect_from:
+  - /blog/2017/04/10/asis-ctf-quals-2017-start-hard/
 date: "2017-04-10T02:45:37+09:00"
 tags: [ "ctf", "writeup", "asis-ctf", "pwn", "one-gadget-rce" ]
 "target_url": [ "https://asis-ctf.ir/challenges/" ]

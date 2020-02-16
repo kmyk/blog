@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/12/19/srm-676-med/"
+redirect_from:
+  - /blog/2015/12/19/srm-676-med/
 date: 2015-12-19T02:32:14+09:00
 tags: [ "competitive", "writeup", "srm", "nim", "grundy" ]
 ---

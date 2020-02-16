@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/09/01/cyber-security-challenge-2015-guess-the-algorithm/"
+redirect_from:
+  - /blog/2016/09/01/cyber-security-challenge-2015-guess-the-algorithm/
 date: "2016-09-01T13:54:42+09:00"
 tags: [ "ctf", "writeup", "crypto", "cyber-security-challenge" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2015/tree/master/cyber-security-challenge-2015/cryptography/guess-the-algorithm" ]

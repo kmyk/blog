@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/06/03/arc-075-e/"
+redirect_from:
+  - /blog/2017/06/03/arc-075-e/
 date: "2017-06-03T22:58:01+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "cumulative-sum", "optimization", "square-root-decomposition" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc075/tasks/arc075_c" ]

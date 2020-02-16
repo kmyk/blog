@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/12/17/dwacon2017-prelims-c/"
+redirect_from:
+  - /blog/2016/12/17/dwacon2017-prelims-c/
 date: "2016-12-17T22:04:45+09:00"
 tags: [ "competitive", "writeup", "atcoder", "dwacon" ]
 "target_url": [ "https://beta.atcoder.jp/contests/dwacon2017-prelims/tasks/dwango2017qual_c" ]

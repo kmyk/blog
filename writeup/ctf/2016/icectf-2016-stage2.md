@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/08/27/icectf-2016-stage2/"
+redirect_from:
+  - /blog/2016/08/27/icectf-2016-stage2/
 date: "2016-08-27T01:22:14+09:00"
 tags: [ "ctf", "writeup", "icectf" ]
 "target_url": [ "https://icec.tf/" ]

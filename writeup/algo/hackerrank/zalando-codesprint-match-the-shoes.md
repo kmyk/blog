@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/06/05/hackerrank-zalando-codesprint-match-the-shoes/"
+redirect_from:
+  - /blog/2016/06/05/hackerrank-zalando-codesprint-match-the-shoes/
 date: 2016-06-05T19:16:33+09:00
 tags: [ "competitive", "writeup", "hackerrank" ]
 "target_url": [ "https://www.hackerrank.com/contests/zalando-codesprint/challenges/match-the-shoes" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/09/20/ekoparty-ctf-2017-warm-up/"
+redirect_from:
+  - /blog/2017/09/20/ekoparty-ctf-2017-warm-up/
 date: "2017-09-20T20:38:47+09:00"
 tags: [ "ctf", "writeup", "rev", "ekoparty-ctf", "angr" ]
 ---

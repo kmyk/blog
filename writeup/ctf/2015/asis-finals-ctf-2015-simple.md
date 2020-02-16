@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/08/27/asis-finals-ctf-2015-simple/"
+redirect_from:
+  - /blog/2016/08/27/asis-finals-ctf-2015-simple/
 date: "2016-08-27T01:03:28+09:00"
 tags: [ "ctf", "writeup", "asis-ctf", "crypto", "xor" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2015/tree/master/asis-finals-ctf-2015/crypto/simple" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/05/24/anagol-hypotenuse-length/"
+redirect_from:
+  - /blog/2016/05/24/anagol-hypotenuse-length/
 date: 2016-05-24T23:35:20+09:00
 tags: [ "golf", "writeup", "anagol", "anarch-golf", "float" ]
 "target_url": [ "http://golf.shinh.org/p.rb?Hypotenuse+length" ]

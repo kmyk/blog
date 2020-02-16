@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/01/01/code-festival-2017-qualc-c/"
+redirect_from:
+  - /blog/2018/01/01/code-festival-2017-qualc-c/
 date: "2018-01-01T12:14:04+09:00"
 tags: [ "competitive", "writeup", "codefestival", "palindrome" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-festival-2017-qualc/tasks/code_festival_2017_qualc_c" ]

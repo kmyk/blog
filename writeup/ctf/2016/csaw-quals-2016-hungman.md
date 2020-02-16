@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/09/19/csaw-quals-2016-hungman/"
+redirect_from:
+  - /blog/2016/09/19/csaw-quals-2016-hungman/
 date: "2016-09-19T22:10:02+09:00"
 tags: [ "ctf", "writeup", "csaw-ctf", "pwn" ]
 ---

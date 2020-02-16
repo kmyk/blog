@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/12/31/arc-085-e/"
+redirect_from:
+  - /blog/2017/12/31/arc-085-e/
 date: "2017-12-31T16:04:28+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "flow", "maximum-flow", "project-selection-problem" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc085/tasks/arc085_c" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/06/20/abc-040-c/"
+redirect_from:
+  - /blog/2016/06/20/abc-040-c/
 date: 2016-06-20T00:56:19+09:00
 tags: [ "competitive", "writeup", "abc", "atcoder", "graph", "dp", "dag" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc040/tasks/abc040_c" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/03/28/hackerrank-lambda-calculi-march-2016-tree-manager/"
+redirect_from:
+  - /blog/2016/03/28/hackerrank-lambda-calculi-march-2016-tree-manager/
 date: 2016-03-28T15:27:21+09:00
 tags: [ "competitive", "writeup", "hackerrank", "lambda-calculi", "haskell", "zipper" ]
 "target_url": [ "https://www.hackerrank.com/contests/lambda-calculi-march-2016/challenges/tree-manager" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/03/13/agc-002-f/"
+redirect_from:
+  - /blog/2018/03/13/agc-002-f/
 date: "2018-03-13T22:54:25+09:00"
 tags: [ "competitive", "writeup", "atcoder", "agc", "dp", "topological-sort" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc002/tasks/agc002_f" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/09/11/codeforces-576/"
+redirect_from:
+  - /blog/2015/09/11/codeforces-576/
 date: 2015-09-11T03:40:11+09:00
 tags: [ "codeforces", "competitive", "writeup" ]
 "target_url": [ "http://codeforces.com/contest/576" ]

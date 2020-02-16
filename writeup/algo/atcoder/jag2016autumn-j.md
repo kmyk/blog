@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/10/10/jag2016autumn-j/"
+redirect_from:
+  - /blog/2016/10/10/jag2016autumn-j/
 date: "2016-10-10T21:51:39+09:00"
 tags: [ "competitive", "writeup", "atcoder", "jag", "icpc", "matrix", "exponentiation-by-squaring" ]
 "target_url": [ "https://beta.atcoder.jp/contests/jag2016autumn/tasks/icpc2016autumn_j" ]

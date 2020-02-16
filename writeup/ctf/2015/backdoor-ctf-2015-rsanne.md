@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/08/31/backdoor-ctf-2015-rsanne/"
+redirect_from:
+  - /blog/2016/08/31/backdoor-ctf-2015-rsanne/
 date: "2016-08-31T20:23:29+09:00"
 tags: [ "ctf", "writeup", "crypto", "backdoor-ctf", "rsa" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2015/tree/master/backdoor-ctf-2015/crypto/rsanne" ]

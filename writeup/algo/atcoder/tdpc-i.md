@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/06/10/tdpc-i/"
+redirect_from:
+  - /blog/2016/06/10/tdpc-i/
 date: 2016-06-10T20:25:42+09:00
 tags: [ "competitive", "writeup", "atcoder", "typical-dp-contest", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/tdpc/tasks/tdpc_iwi" ]

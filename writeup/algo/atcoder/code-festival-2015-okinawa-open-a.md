@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/07/13/code-festival-2015-okinawa-open-a/"
+redirect_from:
+  - /blog/2016/07/13/code-festival-2015-okinawa-open-a/
 date: "2016-07-13T02:52:39+09:00"
 tags: [ "competitive", "writeup", "codefestival", "atcoder", "construction" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-festival-2015-okinawa-open/tasks/code_festival_2015_okinawa_a" ]

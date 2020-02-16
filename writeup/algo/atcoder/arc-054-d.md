@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/06/07/arc-054-d/"
+redirect_from:
+  - /blog/2017/06/07/arc-054-d/
 date: "2017-06-07T13:01:24+09:00"
 tags: [ "competitive", "atcoder", "agc", "greedy", "segment-tree", "dynamic-construction", "weighted-union-heuristic" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc054/tasks/arc054_d" ]

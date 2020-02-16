@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/12/24/code-festival-2016-final-h/"
+redirect_from:
+  - /blog/2016/12/24/code-festival-2016-final-h/
 date: "2016-12-24T22:43:53+09:00"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "dp", "game" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf16-final-open/tasks/codefestival_2016_final_h" ]

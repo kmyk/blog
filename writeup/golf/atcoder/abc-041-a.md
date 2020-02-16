@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/07/04/abc-041-a/"
+redirect_from:
+  - /blog/2016/07/04/abc-041-a/
 date: "2016-07-04T04:49:51+09:00"
 tags: [ "competitive", "writeup", "atcoder", "abc", "golf", "sed", "brainfuck" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc041/tasks/abc041_a" ]

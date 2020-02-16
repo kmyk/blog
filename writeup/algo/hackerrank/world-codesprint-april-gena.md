@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/05/01/hackerrank-world-codesprint-april-gena/"
+redirect_from:
+  - /blog/2016/05/01/hackerrank-world-codesprint-april-gena/
 date: 2016-05-01T12:20:46+09:00
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint" ]
 "target_url": [ "https://www.hackerrank.com/contests/world-codesprint-april/challenges/gena" ]

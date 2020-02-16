@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/04/10/gcj-2016-qual-c/"
+redirect_from:
+  - /blog/2016/04/10/gcj-2016-qual-c/
 date: 2016-04-10T11:04:27+09:00
 tags: [ "competitive", "writeup", "google-code-jam", "gcj" ]
 "target_url": [ "https://code.google.com/codejam/contest/6254486/dashboard#s=p2" ]

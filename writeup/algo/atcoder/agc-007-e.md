@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/07/26/agc-007-e/"
+redirect_from:
+  - /blog/2017/07/26/agc-007-e/
 date: "2017-07-26T07:11:02+09:00"
 tags: [ "competitive", "writeup", "atcoder", "agc", "tree", "dp", "shakutori-method" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc007/tasks/agc007_e" ]

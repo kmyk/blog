@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/05/28/abc-038-d/"
+redirect_from:
+  - /blog/2016/05/28/abc-038-d/
 date: 2016-05-28T23:00:04+09:00
 tags: [ "competitive", "writeup", "atcoder", "abc", "binary-indexed-tree", "range-max-query", "greedy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc038/tasks/abc038_d" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/02/27/mujin-pc-2016-c/"
+redirect_from:
+  - /blog/2016/02/27/mujin-pc-2016-c/
 date: 2016-02-27T23:48:23+09:00
 tags: [ "competitive", "writeup", "atcoder", "mujin-pc", "graph", "bipartite-graph" ]
 ---

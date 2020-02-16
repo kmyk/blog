@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/01/30/seccon-finals-2016-holy-shellcode/"
+redirect_from:
+  - /blog/2017/01/30/seccon-finals-2016-holy-shellcode/
 date: "2017-01-30T03:52:06+09:00"
 tags: [ "ctf", "writeup", "seccon", "pwn", "shellcode" ]
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/12/29/utpc2011-j/"
+redirect_from:
+  - /blog/2017/12/29/utpc2011-j/
 date: "2017-12-29T07:48:34+09:00"
 tags: [ "competitive", "writeup", "utpc", "aoj", "dp", "treap", "fast-fourier-transformation", "probability" ]
 ---

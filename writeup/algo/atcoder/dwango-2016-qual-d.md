@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/01/24/dwango-2016-qual-d/"
+redirect_from:
+  - /blog/2016/01/24/dwango-2016-qual-d/
 date: 2016-01-24T00:40:35+09:00
 tags: [ "competitive", "writeup", "atcoder", "dwango" ]
 ---

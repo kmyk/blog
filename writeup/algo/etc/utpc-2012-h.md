@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/01/01/utpc-2012-h/"
+redirect_from:
+  - /blog/2018/01/01/utpc-2012-h/
 date: "2018-01-01T10:51:19+09:00"
 tags: [ "competitive", "writeup", "utpc", "atcoder", "schduling", "doubling", "query", "segment-tree", "coodinate-compression" ]
 "target_url": [ "https://beta.atcoder.jp/contests/utpc2012/tasks/utpc2012_08" ]

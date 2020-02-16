@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/09/12/twctf-2017-palindromes-pairs-challenge-phase/"
+redirect_from:
+  - /blog/2017/09/12/twctf-2017-palindromes-pairs-challenge-phase/
 date: "2017-09-12T18:33:52+09:00"
 tags: [ "ctf", "writeup", "ppc", "rolling-hash" ]
 ---

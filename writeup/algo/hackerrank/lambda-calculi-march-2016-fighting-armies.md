@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/03/28/hackerrank-lambda-calculi-march-2016-fighting-armies/"
+redirect_from:
+  - /blog/2016/03/28/hackerrank-lambda-calculi-march-2016-fighting-armies/
 date: 2016-03-28T15:27:36+09:00
 tags: [ "competitive", "writeup", "hackerrank", "lambda-calculi", "haskell", "lazy-evaluation" ]
 "target_url": [ "https://www.hackerrank.com/contests/lambda-calculi-march-2016/challenges/fighting-armies" ]

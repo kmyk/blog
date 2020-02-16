@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/03/26/volgactf-2018-quals-nonsense/"
+redirect_from:
+  - /blog/2018/03/26/volgactf-2018-quals-nonsense/
 date: "2018-03-26T00:00:01+09:00"
 tags: [ "ctf", "writeup", "volgactf", "crypto", "digital-signature-algorithm", "linear-congruential-generators" ]
 "target_url": [ "https://quals.2018.volgactf.ru/tasks" ]

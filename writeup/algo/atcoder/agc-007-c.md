@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/01/01/agc-007-c/"
+redirect_from:
+  - /blog/2018/01/01/agc-007-c/
 date: "2018-01-01T16:09:17+09:00"
 tags: [ "competitive", "writeup", "atcoder", "agc", "expected-value", "probability" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc007/tasks/agc007_c" ]

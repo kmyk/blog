@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/12/30/33c3-ctf-try/"
+redirect_from:
+  - /blog/2016/12/30/33c3-ctf-try/
 date: "2016-12-30T13:39:37+09:00"
 tags: [ "ctf", "writeup", "web", "33c3-ctf", "polyglot", "haskell" ]
 ---

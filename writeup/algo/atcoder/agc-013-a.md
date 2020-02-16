@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/08/09/agc-013-a/"
+redirect_from:
+  - /blog/2017/08/09/agc-013-a/
 date: "2017-08-09T22:48:07+09:00"
 tags: [ "competitive", "writeup", "atcoder", "agc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc013/tasks/agc013_a" ]

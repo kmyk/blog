@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/02/07/burning-ctf/"
+redirect_from:
+  - /blog/2016/02/07/burning-ctf/
 date: 2016-02-07T13:00:00+09:00
 tags: [ "ctf", "writeup", "burning-ctf" ]
 "target_url": [ "http://burningctf.yamatosecurity.com/score/puzzle" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/07/13/code-festival-2015-okinawa-open-c/"
+redirect_from:
+  - /blog/2016/07/13/code-festival-2015-okinawa-open-c/
 date: "2016-07-13T02:52:42+09:00"
 tags: [ "competitive", "writeup", "codefestival", "atcoder", "game", "nim", "grundy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-festival-2015-okinawa-open/tasks/code_festival_2015_okinawa_c" ]

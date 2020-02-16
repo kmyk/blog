@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/05/02/anagol-convert-radians-to-degrees/"
+redirect_from:
+  - /blog/2016/05/02/anagol-convert-radians-to-degrees/
 date: 2016-05-02T21:03:43+09:00
 tags: [ "golf", "writeup", "anagol", "anarchy-golf", "ruby", "perl", "c", "float" ]
 "target_url": [ "http://golf.shinh.org/p.rb?Convert+Radians+to+Degrees" ]

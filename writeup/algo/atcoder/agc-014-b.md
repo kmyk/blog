@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/05/07/agc-014-b/"
+redirect_from:
+  - /blog/2017/05/07/agc-014-b/
 date: "2017-05-07T21:10:42+09:00"
 tags: [ "competitive", "writeup", "atcoder", "agc", "eulerian-graph", "tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc014/tasks/agc014_b" ]

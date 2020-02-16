@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/07/29/arc-079-f/"
+redirect_from:
+  - /blog/2017/07/29/arc-079-f/
 date: "2017-07-29T23:07:12+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "graph", "tree", "grundy-number" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc079/tasks/arc079_d" ]

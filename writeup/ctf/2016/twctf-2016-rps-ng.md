@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/09/05/twctf-2016-rps-ng/"
+redirect_from:
+  - /blog/2016/09/05/twctf-2016-rps-ng/
 date: "2016-09-05T13:15:47+09:00"
 tags: [ "ctf", "writeup", "ppc", "mmactf", "twctf" ]
 "target_url": [ "https://score.ctf.westerns.tokyo/problems/33" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/03/01/abc-068-a/"
+redirect_from:
+  - /blog/2018/03/01/abc-068-a/
 date: "2018-03-01T09:49:34+09:00"
 tags: [ "competitive", "writeup", "atcoder", "abc", "brainfuck", "golf" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc068/tasks/abc068_a" ]

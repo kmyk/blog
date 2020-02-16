@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/11/26/cf17-final-b/"
+redirect_from:
+  - /blog/2017/11/26/cf17-final-b/
 date: "2017-11-26T10:02:21+09:00"
 tags: [ "competitive", "writeup", "atcoder", "codefestival" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf17-final-open/tasks/cf17_final_b" ]

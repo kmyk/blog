@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/03/05/rco-contest-2017-qual-a/"
+redirect_from:
+  - /blog/2017/03/05/rco-contest-2017-qual-a/
 date: "2017-03-05T01:50:06+09:00"
 tags: [ "competitive", "writeup", "atcoder", "rco-contest", "half-marathon", "random", "greedy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/rco-contest-2017-qual/tasks/rco_contest_2017_qual_a" ]

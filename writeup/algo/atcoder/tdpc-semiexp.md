@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/10/05/tdpc-semiexp/"
+redirect_from:
+  - /blog/2015/10/05/tdpc-semiexp/
 date: 2015-10-05T22:44:24+09:00
 tags: [ "atcoder", "competitive", "writeup", "dp", "typical-dp-contest" ]
 ---

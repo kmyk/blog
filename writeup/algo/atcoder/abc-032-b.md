@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/02/22/abc-032-b/"
+redirect_from:
+  - /blog/2016/02/22/abc-032-b/
 date: 2016-02-22T21:44:12+09:00
 tags: [ "competitive", "writeup", "atcoder", "abc" ]
 ---

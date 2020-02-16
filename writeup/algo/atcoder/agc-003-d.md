@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/08/21/agc-003-d/"
+redirect_from:
+  - /blog/2016/08/21/agc-003-d/
 date: "2016-08-21T23:55:23+09:00"
 tags: [ "competitive", "writeup", "atcoder", "agc", "boost", "normalization" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc003/tasks/agc003_d" ]

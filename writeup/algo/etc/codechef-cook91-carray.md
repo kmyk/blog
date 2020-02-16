@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/03/31/codechef-cook91-carray/"
+redirect_from:
+  - /blog/2018/03/31/codechef-cook91-carray/
 date: "2018-03-31T02:12:58+09:00"
 tags: [ "competitive", "writeup", "codechef", "greedy" ]
 "target_url": [ "https://www.codechef.com/COOK91/problems/CARRAY" ]

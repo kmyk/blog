@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/04/29/anagol-merge-digits/"
+redirect_from:
+  - /blog/2016/04/29/anagol-merge-digits/
 date: 2016-04-29T18:33:48+09:00
 tags: [ "golf", "writeup", "anagol", "anarchy-golf", "c", "sed", "perl", "ruby", "brainfuck" ]
 ---

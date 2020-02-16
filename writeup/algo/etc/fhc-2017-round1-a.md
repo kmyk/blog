@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/01/16/fhc-2017-round1-a/"
+redirect_from:
+  - /blog/2017/01/16/fhc-2017-round1-a/
 date: "2017-01-16T03:04:29+09:00"
 tags: [ "competitive", "writeup", "facebook-hacker-cup", "greedy", "dp" ]
 "target_url": [ "https://www.facebook.com/hackercup/problem/1800890323482794/" ]

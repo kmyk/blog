@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/11/20/code-festival-2015-morning-e/"
+redirect_from:
+  - /blog/2015/11/20/code-festival-2015-morning-e/
 date: 2015-11-20T00:06:52+09:00
 tags: [ "competitive", "writeup", "codefestival", "atcoder" ]
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/02/18/anagol-easy-regexp/"
+redirect_from:
+  - /blog/2016/02/18/anagol-easy-regexp/
 date: 2016-02-18T13:34:57+09:00
 tags: [ "writeup", "anarchy-golf", "golf", "perl", "ruby", "regex", "glob", "parsing" ]
 ---

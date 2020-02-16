@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/01/02/32c3-ctf-teufel/"
+redirect_from:
+  - /blog/2016/01/02/32c3-ctf-teufel/
 date: 2016-01-02T23:20:01+09:00
 tags: [ "ctf", "pwn", "writeup", "xinetd", "buffer-overflow", "rop" ]
 ---

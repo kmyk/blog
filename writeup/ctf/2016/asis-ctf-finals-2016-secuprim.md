@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/09/12/asis-ctf-finals-2016-secuprim/"
+redirect_from:
+  - /blog/2016/09/12/asis-ctf-finals-2016-secuprim/
 date: "2016-09-12T02:26:22+09:00"
 tags: [ "ctf", "writeup", "asis-ctf", "ppc" ]
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/03/24/srm-698-med/"
+redirect_from:
+  - /blog/2017/03/24/srm-698-med/
 date: "2017-03-24T18:55:34+09:00"
 tags: [ "competitive", "writeup", "topcoder", "srm", "convex-hull" ]
 "target_url": [ "https://community.topcoder.com/stat?c=problem_statement&pm=14357" ]

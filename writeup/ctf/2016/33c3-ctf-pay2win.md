@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/12/30/33c3-ctf-pay2win/"
+redirect_from:
+  - /blog/2016/12/30/33c3-ctf-pay2win/
 date: "2016-12-30T13:39:33+09:00"
 tags: [ "ctf", "writeup", "web", "33c3-ctf" ]
 ---

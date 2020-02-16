@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/05/01/hackerrank-world-codesprint-april-kmp-problem/"
+redirect_from:
+  - /blog/2016/05/01/hackerrank-world-codesprint-april-kmp-problem/
 date: 2016-05-01T12:20:55+09:00
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint", "greedy", "construct" ]
 ---

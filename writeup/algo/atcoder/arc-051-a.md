@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/04/22/arc-051-a/"
+redirect_from:
+  - /blog/2016/04/22/arc-051-a/
 date: 2016-04-22T17:55:01+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc051/tasks/arc051_a" ]

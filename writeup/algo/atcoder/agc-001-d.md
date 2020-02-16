@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/10/03/agc-001-d/"
+redirect_from:
+  - /blog/2017/10/03/agc-001-d/
 date: "2017-10-03T05:44:31+09:00"
 tags: [ "competitive", "writeup", "atcoder", "agc", "graph", "palindrome" ]
 ---

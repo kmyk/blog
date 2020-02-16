@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/07/30/tenka1-2016-quala-d/"
+redirect_from:
+  - /blog/2016/07/30/tenka1-2016-quala-d/
 date: "2016-07-30T23:24:33+09:00"
 tags: [ "competitive", "wirteup", "atcoder", "tenka1-programmer-contest", "graph", "tree", "implementation" ]
 "target_url": [ "https://beta.atcoder.jp/contests/tenka1-2016-quala/tasks/tenka1_2016_qualD_a" ]

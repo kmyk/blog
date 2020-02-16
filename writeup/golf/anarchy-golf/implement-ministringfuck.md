@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/01/31/anagol-implement-ministringfuck/"
+redirect_from:
+  - /blog/2017/01/31/anagol-implement-ministringfuck/
 date: "2017-01-31T22:27:35+09:00"
 tags: [ "golf", "writeup", "anagol", "anarchy-golf", "brainfuck", "sed" ]
 "target_url": [ "http://golf.shinh.org/p.rb?Implement+MiniStringFuck" ]

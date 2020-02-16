@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/09/22/codeforces-338/"
+redirect_from:
+  - /blog/2015/09/22/codeforces-338/
 date: 2015-09-22T00:10:39+09:00
 tags: [ "codeforces", "competitive", "c++", "writeup", "matrix" ]
 "target_url": [ "http://codeforces.com/contest/338" ]

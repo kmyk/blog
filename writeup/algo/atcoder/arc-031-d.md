@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/01/16/arc-031-d/"
+redirect_from:
+  - /blog/2016/01/16/arc-031-d/
 date: 2016-01-16T19:31:37+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "graph", "flow", "maximum-flow", "dinic", "binary-search", "graphviz" ]
 ---

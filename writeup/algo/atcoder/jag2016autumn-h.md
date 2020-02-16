@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/10/11/jag2016autumn-h/"
+redirect_from:
+  - /blog/2016/10/11/jag2016autumn-h/
 date: "2016-10-11T22:47:11+09:00"
 tags: [ "competitive", "writeup", "atcoder", "jag", "icpc", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/jag2016autumn/tasks/icpc2016autumn_h" ]

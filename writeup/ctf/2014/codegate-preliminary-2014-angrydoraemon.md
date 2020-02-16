@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/02/14/codegate-preliminary-2014-angrydoraemon/"
+redirect_from:
+  - /blog/2016/02/14/codegate-preliminary-2014-angrydoraemon/
 date: 2016-02-14T17:50:10+09:00
 tags: [ "ctf", "writeup", "pwn", "codegate", "buffer-overflow", "stack-overflow", "return-oriented-programming" ]
 ---

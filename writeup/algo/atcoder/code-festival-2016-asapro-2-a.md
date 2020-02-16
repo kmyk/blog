@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/12/04/code-festival-2016-asapro-2-a/"
+redirect_from:
+  - /blog/2016/12/04/code-festival-2016-asapro-2-a/
 date: "2016-12-04T02:32:02+09:00"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "expected-value" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf16-tournament-round2-open/tasks/asaporo_e" ]

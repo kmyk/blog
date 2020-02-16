@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/12/22/arc-010-d/"
+redirect_from:
+  - /blog/2015/12/22/arc-010-d/
 date: 2015-12-22T23:42:32+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "scc", "strongly-connected-components-decomposition", "dag", "directed-acyclic-graph", "graph" ]
 ---

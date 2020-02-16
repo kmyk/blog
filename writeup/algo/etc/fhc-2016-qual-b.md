@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/01/11/fhc-2016-qual-b/"
+redirect_from:
+  - /blog/2016/01/11/fhc-2016-qual-b/
 date: 2016-01-12 9:00:00 +0900
 tags: [ "competitive", "writeup", "facebook-hacker-cup" ]
 ---

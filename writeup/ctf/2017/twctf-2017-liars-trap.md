@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/09/04/twctf-2017-liars-trap/"
+redirect_from:
+  - /blog/2017/09/04/twctf-2017-liars-trap/
 date: "2017-09-04T13:34:29+09:00"
 tags: [ "ctf", "writeup", "twctf", "crypto", "rsa", "shamirs-secret-sharing", "bruteforce" ]
 ---

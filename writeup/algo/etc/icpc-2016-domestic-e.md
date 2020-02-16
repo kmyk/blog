@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/06/27/icpc-2016-domestic-e/"
+redirect_from:
+  - /blog/2016/06/27/icpc-2016-domestic-e/
 date: 2016-06-27T13:01:58+09:00
 tags: [ "competitive", "writeup", "icpc", "geometry", "graph" ]
 ---

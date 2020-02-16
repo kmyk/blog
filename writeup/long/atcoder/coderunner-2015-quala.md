@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/10/03/coderunner-2015-quala/"
+redirect_from:
+  - /blog/2015/10/03/coderunner-2015-quala/
 date: 2015-10-03T23:27:34+09:00
 tags: [ "coderunner", "competitive", "writeup" ]
 ---

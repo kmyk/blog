@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/03/17/ictf-2018-fantasticiot/"
+redirect_from:
+  - /blog/2018/03/17/ictf-2018-fantasticiot/
 date: "2018-03-17T16:45:46+09:00"
 tags: [ "ctf", "writeup", "ictf", "attack-and-defense" ]
 ---

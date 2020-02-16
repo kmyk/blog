@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/01/20/codegate-ctf-2016-old-school/"
+redirect_from:
+  - /blog/2017/01/20/codegate-ctf-2016-old-school/
 date: "2017-01-20T16:12:06+09:00"
 tags: [ "ctf", "writeup", "pwn", "codegate-ctf", "fini_array", "format-string-attack" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2016/tree/master/codegate-ctf-2016/pwn/old-school" ]

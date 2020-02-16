@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/11/10/tanka1-2017-e/"
+redirect_from:
+  - /blog/2017/11/10/tanka1-2017-e/
 date: "2017-11-10T22:24:50+09:00"
 tags: [ "competitive", "writeup", "atcoder", "tenka1", "simd", "optimization", "median" ]
 "target_url": [ "https://beta.atcoder.jp/contests/tenka1-2017/tasks/tenka1_2017_e" ]

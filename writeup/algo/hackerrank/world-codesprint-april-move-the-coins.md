@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/05/01/hackerrank-world-codesprint-april-move-the-coins/"
+redirect_from:
+  - /blog/2016/05/01/hackerrank-world-codesprint-april-move-the-coins/
 date: 2016-05-01T12:21:08+09:00
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint", "nim", "grundy-number", "game", "tree" ]
 "target_url": [ "https://www.hackerrank.com/contests/world-codesprint-april/challenges/move-the-coins" ]

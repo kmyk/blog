@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/01/01/utpc-2012-g/"
+redirect_from:
+  - /blog/2018/01/01/utpc-2012-g/
 date: "2018-01-01T10:51:15+09:00"
 tags: [ "competitive", "writeup", "utpc", "atcoder", "dp", "combinatorics", "string" ]
 "target_url": [ "https://beta.atcoder.jp/contests/utpc2012/tasks/utpc2012_07" ]

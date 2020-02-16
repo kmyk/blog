@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/11/21/code-festival-2015-final-c/"
+redirect_from:
+  - /blog/2015/11/21/code-festival-2015-final-c/
 date: 2015-11-21T17:18:56+09:00
 tags: [ "competitive", "writeup", "codefestival", "atcoder", "greedy" ]
 ---

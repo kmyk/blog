@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/09/11/asis-ctf-finals-2017-chaoyang-district/"
+redirect_from:
+  - /blog/2017/09/11/asis-ctf-finals-2017-chaoyang-district/
 date: "2017-09-11T08:09:47+09:00"
 tags: [ "ctf", "writeup", "ppc", "asis-ctf", "othello" ]
 ---

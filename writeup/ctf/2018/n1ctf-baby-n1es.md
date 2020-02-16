@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/03/12/n1ctf-baby-n1es/"
+redirect_from:
+  - /blog/2018/03/12/n1ctf-baby-n1es/
 date: "2018-03-12T13:29:55+09:00"
 tags: [ "ctf", "writeup", "n1ctf", "crypto", "feistel-structure" ]
 "target_url": [ "https://ctftime.org/event/584" ]

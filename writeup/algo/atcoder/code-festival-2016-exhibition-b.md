@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/12/13/code-festival-2016-exhibition-b/"
+redirect_from:
+  - /blog/2016/12/13/code-festival-2016-exhibition-b/
 date: "2016-12-13T02:16:23+09:00"
 tags: [ "competitive", "writeup", "atcoder", "codefestival" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf16-exhibition-open/tasks/codefestival_2016_ex_b" ]

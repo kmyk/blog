@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/11/10/arc-007-d/"
+redirect_from:
+  - /blog/2015/11/10/arc-007-d/
 date: 2015-11-10T21:31:17+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "corner-cases" ]
 ---

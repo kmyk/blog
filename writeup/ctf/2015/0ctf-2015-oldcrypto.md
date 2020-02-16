@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/08/26/0ctf-2015-oldcrypto/"
+redirect_from:
+  - /blog/2016/08/26/0ctf-2015-oldcrypto/
 date: "2016-08-26T14:59:38+09:00"
 tags: [ "ctf", "writeup", "0ctf", "crypto", "vigenere-cipher", "kasiski-test" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2015/tree/master/0ctf-2015/crypto/oldcrypto" ]

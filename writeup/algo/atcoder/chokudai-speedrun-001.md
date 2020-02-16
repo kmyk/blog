@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/07/28/chokudai-speedrun-001/"
+redirect_from:
+  - /blog/2017/07/28/chokudai-speedrun-001/
 date: "2017-07-28T22:04:36+09:00"
 tags: [ "competitive", "writeup", "atcoder", "chokudai-speedrun" ]
 "target_url": [ "https://beta.atcoder.jp/contests/chokudai_s001" ]

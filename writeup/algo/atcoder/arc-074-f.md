@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/05/20/arc-074-f/"
+redirect_from:
+  - /blog/2017/05/20/arc-074-f/
 date: "2017-05-20T22:32:41+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "minimum-cut", "maximum-flow", "ford-fulkerson" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc074/tasks/arc074_d" ]

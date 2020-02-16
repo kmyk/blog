@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/12/19/srm-676-easy/"
+redirect_from:
+  - /blog/2015/12/19/srm-676-easy/
 date: 2015-12-19T02:32:00+09:00
 tags: [ "competitive", "writeup", "srm", "binary-search" ]
 ---

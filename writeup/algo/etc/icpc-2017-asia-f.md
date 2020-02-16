@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/12/19/icpc-2017-asia-f/"
+redirect_from:
+  - /blog/2017/12/19/icpc-2017-asia-f/
 date: "2017-12-19T03:49:21+09:00"
 tags: [ "competitive", "writeup", "icpc", "icpc-asia", "graph", "digraph", "dijkstra", "two-edge-connected-components" ]
 ---

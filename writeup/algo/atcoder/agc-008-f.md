@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/04/12/agc-008-f/"
+redirect_from:
+  - /blog/2018/04/12/agc-008-f/
 date: "2018-04-12T06:33:45+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "tree-dp", "rerooting" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc008/tasks/agc008_f" ]

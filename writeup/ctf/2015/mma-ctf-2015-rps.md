@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/09/02/mma-ctf-2015-rps/"
+redirect_from:
+  - /blog/2016/09/02/mma-ctf-2015-rps/
 date: "2016-09-02T20:30:59+09:00"
 tags: [ "ctf", "writeup", "pwn", "mmactf", "rand", "prng-prediction" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2015/tree/master/mma-ctf-2015/pwn/rps-50" ]

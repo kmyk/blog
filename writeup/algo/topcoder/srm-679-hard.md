@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/01/20/srm-679-hard/"
+redirect_from:
+  - /blog/2016/01/20/srm-679-hard/
 date: 2016-01-20T23:42:15+09:00
 tags: [ "competitive", "writeup", "topcoder", "srm", "convolution" ]
 ---

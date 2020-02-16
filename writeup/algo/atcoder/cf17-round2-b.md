@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/11/27/cf17-round2-b/"
+redirect_from:
+  - /blog/2017/11/27/cf17-round2-b/
 date: "2017-11-27T11:46:26+09:00"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "asapro", "sort", "swap" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf17-tournament-round2-open/tasks/asaporo2_b" ]

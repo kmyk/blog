@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/05/07/agc-014-d/"
+redirect_from:
+  - /blog/2017/05/07/agc-014-d/
 date: "2017-05-07T23:09:54+09:00"
 tags: [ "competitive", "writeup", "atcoder", "agc", "tree", "complete-matching" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc014/tasks/agc014_d" ]

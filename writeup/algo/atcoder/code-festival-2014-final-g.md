@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/09/24/code-festival-2014-final-g/"
+redirect_from:
+  - /blog/2016/09/24/code-festival-2014-final-g/
 date: "2016-09-24T10:45:46+09:00"
 tags: [ "competitive", "writeup", "atcoder", "codefestival" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-festival-2014-final-open/tasks/code_festival_final_g" ]

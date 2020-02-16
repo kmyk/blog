@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/04/10/gcj-2017-qual-c/"
+redirect_from:
+  - /blog/2017/04/10/gcj-2017-qual-c/
 date: "2017-04-10T02:45:08+09:00"
 tags: [ "competitive", "writeup", "gcj" ]
 "target_url": [ "https://code.google.com/codejam/contest/3264486/dashboard#s=p2" ]

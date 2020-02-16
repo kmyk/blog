@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/12/11/kusonazonazo-contest002/"
+redirect_from:
+  - /blog/2016/12/11/kusonazonazo-contest002/
 date: "2016-12-11T23:45:43+09:00"
 tags: [ "kusonazonazo", "writeup", "hackerrank", "guessing" ]
 "target_url": [ "https://www.hackerrank.com/contests/kusonazonazo-contest002/challenges" ]

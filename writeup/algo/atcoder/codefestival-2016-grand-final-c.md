@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/01/04/codefestival-2016-grand-final-c/"
+redirect_from:
+  - /blog/2018/01/04/codefestival-2016-grand-final-c/
 date: "2018-01-04T16:09:21+09:00"
 tags: [ "competitive", "writeup", "atcodr", "codefestival", "xor", "nim" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf16-exhibition-final/tasks/cf16_exhibition_final_c" ]

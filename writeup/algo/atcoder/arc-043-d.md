@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/03/28/arc-043-d/"
+redirect_from:
+  - /blog/2016/03/28/arc-043-d/
 date: 2016-03-28T21:34:35+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "greedy", "beam-search", "chokudai-search", "lie" ]
 ---

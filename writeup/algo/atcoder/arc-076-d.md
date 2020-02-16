@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/12/31/arc-076-d/"
+redirect_from:
+  - /blog/2017/12/31/arc-076-d/
 date: "2017-12-31T20:37:16+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "minimum-spanning-tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc076/tasks/arc076_b" ]

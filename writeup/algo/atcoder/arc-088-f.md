@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/01/04/arc-088-f/"
+redirect_from:
+  - /blog/2018/01/04/arc-088-f/
 date: "2018-01-04T12:22:40+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp", "tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc088/tasks/arc088_d" ]

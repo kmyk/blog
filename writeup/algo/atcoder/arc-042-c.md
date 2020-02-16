@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/10/06/arc-042-c/"
+redirect_from:
+  - /blog/2015/10/06/arc-042-c/
 date: 2015-10-06T14:42:44+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp", "order", "sort", "knapsack", "monotonicity" ]
 ---

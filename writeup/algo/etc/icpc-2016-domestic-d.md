@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/06/27/icpc-2016-domestic-d/"
+redirect_from:
+  - /blog/2016/06/27/icpc-2016-domestic-d/
 date: 2016-06-27T13:01:55+09:00
 tags: [ "competitive", "writeup", "icpc", "dp", "dp-on-intervals" ]
 ---

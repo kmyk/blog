@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/12/06/seccon-2015-online-command-line-quiz/"
+redirect_from:
+  - /blog/2015/12/06/seccon-2015-online-command-line-quiz/
 date: 2015-12-06T20:32:40+09:00
 tags: [ "ctf", "writeup", "seccon", "quiz", "pwn" ]
 ---

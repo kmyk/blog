@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/11/10/arc-008-d/"
+redirect_from:
+  - /blog/2015/11/10/arc-008-d/
 date: 2015-11-10T23:05:27+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "matrix", "segment-tree", "coordinates-compression" ]
 ---

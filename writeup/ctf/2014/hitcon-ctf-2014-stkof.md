@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/09/21/hitcon-ctf-2014-stkof/"
+redirect_from:
+  - /blog/2016/09/21/hitcon-ctf-2014-stkof/
 date: "2016-09-21T03:29:10+09:00"
 tags: [ "ctf", "writeup", "pwn", "hitcon", "heap", "fastbins" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2014/tree/master/hitcon-ctf-2014/stkof" ]

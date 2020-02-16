@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/10/23/code-festival-2016-qualc-b/"
+redirect_from:
+  - /blog/2016/10/23/code-festival-2016-qualc-b/
 date: "2016-10-23T23:00:12+09:00"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "greedy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-festival-2016-qualc/tasks/codefestival_2016_qualC_b" ]

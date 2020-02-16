@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/07/23/agc-018-d/"
+redirect_from:
+  - /blog/2017/07/23/agc-018-d/
 date: "2017-07-23T23:19:15+09:00"
 tags: [ "competitive", "writeup", "atcoder", "agc", "tree", "centroid", "hamiltonian-path" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc018/tasks/agc018_d" ]

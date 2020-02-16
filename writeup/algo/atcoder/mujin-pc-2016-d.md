@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/02/27/mujin-pc-2016-d/"
+redirect_from:
+  - /blog/2016/02/27/mujin-pc-2016-d/
 date: 2016-02-27T23:48:25+09:00
 tags: [ "competitive", "writeup", "atcoder", "mujin-pc", "segment-tree", "cumulative-sum", "range-minimum-query" ]
 ---

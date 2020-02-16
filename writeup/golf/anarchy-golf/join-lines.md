@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/02/24/anagol-join-lines/"
+redirect_from:
+  - /blog/2016/02/24/anagol-join-lines/
 date: 2016-02-24T05:07:59+09:00
 tags: [ "writeup", "golf", "anarchy-golf" ]
 ---

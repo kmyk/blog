@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/06/05/hackerrank-zalando-codesprint-the-inquiring-manager/"
+redirect_from:
+  - /blog/2016/06/05/hackerrank-zalando-codesprint-the-inquiring-manager/
 date: 2016-06-05T19:17:02+09:00
 tags: [ "competitive", "writeup", "hackerrank", "priority-queue" ]
 "target_url": [ "https://www.hackerrank.com/contests/zalando-codesprint/challenges/the-inquiring-manager" ]

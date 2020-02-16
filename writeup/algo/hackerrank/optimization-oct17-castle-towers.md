@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/11/10/hackerrank-optimization-oct17-castle-towers/"
+redirect_from:
+  - /blog/2017/11/10/hackerrank-optimization-oct17-castle-towers/
 date: "2017-11-10T22:51:39+09:00"
 tags: [ "competitive", "writeup", "hackerrank" ]
 "target_url": [ "https://www.hackerrank.com/contests/optimization-oct17/challenges/castle-towers" ]

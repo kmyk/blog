@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/11/30/code-festival-2016-asapro-1-b/"
+redirect_from:
+  - /blog/2016/11/30/code-festival-2016-asapro-1-b/
 date: "2016-11-30T13:42:29+09:00"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "suffix-array", "binary-search" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf16-tournament-round1-open/tasks/asaporo_f" ]

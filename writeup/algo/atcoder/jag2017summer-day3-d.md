@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/10/03/jag2017summer-day3-d/"
+redirect_from:
+  - /blog/2017/10/03/jag2017summer-day3-d/
 date: "2017-10-03T06:58:40+09:00"
 tags: [ "competitive", "writeup", "atcoder", "jag-summer", "bit-dp", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/jag2017summer-day3/tasks/jag2017summer_day3_d" ]

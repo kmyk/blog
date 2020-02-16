@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/10/23/arc-045-b/"
+redirect_from:
+  - /blog/2015/10/23/arc-045-b/
 date: 2015-10-23T02:27:34+09:00
 tags: [ "atcoder", "arc", "competitive", "writeup", "segment-tree", "range-add-query", "range-minimum-query", "imos", "cumulative-sum" ]
 ---

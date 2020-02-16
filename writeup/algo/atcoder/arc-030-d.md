@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/09/09/arc-030-d/"
+redirect_from:
+  - /blog/2016/09/09/arc-030-d/
 date: "2016-09-09T03:28:02+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "rbst", "randomized-binary-search-tree", "persistence", "persistent-tree", "range-add-query", "range-sum-query" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc030/tasks/arc030_4" ]

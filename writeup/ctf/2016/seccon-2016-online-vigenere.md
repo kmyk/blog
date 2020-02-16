@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/12/11/seccon-2016-online-vigenere/"
+redirect_from:
+  - /blog/2016/12/11/seccon-2016-online-vigenere/
 date: "2016-12-11T22:06:03+09:00"
 tags: [ "ctf", "writeup", "seccon", "crypto", "vigenere-cipher" ]
 "target_url": [ "https://score-quals.seccon.jp/question/a5480aaca0b46d7785bd9916186ede557a91835f" ]

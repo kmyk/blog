@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/03/07/yahoo-procon-2017-qual-d/"
+redirect_from:
+  - /blog/2017/03/07/yahoo-procon-2017-qual-d/
 date: "2017-03-07T17:21:10+09:00"
 tags: [ "competitive", "writeup", "atcoder", "yahoo-procon", "segment-tree", "binary-indexed-tree", "coodinate-compression", "batch" ]
 "target_url": [ "https://beta.atcoder.jp/contests/yahoo-procon2017-qual/tasks/yahoo_procon2017_qual_d" ]

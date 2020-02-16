@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/03/31/codechef-cook91-ccook/"
+redirect_from:
+  - /blog/2018/03/31/codechef-cook91-ccook/
 date: "2018-03-31T02:12:44+09:00"
 tags: [ "competitive", "writeup", "codechef" ]
 "target_url": [ "https://www.codechef.com/COOK91/problems/CCOOK" ]

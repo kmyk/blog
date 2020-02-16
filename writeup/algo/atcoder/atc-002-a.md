@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/04/11/atc-002-a/"
+redirect_from:
+  - /blog/2016/04/11/atc-002-a/
 date: 2016-04-11T06:48:02+09:00
 tags: [ "competitive", "writeup", "atcoder", "atc", "bfs" ]
 "target_url": [ "https://beta.atcoder.jp/contests/atc002/tasks/abc007_3" ]

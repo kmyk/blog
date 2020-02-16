@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/04/03/arc-050-a/"
+redirect_from:
+  - /blog/2016/04/03/arc-050-a/
 date: 2016-04-03T03:35:15+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "brainfuck", "golf" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc050/tasks/arc050_a" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/09/15/plaidctf-2014-sass/"
+redirect_from:
+  - /blog/2016/09/15/plaidctf-2014-sass/
 date: "2016-09-15T15:43:57+09:00"
 tags: [ "competitive", "writeup", "pwn", "plaidctf" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2014/tree/master/plaid-ctf-2014/sass" ]

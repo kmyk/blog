@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/11/05/ddcc-2016-qual-a/"
+redirect_from:
+  - /blog/2016/11/05/ddcc-2016-qual-a/
 date: "2016-11-05T22:26:09+09:00"
 tags: [ "competitive", "writeup", "atcoder", "ddcc", "golf", "perl" ]
 "target_url": [ "https://beta.atcoder.jp/contests/ddcc2016-qual/tasks/ddcc_2016_qual_a" ]

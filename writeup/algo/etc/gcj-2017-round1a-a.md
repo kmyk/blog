@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/04/23/gcj-2017-round1a-a/"
+redirect_from:
+  - /blog/2017/04/23/gcj-2017-round1a-a/
 date: "2017-04-23T01:08:35+09:00"
 tags: [ "competitive", "writeup", "gcj" ]
 "target_url": [ "https://code.google.com/codejam/contest/5304486/dashboard#s=p0" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/06/05/hackerrank-zalando-codesprint-wrappingsurfacearea/"
+redirect_from:
+  - /blog/2016/06/05/hackerrank-zalando-codesprint-wrappingsurfacearea/
 date: 2016-06-05T19:17:30+09:00
 tags: [ "competitive", "writeup", "hackerrank", "exhaustive-search" ]
 "target_url": [ "https://www.hackerrank.com/contests/zalando-codesprint/challenges/wrappingsurfacearea" ]

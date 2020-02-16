@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/04/04/arc-069-f/"
+redirect_from:
+  - /blog/2017/04/04/arc-069-f/
 date: "2017-04-04T13:56:34+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "2-sat", "segment-tree", "binary-search" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc069/tasks/arc069_d" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/09/30/arc-005-d/"
+redirect_from:
+  - /blog/2015/09/30/arc-005-d/
 date: 2015-09-30T17:17:51+09:00
 tags: [ "atcoder", "competitive", "arc", "writeup" ]
 ---

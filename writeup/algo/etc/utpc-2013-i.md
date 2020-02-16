@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/02/25/utpc-2013-i/"
+redirect_from:
+  - /blog/2016/02/25/utpc-2013-i/
 date: 2016-02-25T06:48:14+09:00
 tags: [ "competitive", "writeup", "codefestival" ]
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/12/24/code-festival-2016-final-g/"
+redirect_from:
+  - /blog/2016/12/24/code-festival-2016-final-g/
 date: "2016-12-24T21:52:05+09:00"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "minimum-spanning-tree", "kruskals-algorithm" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf16-final-open/tasks/codefestival_2016_final_g" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/09/07/hackerrank-camypapercon02-waiwai-otaku-panic/"
+redirect_from:
+  - /blog/2016/09/07/hackerrank-camypapercon02-waiwai-otaku-panic/
 date: "2016-09-07T00:49:30+09:00"
 tags: [ "competitive", "writeup", "hackerrank", "camypapercon", "graph", "flow", "dag", "maximum-flow" ]
 "target_url": [ "https://www.hackerrank.com/contests/camypapercon02/challenges/waiwai-otaku-panic" ]

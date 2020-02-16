@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/06/05/hackerrank-zalando-codesprint-give-me-the-order/"
+redirect_from:
+  - /blog/2016/06/05/hackerrank-zalando-codesprint-give-me-the-order/
 date: 2016-06-05T19:18:12+09:00
 tags: [ "competitive", "writeup", "hackerrank", "treap", "self-balancing-binary-serach-tree" ]
 "target_url": [ "https://www.hackerrank.com/contests/zalando-codesprint/challenges/give-me-the-order" ]

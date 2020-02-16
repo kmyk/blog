@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/07/10/secuinside-ctf-trendyweb/"
+redirect_from:
+  - /blog/2016/07/10/secuinside-ctf-trendyweb/
 date: "2016-07-10T14:32:36+09:00"
 tags: [ "ctf", "writeup", "web", "php" ]
 "target_url": [ "https://ctftime.org/event/335" ]

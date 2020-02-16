@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/08/31/bctf-2015-warmup/"
+redirect_from:
+  - /blog/2016/08/31/bctf-2015-warmup/
 date: "2016-08-31T21:21:43+09:00"
 tags: [ "ctf", "writeup", "crypto", "bctf", "rsa", "wiener-attack" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2015/tree/master/bctf-2015/crypto/warmup" ]

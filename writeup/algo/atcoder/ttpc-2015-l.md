@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/09/07/ttpc-2015-l/"
+redirect_from:
+  - /blog/2016/09/07/ttpc-2015-l/
 date: "2016-09-07T00:13:38+09:00"
 tags: [ "competitive", "writeup", "ttpc", "atcoder", "graph", "flow", "minimum-cut", "maximam-flow", "ford-fulkerson" ]
 "target_url": [ "https://beta.atcoder.jp/contests/ttpc2015/tasks/ttpc2015_l" ]

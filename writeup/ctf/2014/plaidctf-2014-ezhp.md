@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/08/17/plaidctf-2014-ezhp/"
+redirect_from:
+  - /blog/2016/08/17/plaidctf-2014-ezhp/
 date: "2016-08-17T00:43:10+09:00"
 tags: [ "writeup", "ctf", "pwn", "heap", "plaidctf" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2014/tree/master/plaid-ctf-2014/ezhp" ]

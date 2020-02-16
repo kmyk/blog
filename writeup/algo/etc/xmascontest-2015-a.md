@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/12/24/xmascontest-2015-a/"
+redirect_from:
+  - /blog/2015/12/24/xmascontest-2015-a/
 date: 2015-12-24T22:55:13+09:00
 tags: [ "competitive", "writeup", "atcoder", "matrix" ]
 ---

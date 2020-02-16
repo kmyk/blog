@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/11/21/rc3-ctf-2016-calculus/"
+redirect_from:
+  - /blog/2016/11/21/rc3-ctf-2016-calculus/
 date: "2016-11-21T17:46:42+09:00"
 tags: [ "ctf", "writeup", "rc3-ctf", "crypto", "guessing" ]
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/03/31/anagol-left-pad/"
+redirect_from:
+  - /blog/2016/03/31/anagol-left-pad/
 date: 2016-03-31T19:34:24+09:00
 tags: [ "golf", "writeup", "anarchy-golf", "ruby", "sed", "brainfuck", "c", "perl" ]
 "target_url": [ "http://golf.shinh.org/p.rb?left+pad" ]

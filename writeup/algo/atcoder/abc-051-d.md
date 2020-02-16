@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/01/07/abc-051-d/"
+redirect_from:
+  - /blog/2017/01/07/abc-051-d/
 date: "2017-01-07T22:12:36+09:00"
 tags: [ "competitive", "writeup", "atcoder", "abc", "graph", "warshall-floyd" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc051/tasks/abc051_d" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/12/10/seccon-2017-quals-man-in-the-middle-on-spec384r1/"
+redirect_from:
+  - /blog/2017/12/10/seccon-2017-quals-man-in-the-middle-on-spec384r1/
 date: "2017-12-10T15:19:24+09:00"
 tags: [ "ctf", "writeup", "seccon", "seccon-quals", "crypto", "ppc", "spec384r1", "man-in-the-middle", "elliptic-curve", "elliptic-curve-diffie-hellman" ]
 "target_url": [ "https://ctftime.org/event/512/" ]

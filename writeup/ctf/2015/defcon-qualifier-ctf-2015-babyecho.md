@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/01/08/defcon-qualifier-ctf-2015-babyecho/"
+redirect_from:
+  - /blog/2016/01/08/defcon-qualifier-ctf-2015-babyecho/
 date: 2016-01-08T02:18:11+09:00
 tags: [ "ctf", "pwn", "writeup", "format-string-attack", "shellcode" ]
 ---

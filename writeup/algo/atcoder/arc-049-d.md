@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/03/27/arc-049-d/"
+redirect_from:
+  - /blog/2016/03/27/arc-049-d/
 date: 2016-03-27T23:13:32+09:00
 tags: [ "competitive", "writeup", "atcoder", "segment-tree", "tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc049/tasks/arc049_d" ]

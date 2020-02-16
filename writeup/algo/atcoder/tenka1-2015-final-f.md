@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/11/12/tenka1-2015-final-f/"
+redirect_from:
+  - /blog/2015/11/12/tenka1-2015-final-f/
 date: 2015-11-12T19:10:46+09:00
 tags: [ "competitive", "writeup", "atcoder", "tenka1-programmer-contest", "tree", "lowest-common-ancestor", "euler-tour" ]
 ---

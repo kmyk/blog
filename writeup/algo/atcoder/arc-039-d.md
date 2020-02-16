@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/06/10/arc-039-d/"
+redirect_from:
+  - /blog/2017/06/10/arc-039-d/
 date: "2017-06-10T16:52:28+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "graph", "tow-edge-connected-components-decomposition", "lowest-common-ancestor" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc039/tasks/arc039_d" ]

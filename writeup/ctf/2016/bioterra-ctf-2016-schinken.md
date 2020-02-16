@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/08/22/bioterra-ctf-2016-schinken/"
+redirect_from:
+  - /blog/2016/08/22/bioterra-ctf-2016-schinken/
 date: "2016-08-22T11:47:57+09:00"
 tags: [ "ctf", "writeup", "bioterra-ctf", "xor", "crypto" ]
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/10/03/jag2017summer-day3-f/"
+redirect_from:
+  - /blog/2017/10/03/jag2017summer-day3-f/
 date: "2017-10-03T06:58:43+09:00"
 tags: [ "competitive", "writeup", "atcoder", "jag-summer", "graph", "bipartite-graph", "bfs" ]
 "target_url": [ "https://beta.atcoder.jp/contests/jag2017summer-day3/tasks/jag2017summer_day3_f" ]

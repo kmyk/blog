@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/10/20/hacklu-ctf-2017-salsa/"
+redirect_from:
+  - /blog/2017/10/20/hacklu-ctf-2017-salsa/
 date: "2017-10-20T01:32:43+09:00"
 tags: [ "ctf", "writeup", "hacklu-ctf", "crypto", "salsa20" ]
 ---

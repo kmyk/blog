@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/12/08/code-blue-ctf-2017-common-modulus-1/"
+redirect_from:
+  - /blog/2017/12/08/code-blue-ctf-2017-common-modulus-1/
 date: "2017-12-08T10:07:09+09:00"
 tags: [ "ctf", "writeup", "crypto", "code-blue-ctf", "rsa", "gcd" ]
 "target_url": [ "https://ctftime.org/task/4872" ]

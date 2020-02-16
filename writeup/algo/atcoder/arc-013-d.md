@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/01/16/arc-013-d/"
+redirect_from:
+  - /blog/2016/01/16/arc-013-d/
 date: 2016-01-16T17:39:18+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "graph", "flow", "bipartite-graph", "maximum-matching", "maximum-flow" ]
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/12/10/srm-675-easy/"
+redirect_from:
+  - /blog/2015/12/10/srm-675-easy/
 date: 2015-12-10T23:20:32+09:00
 tags: [ "competitive", "writeup", "topcoder", "srm", "graph" ]
 ---

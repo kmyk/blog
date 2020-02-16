@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/01/19/tdpc-h/"
+redirect_from:
+  - /blog/2016/01/19/tdpc-h/
 date: 2016-01-19T22:48:58+09:00
 tags: [ "competitive", "writeup", "atcoder", "typical-dp-contest", "dp" ]
 ---

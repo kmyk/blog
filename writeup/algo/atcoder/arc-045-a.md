@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/10/19/arc-045-a/"
+redirect_from:
+  - /blog/2015/10/19/arc-045-a/
 date: 2015-10-19T22:46:52+09:00
 tags: [ "atcoder", "arc", "competitive", "writeup", "brainfuck", "sed" ]
 ---

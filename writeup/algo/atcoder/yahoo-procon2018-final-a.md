@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/03/01/yahoo-procon2018-final-a/"
+redirect_from:
+  - /blog/2018/03/01/yahoo-procon2018-final-a/
 date: "2018-03-01T08:24:44+09:00"
 tags: [ "competitive", "writeup", "atcoder", "yahoo-procon", "gcd", "prime-number", "sieve-of-eratosthenes", "inclusion-exclusion-principle", "imos-method" ]
 "target_url": [ "https://beta.atcoder.jp/contests/yahoo-procon2018-final-open/tasks/yahoo_procon2018_final_a" ]

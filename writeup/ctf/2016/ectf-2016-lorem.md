@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/10/23/ectf-2016-lorem/"
+redirect_from:
+  - /blog/2016/10/23/ectf-2016-lorem/
 date: "2016-10-23T23:49:38+09:00"
 tags: [ "ctf", "ectf", "rev", "angr" ]
 "target_url": [ "http://www.ectf.in/" ]

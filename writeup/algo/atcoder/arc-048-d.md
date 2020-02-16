@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/05/18/arc-048-d/"
+redirect_from:
+  - /blog/2016/05/18/arc-048-d/
 date: 2016-05-18T01:19:19+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "heavy-light-decomposition", "lowest-common-ancestor", "segment-tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc048/tasks/arc048_d" ]

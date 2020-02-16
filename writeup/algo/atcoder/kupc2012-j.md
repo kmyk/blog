@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/02/15/kupc2012-j/"
+redirect_from:
+  - /blog/2018/02/15/kupc2012-j/
 date: "2018-02-15T21:19:28+09:00"
 tags: [ "competitive", "writeup", "atcoder", "kupc", "dp", "monge", "knuth-yao-speedup" ]
 "target_url": [ "https://beta.atcoder.jp/contests/kupc2012/tasks/kupc2012_10" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/08/25/srm-720-med/"
+redirect_from:
+  - /blog/2017/08/25/srm-720-med/
 date: "2017-08-25T22:02:56+09:00"
 tags: [ "competitive", "writeup", "topcoder", "srm", "dp", "combination" ]
 ---

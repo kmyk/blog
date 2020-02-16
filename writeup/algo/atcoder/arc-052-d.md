@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/05/16/arc-052-d/"
+redirect_from:
+  - /blog/2016/05/16/arc-052-d/
 date: 2016-05-16T00:16:21+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp", "meet-in-the-middle" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc052/tasks/arc052_d" ]

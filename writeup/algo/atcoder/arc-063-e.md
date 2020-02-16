@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/11/06/arc-063-e/"
+redirect_from:
+  - /blog/2016/11/06/arc-063-e/
 date: "2016-11-06T22:48:20+09:00"
 tags: [ "competitive", "wirteup", "atcoder", "arc", "tree", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc063/tasks/arc063_c" ]

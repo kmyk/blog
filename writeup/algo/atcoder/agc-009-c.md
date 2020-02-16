@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/08/15/agc-009-c/"
+redirect_from:
+  - /blog/2017/08/15/agc-009-c/
 date: "2017-08-15T15:39:24+09:00"
 tags: [ "competitive", "writeup", "atcoder", "agc", "dp", "cumulative-sum", "shakutori-method" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc009/tasks/agc009_c" ]

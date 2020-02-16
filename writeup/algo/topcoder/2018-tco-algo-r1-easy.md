@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/04/22/2018-tco-algo-r1-easy/"
+redirect_from:
+  - /blog/2018/04/22/2018-tco-algo-r1-easy/
 date: "2018-04-22T02:57:49+09:00"
 tags: [ "competitive", "writeup", "topcoder", "srm", "tco", "binary-search" ]
 ---

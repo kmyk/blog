@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/12/09/twctf-2016-greeting/"
+redirect_from:
+  - /blog/2016/12/09/twctf-2016-greeting/
 date: "2016-12-09T18:17:13+09:00"
 tags: [ "ctf", "writeup", "pwn", "twctf", "format-string-attack", "destructor", "got-overwrite" ]
 "target_url": [ "https://ctftime.org/task/2735" ]

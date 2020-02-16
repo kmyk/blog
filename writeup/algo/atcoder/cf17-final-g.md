@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/11/26/cf17-final-g/"
+redirect_from:
+  - /blog/2017/11/26/cf17-final-g/
 date: "2017-11-26T10:02:32+09:00"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "game", "dp", "linerity" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf17-final-open/tasks/cf17_final_g" ]

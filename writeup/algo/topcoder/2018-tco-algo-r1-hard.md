@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/04/22/2018-tco-algo-r1-hard/"
+redirect_from:
+  - /blog/2018/04/22/2018-tco-algo-r1-hard/
 date: "2018-04-22T02:57:56+09:00"
 tags: [ "competitive", "writeup", "topcoder", "srm", "tco", "dijkstra" ]
 ---

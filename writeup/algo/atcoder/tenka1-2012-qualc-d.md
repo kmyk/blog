@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/07/04/tenka1-2012-qualc-d/"
+redirect_from:
+  - /blog/2017/07/04/tenka1-2012-qualc-d/
 date: "2017-07-04T22:54:03+09:00"
 tags: [ "competitive", "writeup", "atcoder", "tenka1", "dp", "frontier", "lie", "optimization" ]
 "target_url": [ "https://beta.atcoder.jp/contests/tenka1-2012-qualc/tasks/tenka1_2012_12" ]

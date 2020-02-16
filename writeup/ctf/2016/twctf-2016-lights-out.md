@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/09/05/twctf-2016-lights-out/"
+redirect_from:
+  - /blog/2016/09/05/twctf-2016-lights-out/
 date: "2016-09-05T14:31:00+09:00"
 tags: [ "ctf", "writeup", "ppc", "mmactf", "twctf", "dp", "matrix" ]
 "target_url": [ "https://score.ctf.westerns.tokyo/problems/13" ]

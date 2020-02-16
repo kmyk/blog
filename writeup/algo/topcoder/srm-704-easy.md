@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/12/29/srm-704-easy/"
+redirect_from:
+  - /blog/2016/12/29/srm-704-easy/
 date: "2016-12-29T22:58:27+09:00"
 tags: [ "competitive", "writeup", "topcoder", "srm", "graph", "tree", "construction" ]
 ---

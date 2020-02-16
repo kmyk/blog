@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/03/12/abc-034-b/"
+redirect_from:
+  - /blog/2016/03/12/abc-034-b/
 date: 2016-03-12T22:46:39+09:00
 tags: [ "competitive", "writeup", "atcoder", "brainfuck", "golf" ]
 ---

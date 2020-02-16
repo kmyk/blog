@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/05/02/google-ctf-2016-ernst-echidna/"
+redirect_from:
+  - /blog/2016/05/02/google-ctf-2016-ernst-echidna/
 date: 2016-05-02T02:33:12+09:00
 tags: [ "ctf", "web", "writeup", "google-ctf" ]
 "target_url": [ "https://capturetheflag.withgoogle.com/challenges/" ]

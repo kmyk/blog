@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/06/22/google-ctf-2017-quals-crypto-backdoor/"
+redirect_from:
+  - /blog/2017/06/22/google-ctf-2017-quals-crypto-backdoor/
 date: "2017-06-22T03:01:10+09:00"
 tags: [ "ctf", "writeup", "crypto", "google-ctf", "group", "chinese-remainder-theorem" ]
 ---

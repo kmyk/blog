@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/09/11/asis-ctf-finals-2017-simple-crypto/"
+redirect_from:
+  - /blog/2017/09/11/asis-ctf-finals-2017-simple-crypto/
 date: "2017-09-11T08:09:00+09:00"
 tags: [ "ctf", "writeup", "crypto", "asis-ctf" ]
 ---

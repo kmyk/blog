@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/10/24/kupc-2015-b/"
+redirect_from:
+  - /blog/2015/10/24/kupc-2015-b/
 date: 2015-10-24T23:55:09+09:00
 tags: [ "kupc", "competitive", "writeup", "exhaustive-search", "local-execution" ]
 ---

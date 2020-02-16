@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/12/29/utpc2011-h/"
+redirect_from:
+  - /blog/2017/12/29/utpc2011-h/
 date: "2017-12-29T07:48:04+09:00"
 tags: [ "competitive", "writeup", "utpc", "atcoder", "aoj", "flow", "minimum-cost-flow" ]
 ---

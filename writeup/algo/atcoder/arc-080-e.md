@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/10/03/arc-080-e/"
+redirect_from:
+  - /blog/2017/10/03/arc-080-e/
 date: "2017-10-03T06:17:37+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "segment-tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc080/tasks/arc080_c" ]

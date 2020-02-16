@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/02/11/codegate-2017-prequals-angrybird/"
+redirect_from:
+  - /blog/2017/02/11/codegate-2017-prequals-angrybird/
 date: "2017-02-11T09:23:17+09:00"
 tags: [ "ctf", "writeup", "rev", "angr" ]
 ---

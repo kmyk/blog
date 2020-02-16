@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/12/29/utpc2011-i/"
+redirect_from:
+  - /blog/2017/12/29/utpc2011-i/
 date: "2017-12-29T07:48:16+09:00"
 tags: [ "competitive", "writeup", "utpc", "aoj", "dp" ]
 ---

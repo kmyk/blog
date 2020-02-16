@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/03/26/yahoo-procon-2017-final-c/"
+redirect_from:
+  - /blog/2017/03/26/yahoo-procon-2017-final-c/
 date: "2017-03-26T11:26:39+09:00"
 tags: [ "competitive", "writeup", "atcoder", "yahoo-procon", "simd", "optimization" ]
 "target_url": [ "https://beta.atcoder.jp/contests/yahoo-procon2017-final-open/tasks/yahoo_procon2017_final_c" ]

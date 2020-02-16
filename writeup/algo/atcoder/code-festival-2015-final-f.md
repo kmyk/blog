@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/11/26/code-festival-2015-final-f/"
+redirect_from:
+  - /blog/2015/11/26/code-festival-2015-final-f/
 date: 2015-11-26T23:03:08+09:00
 tags: [ "competitive", "writeup", "codefestival", "graph", "cycle", "math", "eulerian-path" ]
 ---

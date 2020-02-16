@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/02/14/yahoo-procon2018-qual-c/"
+redirect_from:
+  - /blog/2018/02/14/yahoo-procon2018-qual-c/
 date: "2018-02-14T20:15:26+09:00"
 tags: [ "competitive", "writeup", "atcoder", "yahoo-procon", "dp", "bit-dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/yahoo-procon2018-qual/tasks/yahoo_procon2018_qual_c" ]

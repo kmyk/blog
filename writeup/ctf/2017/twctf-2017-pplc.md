@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/09/04/twctf-2017-pplc/"
+redirect_from:
+  - /blog/2017/09/04/twctf-2017-pplc/
 date: "2017-09-04T13:34:05+09:00"
 tags: [ "ctf", "writeup", "twctf", "ppc" ]
 ---

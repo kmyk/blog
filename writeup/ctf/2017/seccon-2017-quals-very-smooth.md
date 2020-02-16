@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/12/10/seccon-2017-quals-very-smooth/"
+redirect_from:
+  - /blog/2017/12/10/seccon-2017-quals-very-smooth/
 date: "2017-12-10T15:18:58+09:00"
 tags: [ "ctf", "writeup", "seccon", "seccon-quals", "crypto", "network", "rsa" ]
 "target_url": [ "https://ctftime.org/event/512/" ]

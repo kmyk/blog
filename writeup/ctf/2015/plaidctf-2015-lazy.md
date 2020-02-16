@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/09/20/plaidctf-2015-lazy/"
+redirect_from:
+  - /blog/2017/09/20/plaidctf-2015-lazy/
 date: "2017-09-20T18:31:17+09:00"
 tags: [ "ctf", "writeup", "plaidctf", "crypto", "knapsack-cipher", "lll-algorithm", "clos-method", "low-density-attack" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2015/tree/master/plaidctf-2015/crypto/lazy" ]

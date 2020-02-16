@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/06/27/icpc-2016-domestic-c/"
+redirect_from:
+  - /blog/2016/06/27/icpc-2016-domestic-c/
 date: 2016-06-27T13:01:53+09:00
 tags: [ "competitive", "writeup", "icpc", "sieve-of-eratosthenes", "greedy" ]
 ---

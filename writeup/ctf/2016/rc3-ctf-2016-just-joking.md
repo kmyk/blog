@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/11/21/rc3-ctf-2016-just-joking/"
+redirect_from:
+  - /blog/2016/11/21/rc3-ctf-2016-just-joking/
 date: "2016-11-21T17:47:17+09:00"
 tags: [ "ctf", "writeup", "rc3-ctf", "web", "sql-injection", "guessing" ]
 ---

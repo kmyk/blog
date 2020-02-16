@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/12/20/arc-009-d/"
+redirect_from:
+  - /blog/2015/12/20/arc-009-d/
 date: 2015-12-20T00:15:33+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "spanning-tree", "dp", "combinatorics", "overflow" ]
 ---

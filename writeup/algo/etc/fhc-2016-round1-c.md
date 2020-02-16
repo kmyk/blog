@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/01/18/fhc-2016-round1-c/"
+redirect_from:
+  - /blog/2016/01/18/fhc-2016-round1-c/
 date: 2016-01-18T01:17:45+09:00
 tags: [ "competitive", "writeup", "facebook-hacker-cup", "expected-value" ]
 ---

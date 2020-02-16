@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/03/06/abc-089-d/"
+redirect_from:
+  - /blog/2018/03/06/abc-089-d/
 date: "2018-03-06T23:37:08+09:00"
 tags: [ "competitive", "writeup", "atcoder", "abc", "cumulative-sum" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc089/tasks/abc089_d" ]

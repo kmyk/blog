@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/06/05/hackerrank-zalando-codesprint-does-it-fit/"
+redirect_from:
+  - /blog/2016/06/05/hackerrank-zalando-codesprint-does-it-fit/
 date: 2016-06-05T19:17:43+09:00
 tags: [ "competitive", "writeup", "hackerrank" ]
 "target_url": [ "https://www.hackerrank.com/contests/zalando-codesprint/challenges/does-it-fit" ]

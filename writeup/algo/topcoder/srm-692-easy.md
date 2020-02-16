@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/06/10/srm-692-easy/"
+redirect_from:
+  - /blog/2016/06/10/srm-692-easy/
 date: 2016-06-10T11:43:27+09:00
 tags: [ "competitive", "writeup", "topcoder", "srm", "graph" ]
 ---

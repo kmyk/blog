@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/02/14/dwacon2018-final-c/"
+redirect_from:
+  - /blog/2018/02/14/dwacon2018-final-c/
 date: "2018-02-14T02:32:28+09:00"
 tags: [ "competitive", "writeup", "atcoder", "dwacon", "dp", "sierpinski-gasket", "pascals-triangle", "optimization" ]
 "target_url": [ "https://beta.atcoder.jp/contests/dwacon2018-final-open/tasks/dwacon2018_final_c" ]

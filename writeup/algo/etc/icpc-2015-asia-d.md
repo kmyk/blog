@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/11/30/icpc-2015-asia-d/"
+redirect_from:
+  - /blog/2015/11/30/icpc-2015-asia-d/
 date: 2015-11-30T01:24:33+09:00
 tags: [ "competitive", "writeup", "icpc", "aoj", "greedy" ]
 ---

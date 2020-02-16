@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/05/01/hackerrank-world-codesprint-april-daniel-triplets/"
+redirect_from:
+  - /blog/2016/05/01/hackerrank-world-codesprint-april-daniel-triplets/
 date: 2016-05-01T12:21:14+09:00
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint", "graph", "graphviz" ]
 "target_url": [ "https://www.hackerrank.com/contests/world-codesprint-april/challenges/daniel-triplets" ]

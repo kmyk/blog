@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/10/22/kupc-2017-a/"
+redirect_from:
+  - /blog/2017/10/22/kupc-2017-a/
 date: "2017-10-22T13:33:20+09:00"
 tags: [ "competitive", "writeup", "kupc", "atcoder", "greedy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/kupc2017/tasks/kupc2017_a" ]

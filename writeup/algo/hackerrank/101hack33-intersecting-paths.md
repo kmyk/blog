@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/01/21/hackerrank-101hack33-intersecting-paths/"
+redirect_from:
+  - /blog/2016/01/21/hackerrank-101hack33-intersecting-paths/
 date: 2016-01-21T22:22:54+09:00
 tags: [ "competitive", "writeup", "hackerrank", "dp", "stack", "doubling" ]
 ---

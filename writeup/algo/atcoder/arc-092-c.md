@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/04/05/arc-092-c/"
+redirect_from:
+  - /blog/2018/04/05/arc-092-c/
 date: "2018-04-05T04:30:04+09:00"
 tags: [ "competitive", "writeup", "arc", "greedy", "bipartite-matching" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc092/tasks/arc092_a" ]

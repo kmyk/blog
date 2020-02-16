@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/03/31/sigint-ctf-2013-baremetal/"
+redirect_from:
+  - /blog/2016/03/31/sigint-ctf-2013-baremetal/
 date: 2016-03-31T04:41:15+09:00
 tags: [ "ctf", "writeup", "pwn", "sigint-ctf", "bof" ]
 "target_url": [ "http://shell-storm.org/repo/CTF/SIGINT-2013/pwning/baremetal-100/" ]

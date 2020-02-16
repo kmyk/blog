@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/10/24/kupc-2015-f/"
+redirect_from:
+  - /blog/2015/10/24/kupc-2015-f/
 date: 2015-10-24T23:55:42+09:00
 tags: [ "kupc", "competitive", "writeup", "reverse-polish-notation", "queue", "stack", "dfs", "bfs" ]
 ---

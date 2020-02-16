@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/12/19/icpc-2017-asia-c/"
+redirect_from:
+  - /blog/2017/12/19/icpc-2017-asia-c/
 date: "2017-12-19T03:49:16+09:00"
 tags: [ "competitive", "writeup", "icpc", "icpc-asia" ]
 ---

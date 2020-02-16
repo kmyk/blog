@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/01/15/arc-073-f/"
+redirect_from:
+  - /blog/2018/01/15/arc-073-f/
 date: "2018-01-15T15:32:15+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp", "segment-tree", "lazy-propagation" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc073/tasks/arc073_d" ]

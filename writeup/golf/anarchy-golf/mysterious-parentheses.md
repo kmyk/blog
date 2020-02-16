@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/05/06/anagol-mysterious-parentheses/"
+redirect_from:
+  - /blog/2016/05/06/anagol-mysterious-parentheses/
 date: 2016-05-06T15:39:42+09:00
 tags: [ "golf", "writeup", "anarchy-golf", "anagol", "sed", "brainfuck" ]
 "target_url": [ "http://golf.shinh.org/p.rb?mysterious+parentheses" ]

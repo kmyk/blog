@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/03/19/arc-049-b/"
+redirect_from:
+  - /blog/2016/03/19/arc-049-b/
 date: 2016-03-19T23:37:24+09:00
 tags: [ "competitive", "writeup", "atcoder", "binary-search" ]
 ---

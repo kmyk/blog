@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/01/19/tpdc-g/"
+redirect_from:
+  - /blog/2016/01/19/tpdc-g/
 date: 2016-01-19T17:24:02+09:00
 tags: [ "comepetitive", "writeup", "atcoder", "dp", "typical-dp-contest", "reconstruct", "overflow" ]
 ---

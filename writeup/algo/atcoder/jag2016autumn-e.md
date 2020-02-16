@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/10/10/jag2016autumn-e/"
+redirect_from:
+  - /blog/2016/10/10/jag2016autumn-e/
 date: "2016-10-10T21:51:36+09:00"
 tags: [ "competitive", "writeup", "atcoder", "jag", "icpc", "rolling-hash", "tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/jag2016autumn/tasks/icpc2016autumn_e" ]

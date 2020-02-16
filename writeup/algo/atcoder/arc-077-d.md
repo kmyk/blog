@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/07/20/arc-077-d/"
+redirect_from:
+  - /blog/2017/07/20/arc-077-d/
 date: "2017-07-20T03:11:57+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "combination", "inclusion-exclusion-principle" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc077/tasks/arc077_b" ]

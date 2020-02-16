@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/05/26/arc-054-c/"
+redirect_from:
+  - /blog/2016/05/26/arc-054-c/
 date: 2016-05-26T00:12:57+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "matrix", "determinant", "permanent" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc054/tasks/arc054_c" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/03/22/0ctf-2017-integrity/"
+redirect_from:
+  - /blog/2017/03/22/0ctf-2017-integrity/
 date: "2017-03-22T16:51:59+09:00"
 tags: [ "ctf", "writeup", "0ctf", "crypto", "block-cipher", "cbc-mode" ]
 ---

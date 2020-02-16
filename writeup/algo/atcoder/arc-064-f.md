@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/12/07/arc-064-f/"
+redirect_from:
+  - /blog/2016/12/07/arc-064-f/
 date: "2016-12-07T13:43:03+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "prime-factors", "palindrome" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc064/tasks/arc064_d" ]

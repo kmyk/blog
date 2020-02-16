@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/10/08/arc-019-c/"
+redirect_from:
+  - /blog/2015/10/08/arc-019-c/
 date: 2015-10-08T23:59:59+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "dijkstra", "shortest-path" ]
 ---

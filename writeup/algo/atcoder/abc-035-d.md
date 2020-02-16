@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/03/30/abc-035-d/"
+redirect_from:
+  - /blog/2016/03/30/abc-035-d/
 date: 2016-03-30T03:20:57+09:00
 tags: [ "competitive", "writeup", "atcoder", "abc", "graph", "boost", "bgl", "dijkstra" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc035/tasks/abc035_d" ]

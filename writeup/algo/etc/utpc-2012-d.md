@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/12/31/utpc-2012-d/"
+redirect_from:
+  - /blog/2017/12/31/utpc-2012-d/
 date: "2017-12-31T17:55:53+09:00"
 tags: [ "competitive", "writeup", "utpc", "atcoder", "geometry", "affine-transformation", "fixed-point" ]
 "target_url": [ "https://beta.atcoder.jp/contests/utpc2012/tasks/utpc2012_04" ]

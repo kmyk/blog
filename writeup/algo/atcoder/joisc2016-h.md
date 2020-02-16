@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/03/29/joisc2016-h/"
+redirect_from:
+  - /blog/2017/03/29/joisc2016-h/
 date: "2017-03-29T21:50:31+09:00"
 tags: [ "competitive", "writeup", "atcoder", "joi", "square-root-decomposition" ]
 ---

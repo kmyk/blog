@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/06/19/abc-040-a/"
+redirect_from:
+  - /blog/2016/06/19/abc-040-a/
 date: 2016-06-19T22:20:00+09:00
 tags: [ "competitive", "writeup", "atcoder", "golf", "sed" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc040/tasks/abc040_a" ]

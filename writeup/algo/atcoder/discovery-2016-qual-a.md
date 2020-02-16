@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/01/30/discovery-2016-qual-a/"
+redirect_from:
+  - /blog/2016/01/30/discovery-2016-qual-a/
 date: 2016-01-30T23:17:12+09:00
 tags: [ "competitive", "writeup", "atcoder", "discovery-channel" ]
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/01/04/hackerrank-hourrank-25-c/"
+redirect_from:
+  - /blog/2018/01/04/hackerrank-hourrank-25-c/
 date: "2018-01-04T13:20:00+09:00"
 tags: [ "competitive", "writeup", "hackerrank", "hourrank", "segment-tree", "lazy-propagation", "starry-sky-tree", "gcd", "sliding-window" ]
 "target_url": [ "https://www.hackerrank.com/contests/hourrank-25/challenges/the-strange-function" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/11/03/arc-045-c/"
+redirect_from:
+  - /blog/2015/11/03/arc-045-c/
 date: 2015-11-03T19:57:20+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "tree", "xor", "path", "dfs" ]
 ---

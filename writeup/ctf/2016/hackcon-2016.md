@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/08/21/hackcon-2016/"
+redirect_from:
+  - /blog/2016/08/21/hackcon-2016/
 date: "2016-08-21T01:29:48+09:00"
 tags: [ "ctf", "writeup", "hackcon", "rsa", "rsa-oaep", "oaep", "brainfuck", "crypto" ]
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/09/18/srm-698-easy/"
+redirect_from:
+  - /blog/2016/09/18/srm-698-easy/
 date: "2016-09-18T02:32:25+09:00"
 tags: [ "competitive", "writeup", "topcoder", "srm", "dp" ]
 ---

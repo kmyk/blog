@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/04/17/arc-051-b/"
+redirect_from:
+  - /blog/2016/04/17/arc-051-b/
 date: 2016-04-17T20:18:47+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "brainfuck" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc051/tasks/arc051_b" ]

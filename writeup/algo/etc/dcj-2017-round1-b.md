@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/05/15/dcj-2017-round1-b/"
+redirect_from:
+  - /blog/2017/05/15/dcj-2017-round1-b/
 date: "2017-05-15T11:08:44+09:00"
 tags: [ "competitive", "writeup", "dcj", "distributed-code-jam" ]
 "target_url": [ "https://code.google.com/codejam/contest/8314486/dashboard#s=p1" ]

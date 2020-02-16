@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/02/07/abc-033-d/"
+redirect_from:
+  - /blog/2016/02/07/abc-033-d/
 date: 2016-02-07T01:53:04+09:00
 tags: [ "competitive", "writeup", "atcoder", "abc", "angle", "geometry", "sort" ]
 ---

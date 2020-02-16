@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/05/20/arc-052-c/"
+redirect_from:
+  - /blog/2016/05/20/arc-052-c/
 date: 2016-05-20T21:56:25+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "dijkstra" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc052/tasks/arc052_c" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/08/26/asis-finals-ctf-2015-bodu/"
+redirect_from:
+  - /blog/2016/08/26/asis-finals-ctf-2015-bodu/
 date: "2016-08-26T20:08:46+09:00"
 tags: [ "ctf", "writeup", "asis-ctf", "crypto", "rsa", "boneh-durfee-attack" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2015/tree/master/asis-finals-ctf-2015/crypto/bodu" ]

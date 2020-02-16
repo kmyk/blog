@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/09/09/mma-ctf-2015-d3flate/"
+redirect_from:
+  - /blog/2016/09/09/mma-ctf-2015-d3flate/
 date: "2016-09-09T15:08:55+09:00"
 tags: [ "ctf", "writeup", "mmactf", "pwn", "zlib", "canary" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2015/tree/master/mma-ctf-2015/pwn/d3flate-500" ]

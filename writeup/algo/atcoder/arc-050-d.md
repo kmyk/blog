@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/04/09/arc-050-d/"
+redirect_from:
+  - /blog/2016/04/09/arc-050-d/
 date: 2016-04-09T01:01:39+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "suffix-array", "longest-common-prefix", "segment-tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc050/tasks/arc050_d" ]

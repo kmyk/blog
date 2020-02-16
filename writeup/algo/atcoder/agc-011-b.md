@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/03/12/agc-011-b/"
+redirect_from:
+  - /blog/2017/03/12/agc-011-b/
 date: "2017-03-12T22:48:18+09:00"
 tags: [ "competitive", "writeup", "atcoder", "agc", "shakutori-method", "greedy" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc011/tasks/agc011_b" ]

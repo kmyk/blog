@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/12/25/arc-014-d/"
+redirect_from:
+  - /blog/2015/12/25/arc-014-d/
 date: 2015-12-25T19:11:53+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "cumulative-sum" ]
 ---

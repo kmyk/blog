@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/12/25/utpc2011-d/"
+redirect_from:
+  - /blog/2017/12/25/utpc2011-d/
 date: "2017-12-25T19:10:43+09:00"
 tags: [ "competitive", "writeup", "utpc", "atcoder", "aoj", "befunge", "memoization" ]
 ---

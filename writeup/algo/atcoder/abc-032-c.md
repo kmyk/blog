@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/02/22/abc-032-c/"
+redirect_from:
+  - /blog/2016/02/22/abc-032-c/
 date: 2016-02-22T21:58:10+09:00
 tags: [ "competitive", "writeup", "atcoder", "abc", "shakutori-hou", "typical-problem" ]
 ---

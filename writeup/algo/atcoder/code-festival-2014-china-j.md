@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/02/22/code-festival-2014-china-j/"
+redirect_from:
+  - /blog/2017/02/22/code-festival-2014-china-j/
 date: "2017-02-22T23:44:51+09:00"
 tags: [ "competitive", "writeup", "atcoder", "codefestival" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-festival-2014-china/tasks/code_festival_china_j" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/03/22/easyctf-2017-other-problems/"
+redirect_from:
+  - /blog/2017/03/22/easyctf-2017-other-problems/
 date: "2017-03-22T16:31:19+09:00"
 tags: [ "ctf", "writeup", "easyctf" ]
 "target_url": [ "https://ctftime.org/event/441" ]

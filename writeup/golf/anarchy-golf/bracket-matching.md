@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/02/22/anagol-bracket-matching/"
+redirect_from:
+  - /blog/2016/02/22/anagol-bracket-matching/
 date: 2016-02-22T05:22:57+09:00
 tags: [ "writeup", "golf", "anarchy-golf", "ruby", "perl", "sed", "regex", "greedy" ]
 ---

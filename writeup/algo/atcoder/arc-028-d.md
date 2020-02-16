@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/02/23/arc-028-d/"
+redirect_from:
+  - /blog/2017/02/23/arc-028-d/
 date: "2017-02-23T23:52:33+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "loop-unrolling", "cache", "factoring-out", "lie" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc028/tasks/arc028_4" ]

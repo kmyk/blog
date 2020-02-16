@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/10/20/hacklu-ctf-2017-prime-enigma/"
+redirect_from:
+  - /blog/2017/10/20/hacklu-ctf-2017-prime-enigma/
 date: "2017-10-20T01:32:34+09:00"
 tags: [ "ctf", "writeup", "hacklu-ctf", "crypto" ]
 ---

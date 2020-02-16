@@ -1,7 +1,8 @@
 ---
 category: blog
 layout: post
-alias: "/blog/2018/12/12/call-for-maintainers/"
+redirect_from:
+  - /blog/2018/12/12/call-for-maintainers/
 date: "2018-12-18T23:59:59+09:00"
 edited: "2018-12-20T23:59:59+09:00"
 tags: [ "competitive", "development", "github" ]

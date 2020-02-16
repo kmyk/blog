@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/05/31/arc-015-d/"
+redirect_from:
+  - /blog/2016/05/31/arc-015-d/
 date: 2016-05-31T23:44:51+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "probability", "expected-value" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc015/tasks/arc015_4" ]

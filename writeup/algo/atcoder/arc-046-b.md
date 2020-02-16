@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/02/23/arc-046-b/"
+redirect_from:
+  - /blog/2016/02/23/arc-046-b/
 date: 2016-02-23T02:37:49+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "game", "experiment", "typical-problem" ]
 ---

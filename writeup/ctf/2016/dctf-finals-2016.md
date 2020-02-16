@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/11/14/dctf-finals-2016/"
+redirect_from:
+  - /blog/2016/11/14/dctf-finals-2016/
 date: "2016-11-14T01:46:57+09:00"
 tags: [ "ctf", "d-ctf" ]
 "target_url": [ "https://dctf.def.camp/" ]

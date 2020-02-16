@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/09/02/easyctf-2015-matrices/"
+redirect_from:
+  - /blog/2016/09/02/easyctf-2015-matrices/
 date: "2016-09-02T15:30:25+09:00"
 tags: [ "ctf", "writeup", "crypto", "easyctf", "hill-cipher" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2015/tree/master/easyctf-2015/cryptography/matrices" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/06/05/hackerrank-zalando-codesprint-make-as-many-customers-happy-as-possible/"
+redirect_from:
+  - /blog/2016/06/05/hackerrank-zalando-codesprint-make-as-many-customers-happy-as-possible/
 date: 2016-06-05T19:17:59+09:00
 tags: [ "competitive", "writeup", "hackerrank", "greedy" ]
 "target_url": [ "https://www.hackerrank.com/contests/zalando-codesprint/challenges/make-as-many-customers-happy-as-possible-" ]

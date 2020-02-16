@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/04/16/gcj-2016-round1a-b/"
+redirect_from:
+  - /blog/2016/04/16/gcj-2016-round1a-b/
 date: 2016-04-16T15:23:50+09:00
 tags: [ "competitive", "writeup", "gcj", "google-code-jam", "parity", "frequency" ]
 "target_url": [ "https://code.google.com/codejam/contest/4304486/dashboard#s=p1" ]

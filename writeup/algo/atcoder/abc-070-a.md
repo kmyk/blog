@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/08/15/abc-070-a/"
+redirect_from:
+  - /blog/2017/08/15/abc-070-a/
 date: "2017-08-15T13:15:45+09:00"
 tags: [ "competitive", "writeup", "atcoder", "abc", "brainfuck" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc070/tasks/abc070_a" ]

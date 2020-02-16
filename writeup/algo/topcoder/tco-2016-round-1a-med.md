@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/03/27/tco-2016-round-1a-med/"
+redirect_from:
+  - /blog/2016/03/27/tco-2016-round-1a-med/
 date: 2016-03-27T04:17:09+09:00
 tags: [ "competitive", "writeup", "topcoder", "tco", "binary-search" ]
 ---

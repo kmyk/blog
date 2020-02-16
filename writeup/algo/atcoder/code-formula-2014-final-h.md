@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/02/22/code-formula-2014-final-h/"
+redirect_from:
+  - /blog/2017/02/22/code-formula-2014-final-h/
 date: "2017-02-22T23:44:38+09:00"
 tags: [ "competitive", "writeup", "atcoder", "codeformula", "lie", "loop-unrolling" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-formula-2014-final/tasks/code_formula_2014_final_h" ]

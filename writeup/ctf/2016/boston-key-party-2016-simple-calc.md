@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/03/07/boston-key-party-2016-simple-calc/"
+redirect_from:
+  - /blog/2017/03/07/boston-key-party-2016-simple-calc/
 date: "2017-03-07T15:50:34+09:00"
 tags: [ "ctf", "writeup", "pwn", "boston-key-party-ctf", "rop" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2016/tree/master/boston-key-party-2016/pwn/simple-calc-5" ]

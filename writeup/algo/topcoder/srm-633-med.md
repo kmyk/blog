@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/01/16/srm-633-med/"
+redirect_from:
+  - /blog/2016/01/16/srm-633-med/
 date: 2016-01-16T10:15:38+09:00
 tags: [ "competitive", "writeup", "topcoder", "srm", "maximum-flow", "flow", "graph", "warshall-floyd", "edmonds-karp", "graphviz" ]
 ---

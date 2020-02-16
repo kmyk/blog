@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/01/02/32c3-ctf-forth/"
+redirect_from:
+  - /blog/2016/01/02/32c3-ctf-forth/
 date: 2016-01-02T23:19:54+09:00
 tags: [ "ctf", "pwn", "writeup", "forth", "xinetd" ]
 ---

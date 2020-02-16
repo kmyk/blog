@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/07/23/arc-058-e/"
+redirect_from:
+  - /blog/2016/07/23/arc-058-e/
 date: "2016-07-23T23:10:45+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp", "bit-dp" ]
 ---

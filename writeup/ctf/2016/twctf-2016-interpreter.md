@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/09/05/twctf-2016-interpreter/"
+redirect_from:
+  - /blog/2016/09/05/twctf-2016-interpreter/
 date: "2016-09-05T12:58:30+09:00"
 tags: [ "ctf", "writeup", "pwn", "mmactf", "twctf", "esolang", "befunge" ]
 "target_url": [ "https://score.ctf.westerns.tokyo/problems/24" ]

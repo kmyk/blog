@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/09/20/csaw-quals-2017-another-xor/"
+redirect_from:
+  - /blog/2017/09/20/csaw-quals-2017-another-xor/
 date: "2017-09-20T20:33:18+09:00"
 tags: [ "ctf", "writeup", "crypto", "csaw-ctf", "xor" ]
 ---

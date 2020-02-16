@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/09/16/tjctf-2016-oneshot/"
+redirect_from:
+  - /blog/2016/09/16/tjctf-2016-oneshot/
 date: "2016-09-16T17:13:16+09:00"
 tags: [ "ctf", "writeup", "pwn", "tjctf", "one-gadget-rce" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2016/tree/master/tjctf-2016/pwn/oneshot-170" ]

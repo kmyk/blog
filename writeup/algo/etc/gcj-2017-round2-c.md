@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/05/14/gcj-2017-round2-c/"
+redirect_from:
+  - /blog/2017/05/14/gcj-2017-round2-c/
 date: "2017-05-14T01:55:08+09:00"
 tags: [ "competitive", "writeup", "gcj", "sat", "3-sat", "togasat" ]
 "target_url": [ "https://code.google.com/codejam/contest/5314486/dashboard#s=p2" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/03/24/srm-699-med/"
+redirect_from:
+  - /blog/2017/03/24/srm-699-med/
 date: "2017-03-24T13:13:30+09:00"
 tags: [ "competitive", "writeup", "topcoder", "srm", "graph", "bfs" ]
 "target_url": [ "https://community.topcoder.com/stat?c=problem_statement&pm=14387" ]

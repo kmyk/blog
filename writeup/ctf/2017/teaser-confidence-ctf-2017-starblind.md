@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/04/04/teaser-confidence-ctf-2017-starblind/"
+redirect_from:
+  - /blog/2017/04/04/teaser-confidence-ctf-2017-starblind/
 date: "2017-04-04T10:32:29+09:00"
 tags: [ "ctf", "writeup", "rev" ]
 "target_url": [ "https://ctftime.org/event/433" ]

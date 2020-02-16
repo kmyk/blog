@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/01/21/hackerrank-101hack33-max-sum-subarray/"
+redirect_from:
+  - /blog/2016/01/21/hackerrank-101hack33-max-sum-subarray/
 date: 2016-01-21T21:32:51+09:00
 tags: [ "competitive", "writeup", "hackerrank" ]
 ---

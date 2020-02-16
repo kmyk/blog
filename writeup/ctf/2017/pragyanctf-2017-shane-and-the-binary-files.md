@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/03/06/pragyanctf-2017-shane-and-the-binary-files/"
+redirect_from:
+  - /blog/2017/03/06/pragyanctf-2017-shane-and-the-binary-files/
 date: "2017-03-06T00:02:36+09:00"
 tags: [ "ctf", "pragyan-ctf", "java", "jad" ]
 ---

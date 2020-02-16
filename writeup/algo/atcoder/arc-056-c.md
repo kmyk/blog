@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/01/01/arc-056-c/"
+redirect_from:
+  - /blog/2018/01/01/arc-056-c/
 date: "2018-01-01T18:45:17+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "lie", "dp", "bit-dp", "optimization" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc056/tasks/arc056_c" ]

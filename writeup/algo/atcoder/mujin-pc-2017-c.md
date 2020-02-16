@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/02/26/mujin-pc-2017-c/"
+redirect_from:
+  - /blog/2017/02/26/mujin-pc-2017-c/
 date: "2017-02-26T02:36:44+09:00"
 tags: [ "competitive", "writeup", "mujin-pc", "atcoder", "doubling", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/mujin-pc-2017/tasks/mujin_pc_2017_c" ]

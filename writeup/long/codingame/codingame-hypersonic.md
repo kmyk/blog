@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/10/03/codingame-hypersonic/"
+redirect_from:
+  - /blog/2016/10/03/codingame-hypersonic/
 date: "2016-10-03T17:47:06+09:00"
 tags: [ "competitive", "writeup", "codingame", "marathon", "game", "beam-search" ]
 "target_url": [ "https://www.codingame.com/contests/hypersonic" ]

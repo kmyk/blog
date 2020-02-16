@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/01/20/codegate-ctf-2016-fl0ppy/"
+redirect_from:
+  - /blog/2017/01/20/codegate-ctf-2016-fl0ppy/
 date: "2017-01-20T22:50:20+09:00"
 tags: [ "ctf", "writeup", "pwn", "codegate-ctf" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2016/tree/master/codegate-ctf-2016/pwn/Fl0ppy-315" ]

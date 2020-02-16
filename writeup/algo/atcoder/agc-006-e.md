@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/07/26/agc-006-e/"
+redirect_from:
+  - /blog/2017/07/26/agc-006-e/
 date: "2017-07-26T04:30:56+09:00"
 tags: [ "competitive", "writeup", "atcoder", "agc", "optimization", "insertion-sort" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc006/tasks/agc006_e" ]

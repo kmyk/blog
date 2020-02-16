@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/03/15/agc-003-f/"
+redirect_from:
+  - /blog/2018/03/15/agc-003-f/
 date: "2018-03-15T03:29:44+09:00"
 tags: [ "competitive", "writeup", "atcoder", "agc", "matrix", "exponentiation-by-squaring" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc003/tasks/agc003_f" ]

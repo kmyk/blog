@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/02/02/arc-046-a/"
+redirect_from:
+  - /blog/2016/02/02/arc-046-a/
 date: 2016-02-02T14:46:05+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "brainfuck" ]
 ---

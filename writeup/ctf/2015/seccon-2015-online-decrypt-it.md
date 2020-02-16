@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/12/06/seccon-2015-online-decrypt-it/"
+redirect_from:
+  - /blog/2015/12/06/seccon-2015-online-decrypt-it/
 date: 2015-12-06T20:32:54+09:00
 tags: [ "ctf", "seccon", "writeup", "crypto" ]
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/02/17/agc-010-d/"
+redirect_from:
+  - /blog/2017/02/17/agc-010-d/
 date: "2017-02-17T14:34:17+09:00"
 tags: [ "competitive", "writeup", "atcoder", "game" ]
 ---

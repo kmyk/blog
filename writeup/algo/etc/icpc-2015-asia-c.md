@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/11/30/icpc-2015-asia-c/"
+redirect_from:
+  - /blog/2015/11/30/icpc-2015-asia-c/
 date: 2015-11-30T01:24:25+09:00
 tags: [ "competitive", "writeup", "icpc", "aoj", "graph", "adjacency-matrix", "game" ]
 ---

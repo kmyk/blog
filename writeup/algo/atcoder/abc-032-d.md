@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/02/23/abc-032-d/"
+redirect_from:
+  - /blog/2016/02/23/abc-032-d/
 date: 2016-02-23T01:29:36+09:00
 tags: [ "competitive", "writeup", "atcoder", "abc", "knapsack-problem", "dp", "typical-problem", "branch-and-bound" ]
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/12/08/abc-076-d/"
+redirect_from:
+  - /blog/2017/12/08/abc-076-d/
 date: "2017-12-08T07:24:14+09:00"
 tags: [ "competitive", "writeup", "atcoder", "abc", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc076/tasks/abc076_d" ]

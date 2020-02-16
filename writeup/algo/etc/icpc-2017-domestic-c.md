@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/07/14/icpc-2017-domestic-c/"
+redirect_from:
+  - /blog/2017/07/14/icpc-2017-domestic-c/
 date: "2017-07-14T23:50:37+09:00"
 tags: [ "competitive", "writeup", "icpc", "icpc-domestic" ]
 ---

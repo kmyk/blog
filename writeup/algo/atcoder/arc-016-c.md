@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/11/04/arc-016-c/"
+redirect_from:
+  - /blog/2015/11/04/arc-016-c/
 date: 2015-11-04T22:24:05+09:00
 tags: [ "competitive", "writeup", "arc", "atcoder", "probability", "dp", "bit-dp" ]
 ---

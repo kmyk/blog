@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/02/23/arc-047-c/"
+redirect_from:
+  - /blog/2016/02/23/arc-047-c/
 date: 2016-02-23T07:07:27+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "factoradic", "permutation" ]
 ---

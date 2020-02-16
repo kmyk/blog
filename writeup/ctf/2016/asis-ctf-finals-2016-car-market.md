@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/09/12/asis-ctf-finals-2016-car-market/"
+redirect_from:
+  - /blog/2016/09/12/asis-ctf-finals-2016-car-market/
 date: "2016-09-12T02:26:51+09:00"
 tags: [ "ctf", "writeup", "asis-ctf", "pwn", "heap", "unlink-attack", "glibc" ]
 ---

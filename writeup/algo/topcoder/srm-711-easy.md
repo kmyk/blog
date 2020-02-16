@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/03/27/srm-711-easy/"
+redirect_from:
+  - /blog/2017/03/27/srm-711-easy/
 date: "2017-03-27T13:35:17+09:00"
 tags: [ "competitive", "writeup", "topcoder", "srm", "greedy" ]
 "target_url": [ "https://community.topcoder.com/stat?c=problem_statement&pm=14558" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/09/12/asis-ctf-finals-2016-diapers-simulator/"
+redirect_from:
+  - /blog/2016/09/12/asis-ctf-finals-2016-diapers-simulator/
 date: "2016-09-12T02:26:40+09:00"
 tags: [ "ctf", "writeup", "asis-ctf", "pwn", "format-string-attack" ]
 ---

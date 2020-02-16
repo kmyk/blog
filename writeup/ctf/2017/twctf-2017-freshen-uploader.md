@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/09/04/twctf-2017-freshen-uploader/"
+redirect_from:
+  - /blog/2017/09/04/twctf-2017-freshen-uploader/
 date: "2017-09-04T16:40:28+09:00"
 tags: [ "ctf", "writeup", "twctf", "web", "php" ]
 ---

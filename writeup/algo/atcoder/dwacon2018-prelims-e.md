@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/01/14/dwacon2018-prelims-e/"
+redirect_from:
+  - /blog/2018/01/14/dwacon2018-prelims-e/
 date: "2018-01-14T03:41:58+09:00"
 tags: [ "competitive", "writeup", "atcoder", "dwacon", "reactive", "tree", "centroid" ]
 "target_url": [ "https://beta.atcoder.jp/contests/dwacon2018-prelims/tasks/dwacon2018_prelims_e" ]

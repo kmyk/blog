@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/04/05/codechef-cook79-addmult/"
+redirect_from:
+  - /blog/2018/04/05/codechef-cook79-addmult/
 date: "2018-04-05T06:48:51+09:00"
 tags: [ "competitive", "writeup", "codechef", "game" ]
 "target_url": [ "https://www.codechef.com/COOK79/problems/ADDMULT" ]

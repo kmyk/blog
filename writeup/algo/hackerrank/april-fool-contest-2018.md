@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/04/02/hackerrank-april-fool-contest-2018/"
+redirect_from:
+  - /blog/2018/04/02/hackerrank-april-fool-contest-2018/
 date: "2018-04-02T00:46:02+09:00"
 tags: [ "competitive", "writeup", "ctf", "guessing", "lojban" ]
 ---

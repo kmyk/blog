@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/11/10/code-festival-2017-qualb-c/"
+redirect_from:
+  - /blog/2017/11/10/code-festival-2017-qualb-c/
 date: "2017-11-10T23:55:45+09:00"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "bipartite-graph" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-festival-2017-qualb/tasks/code_festival_2017_qualb_c" ]

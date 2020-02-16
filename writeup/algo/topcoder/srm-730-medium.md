@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/02/21/srm-730-medium/"
+redirect_from:
+  - /blog/2018/02/21/srm-730-medium/
 date: "2018-02-21T13:53:03+09:00"
 tags: [ "competitive", "writeup", "topcoder", "srm", "graph", "construction" ]
 ---

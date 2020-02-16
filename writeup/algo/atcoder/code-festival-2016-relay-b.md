@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/11/30/code-festival-2016-relay-b/"
+redirect_from:
+  - /blog/2016/11/30/code-festival-2016-relay-b/
 date: "2016-11-30T01:33:18+09:00"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "golf", "perl" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf16-relay-open/tasks/relay_b" ]

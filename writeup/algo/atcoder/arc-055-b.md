@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/10/23/arc-055-b/"
+redirect_from:
+  - /blog/2017/10/23/arc-055-b/
 date: "2017-10-23T17:13:58+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "probability", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc055/tasks/arc055_b" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/05/28/abc-038-b/"
+redirect_from:
+  - /blog/2016/05/28/abc-038-b/
 date: 2016-05-28T23:00:02+09:00
 tags: [ "competitive", "writeup", "atcoder", "abc", "regex", "sed" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc038/tasks/abc038_b" ]

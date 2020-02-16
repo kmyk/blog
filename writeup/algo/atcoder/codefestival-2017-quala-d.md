@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/10/03/codefestival-2017-quala-d/"
+redirect_from:
+  - /blog/2017/10/03/codefestival-2017-quala-d/
 date: "2017-10-03T06:36:53+09:00"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "experiment" ]
 "target_url": [ "https://beta.atcoder.jp/contests/code-festival-2017-quala/tasks/code_festival_2017_quala_d" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/01/04/arc-088-e/"
+redirect_from:
+  - /blog/2018/01/04/arc-088-e/
 date: "2018-01-04T20:13:11+09:00"
 tags: [ "competitive", "writeup", "atcoder", "arc", "segment-tree", "shakutori-method" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc088/tasks/arc088_c" ]

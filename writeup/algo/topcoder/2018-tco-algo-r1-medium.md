@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/04/22/2018-tco-algo-r1-medium/"
+redirect_from:
+  - /blog/2018/04/22/2018-tco-algo-r1-medium/
 date: "2018-04-22T02:57:53+09:00"
 tags: [ "competitive", "writeup", "topcoder", "srm", "tco", "probability" ]
 ---

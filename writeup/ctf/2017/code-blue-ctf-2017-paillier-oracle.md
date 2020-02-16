@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/12/08/code-blue-ctf-2017-paillier-oracle/"
+redirect_from:
+  - /blog/2017/12/08/code-blue-ctf-2017-paillier-oracle/
 date: "2017-12-08T21:22:25+09:00"
 tags: [ "ctf", "writeup", "crypto", "code-blue-ctf", "paillier-cryptosystem", "decryption-oracle", "hardcore-bit", "homomorphic-property" ]
 "target_url": [ "https://ctftime.org/task/4876" ]

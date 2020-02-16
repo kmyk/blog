@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/08/31/agc-002-d/"
+redirect_from:
+  - /blog/2016/08/31/agc-002-d/
 date: "2016-08-31T03:38:06+09:00"
 tags: [ "competitive", "writeup", "atcoder", "agc", "union-find-tree", "persistence", "persistent-array", "persistent-union-find-tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc002/tasks/agc002_d" ]

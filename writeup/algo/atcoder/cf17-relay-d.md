@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/11/27/cf17-relay-d/"
+redirect_from:
+  - /blog/2017/11/27/cf17-relay-d/
 date: "2017-11-27T17:58:10+09:00"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "team-relay", "graph" ]
 "target_url": [ "https://beta.atcoder.jp/contests/cf17-relay-open/tasks/relay2_d" ]

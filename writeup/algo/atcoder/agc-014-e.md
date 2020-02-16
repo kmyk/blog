@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/06/06/agc-014-e/"
+redirect_from:
+  - /blog/2017/06/06/agc-014-e/
 date: "2017-06-06T22:33:18+09:00"
 tags: [ "competitive", "atcoder", "agc", "greedy", "segment-tree", "lazy-propagation", "heavy-light-decomposision", "lowest-common-ancestor", "lie", "time", "submit-debug" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc014/tasks/agc014_e" ]

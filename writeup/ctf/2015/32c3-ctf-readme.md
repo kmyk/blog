@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/01/02/32c3-ctf-readme/"
+redirect_from:
+  - /blog/2016/01/02/32c3-ctf-readme/
 date: 2016-01-02T23:20:13+09:00
 tags: [ "ctf", "writeup", "pwn", "xinetd", "buffer-overflow", "stack-smashing-protection" ]
 ---

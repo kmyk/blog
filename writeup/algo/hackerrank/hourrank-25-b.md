@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/01/03/hackerrank-hourrank-25-b/"
+redirect_from:
+  - /blog/2018/01/03/hackerrank-hourrank-25-b/
 date: "2018-01-03T11:18:31+09:00"
 tags: [ "competitive", "writeup", "hackerrank", "hourrank", "palindrome" ]
 "target_url": [ "https://www.hackerrank.com/contests/hourrank-25/challenges/maximum-palindromes" ]

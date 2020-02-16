@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/12/20/world-codesprint-8-decibinary-numbers/"
+redirect_from:
+  - /blog/2016/12/20/world-codesprint-8-decibinary-numbers/
 date: "2016-12-20T02:33:05+09:00"
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint", "dp", "oeis" ]
 "target_url": [ "https://www.hackerrank.com/contests/world-codesprint-8/challenges/decibinary-numbers" ]

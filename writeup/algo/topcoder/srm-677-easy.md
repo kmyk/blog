@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/12/27/srm-677-easy/"
+redirect_from:
+  - /blog/2015/12/27/srm-677-easy/
 date: 2015-12-27T04:08:43+09:00
 tags: [ "competitive", "writeup", "srm" ]
 ---

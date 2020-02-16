@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/12/29/utpc2011-l/"
+redirect_from:
+  - /blog/2017/12/29/utpc2011-l/
 date: "2017-12-29T07:48:37+09:00"
 tags: [ "competitive", "writeup", "utpc", "atcoder", "aoj", "tree", "query", "coordinate-compression", "heavy-light-decomposition", "lowest-common-ancestor", "fully-indexable-dictionary", "wavelet-tree", "binary-search" ]
 ---

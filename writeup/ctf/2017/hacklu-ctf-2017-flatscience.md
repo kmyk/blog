@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2017/10/20/hacklu-ctf-2017-flatscience/"
+redirect_from:
+  - /blog/2017/10/20/hacklu-ctf-2017-flatscience/
 date: "2017-10-20T01:32:23+09:00"
 tags: [ "ctf", "writeup", "hacklu-ctf", "web", "misc" ]
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/09/19/csaw-quals-2016-coinslot/"
+redirect_from:
+  - /blog/2016/09/19/csaw-quals-2016-coinslot/
 date: "2016-09-19T22:08:49+09:00"
 tags: [ "ctf", "writeup", "csaw-ctf", "misc" ]
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2015/11/19/codeiq-2407/"
+redirect_from:
+  - /blog/2015/11/19/codeiq-2407/
 date: 2015-11-19T21:38:39+09:00
 tags: [ "golf", "codeiq", "writeup", "ruby" ]
 ---

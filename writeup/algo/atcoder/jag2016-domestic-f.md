@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/04/24/jag2016-domestic-f/"
+redirect_from:
+  - /blog/2016/04/24/jag2016-domestic-f/
 date: 2016-04-24T23:58:53+09:00
 tags: [ "competitive", "writeup", "atcoder", "jag", "icpc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/jag2016-domestic/tasks/jag2016secretspring_f" ]

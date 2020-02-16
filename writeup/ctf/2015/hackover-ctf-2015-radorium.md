@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/11/17/hackover-ctf-2015-radorium/"
+redirect_from:
+  - /blog/2016/11/17/hackover-ctf-2015-radorium/
 date: "2016-11-17T05:47:32+09:00"
 tags: [ "ctf", "writeup", "hackover-ctf", "crypto", "ssh", "rsa", "gcd" ]
 "target_url": [ "https://github.com/ctfs/write-ups-2015/tree/master/hackover-ctf-2015/crypto/radorium" ]

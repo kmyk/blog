@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/01/21/hackerrank-101hack33-longest-path/"
+redirect_from:
+  - /blog/2016/01/21/hackerrank-101hack33-longest-path/
 date: 2016-01-21T21:33:08+09:00
 tags: [ "competitive", "writeup", "hackerrank", "tree", "diameter" ]
 ---

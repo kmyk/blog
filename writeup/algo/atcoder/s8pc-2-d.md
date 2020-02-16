@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/04/23/s8pc-2-d/"
+redirect_from:
+  - /blog/2016/04/23/s8pc-2-d/
 date: 2016-04-23T23:02:34+09:00
 tags: [ "competitive", "writeup", "atcoder", "s8pc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/s8pc-2/tasks/s8pc_2_d" ]

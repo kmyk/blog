@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/03/28/hackerrank-lambda-calculi-march-2016-lambda-march-compute-the-perimeter-of-a-polygon/"
+redirect_from:
+  - /blog/2016/03/28/hackerrank-lambda-calculi-march-2016-lambda-march-compute-the-perimeter-of-a-polygon/
 date: 2016-03-28T15:26:14+09:00
 tags: [ "competitive", "writeup", "hackerrank", "lambda-calculi", "haskell" ]
 "target_url": [ "https://www.hackerrank.com/contests/lambda-calculi-march-2016/challenges/lambda-march-compute-the-perimeter-of-a-polygon" ]

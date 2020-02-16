@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/12/26/sharif-ctf-2016-tpq/"
+redirect_from:
+  - /blog/2016/12/26/sharif-ctf-2016-tpq/
 date: "2016-12-26T02:37:55+09:00"
 tags: [ "ctf", "writeup", "crypto", "sharif-ctf", "rsa" ]
 ---

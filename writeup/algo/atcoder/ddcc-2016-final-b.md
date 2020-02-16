@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/12/03/ddcc-2016-final-b/"
+redirect_from:
+  - /blog/2016/12/03/ddcc-2016-final-b/
 date: "2016-12-03T14:31:47+09:00"
 tags: [ "competitive", "writeup", "atcoder", "ddcc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/ddcc2016-final/tasks/ddcc_2016_final_b" ]

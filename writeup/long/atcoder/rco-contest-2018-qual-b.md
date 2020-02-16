@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/02/13/rco-contest-2018-qual-b/"
+redirect_from:
+  - /blog/2018/02/13/rco-contest-2018-qual-b/
 date: "2018-02-13T15:09:45+09:00"
 tags: [ "competitive", "writeup", "atcoder", "rco-contest", "marathon-match", "simulated-annealing" ]
 "target_url": [ "https://rco-contest-2018-qual.contest.atcoder.jp/tasks/rco_contest_2018_qual_b" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2018/04/05/arc-092-d/"
+redirect_from:
+  - /blog/2018/04/05/arc-092-d/
 date: "2018-04-05T04:30:09+09:00"
 tags: [ "competitive", "writeup", "arc", "xor", "binary-search" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc092/tasks/arc092_b" ]

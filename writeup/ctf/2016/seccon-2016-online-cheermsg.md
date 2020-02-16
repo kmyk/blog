@@ -1,6 +1,7 @@
 ---
 layout: post
-alias: "/blog/2016/12/16/seccon-2016-online-cheermsg/"
+redirect_from:
+  - /blog/2016/12/16/seccon-2016-online-cheermsg/
 date: "2016-12-16T21:02:05+09:00"
 tags: [ "ctf", "writeup", "pwn", "rop" ]
 "target_url": [ "https://score-quals.seccon.jp/question/3093a2f4584782e888feb5cf243d982dd3211e2b" ]

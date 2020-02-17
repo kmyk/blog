@@ -17,7 +17,7 @@ baseurl: ""  # the subpath of your site, e.g. /blog
 url: "https://kimiyuki.net"  # the base hostname & protocol for your site
 exclude:
     -   "/.git"
-    -   "/Makefile"
+    -   "/main.py"
 
 # Build settings
 markdown: kramdown

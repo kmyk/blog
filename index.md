@@ -1,9 +1,11 @@
 ---
 layout: default
-title: ""
+title: "🐇"
 ---
 
 ## About Me
+
+kimiyuki は計算機ができて数学がすこしわかる大学生です。哲学を勉強しています。
 
 -   開発: できる
     -   [GitHub](https://github.com/kmyk/)

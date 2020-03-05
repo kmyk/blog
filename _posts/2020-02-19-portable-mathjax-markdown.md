@@ -2,7 +2,7 @@
 category: blog
 layout: post
 date: 2020-02-19T09:00:00+09:00
-edited: 2020-03-04T09:00:00+09:00
+edited: 2020-03-05T22:00:00+09:00
 tags: [ "markdown", "mathjax" ]
 ---
 
@@ -57,7 +57,7 @@ Markdown におけるエスケープの記法 `\` の仕様の曖昧さのため
 
 ## 行区切り `\\`
 
-`\\` は避け `\newline` で代用してください[^newline]。
+`\\` は避け `\newline` で代用してください[^newline][^compat]。
 たとえば $f(n) = \begin{cases} 1 & (n = 0) \newline n f(n - 1) & (n \ne 0) \end{cases}$ と表示するには `$f(n) = \begin{cases} 1 & (n = 0) \newline n f(n - 1) & (n \ne 0) \end{cases}$` と書いてください。
 Markdown におけるエスケープの記法 `\` の仕様の曖昧さのためです[^escape]。
 
@@ -67,3 +67,4 @@ Markdown におけるエスケープの記法 `\` の仕様の曖昧さのため
 [^hash]: `\hash` のような命令は、MathJax にはいまのところ存在しないようです。
 [^escape]: たとえば、`\#` を `#` に変換する Markdown 処理系と `\#` を `\#` に変換する Markdown 処理系とが両方あります。
 [^newline]: ただし MathJax の内部において `\\` と `\newline` は異なる命令であることに注意してください。場合によっては `\newline` で置き換えることができないことがあります。
+[^compat]: これは MathJax を前提としています。MathJax 以外の処理系を用いた場合 (例: IDE 上のプレビュー) の動作は保証できません。

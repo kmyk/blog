@@ -2,7 +2,7 @@
 category: blog
 layout: post
 date: 2020-03-04T23:00:00+09:00
-edited: 2020-03-05T02:00:00+09:00
+edited: 2020-03-05T15:00:00+09:00
 tags: [ "competitive", "segment-tree" ]
 ---
 
@@ -26,8 +26,10 @@ tags: [ "competitive", "segment-tree" ]
 ## しかし競プロ界隈以外では、セグメント木は平衡二分木を用いるデータ構造である
 
 学術分野 (つまり、競プロ界隈以外) では、セグメント木は完全二分木には限定されたものではない。
+少なくとも最も初期のセグメント木は完全二分木を用いていたようだが、それ以降は単に平衡二分木を用いている。
+
 セグメント木は Jon Louis Bentley によって "Solutions to Klee's rectangle problems" (1977) で初めて発見された (これは unpublished manuscript であり、少なくとも web 上には見つからない)。
-この数年後に Bentley が発表した ["An Optimal Worst Case Algorithm for Reporting Intersections of Rectangles" (1980)](https://ieeexplore.ieee.org/document/1675628) では、以下で引用したように、セグメント木は平衡二分木を用いて説明されている。
+この数年後に Bentley が発表した ["An Optimal Worst Case Algorithm for Reporting Intersections of Rectangles" (1980)](https://ieeexplore.ieee.org/document/1675628) では、以下で引用したように、セグメント木は完全二分木を用いて説明されている。
 
 >   The segment tree is based on the idea of representing a set of intervals on the line by a perfectly balanced binary tree; a line segment is then represented by "covering" it with certain nodes of the tree.
 
@@ -37,7 +39,9 @@ tags: [ "competitive", "segment-tree" ]
 2.  削除: 与えられた線分を集合から削除する。計算量は $O(\log m)$。
 3.  報告: 与えられた点と交点を持つような線分をすべて報告する。計算量は報告する線分が $k$ 本のとき $O(\log m + k)$。
 
-有名な教科書である [Computational Geometry: algorithms and applications](https://link.springer.com/book/10.1007/978-3-662-03427-9) の $10$ 章 MORE GEOMETRIC DATA STRUCTURESMORE にも同様の説明がある。Bentley のものと同様の線分の集合を管理するデータ構造であり、以下で引用したように「セグメント木の骨格は平衡二分木である」と説明されている。やはり完全二分木には限定されていない。
+[Computational Geometry: algorithms and applications](https://link.springer.com/book/10.1007/978-3-662-03427-9) の $10$ 章 MORE GEOMETRIC DATA STRUCTURESMORE は、セグメント木の説明に平衡二分木を用いている。
+これは有名な教科書であるようであり、その説明はおそらくセグメント木についての標準的なものと思ってよいだろう。
+セグメント木は Bentley によって発見された線分の集合を管理するデータ構造であるとしながら、以下で引用したように「セグメント木の骨格は平衡二分木である」と書かれている。ここでは完全二分木には限定されていない。
 
 >   The skeleton of the segment tree is a balanced binary tree $\mathcal{T}$. The leaves of $\mathcal{T}$ correspond to the elementary intervals induced by the endpoints of the intervals in I in an ordered way: …
 
@@ -66,6 +70,9 @@ Bernard Chazelle は ["A functional approach to data structures and its use in m
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ---
+
+-   Thu Mar  5 14:34:17 JST 2020
+    -   Bentley のセグメント木がよく見たら完全二分木だったので修正 <https://twitter.com/noshi91/status/1235341921360515074>
 
 [^array]: 特に、特定の順序で添字付けて配列に格納するもの
 

@@ -1,0 +1,42 @@
+\documentclass[tikz,convert={outfile=\jobname.svg}]{standalone}
+\usetikzlibrary{arrows.meta}
+
+% https://tex.stackexchange.com/questions/235525/how-to-write-these-symbols-double-vee-wedge-and-bracket
+\usepackage{amsmath,stmaryrd}
+\newcommand{\bigdoublewedge}{%
+  \mathop{
+    \mathchoice{\bigwedge\mkern-15mu\bigwedge}
+               {\bigwedge\mkern-12.5mu\bigwedge}
+               {\bigwedge\mkern-12.5mu\bigwedge}
+               {\bigwedge\mkern-11mu\bigwedge}
+    }
+}
+\newcommand{\bigdoublevee}{%
+  \mathop{
+    \mathchoice{\bigvee\mkern-15mu\bigvee}
+               {\bigvee\mkern-12.5mu\bigvee}
+               {\bigvee\mkern-12.5mu\bigvee}
+               {\bigvee\mkern-11mu\bigvee}
+    }
+}
+
+\begin{document}
+\begin{tikzpicture}[x=80pt, y=80pt]
+    \node[draw=black, fill=white, circle, minimum size=30pt] at (-2,1.2) (A1) {$A_1$};
+    \node[draw=black, fill=white, circle, minimum size=30pt] at (-2,0.4) (A2) {$A_2$};
+    \node[draw=black, fill=white, circle, minimum size=30pt] at (-2,-0.4) (A3) {$A_3$};
+    \node[draw=black, fill=white, circle, minimum size=30pt] at (-2,-1.2) (A4) {$A_4$};
+    \node[draw=black, fill=white, circle, minimum size=40pt] at (-0.6,0) (A) {$\bigdoublevee_i A_i$};
+
+    \draw[->] (A1) -- node[right] {\small $\infty$} (A);
+    \draw[->] (A2) -- node[right] {\small $\infty$} (A);
+    \draw[->] (A3) -- node[right] {\small $\infty$} (A);
+    \draw[->] (A4) -- node[right] {\small $\infty$} (A);
+    \draw[->] (A) -- node[above] {$p(\lnot \bigdoublevee_i A_i)$} (3.5,0);
+
+    \draw[->] (-3.5,1.2) -- (A1);
+    \draw[->] (-3.5,0.4) -- (A2);
+    \draw[->] (-3.5,-0.4) -- (A3);
+    \draw[->] (-3.5,-1.2) -- (A4);
+\end{tikzpicture}
+\end{document}

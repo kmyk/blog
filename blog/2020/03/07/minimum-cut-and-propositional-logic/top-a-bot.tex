@@ -1,0 +1,11 @@
+\documentclass[tikz,convert={outfile=\jobname.svg}]{standalone}
+\usetikzlibrary{arrows.meta}
+\begin{document}
+\begin{tikzpicture}[x=80pt, y=80pt]
+    \node[draw=black, fill=white, circle, minimum size=30pt] at (-2,0) (S) {$\top$};
+    \node[draw=black, fill=white, circle, minimum size=30pt] at (0,0) (A) {$A$};
+    \node[draw=black, fill=white, circle, minimum size=30pt] at (2,0) (T) {$\bot$};
+    \draw[->] (S) -- node[above] {$p(A)$} (A);
+    \draw[->] (A) -- node[above] {$p(\lnot A)$} (T);
+\end{tikzpicture}
+\end{document}

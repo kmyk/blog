@@ -1,0 +1,20 @@
+\documentclass[tikz,convert={outfile=\jobname.svg}]{standalone}
+\usetikzlibrary{arrows.meta}
+\begin{document}
+\begin{tikzpicture}[x=80pt, y=80pt]
+    \node[draw=black, fill=white, circle, minimum size=30pt] at (0,1) (top) {$A$};
+    \node[draw=black, fill=white, circle, minimum size=30pt] at (0,-1) (bottom) {$B$};
+    \draw[->] (top) to[out=-45, in=45] node[right] {$p(A \to B)$} (bottom);
+    \draw[->] (bottom) to[out=135, in=-135] node[left] {$p(B \to A)$} (top);
+
+    \node at (-3,1) (leftmost-top) {};
+    \node at (-3,-1) (leftmost-bottom) {};
+    \draw[->] (leftmost-top) -- (top);
+    \draw[->] (leftmost-bottom) -- (bottom);
+
+    \node at (3,1) (rightmost-top) {};
+    \node at (3,-1) (rightmost-bottom) {};
+    \draw[->] (top) -- (rightmost-top);
+    \draw[->] (bottom) -- (rightmost-bottom);
+\end{tikzpicture}
+\end{document}

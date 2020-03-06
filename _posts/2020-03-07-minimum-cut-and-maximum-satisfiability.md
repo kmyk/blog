@@ -202,8 +202,8 @@ $p_i \to q_j$ は「$a_i$ を燃やしたならば $a_j$ を埋めてはなら�
 
 より一般に、命題変数 $p_1, p_2, \dots, p_n, q_1, q_2, \dots, q_m$ に対し、次が書ける:
 
--   「$\bigdoublevee_i p_i$ が真でなければ $c \ge 0$ のペナルティを受ける」
--   「$\lnot \bigdoublewedge_j q_j$ が真でなければ $c \ge 0$ のペナルティを受ける」
+-   「$\lnot \bigdoublevee_i p_i$ が真でなければ $c \ge 0$ のペナルティを受ける」
+-   「$\bigdoublewedge_j q_j$ が真でなければ $c \ge 0$ のペナルティを受ける」
 -   「$\bigdoublevee_i p_i \to \bigdoublewedge_j q_j$ が真でなければ $c \ge 0$ のペナルティを受ける」
 
 ## 関連記事

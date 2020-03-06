@@ -5,7 +5,7 @@ date: 2020-03-07T00:00:00+09:00
 tags: [ "competitive", "minimum-cat", "propositional-logic" ]
 ---
 
-# 最小カットと充足最大化問題
+# 最小カット問題と充足最大化問題
 
 <div hidden>
 $$

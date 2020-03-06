@@ -62,14 +62,14 @@ $$
 すでに同じ論理式に対応する頂点があるならば、それは再利用するものとする。
 そしてこのふたつの間に、以下の図 ($n = m = 4$ のとき) のように重み $c(\varphi)$ の辺を張る。
 
-![論理式 $\bigdoublevee_i p_i \to \bigdoublewedge_j q_j$ についてのグラフ](/blog/2020/03/07/minimum-cut-and-propositional-logic/sum-implies-product.svg)
+![論理式 $\bigdoublevee_i p_i \to \bigdoublewedge_j q_j$ についてのグラフ](/blog/2020/03/07/minimum-cut-and-maximum-satisfiability/sum-implies-product.svg)
 
 ただし、列 $(p_1, p_2, \dots, p_n)$ や $(q_1, q_2, \dots, q_m)$ が空のときは論理積の単位元 $\top$ と論理和の単位元 $\bot$ が用いられることに注意せよ。
 これはネットワークの始点 $\top$ や終点 $\bot$ と同一の頂点である。
 図で書くと以下のようになる。
 
-![論理式 $\lnot \bigdoublevee_i p_i$ についてのグラフ](/blog/2020/03/07/minimum-cut-and-propositional-logic/not-sum.svg)
-![論理式 $\bigdoublewedge_j q_j$ についてのグラフ](/blog/2020/03/07/minimum-cut-and-propositional-logic/product.svg)
+![論理式 $\lnot \bigdoublevee_i p_i$ についてのグラフ](/blog/2020/03/07/minimum-cut-and-maximum-satisfiability/not-sum.svg)
+![論理式 $\bigdoublewedge_j q_j$ についてのグラフ](/blog/2020/03/07/minimum-cut-and-maximum-satisfiability/product.svg)
 
 このようにして構成されたグラフは所望の性質を満たす。
 
@@ -83,14 +83,14 @@ $$
 また「$\lnot p$ が真でなければ $c(\lnot p)$ のペナルティを受ける」ことを表現するには、$p$ から終点 $p$ へ重み $c(\lnot p)$ の辺を張ればよい。
 グラフはまとめて書くと以下のようになる。
 
-![論理式 $p, \lnot p$ についてのグラフ](/blog/2020/03/07/minimum-cut-and-propositional-logic/top-a-bot.svg)
+![論理式 $p, \lnot p$ についてのグラフ](/blog/2020/03/07/minimum-cut-and-maximum-satisfiability/top-a-bot.svg)
 
 ### 省略記法
 
 これ以降では、簡単のため $\top$ や $\bot$ の頂点は省略する。
 たとえば上記の $\top \to p$ と $p \to \bot$ のグラフは次のように書かれる。
 
-![論理式 $p, \lnot p$ についての省略して書かれたグラフ](/blog/2020/03/07/minimum-cut-and-propositional-logic/just-a.svg)
+![論理式 $p, \lnot p$ についての省略して書かれたグラフ](/blog/2020/03/07/minimum-cut-and-maximum-satisfiability/just-a.svg)
 
 ### ふたつの頂点の間の辺: $p \to q$ と $p \leftrightarrow q$
 
@@ -98,20 +98,20 @@ $$
 「含意 $p \to q$ が真でなければ $c(p \to q)$ のペナルティを受ける」ことを表現するには、頂点 $p$ から頂点 $q$ へ重み $c(p \to q)$ の辺を張ればよい。
 図で書くと以下のようになる。
 
-![論理式 $p \to q$ についてのグラフ](/blog/2020/03/07/minimum-cut-and-propositional-logic/a-implies-b.svg)
+![論理式 $p \to q$ についてのグラフ](/blog/2020/03/07/minimum-cut-and-maximum-satisfiability/a-implies-b.svg)
 
 ここで $\dot{c} = c(p \to q) = c(q \to p)$ にすると、これは $c(p \leftrightarrow) = \dot{c}$ だと思える。
 つまり「同値 $p \leftrightarrow q$ が真でなければ $c(p \to q)$ のペナルティを受ける」ことが表現できる。
 図にするときは以下のように書くとよいだろう。
 
-![論理式 $p \leftrightarrow q$ についてのグラフ](/blog/2020/03/07/minimum-cut-and-propositional-logic/a-iff-b.svg)
+![論理式 $p \leftrightarrow q$ についてのグラフ](/blog/2020/03/07/minimum-cut-and-maximum-satisfiability/a-iff-b.svg)
 
 ### 仮想的な頂点: $p \wedge q$ と $p \vee q$
 
 最後は論理積と論理和である。
 命題変数 $p, q$ に対する論理積 $p \wedge q$ と論理和 $p \vee q$ についての「$p \wedge q$ が真でなければ $c(p \wedge q)$ のペナルティを受ける」「$\lnot (p \lor q)$ が真でなければ $c(\lnot (p \lor q))$ のペナルティを受ける」という制約は、次のグラフのようにして表現される。
 
-![論理式 $p \wedge q, p \vee q$ についてのグラフ](/blog/2020/03/07/minimum-cut-and-propositional-logic/diamond.svg)
+![論理式 $p \wedge q, p \vee q$ についてのグラフ](/blog/2020/03/07/minimum-cut-and-maximum-satisfiability/diamond.svg)
 
 これが実際にどう機能するかについても眺めておこう。
 ふたつの命題変数 $p, q$ の真偽に従って $4$ 通りのカットが考えられる。
@@ -121,20 +121,20 @@ $p$ が真かつ $q$ が偽であるならば、このような形のカット�
 そして、論理式 $\lnot p, q, p \wedge q, \lnot (p \vee q)$ はどれも偽なので、これらの制約に対応する辺がカットされている。
 ただし、頂点 $p \wedge q$ から頂点 $p$ への重み $\infty$ の辺などは偽の側から正の側への辺であるのでカットされる必要はない。
 
-![論理式 $p \wedge \lnot q$ の場合のカット](/blog/2020/03/07/minimum-cut-and-propositional-logic/a-and-not-b.svg)
+![論理式 $p \wedge \lnot q$ の場合のカット](/blog/2020/03/07/minimum-cut-and-maximum-satisfiability/a-and-not-b.svg)
 
 次に、$p$ が偽かつ $q$ が偽のときのカットは次の図のようになる。
 論理式 $ p, q, p \wedge q$ が偽なので、これらの制約に対応する辺がカットされる。
 
-![論理式 $\lnot p \wedge \lnot q$ の場合のカット](/blog/2020/03/07/minimum-cut-and-propositional-logic/not-a-and-not-b.svg)
+![論理式 $\lnot p \wedge \lnot q$ の場合のカット](/blog/2020/03/07/minimum-cut-and-maximum-satisfiability/not-a-and-not-b.svg)
 
 同様に、$p$ が偽かつ $q$ が真のときのカットは次の図のようになる。
 
-![論理式 $\lnot p \wedge q$ の場合のカット](/blog/2020/03/07/minimum-cut-and-propositional-logic/not-a-and-b.svg)
+![論理式 $\lnot p \wedge q$ の場合のカット](/blog/2020/03/07/minimum-cut-and-maximum-satisfiability/not-a-and-b.svg)
 
 最後に、$p$ が真かつ $q$ が真のときのカットは次の図のようになる。
 
-![論理式 $p \wedge q$ の場合のカット](/blog/2020/03/07/minimum-cut-and-propositional-logic/a-and-b.svg)
+![論理式 $p \wedge q$ の場合のカット](/blog/2020/03/07/minimum-cut-and-maximum-satisfiability/a-and-b.svg)
 
 
 ## おまけ: 実用上の注意
@@ -162,7 +162,7 @@ $p$ が真かつ $q$ が偽であるならば、このような形のカット�
 この場合、命題変数 $p_i$ の意味として「$x_i \le i$ が成り立つ」を選択し「$p_i \to p _ {i+1}$ が真でなければ $\infty$ のペナルティを受ける」を加えるとよいだろう。ただし、$2$ 値のときと同様に否定を取ると状況が変わることがあるので、$p_i$ の意味として「$x_i \gt i$ が成り立つ」も試しておくべきである。
 $p_i \leftrightarrow x_i \le i$ ($i \in \lbrace 1, 2, 3, 4 \rbrace$) のときのグラフの様子は次のようになる。
 
-![](/blog/2020/03/07/minimum-cut-and-propositional-logic/line.svg)
+![](/blog/2020/03/07/minimum-cut-and-maximum-satisfiability/line.svg)
 
 次に、人工的な順序を探す必要のある場合の例を見ていこう。
 物 $a_1, a_2, \dots, a_n$ のそれぞれに「燃やす」「埋める」「何もしない」の $3$ 通りのうちいずれかを割り当てるとしよう。
@@ -180,7 +180,7 @@ $P_i, Q_i, R_i$ はいずれかふたつ以上が同時に成り立つことが�
 $p_i \to q_j$ は「$a_i$ を燃やしたならば $a_j$ を埋めてはならない」になる。
 図にすると次のようになる。
 
-![](/blog/2020/03/07/minimum-cut-and-propositional-logic/three.svg)
+![](/blog/2020/03/07/minimum-cut-and-maximum-satisfiability/three.svg)
 
 ## まとめ
 

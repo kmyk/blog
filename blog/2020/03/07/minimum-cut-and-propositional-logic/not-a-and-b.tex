@@ -2,10 +2,10 @@
 \usetikzlibrary{arrows.meta}
 \begin{document}
 \begin{tikzpicture}[x=80pt, y=80pt]
-    \node[draw=black, fill=white, circle, minimum size=30pt] at (0,1) (top) {$A$};
-    \node[draw=black, fill=white, circle, minimum size=30pt] at (0,-1) (bottom) {$B$};
-    \node[draw=black, fill=white, circle, minimum size=30pt] at (-1,0) (left) {\footnotesize $A \land B$};
-    \node[draw=black, fill=white, circle, minimum size=30pt] at (1,0) (right) {\footnotesize $A \lor B$};
+    \node[draw=black, fill=white, circle, minimum size=30pt] at (0,1) (top) {$p$};
+    \node[draw=black, fill=white, circle, minimum size=30pt] at (0,-1) (bottom) {$q$};
+    \node[draw=black, fill=white, circle, minimum size=30pt] at (-1,0) (left) {\footnotesize $p \land q$};
+    \node[draw=black, fill=white, circle, minimum size=30pt] at (1,0) (right) {\footnotesize $p \lor q$};
     \draw[->] (left) -- node[left] {\small $\infty$} (top);
     \draw[->, densely dotted] (left) -- node[left] {\small $\infty$} (bottom);
     \draw[->, densely dotted] (top) -- node[right] {\small $\infty$} (right);
@@ -14,16 +14,16 @@
     \node at (-3,1) (leftmost-top) {};
     \node at (-3,0) (leftmost-middle) {};
     \node at (-3,-1) (leftmost-bottom) {};
-    % \draw[->] (leftmost-top) -- node[above] {$p(A)$} (top);
-    % \draw[->] (leftmost-middle) -- node[above] {$p(A \land B)$} (left);
-    \draw[->] (leftmost-bottom) -- node[above] {$p(B)$} (bottom);
+    % \draw[->] (leftmost-top) -- node[above] {$c(p)$} (top);
+    % \draw[->] (leftmost-middle) -- node[above] {$c(p \land q)$} (left);
+    \draw[->] (leftmost-bottom) -- node[above] {$c(q)$} (bottom);
 
     \node at (3,1) (rightmost-top) {};
     \node at (3,0) (rightmost-middle) {};
     \node at (3,-1) (rightmost-bottom) {};
-    \draw[->] (top) -- node[above] {$p(\lnot A)$} (rightmost-top);
-    % \draw[->] (right) -- node[above] {$p(\lnot (A \lor B))$} (rightmost-middle);
-    % \draw[->] (bottom) -- node[above] {$p(\lnot B)$} (rightmost-bottom);
+    \draw[->] (top) -- node[above] {$c(\lnot p)$} (rightmost-top);
+    % \draw[->] (right) -- node[above] {$c(\lnot (p \lor q))$} (rightmost-middle);
+    % \draw[->] (bottom) -- node[above] {$c(\lnot q)$} (rightmost-bottom);
 
     \path[draw]
         (-1,1.5) to[out=-90, in=120]

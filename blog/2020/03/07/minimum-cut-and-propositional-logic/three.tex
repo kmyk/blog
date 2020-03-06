@@ -1,0 +1,22 @@
+\documentclass[tikz,convert={outfile=\jobname.svg}]{standalone}
+\usetikzlibrary{arrows.meta}
+\begin{document}
+\begin{tikzpicture}[x=80pt, y=80pt]
+    \node[draw=black, fill=white, circle, minimum size=30pt] at (-0.8,0.8) (q_i) {$q_i$};
+    \node[draw=black, fill=white, circle, minimum size=30pt] at (0.8,0.8) (p_i) {$p_i$};
+    \node[draw=black, fill=white, circle, minimum size=30pt] at (-0.8,-0.8) (q_j) {$q_j$};
+    \node[draw=black, fill=white, circle, minimum size=30pt] at (0.8,-0.8) (p_j) {$p_j$};
+
+    \draw[->] (p_i) to[out=-150, in=-30] node[below] {\small $\infty$} (q_i);
+    \draw[->] (-3,0.8) to[out=0, in=150] node[above] {$c(\lnot Q_i)$} (q_i);
+    \draw[->] (q_i) to[out=30, in=150] node[above] {$c(\lnot R_i)$} (p_i);
+    \draw[->] (p_i) to[out=30, in=180] node[above] {$c(\lnot P_i)$} (3,0.8);
+
+    \draw[->] (p_j) to[out=-150, in=-30] node[below] {\small $\infty$} (q_j);
+    \draw[->] (-3,-0.8) to[out=0, in=150] node[above] {$c(\lnot Q_j)$} (q_j);
+    \draw[->] (q_j) to[out=30, in=150] node[above] {$c(\lnot R_j)$} (p_j);
+    \draw[->] (p_j) to[out=30, in=180] node[above] {$c(\lnot P_j)$} (3,-0.8);
+
+    \draw[->] (p_i) to[out=-90, in=90] node[left] {$c(P_i \to \lnot Q_j)$} (q_j);
+\end{tikzpicture}
+\end{document}

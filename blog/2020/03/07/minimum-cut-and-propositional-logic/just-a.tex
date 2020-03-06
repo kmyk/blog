@@ -2,10 +2,10 @@
 \usetikzlibrary{arrows.meta}
 \begin{document}
 \begin{tikzpicture}[x=80pt, y=80pt]
-    \node at (-2,0) (S) {};
-    \node[draw=black, fill=white, circle, minimum size=30pt] at (0,0) (A) {$A$};
-    \node at (2,0) (T) {};
-    \draw[->] (S) -- node[above] {$p(A)$} (A);
-    \draw[->] (A) -- node[above] {$p(\lnot A)$} (T);
+    \node at (-3,0) (S) {};
+    \node[draw=black, fill=white, circle, minimum size=30pt] at (0,0) (p) {$p$};
+    \node at (3,0) (T) {};
+    \draw[->] (S) -- node[above] {$c(p)$} (p);
+    \draw[->] (p) -- node[above] {$c(\lnot p)$} (T);
 \end{tikzpicture}
 \end{document}

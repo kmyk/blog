@@ -22,21 +22,17 @@
 
 \begin{document}
 \begin{tikzpicture}[x=80pt, y=80pt]
-    \node[draw=black, fill=white, circle, minimum size=30pt] at (-2,1.2) (A1) {$A_1$};
-    \node[draw=black, fill=white, circle, minimum size=30pt] at (-2,0.4) (A2) {$A_2$};
-    \node[draw=black, fill=white, circle, minimum size=30pt] at (-2,-0.4) (A3) {$A_3$};
-    \node[draw=black, fill=white, circle, minimum size=30pt] at (-2,-1.2) (A4) {$A_4$};
-    \node[draw=black, fill=white, circle, minimum size=40pt] at (-0.6,0) (A) {$\bigdoublevee_i A_i$};
+    \node[draw=black, fill=white, circle, minimum size=30pt] at (-2,1.2) (p1) {$p_1$};
+    \node[draw=black, fill=white, circle, minimum size=30pt] at (-2,0.4) (p2) {$p_2$};
+    \node[draw=black, fill=white, circle, minimum size=30pt] at (-2,-0.4) (p3) {$p_3$};
+    \node[draw=black, fill=white, circle, minimum size=30pt] at (-2,-1.2) (p4) {$p_4$};
+    \node[draw=black, fill=white, circle, minimum size=40pt] at (-0.6,0) (p) {$\bigdoublevee_i p_i$};
+    \node[draw=black, fill=white, circle, minimum size=30pt] at (2,0) (bot) {$\bot$};
 
-    \draw[->] (A1) -- node[right] {\small $\infty$} (A);
-    \draw[->] (A2) -- node[right] {\small $\infty$} (A);
-    \draw[->] (A3) -- node[right] {\small $\infty$} (A);
-    \draw[->] (A4) -- node[right] {\small $\infty$} (A);
-    \draw[->] (A) -- node[above] {$p(\lnot \bigdoublevee_i A_i)$} (3.5,0);
-
-    \draw[->] (-3.5,1.2) -- (A1);
-    \draw[->] (-3.5,0.4) -- (A2);
-    \draw[->] (-3.5,-0.4) -- (A3);
-    \draw[->] (-3.5,-1.2) -- (A4);
+    \draw[->] (p1) -- node[right] {\small $\infty$} (p);
+    \draw[->] (p2) -- node[right] {\small $\infty$} (p);
+    \draw[->] (p3) -- node[right] {\small $\infty$} (p);
+    \draw[->] (p4) -- node[right] {\small $\infty$} (p);
+    \draw[->] (p) -- node[above] {$c(\lnot \bigdoublevee_i p_i)$} (bot);
 \end{tikzpicture}
 \end{document}

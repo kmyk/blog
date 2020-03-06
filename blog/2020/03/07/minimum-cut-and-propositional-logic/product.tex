@@ -22,21 +22,17 @@
 
 \begin{document}
 \begin{tikzpicture}[x=80pt, y=80pt]
-    \node[draw=black, fill=white, circle, minimum size=30pt] at (2,1.2) (B1) {$B_1$};
-    \node[draw=black, fill=white, circle, minimum size=30pt] at (2,0.4) (B2) {$B_2$};
-    \node[draw=black, fill=white, circle, minimum size=30pt] at (2,-0.4) (B3) {$B_3$};
-    \node[draw=black, fill=white, circle, minimum size=30pt] at (2,-1.2) (B4) {$B_4$};
-    \node[draw=black, fill=white, circle, minimum size=40pt] at (0.6,0) (B) {$\bigdoublewedge_j B_j$};
+    \node[draw=black, fill=white, circle, minimum size=30pt] at (2,1.2) (q1) {$q_1$};
+    \node[draw=black, fill=white, circle, minimum size=30pt] at (2,0.4) (q2) {$q_2$};
+    \node[draw=black, fill=white, circle, minimum size=30pt] at (2,-0.4) (q3) {$q_3$};
+    \node[draw=black, fill=white, circle, minimum size=30pt] at (2,-1.2) (q4) {$q_4$};
+    \node[draw=black, fill=white, circle, minimum size=40pt] at (0.6,0) (q) {$\bigdoublewedge_j q_j$};
+    \node[draw=black, fill=white, circle, minimum size=30pt] at (-2,0) (top) {$\top$};
 
-    \draw[->] (-3.5,0) -- node[above] {$p(\bigdoublewedge_j B_j)$} (B);
-    \draw[->] (B) -- node[left] {\small $\infty$} (B1);
-    \draw[->] (B) -- node[left] {\small $\infty$} (B2);
-    \draw[->] (B) -- node[left] {\small $\infty$} (B3);
-    \draw[->] (B) -- node[left] {\small $\infty$} (B4);
-
-    \draw[->] (B1) -- (3.5,1.2);
-    \draw[->] (B2) -- (3.5,0.4);
-    \draw[->] (B3) -- (3.5,-0.4);
-    \draw[->] (B4) -- (3.5,-1.2);
+    \draw[->] (top) -- node[above] {$c(\bigdoublewedge_j q_j)$} (q);
+    \draw[->] (q) -- node[left] {\small $\infty$} (q1);
+    \draw[->] (q) -- node[left] {\small $\infty$} (q2);
+    \draw[->] (q) -- node[left] {\small $\infty$} (q3);
+    \draw[->] (q) -- node[left] {\small $\infty$} (q4);
 \end{tikzpicture}
 \end{document}

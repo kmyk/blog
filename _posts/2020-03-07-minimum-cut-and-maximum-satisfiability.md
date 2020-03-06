@@ -100,8 +100,7 @@ $$
 
 ![論理式 $p \to q$ についてのグラフ](/blog/2020/03/07/minimum-cut-and-maximum-satisfiability/a-implies-b.svg)
 
-ここで $\hat{c} = c(p \to q) = c(q \to p)$ にすると、これは $c(p \leftrightarrow q) = \hat{c}$ だと思える。
-つまり「同値 $p \leftrightarrow q$ が真でなければ $c(p \to q)$ のペナルティを受ける」ことが表現できる。
+ここで $c(p \to q) = c(q \to p)$ にすると「同値 $p \leftrightarrow q$ が真でなければ $c(p \to q)$ のペナルティを受ける」ことが表現できる。
 図にするときは以下のように書くとよいだろう。
 
 ![論理式 $p \leftrightarrow q$ についてのグラフ](/blog/2020/03/07/minimum-cut-and-maximum-satisfiability/a-iff-b.svg)

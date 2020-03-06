@@ -205,3 +205,16 @@ $p_i \to q_j$ は「$a_i$ を燃やしたならば $a_j$ を埋めてはなら�
 -   「$\bigdoublevee_i p_i$ が真でなければ $c \ge 0$ のペナルティを受ける」
 -   「$\lnot \bigdoublewedge_j q_j$ が真でなければ $c \ge 0$ のペナルティを受ける」
 -   「$\bigdoublevee_i p_i \to \bigdoublewedge_j q_j$ が真でなければ $c \ge 0$ のペナルティを受ける」
+
+## 関連記事
+
+-   [最小カットを使って「燃やす埋める問題」を解く - SlideShare, @nico_shindannin](https://www.slideshare.net/shindannin/project-selection-problem)
+    -   「燃やす埋める問題」という概念は、おそらくこの記事で始めて紹介された。
+-   [最小カットを使って「燃やす埋める」問題を解くスライドのフォロー - じじいのプログラミング](http://shindannin.hatenadiary.com/entry/2017/11/15/043009)
+-   [最小カットについて - よすぽの日記](https://yosupo.hatenablog.com/entry/2015/03/31/134336)
+    -   最小カット問題はグラフの $2$ 彩色だと思うとよいことが説明されている。
+-   [『燃やす埋める』と『ProjectSelectionProblem』 - とこはるのまとめ](http://tokoharuland.hateblo.jp/entry/2017/11/12/234636)
+    -   「燃やす埋める問題」という語を使うのをやめて Project Selection Problem を考えるべきだと主張されている。
+-   [Project Selection (燃やす埋める) 周りの話についてもう少し考えた - とこはるのまとめ](http://tokoharuland.hateblo.jp/entry/2017/12/25/000003)
+-   [最小カットとProject Selection Problemのまとめ - うさぎ小屋](https://kimiyuki.net/blog/2017/12/05/minimum-cut-and-project-selection-problem/)
+    -   私が過去に最小カット問題と命題論理の関係を独自に調べた結果をまとめたもの。今回の記事はこの記事を元に図や考察を足して書き直したものである。

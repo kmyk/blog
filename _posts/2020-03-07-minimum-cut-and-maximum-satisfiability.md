@@ -58,7 +58,7 @@ $$
 
 集合 $T$ で表現される制約を反映するには、具体的にどのようにグラフを作ればよいだろうか？
 論理式 $\varphi = (\bigdoublevee_i p_i \to \bigdoublewedge_j q_j) \in T$ ごとに処理を行う。
-まず、ふたつの頂点 $\bigdoublevee_i p_i$ と $\bigdoublewedge_j q_j$ を作り、それぞれ関連する命題変数との間に重み $\infty$ の辺を張る。
+まず、ふたつの頂点 $\bigdoublevee_i p_i$ ($= p_1 \vee p_2 \vee \dots \vee p_n$) と $\bigdoublewedge_j q_j$ ($= q_1 \wedge q_2 \wedge \dots \wedge q_m$) を作り、それぞれ関連する命題変数との間に重み $\infty$ の辺を張る。
 すでに同じ論理式に対応する頂点があるならば、それは再利用するものとする。
 そしてこのふたつの間に、以下の図 ($n = m = 4$ のとき) のように重み $c(\varphi)$ の辺を張る。
 

@@ -32,7 +32,7 @@ $$
 
 この記事では、最小カットを用いて次の形の重み付き充足最大化問題が解けることを説明する:
 
-*特定の形の論理式からなるある集合 $$T \subseteq \left\lbrace \bigdoublevee_i p_i \to \bigdoublewedge_j q_j ~\middle\vert~ (p_1, p_2, \dots, p_n), (q_1, q_2, \dots, q_m) \text{は論理式の (非空とは限らない) 列} \right\rbrace$$ とそれに対する正の重み $c : T \to \mathbb{R} _ {\ge 0}$ が与えられる。
+*特定の形の論理式からなるある集合 $$T \subseteq \left\lbrace \bigdoublevee_i p_i \to \bigdoublewedge_j q_j ~\middle\vert~ (p_1, p_2, \dots, p_n), (q_1, q_2, \dots, q_m) \text{は命題変数と $\top$ と $\bot$ からなる列} \right\rbrace$$ とそれに対する正の重み $c : T \to \mathbb{R} _ {\ge 0}$ が与えられる。
 このとき、理論として無矛盾な部分集合 $S \subseteq T$ であって $\sum _ {\varphi \in S} c(\varphi)$ が最大となるような $S$ をひとつ求めよ。また、そのような $S$ を妥当とする真理値割り当てをひとつ求めよ。*
 
 つまり、特定の形の命題論理式 $\varphi$ に対しての「$\varphi$ が真でなければ $c(\varphi) \ge 0$ のペナルティを受ける」の形の制約がたくさん与えられたとき、ペナルティ最小となるような真理値割り当てを求めることができる。これは「燃やす埋める問題」や Project Selection Problem と呼ばれるものと等価であるが、より理解しやすい形で整理されている点にうれしさがある。
@@ -59,17 +59,17 @@ $$
 集合 $T$ で表現される制約を反映するには、具体的にどのようにグラフを作ればよいだろうか？
 論理式 $\varphi = (\bigdoublevee_i p_i \to \bigdoublewedge_j q_j) \in T$ ごとに処理を行う。
 まず、ふたつの頂点 $\bigdoublevee_i p_i$ ($= p_1 \vee p_2 \vee \dots \vee p_n$) と $\bigdoublewedge_j q_j$ ($= q_1 \wedge q_2 \wedge \dots \wedge q_m$) を作り、それぞれ関連する命題変数との間に重み $\infty$ の辺を張る。
-すでに同じ論理式に対応する頂点があるならば、それは再利用するものとする。
+すでに同じ論理式に対応する頂点があるならば、新しく作らずにそれを再利用してもよい。
 そしてこのふたつの間に、以下の図 ($n = m = 4$ のとき) のように重み $c(\varphi)$ の辺を張る。
 
 ![論理式 $\bigdoublevee_i p_i \to \bigdoublewedge_j q_j$ についてのグラフ](/blog/2020/03/07/minimum-cut-and-maximum-satisfiability/sum-implies-product.svg)
 
-ただし、列 $(p_1, p_2, \dots, p_n)$ や $(q_1, q_2, \dots, q_m)$ が空のときは論理積の単位元 $\top$ と論理和の単位元 $\bot$ が用いられることに注意せよ。
-これはネットワークの始点 $\top$ や終点 $\bot$ と同一の頂点であるとする。
+ただし、列 $(p_1, p_2, \dots, p_n)$ が恒等式 $\top$ を含むときは $\bigdoublevee_i p_i \leftrightarrow \top$ であるが、そのような $\bigdoublevee_i p_i$ については新しい頂点を作らずに始点 $\top$ を必ず再利用するものとする。
+同様に、列 $(q_1, q_2, \dots, q_m)$ が矛盾 $\bot$ を含むときは $\bigdoublewedge_j q_j$ についての新しい頂点を作らず終点 $\bot$ を必ず再利用するものとする。
 図で書くと以下のようになる。
 
-![論理式 $\lnot \bigdoublevee_i p_i$ についてのグラフ](/blog/2020/03/07/minimum-cut-and-maximum-satisfiability/not-sum.svg)
 ![論理式 $\bigdoublewedge_j q_j$ についてのグラフ](/blog/2020/03/07/minimum-cut-and-maximum-satisfiability/product.svg)
+![論理式 $\lnot \bigdoublevee_i p_i$ についてのグラフ](/blog/2020/03/07/minimum-cut-and-maximum-satisfiability/not-sum.svg)
 
 このようにして構成されたグラフは所望の性質を満たす。
 
@@ -220,3 +220,7 @@ $p_i \to q_j$ は「$a_i$ を燃やしたならば $a_j$ を埋めてはなら�
 -   [Project Selection (燃やす埋める) 周りの話についてもう少し考えた - とこはるのまとめ](http://tokoharuland.hateblo.jp/entry/2017/12/25/000003)
 -   [最小カットとProject Selection Problemのまとめ - うさぎ小屋](https://kimiyuki.net/blog/2017/12/05/minimum-cut-and-project-selection-problem/)
     -   私が過去に最小カット問題と命題論理の関係を独自に調べた結果をまとめたもの。今回の記事はこの記事を元に図や考察を足して書き直したものである。
+
+---
+
+-   2020/03/07: [kotatsugame](https://twitter.com/kotatsugame_t) に記事中のミスを多数指摘してもらい、修正した。

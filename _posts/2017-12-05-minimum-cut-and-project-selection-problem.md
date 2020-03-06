@@ -7,6 +7,8 @@ tags: [ "competitive", "min-cut", "max-flow", "project-selection-problem" ]
 
 # 最小カットとProject Selection Problemのまとめ
 
+2020/03/07: この記事に図などを足して書き直しましたもの [最小カット問題と充足最大化問題 - うさぎ小屋](https://kimiyuki.net/blog/2020/03/06/minimum-cut-and-maximum-satisfiability/) を公開しました。こちらを読んでください。
+
 ## 前書き
 
 先日「Project Selection Problem」が流行った。

@@ -43,10 +43,10 @@ kimiyuki は計算機ができて数学がすこしわかる大学生です。�
 ## My Products
 
 -   開発中:
-    -   便利なツール
     -   すごいソルバ
+    -   [kmyk/online-judge-template-generator](https://github.com/kmyk/online-judge-template-generator): 競プロの問題を解くときのテンプレートを生成するツール。特に、解法コードの入出力パートや、デバッグ用のランダムケース生成スクリプトの雛形などを生成する。
 -   メンテ中:
-    -   [online-judge-tools](https://github.com/kmyk/online-judge-tools): 競プロの問題を解くときの諸々を自動化するツール
+    -   [online-judge-tools](https://github.com/kmyk/online-judge-tools): 競プロの問題を解くときの単純作業を自動化するツール。主に、サンプルケースでのテストを自動化してくれる
     -   [online-judge-verify-helper](https://github.com/kmyk/online-judge-verify-helper): 競プロライブラリの verify 自動化とドキュメント生成をするツール
     -   [@atgolfer1](https://twitter.com/atgolfer1): AtCoder でのコードゴルフの最新情報を通知する bot 
     -   [atcoder-dos2unix-userscript](https://github.com/kmyk/atcoder-dos2unix-userscript): AtCoder でコードゴルフをするときに改行文字を `\r\n` でなく `\n` にして 1 byte を削るための user script

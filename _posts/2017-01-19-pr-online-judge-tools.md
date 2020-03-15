@@ -2,6 +2,8 @@
 category: blog
 layout: post
 date: "2017-01-19T06:48:06+09:00"
+redirect_from:
+    - "/blog/2017/01/19/pr-online-judge-tools/"
 edited: "2018-09-26T05:12:47+09:00"
 tags: [ "competitive" ]
 ---

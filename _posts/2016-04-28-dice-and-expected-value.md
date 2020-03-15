@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2016/04/27/dice-and-expected-value/"
 date: 2016-04-28T02:04:27+09:00
 tags: [ "writeup", "math", "expected-value" ]
 ---

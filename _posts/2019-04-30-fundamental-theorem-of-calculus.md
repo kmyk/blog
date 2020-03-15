@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2019/04/29/fundamental-theorem-of-calculus/"
 date: "2019-04-30T00:00:00+09:00"
 tags: [ "competitive", "inclusion-exclusion-principle" ]
 ---

@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2019/02/21/dual-segment-tree/"
 date: 2019-02-22T00:00:00+09:00
 tags: [ "competitive", "segment-tree", "dual-segment-tree" ]
 ---

@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2017/05/26/dp-and-competitive-programming/"
 date: "2017-05-27T03:23:58+09:00"
 tags: [ "competitive", "dp" ]
 ---

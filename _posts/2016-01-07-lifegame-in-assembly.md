@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2016/01/06/lifegame-in-assembly/"
 date: 2016-01-07T03:07:09+09:00
 tags: [ "asm", "lifegame" ]
 ---

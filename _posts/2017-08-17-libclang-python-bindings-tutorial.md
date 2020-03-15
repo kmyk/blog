@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2017/08/16/libclang-python-bindings-tutorial/"
 date: "2017-08-17T02:37:28+09:00"
 tags: [ "clang", "python" ]
 ---

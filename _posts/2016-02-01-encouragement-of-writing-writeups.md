@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2016/01/31/encouragement-of-writing-writeups/"
 date: 2016-02-01T05:45:05+09:00
 tags: [ "competitive" ]
 ---

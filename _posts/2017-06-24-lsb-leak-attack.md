@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2017/06/23/lsb-leak-attack/"
 date: "2017-06-24T03:50:46+09:00"
 tags: [ "crypto", "binary-search", "rsa", "lsb-leak-attack" ]
 ---

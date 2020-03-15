@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2016/06/20/how-to-solve-problems-in-competitive-programming/"
 date: 2016-06-21T01:47:23+09:00
 tags: [ "competitive", "tips" ]
 ---

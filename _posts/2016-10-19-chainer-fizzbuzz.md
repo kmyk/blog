@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2016/10/18/chainer-fizzbuzz/"
 date: "2016-10-19T00:57:49+09:00"
 tags: [ "fizzbuzz", "chainer", "neural-network", "machine-learning" ]
 ---

@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2016/03/31/bash-on-brainfuck-on-anarchy-golf/"
 date: 2016-04-01T07:37:20+09:00
 tags: [ "pwn", "golf", "brainfuck", "esolang" ]
 ---

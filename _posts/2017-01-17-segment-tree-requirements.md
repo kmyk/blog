@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2017/01/16/segment-tree-requirements/"
 date: "2017-01-17T04:06:26+09:00"
 tags: [ "competitive", "segment-tree", "lazy-propagation" ]
 ---

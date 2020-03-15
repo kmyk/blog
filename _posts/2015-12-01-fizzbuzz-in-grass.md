@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2015/11/30/fizzbuzz-in-grass/"
 date: 2015-12-01T00:00:01+09:00
 tags: [ "grass", "esolang", "fizzbuzz", "haskell", "dsl", "monad", "lambda-calculus" ]
 ---

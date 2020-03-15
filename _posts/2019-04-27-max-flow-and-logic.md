@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2019/04/26/max-flow-and-logic/"
 date: "2019-04-27T00:00:00+09:00"
 tags: [ "competitive", "max-flow" ]
 ---

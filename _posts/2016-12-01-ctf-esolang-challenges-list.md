@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2016/11/30/ctf-esolang-challenges-list/"
 date: "2016-12-01T00:40:32+09:00"
 tags: [ "ctf", "esolang" ]
 ---

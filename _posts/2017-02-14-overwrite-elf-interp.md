@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2017/02/13/overwrite-elf-interp/"
 date: "2017-02-14T01:29:16+09:00"
 tags: [ "elf", "linker" ]
 ---

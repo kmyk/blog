@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2017/01/18/pr-online-judge-tools/"
 date: "2017-01-19T06:48:06+09:00"
 redirect_from:
     - "/blog/2017/01/19/pr-online-judge-tools/"

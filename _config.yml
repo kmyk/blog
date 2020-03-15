@@ -23,6 +23,7 @@ exclude:
 markdown: kramdown
 permalink: /:categories/:year/:month/:day/:title/
 future: true
+timezone: Asia/Tokyo
 
 plugins:
   # default on GitHub pages

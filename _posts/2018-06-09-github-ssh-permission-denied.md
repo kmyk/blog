@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2018/06/08/github-ssh-permission-denied/"
 date: "2018-06-09T00:04:05+09:00"
 tags: [ "github", "ssh" ]
 ---

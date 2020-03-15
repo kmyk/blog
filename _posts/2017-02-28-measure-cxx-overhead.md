@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2017/02/27/measure-cxx-overhead/"
 date: "2017-02-28T01:30:24+09:00"
 tags: [ "competitive", "optimization" ]
 ---

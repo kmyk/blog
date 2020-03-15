@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2016/07/03/s-octopress-hugo/"
 date: "2016-07-04T03:17:08+09:00"
 tags: [ "blog", "octopress", "hugo" ]
 ---

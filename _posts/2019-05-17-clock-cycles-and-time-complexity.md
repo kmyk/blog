@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2019/05/16/clock-cycles-and-time-complexity/"
 date: "2019-05-17T00:00:00+09:00"
 tags: [ "competitive", "atcoder" ]
 ---

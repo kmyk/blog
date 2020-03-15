@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2016/09/19/about-emmental-language/"
 date: "2016-09-20T08:03:26+09:00"
 tags: [ "esolang", "emmental" ]
 ---

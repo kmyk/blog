@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2019/03/07/terms-in-marathon-matches/"
 date: "2019-03-08T06:00:00+09:00"
 edited: "2019-03-08T20:00:00+09:00"
 tags: [ "competitive", "marathon-match" ]

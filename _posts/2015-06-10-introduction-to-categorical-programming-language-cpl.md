@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2015/06/09/introduction-to-categorical-programming-language-cpl/"
 date: 2015-06-10T02:41:57+09:00
 tags: [ "cpl", "esolang", "category" ]
 ---

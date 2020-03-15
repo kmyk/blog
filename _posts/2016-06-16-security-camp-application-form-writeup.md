@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2016/06/15/security-camp-application-form-writeup/"
 date: 2016-06-16T00:55:35+09:00
 tags: [ "seccamp", "security-camp" ]
 ---

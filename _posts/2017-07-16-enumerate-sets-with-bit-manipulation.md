@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2017/07/15/enumerate-sets-with-bit-manipulation/"
 date: "2017-07-16T00:26:26+09:00"
 tags: [ "optimization", "bits" ]
 ---

@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2015/01/16/state-and-referential-transparency/"
 date: 2015-01-17T02:16:09+09:00
 tags: [ "haskell", "clean" ]
 ---

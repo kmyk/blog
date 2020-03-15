@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2017/02/06/values-above-stack-is-not-preserved/"
 date: "2017-02-07T00:06:07+09:00"
 tags: [ "stack", "binary", "signal" ]
 ---

@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2019/03/06/local-search-and-greedy/"
 date: "2019-03-07T00:00:00+09:00"
 edited: "2019-03-08T03:00:00+09:00"
 tags: [ "competitive", "marathon-match", "local-search", "greedy", "hill-climing", "simulated-annealing", "beam-search" ]

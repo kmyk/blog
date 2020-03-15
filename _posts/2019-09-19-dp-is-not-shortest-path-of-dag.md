@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2019/09/18/dp-is-not-shortest-path-of-dag/"
 date: 2019-09-19T00:00:00+09:00
 tags: [ "competitive", "dp", "dag" ]
 ---

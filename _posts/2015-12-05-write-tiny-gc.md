@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2015/12/04/write-tiny-gc/"
 date: 2015-12-05T02:36:10+09:00
 tags: [ "lazyk", "gc", "interpreter" ]
 ---

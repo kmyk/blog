@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2018/01/22/colopl2018-final-sankaki/"
 date: "2018-01-23T00:35:36+09:00"
 tags: [ "competitive", "colopl", "atcoder", "sankaki" ]
 ---

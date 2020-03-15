@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2017/05/17/std-thread-on-online-judges/"
 date: "2017-05-18T03:02:39+09:00"
 tags: [ "competitive", "optimization", "pthread", "elf-format" ]
 ---

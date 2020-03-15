@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2016/01/06/ctf-one-month/"
 date: 2016-01-07T02:55:37+09:00
 tags: [ "ctf" ]
 ---

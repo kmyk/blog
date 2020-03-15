@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2017/03/31/cache-line-confliction/"
 date: "2017-04-01T04:10:17+09:00"
 tags: [ "optimization", "cache" ]
 ---

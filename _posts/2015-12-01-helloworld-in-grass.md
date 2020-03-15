@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2015/11/30/helloworld-in-grass/"
 date: 2015-12-01T00:00:00+09:00
 tags: [ "esolang", "grass", "helloworld", "haskell", "dsl", "lambda-calculus", "golf" ]
 ---

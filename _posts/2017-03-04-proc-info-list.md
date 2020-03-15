@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2017/03/03/proc-info-list/"
 date: "2017-03-04T01:06:27+09:00"
 tags: [ "competitive", "simd" ]
 ---

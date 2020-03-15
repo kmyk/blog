@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2019/05/28/not-segment-tree/"
 date: 2019-05-29T00:00:00+09:00
 tags: [ "competitive", "segment-tree", "binary-indexed-tree" ]
 ---

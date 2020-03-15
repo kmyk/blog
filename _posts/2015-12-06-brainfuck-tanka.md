@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2015/12/05/brainfuck-tanka/"
 date: 2015-12-06T00:00:00+09:00
 tags: [ "brainfuck", "poem", "tanka", "esolang" ]
 ---

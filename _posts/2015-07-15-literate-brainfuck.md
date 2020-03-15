@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2015/07/14/literate-brainfuck/"
 date: 2015-07-15T01:19:11+09:00
 tags: [ "brainfuck", "esolang" ]
 ---

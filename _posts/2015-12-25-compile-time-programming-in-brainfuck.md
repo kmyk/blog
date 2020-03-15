@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2015/12/24/compile-time-programming-in-brainfuck/"
 date: 2015-12-25T00:19:25+09:00
 tags: [ "brainfuck", "compile-time" ]
 ---

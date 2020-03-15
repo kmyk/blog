@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2020/02/13/licenses-for-kyopro-libraries/"
 date: 2020-02-14T00:00:00+09:00
 edited: 2020-02-16T04:00:00+09:00
 tags: [ "competitive" ]

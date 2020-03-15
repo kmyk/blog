@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2015/04/08/practical-brainfuck-using-fizzbuzz/"
 date: 2015-04-09T01:24:23+09:00
 tags: [ "brainfuck", "tutorial", "fizzbuzz", "c", "esolang" ]
 ---

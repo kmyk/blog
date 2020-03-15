@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2016/12/10/codevs-for-student-2016-participation/"
 date: "2016-12-11T00:29:45+09:00"
 tags: [ "competitive", "marathon-match", "codevs" ]
 ---

@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2017/03/20/rco-procon-2017-final-participated/"
 date: "2017-03-21T03:05:31+09:00"
 tags: [ "competitive" ]
 ---

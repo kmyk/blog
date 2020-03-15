@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2017/01/31/automate-binary-analysis/"
 date: "2017-02-01T01:23:23+09:00"
 tags: [ "ctf", "rev", "automation" ]
 ---

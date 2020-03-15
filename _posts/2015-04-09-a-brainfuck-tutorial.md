@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2015/04/08/a-brainfuck-tutorial/"
 date: 2015-04-09T01:22:09+09:00
 tags: [ "brainfuck", "tutorial", "c" ]
 ---

@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2015/09/17/a-note-about-aspell/"
 date: 2015-09-18T01:52:10+09:00
 tags: [ "aspell", "command" ]
 ---

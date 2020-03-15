@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2019/05/23/matrices-for-parsing/"
 date: 2019-05-24T00:00:00+09:00
 tags: [ "competitive", "matrix", "parsing" ]
 ---

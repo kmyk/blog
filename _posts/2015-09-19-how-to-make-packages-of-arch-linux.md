@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2015/09/18/how-to-make-packages-of-arch-linux/"
 date: 2015-09-19T01:23:14+09:00
 tags: [ "arch" ]
 ---

@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2015/08/20/lifegame-in-befunge/"
 date: 2015-08-21T02:25:02+09:00
 tags: [ "befunge", "esolang", "lifegame" ]
 ---

@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2015/08/12/quine-in-prolog/"
 date: 2015-08-13T05:29:45+09:00
 tags: [ "prolog", "quine" ]
 ---

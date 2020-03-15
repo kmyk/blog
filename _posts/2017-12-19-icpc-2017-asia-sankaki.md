@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2017/12/18/icpc-2017-asia-sankaki/"
 date: "2017-12-19T00:08:33+09:00"
 tags: [ "competitive", "icpc", "icpc-asia" ]
 ---

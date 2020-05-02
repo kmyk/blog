@@ -1,3 +1,3 @@
 ---
-redirect_to: "https://kmyk.github.io/online-judge-verify-helper/installer.html"
+redirect_to: "https://online-judge-tools.github.io/verification-helper/installer.html"
 ---

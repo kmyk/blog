@@ -5,17 +5,19 @@ title: "🐇"
 
 ## About Me
 
-kimiyuki は計算機ができて数学がすこしわかる大学生です。哲学を勉強しています。
+kimiyuki です。最近は一日中 OSS 開発をしています。
 
+-   学問: それなり
+    -   数学と哲学が好きです
 -   開発: できる
     -   [GitHub](https://github.com/kmyk/)
--   競プロ: まあまあつよい <small>(国内 100 位ぐらい)</small>
+-   競プロ: まあまあつよい
     -   [AtCoder](https://atcoder.jp/user/kimiyuki) <small>(<span style="color: #ff8000;">◉</span> 橙)</small>
     -   [Codeforces](https://codeforces.com/profile/kimiyuki) <small>(赤目前だったのに <span style="color: #aa00aa;">◉</span> 紫まで落ちた)</small>
--   競プロ (marathon): けっこうつよい <small>(国内 30 位ぐらい？) (引退)</small>
+-   競プロ (marathon): けっこうつよい
     -   [TopCoder](https://www.topcoder.com/members/kimiyuki/) <small>(<span style="color: #ef3a3a;">◉</span> MM 赤)</small>
     -   [CodinGame](https://www.codingame.com/profile/a1b3c572aa1ec002731ab7f4c7a5f08e3068231)
--   CTF: けっこうつよい <small>(国内 20 位ぐらい？) (引退)</small>
+-   CTF: けっこうつよい
     -   [CTFtime](https://ctftime.org/user/12503)
 -   お料理
     -   [Instagram](https://www.instagram.com/usg_cooking/)
@@ -44,10 +46,11 @@ kimiyuki は計算機ができて数学がすこしわかる大学生です。�
 
 -   開発中:
     -   すごいソルバ
-    -   [kmyk/online-judge-template-generator](https://github.com/kmyk/online-judge-template-generator): 競プロの問題を解くときのテンプレートを生成するツール。特に、解法コードの入出力パートや、デバッグ用のランダムケース生成スクリプトの雛形などを生成する。
 -   メンテ中:
-    -   [online-judge-tools](https://github.com/kmyk/online-judge-tools): 競プロの問題を解くときの単純作業を自動化するツール。主に、サンプルケースでのテストを自動化してくれる
-    -   [online-judge-verify-helper](https://github.com/kmyk/online-judge-verify-helper): 競プロライブラリの verify 自動化とドキュメント生成をするツール
+    -   [online-judge-tools/oj](https://github.com/online-judge-tools/oj): 競プロの問題を解くときの単純作業を自動化するツール。主にサンプルケースでのテストを自動化してくれる
+    -   [online-judge-tools/template-generator](https://github.com/online-judge-tools/template-generator): 競プロの問題を解くときのテンプレートを生成するツール。解法コードの入出力パートや、デバッグ用のランダムケース生成スクリプトの雛形などを生成する。
+    -   [online-judge-tools/verification-helper](https://github.com/online-judge-tools/verification-helper): 競プロライブラリの verify 自動化とドキュメント生成をするツール
+    -   [online-judge-tools/api-client](https://github.com/online-judge-tools/api-client): 競プロのジャッジサーバとの通信をやってくれるライブラリ
     -   [@atgolfer1](https://twitter.com/atgolfer1): AtCoder でのコードゴルフの最新情報を通知する bot 
     -   [atcoder-dos2unix-userscript](https://github.com/kmyk/atcoder-dos2unix-userscript): AtCoder でコードゴルフをするときに改行文字を `\r\n` でなく `\n` にして 1 byte を削るための user script
     -   [competitive-programming-library](https://kmyk.github.io/competitive-programming-library/): 自分用の競プロライブラリ

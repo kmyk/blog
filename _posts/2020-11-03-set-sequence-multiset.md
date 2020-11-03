@@ -37,6 +37,11 @@ C++ の `std::set<T>` や Python の `set` は集合を表現する型です。
 たとえばみっつの要素 $a, b, c$ からなる集合は $\lbrace a, b, c \rbrace$ と書かれます。
 無限個の要素を含む場合も同様です。
 たとえばすべての自然数からなる集合は $\lbrace 0, 1, 2, \dots \rbrace$ と書かれます。
+空集合 (要素をひとつも含まない集合) は $\lbrace \rbrace$ や $\emptyset$ や $\varnothing$ と書かれます。なおこの空集合の記号 $\emptyset$, $\varnothing$ はファイ $\phi, \varphi$ とは異なる記号です。
+
+外延表記において、書かれる要素がすべて異なっている必要はありません。
+たとえば $X = \lbrace x, y \rbrace$ という集合の要素数は、$x \ne y$ のときは $2$ ですが $x = y$ のときは $1$ です。
+通常は $\lbrace 0, 0 \rbrace$ のように明らかに同じ要素が書かれることはありません ($\lbrace 0 \rbrace$ と書けば十分なので) が、記法としては間違いではありません。
 
 内包表記は、含まれる要素を表す変数 $x$ (あるいは $y$ や $z$ など) を明記し、それが満たすべき条件 $\varphi(x)$ を縦棒 $\mid$ (あるいはコロン $:$) の横に書きます。
 たとえば自然数であって $99$ より大きいもの全体からなる集合は $\lbrace x \in \mathbb{N} \mid x \gt 99 \rbrace$ と書かれます。
@@ -65,7 +70,8 @@ C++ の `std::vector<T>` や Python の `list` は列を表現する型です。
 
 外延表記は、含まれる要素をカンマ $,$ で区切って並べて書きます。
 たとえば、みっつの要素 $a, b, c$ をこの順番で並べてできる列は $(a, b, c)$ と書かれます。
-無限列は $(a_0, a_1, a_2, \dots)$ のように書かれます。
+無限列 (長さが無限の列) は $(a_0, a_1, a_2, \dots)$ のように書かれます。
+空列 (長さが $0$ の列) は $()$ と書かれます。イプシロン $\epsilon$ で書かれることもあります。
 列そのものを対象とする (たとえば、ある条件を満たす列の全体からなる集合を考えるなど) ことがない場合などにおいては、列は丸括弧を伴なわずに書かれることもあります。
 
 内包表記にはいろいろな書き方があります。
@@ -94,8 +100,8 @@ C++ の `std::multiset<T>` は多重集合を表現する型です。
 
 -   (多重集合であることを明記した上で) 波括弧を使う (例: $\lbrace a, a, b, c \rbrace$)
 -   角括弧を使う (例: $\lbrack a, a, b, c \rbrack$)
--   二重波括弧を使う (例: $\lbrace\lbrace a, a, b, c \rbrace\rbrace$)
--   中抜き波括弧を使う (例: $\lbrace\vert a, a, b, c \vert\rbrace$)
+-   二重波括弧を使う (例: $\lbrace\mskip-6mu\lbrace a, a, b, c \rbrace\mskip-6mu\rbrace$) <!-- \! is defined as \mskip-\thinmuskip and \thinmuskip is 3mu. Use this to avoid the issues around escaping. https://tex.stackexchange.com/questions/318142/typeseeting-a-multiset-with-double-curly-braces -->
+-   中抜き波括弧を使う (例: $\lbrace\mskip-3mu\vert a, a, b, c \vert\mskip-3mu\rbrace$)
 -   重複度をコロンを使って明記する (例: $\lbrace a: 2, b: 1, c: 1 \rbrace$)
 -   重複度を上付き数字で明記する (例: $\lbrace a^2, b^1, c^1 \rbrace$)
 -   重複度関数のグラフとして書く (例: $\lbrace (a, 2), (b, 1), (c, 1) \rbrace$)
@@ -115,7 +121,7 @@ C++ の `std::multiset<T>` は多重集合を表現する型です。
 
 ## 演習問題
 
-Q. 以下の等式について、それぞれ真であるか偽であるかを判定せよ。ただし (7.), (8.) の $\lbrack, \rbrack$ は多重集合を意味する。
+Q. 以下の等式について、それぞれ真であるか偽であるかを判定せよ。ただし (7.), (8.) の $\lbrace\mskip-6mu\lbrace, \rbrace\mskip-6mu\rbrace$ は多重集合を意味する。
 
 1.  $\lbrace 1, 2, 3 \rbrace = \lbrace 3, 2, 1 \rbrace$
 1.  $\lbrace 1, 2, 3 \rbrace = \lbrace 1, 1, 2, 3 \rbrace$
@@ -123,8 +129,8 @@ Q. 以下の等式について、それぞれ真であるか偽であるかを�
 1.  $(1, 2, 3) = (3, 2, 1)$
 1.  $(1, 2, 3) = (1, 1, 2, 3)$
 1.  $(1, 3, 5, 7, 9, 11, \dots, 99) = (2 i + 1 \mid i \in \mathbb{N})$
-1.  $\lbrack 1, 2, 3 \rbrack = \lbrack 3, 2, 1 \rbrack$
-1.  $\lbrack 1, 2, 3 \rbrack = \lbrack 1, 1, 2, 3 \rbrack$
+1.  $\lbrace\mskip-6mu\lbrace 1, 2, 3 \rbrace\mskip-6mu\rbrace = \lbrace\mskip-6mu\lbrace 3, 2, 1 \rbrace\mskip-6mu\rbrace$
+1.  $\lbrace\mskip-6mu\lbrace 1, 2, 3 \rbrace\mskip-6mu\rbrace = \lbrace\mskip-6mu\lbrace 1, 1, 2, 3 \rbrace\mskip-6mu\rbrace$
 
 A.  <span style="text: black; background-color: black;">それぞれ Yes, Yes, Yes, No, No, No, Yes, No</span> (反転してください)
 

@@ -54,6 +54,7 @@ kimiyuki です。最近は一日中 OSS 開発をしています。
     -   [@atgolfer1](https://twitter.com/atgolfer1): AtCoder でのコードゴルフの最新情報を通知する bot 
     -   [atcoder-dos2unix-userscript](https://github.com/kmyk/atcoder-dos2unix-userscript): AtCoder でコードゴルフをするときに改行文字を `\r\n` でなく `\n` にして 1 byte を削るための user script
     -   [competitive-programming-library](https://kmyk.github.io/competitive-programming-library/): 自分用の競プロライブラリ
+    -   [google-home-say](https://github.com/kmyk/google-home-say): Google Home に好きな言葉を喋らせるためのスクリプト
 -   コントリビュータとして参加:
     -   [Library Checker](https://judge.yosupo.jp/): 競プロライブラリの verify のためのオンラインジャッジ (問題追加など)
     -   [AtCoder Problems](https://kenkoooo.com/atcoder/?#/table/kimiyuki/kenkoooo): AtCoder の問題の AC 状況を表示してくれるサイト (主に高速化に貢献)

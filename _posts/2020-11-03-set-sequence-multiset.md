@@ -72,7 +72,9 @@ C++ の `std::vector<T>` や Python の `list` は列を表現する型です。
 たとえば、みっつの要素 $a, b, c$ をこの順番で並べてできる列は $(a, b, c)$ と書かれます。
 無限列 (長さが無限の列) は $(a_0, a_1, a_2, \dots)$ のように書かれます。
 空列 (長さが $0$ の列) は $()$ と書かれます。イプシロン $\epsilon$ で書かれることもあります。
-列そのものを対象とする (たとえば、ある条件を満たす列の全体からなる集合を考えるなど) ことがない場合などにおいては、列は丸括弧を伴なわずに書かれることもあります。
+
+列そのものを対象として考える (たとえば、ある条件を満たす列の全体からなる集合を考えるなど) ことがない場合などにおいては、列は丸括弧を伴なわずに書かれることもあります。
+しかし、文脈なしに単に「与えられた列 $A_1, A_2, A_3, \dots, A_K$ に対し……」などと書かれているときは、「長さ $K$ の列 $A = (A_1, A_2, A_3, \dots, A_K)$ が与えられる」のか「列 $A_1$ と列 $A_2$ と列 $A_3$ と……列 $A_K$ という $K$ 個の列が与えられる」のかが曖昧であることに注意する必要があります。
 
 内包表記にはいろいろな書き方があります。
 最も丁寧な場合は、集合と同様に $(a_i \mid i \in \mathbb{N})$ のように書かれます。
@@ -132,7 +134,7 @@ Q. 以下の等式について、それぞれ真であるか偽であるかを�
 1.  $\lbrace\mskip-6mu\lbrace 1, 2, 3 \rbrace\mskip-6mu\rbrace = \lbrace\mskip-6mu\lbrace 3, 2, 1 \rbrace\mskip-6mu\rbrace$
 1.  $\lbrace\mskip-6mu\lbrace 1, 2, 3 \rbrace\mskip-6mu\rbrace = \lbrace\mskip-6mu\lbrace 1, 1, 2, 3 \rbrace\mskip-6mu\rbrace$
 
-A.  <span style="text: black; background-color: black;">それぞれ Yes, Yes, Yes, No, No, No, Yes, No</span> (反転してください)
+A.  <span style="text: black; background-color: black;">それぞれ、真、真、真、偽、偽、偽、真、偽</span> (反転してください)
 
 ## リンク
 

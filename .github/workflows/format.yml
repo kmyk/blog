@@ -1,0 +1,14 @@
+name: format
+
+on: [push, pull_request]
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Check the power notation
+        run: |
+          [ -z "$(find -name \*.md -exec grep --with-filename '\$.*[[:alnum:]]^[[:digit:]][[:digit:]].*\$' {} \; | tee /dev/stderr)" ]

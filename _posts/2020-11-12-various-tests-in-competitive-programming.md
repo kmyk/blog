@@ -48,7 +48,7 @@ full-feedback 形式でないコンテストに特有です。
 競プロにおいては、たいてい、バグの存在性のみが知られている[^wa]プログラムに対し具体的な撃墜ケースを構成するために用いられます[^notrandom]。テストと呼ぶよりデバッグ手法と呼ぶ方が適切かもしれません。
 [ストレステスト](https://en.wikipedia.org/wiki/Stress_testing)と呼ばれる場合も多くあります。
 実際に行う際には、まったくのランダムではコーナーケースの検出が難しいことに注意しましょう。
-たとえば、入力の制約が $0 \le n \le 10^18$ でかつ $n = 0$ や $n = 2^k$ がコーナーケースだった場合を考えてみましょう。
+たとえば、入力の制約が $0 \le n \le 10^{18}$ でかつ $n = 0$ や $n = 2^k$ がコーナーケースだった場合を考えてみましょう。
 このランダムテストの実行を補助するツールもいくつか開発されています (例: [oj コマンド](https://github.com/online-judge-tools/oj), [そのドキュメント](https://github.com/online-judge-tools/oj/blob/master/docs/getting-started.ja.md#%E3%83%A9%E3%83%B3%E3%83%80%E3%83%A0%E3%83%86%E3%82%B9%E3%83%88))。
 
 セキュリティの文脈では、[ファジング](https://en.wikipedia.org/wiki/Fuzzing) (fuzzing, fuzz testing) という名前で (特に競プロにおける) ランダムテストと類似の行為が行われています。

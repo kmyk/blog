@@ -55,11 +55,11 @@ int64_t solve(int n, const vector<int64_t> &a, int64_t k) {
 
 ### 問題
 
-長さ $H$ の整数のみからなる縦ベクトル $a = \begin{pmatrix} a_0 \\ a_1 \\ \vdots \\ a _ {H-1} \end{pmatrix}$ と、長さ $W$ の整数のみからなる横ベクトル $b = \begin{pmatrix} b_0 & b_1 & \dots & b _ {W-1} \end{pmatrix}$ と、整数 $k$ が与えられる。
+長さ $H$ の整数のみからなる縦ベクトル $a = \begin{pmatrix} a_0 \\\\ a_1 \\\\ \vdots \\\\ a _ {H-1} \end{pmatrix}$ と、長さ $W$ の整数のみからなる横ベクトル $b = \begin{pmatrix} b_0 & b_1 & \dots & b _ {W-1} \end{pmatrix}$ と、整数 $k$ が与えられる。
 ベクトル $a, b$ の積として得られる大きさ $H \times W$ の行列を $C = ab$ とする。
 $C$ の成分に値が $k$ なものがいくつ含まれるかを求めてよ。
 
-たとえば $a = \begin{pmatrix} 2 \\ 3 \end{pmatrix}$ かつ $b = \begin{pmatrix} 1 & 2 & 3 & 4 \end{pmatrix}$ かつ $k = 6$ とすると、$C = \begin{pmatrix} 2 & 4 & 6 & 8 \\ 3 & 6 & 9 & 12 \end{pmatrix}$ なので $C$ の $(0, 2)$ 成分と $(1, 0)$ 成分のふたつの値が $k$ に等しく、答えは $2$ となる。
+たとえば $a = \begin{pmatrix} 2 \\\\ 3 \end{pmatrix}$ かつ $b = \begin{pmatrix} 1 & 2 & 3 & 4 \end{pmatrix}$ かつ $k = 6$ とすると、$C = \begin{pmatrix} 2 & 4 & 6 & 8 \\\\ 3 & 6 & 9 & 12 \end{pmatrix}$ なので $C$ の $(0, 2)$ 成分と $(1, 0)$ 成分のふたつの値が $k$ に等しく、答えは $2$ となる。
 
 ### 解法
 

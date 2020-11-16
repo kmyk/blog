@@ -59,7 +59,7 @@ int64_t solve(int n, const vector<int64_t> &a, int64_t k) {
 ベクトル $a, b$ の積として得られる大きさ $H \times W$ の行列を $C = ab$ とする。
 $C$ の成分に値が $k$ なものがいくつ含まれるかを求めてよ。
 
-たとえば $a = \begin{pmatrix} 2 \\\\ 3 \end{pmatrix}$ かつ $b = \begin{pmatrix} 1 & 2 & 3 & 4 \end{pmatrix}$ かつ $k = 6$ とすると、$C = \begin{pmatrix} 2 & 4 & 6 & 8 \\\\ 3 & 6 & 9 & 12 \end{pmatrix}$ なので $C$ の $(0, 2)$ 成分と $(1, 0)$ 成分のふたつの値が $k$ に等しく、答えは $2$ となる。
+たとえば $a = \begin{pmatrix} 2 \\\\ 3 \end{pmatrix}$ かつ $b = \begin{pmatrix} 1 & 2 & 3 & 4 \end{pmatrix}$ かつ $k = 6$ とすると、$C = \begin{pmatrix} 2 & 4 & 6 & 8 \\\\ 3 & 6 & 9 & 12 \end{pmatrix}$ なので $C$ の $(0, 2)$ 成分と $(1, 1)$ 成分のふたつの値が $k$ に等しく、答えは $2$ となる。
 
 ### 解法
 

@@ -2,6 +2,7 @@
 category: blog
 layout: post
 date: 2020-12-09T23:59:59+09:00
+edited: 2020-12-11T23:59:59+09:00
 tags: [ "competitive" ]
 ---
 
@@ -431,7 +432,7 @@ vector<int64_t> solve(int64_t N, const vector<int64_t> & A) {
 
 -   個別の問題のソルバとしては [wata](https://atcoder.jp/users/wata) による「Σ電卓」が知られている ([wata-orz/SigmaCalculator](https://github.com/wata-orz/SigmaCalculator), [Σ電卓 - てきとーな日記](https://wata-orz.hatenadiary.org/entry/20091223/1261582436)) (2009 年)。
 -   実装には至っておらず構想のみであるが、一般の問題の解法の自動生成についての試みが [kinaba](https://www.topcoder.com/members/cafelier/) によってなされている ([SRM 531 Div2 250 - cafelier@SRM - TopCoder部](https://topcoder-g-hatena-ne-jp.jag-icpc.org/cafelier/20120204/1328332594.html) など) (2012 年)。
--   AtCoder Beginner Contest のある A 問題の解法の完全自動生成が [mkotha](https://atcoder.jp/users/mkotha) によって行われたことがある (<https://twitter.com/atcoder/status/538665089931296768>, <https://atcoder.jp/contests/arc030/submissions/286413>) (2014 年)。
+-   AtCoder Regular Contest のある A 問題の解法の完全自動生成が [mkotha](https://atcoder.jp/users/mkotha) によって行われたことがある (<https://twitter.com/atcoder/status/538665089931296768>, <https://atcoder.jp/contests/arc030/submissions/286413>) (2014 年)。
 -   最適化などは含まれていないが、競技プログラミングでの利用を意図して作られた言語としては [laycurse](https://atcoder.jp/users/LayCurse) による cLay がある ([cLay概要（version 20201123-1） - ゲームにっき（仮）別館（仮）](http://rsujskf.s602.xrea.com/?cLay)) (2107 年から)。
 
 一般の競技プログラミングの問題を解くソルバを目指しているものとしては、ある程度の形になっているものは見つけられていない。

@@ -3,10 +3,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %} - {{ site.title }}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}description{% endif %}">
+  <title>{{ page.title | escape }} - {{ site.title }}</title>
   {% if page.noindex %}<meta name="robots" content="noindex,noarchive">{% endif %}
-  {% if site.author %}<meta name="author" content="{{ site.author }}">{% endif %}
+
+  <!-- SEO -->
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}description{% endif %}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}" />
+  <meta name="author" content="{{ site.author }}">
+  <meta property="og:title" content="{{ page.title | escape }}" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta property="og:url" content="https://kimiyuki.net/" />
+  <meta property="og:site_name" content="{{ site.title }}" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="twitter:title" content="{{ page.title | escape }}" />
+  <script type="application/ld+json">
+      { "@context": "https://schema.org"
+      , "@type": "WebSite"
+      , "name": "{{ site.title }}"
+      , "headline": "{{ page.title | escape }}"
+      , "author":{"@type":"Person","name":"{{ site.author }}"}
+      , "url": "{{ page.url | absolute_url }}"
+      }
+  </script>
 
   <meta property="og:url" content="{{ page.url }}">
   <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %} - {{ site.title }}">
@@ -28,6 +46,4 @@
     });
   </script>
   {% endif %}
-
-  {% seo %}
 </head>

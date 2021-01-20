@@ -36,13 +36,7 @@ plugins:
   # additional plugins
   - jekyll-redirect-from
   - jekyll-sitemap
-  - jekyll-seo-tag
 
 titles_from_headings:
   strip_title: true
   collections: true
-
-# jekyll-seo-tag
-twitter:
-  username: benbalter
-  card: summary

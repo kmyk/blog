@@ -1,6 +1,8 @@
 ---
 category: blog
 layout: post
+redirect_from:
+    - "/blog/2020/03/06/minimum-cut-and-maximum-satisfiability/"
 date: 2020-03-07T00:00:00+09:00
 tags: [ "competitive", "minimum-cat", "propositional-logic" ]
 ---

@@ -3,41 +3,69 @@ layout: default
 title: "🐇"
 ---
 
+[このページの日本語版](/index.ja.html)
+
 ## About Me
 
-kimiyuki です。最近は一日中 OSS 開発をしています。
+I'm kimiyuki. These days, I'm working on OSS development all day long.
 
--   学問: それなり
-    -   数学と哲学が好きです
--   開発: できる
+-   Study
+    -   I like mathematics and philosophy.
+-   Development
     -   [GitHub](https://github.com/kmyk/)
--   競プロ: まあまあつよい
-    -   [AtCoder](https://atcoder.jp/user/kimiyuki) <small>(<span style="color: #ff8000;">◉</span> 橙)</small>
-    -   [Codeforces](https://codeforces.com/profile/kimiyuki) <small>(<span style="color: #ff8c00;">◉</span> 黄)</small>
--   競プロ (marathon): けっこうつよい
-    -   [TopCoder](https://www.topcoder.com/members/kimiyuki/) <small>(<span style="color: #ef3a3a;">◉</span> MM 赤)</small>
+-   Competitive Programming
+    -   [AtCoder](https://atcoder.jp/user/kimiyuki) <small>(<span style="color: #ff8000;">◉</span> orange)</small>
+    -   [Codeforces](https://codeforces.com/profile/kimiyuki) <small>(<span style="color: #ff8c00;">◉</span> yellow)</small>
+-   Competitive Programming (Marathon Match)
+    -   [TopCoder](https://www.topcoder.com/members/kimiyuki/) <small>(<span style="color: #ef3a3a;">◉</span> MM red)</small>
     -   [CodinGame](https://www.codingame.com/profile/a1b3c572aa1ec002731ab7f4c7a5f08e3068231)
--   CTF: けっこうつよい
+-   CTF
     -   [CTFtime](https://ctftime.org/user/12503)
--   お料理
+-   Cooking
     -   [Instagram](https://www.instagram.com/usg_cooking/)
 -   SNS
     -   [Twitter](https://twitter.com/kimiyuki_u)
--   ほしい物リスト
+-   Donate to me
     -   [Amazon Wish List](https://www.amazon.co.jp/hz/wishlist/ls/1C2SP7ASBHO7V)
--   いま読んでいる本:
-    -   [渡邊 二郎ら, ハイデガー「存在と時間」入門, 講談社学術文庫](https://www.amazon.co.jp/dp/4062920808): ソフトウェアエンジニアとしては道具について興味があり、現存在としては実存に興味がある
-    -   [S. Shapiro, 数学を哲学する](https://www.amazon.co.jp/dp/4480860746): たぶんこれが本業だと思う
-    -   [佐藤 岳詩, メタ倫理学入門: 道徳のそもそもを考える](https://www.amazon.co.jp/dp/4326102624): メタ倫理学は議論の構造が数学の哲学と似ているように感じられて面白い
-    -   [K. Kunen, Set Theory](https://www.amazon.co.jp/dp/1848900503): Enumerative Combinatorics 勢を見ていたら Infinitary Combinatorics をやりたくなってしまった
+    -   [GitHub Sponsors](https://github.com/sponsors/kmyk)
+-   Books I'm reading now:
+    -   [渡邊 二郎ら, ハイデガー「存在と時間」入門, 講談社学術文庫](https://www.amazon.co.jp/dp/4062920808) (Heidegger)
+    -   [S. Shapiro, 数学を哲学する](https://www.amazon.co.jp/dp/4480860746) ([Thinking About Mathematics: The Philosophy of Mathematics](https://www.amazon.co.jp/dp/0192893068))
+    -   [佐藤 岳詩, メタ倫理学入門: 道徳のそもそもを考える](https://www.amazon.co.jp/dp/4326102624) (Metaethics)
+    -   [K. Kunen, Set Theory](https://www.amazon.co.jp/dp/1848900503)
+
+## My Products
+
+-   WIP:
+    -   [Jikka](https://github.com/kmyk/Jikka): an automatic solver for problems of competitive programming. The philosophy behind this solver is written as a blog post ([競技プログラミングの問題を自動で解きたい - うさぎ小屋](https://kimiyuki.net/blog/2020/12/09/automated-solvers-of-competitive-programming/))
+    -   [Kyopro Encyclopedia of Algorithms (ア辞典)](https://dic.kimiyuki.net): a encyclopedia for competitive programming
+-   now maintaining:
+    -   [online-judge-tools/oj](https://github.com/online-judge-tools/oj): a tool to automate tedious tasks (e.g. testing with sample cases) to solve problems of competitive programming
+    -   [online-judge-tools/template-generator](https://github.com/online-judge-tools/template-generator): a tool to generate boilerplate code (e.g. input/output part of solution, random case generators) for competitive programming
+    -   [online-judge-tools/verification-helper](https://github.com/online-judge-tools/verification-helper): a framework which automates verification and generates documents for libraries of competitive programming
+    -   [online-judge-tools/api-client](https://github.com/online-judge-tools/api-client): a Python library which talks with online judges
+    -   [@atgolfer1](https://twitter.com/atgolfer1): a bot notifying updates about code golf on AtCoder
+    -   [atcoder-dos2unix-userscript](https://github.com/kmyk/atcoder-dos2unix-userscript): a user script to replace `\r\n` with `\n` on submissions of AtCoder to reduce 1 byte for code golf
+    -   [competitive-programming-library](https://kmyk.github.io/competitive-programming-library/): my library for competitive programming
+-   contributing:
+    -   [Library Checker](https://judge.yosupo.jp/): an online judge to verify libraries for competitive programming (contributed to improvement of problem preparation and addition some problems)
+    -   [AtCoder Problems](https://kenkoooo.com/atcoder/?#/table/kimiyuki/kenkoooo): a website which shows AC status of AtCoder's problems (contributed to optimization)
+-   not actively maintained:
+    -   [mersenne-twister-predictor](https://github.com/kmyk/mersenne-twister-predictor): a Python library to predict outputs of Python's standard `random`
+    -   [libproofofwork](https://github.com/kmyk/libproofofwork): a library for CTF to search strings which have given hash values
+    -   [google-home-say](https://github.com/kmyk/google-home-say): a script to let Google Home say arbitrary words
+    -   [longcontest-visualizer-framework](https://github.com/kmyk/longcontest-visualizer-framework): a framework to make web visualizers for Marathon Match contests
+-   no longer supported:
+    -   [topcoder-marathon-match-rating-predictor](https://github.com/kmyk/topcoder-marathon-match-rating-predictor): a user script to predict changes of ratings of Topcoder Marathon Match
+    -   etc.
 
 ## Contents of This Site
 
--   ブログ記事
+-   blog posts
     -   [/blog](./blog)
--   競プロや CTF の問題解説
+-   writeups for problems of competitive programming or CTF
     -   [/writeup](./writeup)
-    -   検索:
+    -   search:
         <div style="max-width: 20em">
             <form action="https://google.com/search" method="get">
                 <fieldset role="search" class="site-search">
@@ -46,28 +74,3 @@ kimiyuki です。最近は一日中 OSS 開発をしています。
                 </fieldset>
             </form>
         </div>
-
-## My Products
-
--   開発中:
-    -   [Jikka](https://github.com/kmyk/Jikka): 競プロの問題を自動で解くソルバ。哲学パートはブログ記事 ([競技プログラミングの問題を自動で解きたい - うさぎ小屋](https://kimiyuki.net/blog/2020/12/09/automated-solvers-of-competitive-programming/)) に書かれている
-    -   [Kyopro Encyclopedia of Algorithms (ア辞典)](https://dic.kimiyuki.net): 競プロの知見を収集し保全するための辞典。知の高速道路の保全活動である
--   メンテ中:
-    -   [online-judge-tools/oj](https://github.com/online-judge-tools/oj): 競プロの問題を解くときの単純作業を自動化するツール。主にサンプルケースでのテストを自動化してくれる
-    -   [online-judge-tools/template-generator](https://github.com/online-judge-tools/template-generator): 競プロの問題を解くときのテンプレートを生成するツール。解法コードの入出力パートや、デバッグ用のランダムケース生成スクリプトの雛形などを生成する
-    -   [online-judge-tools/verification-helper](https://github.com/online-judge-tools/verification-helper): 競プロライブラリの verify の自動化とドキュメントの生成をするフレームワーク
-    -   [online-judge-tools/api-client](https://github.com/online-judge-tools/api-client): 競プロのジャッジサーバとの通信をやってくれるライブラリ
-    -   [@atgolfer1](https://twitter.com/atgolfer1): AtCoder でのコードゴルフの最新情報を通知する bot
-    -   [atcoder-dos2unix-userscript](https://github.com/kmyk/atcoder-dos2unix-userscript): AtCoder でコードゴルフをするときに改行文字を `\r\n` でなく `\n` にして 1 byte を削るための user script
-    -   [competitive-programming-library](https://kmyk.github.io/competitive-programming-library/): 自分用の競プロライブラリ
--   コントリビュータとして参加:
-    -   [Library Checker](https://judge.yosupo.jp/): 競プロライブラリの verify のためのオンラインジャッジ (作問環境の整備と問題追加に貢献)
-    -   [AtCoder Problems](https://kenkoooo.com/atcoder/?#/table/kimiyuki/kenkoooo): AtCoder の問題の AC 状況を表示してくれるサイト (主に高速化に貢献)
--   あまりメンテしてない:
-    -   [longcontest-visualizer-framework](https://github.com/kmyk/longcontest-visualizer-framework): marathon コンテストの web ビジュアライザを簡単に作るためのフレームワーク
-    -   [mersenne-twister-predictor](https://github.com/kmyk/mersenne-twister-predictor): Python の標準ライブラリ `random` の出力を予測してくれるライブラリ
-    -   [libproofofwork](https://github.com/kmyk/libproofofwork): 所望の hash 値を持つ文字列を並列で高速に計算してくれる CTF 用ライブラリ
-    -   [google-home-say](https://github.com/kmyk/google-home-say): Google Home に好きな言葉を喋らせるためのスクリプト
--   サポート終了:
-    -   [topcoder-marathon-match-rating-predictor](https://github.com/kmyk/topcoder-marathon-match-rating-predictor): Topcoder Marathon Match のレート変化を予測する user script
-    -   他 たくさん

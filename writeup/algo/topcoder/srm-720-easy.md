@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/topcoder/srm-720-easy/
   - /blog/2017/08/25/srm-720-easy/
 date: "2017-08-25T21:47:49+09:00"
 tags: [ "competitive", "writeup", "topcoder", "srm", "dp", "combination" ]

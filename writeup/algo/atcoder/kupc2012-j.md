@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/kupc2012-j/
   - /blog/2018/02/15/kupc2012-j/
 date: "2018-02-15T21:19:28+09:00"
 tags: [ "competitive", "writeup", "atcoder", "kupc", "dp", "monge", "knuth-yao-speedup" ]

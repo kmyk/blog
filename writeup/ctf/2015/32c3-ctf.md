@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2015/32c3-ctf/
   - /blog/2016/01/01/32c3-ctf/
 date: 2016-01-01T23:03:51+09:00
 tags: [ "ctf" ]

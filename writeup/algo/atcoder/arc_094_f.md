@@ -4,6 +4,7 @@ date: 2018-09-29T02:49:01+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp", "invariant" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc094/tasks/arc094_d" ]
 redirect_from:
+  - /writeup/algo/atcoder/arc_094_f/
   - /writeup/algo/atcoder/arc-094-f/
 ---
 

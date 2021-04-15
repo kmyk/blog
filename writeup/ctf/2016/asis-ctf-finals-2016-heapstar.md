@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/asis-ctf-finals-2016-heapstar/
   - /blog/2016/09/12/asis-ctf-finals-2016-heapstar/
 date: "2016-09-12T02:27:02+09:00"
 tags: [ "ctf", "writeup", "asis-ctf", "pwn", "format-string-attack" ]

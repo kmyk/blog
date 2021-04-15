@@ -4,6 +4,7 @@ date: 2018-08-29T03:18:39+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "median", "bianry-search" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc101/tasks/arc101_b" ]
 redirect_from:
+  - /writeup/algo/atcoder/arc_101_d/
   - /writeup/algo/atcoder/arc-101-d/
 ---
 

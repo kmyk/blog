@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/ctf/2018/midnight-sun-ctf-2018-finals-barnlek/
 layout: post
 date: "2018-06-25T11:39+09:00"
 tags: [ "ctf", "writeup", "midnight-sun-ctf", "pwn", "buffer-overflow" ]

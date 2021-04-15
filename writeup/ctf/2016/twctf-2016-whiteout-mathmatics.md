@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/twctf-2016-whiteout-mathmatics/
   - /blog/2016/09/05/twctf-2016-whiteout-mathmatics/
 date: "2016-09-05T13:25:34+09:00"
 tags: [ "ctf", "writeup", "ppc", "mmactf", "twctf", "esolang", "whitespace" ]

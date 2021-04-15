@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/codechef-cook79-mixflvor/
   - /blog/2018/04/05/codechef-cook79-mixflvor/
 date: "2018-04-05T07:02:02+09:00"
 tags: [ "competitive", "writeup", "codechef", "square-root-decomposition", "two-pointers", "mo-algorithm", "xor", "gaussian-elimination" ]

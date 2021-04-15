@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/boston-key-party-ctf-2016-des-ofb/
   - /blog/2017/06/22/boston-key-party-ctf-2016-des-ofb/
 date: "2017-06-22T04:38:19+09:00"
 tags: [ "ctf", "writeup", "crypto", "boston-key-party-ctf", "des", "ofb" ]

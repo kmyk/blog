@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/icpc-2017-domestic-practice-c/
   - /blog/2017/07/02/icpc-2017-domestic-practice-c/
 date: "2017-07-02T22:46:14+09:00"
 tags: [ "competitive", "writeup", "aoj", "icpc-domestic" ]

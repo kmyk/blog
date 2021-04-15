@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/kusonazonazo-contest-1-75/
   - /blog/2016/11/25/kusonazonazo-contest-1-75/
 date: "2016-11-25T20:43:01+09:00"
 tags: [ "kusonazonazo", "writeup", "hackerrank", "guessing" ]

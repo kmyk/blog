@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2015/defcon-qualifier-ctf-2015-wibbly-wobbly-timey-wimey/
   - /blog/2016/02/12/defcon-qualifier-ctf-2015-wibbly-wobbly-timey-wimey/
 date: 2016-02-12T23:53:24+09:00
 tags: [ "ctf", "writeup", "pwn", "defcon", "format-string-attack", "buffer-overflow", "position-independent-executable" ]

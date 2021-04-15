@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2017/hitb-gsec-2017-hack-in-the-card-i/
   - /blog/2017/08/29/hitb-gsec-2017-hack-in-the-card-i/
 date: "2017-08-29T09:12:36+09:00"
 tags: [ "ctf", "writeup", "crypto", "hitb-gsec", "rsa", "side-channel-attack" ]

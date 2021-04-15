@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/hackerrank/may-world-codesprint-richie-rich/
   - /blog/2016/05/23/hackerrank-may-world-codesprint-richie-rich/
 date: 2016-05-23T01:49:47+09:00
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint", "simulation" ]

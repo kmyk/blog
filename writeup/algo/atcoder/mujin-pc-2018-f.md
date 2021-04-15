@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/mujin-pc-2018-f/
 layout: post
 date: 2018-08-05T01:12:09+09:00
 tags: [ "competitive", "writeup", "atcoder", "mujin-pc", "dp", "combinatorics" ]

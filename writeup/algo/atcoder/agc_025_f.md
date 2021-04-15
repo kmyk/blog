@@ -4,6 +4,7 @@ date: 2018-09-07T23:48:01+09:00
 tags: [ "competitive", "writeup", "atcoder", "agc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc025/tasks/agc025_f" ]
 redirect_from:
+  - /writeup/algo/atcoder/agc_025_f/
   - /writeup/algo/atcoder/agc-025-f/
 ---
 

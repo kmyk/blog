@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/xmas-contest-2016-a/
   - /blog/2016/12/24/xmas-contest-2016-a/
 date: "2016-12-24T23:33:39+09:00"
 tags: [ "competitive", "writeup", "atcoder", "xmas-contest", "reactive" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/codeforces/codeforces-333/
   - /blog/2015/09/10/codeforces-333/
 date: 2015-09-10T22:59:34+09:00
 tags: [ "codeforces", "competitive", "writeup" ]

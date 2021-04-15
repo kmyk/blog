@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/golf/atcoder/abc_084_b/
   - /writeup/golf/atcoder/abc-084-b/
   - /blog/2017/12/30/abc-084-b/
 date: "2017-12-30T23:15:30+09:00"

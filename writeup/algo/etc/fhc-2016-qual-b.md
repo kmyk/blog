@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/fhc-2016-qual-b/
   - /blog/2016/01/11/fhc-2016-qual-b/
 date: 2016-01-12 9:00:00 +0900
 tags: [ "competitive", "writeup", "facebook-hacker-cup" ]

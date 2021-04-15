@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/ctf/2018/twctf-2018-mixed-cipher/
 layout: post
 date: 2018-09-04T06:11:12+09:00
 tags: [ "ctf", "writeup", "twctf", "crypto", "aes", "rsa", "mersenne-twister", "prng-prediction", "lsb-leak-attack" ]

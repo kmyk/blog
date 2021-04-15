@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/gcj-2017-qual-a/
   - /blog/2017/04/10/gcj-2017-qual-a/
 date: "2017-04-10T02:45:05+09:00"
 tags: [ "competitive", "writeup", "gcj", "greedy" ]

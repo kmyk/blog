@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/hackerrank/world-codesprint-april-move-the-coins/
   - /blog/2016/05/01/hackerrank-world-codesprint-april-move-the-coins/
 date: 2016-05-01T12:21:08+09:00
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint", "nim", "grundy-number", "game", "tree" ]

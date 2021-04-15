@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/code-festival-2016-final-g/
   - /blog/2016/12/24/code-festival-2016-final-g/
 date: "2016-12-24T21:52:05+09:00"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "minimum-spanning-tree", "kruskals-algorithm" ]

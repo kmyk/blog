@@ -4,6 +4,7 @@ date: 2018-08-19T01:54:39+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "nim", "grundy", "game", "dp", "ad-hoc", "binary-search" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc091/tasks/arc091_d" ]
 redirect_from:
+  - /writeup/algo/atcoder/arc_091_f/
   - /writeup/algo/atcoder/arc-091-f/
 ---
 

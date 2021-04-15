@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/hackerrank/worldcodesprint-two-pluses/
   - /blog/2016/01/31/hackerrank-worldcodesprint-two-pluses/
 date: 2016-01-31T01:43:15+09:00
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint" ]

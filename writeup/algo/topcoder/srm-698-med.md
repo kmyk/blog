@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/topcoder/srm-698-med/
   - /blog/2017/03/24/srm-698-med/
 date: "2017-03-24T18:55:34+09:00"
 tags: [ "competitive", "writeup", "topcoder", "srm", "convex-hull" ]

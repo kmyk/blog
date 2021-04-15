@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/topcoder/srm-744-easy/
 layout: post
 date: 2018-12-15T04:00:00+09:00
 tags: [ "competitive", "writeup", "topcoder", "srm", "matrix" ]

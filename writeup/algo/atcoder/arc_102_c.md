@@ -4,6 +4,7 @@ date: 2018-09-01T22:54:45+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc102/tasks/arc102_a" ]
 redirect_from:
+  - /writeup/algo/atcoder/arc_102_c/
   - /writeup/algo/atcoder/arc-102-c/
 ---
 

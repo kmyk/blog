@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2015/mma-ctf-2015-rps/
   - /blog/2016/09/02/mma-ctf-2015-rps/
 date: "2016-09-02T20:30:59+09:00"
 tags: [ "ctf", "writeup", "pwn", "mmactf", "rand", "prng-prediction" ]

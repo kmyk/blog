@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2017/easyctf-2017-a-maze-ing/
   - /blog/2017/03/22/easyctf-2017-a-maze-ing/
 date: "2017-03-22T16:32:19+09:00"
 tags: [ "ctf", "writeup", "easyctf", "misc", "guessing" ]

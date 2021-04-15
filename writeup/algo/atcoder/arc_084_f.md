@@ -4,6 +4,7 @@ date: 2018-08-22T18:17:46+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "algebra", "ideal", "polynomial", "gcd", "dp", "digit-dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc084/tasks/arc084_d" ]
 redirect_from:
+  - /writeup/algo/atcoder/arc_084_f/
   - /writeup/algo/atcoder/arc-084-f/
 ---
 

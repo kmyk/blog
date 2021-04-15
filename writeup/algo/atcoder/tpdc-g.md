@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/tpdc-g/
   - /blog/2016/01/19/tpdc-g/
 date: 2016-01-19T17:24:02+09:00
 tags: [ "comepetitive", "writeup", "atcoder", "dp", "typical-dp-contest", "reconstruct", "overflow" ]

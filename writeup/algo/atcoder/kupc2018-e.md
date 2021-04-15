@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/kupc2018-e/
 layout: post
 date: 2018-10-01T01:30:30+09:00
 tags: [ "competitive", "writeup", "atcoder", "kupc", "inversion-number", "binary-indexed-tree", "dp", "inline-dp", "digit-dp" ]

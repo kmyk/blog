@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/apc001-f/
 layout: post
 date: 2018-07-27T03:19:07+09:00
 tags: [ "competitive", "writeup", "atcoder", "apc", "graph", "xor", "bit-dp" ]

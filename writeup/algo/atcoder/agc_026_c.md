@@ -4,6 +4,7 @@ date: 2018-08-09T21:34:32+09:00
 tags: [ "competitive", "writeup", "atcoder", "agc", "string", "meet-in-the-middle" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc026/tasks/agc026_c" ]
 redirect_from:
+  - /writeup/algo/atcoder/agc_026_c/
   - /writeup/algo/atcoder/agc-026-c/
 ---
 

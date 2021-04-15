@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/topcoder/srm-699-easy/
   - /blog/2016/09/27/srm-699-easy/
 date: "2016-09-27T01:43:26+09:00"
 tags: [ "competitive", "writeup", "topcoder", "srm", "dp" ]

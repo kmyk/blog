@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/aoj/icpc-geometry-problems/
   - /blog/2017/06/04/aoj-icpc-geometry-problems/
 date: "2017-06-04T00:21:55+09:00"
 tags: [ "competitive", "aoj", "icpc", "geometry" ]

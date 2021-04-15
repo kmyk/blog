@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/arc_068_c/
   - /writeup/algo/atcoder/arc-068-c/
   - /blog/2017/05/16/arc-068-c/
 date: "2017-05-16T21:32:37+09:00"

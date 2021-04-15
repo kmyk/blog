@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/codegate-ctf-2016-serial/
   - /blog/2016/10/23/codegate-ctf-2016-serial/
 date: "2016-10-23T00:50:29+09:00"
 tags: [ "ctf", "codegate-ctf", "pwn", "angr" ]

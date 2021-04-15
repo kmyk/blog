@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2014/plaidctf-2014-sass/
   - /blog/2016/09/15/plaidctf-2014-sass/
 date: "2016-09-15T15:43:57+09:00"
 tags: [ "competitive", "writeup", "pwn", "plaidctf" ]

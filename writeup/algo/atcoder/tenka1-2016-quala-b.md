@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/tenka1-2016-quala-b/
   - /blog/2016/07/30/tenka1-2016-quala-b/
 date: "2016-07-30T23:24:29+09:00"
 tags: [ "competitive", "wirteup", "atcoder", "tenka1-programmer-contest", "tree", "greedy" ]

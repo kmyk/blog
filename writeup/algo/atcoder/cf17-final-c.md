@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/cf17-final-c/
   - /blog/2017/11/26/cf17-final-c/
 date: "2017-11-26T10:02:23+09:00"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "exhaustive-search" ]

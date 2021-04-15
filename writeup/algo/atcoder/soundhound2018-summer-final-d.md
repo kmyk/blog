@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/soundhound2018-summer-final-d/
 layout: post
 date: 2018-08-02T07:41:14+09:00
 tags: [ "competitive", "writeup", "atcoder", "graph", "union-find-tree" ]

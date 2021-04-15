@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/etc/icpc-2018-domestic-practice-f/
 layout: post
 date: 2018-07-01T23:59:04+09:00
 tags: [ "competitive", "writeup", "icpc-domestic", "dp", "imos-method" ]

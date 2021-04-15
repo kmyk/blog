@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/tkppc3-e/
 layout: post
 date: 2018-08-02T08:16:01+09:00
 tags: [ "competitive", "writeup", "atcoder", "tkppc", "expected-value" ]

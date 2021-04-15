@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/long/atcoder/coderunner-2015-quala/
   - /blog/2015/10/03/coderunner-2015-quala/
 date: 2015-10-03T23:27:34+09:00
 tags: [ "coderunner", "competitive", "writeup" ]

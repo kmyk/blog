@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/abc_036_d/
   - /writeup/algo/atcoder/abc-036-d/
   - /blog/2016/04/09/abc-036-d/
 date: 2016-04-09T22:16:50+09:00

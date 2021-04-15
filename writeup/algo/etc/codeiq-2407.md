@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/codeiq-2407/
   - /blog/2015/11/19/codeiq-2407/
 date: 2015-11-19T21:38:39+09:00
 tags: [ "golf", "codeiq", "writeup", "ruby" ]

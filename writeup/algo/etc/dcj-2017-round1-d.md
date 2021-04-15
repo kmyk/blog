@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/dcj-2017-round1-d/
   - /blog/2017/05/15/dcj-2017-round1-d/
 date: "2017-05-15T11:08:47+09:00"
 tags: [ "competitive", "writeup", "dcj", "distributed-code-jam", "binary-search" ]

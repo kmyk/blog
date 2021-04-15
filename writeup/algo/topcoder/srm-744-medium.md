@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/topcoder/srm-744-medium/
 layout: post
 date: 2018-12-15T05:00:00+09:00
 tags: [ "competitive", "writeup", "topcoder", "srm", "lightsout" ]

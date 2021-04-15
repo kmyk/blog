@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2015/defcon-qualifier-ctf-2015-r0pbaby/
   - /blog/2016/01/07/defcon-qualifier-ctf-2015-r0pbaby/
 date: 2016-01-07T00:49:08+09:00
 tags: [ "ctf", "writeup", "pwn", "rop" ]

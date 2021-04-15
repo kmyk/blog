@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/gcj-2016-qual-a/
   - /blog/2016/04/10/gcj-2016-qual-a/
 date: 2016-04-10T11:04:16+09:00
 tags: [ "competitive", "writeup", "google-code-jam", "gcj" ]

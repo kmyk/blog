@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/topcoder/srm-693-easy/
   - /blog/2016/06/26/srm-693-easy/
 date: 2016-06-26T02:51:44+09:00
 tags: [ "competitive", "writeup", "topcoder", "srm", "dp", "dp-on-intervals" ]

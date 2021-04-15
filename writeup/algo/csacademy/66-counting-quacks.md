@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/csacademy/66-counting-quacks/
   - /writeup/algo/cs-academy/66-counting-quacks/
   - /blog/2018/04/02/csa-66-counting-quacks/
 date: "2018-04-02T01:49:03+09:00"

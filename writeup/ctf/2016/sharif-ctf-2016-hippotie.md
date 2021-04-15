@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/sharif-ctf-2016-hippotie/
   - /blog/2016/12/19/sharif-ctf-2016-hippotie/
 date: "2016-12-19T23:44:21+09:00"
 tags: [ "ctf", "writeup", "pwn", "sharif-ctf", "buffer-overflow", "libc" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/endless/ed-ctf-my-sandbox/
   - /blog/2016/02/21/ed-ctf-my-sandbox/
 date: 2016-02-21T09:44:29+09:00
 tags: [ "ctf", "writeup", "pwn", "ed-ctf", "format-string-attack", "heap" ]

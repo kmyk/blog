@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/hackerrank/zalando-codesprint-the-inquiring-manager/
   - /blog/2016/06/05/hackerrank-zalando-codesprint-the-inquiring-manager/
 date: 2016-06-05T19:17:02+09:00
 tags: [ "competitive", "writeup", "hackerrank", "priority-queue" ]

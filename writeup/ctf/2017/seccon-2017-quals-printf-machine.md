@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2017/seccon-2017-quals-printf-machine/
   - /blog/2017/12/10/seccon-2017-quals-printf-machine/
 date: "2017-12-10T15:18:40+09:00"
 tags: [ "ctf", "writeup", "seccon", "seccon-quals", "rev", "interpreter", "printf", "format-string-attack", "esolang", "z3" ]

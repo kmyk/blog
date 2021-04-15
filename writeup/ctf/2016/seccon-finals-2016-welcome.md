@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/seccon-finals-2016-welcome/
   - /blog/2017/01/30/seccon-finals-2016-welcome/
 date: "2017-01-30T03:49:21+09:00"
 tags: [ "ctf", "writeup", "seccon", "rev" ]

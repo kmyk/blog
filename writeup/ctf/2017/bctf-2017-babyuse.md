@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2017/bctf-2017-babyuse/
   - /blog/2017/04/22/bctf-2017-babyuse/
 date: "2017-04-22T01:14:03+09:00"
 tags: [ "ctf", "writeup", "bctf", "pwn", "heap", "use-after-free" ]

@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/njpc2017-d/
 layout: post
 date: 2018-07-13T13:37:46+09:00
 tags: [ "competitive", "writeup", "atcoder", "njpc", "inversion-number" ]

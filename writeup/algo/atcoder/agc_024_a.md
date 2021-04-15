@@ -4,6 +4,7 @@ date: 2018-09-29T00:00:44+09:00
 tags: [ "competitive", "writeup", "atcoder", "agc", "matrix" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc024/tasks/agc024_a" ]
 redirect_from:
+  - /writeup/algo/atcoder/agc_024_a/
   - /writeup/algo/atcoder/agc-024-a/
 ---
 

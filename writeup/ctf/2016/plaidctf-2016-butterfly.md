@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/plaidctf-2016-butterfly/
   - /blog/2016/04/18/plaidctf-2016-butterfly/
 date: 2016-04-18T06:00:01+09:00
 tags: [ "ctf", "pwn", "writeup", "plaidctf", "mprotect" ]

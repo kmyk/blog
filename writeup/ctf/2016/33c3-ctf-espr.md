@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/33c3-ctf-espr/
   - /blog/2016/12/30/33c3-ctf-espr/
 date: "2016-12-30T13:39:05+09:00"
 tags: [ "ctf", "writeup", "pwn", "33c3-ctf", "blind", "libc", "format-string-attack" ]

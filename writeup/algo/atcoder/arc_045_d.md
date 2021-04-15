@@ -4,6 +4,7 @@ date: 2018-10-05T15:01:37+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "graph", "2d-plane", "two-edge-connected-components", "articulation-point" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc045/tasks/arc045_d" ]
 redirect_from:
+  - /writeup/algo/atcoder/arc_045_d/
   - /writeup/algo/atcoder/arc-045-d/
 ---
 

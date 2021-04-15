@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/topcoder/tco-2016-round-2a-easy/
   - /blog/2016/05/13/tco-2016-round-2a-easy/
 date: 2016-05-13T02:04:10+09:00
 tags: [ "competitive", "writeup", "topcoder", "tco" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/codegate-ctf-2016-fl0ppy/
   - /blog/2017/01/20/codegate-ctf-2016-fl0ppy/
 date: "2017-01-20T22:50:20+09:00"
 tags: [ "ctf", "writeup", "pwn", "codegate-ctf" ]

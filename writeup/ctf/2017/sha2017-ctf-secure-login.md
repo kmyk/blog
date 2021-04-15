@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2017/sha2017-ctf-secure-login/
   - /blog/2017/08/07/sha2017-ctf-secure-login/
 date: "2017-08-07T16:50:23+09:00"
 tags: [ "ctf", "writeup", "sha-ctf", "crypto", "rsa" ]

@@ -4,6 +4,7 @@ date: 2018-08-29T02:10:23+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "segment-tree", "gcd" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc017/tasks/arc017_4" ]
 redirect_from:
+  - /writeup/algo/atcoder/arc_017_d/
   - /writeup/algo/atcoder/arc-017-d/
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/golf/atcoder/arc_048_a/
   - /writeup/golf/atcoder/arc-048-a/
   - /blog/2016/03/30/arc-048-a/
 date: 2016-03-30T13:20:58+09:00

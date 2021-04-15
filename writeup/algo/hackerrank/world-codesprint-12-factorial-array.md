@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/hackerrank/world-codesprint-12-factorial-array/
   - /blog/2017/12/31/hackerrank-world-codesprint-12-factorial-array/
 date: "2017-12-31T16:26:43+09:00"
 tags: [ "competitive", "writeup", "hackerrank", "codesprint", "lazy-propagation", "segment-tree", "query" ]

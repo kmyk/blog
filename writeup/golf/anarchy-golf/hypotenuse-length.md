@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/golf/anarchy-golf/hypotenuse-length/
   - /blog/2016/05/24/anagol-hypotenuse-length/
 date: 2016-05-24T23:35:20+09:00
 tags: [ "golf", "writeup", "anagol", "anarch-golf", "float" ]

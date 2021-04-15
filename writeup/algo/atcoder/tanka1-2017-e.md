@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/tanka1-2017-e/
   - /blog/2017/11/10/tanka1-2017-e/
 date: "2017-11-10T22:24:50+09:00"
 tags: [ "competitive", "writeup", "atcoder", "tenka1", "simd", "optimization", "median" ]

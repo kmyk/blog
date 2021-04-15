@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/tdpc-semiexp/
   - /blog/2015/10/05/tdpc-semiexp/
 date: 2015-10-05T22:44:24+09:00
 tags: [ "atcoder", "competitive", "writeup", "dp", "typical-dp-contest" ]

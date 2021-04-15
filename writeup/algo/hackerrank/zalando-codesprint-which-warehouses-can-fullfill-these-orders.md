@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/hackerrank/zalando-codesprint-which-warehouses-can-fullfill-these-orders/
   - /blog/2016/06/05/hackerrank-zalando-codesprint-which-warehouses-can-fullfill-these-orders/
 date: 2016-06-05T19:17:48+09:00
 tags: [ "competitive", "writeup", "hackerrank", "exhaustive-search" ]

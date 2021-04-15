@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/tenka1-2016-final-c/
 layout: post
 date: 2018-07-07T03:00:16+09:00
 tags: [ "competitive", "writeup", "atcoder", "tenka1", "rolling-hash", "dp" ]

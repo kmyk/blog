@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2015/easyctf-2015-scytcrypto/
   - /blog/2016/09/09/easyctf-2015-scytcrypto/
 date: "2016-09-09T16:21:11+09:00"
 tags: [ "ctf", "writeup", "easyctf", "crypto", "scytale-cipher" ]

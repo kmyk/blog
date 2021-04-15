@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/s8pc-2-a/
   - /blog/2016/05/20/s8pc-2-a/
 date: 2016-05-20T14:20:07+09:00
 tags: [ "competitive", "writeup", "atcoder", "golf", "s8pc" ]

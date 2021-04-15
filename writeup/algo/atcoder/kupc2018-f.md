@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/kupc2018-f/
 layout: post
 date: 2018-10-05T04:55:07+09:00
 tags: [ "competitive", "writeup", "atcoder", "kupc", "graph", "game", "greedy" ]

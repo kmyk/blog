@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2014/hack-you-2014-hashme/
   - /blog/2016/08/28/hack-you-2014-hashme/
 date: "2016-08-28T11:16:56+09:00"
 tags: [ "ctf", "writeup", "crypto", "hack-you-ctf", "length-extension-attack", "katagaitai" ]

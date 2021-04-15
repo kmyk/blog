@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/dwacon6th_prelims_e/
 layout: post
 date: 2020-01-25T23:59:59+09:00
 tags: ["competitive", "writeup"]

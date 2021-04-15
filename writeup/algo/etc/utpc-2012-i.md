@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/utpc-2012-i/
   - /blog/2018/01/01/utpc-2012-i/
 date: "2018-01-01T10:51:21+09:00"
 tags: [ "competitive", "writeup", "utpc", "atcoder", "shortest-path", "dijkstra", "divide-and-conquer" ]

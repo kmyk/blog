@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/cf18-relay-d/
 layout: post
 date: 2018-11-21T10:46:18+09:00
 tags: [ "competitive", "writeup", "atcoder", "code-festival", "ternary-search" ]

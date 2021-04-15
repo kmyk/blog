@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2015/mma-ctf-2015-spell/
   - /blog/2016/03/01/mma-ctf-2015-spell/
 date: 2016-03-01T10:59:57+09:00
 tags: [ "ctf", "writeup", "pwn", "mmactf", "shellcode", "buffer-overflow", "alphanumeric-shellcode" ]

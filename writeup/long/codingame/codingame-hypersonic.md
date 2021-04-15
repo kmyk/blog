@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/long/codingame/codingame-hypersonic/
   - /blog/2016/10/03/codingame-hypersonic/
 date: "2016-10-03T17:47:06+09:00"
 tags: [ "competitive", "writeup", "codingame", "marathon", "game", "beam-search" ]

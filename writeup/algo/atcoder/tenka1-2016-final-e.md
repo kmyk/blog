@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/tenka1-2016-final-e/
 layout: post
 date: 2018-07-12T22:25:22+09:00
 tags: [ "competitive", "writeup", "atcoder", "tenka1", "convex-hull-trick" ]

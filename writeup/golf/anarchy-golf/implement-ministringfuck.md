@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/golf/anarchy-golf/implement-ministringfuck/
   - /blog/2017/01/31/anagol-implement-ministringfuck/
 date: "2017-01-31T22:27:35+09:00"
 tags: [ "golf", "writeup", "anagol", "anarchy-golf", "brainfuck", "sed" ]

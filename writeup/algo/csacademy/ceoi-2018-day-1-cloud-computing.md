@@ -4,6 +4,7 @@ date: 2018-08-15T03:44:40+09:00
 tags: [ "competitive", "writeup", "csacademy", "dp", "sort" ]
 "target_url": [ "https://csacademy.com/contest/ceoi-2018-day-1/task/cloud-computing/" ]
 redirect_from:
+  - /writeup/algo/csacademy/ceoi-2018-day-1-cloud-computing/
   - /writeup/algo/cs-academy/ceoi-2018-day-1-cloud-computing/
 ---
 

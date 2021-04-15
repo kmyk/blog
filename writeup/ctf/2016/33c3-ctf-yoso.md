@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/33c3-ctf-yoso/
   - /blog/2016/12/30/33c3-ctf-yoso/
 date: "2016-12-30T13:39:40+09:00"
 tags: [ "ctf", "writeup", "web", "33c3-ctf", "javascript", "xss", "session-hijack", "csrf", "csrf-token" ]

@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/topcoder/srm-736-easy/
 layout: post
 date: 2018-08-16T02:18:40+09:00
 tags: [ "competitive", "writeup", "topcoder", "srm", "modulo" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2015/mma-ctf-2015-alicegame/
   - /blog/2016/11/23/mma-ctf-2015-alicegame/
 date: "2016-11-23T03:31:05+09:00"
 tags: [ "ctf", "writeup", "mmactf", "crypto", "elgamal-encryption", "discrete-logarithm-problem", "baby-step-giant-step", "pohlig-hellman" ]

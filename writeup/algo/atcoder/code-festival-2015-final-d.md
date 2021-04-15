@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/code-festival-2015-final-d/
   - /blog/2015/11/21/code-festival-2015-final-d/
 date: 2015-11-21T17:19:01+09:00
 tags: [ "competitive", "writeup", "codefestival", "atcoder", "segment-tree", "starry-sky-tree", "range-add-query", "range-maximum-query", "library" ]

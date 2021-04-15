@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/abc138_f/
 layout: post
 date: 2019-08-21T23:59:59+09:00
 tags: ["competitive", "writeup"]

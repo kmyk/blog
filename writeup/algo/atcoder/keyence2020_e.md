@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/keyence2020_e/
 layout: post
 date: 2020-01-18T23:59:59+09:00
 tags: ["competitive", "writeup"]

@@ -4,6 +4,7 @@ date: 2018-09-14T02:48:49+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "linarity", "matrix", "segment-tree", "dynamic-construction" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc025/tasks/arc025_4" ]
 redirect_from:
+  - /writeup/algo/atcoder/arc_025_d/
   - /writeup/algo/atcoder/arc-025-d/
 ---
 

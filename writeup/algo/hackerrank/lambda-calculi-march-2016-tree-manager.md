@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/hackerrank/lambda-calculi-march-2016-tree-manager/
   - /blog/2016/03/28/hackerrank-lambda-calculi-march-2016-tree-manager/
 date: 2016-03-28T15:27:21+09:00
 tags: [ "competitive", "writeup", "hackerrank", "lambda-calculi", "haskell", "zipper" ]

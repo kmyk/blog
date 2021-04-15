@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/tenka1-2012-qualc-d/
   - /blog/2017/07/04/tenka1-2012-qualc-d/
 date: "2017-07-04T22:54:03+09:00"
 tags: [ "competitive", "writeup", "atcoder", "tenka1", "dp", "frontier", "lie", "optimization" ]

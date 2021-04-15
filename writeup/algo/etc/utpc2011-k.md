@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/utpc2011-k/
   - /blog/2017/12/29/utpc2011-k/
 date: "2017-12-29T07:48:35+09:00"
 tags: [ "competitive", "writeup", "utpc", "aoj", "graph", "dijkstra", "warshall-floyd", "lowest-common-ancestor", "sparse-table", "optimization" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/code-festival-2017-qualb-a/
   - /blog/2017/11/10/code-festival-2017-qualb-a/
 date: "2017-11-10T23:55:42+09:00"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "sed", "golf" ]

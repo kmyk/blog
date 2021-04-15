@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/tjctf-2016-oneshot/
   - /blog/2016/09/16/tjctf-2016-oneshot/
 date: "2016-09-16T17:13:16+09:00"
 tags: [ "ctf", "writeup", "pwn", "tjctf", "one-gadget-rce" ]

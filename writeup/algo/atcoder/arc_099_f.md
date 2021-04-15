@@ -4,6 +4,7 @@ date: 2018-08-21T21:33:33+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "matrix", "polynomial", "rolling-hash" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc099/tasks/arc099_d" ]
 redirect_from:
+  - /writeup/algo/atcoder/arc_099_f/
   - /writeup/algo/atcoder/arc-099-f/
 ---
 

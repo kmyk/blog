@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/cf18-relay-j/
 layout: post
 date: 2018-11-21T11:28:54+09:00
 tags: [ "competitive", "writeup", "atcoder", "code-festival", "dp", "cumulative-sum" ]

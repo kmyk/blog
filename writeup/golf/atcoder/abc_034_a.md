@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/golf/atcoder/abc_034_a/
   - /writeup/golf/atcoder/abc-034-a/
   - /blog/2016/03/12/abc-034-a/
 date: 2016-03-12T22:46:32+09:00

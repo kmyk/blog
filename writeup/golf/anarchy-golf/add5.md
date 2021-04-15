@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/golf/anarchy-golf/add5/
   - /blog/2018/03/05/anagol-add5/
 date: "2018-03-05T11:50:51+09:00"
 tags: [ "golf", "writeup", "anagol", "brainfuck" ]

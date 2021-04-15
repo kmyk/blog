@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/codechef-cook79-cookgame/
   - /blog/2018/04/05/codechef-cook79-cookgame/
 date: "2018-04-05T06:48:45+09:00"
 tags: [ "competitive", "writeup", "codechef" ]

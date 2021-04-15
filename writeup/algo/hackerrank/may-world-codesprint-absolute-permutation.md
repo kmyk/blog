@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/hackerrank/may-world-codesprint-absolute-permutation/
   - /blog/2016/05/23/hackerrank-may-world-codesprint-absolute-permutation/
 date: 2016-05-23T01:50:01+09:00
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/hackerrank/worldcodesprint-colorful-ornaments/
   - /blog/2016/01/31/hackerrank-worldcodesprint-colorful-ornaments/
 date: 2016-01-31T01:43:27+09:00
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint" ]

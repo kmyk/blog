@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2015/bctf-2015-warmup/
   - /blog/2016/08/31/bctf-2015-warmup/
 date: "2016-08-31T21:21:43+09:00"
 tags: [ "ctf", "writeup", "crypto", "bctf", "rsa", "wiener-attack" ]

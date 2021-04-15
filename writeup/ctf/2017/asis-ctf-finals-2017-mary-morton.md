@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2017/asis-ctf-finals-2017-mary-morton/
   - /blog/2017/09/11/asis-ctf-finals-2017-mary-morton/
 date: "2017-09-11T08:09:08+09:00"
 tags: [ "ctf", "writeup", "pwn", "asis-ctf" ]

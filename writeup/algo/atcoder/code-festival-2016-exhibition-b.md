@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/code-festival-2016-exhibition-b/
   - /blog/2016/12/13/code-festival-2016-exhibition-b/
 date: "2016-12-13T02:16:23+09:00"
 tags: [ "competitive", "writeup", "atcoder", "codefestival" ]

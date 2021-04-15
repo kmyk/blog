@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/golf/anarchy-golf/tetris/
   - /blog/2016/02/20/anagol-tetris/
 date: 2016-02-20T02:24:34+09:00
 tags: [ "writeup", "anarchy-golf", "golf", "ruby", "perl", "regex" ]

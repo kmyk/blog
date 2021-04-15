@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/apc001-a/
 layout: post
 date: 2018-07-09T20:26:40+09:00
 tags: [ "competitive", "writeup", "atcoder", "apc" ]

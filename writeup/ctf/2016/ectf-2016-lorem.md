@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/ectf-2016-lorem/
   - /blog/2016/10/23/ectf-2016-lorem/
 date: "2016-10-23T23:49:38+09:00"
 tags: [ "ctf", "ectf", "rev", "angr" ]

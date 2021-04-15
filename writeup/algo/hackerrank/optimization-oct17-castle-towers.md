@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/hackerrank/optimization-oct17-castle-towers/
   - /blog/2017/11/10/hackerrank-optimization-oct17-castle-towers/
 date: "2017-11-10T22:51:39+09:00"
 tags: [ "competitive", "writeup", "hackerrank" ]

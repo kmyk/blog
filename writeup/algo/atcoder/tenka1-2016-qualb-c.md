@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/tenka1-2016-qualb-c/
 layout: post
 date: 2018-07-07T07:17:47+09:00
 tags: [ "competitive", "writeup", "atcoder", "tenka1", "dp", "probability" ]

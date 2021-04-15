@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2017/insomnihack-2017-teaser-baby/
   - /blog/2017/01/25/insomnihack-2017-teaser-baby/
 date: "2017-01-25T20:04:37+09:00"
 tags: [ "ctf", "writeup", "pwn", "insomnihack", "fork-server" ]

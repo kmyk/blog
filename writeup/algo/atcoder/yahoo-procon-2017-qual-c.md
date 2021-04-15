@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/yahoo-procon-2017-qual-c/
   - /blog/2017/03/07/yahoo-procon-2017-qual-c/
 date: "2017-03-07T17:21:09+09:00"
 tags: [ "competitive", "writeup", "atcoder", "yahoo-procon" ]

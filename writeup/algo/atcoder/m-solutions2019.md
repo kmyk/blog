@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/m-solutions2019/
 layout: post
 date: 2019-06-02T23:59:59+09:00
 tags: ["competitive", "writeup"]

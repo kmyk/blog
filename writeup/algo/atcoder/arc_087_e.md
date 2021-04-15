@@ -4,6 +4,7 @@ date: 2018-10-12T17:22:17+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "grundy", "game", "binary-tree", "trie" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc087/tasks/arc087_c" ]
 redirect_from:
+  - /writeup/algo/atcoder/arc_087_e/
   - /writeup/algo/atcoder/arc-087-e/
 ---
 

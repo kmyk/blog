@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/fhc-2016-round2-b/
   - /blog/2016/01/24/fhc-2016-round2-b/
 date: 2016-01-24T06:02:41+09:00
 tags: [ "competitive", "writeup", "facebook-hacker-cup", "expected-value", "dp" ]

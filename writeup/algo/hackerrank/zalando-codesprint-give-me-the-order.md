@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/hackerrank/zalando-codesprint-give-me-the-order/
   - /blog/2016/06/05/hackerrank-zalando-codesprint-give-me-the-order/
 date: 2016-06-05T19:18:12+09:00
 tags: [ "competitive", "writeup", "hackerrank", "treap", "self-balancing-binary-serach-tree" ]

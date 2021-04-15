@@ -4,6 +4,7 @@ date: 2018-12-16T04:23:18+09:00
 tags: [ "competitive", "writeup", "atcoder", "agc", "binary-search", "sequence", "run-length" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc029/tasks/agc029_c" ]
 redirect_from:
+  - /writeup/algo/atcoder/agc_029_c/
   - /writeup/algo/atcoder/agc-029-c/
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/codechef-cook91-carray/
   - /blog/2018/03/31/codechef-cook91-carray/
 date: "2018-03-31T02:12:58+09:00"
 tags: [ "competitive", "writeup", "codechef", "greedy" ]

@@ -4,6 +4,7 @@ date: 2018-09-14T02:28:36+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "geometry", "convex-hull", "lie", "postscript" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc022/tasks/arc022_4" ]
 redirect_from:
+  - /writeup/algo/atcoder/arc_022_d/
   - /writeup/algo/atcoder/arc-022-d/
 ---
 

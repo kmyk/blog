@@ -4,6 +4,7 @@ date: 2018-08-23T15:07:42+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp", "binary-search", "expected-value", "graph", "dag", "fixed-point" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc016/tasks/arc016_4" ]
 redirect_from:
+  - /writeup/algo/atcoder/arc_016_d/
   - /writeup/algo/atcoder/arc-016-d/
 ---
 

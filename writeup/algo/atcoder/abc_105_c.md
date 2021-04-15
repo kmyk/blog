@@ -4,6 +4,7 @@ date: 2018-08-11T23:06:13+09:00
 tags: [ "competitive", "writeup", "atcoder", "abc" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc105/tasks/abc105_c" ]
 redirect_from:
+  - /writeup/algo/atcoder/abc_105_c/
   - /writeup/algo/atcoder/abc-105-c/
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/codefestival-2015-qualb/
   - /blog/2015/10/25/codefestival-2015-qualb/
 date: 2015-10-25T22:10:49+09:00
 tags: [ "competitive", "writeup", "codefestival" ]

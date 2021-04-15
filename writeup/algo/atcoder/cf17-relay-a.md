@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/cf17-relay-a/
   - /blog/2017/11/27/cf17-relay-a/
 date: "2017-11-27T17:58:05+09:00"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "team-relay" ]

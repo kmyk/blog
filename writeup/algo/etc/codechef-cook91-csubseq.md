@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/codechef-cook91-csubseq/
   - /blog/2018/03/31/codechef-cook91-csubseq/
 date: "2018-03-31T02:13:03+09:00"
 tags: [ "competitive", "writeup", "codechef", "dp" ]

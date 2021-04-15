@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/utpc-2012-c/
   - /blog/2017/12/31/utpc-2012-c/
 date: "2017-12-31T17:55:51+09:00"
 tags: [ "competitive", "writeup", "utpc", "atcoder", "graph", "complete-graph", "forest" ]

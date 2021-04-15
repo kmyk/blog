@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/yahoo-procon-2017-final-c/
   - /blog/2017/03/26/yahoo-procon-2017-final-c/
 date: "2017-03-26T11:26:39+09:00"
 tags: [ "competitive", "writeup", "atcoder", "yahoo-procon", "simd", "optimization" ]

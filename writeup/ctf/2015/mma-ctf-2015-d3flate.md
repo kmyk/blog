@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2015/mma-ctf-2015-d3flate/
   - /blog/2016/09/09/mma-ctf-2015-d3flate/
 date: "2016-09-09T15:08:55+09:00"
 tags: [ "ctf", "writeup", "mmactf", "pwn", "zlib", "canary" ]

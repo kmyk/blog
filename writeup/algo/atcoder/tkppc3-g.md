@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/tkppc3-g/
 layout: post
 date: 2018-08-02T09:56:12+09:00
 tags: [ "competitive", "writeup", "atcoder", "tkppc", "convex-hull-trick" ]

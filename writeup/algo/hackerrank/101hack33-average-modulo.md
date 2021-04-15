@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/hackerrank/101hack33-average-modulo/
   - /blog/2016/01/21/hackerrank-101hack33-average-modulo/
 date: 2016-01-21T21:33:26+09:00
 tags: [ "competitive", "writeup", "hackerrank", "dp", "math" ]

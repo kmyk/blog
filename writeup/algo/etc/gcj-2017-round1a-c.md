@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/gcj-2017-round1a-c/
   - /blog/2017/04/23/gcj-2017-round1a-c/
 date: "2017-04-23T01:08:38+09:00"
 tags: [ "competitive", "writeup", "gcj", "aws" ]

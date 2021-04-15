@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2017/whitehat-summer-contest-2017-da-nang/
   - /blog/2017/05/28/whitehat-summer-contest-2017-da-nang/
 date: "2017-05-28T23:24:22+09:00"
 tags: [ "ctf", "writeup", "whitehat-wargame", "crypto", "rsa", "franklin-reiter" ]

@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/tenka1-2016-final-d/
 layout: post
 date: 2018-07-07T03:00:20+09:00
 tags: [ "competitive", "writeup", "atcoder", "tenka1", "dp", "bit-dp" ]

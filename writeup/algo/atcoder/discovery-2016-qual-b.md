@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/discovery-2016-qual-b/
   - /blog/2016/01/30/discovery-2016-qual-b/
 date: 2016-01-30T23:17:12+09:00
 tags: [ "competitive", "writeup", "atcoder", "discovery-channel", "greedy", "binary-search" ]

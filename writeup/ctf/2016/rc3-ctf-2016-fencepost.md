@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/rc3-ctf-2016-fencepost/
   - /blog/2016/11/21/rc3-ctf-2016-fencepost/
 date: "2016-11-21T17:46:51+09:00"
 tags: [ "ctf", "writeup", "rc3-ctf", "pwn" ]

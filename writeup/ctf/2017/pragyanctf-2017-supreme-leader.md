@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2017/pragyanctf-2017-supreme-leader/
   - /blog/2017/03/06/pragyanctf-2017-supreme-leader/
 date: "2017-03-06T00:03:07+09:00"
 tags: [ "ctf", "pragyan-ctf", "guessing" ]

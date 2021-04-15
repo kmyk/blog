@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/icectf-2016-stage4/
   - /blog/2016/08/27/icectf-2016-stage4/
 date: "2016-08-27T01:22:17+09:00"
 tags: [ "ctf", "writeup", "icectf" ]

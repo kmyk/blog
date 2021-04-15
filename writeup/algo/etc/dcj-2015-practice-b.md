@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/dcj-2015-practice-b/
   - /blog/2017/05/12/dcj-2015-practice-b/
 date: "2017-05-12T22:26:01+09:00"
 tags: [ "competitive", "writeup", "dcj", "distributed-code-jam", "mle" ]

@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/etc/gcj-2018-kickstart-g-c/
 layout: post
 date: 2018-10-25T15:59:13+09:00
 tags: [ "competitive", "writeup", "gcj", "kickstart", "maze", "graph", "bit-dp" ]

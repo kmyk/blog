@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/summerfes2018-e/
 layout: post
 date: 2018-08-25T17:16:58+09:00
 tags: [ "competitive", "writeup", "atcoder", "math" ]

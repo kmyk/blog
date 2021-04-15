@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/gcj-2017-qual-c/
   - /blog/2017/04/10/gcj-2017-qual-c/
 date: "2017-04-10T02:45:08+09:00"
 tags: [ "competitive", "writeup", "gcj" ]

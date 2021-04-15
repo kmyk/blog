@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/qiwi-infosec-ctf-2016-ppc-400/
   - /blog/2016/11/19/qiwi-infosec-ctf-2016-ppc-400/
 date: "2016-11-19T01:30:54+09:00"
 tags: [ "ctf", "writeup", "qiwi-ctf", "ppc", "sqlite", "dijkstra" ]

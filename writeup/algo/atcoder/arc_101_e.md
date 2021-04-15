@@ -4,6 +4,7 @@ date: 2018-12-07T17:24:58+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "inclusion-exclusion-principle", "tree-dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc101/tasks/arc101_c" ]
 redirect_from:
+  - /writeup/algo/atcoder/arc_101_e/
   - /writeup/algo/atcoder/arc-101-e/
 ---
 

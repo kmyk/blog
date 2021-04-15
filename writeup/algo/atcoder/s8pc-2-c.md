@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/s8pc-2-c/
   - /blog/2016/04/23/s8pc-2-c/
 date: 2016-04-23T23:02:30+09:00
 tags: [ "competitive", "writeup", "atcoder", "s8pc", "dp" ]

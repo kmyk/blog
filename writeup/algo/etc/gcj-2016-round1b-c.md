@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/gcj-2016-round1b-c/
   - /blog/2016/05/01/gcj-2016-round1b-c/
 date: 2016-05-01T04:24:19+09:00
 tags: [ "competitive", "writeup", "google-code-jam", "gcj", "graph", "bipartite-graph", "flow", "ford-fulkerson", "maximum-flow", "maximum-matching", "minimum-edge-cover" ]

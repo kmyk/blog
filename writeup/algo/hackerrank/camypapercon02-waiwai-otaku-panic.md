@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/hackerrank/camypapercon02-waiwai-otaku-panic/
   - /blog/2016/09/07/hackerrank-camypapercon02-waiwai-otaku-panic/
 date: "2016-09-07T00:49:30+09:00"
 tags: [ "competitive", "writeup", "hackerrank", "camypapercon", "graph", "flow", "dag", "maximum-flow" ]

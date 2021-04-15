@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/gcj-2016-round1a-a/
   - /blog/2016/04/16/gcj-2016-round1a-a/
 date: 2016-04-16T15:23:39+09:00
 tags: [ "competitive", "writeup", "gcj", "google-code-jam", "greedy" ]

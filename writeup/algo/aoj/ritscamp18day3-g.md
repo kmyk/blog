@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/aoj/ritscamp18day3-g/
   - /blog/2018/04/02/aoj-ritscamp18day3-g/
 date: "2018-04-02T22:46:53+09:00"
 tags: [ "competitive", "writeup", "aoj", "rupc", "string", "rolling-hash", "greedy", "suffix-array" ]

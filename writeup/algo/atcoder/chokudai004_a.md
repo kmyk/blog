@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/chokudai004_a/
 layout: post
 date: 2019-08-31T23:59:59+09:00
 tags: ["competitive", "writeup"]

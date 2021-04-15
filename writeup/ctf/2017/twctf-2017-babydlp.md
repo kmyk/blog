@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2017/twctf-2017-babydlp/
   - /blog/2017/09/04/twctf-2017-babydlp/
 date: "2017-09-04T16:40:40+09:00"
 tags: [ "ctf", "writeup", "twctf", "crypto", "dlp" ]

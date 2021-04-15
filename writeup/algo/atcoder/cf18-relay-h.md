@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/cf18-relay-h/
 layout: post
 date: 2018-11-21T11:18:00+09:00
 tags: [ "competitive", "writeup", "atcoder", "code-festival", "dp", "fast-mobius-transformation", "inclusion-exclusion-principle" ]

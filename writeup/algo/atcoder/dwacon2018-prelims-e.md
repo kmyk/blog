@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/dwacon2018-prelims-e/
   - /blog/2018/01/14/dwacon2018-prelims-e/
 date: "2018-01-14T03:41:58+09:00"
 tags: [ "competitive", "writeup", "atcoder", "dwacon", "reactive", "tree", "centroid" ]

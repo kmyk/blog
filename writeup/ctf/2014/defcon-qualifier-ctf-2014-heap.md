@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2014/defcon-qualifier-ctf-2014-heap/
   - /blog/2016/03/18/defcon-qualifier-ctf-2014-heap/
 date: 2016-03-18T22:26:56+09:00
 tags: [ "ctf", "writeup", "pwn", "heap", "heap-metadata", "shellcode" ]

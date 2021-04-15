@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/topcoder/srm-676-easy/
   - /blog/2015/12/19/srm-676-easy/
 date: 2015-12-19T02:32:00+09:00
 tags: [ "competitive", "writeup", "srm", "binary-search" ]

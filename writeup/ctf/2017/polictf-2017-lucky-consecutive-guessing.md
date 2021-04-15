@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2017/polictf-2017-lucky-consecutive-guessing/
   - /blog/2017/07/10/polictf-2017-lucky-consecutive-guessing/
 date: "2017-07-10T00:10:11+09:00"
 tags: [ "ctf", "writeup", "polictf", "crypto", "linear-congruential-generator", "prng" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2017/twctf-2017-the-worst/
   - /blog/2017/09/04/twctf-2017-the-worst/
 date: "2017-09-04T13:34:22+09:00"
 tags: [ "ctf", "writeup", "twctf", "crypto", "rsa", "coppersmiths-attack" ]

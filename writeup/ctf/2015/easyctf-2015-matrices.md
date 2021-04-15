@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2015/easyctf-2015-matrices/
   - /blog/2016/09/02/easyctf-2015-matrices/
 date: "2016-09-02T15:30:25+09:00"
 tags: [ "ctf", "writeup", "crypto", "easyctf", "hill-cipher" ]

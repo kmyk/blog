@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2015/backdoor-ctf-2015-rsalot/
   - /blog/2016/08/31/backdoor-ctf-2015-rsalot/
 date: "2016-08-31T18:51:05+09:00"
 tags: [ "ctf", "writeup", "crypto", "backdoor-ctf", "rsa", "oaep" ]

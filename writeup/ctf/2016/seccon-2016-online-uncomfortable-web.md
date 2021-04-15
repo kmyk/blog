@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/seccon-2016-online-uncomfortable-web/
   - /blog/2016/12/11/seccon-2016-online-uncomfortable-web/
 date: "2016-12-11T22:52:05+09:00"
 tags: [ "ctf", "writeup", "seccon", "web", "sql-injection", "null-byte-attack", "htaccess", "htpasswd", "sqlite" ]

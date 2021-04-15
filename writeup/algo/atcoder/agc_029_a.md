@@ -4,6 +4,7 @@ date: 2018-12-16T04:08:01+09:00
 tags: [ "competitive", "writeup", "atcoder", "agc", "inversion-number" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc029/tasks/agc029_a" ]
 redirect_from:
+  - /writeup/algo/atcoder/agc_029_a/
   - /writeup/algo/atcoder/agc-029-a/
 ---
 

@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/topcoder/2018-tco-algo-wildcard-round-medium/
 layout: post
 date: 2018-08-26T03:05:55+09:00
 tags: [ "competitive", "writeup", "topcoder", "srm", "dp", "counting" ]

@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/njpc2017-f/
 layout: post
 date: 2018-08-03T17:37:27+09:00
 tags: [ "competitive", "writeup", "atcoder", "njpc", "dp", "binary-search" ]

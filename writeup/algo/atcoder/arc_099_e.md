@@ -4,6 +4,7 @@ date: 2018-08-18T09:45:33+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "graph", "bipartite-graph", "clique" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc099/tasks/arc099_c" ]
 redirect_from:
+  - /writeup/algo/atcoder/arc_099_e/
   - /writeup/algo/atcoder/arc-099-e/
 ---
 

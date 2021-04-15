@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2015/asis-quals-ctf-2015-simple-algorithm/
   - /blog/2016/08/31/asis-quals-ctf-2015-simple-algorithm/
 date: "2016-08-31T17:31:55+09:00"
 tags: [ "ctf", "writeup", "crypto", "asis-ctf", "greedy" ]

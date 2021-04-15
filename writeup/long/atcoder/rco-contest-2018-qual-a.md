@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/long/atcoder/rco-contest-2018-qual-a/
   - /blog/2018/02/13/rco-contest-2018-qual-a/
 date: "2018-02-13T15:09:43+09:00"
 tags: [ "competitive", "writeup", "atcoder", "rco-contest", "marathon-match", "beam-search" ]

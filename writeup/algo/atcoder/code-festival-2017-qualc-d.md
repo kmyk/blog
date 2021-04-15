@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/code-festival-2017-qualc-d/
   - /blog/2018/01/01/code-festival-2017-qualc-d/
 date: "2018-01-01T12:14:06+09:00"
 tags: [ "competitive", "writeup", "codefestival", "palindrome", "dp", "cumulative-sum" ]

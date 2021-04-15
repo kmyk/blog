@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/code-festival-2015-final-g/
   - /blog/2015/11/26/code-festival-2015-final-g/
 date: 2015-11-26T23:03:14+09:00
 tags: [ "competitive", "writeup", "codefestival", "graph", "dfs", "interval", "dp", "tree", "forest", "rooted-tree" ]

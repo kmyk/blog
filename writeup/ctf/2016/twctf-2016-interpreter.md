@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/twctf-2016-interpreter/
   - /blog/2016/09/05/twctf-2016-interpreter/
 date: "2016-09-05T12:58:30+09:00"
 tags: [ "ctf", "writeup", "pwn", "mmactf", "twctf", "esolang", "befunge" ]

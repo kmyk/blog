@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/kupc-2013-b/
   - /blog/2017/05/12/kupc-2013-b/
 date: "2017-05-12T20:28:47+09:00"
 tags: [ "competitive", "writeup", "atcoder", "kupc" ]

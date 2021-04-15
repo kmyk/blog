@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/hackerrank/worldcodesprint-powerplants-in-flatland/
   - /blog/2016/01/31/hackerrank-worldcodesprint-powerplants-in-flatland/
 date: 2016-01-31T01:42:58+09:00
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint" ]

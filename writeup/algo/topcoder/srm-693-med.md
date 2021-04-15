@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/topcoder/srm-693-med/
   - /blog/2016/06/26/srm-693-med/
 date: 2016-06-26T17:36:17+09:00
 tags: [ "competitive", "writeup", "topcoder", "srm", "graph", "bipartite-graph", "construction" ]

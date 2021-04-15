@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/dwango-2016-qual-c/
   - /blog/2016/01/23/dwango-2016-qual-c/
 date: 2016-01-23T22:12:19+09:00
 tags: [ "competitive", "writeup", "atcoder", "dwango", "dijkstra", "binary-search" ]

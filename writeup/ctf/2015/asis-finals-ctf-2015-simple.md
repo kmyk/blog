@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2015/asis-finals-ctf-2015-simple/
   - /blog/2016/08/27/asis-finals-ctf-2015-simple/
 date: "2016-08-27T01:03:28+09:00"
 tags: [ "ctf", "writeup", "asis-ctf", "crypto", "xor" ]

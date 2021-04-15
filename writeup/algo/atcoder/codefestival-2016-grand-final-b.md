@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/codefestival-2016-grand-final-b/
   - /blog/2018/01/04/codefestival-2016-grand-final-b/
 date: "2018-01-04T16:09:19+09:00"
 tags: [ "competitive", "writeup", "atcodr", "codefestival", "geometry" ]

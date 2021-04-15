@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/hackerrank/may-world-codesprint-compare-the-triplets/
   - /blog/2016/05/23/hackerrank-may-world-codesprint-compare-the-triplets/
 date: 2016-05-23T01:49:33+09:00
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint" ]

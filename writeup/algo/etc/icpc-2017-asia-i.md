@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/icpc-2017-asia-i/
   - /blog/2017/12/19/icpc-2017-asia-i/
 date: "2017-12-19T03:49:25+09:00"
 tags: [ "competitive", "writeup", "icpc", "icpc-asia", "segment-tree", "range-sum-query", "imos", "scheduling" ]

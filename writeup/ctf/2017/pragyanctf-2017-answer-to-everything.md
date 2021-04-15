@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2017/pragyanctf-2017-answer-to-everything/
   - /blog/2017/03/06/pragyanctf-2017-answer-to-everything/
 date: "2017-03-06T00:03:34+09:00"
 tags: [ "ctf", "pragyan-ctf", "guessing", "western-lowland-gorilla" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/arc_090_f/
   - /writeup/algo/atcoder/arc-090-f/
   - /blog/2018/04/09/arc-090-f/
 date: "2018-04-09T23:19:44+09:00"

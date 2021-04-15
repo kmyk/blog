@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/google-ctf-2016-ernst-echidna/
   - /blog/2016/05/02/google-ctf-2016-ernst-echidna/
 date: 2016-05-02T02:33:12+09:00
 tags: [ "ctf", "web", "writeup", "google-ctf" ]

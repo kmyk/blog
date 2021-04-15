@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2015/cyber-security-challenge-2015-guess-the-algorithm/
   - /blog/2016/09/01/cyber-security-challenge-2015-guess-the-algorithm/
 date: "2016-09-01T13:54:42+09:00"
 tags: [ "ctf", "writeup", "crypto", "cyber-security-challenge" ]

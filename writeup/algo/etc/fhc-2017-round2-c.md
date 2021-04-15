@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/fhc-2017-round2-c/
   - /blog/2017/01/22/fhc-2017-round2-c/
 date: "2017-01-22T07:00:10+09:00"
 tags: [ "competitive", "writeup", "facebook-hacker-cup", "segment-tree" ]

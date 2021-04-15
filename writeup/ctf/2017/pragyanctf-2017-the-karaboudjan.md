@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2017/pragyanctf-2017-the-karaboudjan/
   - /blog/2017/03/06/pragyanctf-2017-the-karaboudjan/
 date: "2017-03-06T00:03:19+09:00"
 tags: [ "ctf", "pragyan-ctf" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/dwacon2018-final-b/
   - /blog/2018/02/14/dwacon2018-final-b/
 date: "2018-02-14T02:32:26+09:00"
 tags: [ "competitive", "writeup", "atcoder", "dwacon", "dp", "binary-indexed-tree", "coordinate-compression" ]

@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/qupc-2018-f/
 layout: post
 date: 2018-10-25T14:09:57+09:00
 tags: [ "competitive", "writeup", "atcoder", "qupc", "bit-dp" ]

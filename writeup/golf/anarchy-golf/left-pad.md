@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/golf/anarchy-golf/left-pad/
   - /blog/2016/03/31/anagol-left-pad/
 date: 2016-03-31T19:34:24+09:00
 tags: [ "golf", "writeup", "anarchy-golf", "ruby", "sed", "brainfuck", "c", "perl" ]

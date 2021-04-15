@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/dwango2016-prelims-e/
   - /blog/2018/03/02/dwango2016-prelims-e/
 date: "2018-03-02T17:24:24+09:00"
 tags: [ "competitive", "writeup", "atcoder", "dwacon", "segment-tree", "dp", "inline-dp", "lazy-propagation", "binary-search" ]

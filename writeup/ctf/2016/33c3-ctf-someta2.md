@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/33c3-ctf-someta2/
   - /blog/2016/12/30/33c3-ctf-someta2/
 date: "2016-12-30T13:39:44+09:00"
 tags: [ "ctf", "writeup", "ppc", "rev", "33c3-ctf", "tmp", "template-meta-programming", "haskell", "competitive", "dp", "binary-search" ]

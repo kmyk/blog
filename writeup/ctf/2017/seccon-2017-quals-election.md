@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2017/seccon-2017-quals-election/
   - /blog/2017/12/10/seccon-2017-quals-election/
 date: "2017-12-10T15:19:36+09:00"
 tags: [ "ctf", "writeup", "seccon", "seccon-quals", "pwn", "buffer-overflow", "heap", "bruteforce" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/topcoder/srm-733-medium/
   - /blog/2018/04/15/srm-733-medium/
 date: "2018-04-15T02:35:10+09:00"
 tags: [ "competitive", "writeup", "topcoder", "srm", "graph", "matrix-tree-theorem", "matrix", "spanning-tree" ]

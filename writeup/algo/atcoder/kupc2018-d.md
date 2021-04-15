@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/kupc2018-d/
 layout: post
 date: 2018-10-01T01:23:15+09:00
 tags: [ "competitive", "writeup", "atcoder", "kupc", "reactive", "lsb-decryption-oracle-attack", "crypto" ]

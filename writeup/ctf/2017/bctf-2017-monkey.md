@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2017/bctf-2017-monkey/
   - /blog/2017/04/22/bctf-2017-monkey/
 date: "2017-04-22T01:14:11+09:00"
 tags: [ "ctf", "writeup", "bctf", "pwn", "javascript" ]

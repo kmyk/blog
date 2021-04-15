@@ -4,6 +4,7 @@ date: 2018-08-21T01:27:17+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "string", "rolling-hash" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc060/tasks/arc060_d" ]
 redirect_from:
+  - /writeup/algo/atcoder/arc_060_f/
   - /writeup/algo/atcoder/arc-060-f/
 ---
 

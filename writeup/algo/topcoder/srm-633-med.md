@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/topcoder/srm-633-med/
   - /blog/2016/01/16/srm-633-med/
 date: 2016-01-16T10:15:38+09:00
 tags: [ "competitive", "writeup", "topcoder", "srm", "maximum-flow", "flow", "graph", "warshall-floyd", "edmonds-karp", "graphviz" ]

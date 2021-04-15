@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/code-festival-2016-asapro-2-b/
   - /blog/2016/12/12/code-festival-2016-asapro-2-b/
 date: "2016-12-12T12:41:39+09:00"
 tags: [ "competitive", "writeup", "atcoder", "codefestival" ]

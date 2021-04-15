@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/icpc-2016-domestic-f/
   - /blog/2016/06/27/icpc-2016-domestic-f/
 date: 2016-06-27T13:02:00+09:00
 tags: [ "competitive", "writeup", "icpc" ]

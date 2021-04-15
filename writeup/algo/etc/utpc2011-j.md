@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/utpc2011-j/
   - /blog/2017/12/29/utpc2011-j/
 date: "2017-12-29T07:48:34+09:00"
 tags: [ "competitive", "writeup", "utpc", "aoj", "dp", "treap", "fast-fourier-transformation", "probability" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/code-festival-2015-morning-d/
   - /blog/2015/11/20/code-festival-2015-morning-d/
 date: 2015-11-20T00:06:47+09:00
 tags: [ "competitive", "writeup", "codefestival", "atcoder", "dp" ]

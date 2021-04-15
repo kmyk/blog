@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/ddcc-2016-qual-c/
   - /blog/2016/11/05/ddcc-2016-qual-c/
 date: "2016-11-05T22:26:13+09:00"
 tags: [ "competitive", "writeup", "atcoder", "ddcc" ]

@@ -4,6 +4,7 @@ date: 2018-08-15T03:53:39+09:00
 tags: [ "competitive", "writeup", "csacademy", "dp", "lis", "longest-increasing-subsequence" ]
 "target_url": [ "https://csacademy.com/contest/ceoi-2018-day-1/task/global-warming/" ]
 redirect_from:
+  - /writeup/algo/csacademy/ceoi-2018-day-1-global-warming/
   - /writeup/algo/cs-academy/ceoi-2018-day-1-global-warming/
 ---
 

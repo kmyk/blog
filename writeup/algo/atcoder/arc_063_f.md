@@ -4,6 +4,7 @@ date: 2018-08-22T03:30:20+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "divede-and-conquer", "branch-and-bound", "tow-pointers-technique" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc063/tasks/arc063_d" ]
 redirect_from:
+  - /writeup/algo/atcoder/arc_063_f/
   - /writeup/algo/atcoder/arc-063-f/
 ---
 

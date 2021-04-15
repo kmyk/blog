@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/ctf/2018/midnight-sun-ctf-2018-finals-badchair/
 layout: post
 date: "2018-06-25T11:39+09:00"
 tags: [ "ctf", "writeup", "midnight-sun-ctf", "crypto", "shamirs-secret-sharing", "gaussian-elimination" ]

@@ -4,6 +4,7 @@ date: 2018-12-07T02:18:56+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "optimization", "exhaustive-search" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc095/tasks/arc095_c" ]
 redirect_from:
+  - /writeup/algo/atcoder/arc_095_e/
   - /writeup/algo/atcoder/arc-095-e/
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/dwacon2018-final-c/
   - /blog/2018/02/14/dwacon2018-final-c/
 date: "2018-02-14T02:32:28+09:00"
 tags: [ "competitive", "writeup", "atcoder", "dwacon", "dp", "sierpinski-gasket", "pascals-triangle", "optimization" ]

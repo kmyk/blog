@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/iroha2019_day3_b/
 layout: post
 date: 2019-05-24T23:59:59+09:00
 tags: ["competitive", "writeup"]

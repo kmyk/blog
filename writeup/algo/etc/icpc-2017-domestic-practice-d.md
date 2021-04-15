@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/icpc-2017-domestic-practice-d/
   - /blog/2017/07/02/icpc-2017-domestic-practice-d/
 date: "2017-07-02T22:11:25+09:00"
 tags: [ "competitive", "writeup", "aoj", "icpc-domestic", "binary-search", "greedy" ]

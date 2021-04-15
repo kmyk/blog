@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/discovery-2016-qual-c/
   - /blog/2016/01/30/discovery-2016-qual-c/
 date: 2016-01-30T23:17:28+09:00
 tags: [ "competitive", "writeup", "discovery-channel", "atcoder", "suffix-array" ]

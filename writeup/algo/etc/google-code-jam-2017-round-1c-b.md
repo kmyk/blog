@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/google-code-jam-2017-round-1c-b/
   - /blog/2018/04/05/google-code-jam-2017-round-1c-b/
 date: "2018-04-05T00:17:36+09:00"
 tags: [ "competitive", "writeup", "gcj", "dp" ]

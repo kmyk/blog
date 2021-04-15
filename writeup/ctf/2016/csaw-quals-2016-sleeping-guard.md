@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/csaw-quals-2016-sleeping-guard/
   - /blog/2016/09/19/csaw-quals-2016-sleeping-guard/
 date: "2016-09-19T22:09:45+09:00"
 tags: [ "ctf", "writeup", "csaw-ctf", "crypto" ]

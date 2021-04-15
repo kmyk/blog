@@ -4,6 +4,7 @@ date: 2018-10-05T04:28:06+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "graph", "tree", "construction", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc103/tasks/arc103_d" ]
 redirect_from:
+  - /writeup/algo/atcoder/arc_103_f/
   - /writeup/algo/atcoder/arc-103-f/
 ---
 

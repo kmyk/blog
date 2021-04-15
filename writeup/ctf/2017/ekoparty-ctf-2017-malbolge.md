@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2017/ekoparty-ctf-2017-malbolge/
   - /blog/2017/09/20/ekoparty-ctf-2017-malbolge/
 date: "2017-09-20T20:38:24+09:00"
 tags: [ "ctf", "writeup", "misc", "ekoparty-ctf", "malbolge" ]

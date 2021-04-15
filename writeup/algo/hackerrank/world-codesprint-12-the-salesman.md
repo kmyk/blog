@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/hackerrank/world-codesprint-12-the-salesman/
   - /blog/2017/12/31/hackerrank-world-codesprint-12-the-salesman/
 date: "2017-12-31T16:26:19+09:00"
 tags: [ "competitive", "writeup", "hackerrank", "codesprint" ]

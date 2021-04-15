@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/aoj/ritscamp18day3-c/
   - /blog/2018/04/02/aoj-ritscamp18day3-c/
 date: "2018-04-02T22:46:48+09:00"
 tags: [ "competitive", "writeup", "aoj", "rupc", "graph", "bfs" ]

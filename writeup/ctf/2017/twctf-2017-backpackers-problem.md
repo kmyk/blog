@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2017/twctf-2017-backpackers-problem/
   - /blog/2017/09/12/twctf-2017-backpackers-problem/
 date: "2017-09-12T21:28:33+09:00"
 tags: [ "ctf", "writeup", "ppc", "meet-in-the-middle", "overflow" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/dwacon-2017-finals-d/
   - /blog/2017/01/17/dwacon-2017-finals-d/
 date: "2017-01-17T06:26:30+09:00"
 tags: [ "competitive", "writeup", "dwacon", "atcoder", "segment-tree", "lazy-propagation" ]

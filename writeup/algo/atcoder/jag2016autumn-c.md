@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/jag2016autumn-c/
   - /blog/2016/10/10/jag2016autumn-c/
 date: "2016-10-10T21:51:34+09:00"
 tags: [ "competitive", "writeup", "atcoder", "jag", "icpc", "implementation" ]

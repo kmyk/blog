@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/jag2016-domestic2-c/
   - /blog/2016/06/12/jag2016-domestic2-c/
 date: 2016-06-12T22:30:42+09:00
 tags: [ "competitive", "writeup", "icpc", "jag", "imos-method" ]

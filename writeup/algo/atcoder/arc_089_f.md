@@ -4,6 +4,7 @@ date: 2018-09-28T05:29:48+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "counting", "dp", "longest-common-prefix", "experiment" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc089/tasks/arc089_d" ]
 redirect_from:
+  - /writeup/algo/atcoder/arc_089_f/
   - /writeup/algo/atcoder/arc-089-f/
 ---
 

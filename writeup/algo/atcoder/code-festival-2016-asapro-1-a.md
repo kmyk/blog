@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/code-festival-2016-asapro-1-a/
   - /blog/2016/11/30/code-festival-2016-asapro-1-a/
 date: "2016-11-30T13:42:26+09:00"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "minimum-spanning-tree" ]

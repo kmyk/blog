@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/hackerrank/university-codesprint-2-breaking-best-and-worst-records/
   - /blog/2017/02/22/hackerrank-university-codesprint-2-breaking-best-and-worst-records/
 date: "2017-02-22T23:43:52+09:00"
 tags: [ "competitive", "writeup", "hackerrank", "codesprint", "university-codesprint" ]

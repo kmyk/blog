@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/etc/icpc-2018-domestic-b/
 layout: post
 date: 2018-07-10T13:02:00+09:00
 tags: [ "competitive", "writeup", "icpc" ]

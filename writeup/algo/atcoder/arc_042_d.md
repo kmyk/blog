@@ -4,6 +4,7 @@ date: 2018-09-15T13:19:19+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "meet-in-the-middle", "discrete-log", "baby-step-giant-step" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc042/tasks/arc042_d" ]
 redirect_from:
+  - /writeup/algo/atcoder/arc_042_d/
   - /writeup/algo/atcoder/arc-042-d/
 ---
 

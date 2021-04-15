@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/hackerrank/optimization-oct17-skipping-subpath-sum/
   - /blog/2017/11/10/hackerrank-optimization-oct17-skipping-subpath-sum/
 date: "2017-11-10T22:52:04+09:00"
 tags: [ "competitive", "writeup", "hackerrank", "kadane-algorithm", "lowest-common-ancestor" ]

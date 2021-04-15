@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2015/0ctf-2015-oldcrypto/
   - /blog/2016/08/26/0ctf-2015-oldcrypto/
 date: "2016-08-26T14:59:38+09:00"
 tags: [ "ctf", "writeup", "0ctf", "crypto", "vigenere-cipher", "kasiski-test" ]

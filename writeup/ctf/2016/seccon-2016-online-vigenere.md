@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/seccon-2016-online-vigenere/
   - /blog/2016/12/11/seccon-2016-online-vigenere/
 date: "2016-12-11T22:06:03+09:00"
 tags: [ "ctf", "writeup", "seccon", "crypto", "vigenere-cipher" ]

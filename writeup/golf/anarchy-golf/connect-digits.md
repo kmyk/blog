@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/golf/anarchy-golf/connect-digits/
   - /blog/2016/06/15/anagol-connect-digits/
 date: 2016-06-15T22:20:15+09:00
 tags: [ "golf", "writeup", "anagol", "anarchy-golf", "sed", "brainfuck", "perl", "c" ]

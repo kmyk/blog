@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/abctf-2016/
   - /blog/2016/07/23/abctf-2016/
 date: "2016-07-23T10:33:17+09:00"
 tags: [ "ctf", "writeup", "abctf" ]

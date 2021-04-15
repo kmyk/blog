@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/golf/anarchy-golf/midi-note-number-to-frequency/
   - /blog/2016/05/27/anagol-midi-note-number-to-frequency/
 date: 2016-05-27T13:22:01+09:00
 tags: [ "golf", "writeup", "anagol", "float" ]

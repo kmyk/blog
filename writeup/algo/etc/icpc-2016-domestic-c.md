@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/icpc-2016-domestic-c/
   - /blog/2016/06/27/icpc-2016-domestic-c/
 date: 2016-06-27T13:01:53+09:00
 tags: [ "competitive", "writeup", "icpc", "sieve-of-eratosthenes", "greedy" ]

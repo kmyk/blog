@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/hackerrank/university-codesprint-2-sherlocks-array-merging-algorithm/
   - /blog/2017/02/22/hackerrank-university-codesprint-2-sherlocks-array-merging-algorithm/
 date: "2017-02-22T23:44:21+09:00"
 tags: [ "competitive", "writeup", "hackerrank", "codesprint", "university-codesprint", "dp" ]

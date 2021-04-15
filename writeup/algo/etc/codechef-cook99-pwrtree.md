@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/etc/codechef-cook99-pwrtree/
 layout: post
 date: 2018-10-22T06:39:53+09:00
 tags: [ "competitive", "writeup", "codechef", "cook-off", "ordinal", "construction" ]

@@ -4,6 +4,7 @@ date: 2018-09-26T05:41:54+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "implementation", "topological-sort", "dp" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc083/tasks/arc083_d" ]
 redirect_from:
+  - /writeup/algo/atcoder/arc_083_f/
   - /writeup/algo/atcoder/arc-083-f/
 ---
 

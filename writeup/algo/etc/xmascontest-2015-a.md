@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/xmascontest-2015-a/
   - /blog/2015/12/24/xmascontest-2015-a/
 date: 2015-12-24T22:55:13+09:00
 tags: [ "competitive", "writeup", "atcoder", "matrix" ]

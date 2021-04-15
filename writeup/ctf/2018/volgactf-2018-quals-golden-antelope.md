@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2018/volgactf-2018-quals-golden-antelope/
   - /blog/2018/03/26/volgactf-2018-quals-golden-antelope/
 date: "2018-03-26T00:00:03+09:00"
 tags: [ "ctf", "writeup", "volgactf", "crypto", "pseudo-random-number-generator" ]

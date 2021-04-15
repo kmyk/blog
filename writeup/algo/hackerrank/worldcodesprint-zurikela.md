@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/hackerrank/worldcodesprint-zurikela/
   - /blog/2016/01/31/hackerrank-worldcodesprint-zurikela/
 date: 2016-01-31T01:43:49+09:00
 tags: [ "competitive", "writeup", "hackerrank", "independent-set", "maximum-independent-set", "graph", "world-codesprint" ]

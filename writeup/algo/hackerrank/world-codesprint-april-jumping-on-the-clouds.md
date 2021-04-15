@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/hackerrank/world-codesprint-april-jumping-on-the-clouds/
   - /blog/2016/05/01/hackerrank-world-codesprint-april-jumping-on-the-clouds/
 date: 2016-05-01T12:20:10+09:00
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint" ]

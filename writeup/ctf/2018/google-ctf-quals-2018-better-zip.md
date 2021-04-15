@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/ctf/2018/google-ctf-quals-2018-better-zip/
 layout: post
 date: "2018-06-25T11:39+09:00"
 tags: [ "ctf", "writeup", "google-ctf", "crypto", "lfsr", "bruteforce" ]

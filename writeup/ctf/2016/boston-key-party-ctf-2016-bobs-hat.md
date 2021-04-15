@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/boston-key-party-ctf-2016-bobs-hat/
   - /blog/2017/06/22/boston-key-party-ctf-2016-bobs-hat/
 date: "2017-06-22T06:03:56+09:00"
 tags: [ "ctf", "writeup", "crypto", "boston-key-party-ctf", "rsa", "wieners-attack" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/dctf-finals-2016/
   - /blog/2016/11/14/dctf-finals-2016/
 date: "2016-11-14T01:46:57+09:00"
 tags: [ "ctf", "d-ctf" ]

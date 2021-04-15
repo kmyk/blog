@@ -4,6 +4,7 @@ date: 2018-09-15T04:03:49+09:00
 tags: [ "competitive", "writeup", "atcoder", "agc", "polynomial", "dp", "tree", "ast" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc022/tasks/agc022_f" ]
 redirect_from:
+  - /writeup/algo/atcoder/agc_022_f/
   - /writeup/algo/atcoder/agc-022-f/
 ---
 

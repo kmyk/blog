@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/yahoo-procon2018-final-b/
   - /blog/2018/03/01/yahoo-procon2018-final-b/
 date: "2018-03-01T08:24:46+09:00"
 tags: [ "competitive", "writeup", "atcoder", "yahoo-procon", "construction", "combination" ]

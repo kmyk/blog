@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/seccon-2016-online-cheermsg/
   - /blog/2016/12/16/seccon-2016-online-cheermsg/
 date: "2016-12-16T21:02:05+09:00"
 tags: [ "ctf", "writeup", "pwn", "rop" ]

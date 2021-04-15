@@ -4,6 +4,7 @@ date: 2018-08-29T03:05:09+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp", "counting" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc068/tasks/arc068_d" ]
 redirect_from:
+  - /writeup/algo/atcoder/arc_068_f/
   - /writeup/algo/atcoder/arc-068-f/
 ---
 

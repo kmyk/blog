@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/topcoder/srm-730-medium/
   - /blog/2018/02/21/srm-730-medium/
 date: "2018-02-21T13:53:03+09:00"
 tags: [ "competitive", "writeup", "topcoder", "srm", "graph", "construction" ]

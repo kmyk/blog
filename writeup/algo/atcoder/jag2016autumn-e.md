@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/jag2016autumn-e/
   - /blog/2016/10/10/jag2016autumn-e/
 date: "2016-10-10T21:51:36+09:00"
 tags: [ "competitive", "writeup", "atcoder", "jag", "icpc", "rolling-hash", "tree" ]

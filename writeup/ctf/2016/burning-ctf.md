@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/burning-ctf/
   - /blog/2016/02/07/burning-ctf/
 date: 2016-02-07T13:00:00+09:00
 tags: [ "ctf", "writeup", "burning-ctf" ]

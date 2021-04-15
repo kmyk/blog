@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2017/whitehat-summer-contest-2017-cat-ba-island/
   - /blog/2017/05/28/whitehat-summer-contest-2017-cat-ba-island/
 date: "2017-05-28T23:24:14+09:00"
 tags: [ "ctf", "writeup", "whitehat-wargame", "crypto", "aes", "cbc-mode" ]

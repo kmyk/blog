@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/plaidctf-2016-fixedpoint/
   - /blog/2016/04/18/plaidctf-2016-fixedpoint/
 date: 2016-04-18T06:00:02+09:00
 tags: [ "ctf", "pwn", "writeup", "plaidctf" ]

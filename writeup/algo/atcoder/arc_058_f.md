@@ -4,6 +4,7 @@ date: 2018-08-23T05:01:07+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp", "string", "lie", "optimization" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc058/tasks/arc058_d" ]
 redirect_from:
+  - /writeup/algo/atcoder/arc_058_f/
   - /writeup/algo/atcoder/arc-058-f/
 ---
 

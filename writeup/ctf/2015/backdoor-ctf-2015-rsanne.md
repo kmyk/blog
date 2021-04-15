@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2015/backdoor-ctf-2015-rsanne/
   - /blog/2016/08/31/backdoor-ctf-2015-rsanne/
 date: "2016-08-31T20:23:29+09:00"
 tags: [ "ctf", "writeup", "crypto", "backdoor-ctf", "rsa" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/tdpc-j/
   - /blog/2016/06/10/tdpc-j/
 date: 2016-06-10T21:12:28+09:00
 tags: [ "competitive", "writeup", "atcoder", "typical-dp-contest", "math", "dp", "expected-value", "bit-dp" ]

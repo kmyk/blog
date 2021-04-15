@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/bitflyer-2018-final-a/
 layout: post
 date: 2018-07-02T20:13:38+09:00
 tags: [ "competitive", "writeup", "atcoder", "codeflyer" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/ttpc-2015-l/
   - /blog/2016/09/07/ttpc-2015-l/
 date: "2016-09-07T00:13:38+09:00"
 tags: [ "competitive", "writeup", "ttpc", "atcoder", "graph", "flow", "minimum-cut", "maximam-flow", "ford-fulkerson" ]

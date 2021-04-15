@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2015/hackover-ctf-2015-radorium/
   - /blog/2016/11/17/hackover-ctf-2015-radorium/
 date: "2016-11-17T05:47:32+09:00"
 tags: [ "ctf", "writeup", "hackover-ctf", "crypto", "ssh", "rsa", "gcd" ]

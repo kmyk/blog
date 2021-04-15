@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/hitcon-ctf-2016-quals-regexpert/
   - /blog/2016/10/10/hitcon-ctf-2016-quals-regexpert/
 date: "2016-10-10T23:03:41+09:00"
 tags: [ "ctf", "writeup", "misc", "regex", "ruby", "palindrome", "context-free-grammaer", "context-sensitive-grammar" ]

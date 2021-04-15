@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/njpc2017-h/
 layout: post
 date: 2018-08-06T20:26:00+09:00
 tags: [ "competitive", "writeup", "atcoder", "euler-tour", "segment-tree", "random" ]

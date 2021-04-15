@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/golf/anarchy-golf/1st-2nd-3rd-4th/
   - /blog/2016/03/20/anagol-1st-2nd-3rd-4th/
 date: 2016-03-20T00:38:49+09:00
 tags: [ "writeup", "golf", "writeup", "anarchy-golf", "sed", "brainfuck", "perl" ]

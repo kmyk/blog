@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/topcoder/srm-699-med/
   - /blog/2017/03/24/srm-699-med/
 date: "2017-03-24T13:13:30+09:00"
 tags: [ "competitive", "writeup", "topcoder", "srm", "graph", "bfs" ]

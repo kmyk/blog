@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/code-festival-2014-china-j/
   - /blog/2017/02/22/code-festival-2014-china-j/
 date: "2017-02-22T23:44:51+09:00"
 tags: [ "competitive", "writeup", "atcoder", "codefestival" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2017/google-ctf-2017-quals-introspective-crc/
   - /blog/2017/06/22/google-ctf-2017-quals-introspective-crc/
 date: "2017-06-22T03:01:06+09:00"
 tags: [ "ctf", "writeup", "crypto", "google-ctf", "crc", "linarity" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/dwacon2017-prelims-d/
   - /blog/2016/12/17/dwacon2017-prelims-d/
 date: "2016-12-17T22:04:46+09:00"
 tags: [ "competitive", "writeup", "atcoder", "dwacon" ]

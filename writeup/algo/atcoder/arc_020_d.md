@@ -4,6 +4,7 @@ date: 2018-09-14T02:12:54+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "frontier-dp", "dp", "counting" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc020/tasks/arc020_4" ]
 redirect_from:
+  - /writeup/algo/atcoder/arc_020_d/
   - /writeup/algo/atcoder/arc-020-d/
 ---
 

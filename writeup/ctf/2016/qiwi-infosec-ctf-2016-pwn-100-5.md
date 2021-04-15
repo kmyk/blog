@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/qiwi-infosec-ctf-2016-pwn-100-5/
   - /blog/2016/11/19/qiwi-infosec-ctf-2016-pwn-100-5/
 date: "2016-11-19T01:31:21+09:00"
 tags: [ "ctf", "writeup", "qiwi-ctf", "pwn", "rev", "go" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/code-festival-2015-okinawa-open-a/
   - /blog/2016/07/13/code-festival-2015-okinawa-open-a/
 date: "2016-07-13T02:52:39+09:00"
 tags: [ "competitive", "writeup", "codefestival", "atcoder", "construction" ]

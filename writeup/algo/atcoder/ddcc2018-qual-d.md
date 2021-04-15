@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/ddcc2018-qual-d/
 layout: post
 date: 2018-11-24T02:04:51+09:00
 tags: [ "competitive", "writeup", "atcoder", "ddcc", "chinese-remainder-theorem", "digits-sum" ]

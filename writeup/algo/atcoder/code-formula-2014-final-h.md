@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/code-formula-2014-final-h/
   - /blog/2017/02/22/code-formula-2014-final-h/
 date: "2017-02-22T23:44:38+09:00"
 tags: [ "competitive", "writeup", "atcoder", "codeformula", "lie", "loop-unrolling" ]

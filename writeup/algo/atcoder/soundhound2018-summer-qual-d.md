@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/soundhound2018-summer-qual-d/
 layout: post
 date: 2018-07-07T23:53:09+09:00
 tags: [ "competitive", "writeup", "atcoder", "dijkstra" ]

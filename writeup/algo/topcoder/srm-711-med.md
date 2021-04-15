@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/topcoder/srm-711-med/
   - /blog/2017/03/27/srm-711-med/
 date: "2017-03-27T13:35:20+09:00"
 tags: [ "competitive", "writeup", "topcoder", "srm", "dp", "inclusion-exclusion-principle" ]

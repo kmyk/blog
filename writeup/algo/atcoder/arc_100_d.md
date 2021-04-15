@@ -4,6 +4,7 @@ date: 2018-07-01T23:12+09:00
 tags: [ "atcoder", "arc", "competitive", "writeup", "cumulative-sum", "binary-search" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc100/tasks/arc100_b" ]
 redirect_from:
+  - /writeup/algo/atcoder/arc_100_d/
   - /writeup/algo/atcoder/arc-100-d/
 ---
 

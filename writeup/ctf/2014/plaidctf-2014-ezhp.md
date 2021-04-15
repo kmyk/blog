@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2014/plaidctf-2014-ezhp/
   - /blog/2016/08/17/plaidctf-2014-ezhp/
 date: "2016-08-17T00:43:10+09:00"
 tags: [ "writeup", "ctf", "pwn", "heap", "plaidctf" ]

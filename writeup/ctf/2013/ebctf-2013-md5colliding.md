@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2013/ebctf-2013-md5colliding/
   - /blog/2016/08/28/ebctf-2013-md5colliding/
 date: "2016-08-28T15:29:33+09:00"
 tags: [ "ctf", "writeup", "crypto", "katagaitai", "hash" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/code-festival-2016-relay-f/
   - /blog/2016/11/30/code-festival-2016-relay-f/
 date: "2016-11-30T01:33:26+09:00"
 tags: [ "competitive", "writeup", "atcoder", "codefestival" ]

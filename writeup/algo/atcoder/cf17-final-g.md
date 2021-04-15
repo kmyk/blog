@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/cf17-final-g/
   - /blog/2017/11/26/cf17-final-g/
 date: "2017-11-26T10:02:32+09:00"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "game", "dp", "linerity" ]

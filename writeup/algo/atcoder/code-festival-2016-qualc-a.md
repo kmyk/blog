@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/code-festival-2016-qualc-a/
   - /blog/2016/10/23/code-festival-2016-qualc-a/
 date: "2016-10-23T23:00:10+09:00"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "golf", "sed", "brainfuck" ]

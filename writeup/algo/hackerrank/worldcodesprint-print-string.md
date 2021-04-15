@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/hackerrank/worldcodesprint-print-string/
   - /blog/2016/01/31/hackerrank-worldcodesprint-print-string/
 date: 2016-01-31T01:43:38+09:00
 tags: [ "competitive", "writeup", "hackerrank", "dp", "suffix-array", "world-codesprint" ]

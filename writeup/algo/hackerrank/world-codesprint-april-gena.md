@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/hackerrank/world-codesprint-april-gena/
   - /blog/2016/05/01/hackerrank-world-codesprint-april-gena/
 date: 2016-05-01T12:20:46+09:00
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint" ]

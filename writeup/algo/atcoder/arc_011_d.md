@@ -4,6 +4,7 @@ date: 2018-09-04T04:48:34+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "geometry", "lie" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc011/tasks/arc011_4" ]
 redirect_from:
+  - /writeup/algo/atcoder/arc_011_d/
   - /writeup/algo/atcoder/arc-011-d/
 ---
 

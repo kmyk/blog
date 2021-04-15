@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/agc_011_c/
   - /writeup/algo/atcoder/agc-011-c/
   - /blog/2017/03/13/agc-011-c/
 date: "2017-03-13T00:29:16+09:00"

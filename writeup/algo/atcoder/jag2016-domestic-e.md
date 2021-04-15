@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/jag2016-domestic-e/
   - /blog/2016/04/25/jag2016-domestic-e/
 date: 2016-04-25T21:22:18+09:00
 tags: [ "competitive", "writeup", "atcoder", "jag", "icpc", "geometry" ]

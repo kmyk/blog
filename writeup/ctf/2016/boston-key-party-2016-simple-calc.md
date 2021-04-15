@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/boston-key-party-2016-simple-calc/
   - /blog/2017/03/07/boston-key-party-2016-simple-calc/
 date: "2017-03-07T15:50:34+09:00"
 tags: [ "ctf", "writeup", "pwn", "boston-key-party-ctf", "rop" ]

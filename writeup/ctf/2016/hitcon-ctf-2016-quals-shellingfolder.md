@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/hitcon-ctf-2016-quals-shellingfolder/
   - /blog/2016/10/10/hitcon-ctf-2016-quals-shellingfolder/
 date: "2016-10-10T23:04:07+09:00"
 tags: [ "ctf", "writeup", "pwn", "heap" ]

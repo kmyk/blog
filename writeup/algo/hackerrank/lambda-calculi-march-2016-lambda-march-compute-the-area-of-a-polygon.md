@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/hackerrank/lambda-calculi-march-2016-lambda-march-compute-the-area-of-a-polygon/
   - /blog/2016/03/28/hackerrank-lambda-calculi-march-2016-lambda-march-compute-the-area-of-a-polygon/
 date: 2016-03-28T15:26:46+09:00
 tags: [ "competitive", "writeup", "hackerrank", "lambda-calculi", "haskell" ]

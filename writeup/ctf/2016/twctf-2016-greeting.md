@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/twctf-2016-greeting/
   - /blog/2016/12/09/twctf-2016-greeting/
 date: "2016-12-09T18:17:13+09:00"
 tags: [ "ctf", "writeup", "pwn", "twctf", "format-string-attack", "destructor", "got-overwrite" ]

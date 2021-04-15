@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/topcoder/458d1medium/
 layout: post
 date: 2019-08-10T23:59:59+09:00
 tags: ["competitive", "writeup"]

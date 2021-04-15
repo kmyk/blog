@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/codefestival-2017-quala-c/
   - /blog/2017/10/03/codefestival-2017-quala-c/
 date: "2017-10-03T06:36:51+09:00"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "palindrome" ]

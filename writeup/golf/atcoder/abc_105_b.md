@@ -4,6 +4,7 @@ date: 2018-08-12T00:37:57+09:00
 tags: [ "competitive", "writeup", "atcoder", "abc", "perl", "golf" ]
 "target_url": [ "https://beta.atcoder.jp/contests/abc105/tasks/abc105_b" ]
 redirect_from:
+  - /writeup/golf/atcoder/abc_105_b/
   - /writeup/golf/atcoder/abc-105-b/
 ---
 

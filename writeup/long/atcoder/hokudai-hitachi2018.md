@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/long/atcoder/hokudai-hitachi2018/
 layout: post
 date: 2019-02-28T00:00:00+09:00
 "target_url": [ "https://atcoder.jp/contests/hokudai-hitachi2018", "https://github.com/kmyk/atcoder-marathon-hokudai-hitachi2018" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/codeforces/codeforces-338/
   - /blog/2015/09/22/codeforces-338/
 date: 2015-09-22T00:10:39+09:00
 tags: [ "codeforces", "competitive", "c++", "writeup", "matrix" ]

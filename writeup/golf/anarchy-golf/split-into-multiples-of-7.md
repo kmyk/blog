@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/golf/anarchy-golf/split-into-multiples-of-7/
   - /blog/2016/03/17/anagol-split-into-multiples-of-7/
 date: 2016-03-17T17:53:04+09:00
 tags: [ "writeup", "golf", "anarchy-golf", "ruby", "perl", "brainfuck", "sed", "regex" ]

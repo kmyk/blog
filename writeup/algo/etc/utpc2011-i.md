@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/utpc2011-i/
   - /blog/2017/12/29/utpc2011-i/
 date: "2017-12-29T07:48:16+09:00"
 tags: [ "competitive", "writeup", "utpc", "aoj", "dp" ]

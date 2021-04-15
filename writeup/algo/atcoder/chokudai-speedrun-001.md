@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/chokudai-speedrun-001/
   - /blog/2017/07/28/chokudai-speedrun-001/
 date: "2017-07-28T22:04:36+09:00"
 tags: [ "competitive", "writeup", "atcoder", "chokudai-speedrun" ]

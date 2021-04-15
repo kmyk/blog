@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/mujin-pc-2017-c/
   - /blog/2017/02/26/mujin-pc-2017-c/
 date: "2017-02-26T02:36:44+09:00"
 tags: [ "competitive", "writeup", "mujin-pc", "atcoder", "doubling", "dp" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/hackerrank/may-world-codesprint-xor-quadruples/
   - /blog/2016/05/23/hackerrank-may-world-codesprint-xor-quadruples/
 date: 2016-05-23T01:50:16+09:00
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint", "meet-in-middle" ]

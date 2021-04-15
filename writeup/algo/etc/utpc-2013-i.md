@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/utpc-2013-i/
   - /blog/2016/02/25/utpc-2013-i/
 date: 2016-02-25T06:48:14+09:00
 tags: [ "competitive", "writeup", "codefestival" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/mujin-pc-2016-a/
   - /blog/2016/02/27/mujin-pc-2016-a/
 date: 2016-02-27T23:48:17+09:00
 tags: [ "competitive", "writeup", "atcoder", "mujin-pc", "golf" ]

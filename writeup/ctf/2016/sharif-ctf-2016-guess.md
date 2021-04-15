@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/sharif-ctf-2016-guess/
   - /blog/2016/12/19/sharif-ctf-2016-guess/
 date: "2016-12-19T23:44:15+09:00"
 tags: [ "ctf", "writeup", "pwn", "sharif-ctf", "format-string-attack" ]

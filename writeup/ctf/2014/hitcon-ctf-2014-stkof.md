@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2014/hitcon-ctf-2014-stkof/
   - /blog/2016/09/21/hitcon-ctf-2014-stkof/
 date: "2016-09-21T03:29:10+09:00"
 tags: [ "ctf", "writeup", "pwn", "hitcon", "heap", "fastbins" ]

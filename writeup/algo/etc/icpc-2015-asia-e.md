@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/icpc-2015-asia-e/
   - /blog/2015/12/03/icpc-2015-asia-e/
 date: 2015-12-03T02:33:19+09:00
 tags: [ "competitive", "writeup", "icpc", "aoj", "dp" ]

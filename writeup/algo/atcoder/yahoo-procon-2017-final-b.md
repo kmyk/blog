@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/yahoo-procon-2017-final-b/
   - /blog/2017/03/26/yahoo-procon-2017-final-b/
 date: "2017-03-26T11:26:37+09:00"
 tags: [ "competitive", "writeup", "atcoder", "yahoo-procon", "binary-search", "greedy" ]

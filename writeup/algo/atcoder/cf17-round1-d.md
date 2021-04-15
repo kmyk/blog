@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/cf17-round1-d/
   - /blog/2017/11/27/cf17-round1-d/
 date: "2017-11-27T11:46:20+09:00"
 tags: [ "competitive", "writeup", "atcoder", "codefestival", "asapro", "tree", "construction" ]

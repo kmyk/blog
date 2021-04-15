@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/codegate-ctf-2016-old-school/
   - /blog/2017/01/20/codegate-ctf-2016-old-school/
 date: "2017-01-20T16:12:06+09:00"
 tags: [ "ctf", "writeup", "pwn", "codegate-ctf", "fini_array", "format-string-attack" ]

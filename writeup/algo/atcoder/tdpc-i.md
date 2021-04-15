@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/tdpc-i/
   - /blog/2016/06/10/tdpc-i/
 date: 2016-06-10T20:25:42+09:00
 tags: [ "competitive", "writeup", "atcoder", "typical-dp-contest", "dp" ]

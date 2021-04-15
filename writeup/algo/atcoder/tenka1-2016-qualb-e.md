@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/tenka1-2016-qualb-e/
 layout: post
 date: 2018-07-07T07:40:13+09:00
 tags: [ "competitive", "writeup", "atcoder", "tenka1", "dp", "segment-tree" ]

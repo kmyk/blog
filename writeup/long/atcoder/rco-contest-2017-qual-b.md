@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/long/atcoder/rco-contest-2017-qual-b/
   - /blog/2017/03/05/rco-contest-2017-qual-b/
 date: "2017-03-05T01:50:07+09:00"
 tags: [ "competitive", "writeup", "atcoder", "rco-contest", "half-marathon", "random", "greedy" ]

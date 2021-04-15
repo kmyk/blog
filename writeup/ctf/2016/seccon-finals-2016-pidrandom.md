@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/seccon-finals-2016-pidrandom/
   - /blog/2017/01/30/seccon-finals-2016-pidrandom/
 date: "2017-01-30T03:49:25+09:00"
 tags: [ "ctf", "writeup", "seccon", "rev" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/hackerrank/hourrank-25-a/
   - /blog/2018/01/03/hackerrank-hourrank-25-a/
 date: "2018-01-03T11:18:30+09:00"
 tags: [ "competitive", "writeup", "hackerrank", "hourrank" ]

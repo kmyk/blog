@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/topcoder/srm-691-easy/
   - /blog/2016/05/31/srm-691-easy/
 date: 2016-05-31T01:46:05+09:00
 tags: [ "competitive", "writeup", "srm", "topcoder", "graph" ]

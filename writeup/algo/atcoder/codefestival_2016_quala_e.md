@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/codefestival_2016_quala_e/
 layout: post
 date: 2019-11-20T23:59:59+09:00
 tags: ["competitive", "writeup"]

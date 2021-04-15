@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/jsc2019_final_c/
 layout: post
 date: 2019-10-03T23:59:59+09:00
 tags: ["competitive", "writeup"]

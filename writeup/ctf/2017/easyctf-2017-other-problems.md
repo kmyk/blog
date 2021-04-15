@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2017/easyctf-2017-other-problems/
   - /blog/2017/03/22/easyctf-2017-other-problems/
 date: "2017-03-22T16:31:19+09:00"
 tags: [ "ctf", "writeup", "easyctf" ]

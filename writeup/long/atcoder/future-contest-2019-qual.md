@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/long/atcoder/future-contest-2019-qual/
 layout: post
 date: 2018-11-10T22:40:36+09:00
 edited: 2018-11-19T22:00:00+09:00

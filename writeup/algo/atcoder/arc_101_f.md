@@ -4,6 +4,7 @@ date: 2018-09-27T03:46:08+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp", "inline-dp", "segment-tree" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc101/tasks/arc101_d" ]
 redirect_from:
+  - /writeup/algo/atcoder/arc_101_f/
   - /writeup/algo/atcoder/arc-101-f/
 ---
 

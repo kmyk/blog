@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/golf/anarchy-golf/right-time/
   - /blog/2016/02/25/anagol-right-time/
 date: 2016-02-25T02:57:37+09:00
 tags: [ "writeup", "anarchy-golf", "golf", "time" ]

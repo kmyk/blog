@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/nikkei2019-2-qual/
 layout: post
 date: 2019-11-09T23:59:59+09:00
 tags: ["competitive", "writeup"]

@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/etc/utpc-2012-f/
   - /blog/2017/12/31/utpc-2012-f/
 date: "2017-12-31T17:56:03+09:00"
 tags: [ "competitive", "writeup", "utpc", "atcoder", "rolling-hash", "collision", "birthday-attack" ]

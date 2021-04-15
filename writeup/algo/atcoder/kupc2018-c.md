@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/kupc2018-c/
 layout: post
 date: 2018-10-01T01:14:43+09:00
 tags: [ "competitive", "writeup", "atcoder", "kupc", "puzzle", "construction" ]

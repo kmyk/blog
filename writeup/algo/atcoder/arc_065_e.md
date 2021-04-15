@@ -4,6 +4,7 @@ date: 2018-12-07T02:45:59+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "manhattan-distance", "45-degree-rotation" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc065/tasks/arc065_c" ]
 redirect_from:
+  - /writeup/algo/atcoder/arc_065_e/
   - /writeup/algo/atcoder/arc-065-e/
 ---
 

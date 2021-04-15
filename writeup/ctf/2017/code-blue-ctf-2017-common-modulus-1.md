@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2017/code-blue-ctf-2017-common-modulus-1/
   - /blog/2017/12/08/code-blue-ctf-2017-common-modulus-1/
 date: "2017-12-08T10:07:09+09:00"
 tags: [ "ctf", "writeup", "crypto", "code-blue-ctf", "rsa", "gcd" ]

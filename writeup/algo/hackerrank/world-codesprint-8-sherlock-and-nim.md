@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/hackerrank/world-codesprint-8-sherlock-and-nim/
   - /blog/2016/12/20/world-codesprint-8-sherlock-and-nim/
 date: "2016-12-20T02:33:06+09:00"
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint", "dp", "oeis" ]

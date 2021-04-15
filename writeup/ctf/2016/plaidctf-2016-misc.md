@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/plaidctf-2016-misc/
   - /blog/2016/04/18/plaidctf-2016-misc/
 date: 2016-04-18T06:00:00+09:00
 tags: [ "ctf", "misc", "writeup", "plaidctf" ]

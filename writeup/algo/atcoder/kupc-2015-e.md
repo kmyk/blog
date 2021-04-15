@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/kupc-2015-e/
   - /blog/2015/10/24/kupc-2015-e/
 date: 2015-10-24T23:55:35+09:00
 tags: [ "kupc", "competitive", "writeup", "ternary-search" ]

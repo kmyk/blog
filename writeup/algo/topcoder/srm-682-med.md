@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/topcoder/srm-682-med/
   - /blog/2016/02/23/srm-682-med/
 date: 2016-02-23T12:24:11+09:00
 tags: [ "competitive", "writeup", "topcoder", "srm", "graph", "tree", "cycle" ]

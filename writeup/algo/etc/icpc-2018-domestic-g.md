@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/etc/icpc-2018-domestic-g/
 layout: post
 date: 2018-07-10T13:07:00+09:00
 tags: [ "competitive", "writeup", "icpc", "parsing", "two-pointers-technique" ]

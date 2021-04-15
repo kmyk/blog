@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/yukicoder/contests-225/
 layout: post
 date: 2019-09-27T23:59:59+09:00
 tags: ["competitive", "writeup"]

@@ -4,6 +4,7 @@ date: 2018-08-21T18:02:47+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "tree-dp", "tree", "rerooting" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc097/tasks/arc097_d" ]
 redirect_from:
+  - /writeup/algo/atcoder/arc_097_f/
   - /writeup/algo/atcoder/arc-097-f/
 ---
 

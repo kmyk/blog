@@ -4,6 +4,7 @@ date: 2018-08-31T18:26:50+09:00
 tags: [ "competitive", "writeup", "atcoder", "arc", "dp", "expected-value", "linearity" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc034/tasks/arc034_4" ]
 redirect_from:
+  - /writeup/algo/atcoder/arc_034_d/
   - /writeup/algo/atcoder/arc-034-d/
 ---
 

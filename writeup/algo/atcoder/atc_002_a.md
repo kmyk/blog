@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/atc_002_a/
   - /writeup/algo/atcoder/atc-002-a/
   - /blog/2016/04/11/atc-002-a/
 date: 2016-04-11T06:48:02+09:00

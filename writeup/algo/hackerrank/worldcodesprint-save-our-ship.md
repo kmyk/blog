@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/hackerrank/worldcodesprint-save-our-ship/
   - /blog/2016/01/31/hackerrank-worldcodesprint-save-our-ship/
 date: 2016-01-31T01:42:23+09:00
 tags: [ "competitive", "writeup", "hackerrank", "world-codesprint" ]

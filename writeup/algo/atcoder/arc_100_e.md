@@ -4,6 +4,7 @@ date: 2018-07-01T23:13+09:00
 tags: [ "atcoder", "arc", "competitive", "writeup", "fast-zeta-transformation" ]
 "target_url": [ "https://beta.atcoder.jp/contests/arc100/tasks/arc100_c" ]
 redirect_from:
+  - /writeup/algo/atcoder/arc_100_e/
   - /writeup/algo/atcoder/arc-100-e/
 ---
 

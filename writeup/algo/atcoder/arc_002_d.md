@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/arc_002_d/
   - /writeup/algo/atcoder/arc-002-d/
   - /blog/2015/09/27/arc-002-d/
 date: 2015-09-27T15:06:41+09:00

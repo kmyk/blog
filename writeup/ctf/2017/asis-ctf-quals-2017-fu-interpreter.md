@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2017/asis-ctf-quals-2017-fu-interpreter/
   - /blog/2017/04/10/asis-ctf-quals-2017-fu-interpreter/
 date: "2017-04-10T02:45:32+09:00"
 tags: [ "ctf", "writeup", "asis-ctf", "pwn" ]

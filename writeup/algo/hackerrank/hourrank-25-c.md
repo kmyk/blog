@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/hackerrank/hourrank-25-c/
   - /blog/2018/01/04/hackerrank-hourrank-25-c/
 date: "2018-01-04T13:20:00+09:00"
 tags: [ "competitive", "writeup", "hackerrank", "hourrank", "segment-tree", "lazy-propagation", "starry-sky-tree", "gcd", "sliding-window" ]

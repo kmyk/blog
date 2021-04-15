@@ -1,5 +1,6 @@
 ---
 redirect_from:
+  - /writeup/algo/atcoder/code-festival-2018-final-b/
 layout: post
 date: 2018-11-22T15:48:39+09:00
 tags: [ "competitive", "writeup", "atcoder", "code-festival", "error", "overflow", "log" ]

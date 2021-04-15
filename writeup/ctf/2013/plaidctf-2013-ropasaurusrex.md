@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2013/plaidctf-2013-ropasaurusrex/
   - /blog/2016/02/15/plaidctf-2013-ropasaurusrex/
 date: 2016-02-15T23:20:14+09:00
 tags: [ "ctf", "writeup", "pwn", "plaidctf", "return-oriented-programming", "buffer-overflow", "stack-overflow" ]

@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/topcoder/srm-679-easy/
   - /blog/2016/01/20/srm-679-easy/
 date: 2016-01-20T23:42:10+09:00
 tags: [ "competitive", "writeup", "topcoder", "srm", "tree", "dp", "greedy" ]

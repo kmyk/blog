@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/jag2017summer-day3-b/
   - /blog/2017/10/03/jag2017summer-day3-b/
 date: "2017-10-03T06:58:36+09:00"
 tags: [ "competitive", "writeup", "atcoder", "jag-summer" ]

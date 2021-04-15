@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/ctf/2016/asis-ctf-finals-2016-srpp/
   - /blog/2016/09/12/asis-ctf-finals-2016-srpp/
 date: "2016-09-12T02:27:08+09:00"
 tags: [ "ctf", "writeup", "asis-ctf", "crypto" ]

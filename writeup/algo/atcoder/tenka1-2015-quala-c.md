@@ -1,6 +1,7 @@
 ---
 layout: post
 redirect_from:
+  - /writeup/algo/atcoder/tenka1-2015-quala-c/
   - /blog/2016/01/18/tenka1-2015-quala-c/
 date: 2016-01-18T20:46:37+09:00
 tags: [ "competitive", "writeup", "atcoder", "tenka1-programmer-contest", "graph", "flow", "maximum-flow", "ford-fulkerson", "bipartite-graph", "maximum-matching" ]

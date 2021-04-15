@@ -4,6 +4,7 @@ date: 2018-10-24T16:52:58+09:00
 tags: [ "competitive", "writeup", "atcoder", "agc", "graph", "namori-graph", "binary-search", "parity", "bipartite-graph" ]
 "target_url": [ "https://beta.atcoder.jp/contests/agc004/tasks/agc004_f" ]
 redirect_from:
+  - /writeup/algo/atcoder/agc_004_f/
   - /writeup/algo/atcoder/agc-004-f/
 ---
 

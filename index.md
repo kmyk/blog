@@ -13,7 +13,7 @@ kimiyuki です。最近は一日中 OSS 開発をしています。
     -   [GitHub](https://github.com/kmyk/)
 -   競プロ: まあまあつよい
     -   [AtCoder](https://atcoder.jp/user/kimiyuki) <small>(<span style="color: #ff8000;">◉</span> 橙)</small>
-    -   [Codeforces](https://codeforces.com/profile/kimiyuki) <small>(赤目前だったのに <span style="color: #aa00aa;">◉</span> 紫まで落ちた)</small>
+    -   [Codeforces](https://codeforces.com/profile/kimiyuki) <small>(<span style="color: #ff8c00;">◉</span> 黄)</small>
 -   競プロ (marathon): けっこうつよい
     -   [TopCoder](https://www.topcoder.com/members/kimiyuki/) <small>(<span style="color: #ef3a3a;">◉</span> MM 赤)</small>
     -   [CodinGame](https://www.codingame.com/profile/a1b3c572aa1ec002731ab7f4c7a5f08e3068231)

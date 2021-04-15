@@ -3,16 +3,14 @@ layout: default
 sitemap: false
 noindex: true
 ---
-<ul class="posts">
+<dl class="posts">
   {% for post in site.posts %}
   {% capture post_date_unix %}{{ post.date | date: "%Y%m%d" }}{% endcapture %}
-  {% if post_date_unix > "20150101" %}
+  {% if post_date_unix > "20160101" %}
   {% unless post.noindex %}
-  <li>
-    <span class="post-meta post-date">{{ post.date | date: "%b %-d, %Y" }},</span>
-    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-  </li>
+  <dt><span class="post-meta post-date">{{ post.date | date: "%Y-%m-%d" }}</span></dt>
+  <dd><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></dd>
   {% endunless %}
   {% endif %}
   {% endfor %}
-</ul>
+</dl>

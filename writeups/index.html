@@ -5,12 +5,10 @@ noindex: true
 redirect_from:
   - /writeup/
 ---
-<ul class="posts">
+<dl class="posts">
   {% assign reversed_writeups = site.writeups | reverse %}
   {% for post in reversed_writeups %}
-  <li>
-    <span class="post-meta post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
-    <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-  </li>
+  <dt><span class="post-meta post-date">{{ post.date | date: "%Y-%m-%d" }}</span></dt>
+  <dd><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a></dd>
   {% endfor %}
-</ul>
+</dl>

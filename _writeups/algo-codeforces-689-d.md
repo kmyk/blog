@@ -159,9 +159,7 @@ int main() {
 }
 ```
 
----
-
-# Codeforces Round #361 (Div. 2): D. Friends and Subsequences
+<hr>
 
 -   2017年  3月  8日 水曜日 00:22:25 JST
     -   それ平方分割を指摘されたので修正

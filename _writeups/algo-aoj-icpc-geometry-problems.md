@@ -5,6 +5,7 @@ redirect_from:
   - /blog/2017/06/04/aoj-icpc-geometry-problems/
 date: "2017-06-04T00:21:55+09:00"
 tags: [ "competitive", "aoj", "icpc", "geometry" ]
+noindex: true
 ---
 
 # AOJ-ICPC 幾何問題集 (難易度別)
@@ -14,9 +15,7 @@ ICPCのチームメンバーの引退と私の幾何力の不足により幾何�
 解説blogをぐぐって見つかったものを集めたため、いくらかの漏れはあるだろう。
 あるいは誰かが既にまとめているかも。
 
----
-
-# AOJ-ICPC 幾何問題集 (難易度別)
+<hr>
 
 AOJ-ICPC 難易度表: <http://aoj-icpc.ichyo.jp/>
 

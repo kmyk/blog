@@ -131,9 +131,7 @@ for x in B.LLL():
         print '[*]', repr(hex(m).decode('hex'))
 ```
 
----
-
-# PlaidCTF CTF 2015: Lazy
+<hr>
 
 -   2017年  9月 26日 火曜日 13:39:21 JST
     -   LO法とCLOS法の論文が逆になってたので修正

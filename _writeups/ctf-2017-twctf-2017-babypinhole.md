@@ -110,9 +110,7 @@ flag = 'TWCTF{' + sha1(str(m).encode('ascii')).hexdigest() + '}'
 log.info('flag = %s', flag)
 ```
 
----
-
-# Tokyo Westerns CTF 3rd 2017: BabyPinhole
+<hr>
 
 -   2017年  9月 11日 月曜日 21:50:55 JST
     -   怪しい部分を修正

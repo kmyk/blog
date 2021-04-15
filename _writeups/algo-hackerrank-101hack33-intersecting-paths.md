@@ -5,23 +5,23 @@ redirect_from:
   - /blog/2016/01/21/hackerrank-101hack33-intersecting-paths/
 date: 2016-01-21T22:22:54+09:00
 tags: [ "competitive", "writeup", "hackerrank", "dp", "stack", "doubling" ]
+"target_url": [ "https://www.hackerrank.com/contests/101hack33/challenges/intersecting-paths" ]
 ---
 
 # Hackerrank 101 Hack Jan 2016 Intersecting Paths
 
 editorialを見た。これはまだ解くには厳しい。
 
-## [Intersecting Paths](https://www.hackerrank.com/contests/101hack33/challenges/intersecting-paths)
+## Intersecting Paths
 
 ### 解法
 
 以下が成り立つのでdoublingする。
 $x,y$のpathが交差 $\Leftrightarrow$ $x,y$のpathの終端が同じあるいは$x$のpathが$y$を通る。
 
-"target_url": [ "small" ]
----
+<hr>
 
-# Hackerrank 101 Hack Jan 2016 Intersecting Paths
+<small>
 成り立つことの証明(editorialにある)はちゃんと追えていない。
 </small>
 

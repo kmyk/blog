@@ -15,9 +15,7 @@ tags: [ "competitive", "writeup", "topcoder", "srm" ]
 
 全ての `(` (あるいは`)`) についてそのnestの深さの積。$O(\|s\|)$。
 
----
-
-# TopCoder SRM 714 Div1 Easy: ParenthesisRemoval
+<hr>
 
 未証明。editorialもないしよく分からない。
 

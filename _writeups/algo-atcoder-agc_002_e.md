@@ -18,9 +18,7 @@ tags: [ "competitive", "writeup", "atcoder", "agc", "game" ]
 ad-hocに。$O(N)$。
 図が載ってて分かりやすいので、[editorial](https://beta.atcoder.jp/contests/agc002/data/agc/002/editorial.pdf)を見て。
 
----
-
-# AtCoder Grand Contest 002: E - Candy Piles
+<hr>
 
 解法はeditorialに譲ったので、感じたことを書く。
 

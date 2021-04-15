@@ -74,9 +74,7 @@ int main() {
 }
 ```
 
----
-
-# AtCoder Beginner Contest 089: D - Practical Skill Test
+<hr>
 
 -   2018年  3月  8日 木曜日 13:15:45 JST
     -   入力を緩めた場合の解法を修正

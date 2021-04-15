@@ -166,9 +166,7 @@ if not is_prime_like(n):
 print('Prime')
 ```
 
----
-
-# AtCoder Regular Contest 044 A - 素数判定
+<hr>
 
 -   Tue Sep 22 00:54:24 JST 2015
     -   コードの反省を追記

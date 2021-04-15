@@ -123,8 +123,6 @@ int main() {
 }
 ```
 
----
-
-# AOJ 1260 Organize Your Train
+<hr>
 
 半分全列挙は英語ではmeet in the middleと呼ぶらしい。

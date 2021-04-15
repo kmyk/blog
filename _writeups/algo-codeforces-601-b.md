@@ -96,8 +96,6 @@ int main() {
 ```
 
 
----
-
-# Codeforces Round #333 (Div. 1) B. Lipshitz Sequence
+<hr>
 
 問題のタイトルは綴り間違えているぽい。問題文中は全て正しくLipschitzになってる。

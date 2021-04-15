@@ -798,8 +798,6 @@ $ curl --dump-header - 'http://210.146.64.44/?ie=cp932' -H 'Cookie: PHPSESSID='$
 詰将棋をする。
 
 
----
-
-# 場阿忍愚CTF writeup
+<hr>
 
 [^1]: かなり偶然上手くいっただけっぽい。

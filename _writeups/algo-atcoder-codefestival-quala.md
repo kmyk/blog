@@ -136,9 +136,7 @@ int main() {
 }
 ```
 
----
-
-# CODE FESTIVAL 2015 予選A
+<hr>
 
 -   Wed Sep 30 00:04:56 JST 2015
     -   結果報告

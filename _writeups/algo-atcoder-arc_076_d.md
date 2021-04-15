@@ -91,9 +91,7 @@ int main() {
 }
 ```
 
----
-
-# AtCoder Regular Contest 076: D - Built?
+<hr>
 
 -   2018年  1月  3日 水曜日 11:11:48 JST
     -   距離の名前について勘違いしてたので修正

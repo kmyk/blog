@@ -112,9 +112,7 @@ int main() {
 }
 ```
 
----
-
-# Yukicoder No.376 立方体のN等分 (2)
+<hr>
 
 -   Mon Jul  4 12:03:46 JST 2016
     -   `#include <cmath>`の漏れにより`CE`でrejudge食らった

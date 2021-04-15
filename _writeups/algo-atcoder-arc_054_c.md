@@ -80,9 +80,7 @@ int main() {
 }
 ```
 
----
-
-# AtCoder Regular Contest 054 C - 鯛焼き
+<hr>
 
 [^1]: <http://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/pdf/1799-01.pdf>
 [^2]: <https://en.wikipedia.org/wiki/Permanent>

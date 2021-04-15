@@ -26,9 +26,7 @@ y/,/ /
 brainfuckは%20さんのを元に少し縮めたもの。
 HaikuでなくてTankaなら違ってきただろうが今回は、`,.`の繰り返しはベタ書きが一番短いようだった。
 
----
-
-# AtCoder Beginner Contest 051: A - Haiku
+<hr>
 
 -   Sun Jan  8 16:03:51 JST 2017
     -   angelさんや%20さんがbrainfuckしてたので参加した

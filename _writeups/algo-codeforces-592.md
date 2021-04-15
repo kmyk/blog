@@ -118,8 +118,6 @@ print('{}/{}'.format(p//r, q//r))
 ```
 
 
----
-
-# Codeforces Round #328 (Div. 2)
+<hr>
 
 [editorial](http://codeforces.com/blog/entry/21318)

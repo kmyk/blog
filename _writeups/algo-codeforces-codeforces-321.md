@@ -244,9 +244,7 @@ int main() {
 
 引数の順を決めるのにけっこう困った。`find_by_depth`は`target`と`current`まとめた方が良かったですね。
 
----
-
-# Codeforces Round #190 (Div. 1)
+<hr>
 
 -   Fri Sep  4 21:31:03 JST 2015
     -   重心じゃなかったので訂正

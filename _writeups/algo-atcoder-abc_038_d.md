@@ -85,9 +85,7 @@ int main() {
 }
 ```
 
----
-
-# AtCoder Beginner Contest 038 D - プレゼント
+<hr>
 
 -   Sun May 29 11:17:43 JST 2016
     -   追記

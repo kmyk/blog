@@ -111,8 +111,6 @@ reference: <https://www.gnu.org/software/bc/manual/dc-1.05/html_mono/dc.html>
 
 計算式の具体的な中身は面倒なので読んでないです。
 
----
-
-# Anarchy Golf 948. Convert Radians To Degrees
+,hr>
 
 [^1]: <http://docs.ruby-lang.org/ja/2.3.0/method/Kernel/m/loop.html>

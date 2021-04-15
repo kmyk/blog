@@ -13,7 +13,7 @@ tags: [ "competitive", "writeup", "topcoder", "srm", "convolution" ]
 本番では問題の理解でかなりの時間を消費し、時間がない中fftだと踏んで実装しようとしていた。後から落ち着いて考えたらもっと簡単だった。
 また、使っているpluginのgreedが自動生成したサンプルが壊れていて、これに気付くのにも時間がかかった。
 
-## [BagAndCards]()
+## BagAndCards
 
 ### 問題
 
@@ -29,10 +29,9 @@ convolutionであるがその後その総和を取るため、これを利用し
 $a_k = {\rm count}\_{i,k}$, $b_k = {\rm count}\_{j,k}$として$w\_{i,j,k} = \Sigma_h a_h b\_{k-h}$である。
 この重み付き総和は$\Sigma\_{k \in G} w\_{i,j,k} = \Sigma\_{k \in G} \Sigma_h a_h b\_{k-h} = \Sigma_h \Sigma\_{k \in G} a_h b\_{k-h} = \Sigma_h ( a_h \Sigma\_{k \in G} b\_{k-h} )$と変換できて、$c_h = \Sigma\_{k \in G} b\_{k-h}$と事前に計算しておけば、$\Sigma_h a_h c_h$として計算できる。
 
-"target_url": [ "small" ]
----
+<hr>
 
-# TopCoder SRM 679 div1 Hard: BagAndCards
+<small>
 正答者の解答を眺めた限り、fftだとtleするようだ。
 そもそも、私の持っていたfft(fast fourier transformation)のlibraryを貼ったところ、おそらく誤差のためにサンプルが合わなかった。誤差に関してはntt(number-theoritical transformation)というのを使えばよいのだろうか。
 </small>

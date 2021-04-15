@@ -247,9 +247,7 @@ int main() {
 }
 ```
 
----
-
-# Tokyo Westerns CTF 3rd 2017: Palindromes Pairs - Challenge Phase -
+<hr>
 
 -   2017年  9月 13日 水曜日 16:52:17 JST
     -   記号等を修正

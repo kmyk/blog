@@ -5,13 +5,14 @@ redirect_from:
   - /blog/2016/02/27/yuki-147/
 date: 2016-02-27T11:32:25+09:00
 tags: [ "competitive", "writeup", "yukicoder", "fibonacci", "matrix" ]
+"target_url": [ "http://yukicoder.me/problems/370" ]
 ---
 
 # Yukicoder No.147 試験監督（2）
 
 $10$進数字列で累乗とか書きたくないからpythonに逃げるもTLEしc++に戻され、行列累乗書くの面倒なので$F_n = F\_{\lfloor \frac{n}{2} \rfloor} F\_{\lceil \frac{n}{2} \rceil} + F\_{\lfloor \frac{n}{2} \rfloor - 1} F\_{\lceil \frac{n}{2} \rceil - 1}$[^1]をやってみたら(1ケース5秒なら通ってたんだろうけど)速度が足りなくて、結局まじめに全部書くはめになった。
 
-## [No.147 試験監督（2）](http://yukicoder.me/problems/370)
+## No.147 試験監督（2）
 
 ### 解法
 
@@ -82,8 +83,6 @@ int main() {
 }
 ```
 
----
-
-# Yukicoder No.147 試験監督（2）
+<hr>
 
 [^1]: <https://en.wikipedia.org/wiki/Fibonacci_number>

@@ -18,9 +18,7 @@ tags: [ "competitive", "writeup", "atcoder", "agc", "tree", "complete-matching" 
 完全マッチングの存在と後手必勝が同値。$O(N)$。
 証明はeditorial見て。
 
----
-
-# AtCoder Grand Contest 014: D - Black and White Tree
+<hr>
 
 少なくとも、完全マッチングが存在するなら後手必勝の向きは自明。
 逆方向も示せると言われればできるので、完全マッチングの発想がなかったのが敗因。

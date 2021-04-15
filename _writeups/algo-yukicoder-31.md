@@ -80,9 +80,7 @@ int main() {
 }
 ```
 
----
-
-# Yukicoder No.31 悪のミックスジュース
+<hr>
 
 -   Tue May 31 17:06:35 JST 2016
     -   rejudgeにより落ちたので修正

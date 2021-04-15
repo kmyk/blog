@@ -275,9 +275,7 @@ int main() {
 }
 ```
 
----
-
-# Google Capture The Flag 2018 (Quals): better zip
+<hr>
 
 -   修正: 2018年  6月 27日 水曜日 10:54:52 JST
     -   PNGのmagicが `\x89PNG\r\n\r\n` になってた部分を修正。 実装に影響はない。 `\x89PNG\r\n\x1a\n` が正解

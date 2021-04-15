@@ -164,8 +164,6 @@ int main() {
 }
 ```
 
----
-
-# AtCoder Regular Contest 013
+<hr>
 
 なぜ全問それぞれ2言語で書いてしまったのか。

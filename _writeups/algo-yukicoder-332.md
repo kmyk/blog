@@ -77,9 +77,7 @@ int main() {
 }
 ```
 
----
-
-# Yukicoder No.332 数列をプレゼントに
+<hr>
 
 -   Thu Jan  5 19:20:00 JST 2017
     -   `CE`してたので修正

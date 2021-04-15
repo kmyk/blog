@@ -46,9 +46,7 @@ int main() {
 }
 ```
 
----
-
-# AOJ 1192: 税率変更 / Tax Rate Changed
+<hr>
 
 -   2017年  6月 28日 水曜日 11:36:59 JST
     -   バグ

@@ -239,9 +239,7 @@ Python will now terminate.
 $ 
 ```
 
----
-
-# Tokyo Westerns CTF 3rd 2017: Liar's Trap
+<hr>
 
 -   2017年  9月  5日 火曜日 00:56:18 JST
     -   補間結果の検証に関して追記

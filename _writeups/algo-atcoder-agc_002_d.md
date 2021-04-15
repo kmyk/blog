@@ -14,9 +14,7 @@ tags: [ "competitive", "writeup", "atcoder", "agc", "union-find-tree", "persiste
 -   2016年  9月 27日 火曜日 16:53:00 JST
     -   魔法`#pragma GCC optimize ("-O3")`を使ったら通った: <https://beta.atcoder.jp/contests/agc002/submissions/901367>
 
----
-
-# AtCoder Grand Contest 002 D - Stamp Rally
+<hr>
 
 永続union-findをしたかった。解けず。本番で、ではなくて、未だにTLEから脱せてないので解けてない。しかし定数倍高速化するのに飽きたので終わったことにする。公開されてるテストケースを手元で試した感じだと間に合ってるのだが、gcc/clangのversionの差とかでだめなのだろう。
 

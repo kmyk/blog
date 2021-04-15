@@ -116,9 +116,7 @@ class OrderOfOperations {
 };
 ```
 
----
-
-# TopCoder SRM 667 Div1 Easy: OrderOfOperations
+<hr>
 
 DP苦手なので、DPのやつは診断人さんの放送見ながらantaさんの解答を多いに参考にして書いてた。
 

@@ -89,9 +89,7 @@ int main() {
 }
 ```
 
----
-
-# AtCoder Regular Contest 049 C - ぬりまーす
+<hr>
 
 -   2017年  5月 10日 水曜日 22:02:12 JST
     -   計算量を間違えてると教えてもらったので修正: <https://twitter.com/kosakkun/status/862289354168741888>

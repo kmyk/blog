@@ -106,8 +106,6 @@ print(y)
 
 高速な任意精度/4倍整数演算ライブラリがあれば通せてたかも。
 
----
-
-# AtCoder Beginner Contest 029
+<hr>
 
 brainfuckでABC全完が目標です。

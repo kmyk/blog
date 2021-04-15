@@ -221,9 +221,7 @@ p.sendline('ls')
 p.interactive()
 ```
 
----
-
-# DEF CON Qualifier 2015: wibbly wobbly timey wimey
+<hr>
 
 [^1]: <http://charo-it.hatenablog.jp/entry/2015/05/19/114004>
 [^2]: <http://stackoverflow.com/questions/16302575/distinguish-shared-objects-from-position-independent-executables>
@@ -232,9 +230,7 @@ p.interactive()
 [^5]: 1byte漏らしてるのはすぐに気付けたけど、これがsocketを上書きしてることは気付けませんでした。writeupを見ました。
 [^6]: libcはuploadされてないだけで本番は与えられていたのかな、と思っていたけどそうではなかったらしい。
 
----
-
-# DEF CON Qualifier 2015: wibbly wobbly timey wimey
+<hr>
 
 -   Thu Feb 18 17:42:57 JST 2016
     -   解けてなかったのでそのことを明記

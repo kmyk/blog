@@ -5,11 +5,12 @@ redirect_from:
   - /blog/2016/01/31/hackerrank-worldcodesprint-print-string/
 date: 2016-01-31T01:43:38+09:00
 tags: [ "competitive", "writeup", "hackerrank", "dp", "suffix-array", "world-codesprint" ]
+"target_url": [ "https://www.hackerrank.com/contests/worldcodesprint/challenges/print-string" ]
 ---
 
 # HackerRank World Codesprint: Build a String
 
-## [Build a String](https://www.hackerrank.com/contests/worldcodesprint/challenges/print-string)
+## Build a String
 
 ### 問題
 
@@ -31,10 +32,9 @@ $S$を反転した文字列に関するsuffix arrayを作る。
 このsuffix array上での$i$で終わる文字列の位置を中心に、上下を見ていく。
 $i$より左から始まり、$i$から始まるものと一致しかつ一致する部分が重ならないような部分文字列の長さは、これにより$O(N)$で求まる。
 
-"target_url": [ "small" ]
----
+<hr>
 
-# HackerRank World Codesprint: Build a String
+<small>
 editorialによると${\rm dp}\_i$は単調であるようだ。今回の場合、これを使っても使わなくても計算量は変化しない。
 </small>
 

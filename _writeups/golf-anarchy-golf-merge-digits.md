@@ -331,9 +331,7 @@ I was going to try to write it if he writes this (because I have no confidence t
 
 I'll read later.
 
----
-
-# Anarchy Golf 945. Merge Digits
+<hr>
 
 [^1]: <http://docs.ruby-lang.org/ja/2.3.0/doc/spec=2frubycmd.html>
 [^2]: <http://docs.ruby-lang.org/ja/2.3.0/method/String/i/slice=21.html>

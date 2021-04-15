@@ -114,9 +114,7 @@ def solve(n):
 print(solve(int(input())))
 ```
 
----
-
-# Yukicoder No.308 素数は通れません
+<hr>
 
 -   Mon Feb  1 00:45:47 JST 2016
     -   自分で再実装していた累乗を組込みの`pow`で置換

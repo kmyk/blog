@@ -46,8 +46,6 @@ for s in reversed(a):
 print(i//2 + 1)
 ```
 
----
-
-# AtCoder Regular Contest 006
+<hr>
 
 Cは既に解いていたので今回はなし。

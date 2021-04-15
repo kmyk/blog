@@ -60,8 +60,6 @@ int main() {
 }
 ```
 
----
-
-# AOJ 1262 Atomic Car Race
+<hr>
 
 icpcに向けての練習会において解いた。

@@ -69,8 +69,6 @@ int main() {
 
 先輩はrange minimum query使ってた。editorialにはrandom-access doubly linked list上でsimulationしても解けるよってあった。
 
----
-
-# Codeforces Round #189 (Div. 1)
+<hr>
 
 [^1]: 部内の練習会

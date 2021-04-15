@@ -22,6 +22,11 @@ permalink: /:categories/:year/:month/:day/:title/
 future: true
 timezone: Asia/Tokyo
 
+collections:
+  writeups:
+    output: true
+    sort_by: title
+
 plugins:
   # default on GitHub pages
   - jekyll-coffeescript

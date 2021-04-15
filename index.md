@@ -25,6 +25,11 @@ kimiyuki です。最近は一日中 OSS 開発をしています。
     -   [Twitter](https://twitter.com/kimiyuki_u)
 -   ほしい物リスト
     -   [Amazon Wish List](https://www.amazon.co.jp/hz/wishlist/ls/1C2SP7ASBHO7V)
+-   いま読んでいる本:
+    -   [渡邊 二郎ら, ハイデガー「存在と時間」入門, 講談社学術文庫](https://www.amazon.co.jp/dp/4062920808): ソフトウェアエンジニアとしては道具について興味があり、現存在としては実存に興味がある
+    -   [S. Shapiro, 数学を哲学する](https://www.amazon.co.jp/dp/4480860746): たぶんこれが本業だと思う
+    -   [佐藤 岳詩, メタ倫理学入門: 道徳のそもそもを考える](https://www.amazon.co.jp/dp/4326102624): メタ倫理学は議論の構造が数学の哲学と似ているように感じられて面白い
+    -   [K. Kunen, Set Theory](https://www.amazon.co.jp/dp/1848900503): Enumerative Combinatorics 勢を見ていたら Infinitary Combinatorics をやりたくなってしまった
 
 ## Contents of This Site
 

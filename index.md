@@ -64,7 +64,7 @@ I'm kimiyuki. These days, I'm working on OSS development all day long.
 -   blog posts
     -   [/blog](./blog)
 -   writeups for problems of competitive programming or CTF
-    -   [/writeup](./writeup)
+    -   [/writeups](./writeups)
     -   search:
         <div style="max-width: 20em">
             <form action="https://google.com/search" method="get">

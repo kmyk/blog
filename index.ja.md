@@ -65,7 +65,7 @@ kimiyuki です。最近は一日中 OSS 開発をしています。
 -   ブログ記事
     -   [/blog](./blog)
 -   競プロや CTF の問題解説
-    -   [/writeup](./writeup)
+    -   [/writeups](./writeups)
     -   検索:
         <div style="max-width: 20em">
             <form action="https://google.com/search" method="get">

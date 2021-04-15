@@ -39,7 +39,7 @@ kimiyuki です。最近は一日中 OSS 開発をしています。
 
 -   開発中:
     -   [Jikka](https://github.com/kmyk/Jikka): 競プロの問題を自動で解くソルバ。哲学パートはブログ記事 ([競技プログラミングの問題を自動で解きたい - うさぎ小屋](https://kimiyuki.net/blog/2020/12/09/automated-solvers-of-competitive-programming/)) に書かれている
-    -   [Kyopro Encyclopedia of Algorithms (ア辞典)](https://dic.kimiyuki.net): 競プロの知見を収集し保全するための辞典。知の高速道路の保全活動である
+    -   [Kyopro Encyclopedia of Algorithms (ア辞典)](https://dic.kimiyuki.net): 競プロの知見を収集し保全するための辞典。知の高速道路の老朽化対策である
 -   メンテ中:
     -   [online-judge-tools/oj](https://github.com/online-judge-tools/oj): 競プロの問題を解くときの単純作業を自動化するツール。主にサンプルケースでのテストを自動化してくれる
     -   [online-judge-tools/template-generator](https://github.com/online-judge-tools/template-generator): 競プロの問題を解くときのテンプレートを生成するツール。解法コードの入出力パートや、デバッグ用のランダムケース生成スクリプトの雛形などを生成する

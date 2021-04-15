@@ -50,23 +50,24 @@ kimiyuki です。最近は一日中 OSS 開発をしています。
 ## My Products
 
 -   開発中:
-    -   すごいソルバ
+    -   [Jikka](https://github.com/kmyk/Jikka): 競プロの問題を自動で解くソルバ。哲学パートはブログ記事 ([競技プログラミングの問題を自動で解きたい - うさぎ小屋](https://kimiyuki.net/blog/2020/12/09/automated-solvers-of-competitive-programming/)) に書かれている
+    -   [Kyopro Encyclopedia of Algorithms (ア辞典)](https://dic.kimiyuki.net): 競プロの知見を収集し保全するための辞典。知の高速道路の保全活動である
 -   メンテ中:
     -   [online-judge-tools/oj](https://github.com/online-judge-tools/oj): 競プロの問題を解くときの単純作業を自動化するツール。主にサンプルケースでのテストを自動化してくれる
-    -   [online-judge-tools/template-generator](https://github.com/online-judge-tools/template-generator): 競プロの問題を解くときのテンプレートを生成するツール。解法コードの入出力パートや、デバッグ用のランダムケース生成スクリプトの雛形などを生成する。
-    -   [online-judge-tools/verification-helper](https://github.com/online-judge-tools/verification-helper): 競プロライブラリの verify 自動化とドキュメント生成をするツール
+    -   [online-judge-tools/template-generator](https://github.com/online-judge-tools/template-generator): 競プロの問題を解くときのテンプレートを生成するツール。解法コードの入出力パートや、デバッグ用のランダムケース生成スクリプトの雛形などを生成する
+    -   [online-judge-tools/verification-helper](https://github.com/online-judge-tools/verification-helper): 競プロライブラリの verify の自動化とドキュメントの生成をするフレームワーク
     -   [online-judge-tools/api-client](https://github.com/online-judge-tools/api-client): 競プロのジャッジサーバとの通信をやってくれるライブラリ
-    -   [@atgolfer1](https://twitter.com/atgolfer1): AtCoder でのコードゴルフの最新情報を通知する bot 
+    -   [@atgolfer1](https://twitter.com/atgolfer1): AtCoder でのコードゴルフの最新情報を通知する bot
     -   [atcoder-dos2unix-userscript](https://github.com/kmyk/atcoder-dos2unix-userscript): AtCoder でコードゴルフをするときに改行文字を `\r\n` でなく `\n` にして 1 byte を削るための user script
     -   [competitive-programming-library](https://kmyk.github.io/competitive-programming-library/): 自分用の競プロライブラリ
-    -   [google-home-say](https://github.com/kmyk/google-home-say): Google Home に好きな言葉を喋らせるためのスクリプト
 -   コントリビュータとして参加:
-    -   [Library Checker](https://judge.yosupo.jp/): 競プロライブラリの verify のためのオンラインジャッジ (問題追加など)
+    -   [Library Checker](https://judge.yosupo.jp/): 競プロライブラリの verify のためのオンラインジャッジ (作問環境の整備と問題追加に貢献)
     -   [AtCoder Problems](https://kenkoooo.com/atcoder/?#/table/kimiyuki/kenkoooo): AtCoder の問題の AC 状況を表示してくれるサイト (主に高速化に貢献)
 -   あまりメンテしてない:
     -   [longcontest-visualizer-framework](https://github.com/kmyk/longcontest-visualizer-framework): marathon コンテストの web ビジュアライザを簡単に作るためのフレームワーク
     -   [mersenne-twister-predictor](https://github.com/kmyk/mersenne-twister-predictor): Python の標準ライブラリ `random` の出力を予測してくれるライブラリ
     -   [libproofofwork](https://github.com/kmyk/libproofofwork): 所望の hash 値を持つ文字列を並列で高速に計算してくれる CTF 用ライブラリ
+    -   [google-home-say](https://github.com/kmyk/google-home-say): Google Home に好きな言葉を喋らせるためのスクリプト
 -   サポート終了:
     -   [topcoder-marathon-match-rating-predictor](https://github.com/kmyk/topcoder-marathon-match-rating-predictor): Topcoder Marathon Match のレート変化を予測する user script
     -   他 たくさん

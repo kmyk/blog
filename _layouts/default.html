@@ -3,11 +3,36 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ page.title | escape }} - {{ site.title }}</title>
+    {% if page.noindex %}<meta name="robots" content="noindex,noarchive">{% endif %}
+    {% seo title=false %}
+
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | absolute_url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | absolute_url }}">
+
+    {% if true or page.content contains "$" or page.content contains "\\(" or page.content contains "\\[" or page.content contains "math/tex" %}
+    <script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] },
+        TeX: { extensions: ["color.js"] },
+        "HTML-CSS": { linebreaks: { automatic: true } },
+      });
+    </script>
+    {% endif %}
+  </head>
 
   <body>
-
-    {% include header.html %}
+    <header class="site-header">
+      <div class="wrapper">
+        <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+      </div>
+    </header>
 
     <div class="page-content">
       <div class="wrapper">
@@ -15,8 +40,18 @@
       </div>
     </div>
 
-    {% include footer.html %}
-
+    <footer class="site-footer">
+      <div class="wrapper">
+          <small class="post-meta">&copy; 2014- {{ site.author }}</small>
+          <small style="float: right">
+            <a href="{{ site.github.repository_url }}/commits/{{ site.github.source.branch }}/{{ page.path }}">View history</a>
+            /
+            <a href="{{ site.github.issues_url }}">Report issues</a>
+            /
+            <a href="{% github_edit_link %}">Edit this page</a>
+          </small>
+      </div>
+    </footer>
   </body>
 
 </html>

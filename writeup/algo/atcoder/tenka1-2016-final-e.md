@@ -1,4 +1,5 @@
 ---
+redirect_from:
 layout: post
 date: 2018-07-12T22:25:22+09:00
 tags: [ "competitive", "writeup", "atcoder", "tenka1", "convex-hull-trick" ]

@@ -1,4 +1,5 @@
 ---
+redirect_from:
 layout: post
 date: 2018-10-26T06:02:34+09:00
 tags: [ "competitive", "writeup", "atcoder", "soundhound", "dp", "max", "linearity" ]

@@ -1,4 +1,5 @@
 ---
+redirect_from:
 layout: post
 date: 2018-08-02T10:04:47+09:00
 tags: [ "competitive", "writeup", "atcoder", "tkppc" ]

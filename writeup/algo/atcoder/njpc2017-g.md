@@ -1,4 +1,5 @@
 ---
+redirect_from:
 layout: post
 date: 2018-08-04T08:59:50+09:00
 tags: [ "competitive", "writeup", "atcoder", "njpc", "suffix-array", "string", "stack" ]

@@ -1,4 +1,5 @@
 ---
+redirect_from:
 layout: post
 date: 2018-10-25T15:59:13+09:00
 tags: [ "competitive", "writeup", "gcj", "kickstart", "maze", "graph", "bit-dp" ]

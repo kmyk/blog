@@ -1,4 +1,5 @@
 ---
+redirect_from:
 layout: post
 date: 2018-08-06T16:50:42+09:00
 tags: [ "competitive", "writeup", "atcoder", "dp", "graph", "combinatorics" ]

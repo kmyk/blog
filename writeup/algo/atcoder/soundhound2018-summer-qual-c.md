@@ -1,4 +1,5 @@
 ---
+redirect_from:
 layout: post
 date: 2018-07-07T23:53:03+09:00
 tags: [ "competitive", "writeup", "atcoder", "golf", "awk" ]

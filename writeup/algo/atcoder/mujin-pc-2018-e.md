@@ -1,4 +1,5 @@
 ---
+redirect_from:
 layout: post
 date: 2018-08-05T01:03:33+09:00
 tags: [ "competitive", "writeup", "atcoder", "mujin-pc", "dijkstra" ]

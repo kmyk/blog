@@ -1,4 +1,5 @@
 ---
+redirect_from:
 layout: post
 date: 2018-07-09T04:05:53+09:00
 tags: [ "competitive", "writeup", "atcoder", "tenka1", "graph", "infinite-graph" ]

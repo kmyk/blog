@@ -1,4 +1,5 @@
 ---
+redirect_from:
 layout: post
 date: 2018-12-15T04:00:00+09:00
 tags: [ "competitive", "writeup", "topcoder", "srm", "matrix" ]

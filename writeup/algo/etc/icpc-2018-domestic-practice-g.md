@@ -1,4 +1,5 @@
 ---
+redirect_from:
 layout: post
 date: 2018-07-01T23:59:05+09:00
 tags: [ "competitive", "writeup", "icpc-domestic", "dp", "matrix", "binary-search", "dp", "exponentiation-by-squaring", "affine-map" ]

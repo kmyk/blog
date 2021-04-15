@@ -1,4 +1,5 @@
 ---
+redirect_from:
 layout: post
 date: 2018-11-21T11:15:35+09:00
 tags: [ "competitive", "writeup", "atcoder", "code-festival", "dp", "expected-value", "imos-method" ]

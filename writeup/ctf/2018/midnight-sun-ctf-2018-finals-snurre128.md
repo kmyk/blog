@@ -1,4 +1,5 @@
 ---
+redirect_from:
 layout: post
 date: "2018-06-28T22:36+09:00"
 tags: [ "ctf", "writeup", "midnight-sun-ctf", "crypto", "lfsr", "linearity" ]

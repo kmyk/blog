@@ -1,4 +1,5 @@
 ---
+redirect_from:
 layout: post
 date: 2018-10-22T06:39:53+09:00
 tags: [ "competitive", "writeup", "codechef", "cook-off", "ordinal", "construction" ]

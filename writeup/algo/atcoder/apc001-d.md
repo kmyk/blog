@@ -1,4 +1,5 @@
 ---
+redirect_from:
 layout: post
 date: 2018-07-10T07:47:01+09:00
 tags: [ "competitive", "writeup", "atcoder", "apc", "graph", "connected-components", "greedy" ]

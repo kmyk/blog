@@ -1,4 +1,5 @@
 ---
+redirect_from:
 layout: post
 date: 2018-07-02T20:13:43+09:00
 tags: [ "competitive", "writeup", "atcoder", "codeflyer", "parsing", "segment-tree" ]

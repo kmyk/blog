@@ -1,4 +1,5 @@
 ---
+redirect_from:
 layout: post
 date: 2018-07-10T13:04:00+09:00
 tags: [ "competitive", "writeup", "icpc", "exhaustive-search" ]

@@ -1,4 +1,5 @@
 ---
+redirect_from:
 layout: post
 date: 2018-07-07T07:40:13+09:00
 tags: [ "competitive", "writeup", "atcoder", "tenka1", "dp", "segment-tree" ]

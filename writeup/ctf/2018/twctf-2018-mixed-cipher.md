@@ -1,4 +1,5 @@
 ---
+redirect_from:
 layout: post
 date: 2018-09-04T06:11:12+09:00
 tags: [ "ctf", "writeup", "twctf", "crypto", "aes", "rsa", "mersenne-twister", "prng-prediction", "lsb-leak-attack" ]

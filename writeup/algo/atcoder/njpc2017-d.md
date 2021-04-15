@@ -1,4 +1,5 @@
 ---
+redirect_from:
 layout: post
 date: 2018-07-13T13:37:46+09:00
 tags: [ "competitive", "writeup", "atcoder", "njpc", "inversion-number" ]

@@ -1,4 +1,5 @@
 ---
+redirect_from:
 layout: post
 date: 2018-07-11T16:26:41+09:00
 tags: [ "competitive", "writeup", "icpc", "dp", "tree", "knapsack-problem", "sliding-window" ]

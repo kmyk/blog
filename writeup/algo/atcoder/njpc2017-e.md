@@ -1,4 +1,5 @@
 ---
+redirect_from:
 layout: post
 date: 2018-08-02T08:01:03+09:00
 tags: [ "competitive", "writeup", "atcoder", "njpc", "rerooting", "tree-dp", "graph" ]

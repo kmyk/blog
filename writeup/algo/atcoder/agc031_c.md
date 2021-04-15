@@ -1,4 +1,5 @@
 ---
+redirect_from:
 layout: post
 date: 2019-04-09T23:59:59+09:00
 tags: ["competitive", "writeup"]

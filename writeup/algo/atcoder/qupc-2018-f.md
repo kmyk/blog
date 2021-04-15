@@ -1,4 +1,5 @@
 ---
+redirect_from:
 layout: post
 date: 2018-10-25T14:09:57+09:00
 tags: [ "competitive", "writeup", "atcoder", "qupc", "bit-dp" ]

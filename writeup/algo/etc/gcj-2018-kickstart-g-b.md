@@ -1,4 +1,5 @@
 ---
+redirect_from:
 layout: post
 date: 2018-10-25T15:47:36+09:00
 tags: [ "competitive", "writeup", "gcj", "kickstart", "imos", "segment-tree" ]

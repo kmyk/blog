@@ -1,4 +1,5 @@
 ---
+redirect_from:
 layout: post
 date: 2018-11-22T20:39:22+09:00
 tags: [ "competitive", "writeup", "atcoder", "code-festival", "convex-hull-trick" ]

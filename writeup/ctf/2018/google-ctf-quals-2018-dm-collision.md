@@ -1,4 +1,5 @@
 ---
+redirect_from:
 layout: post
 date: "2018-06-27T12:06+09:00"
 tags: [ "ctf", "writeup", "google-ctf", "crypto", "dea", "fixed-point", "weak-key", "davies-meyer", "one-way-compression-function" ]

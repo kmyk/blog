@@ -1,4 +1,5 @@
 ---
+redirect_from:
 layout: post
 date: 2018-11-22T23:26:48+09:00
 tags: [ "competitive", "writeup", "atcoder", "code-festival", "binary-search", "greedy" ]

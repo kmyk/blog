@@ -1,4 +1,5 @@
 ---
+redirect_from:
 layout: post
 date: 2018-11-22T22:08:44+09:00
 tags: [ "competitive", "writeup", "atcoder", "code-festival", "dp" ]

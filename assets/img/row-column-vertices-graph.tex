@@ -1,0 +1,47 @@
+% how to compile: $ pdflatex row-column-vertices-graph.tex && pdf2svg row-column-vertices-graph.pdf row-column-vertices-graph.svg
+\documentclass[tikz]{standalone}
+
+\begin{document}
+\begin{tikzpicture}[
+    x=2.4cm,
+    y=-2.4cm,
+    font=\large,
+]
+    % \path[fill, color=white] (0, 0) rectangle (5, 4);
+    \path[draw, thick] (0, 0) -- (5, 0);
+    \path[draw] (0, 1) -- (5, 1);
+    \path[draw] (0, 2) -- (5, 2);
+    \path[draw] (0, 3) -- (5, 3);
+    \path[draw, thick] (0, 4) -- (5, 4);
+    \path[draw, thick] (0, 0) -- (0, 4);
+    \path[draw] (1, 0) -- (1, 4);
+    \path[draw] (2, 0) -- (2, 4);
+    \path[draw] (3, 0) -- (3, 4);
+    \path[draw] (4, 0) -- (4, 4);
+    \path[draw, thick] (5, 0) -- (5, 4);
+
+    \node[draw, circle, fill=white, minimum size=1.4cm] (x0) at (0.5, -0.5) {$x_0$};
+    \node[draw, circle, fill=white, minimum size=1.4cm] (x1) at (1.5, -0.5) {$x_1$};
+    \node[draw, circle, fill=white, minimum size=1.4cm] (x2) at (2.5, -0.5) {$x_2$};
+    \node[draw, circle, fill=white, minimum size=1.4cm] (x3) at (3.5, -0.5) {$x_3$};
+    \node[draw, circle, fill=white, minimum size=1.4cm] (x4) at (4.5, -0.5) {$x_4$};
+
+    \node[draw, circle, fill=white, minimum size=1.4cm] (y0) at (-0.5, 0.5) {$y_0$};
+    \node[draw, circle, fill=white, minimum size=1.4cm] (y1) at (-0.5, 1.5) {$y_1$};
+    \node[draw, circle, fill=white, minimum size=1.4cm] (y2) at (-0.5, 2.5) {$y_2$};
+    \node[draw, circle, fill=white, minimum size=1.4cm] (y3) at (-0.5, 3.5) {$y_3$};
+
+    \node (c00) at (0.5, 0.5) {$(0, 0)$};
+    \node (c21) at (2.5, 1.5) {$(2, 1)$};
+    \node (c41) at (4.5, 1.5) {$(4, 1)$};
+    \node (c32) at (3.5, 2.5) {$(3, 2)$};
+    \node (c13) at (1.5, 3.5) {$(1, 3)$};
+
+    %                           x  y                        x    y
+    \path[draw, thick] (y0) -- (0, 0.5) to [out=0, in=-90] (0.5, 0) -- (x0);
+    \path[draw, thick] (y1) -- (2, 1.5) to [out=0, in=-90] (2.5, 1) -- (x2);
+    \path[draw, thick] (y1) -- (4, 1.5) to [out=0, in=-90] (4.5, 1) -- (x4);
+    \path[draw, thick] (y2) -- (3, 2.5) to [out=0, in=-90] (3.5, 2) -- (x3);
+    \path[draw, thick] (y3) -- (1, 3.5) to [out=0, in=-90] (1.5, 3) -- (x1);
+\end{tikzpicture}
+\end{document}

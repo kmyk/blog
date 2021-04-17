@@ -1,0 +1,60 @@
+% how to compile: $ pdflatex row-column-vertices-matrix.tex && pdf2svg row-column-vertices-matrix.pdf row-column-vertices-matrix.svg
+\documentclass[tikz]{standalone}
+
+\begin{document}
+\begin{tikzpicture}[
+    x=1cm,
+    y=-1cm,
+    font=\large,
+]
+    \node (y0) at (-1.8, 0) {\small $y_0$};
+    \node (y1) at (-1.8, 1) {\small $y_1$};
+    \node (y2) at (-1.8, 2) {\small $y_2$};
+    \node (y3) at (-1.8, 3) {\small $y_3$};
+    \node (x0) at (-1.8, 4) {\small $x_0$};
+    \node (x1) at (-1.8, 5) {\small $x_1$};
+    \node (x2) at (-1.8, 6) {\small $x_2$};
+    \node (x3) at (-1.8, 7) {\small $x_3$};
+    \node (x4) at (-1.8, 8) {\small $x_4$};
+
+    \node (y0) at (0, -1) {\small $y_0$};
+    \node (y1) at (1, -1) {\small $y_1$};
+    \node (y2) at (2, -1) {\small $y_2$};
+    \node (y3) at (3, -1) {\small $y_3$};
+    \node (x0) at (4, -1) {\small $x_0$};
+    \node (x1) at (5, -1) {\small $x_1$};
+    \node (x2) at (6, -1) {\small $x_2$};
+    \node (x3) at (7, -1) {\small $x_3$};
+    \node (x4) at (8, -1) {\small $x_4$};
+
+    \node at (4, 0) {$1$};
+    \node at (5, 0) {$0$};
+    \node at (6, 0) {$0$};
+    \node at (7, 0) {$0$};
+    \node at (8, 0) {$0$};
+    \node at (4, 1) {$0$};
+    \node at (5, 1) {$0$};
+    \node at (6, 1) {$1$};
+    \node at (7, 1) {$0$};
+    \node at (8, 1) {$1$};
+    \node at (4, 2) {$0$};
+    \node at (5, 2) {$0$};
+    \node at (6, 2) {$0$};
+    \node at (7, 2) {$1$};
+    \node at (8, 2) {$0$};
+    \node at (4, 3) {$0$};
+    \node at (5, 3) {$1$};
+    \node at (6, 3) {$0$};
+    \node at (7, 3) {$0$};
+    \node at (8, 3) {$0$};
+
+    \node at (1.5, 1.5) {\Huge $0$};
+    \node at (1.5, 6) {\Huge $B^\top$};
+    \node at (6, 6) {\Huge $0$};
+    \node at (-4, 4) {\Huge $A =$};
+
+    \path[draw, very thick] (-0.5, -0.5) to[out=-105, in=90] (-1, 4) to[out=-90, in=105] (-0.5, 8.5);
+    \path[draw, very thick] (8.5, -0.5) to[out=-75, in=90] (9, 4) to [out=-90, in=75] (8.5, 8.5);
+
+\end{tikzpicture}
+\end{document}

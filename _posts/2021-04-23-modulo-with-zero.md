@@ -61,7 +61,7 @@ $m$ を素数とし $a = b m^c$ (ただし $m \nmid b$) に対する組 $(b, c)$
 つまり今回のテクで用いられる組 $(b, c)$ は単項式 $b x^c \in \mathbb{Z}/m\mathbb{Z}(x)$ (ただし $b \not\equiv 0\pmod m$) です。
 $0$ でない単項式 $b x^c$ から $a ~\bmod~ m$ の値を取り出すときは $b m^c ~\bmod~ m$ の値を計算する、つまり $c = 0$ ならば $a ~\bmod~ m = b$ であり $c \ne 0$ ならば $a ~\bmod~ m = 0$ となります。
 
-有理関数体 $$\mathbb{Z} / m\mathbb{Z}(x)$$ の $0$ でない単項式の全体 $\lbrace b x^c \mid b \in (\mathbb{Z}/m\mathbb{Z})^{\times} \land c \in \mathbb{Z} \rbrace \subseteq \mathbb{Z}/m\mathbb{Z}(x) $ は乗法について群をなします。
+素数 $m$ に対する体 $\mathbb{Z}/m\mathbb{Z}$ の有理関数体 $$\mathbb{Z} / m\mathbb{Z}(x)$$ について、その $0$ でない単項式の全体 $\lbrace b x^c \mid b \in (\mathbb{Z}/m\mathbb{Z})^{\times} \land c \in \mathbb{Z} \rbrace \subseteq \mathbb{Z}/m\mathbb{Z}(x) $ は乗法について群をなします。
 演算は $b_1 x^{c_1} \cdot b_2 x^{c_2} = b_1 b_2 x^{c_1 + c_2}$ です。
 単位元は $1 \cdot x^0$ であり、逆元は $b \in (\mathbb{Z}/m\mathbb{Z})^{\times}$ であることを使って $(b x^c)^{-1} = (b^{-1}) x^{-c}$ です。
 なお、明らかに加法では閉じておらず、環にはなりません。

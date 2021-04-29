@@ -76,7 +76,7 @@ $R$ を可換環とし、通常の多項式 $f \in R \lbrack x \rbrack$ は自�
 つまり $(R \lbrack x, x^{-1} \rbrack)^{\times} = \lbrace a x^k \mid a \in R^{\times} \wedge k \in \mathbb{Z} \rbrace \simeq R^{\times} \times \mathbb{Z}$ が成り立ちます。
 証明は省略します[^proof]。
 
-$p$ を素数とし $a = b p^c$ (ただし $p \nmid b$) に対する組 $(b, c)$ に今回のテクの演算を入れたものは、体 $\mathbb{F} _ p$ の Laurent 多項式環 $\mathbb{F} _ p \lbrack x, x^{-1} \rbrack$ の単元全体を $x = p$ という想定の下で考えているものだと思えます。
+$p$ を素数とし $a = b p^c$ (ただし $p \nmid b$) に対する組 $(b, c)$ に今回のテクの演算を入れたものは、体 $\mathbb{F} _ p$ の Laurent 多項式環 $\mathbb{F} _ p \lbrack x, x^{-1} \rbrack$ の単元全体からなる群 $(\mathbb{F} _ p\lbrack x, x^{-1} \rbrack)^{\times}$ を $x = p$ という想定の下で考えているものだと思えます。
 つまり今回のテクで用いられる組 $(b, c)$ は $0$ でない単項式 $b x^c \in (\mathbb{F} _ p\lbrack x, x^{-1} \rbrack)^{\times}$ です。
 $0$ でない単項式 $b x^c$ から $a ~\bmod~ p$ の値を取り出すときは $b p^c ~\bmod~ p$ の値を計算すればよいです。
 $c = 0$ ならば $a ~\bmod~ p = b$ となり $c \ne 0$ ならば $a ~\bmod~ p = 0$ となります。

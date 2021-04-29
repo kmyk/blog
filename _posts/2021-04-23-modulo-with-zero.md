@@ -96,7 +96,7 @@ $p$ 進数全体からなる体を $p$ 進数体と呼び $\mathbb{Q} _ p$ と�
 今回のテクでは Laurent 多項式環の係数として体 $\mathbb{F} _ p$ を用いているため、今回のテクで用いられる組 $(b, c)$ は形式的 Laurent 級数を介して $p$ 進数だと思うことができます。
 つまり単項式 $b x^c \in (\mathbb{F} _ p\lbrack x, x^{-1} \rbrack)^{\times}$ でなく $b p^c$ (ただし $b \in \mathbb{F} _ p$) の形で書ける $p$ 進数を用いて今回のテクを説明することも可能です。
 このとき整数 $c \in \mathbb{Z}$ はオーダーと呼ばれるものに一致します。
-$p$ 進数 $x \in \mathhbb{Q} _ p$ に対しそのオーダーは $\mathrm{ord} _ p(x)$ と書かれます。
+$p$ 進数 $x \in \mathbb{Q} _ p$ に対しそのオーダーは $\mathrm{ord} _ p(x)$ と書かれます。
 ただし形式的 Laurent 級数体 $\mathbb{F} _ p ((x))$ と $p$ 進数体 $\mathbb{Q} _ p$ とが同型になるわけではないので、このことに起因する差には注意が必要です。
 $b_1 p^{c_1} \cdot b_2 p^{c_2} = (b_1 b_2 ~\bmod~ p) p^{c_1 + c_2}$ とは限らず、また $b p^c \in \mathbb{Q} _ p$ (ただし $b \in \mathbb{F} _ p$) の形で書ける $p$ 進数の全体は乗法で閉じていません。
 このため、一般の $p$ 進数 $x \in \mathbb{Q} _ p$ を $p^{\mathrm{ord} _ p(x)}$ の係数のみを考えながら (つまり適切に近似しながら) 演算するという形になります。

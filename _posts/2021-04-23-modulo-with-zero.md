@@ -2,16 +2,17 @@
 category: blog
 layout: post
 date: 2021-04-23T00:00:00+09:00
+updated: 2021-04-29T00:00:00+09:00
 ---
 
 # mod で計算するときに零の重複度も持つテク
 
 ## 概要
 
-通常の整数の乗除算を、計算過程に出現する数の最大値を小さくするなどの目的で、ある $m$ に対して $\bmod~ m$ で計算することがあります。
-しかし、$m$ が途中に出現する数より小さい場合には、もともとは $0$ ではないのだが $\bmod~ m$ では $0$ になってしまうような数が問題となることがあります。
-このような場合には、整数 $a$ に対して $b = a ~\bmod~ m$ の値だけでなく、その整数 $a$ が約数として $m$ をいくつ含むかの数 $c$ も管理するとうまくいくことがあります。
-つまり $a = b m^c$ に対して単に $b$ のみを持つのでなく組 $(b, c)$ を持つようにするとうまくいくことがあります。
+通常の整数の乗除算を、計算過程に出現する数の最大値を小さくするなどの目的で、ある $p$ に対して $\bmod~ p$ で計算することがあります。
+しかし、$p$ が途中に出現する数より小さい場合には、もともとは $0$ ではないのだが $\bmod~ p$ では $0$ になってしまうような数が問題となることがあります。
+このような場合には、整数 $a$ に対して $b = a ~\bmod~ p$ の値だけでなく、その整数 $a$ が約数として $p$ をいくつ含むかの数 $c$ も管理するとうまくいくことがあります。
+つまり $a = b p^c$ に対して単に $b$ のみを持つのでなく組 $(b, c)$ を持つようにするとうまくいくことがあります。
 また、計算の過程では $c \lt 0$ のような組 $(b, c)$ を許して考えると便利です。
 
 
@@ -30,10 +31,10 @@ ${} _ n C _ r = \frac{n!}{r! \cdot (n-r)!}$ という関係式を使って ${} _
 たとえば ${} _ 5 C _ 3 ~\bmod~ 3 = 10 ~\bmod~ 3 = 1$ を計算したいときに $\frac{5!}{3! \cdot (5 - 3)!} \equiv \frac{0}{0 \cdot 2}$ となってしまい計算ができません。
 
 そこで今回のテクを使います。
-通常は $\bmod~ m$ での階乗 $a_n = n! ~\bmod~ m$ を事前に計算しますが、この問題では $n! = b_n m^{c_n}$ とおいて組 $(b_n ~\bmod~ m, c_n)$ を事前に計算して持っておきます。
+通常は $\bmod~ p$ での階乗 $a_n = n! ~\bmod~ p$ を事前に計算しますが、この問題では $n! = b_n p^{c_n}$ とおいて組 $(b_n ~\bmod~ p, c_n)$ を事前に計算して持っておきます。
 そしてこの組の上で適切に演算をします。
-具体的には、乗算は $(b_1, c_1) \cdot (b_2, c_2) = (b_1 b_2 ~\bmod~ m, c_1 + c_2)$ となり、$m \nmid b$ のとき逆元は $(b, c)^{-1} = (b^{-1}, - c)$ となります。
-そして最後に組 $(b, c)$ から所望の値 $b m^c ~\bmod~ m$ を得ます。
+具体的には、乗算は $(b_1, c_1) \cdot (b_2, c_2) = (b_1 b_2 ~\bmod~ p, c_1 + c_2)$ となり、$p \nmid b$ のとき逆元は $(b, c)^{-1} = (b^{-1}, - c)$ となります。
+そして最後に組 $(b, c)$ から所望の値 $b p^c ~\bmod~ p$ を得ます。
 この値は $c = 0$ ならば $b$ であり、$c \ge 1$ ならば $0$ です。
 
 たとえば ${} _ 5 C _ 3  ~\bmod~ 3$ を計算したいときを考えましょう。
@@ -62,31 +63,65 @@ $(H - 1) \times (W - 1)$ 行列中にいくつの $0$ が含まれるのかは�
 
 ## 理論
 
-$m$ を素数とし $a = b m^c$ (ただし $m \nmid b$) に対する組 $(b, c)$ に適切な演算を入れたものは、体 $\mathbb{Z}/m\mathbb{Z}$ の有理関数体[^rational-function] $\mathbb{Z}/m\mathbb{Z}(x)$ の $0$ でない単項式全体を $x = m$ という想定の下で考えているものだと思えます。
-ただしここで単項式とは、係数 $b \in \mathbb{Z}/m\mathbb{Z}$ と整数 $c \in \mathbb{Z}$ に対して $b x^c$ と書ける項のことです[^monomial]。
-つまり今回のテクで用いられる組 $(b, c)$ は単項式 $b x^c \in \mathbb{Z}/m\mathbb{Z}(x)$ (ただし $b \not\equiv 0\pmod m$) です。
-$0$ でない単項式 $b x^c$ から $a ~\bmod~ m$ の値を取り出すときは $b m^c ~\bmod~ m$ の値を計算すればよいです。
-$c = 0$ ならば $a ~\bmod~ m = b$ となり $c \ne 0$ ならば $a ~\bmod~ m = 0$ となります。
+### Laurent 多項式
 
-素数 $m$ による体 $\mathbb{Z}/m\mathbb{Z}$ の有理関数体 $$\mathbb{Z}/m\mathbb{Z}(x)$$ について、その $0$ でない単項式の全体 $\lbrace b x^c \mid b \in (\mathbb{Z}/m\mathbb{Z})^{\times} \land c \in \mathbb{Z} \rbrace \subseteq \mathbb{Z}/m\mathbb{Z}(x) $ は乗法について群をなします。
-演算は $b_1 x^{c_1} \cdot b_2 x^{c_2} = b_1 b_2 x^{c_1 + c_2}$ です。
-単位元は $1 \cdot x^0$ であり、逆元は $b \in (\mathbb{Z}/m\mathbb{Z})^{\times}$ であることを使って $(b x^c)^{-1} = (b^{-1}) x^{-c}$ です。
-なお、明らかに加法では閉じておらず、環にはなりません。
+通常の多項式の拡張として、Laurent 多項式と呼ばれるものがあります。
+これは負冪を許すような多項式のことです。
+$R$ を可換環とし、通常の多項式 $f \in R \lbrack x \rbrack$ は自然数 $r \in \mathbb{N}$ と係数列 $(a_0, a _ 1, \dots, a _ {r - 1})$ を使って $f = \sum _ {i = 0} ^ {r - 1} a_i x^i$ と書けますが、これに対して Laurent 多項式 $f$ は整数 $l, r \in \mathbb{Z}$ (ただし $l \le r$) と係数列 $(a_l, a _ {l + 1}, \dots, a _ {r - 1})$ を使って $f = \sum _ {i = l} ^ {r - 1} a_i x^i$ と書かれます。
+この Laurent 多項式からなる環を Laurent 多項式環と呼び $R \lbrack x, x^{-1} \rbrack$ と書きます。
+なお、Laurent 多項式環は群環 $R \lbrack \mathbb{Z} \rbrack$ と同型です。
+
+整域[^domain] $R$ 上の Laurent 多項式環 $R \lbrack x, x^{-1} \rbrack$ の元 $f \in R \lbrack x, x^{-1} \rbrack$ について、それが単元[^unit]であることとそれが単元を係数とする単項式であることは同値です。
+ただし Laurent 多項式環 $f \in R \lbrack x, x^{-1} \rbrack$ が単項式であるとはある係数 $a \in R$ とある整数 $i \in \mathbb{Z}$ が存在して $f = a x^i$ と書けることとします。
+つまり $(R \lbrack x, x^{-1} \rbrack)^{\times} = \lbrace a x^k \mid a \in R^{\times} \wedge k \in \mathbb{Z} \rbrace \simeq R^{\times} \times \mathbb{Z}$ が成り立ちます。
+証明は省略します[^proof]。
+
+$p$ を素数とし $a = b p^c$ (ただし $p \nmid b$) に対する組 $(b, c)$ に今回のテクの演算を入れたものは、体 $\mathbb{F} _ p$ の Laurent 多項式環 $\mathbb{F} _ p \lbrack x, x^{-1} \rbrack$ の単元全体からなる群 $(\mathbb{F} _ p\lbrack x, x^{-1} \rbrack)^{\times}$ を $x = p$ という想定の下で考えているものだと思えます。
+つまり今回のテクで用いられる組 $(b, c)$ は $0$ でない単項式 $b x^c \in (\mathbb{F} _ p\lbrack x, x^{-1} \rbrack)^{\times}$ です。
+$0$ でない単項式 $b x^c$ から $a ~\bmod~ p$ の値を取り出すときは $b p^c ~\bmod~ p$ の値を計算すればよいです。
+$c = 0$ ならば $a ~\bmod~ p = b$ となり $c \ne 0$ ならば $a ~\bmod~ p = 0$ となります。
+
+
+### $p$ 進数
+
+Laurent 多項式を正の次数の項の無限和を許すように拡張したものを形式的 Laurent 級数と呼びます。
+形式的 Laurent 級数 $f$ は整数 $l \in \mathbb{Z}$ と体 $K$ の要素の無限列 $(a_l, a _ {l+1}, a _ {l+2}, \dots)$ を使って $f = \sum _ {i = l} ^ {\infty} a_i x^i$ と書かれます。
+体 $K$ の要素を係数とする形式的 Laurent 級数の全体は体をなし、この体を形式的 Laurent 級数体と呼び $K((x))$ と書きます。
+
+$p$ を素数としたとき、自然数 $n \in \mathbb{N}$ はある整数 $r \in \mathbb{Z}$ と $0$ 以上 $p$ 未満の整数の列 $(a_0, a_1, \dots, a _ {n-1})$ を使って $n = \sum _ {i = 0} ^ {n - 1} a_i p^i$ と書けます。
+これを無限和を許すように拡張してできる数 $\sum _ {i = 0} ^ {\infty} a_i p^i$ のことを $p$ 進整数と呼び、これをさらに負冪を許すように拡張してできる数 $\sum _ {i = l} ^ {\infty} a_i p^i$ のことを $p$ 進数と呼びます。
+$p$ 進数全体からなる体を $p$ 進数体と呼び $\mathbb{Q} _ p$ と書きます。
+
+形式的 Laurent 級数と $p$ 進数には記法上の類似があります。
+今回のテクでは Laurent 多項式環の係数として体 $\mathbb{F} _ p$ を用いているため、今回のテクで用いられる組 $(b, c)$ は形式的 Laurent 級数を介して $p$ 進数だと思うことができます。
+つまり単項式 $b x^c \in (\mathbb{F} _ p\lbrack x, x^{-1} \rbrack)^{\times}$ でなく $b p^c$ (ただし $b \in \mathbb{F} _ p$) の形で書ける $p$ 進数を用いて今回のテクを説明することも可能です。
+このとき整数 $c \in \mathbb{Z}$ はオーダーと呼ばれるものに一致します。
+$p$ 進数 $x \in \mathhbb{Q} _ p$ に対しそのオーダーは $\mathrm{ord} _ p(x)$ と書かれます。
+ただし形式的 Laurent 級数体 $\mathbb{F} _ p ((x))$ と $p$ 進数体 $\mathbb{Q} _ p$ とが同型になるわけではないので、このことに起因する差には注意が必要です。
+$b_1 p^{c_1} \cdot b_2 p^{c_2} = (b_1 b_2 ~\bmod~ p) p^{c_1 + c_2}$ とは限らず、また $b p^c \in \mathbb{Q} _ p$ (ただし $b \in \mathbb{F} _ p$) の形で書ける $p$ 進数の全体は乗法で閉じていません。
+このため、一般の $p$ 進数 $x \in \mathbb{Q} _ p$ を $p^{\mathrm{ord} _ p(x)}$ の係数のみを考えながら (つまり適切に近似しながら) 演算するという形になります。
 
 
 ## 参考文献
 
--   雪江明彦, [代数学2 環と体とガロア理論](https://www.amazon.co.jp/dp/4535786607)
-    -   p9 の単項式のあたりと p41 有理関数体のあたりを参考にした
+-   雪江明彦, [代数学3 代数学のひろがり](https://www.amazon.co.jp/dp/4535786615)
+    -   p126 の $p$ 進体のあたりや p139 形式的冪級数体のあたりを参考にした
 
 
 ## クレジット
 
 この記事は私と [@elliptic_shiho](https://twitter.com/elliptic_shiho) との間での議論をまとめたものです。
-テクニックとしての整理は私が行い、その背景の理論として有理関数体 $\mathbb{Z}/m\mathbb{Z}(x)$ を使うアイデアは [@elliptic_shiho](https://twitter.com/elliptic_shiho) が出しました。
+テクニックとしての整理は私が行い、その背景の理論として Laurent 多項式環 $\mathbb{F} _ p \lbrack x, x^{-1} \rbrack$ を使うアイデアは [@elliptic_shiho](https://twitter.com/elliptic_shiho) が出しました。
+$p$ 進数体 $\mathbb{Q} _ p$ との接続も [@sugarknri](https://twitter.com/sugarknri) による[言及](https://twitter.com/sugarknri/status/1385421416825163778)をもとに [@elliptic_shiho](https://twitter.com/elliptic_shiho) が説明してくれました。
+
+
+## 更新履歴
+
+-   2021 年 4 月 29 日: 有理関数体 $\mathbb{Z}/m\mathbb{Z}(x)$ でなく Laurent 多項式環 $\mathbb{F} _ p \lbrack x, x^{-1} \rbrack$ を使う形で理論パートを書き直した。また $p$ 進数体 $\mathbb{Q} _ p$ への言及を追加した。
 
 
 ## 注釈
 
-[^rational-function]: 有理関数体とは、有理関数の全体からなる体です。有理関数とは、ふたつの多項式をそれぞれ分子と分母に持つ分数として書けるような関数のことです。
-[^monomial]: 「$0$ は単項式に含む」「$2x$ などは単項式に含む」「(Laurent 多項式の文脈であるので) $x^{-1}$ などは単項式に含む」という定義になっています。$0$ を単項式に含まないように定義される場合や $2x$ などを単項式に含まないように定義される場合もあることには注意してください。
+[^domain]: 整域とは、零因子を持たない可換環であって自明環でないものです。零因子を持たないとはつまり $xy = 0$ なら $x = 0$ か $y = 0$ が成り立つということです。
+[^unit]: 単元とは、逆元が存在する元のことです。また、可換環 $R$ の単元全体からなる群を $R^{\times}$ と書きます。
+[^proof]: 気になる人は [abstract algebra - Unit group of Laurent polynomial rings - Mathematics Stack Exchange](https://math.stackexchange.com/questions/1423274/unit-group-of-laurent-polynomial-rings) などを読んでください。

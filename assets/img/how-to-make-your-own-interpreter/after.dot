@@ -1,0 +1,40 @@
+digraph {
+    main -> init;
+    main -> expr;
+    main -> return;
+    init -> int1;
+    init -> a1;
+    init -> 01;
+    expr -> binop;
+    binop -> a2;
+    binop -> plusequal;
+    binop -> e1;
+    e1 -> e2;
+    e1 -> div;
+    e1 -> "2";
+    e2 -> n1;
+    e2 -> mult;
+    e2 -> e3;
+    e3 -> n2;
+    e3 -> minus;
+    e3 -> "1";
+    return -> 02;
+
+    main [ label = "MAIN" ];
+    init [ label = "DECL" ];
+    expr [ label = "EXPR" ];
+    binop [ label = "BINOP" ];
+    plusequal [ label = "+=" ];
+    01 [ label = "0" ];
+    02 [ label = "0" ];
+    a1 [ label = "a" ];
+    a2 [ label = "a" ];
+    e1 [ label = "BINOP" ];
+    e2 [ label = "BINOP" ];
+    e3 [ label = "BINOP" ];
+    n1 [ label = "n" ];
+    n2 [ label = "n" ];
+    mult [ label = "*" ];
+    minus [ label = "-" ];
+    return [ label = "RETURN" ];
+}

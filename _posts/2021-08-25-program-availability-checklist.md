@@ -28,7 +28,7 @@ layout: post
 -   ✔️ エラーメッセージはできる限り丁寧なものを出力する
 -   ✔️ 日本語だけでなく英語のドキュメントも用意する
     -   英語を読める人は多いですが、日本語を読める人は少ないです。
--   ✔️ CHANGLOG などのリリースノートを書く
+-   ✔️ CHANGELOG などのリリースノートを書く
     -   [keepachangelog.com](https://keepachangelog.com/) を読んでください。
     -   Git の commit history はリリースノートではありません。
 -   ✔️ `--help` オプションを用意する

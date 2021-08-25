@@ -3,7 +3,7 @@ category: blog
 layout: post
 ---
 
-# 競技プログラミングでも linter と formatter を使おう
+# 競技プログラミングでも linter と formatter を使おう (C++)
 
 ## linter: `clang-tidy`
 

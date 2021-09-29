@@ -10,8 +10,8 @@ title: "うさぎ小屋"
 email:
 author: "Kimiyuki Onaka"
 description:
-baseurl: ""  # the subpath of your site, e.g. /blog
-url: "https://kimiyuki.net"  # the base hostname & protocol for your site
+baseurl: "/blog"  # the subpath of your site, e.g. /blog
+url: "https://kmyk.github.io"  # the base hostname & protocol for your site
 exclude:
     -   "/.git"
     -   "/.github"
